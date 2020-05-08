@@ -1,0 +1,357 @@
+/*h1 underline re-design*/
+h1#wb-cont {
+	border-bottom: none;
+}
+h1#wb-cont::after {
+	content: "";
+	display: block;
+	width: 70px;
+	padding-bottom: 8px;
+	border-bottom: .18em solid #af3c43;
+}
+/*Section menu steps design*/
+ul.gcnav-steps {
+	list-style: none;
+	padding-left: 0.57em;
+	position: relative;
+}
+li ul.gcnav-steps {
+	margin-top: 20px;
+	padding-left: 0.55em;
+}
+ul.gcnav-steps>li {
+	border-left: 4px solid #26374a;
+	padding: 0px 20px 30px 1em;
+}
+ul.gcnav-steps.noline>li {
+	border-left: 4px solid transparent;
+}
+ul.gcnav-steps>li::first-line {
+	line-height: 1!important;
+}
+ul.gcnav-steps>li:last-child,ul.gcnav-steps>li.gcnav-steps-end {
+	border-left: 4px solid transparent;
+}
+li ul.gcnav-steps>li:last-child {
+	padding-bottom: 0px;
+}
+ul.gcnav-steps>li>:first-child::before {
+	border-radius: 50%;
+	border: 3px solid #26374a;
+	background-color: #fff;
+	position: absolute;
+	left: 0.05em;
+	content: "";
+	width: 1.2em;
+	height: 1.2em;
+	transition: width 0.2s,height 0.2s,left 0.2s,margin-top 0.2s;
+}
+ul.gcnav-steps>li.active>:first-child::before {
+	background-color: #26374a;
+}
+ul.gcnav-steps>li>a[href]:hover::before,.gcnav-steps>li>a[href]:focus::before {
+	width: 1.4em;
+	height: 1.4em;
+	left: -0.05em;
+	margin-top: -0.1em;
+}
+/*Section menu mobile*/
+.gcnav h1#wb-cont-parent {
+	border-bottom-width: 0px;
+	padding: 0px 20px 10px 12px;
+	background-color: #fff;
+	display: inline-block;
+	font-size: 1.3em;
+	color: #555;
+	margin-top: -19px;
+	float: left;
+	margin-right: 20px;
+}
+.gcnav-menu {
+	border-top: 4px solid #26374a;
+	border-right: 4px solid #26374a;
+	border-radius: 0px 6px 6px 0px;
+	margin-top: 38px;
+}
+.gcnav-menu .gcnav-steps {
+	padding-top: 10px;
+	clear: both;
+}
+.gcnav ul.gcnav-steps>li:last-child {
+	border-left: 4px solid #26374a;
+	border-bottom: 4px solid #26374a;
+	border-bottom-left-radius: 6px;
+}
+#gcnav-menu-header,.gcnav-menu-pager {
+	display: none;
+}
+/* Section menu desktop*/
+@media all and (min-width:992px) {
+	.gcnav {
+		margin: 0px -15px 0px -15px;
+	}
+	.gcnav::after {
+		clear: both;
+	}
+	.gcnav::after,.gcnav::before {
+		content: " ";
+		display: table;
+	}
+	.gcnav-menu h1#wb-cont-parent {
+		font-weight: inherit;
+		padding-bottom: 0px!important;
+		margin-bottom: 0px;
+	}
+	.gcnav-section h1#wb-cont {
+		margin-top: 0px;
+	}
+	.gcnav-menu h1#wb-cont-parent,.gcnav-menu ul.gcnav-menu-pager,.gcnav-section {
+		width: 66.66%;
+	}
+	.gcnav-menu nav,.gcnav aside.gcnav-side {
+		width: 33.33%;
+		float: right;
+	}
+	.gcnav-menu nav {
+		margin-top: -20px;
+	}
+	.gcnav-menu h1#wb-cont-parent,.gcnav-menu ul.gcnav-menu-pager,.gcnav-section,.gcnav-menu nav,.gcnav aside.gcnav-side {
+		position: relative;
+		min-height: 1px;
+		padding: 0px 15px 0px 15px;
+	}
+	.gcnav-menu h1#wb-cont-parent,.gcnav-menu ul.gcnav-menu-pager {
+		float: left;
+	}
+	.gcnav aside.gcnav-side {
+		clear: right;
+	}
+	#gcnav-menu-header,.gcnav-menu-pager {
+		display: inherit;
+		margin-top: 0px;
+	}
+	.gcnav-menu #gcnav-menu-header {
+		font-size: 1.2em;
+	}
+	.gcnav-menu {
+		border-top: 0px;
+		border-right: 0px;
+	}
+	.gcnav ul.gcnav-steps > li:last-child {
+		border-left: 4px solid transparent;
+		border-bottom: 0px;
+	}
+	/*Section menu nav buttons*/
+	ul.gcnav-menu-pager>li>a:hover,ul.gcnav-menu-pager>li>a:focus,ul.gcnav-menu-pager>li>a:visited {
+		display: inline-block;
+		color: #fff;
+		text-decoration: none;
+		padding: 5px;
+	}
+	ul.gcnav-menu-pager>li>a {
+		background-color: #26374a;
+	}
+	ul.gcnav-menu-pager>li>a:hover {
+		background-color: #444;
+	}
+	ul.gcnav-menu-pager>li>a:not(:focus) {
+		clip: rect(1px,1px,1px,1px);
+		height: 1px;
+		margin: 0;
+		overflow: hidden;
+		position: absolute;
+		width: 1px;
+	}
+	ul.gcnav-menu-pager>li>a:focus {
+		position: relative;
+	}
+	ul.gcnav-menu-pager {
+		display: flex;
+		margin-bottom: 0;
+		list-style: none;
+		padding-left: 0;
+	}
+}
+@-moz-document url-prefix() {
+	ul.gc-navseq>li>:first-child::before {
+		margin-left: -2.0em;
+	}
+}
+/*Checkbox/Fieldflow radio input sizing,positioning*/
+.checkbox-lg > li.checkbox {
+	margin-top: 0px;
+}
+.checkbox-lg > li {
+	margin-left: -40px;
+	padding-left: 40px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+	padding-right: 15px;
+}
+.checkbox-zebra > li:nth-child(2n) {
+	background-color: #f5f5f5;
+	padding-top: 10px;
+}
+.checkbox-lg > li.checkbox input[type=checkbox],.fieldflow-lg .radio input[type=radio] {
+	margin-top: 12px;
+	transform: scale(2);
+}
+.checkbox-lg label,.fieldflow-lg,.fieldflow-lg label,.fieldflow-lg div,.fieldflow-lg select,.std-blt {
+	font-size: 20px;
+	line-height: 1.65em;
+}
+.std-blt {
+	list-style-type: disc;
+}
+.std-blt label {
+	display: block;
+	padding-left: 0px;
+}
+.fieldflow-lg .radio label {
+	margin-left: 40px;
+}
+.fieldflow-lg .radio input[type=radio] {
+	margin-left: -40px;
+}
+.fieldflow-lg fieldset legend {
+	font-size: 22px;
+	margin-top: 0px;
+}
+
+h1 span.stacked {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: -9999px;
+}
+
+
+h1 span.stacked span:nth-child(1) {
+    margin-top: -1.1em;
+}
+
+h1 span.stacked span:nth-child(1), h1 span.stacked span:nth-child(2) {
+    margin-left: 9999px;
+}
+
+h1 span.stacked span:nth-child(2) {
+    font-size: 0.8em;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 0.17em;
+}
+.owner {
+        float: left;
+}
+.owner p {
+        float: left;
+}
+.owner ul {
+        float: left;
+}
+.owner li {
+        padding: 0 10px;
+}
+.gc-theme .profile {
+        margin: 1.25em 0 .9em;
+}
+.followus {
+        float: right;
+        margin: 10px 0 0 40px;
+        background: none;
+        padding: 0;
+}
+ 
+@media screen and (max-width:479px) {
+ 
+.followus {
+        float: none;
+        margin-left: 0
+}
+}
+.followus h2 {
+        margin: 5px 4px 0 0;
+        font-size: 16px !important;
+        display: block;
+        float: left;
+}
+.followus ul li a {
+        padding: 15px 22px 0;
+        border: none;
+}
+.followus ul li a:hover, .followus ul li a:focus {
+        opacity: .6;
+        border: none;
+}
+.followus .email {
+        background: url(images/email.png) no-repeat
+}
+.followus .facebook {
+        background: url(images/facebook.png) no-repeat
+}
+.followus .flickr {
+        background: url(images/flickr.png) no-repeat
+}
+.followus .googleplus {
+        background: url(images/googleplus.png) no-repeat
+}
+.followus .instagram {
+        background: url(images/instagram.png) no-repeat
+}
+.followus .linkedin {
+        background: url(images/linkedin.png) no-repeat
+}
+.followus .periscope {
+        background: url(images/periscope.png) no-repeat
+}
+.followus .pinterest {
+        background: url(images/pinterest.png) no-repeat
+}
+.followus .rss {
+        background: url(images/rss.png) no-repeat
+}
+.followus .twitter {
+        background: url(images/twitter.png) no-repeat
+}
+.followus .youtube {
+        background: url(images/youtube.png) no-repeat
+}
+ 
+.most-requested {
+	background: #f9f9f9;
+	border-bottom: none;
+	margin-bottom: 20px;
+	position: relative;
+	margin-left: -50vw;
+	width: 100vw;
+	left: 50%;
+	padding: 20px 0 20px 0;
+}
+.most-requested h2 {
+	margin-top: 0px;
+	font-size: 1.2em;
+}
+.most-requested ul {
+	font-family:"Lato",sans-serif;
+	list-style:circle;
+}
+.most-requested .lst-spcd > li {
+	margin-bottom:5px;
+	line-height:26px;
+}
+@media all and (max-width:768px){
+	.most-requested>.container{
+		margin-left:15px;
+		margin-right:15px
+}
+}
+@media all and (min-width: 992px){
+	.most-requested h2 {
+		width: 16.66%;
+		float: left;
+		font-size: 1.1em !important;
+		padding-right: 30px
+}
+}
+
+
