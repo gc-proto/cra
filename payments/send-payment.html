@@ -57,22 +57,9 @@
       <main role="main" property="mainContentOfPage" class="container experimental">
   <h1 property="name" id="wb-cont" dir="ltr"><span class="stacked" role="text"><span>Send a payment</span>: <span>Payments and the CRA</span></span></h1>
   <div class="row">
-    <div class="col-md-4 col-md-push-8">
-      <div class="panel panel-default">
-        <header class="panel-heading">
-          <h2 class="panel-title">Before you pay...things to remember</h2>
-        </header>
-        <div class="panel-body">
-          <ul class="list-unstyled lst-spcd">
-            <li><a href="payment-due-dates.html">Debt balance due dates</a></li>
-            <li><a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-payments/make-a-payment/paying-on-time.html">Paying your taxes on time and in full to avoid late fees</a></li>
-            <li><a href="#">...</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-8 col-md-pull-4">
-      <p>You can quickly find what payments methods you can make to the CRA by selecting your account type from the dropdown.</p>
+
+    <div class="col-md-8">
+     
       <div data-wb-urlmapping='{
 							   
 		"pymnt=p1": [{ "action": "removeClass", "source": "#payment-master, #btn-warning, #personal-1-hdr", "class": "hidden" },{ "action": "addClass", "source": "#pymnt-ff", "class": "hidden" }], 
@@ -98,7 +85,8 @@
 		"pymnt=b12": [{ "action": "removeClass", "source":"#payment-master, #btn-warning, #business-12-hdr", "class": "hidden" }, { "action": "addClass", "source": "#pymnt-ff, #online-5, #inperson-1, #inperson-4", "class": "hidden" }], 
 		"pymnt=b13": [{ "action": "removeClass", "source": "#payment-master, #btn-warning, #business-13-hdr", "class": "hidden" }, { "action": "addClass", "source": "#pymnt-ff, #online-5, #inperson-1, #inperson-4", "class": "hidden" }],
 		"pymnt=b14": [{ "action": "removeClass", "source":"#payment-master, #btn-warning, #business-14-hdr, #alert-3", "class": "hidden" }, { "action": "addClass", "source": "#pymnt-ff, #online-2, #online-3, #online-4, #online-5, #inperson-1, #inperson-2, #inperson-4, #inperson-5", "class": "hidden" }]}'></div>
-      <form id="pymnt-ff" class="hidden">
+      <form id="pymnt-ff" class="hidden checkbox-lg">
+	   <p>You can quickly find what payments methods you can make to the CRA by selecting your account type from the dropdown.</p>
         <p id="pymnt-choose" class="wb-inv">Choose your account type</p>
         <div class="wb-fieldflow" data-wb-fieldflow='{"unhideelm": "#pymnt-ff", "renderas": "radio",
 		"reset": [{ "action": "addClass", "source":"#payment-master, .hdrs>span, #alert-1, #alert-2, #alert-3, #pymnt-btn", "class": "hidden"}, {"action": "removeClass", "source":".pymnts>li", "class": "hidden"}],  "noForm": true, "isoptional": true
