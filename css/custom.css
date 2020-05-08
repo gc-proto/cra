@@ -317,7 +317,7 @@ h1 span.stacked span:nth-child(2) {
         background: url(images/youtube.png) no-repeat
 }
 /*Full-width most requested*/
-.most-requested {
+.band {
 	background: #f9f9f9;
 	border-bottom: none;
 	margin-bottom: 20px;
@@ -333,14 +333,13 @@ h1 span.stacked span:nth-child(2) {
 }
 .most-requested ul {
 	font-family:"Lato",sans-serif;
-	list-style:circle;
 }
 .most-requested .lst-spcd > li {
 	margin-bottom:5px;
 	line-height:26px;
 }
 @media all and (max-width:768px){
-	.most-requested>.container{
+	.band>.container{
 		margin-left:15px;
 		margin-right:15px
 }
