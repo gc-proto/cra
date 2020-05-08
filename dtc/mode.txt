@@ -1,0 +1,2 @@
+<span class="ajaxed-in dtc" id="dtc">DTC mode</span>
+<span class="ajaxed-in DTC" id="DTC">DTC mode</span>
