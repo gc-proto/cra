@@ -329,23 +329,23 @@ h1 span.stacked span:nth-child(2) {
 	left: 50%;
 	padding: 20px 0;
 }
-.band-sm {
+.p-sm {
 	padding: 10px;
 }
-.band-xs {
+.p-xs {
 	padding: 5px;
 }
-.band-0 {
+.p-0 {
 	padding: 0;
 }
 .band-default {
 	background: #f9f9f9;
 }
-.band-inset {
+.inset {
 	border: 1px solid #e3e3e3;
 	box-shadow: inset 0px 0px 10px #ddd;
 }
-.band-outset {
+.outset {
 	border: 1px solid #e3e3e3;
 	box-shadow: 0px 0px 10px #ddd;
 }
@@ -362,6 +362,9 @@ h1 span.stacked span:nth-child(2) {
 .band-warning {
 	background: #f9f4d4;
 }
+.alert.provisional.mrgn-bttm-0 {
+	margin-bottom: 0;
+}
 .custom-bg-img {
   background-position: center;
   background-repeat: repeat;
@@ -370,6 +373,9 @@ h1 span.stacked span:nth-child(2) {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.most-requested {
+	background:aliceblue;
 }
 .most-requested h2 {
 	margin-top: 0px;
