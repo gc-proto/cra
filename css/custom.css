@@ -406,5 +406,13 @@ h1 span.stacked span:nth-child(2) {
 		padding-right: 30px
 }
 }
+/*Swatches*/
+.swatch-1-drk {
+	background-color: #5a5136;
+}
+.swatch-1-drk>:not(.well) {
+	color:#fff;
+
+}
 
 
