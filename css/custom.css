@@ -364,9 +364,12 @@ h1 span.stacked span:nth-child(2) {
 }
 .custom-bg-img {
   background-position: center;
+  background-repeat: repeat;
+}
+.parallax {
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-attachment: auto;
-  width:100%;
+  background-size: cover;
 }
 .most-requested h2 {
 	margin-top: 0px;
