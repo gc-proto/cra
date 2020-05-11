@@ -1,0 +1,13 @@
+<span class="ajaxed-in ab-ca" id="ab-ca"><img src="flag-ab.jpg" alt="Alberta flag"> Alberta</span>
+<span class="ajaxed-in bc-ca" id="bc-ca"><img src="flag-bc.jpg" alt="British Columbia flag"> British Columbia</span>
+<span class="ajaxed-in mn-ca" id="mn-ca"><img src="flag-mn.jpg" alt="Manitoba flag"> Manitoba</span>
+<span class="ajaxed-in nb-ca" id="nb-ca"><img src="flag-nb.jpg" alt="New Brunswick flag"> New Brunswick</span>
+<span class="ajaxed-in nl-ca" id="nl-ca"><img src="flag-nl.jpg" alt="Newfoundland and Labrador flag"> Newfoundland and Labrador</span>
+<span class="ajaxed-in nt-ca" id="nt-ca"><img src="flag-nt.jpg" alt="Northwest Territories flag"> Northwest Territories</span>
+<span class="ajaxed-in ns-ca" id="ns-ca"><img src="flag-ns.jpg" alt="Nova Scotia flag"> Nova Scotia</span>
+<span class="ajaxed-in nu-ca" id="nu-ca"><img src="flag-nu.jpg" alt="Nunavut flag"> Nunavut</span>
+<span class="ajaxed-in on-ca" id="on-ca"><img src="flag-on.jpg" alt="Ontario< flag"> Ontario</span>
+<span class="ajaxed-in pe-ca" id="pe-ca"><img src="flag-pe.jpg" alt="Prince Edward Island flag"> Prince Edward Island</span>
+<span class="ajaxed-in qc-ca" id="qc-ca"><img src="flag-qc.jpg" alt="Quebec flag"> Quebec</span>
+<span class="ajaxed-in sk-ca" id="sk-ca"><img src="flag-sk.jpg" alt="Saskatchewan flag"> Saskatchewan</span>
+<span class="ajaxed-in yt-ca" id="yt-ca"><img src="flag-yt.jpg" alt="Yukon flag"> Yukon</span>

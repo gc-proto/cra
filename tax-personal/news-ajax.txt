@@ -1,0 +1,331 @@
+{
+
+  "data": [
+{
+
+"DT_RowId": "story29",
+"title": "Retirement notices for July 2018",
+"date": "2018-07-04",
+"author": "Communications division",
+"area": "PAB",
+"subject": "Policy",
+"image": "<img src='http://infozone/images-common/rtrmntntcs.jpg' class='img-responsive img-rounded col-sm-2 pull-right'/>",
+"teaser": "<p>We celebrate and acknowledge the employees who have retired from the CRA in the month of July. There would need to be a spotlight header for the current month.  Page should be changed to a datatable to sort by name/region or month (and perhaps add years of service). </p>",
+"linked": "/english/frames/main/clbrt/rtrmntntcs-e.html"
+},
+
+{
+
+"DT_RowId": "story28",
+"title": "Update to security policy instruments",
+"date": "2018-05-24",
+"author": "Communications division",
+"area": "FAB",
+"subject": "Policy",
+"image": "",
+"teaser": "<p>The personnel security screening policy instruments, the Access Control to <abbr title='Canada Revenue Agency'>CRA</abbr> Occupied Facilities Directive and the Key and Combination Control Systems Procedures have changed. To familiarize yourself with the revised documents. </p>",
+"linked": "/english/r2822200/fab-dgfa/fam-mfa/siad-dsai/suite-e.asp"
+},
+{
+"DT_RowId": "story27",
+"title": "<abbr title='Canada Revenue Agency'>CRA</abbr> website redirects to stop on March 31, 2019",
+"date": "2018-05-24",
+"author": "Communications division",
+"area": "PAB",
+"subject": "Issues/Alerts",
+"image": "",
+"teaser": "<p>As of March 31, 2019 the cra-arc.gc.ca domain will stop redirecting users to Canada.ca (this includes old <abbr title='Canada Revenue Agency'>CRA</abbr>-friendly <abbr title='Universal Resource Locator'>URL</abbr>s).</p>",
+"linked": "/english/frames/wnew/2018/2018-05-23_1-e.html"
+},
+{
+"DT_RowId": "story26",
+"title": "Delivering on the Truth and Reconciliation Commission",
+"date": "2018-05-22",
+"author": "Communications division",
+"area": "PAB",
+"subject": "Plans and reports ",
+"image": "",
+"teaser": "<p>Visit the new <a href='http://www.aadnc-aandc.gc.ca/eng/1524494530110/1524494579700' rel='external'>Reconciliation<span class='wb-inv'> (External link)</span></a> webpage to learn how the Government of Canada is responding to the 94 calls to action from the Truth and Reconciliation Commission&rsquo;s final report.</p>",
+"linked": ""
+},
+{
+"DT_RowId": "story25",
+"title": "Phishing emails &ndash; don&rsquo;t get hooked&hellip;",
+"date": "2018-05-21",
+"author": "Communications division",
+"area": "FAB",
+"subject": "Issues/Alerts",
+"image": "",
+"teaser": "<p>Phishing attacks use email, social media or malicious websites to solicit sensitive information by posing as a trustworthy organization. International events are frequently used as themes for phishing campaigns targeting organizations involved in the events. The upcoming G7 summit being held on <span class='nowrap'>June 8-9, 2018</span>, is a prime example and it is expected that Government of Canada organizations will be targets of phishing campaigns, using this theme.</p>",
+"linked": "/english/r2814000/fab-dgfa/siad-dsai/sa-ss/index-e.asp"
+},
+{
+"DT_RowId": "story24",
+"title": "World Day for Cultural Diversity for Dialogue and Development",
+"date": "2018-05-18",
+"author": "Communications division",
+"area": "HRB",
+"subject": "Period of awareness",
+"image": "",
+"teaser": "<p>May 21 is World Day for Cultural Diversity for Dialogue and Development. Let&rsquo;s take the time to acknowledge the benefits of our diverse and inclusive workplace! To learn more, go to our <a href='/english/r2732472/myhr_mesrh/divinc/index-e.html'>Diversity and inclusion</a> webpage or the <a href='http://www.un.org/en/events/culturaldiversityday/' rel='external'>United Nations<span class='wb-inv'> (External link)</span></a> webpage.</p>",
+"linked": ""
+},
+{
+"DT_RowId": "story23",
+"title": "International Day Against Homophobia, Transphobia and Biphobia",
+"date": "2018-05-17",
+"author": "Communications division",
+"area": "HRB",
+"subject": "Period of awareness",
+"image": "",
+"teaser": "<p>May 17 is the International Day Against Homophobia, Transphobia and Biphobia. The purpose of this day is to recognize human rights for all, regardless of sexual orientation, gender identity, or gender expression. For more information, visit <a href='/english/r2732472/myhr_mesrh/divinc/lsbngbsxltrnsgndrd-e.html'><abbr title='Lesbian, gay, bisexual, transgender, queer, two-spirit, and others'>LGBTQ2</abbr></a>.</p>",
+"linked": ""
+},
+
+{
+"DT_RowId": "story22",
+"title": "Renewal of commitment to the Union-Management Philosophy<br><span class='label label-info'>Spotlight story</span>",
+"date": "2018-05-16",
+"author": "Commissioner, Deputy Commissioner, National President UTE (PSAC), President AFS Group (PIPSC)",
+"area": "Commissioner office, Union PSAC-UTE",
+"subject": "Union PSAC-UTE, Union PIPSC-AFS",
+"image": "",
+"teaser": "<p>On May 14, 2018, we joined together to renew our commitment to the Union-Management Philosophy. The Philosophy highlights the importance that we place on a harmonious and transparent union-management relationship and the practical application of an informal conflict resolution approach.</p>",
+"linked": "/english/frames/wnew/2018/2018-05-16_1-e.html"
+},
+{
+"DT_RowId": "story21",
+"title": "Tax Administration Diagnostic Assessment Tool Summary Report<br><span class='label label-info'>Spotlight story</span>",
+"date": "2018-05-15",
+"author": "Commissioner, Deputy Commissioner",
+"area": "Commissioner office",
+"subject": "Plans and reports",
+"image": "",
+"teaser": "<p>In spring 2017, we announced the launch of the World-Class Tax and Benefit Administration (<abbr title='World-Class Tax and Benefit Administration'>WCTBA</abbr>) initiative and we asked you to tell us what you thought of the Canada Revenue Agency as a world-class organization.</p>",
+"linked": "/english/frames/wnew/2018/2018-05-15_1-e.html"
+},
+{
+"DT_RowId": "story20",
+"title": "National Student Orientation Program",
+"date": "2018-05-15",
+"author": "Communications division",
+"area": "Corporate Committee",
+"subject": "Engagement",
+"image": "",
+"teaser": "<p>Are you a new student or do you have a new student reporting to you? The <a href='/english/r1713497/committees/ayc/ntnl_stdnt_rnttn_plt-e.html'>National Student Orientation Program</a> highlights some of the many benefits of working at the Agency. The next orientation session is on Tuesday, June 5, from 11 <abbr title='before midday'>a.m.</abbr> to 2 <abbr title='after midday'>p.m.</abbr> (<abbr title='Eastern Standard Time'>EST</abbr>) by videoconference. If you are a new student and have never participated in the National Student Orientation, you can sign up at the <a href='https://casportal.omega.dce-eir.net/irj/portal/leso?otype=D&objid=60186252&CORE=ztrainingtype.htm'>registration portal</a>.</p>",
+"linked": ""
+},
+
+{
+"DT_RowId": "story19",
+"title": "Get an emergency kit!",
+"date": "2018-05-11",
+"author": "Communications division",
+"area": "FAB",
+"subject": "Campaign",
+"image": "",
+"teaser": "<p>Since you might be without power, potable water, or food during an emergency, it's important for you to have access to some basic supplies. Be prepared to be self-sufficient for at least 72hours. Make sure you have an <a href='http://getprepared.gc.ca/cnt/kts/bsc-kt-en.aspx' rel='external'>emergency kit<span class='wb-inv'> (external link)</span></a> that is stocked, organized, easy to carry, and that everyone in your household knows where it is. </p>",
+"linked": ""
+},
+{
+"DT_RowId": "story18",
+"title": "News about Compensation &ndash; May 2018",
+"date": "2018-05-10",
+"author": "Communications division",
+"area": "HRB",
+"subject": "Staffing",
+"image": "",
+"teaser": "<p><a href='/english/r2732472/hrb-dgrh/dir/srcd/cwrg-gwrr/whatwedo/bulletin/bulletin2018/blltn_5-e.asp'>The May 2018 Information Bulletin &ndash; News about Compensation</a> contains information on the collective agreement payments and recalculations, proof of entitlement for pre-retirement leave and information for managers. It also contains information about employee responsibilities when retiring from the <abbr title='Canada Revenue Agency'>CRA</abbr>, 35 years of pensionable service and more.</p>",
+"linked": ""
+},
+{
+"DT_RowId": "story17",
+"title": "Reminder: Building status line",
+"date": "2018-05-10",
+"author": "AC/CFO, DAC/Agency Comptroller",
+"area": "FAB",
+"subject": "Facilities",
+"image": "",
+"teaser": "<p>The building status line is a toll free telephone service that informs Agency employees across Canada of office closures or may provide other relevant information during emergency situations affecting buildings.</p>",
+"linked": "/english/frames/wnew/2018/2018-05-10_2-e.html"
+},
+{
+"DT_RowId": "story16",
+"title": "Clerk to all public servants for annual Mental Health Week",
+"date": "2018-05-10",
+"author": "Clerk",
+"area": "HRB",
+"subject": "Campaign",
+"image": "",
+"teaser": "<p>It's the <a href='http://www.cmha.ca/' rel='external'>Canadian Mental Health Association's<span class='wb-inv'> (external link)</span></a> Mental Health Week, when the Public Service of Canada joins communities, schools and workplaces across the country to <abbr title='hashtag Get Loud'>#GetLoud</abbr> about what mental health is really about.</p>",
+"linked": "/english/frames/wnew/2018/2018-05-10_1-e.html"
+},
+{
+"DT_RowId": "story15",
+"title": "Do you have an emergency plan?",
+"date": "2018-05-09",
+"author": "Communications division",
+"area": "FAB",
+"subject": "Campaign",
+"image": "",
+"teaser": "<p>We can't predict when an emergency situation might happen, but we can prepare for them. It's likely that your loved ones won't be in the same place at the time of an emergency; you could be at work, your kids in school, and your parents across town. Have you thought about what you would do if cellular service is down or streets are blocked? Having a family <a href='http://getprepared.gc.ca/cnt/plns/mk-pln-en.aspx' rel='external'>emergency plan<span class='wb-inv'> (external link)</span></a> will save time and make emergencies less stressful.</p>",
+"linked": ""
+},
+{
+"DT_RowId": "story14",
+"title": "Message to employees represented by the <abbr title='Public Service Alliance of Canada'>PSAC</abbr>",
+"date": "2018-05-09",
+"author": "AC/Chief Human Resources Officer, DAC",
+"area": "Union PSAC-UTE, HRB",
+"subject": "Union PSAC-UTE",
+"image": "",
+"teaser": "<p>In compliance with the Federal Public Sector Labour Relations and Employment Board's requirement to notify employees, this <a href='/english/frames/wnew/2017/mssgtmplys-e.html'>message<span class='wb-inv'> to employees in the bargaining unit represented by the Public Service Alliance of Canada</span></a> is for employees in the bargaining unit represented by the Public Service Alliance of Canada.</p>",
+"linked": "/english/frames/wnew/2017/mssgtmplys-e.html"
+},
+{
+"DT_RowId": "story13",
+"title": "Message to employees represented by the <abbr title='Professional Institute of the Public Service of Canada'>PIPSC</abbr>",
+"date": "2018-05-09",
+"author": "AC/Chief Human Resources Officer, DAC",
+"area": "Union PIPSC-AFS, HRB",
+"subject": "Union PIPSC-AFS",
+"image": "",
+"teaser": "<p>In compliance with the Federal Public Sector Labour Relations and Employment Board's requirement to notify employees, this <a href='/english/frames/wnew/2017/mssgtmplys_ppsc-e.html'>message<span class='wb-inv'> to employees in the bargaining unit represented by the Professional Institute of the Public Service of Canada</span></a> is for employees in the bargaining unit represented by the Professional Institute of the Public Service of Canada.</p>",
+"linked": "/english/frames/wnew/2017/mssgtmplys_ppsc-e.html"
+},
+{
+"DT_RowId": "story12",
+"title": "Mental Health Week: Get ready to <abbr title='hashtag Get Loud'>#GetLoud</abbr>",
+"date": "2018-05-08",
+"author": "Commissioner Deputy Commissioner, Assistant Commissioner - Pacific",
+"area": "Commissioner office, Pacific Region",
+"subject": "Campaign",
+"image": "",
+"teaser": "<p>This year, Mental Health Week will run from May 7 to 13 and the Canadian Mental Health Association is asking all of us to <abbr title='hashtag Get Loud'>#GetLoud</abbr> to help show what mental health really is.</p>",
+"linked": "/english/frames/wnew/2018/2018-05-08_1-e.html"
+},
+{
+"DT_RowId": "story11",
+"title": "Open Government Week, 2018",
+"date": "2018-05-08",
+"author": "Communications division",
+"area": "PAB",
+"subject": "Campaign",
+"image": "",
+"teaser": "<p>The first global Open Government Week takes place this year, from May 7th to 11th. Open government provides Canadians with greater access to Government of Canada data and information. Canada's goal for this week is to create opportunities for Canadians to learn about open government and to build the Canadian open government community. </p><p>The <abbr title='Canada Revenue Agency'>CRA</abbr> is committed to the principles of open government and is working to advance openness and transparency across the Agency and the federal government. Take a look at the new page on <a href='/english/r1713497/org/sa/sa06/sb/sb01/info/pngvrnmnt-e.html'>Open Government</a> and see how the <abbr title='Canada Revenue Agency'>CRA</abbr> is contributing to this important initiative.</p>",
+"linked": ""
+},
+
+{
+"DT_RowId": "story10",
+"title": "Avoiding malicious emails",
+"date": "2018-05-07",
+"author": "Communications division",
+"area": "FAB",
+"subject": "Campaign",
+"image": "",
+"teaser": "<p>It is expected that the upcoming G7 summit (June 8-9, 2018) will cause Government of Canada organizations to be the targets of phishing campaigns using the “G7 summit” theme. International events such as these are frequently used for phishing campaigns, and, as a Canada Revenue Agency employee, you are privy to important and sensitive information that could attract you to cyber intruders. It is important to be vigilant and to be aware of the different kinds of phishing attack methods.</p>",
+"linked": "/english/r2814000/fab-dgfa/siad-dsai/sa-ss/index-e.asp"
+},
+{
+"DT_RowId": "story9",
+"title": "Be emergency ready",
+"date": "2018-05-07",
+"author": "CFO/AC, DAC/Agency Comptroller",
+"area": "FAB",
+"subject": "Campaign",
+"image": "",
+"teaser": "<p>Incidents such as natural disasters, pandemics, cyber incidents and terrorism are frightening and beyond our control. Understanding the risks and being prepared for these emergencies can reduce the consequences. This preparedness is our collective responsibility. Emergency Preparedness Week takes place from May 6-12. </p>",
+"linked": "/english/frames/wnew/2018/2018-05-07_1-e.html"
+},
+{
+"DT_RowId": "story8",
+"title": "Emergency Preparedness Week",
+"date": "2018-05-07",
+"author": "Communications division",
+"area": "FAB",
+"subject": "Campaign",
+"image": "",
+"teaser": "<p><strong>Be emergency ready</strong>. This year's theme highlights the importance of knowing the risks, making a  plan, and having an emergency kit. Keep up-to-date on current local conditions,  such as the weather, to prepare for potential hazards. For  more information, visit <a href='/english/r2814000/fab-dgfa/siad-dsai/eimp-pgui/empweek-e.asp'>Emergency Preparedness</a>.</p>",
+"linked": ""
+},
+
+{
+"DT_RowId": "story7",
+"title": "Algonquin College <abbr title='cooperative'>CO-OP</abbr> Award of Excellence",
+"date": "2018-05-04",
+"author": "Communications division",
+"area": "HRB",
+"subject": "Recognition and award",
+"image": "",
+"teaser": "<p>Two divisions at the <abbr title='Canada Revenue Agency'>CRA</abbr> have been awarded the Algonquin College <abbr title='cooperative'>Co-op</abbr> Award of Excellence for Outstanding Contribution to the Cooperative Education. This award is given out to selected <abbr title='cooperative'>CO-OP</abbr> employers who have provided an exceptional student work-term experience.</p>",
+"linked": "/english/r2732472/ec-ce/recog-recon/externalawards/index-e.asp#accae_1"
+},
+{
+"DT_RowId": "story6",
+"title": "North American Occupational Safety and Health Week",
+"date": "2018-05-04",
+"author": "Co-Chairs NHSPC",
+"area": "Corporate Committee",
+"subject": "Campaign",
+"image": "",
+"teaser": "<p>The Canada Revenue Agency (<abbr title='Canada Revenue Agency'>CRA</abbr>) is proud to participate in <a href='/english/r2732472/ec-ce/ohs-sst/naosh-e.asp'>North American Occupational Safety and Health (<abbr title='North American Occupational Safety and Health'>NAOSH</abbr>) Week</a>, taking place from <span class='nowrap'>May 6 to 12, 2018</span>. The goal of <abbr title='North American Occupational Safety and Health'>NAOSH</abbr> Week is to focus on the importance of preventing injury and illness in the workplace, at home and in the community.</p>",
+"linked": "/english/frames/wnew/2018/2018-05-04_1-e.html"
+},
+{
+"DT_RowId": "story5",
+"title": "Environmental sensitivities in the workplace",
+"date": "2018-05-03",
+"author": "Co-Chairs NHSPC",
+"area": "Corporate Committee",
+"subject": "Campaign",
+"image": "",
+"teaser": "<p>Did you know that scented products such as perfumes, aftershaves and cleaning products seriously affect the health of some of your <span class='nowrap'>co-workers</span> who may suffer from environmental sensitivities?</p>",
+"linked": "/english/frames/wnew/2018/2018-05-03_1-e.html"
+},
+{
+"DT_RowId": "story4",
+"title": "Asian Heritage Month",
+"date": "2018-05-02",
+"author": "Communications division",
+"area": "HRB",
+"subject": "Period of awareness",
+"image": "",
+"teaser": "<p>May is <a href='https://www.canada.ca/en/canadian-heritage/campaigns/asian-heritage-month.html' rel='external'>Asian Heritage Month<span class='wb-inv'> (external link)</span></a>. This is an opportunity to learn about the rich history of <span class='nowrap'>Asian-Canadians</span> and to celebrate their contributions to making our country more diverse and inclusive. The vibrant <span class='nowrap'>Asian-Canadian</span> community has contributed to every facet of Canadian life: from the arts and sciences, to sports, business, and government.</p>",
+"linked": ""
+},
+{
+"DT_RowId": "story3",
+"title": "Update on the 2014 and 2015 economic increases for <abbr title='Canada Revenue Agency'>CRA</abbr> employees represented by the <abbr title='Public Service Alliance of Canada'>PSAC</abbr> &ndash; Union of Taxation Employees",
+"date": "2018-05-02",
+"author": "AC/Chief Human Resources Officer, Deputy Assistant Commissioner",
+"area": ", Union PSAC-UTEHRB",
+"subject": "Union PSAC-UTE",
+"image": "",
+"teaser": "<p><strong>Economic increases and salary adjustments</strong> &ndash; The <abbr title='Canada Revenue Agency'>CRA</abbr> is working closely with Public Services and Procurement Canada on the implementation of the new rates of pay following the <a href='/english/frames/wnew/2018/2018-03-14_1-e.html'>re-opener decision</a>. Employees could receive payments as early as <span class='nowrap'>May 30, 2018</span>. </p>",
+"linked": "/english/frames/wnew/2018/2018-05-02_2-e.html"
+},
+{
+"DT_RowId": "story2",
+"title": "Update on the implementation of the new collective agreement for <abbr title='Canada Revenue Agency'>CRA</abbr> employees represented by the <abbr title='Professional Institute of the Public Service of Canada'>PIPSC</abbr>",
+"date": "2018-05-02",
+"author": "AC/Chief Human Resources Officer, Deputy Assistant Commissioner",
+"area": "Union PIPSC-AFS, HRB",
+"subject": "Union PIPSC-AFS",
+"image": "",
+"teaser": "<p>The <abbr title='Canada Revenue Agency'>CRA</abbr> is working closely with Public Services and Procurement Canada on the implementation of the new <abbr title='Professional Institute of the Public Service of Canada'>PIPSC</abbr> <abbr title='Audit, Financial and Scientific Group'>AFS</abbr> collective agreement that covers the period from <span class='nowrap'>December 22, 2014</span>, to <span class='nowrap'>December 21, 2018</span>. Employees could start to receive payments as early as <span class='nowrap'>May 16, 2018</span>.</p>",
+"linked": "/english/frames/wnew/2018/2018-05-02_1-e.html"
+},
+
+
+{
+"DT_RowId": "story1",
+"title": "2017 <abbr title='Public Service Employee Survey'>PSES</abbr> <abbr title='Canada Revenue Agency'>CRA</abbr> branches and regions results",
+"date": "2018-04-27",
+"author": "Communications division",
+"area": "HRB",
+"subject": "Plans and reports",
+"image": "",
+"teaser": "<p>The 2017 <abbr title='Public Service Employee Survey'>PSES</abbr> results by branches and regions are now available. You are all encouraged to take this opportunity to discuss the results within your teams. Have an idea about how to improve your workplace? Share it with your manager, or reach out to <a href='/english/r2732472/ec-ce/empsurvey/cntcts-e.html'>your branch or regional survey champion</a> to positively influence your work environment. Visit the <a href='/english/r2732472/ec-ce/empsurvey/index-e.html'><abbr title='Public Service Employee Survey'>PSES</abbr> InfoZone page</a> for the link to the results. </p>",
+"linked": ""
+}]}
