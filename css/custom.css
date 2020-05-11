@@ -362,7 +362,12 @@ h1 span.stacked span:nth-child(2) {
 .band-warning {
 	background: #f9f4d4;
 }
-
+.custom-bg-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: auto;
+  width:100%;
+}
 .most-requested h2 {
 	margin-top: 0px;
 	font-size: 1.2em;
@@ -378,6 +383,9 @@ h1 span.stacked span:nth-child(2) {
 	.band>.container{
 		margin-left:15px;
 		margin-right:15px
+}
+.custom-bg-img {
+  background:none !important;
 }
 }
 @media all and (min-width: 992px){
