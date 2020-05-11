@@ -368,6 +368,7 @@ h1 span.stacked span:nth-child(2) {
 .custom-bg-img {
   background-position: center;
   background-repeat: repeat;
+  background-color: #333;
 }
 .parallax {
   background-attachment: fixed;
@@ -394,7 +395,7 @@ h1 span.stacked span:nth-child(2) {
 		margin-right:15px
 }
 .custom-bg-img {
-  background:none !important;
+  background-image:none !important;
 }
 }
 @media all and (min-width: 992px){
