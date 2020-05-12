@@ -407,12 +407,79 @@ h1 span.stacked span:nth-child(2) {
 }
 }
 /*Swatches*/
-.swatch-1-drk {
+[class*="swatch-drk"] {
+	color:#fff;
+}
+[class*="swatch-drk"]  a, [class^="swatch-drk"] a:active, [class^="swatch-drk"] a:hover, [class^="swatch-drk"] a:visited {
+	color:#fff;
+}
+.swatch-drk-1   {
 	background-color: #5a5136;
 }
-.swatch-1-drk>:not(.well) {
-	color:#fff;
-
+.swatch-lght-1 {
+	background-color: #efefde;
+	color: #5a5136;
+}
+.swatch-drk-2   {
+	background-color: #686b57 ;
+}
+.swatch-lght-2 {
+	background-color:#efefde;
+	color: #686b57 ;
+}
+.swatch-drk-3   {
+	background-color: #b90900 ;
+}
+.swatch-lght-3 {
+	background-color:#ffefd6;
+	color: ##b90900 ;
+}
+ .swatch-drk-4   {
+	background-color: #bf3e24 ;
+}
+.swatch-lght-4 {
+	background-color:#ffefd6;
+	color: #bf3e24 ;
+}
+ .swatch-drk-5   {
+	background-color: #1b4b18 ;
+}
+.swatch-lght-5 {
+	background-color:#e7efd6;
+	color: #1b4b18 ;
 }
 
+ .swatch-drk-6   {
+	background-color: #26374a; ;
+}
+.swatch-lght-6 {
+	background-color:#e7f7f7;
+	color: #26374a; ;
+}
+.swatch-drk-7   {
+	background-color:#8c104e ;
+}
+.swatch-lght-7 {
+	background-color: #ffefff;
+	color: #8c104e;
+}
+.swatch-drk-8   {
+	background-color:#45163b ;
+}
+.swatch-lght-8 {
+	background-color:#f7e7f7;
+	color: #45163b;
+}         
+.text-dark a {
+	color: #5a5136;
+}
+.text-dark a:hover, .text-dark a:active {
+	color:inherit;
+}
 
+.text-dark a:visited {
+	color:#7834bc;
+}
+.text-dark {
+	color:#333;
+}
