@@ -413,63 +413,71 @@ h1 span.stacked span:nth-child(2) {
 [class*="swatch-drk"]  a, [class^="swatch-drk"] a:active, [class^="swatch-drk"] a:hover, [class^="swatch-drk"] a:visited {
 	color:#fff;
 }
+
 .swatch-drk-1   {
-	background-color: #5a5136;
-}
-.swatch-lght-1 {
-	background-color: #efefde;
-	color: #5a5136;
-}
-.swatch-drk-2   {
 	background-color: #686b57 ;
 }
-.swatch-lght-2 {
+.swatch-lght-1 {
 	background-color:#ececec;
 	color: #686b57 ;
 }
-.swatch-drk-3   {
-	background-color: #b90900 ;
+.swatch-drk-2   {
+	background-color: #af3c43 ;
 }
-.swatch-lght-3 {
+.swatch-lght-2 {
 	background-color:#ffefd6;
-	color: ##b90900 ;
+	color: #af3c43  ;
 }
- .swatch-drk-4   {
+ .swatch-drk-3   {
 	background-color: #bf3e24 ;
 }
-.swatch-lght-4 {
+.swatch-lght-3{
 	background-color:#ffefd6;
 	color: #bf3e24 ;
 }
- .swatch-drk-5   {
+ .swatch-drk-4   {
 	background-color: #1b4b18 ;
 }
-.swatch-lght-5 {
+.swatch-lght-4 {
 	background-color:#e7efd6;
 	color: #1b4b18 ;
 }
 
- .swatch-drk-6   {
+ .swatch-drk-5   {
 	background-color: #26374a; ;
 }
-.swatch-lght-6 {
+.swatch-lght-5 {
 	background-color:#e7f7f7;
 	color: #26374a; ;
 }
-.swatch-drk-7   {
+.swatch-drk-6   {
 	background-color:#8c104e ;
 }
-.swatch-lght-7 {
+.swatch-lght-6 {
 	background-color: #ffefff;
 	color: #8c104e;
 }
+.swatch-drk-7   {
+	background-color:#4a2637 ;
+}
+.swatch-lght-7 {
+	background-color:#f7e7f7;
+	color: #4a2637;
+}  
 .swatch-drk-8   {
-	background-color:#45163b ;
+	background-color:#0c1117 ;
 }
 .swatch-lght-8 {
-	background-color:#f7e7f7;
-	color: #45163b;
-}         
+	background-color:#e1e8f0;
+	color: #0c1117;
+}      
+.swatch-drk-9   {
+	background-color: #4a3926;
+}
+.swatch-lght-9 {
+	background-color: #efefde;
+	color: #4a3926;
+}   
 .text-dark a {
 	color: #5a5136;
 }
