@@ -343,11 +343,11 @@ h1 span.stacked span:nth-child(2) {
 }
 .inset {
 	border: 1px solid #e3e3e3;
-	box-shadow: inset 0px 0px 10px #ddd;
+	box-shadow: inset 0px 0px 4px #e3e3e3;
 }
 .outset {
 	border: 1px solid #e3e3e3;
-	box-shadow: 0px 0px 10px #ddd;
+	box-shadow: 0px 0px 4px #e3e3e3;
 }
 .band-primary, .band-primary .alert {
 	background: #31708f;
@@ -477,7 +477,35 @@ h1 span.stacked span:nth-child(2) {
 .swatch-lght-9 {
 	background-color: #efefde;
 	color: #4a3926;
-}   
+}  
+ .swatch-drk-covid-1   {
+	background-color: #005b7f;
+}
+.swatch-lght-covid-1 {
+	background-color:#e7f7f7;
+	color: #4c5516;
+} 
+ .swatch-drk-covid-2   {
+	background-color: #c1272d;
+}
+.swatch-lght-covid-2 {
+	background-color:#ffefd6;
+	color: #4c5516 ;
+} 
+ .swatch-drk-covid-3   {
+	background-color: #809b28;
+}
+.swatch-lght-covid-3 {
+	background-color:#e7efd6;
+	color: #4c5516 ;
+} 
+ .swatch-drk-covid-4   {
+	background-color: #4c5516;
+}
+.swatch-lght-covid-4 {
+	background-color: #efefde;
+	color: #4a3926;
+}
 .text-dark a {
 	color: #5a5136;
 }
