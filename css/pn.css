@@ -109,13 +109,13 @@ h1#wb-cont::after {
 
 /* Persistant navigation desktop */
 @media all and (min-width:992px) {
-.gcnav {
+.gcnav, .gcnav-index {
 	margin: 0px -15px 0px -15px;
 }
-.gcnav::after {
+.gcnav::after, .gcnav-index::after {
 	clear: both;
 }
-.gcnav::after, .gcnav::before {
+.gcnav::after, .gcnav-index::after, .gcnav::before, .gcnav-::before {
 	content: " ";
 	display: table;
 }
