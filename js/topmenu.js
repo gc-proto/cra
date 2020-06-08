@@ -1,9 +1,8 @@
 	/*Binds a navigation button for keyboard/screen readers to skip to the section navigation menu at the top of the template page */
 		(function( $, document, wb ) {
 	"use strict";
-
 if($('.gcnav').length> 0){
-	pgLang = $("html").prop("lang");
+	var pgLang = $("html").prop("lang");
 	/*Language change */
 	switch( pgLang.toLowerCase() ){
 		case "fr":
