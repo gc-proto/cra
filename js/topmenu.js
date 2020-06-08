@@ -1,4 +1,7 @@
 	/*Binds a navigation button for keyboard/screen readers to skip to the section navigation menu at the top of the template page */
+		(function( $, document, wb ) {
+	"use strict";
+
 if($('.gcnav').length> 0){
 	pgLang = $("html").prop("lang");
 	/*Language change */
@@ -15,3 +18,4 @@ if($('.gcnav').length> 0){
 	/*HTML code to inject */
 	$( "#wb-tphp" ).prepend('<li class="wb-slc"><a class="wb-sl" href="#gcnav-menu-header">' + gcNav + '</a></li>' );
 }
+})( jQuery, document, wb );			
