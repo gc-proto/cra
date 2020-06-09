@@ -81,9 +81,6 @@ ul.gcnav-steps>li ul.gcnav-steps.noline>li.active::before {
 	border-bottom: 4px solid #26374a;
 	border-bottom-left-radius: 6px;
 }
-h1#wb-cont {
-	border-bottom: none;
-}
 .gcnav-menu nav, .gcnav aside.gcnav-side {
 	clear: left;
 }
