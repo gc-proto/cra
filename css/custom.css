@@ -2,6 +2,8 @@
  .brdr-0 {
 	  box-shadow:none;
 	  }
+.ip-btn {
+margin-bottom:5px !important;}
 
 /*h1 underline re-design*/
 h1#wb-cont {
