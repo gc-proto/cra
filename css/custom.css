@@ -360,14 +360,14 @@ h1 span.stacked span:nth-child(2) {
 	border: 1px solid #e3e3e3;
 	box-shadow: 0px 0px 8px #e3e3e3;
 }
-.band-primary, .band-primary .alert {
+.band-feature, .band-feature .alert {
 	background: #31708f;
 	color:#fff;
 }
-.band-primary a, .band-primary a:hover, .band-primary a:active, .band-primary a:visited{
+.band-feature a, .band-feature a:hover, .band-feature a:active, .band-feature a:visited{
 	color:#fff;
 }
-.band-primary  .panel a,.band-primary .well a, .band-primary .panel a:hover,.band-primary .well a:hover, .band-primary .panel a:active,.band-primary .well a:active, .band-primary .panel a:visited,.band-primary .well a:visited, .band-primary .panel, .band-primary .well {
+.band-feature  .panel a,.band-feature .well a, .band-feature .panel a:hover,.band-feature .well a:hover, .band-feature .panel a:active,.band-feature .well a:active, .band-feature .panel a:visited,.band-feature .well a:visited, .band-feature .panel, .band-feature .well {
 	color:#333;
 }
 .band-warning {
