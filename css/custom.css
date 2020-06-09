@@ -1,3 +1,8 @@
+/*core fixes*/
+ .brdr-0 {
+	  box-shadow:none;
+	  }
+
 /*h1 underline re-design*/
 h1#wb-cont {
 	border-bottom: none;
@@ -264,6 +269,10 @@ h1 span.stacked span:nth-child(2) {
         margin: 10px 0 0 40px !important;
         background: none !important;
         padding: 0 !important;
+}
+.band .followus {
+        float: none !important;
+		margin:0 !important;
 }
  
 @media screen and (max-width:479px) {
@@ -670,7 +679,13 @@ background-color: #fff!important;
 padding-bottom: 0px;
 
 }
+ol.lst-stps li>:first-child, .lst-stps .lst-item>:first-child
 
+               {
+
+               margin-top:auto;             
+
+               }
 ol.lst-stps.lst-stps-striped li, .lst-stps.lst-stps-striped .lst-item
 
 {padding-left: 75px;}
