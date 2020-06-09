@@ -18,8 +18,8 @@
          document.write(wet.builder.refTop({
          }));
       </script>
+	  <link href="../css/custom.css" rel="stylesheet">
       <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
-      <link href="../css/custom.css" rel="stylesheet">
    </head>
    <body vocab="http://schema.org/" typeof="WebPage">
       <div id="def-top">
@@ -48,18 +48,24 @@
       </script>
       <main role="main" property="mainContentOfPage" class="container">
          <h1 property="name" id="wb-cont"><span class="stacked" role="text"><span>[Page title]</span>: <span>[Persistent title]</span></span></h1>
-         <section class="band band-default most-requested">
+         <section class="band band-primary mrgn-bttm-0 p-sm">
+            <div class="container">
+               <h2 class="wb-inv">Featured</h2>
+               <a class="h5" href="#">Featured link [optional]</a>
+            </div>
+         </section>
+         <section class="band most-requested">
             <div class="container">
                <h2>Most requested</h2>
                <ul class="lst-spcd colcount-sm-2">
-                  <li><a href="#">[Link text goes here]</a></li>
-                  <li><a href="#">[Link text goes here]</a></li>
-                  <li><a href="#">[Link text goes here]</a></li>
-                  <li><a href="#">[Link text goes here]</a></li>
-                  <li><a href="#">[Link text goes here]</a></li>
-                  <li><a href="#">[Link text goes here]</a></li>
-                  <li><a href="#">[Link text goes here]</a></li>
-                  <li><a href="#">[Link text goes here]</a></li>
+                  <li><a href="#">[Top task hyperlink]</a></li>
+                  <li><a href="#">[Top task hyperlink]</a></li>
+                  <li><a href="#">[Top task hyperlink]</a></li>
+                  <li><a href="#">[Top task hyperlink]</a></li>
+                  <li><a href="#">[Top task hyperlink]</a></li>
+                  <li><a href="#">[Top task hyperlink]</a></li>
+                  <li><a href="#">[Top task hyperlink]</a></li>
+                  <li><a href="#">[Top task hyperlink]</a></li>
                </ul>
             </div>
          </section>
@@ -94,49 +100,52 @@
             </section>
          </div>
 		 <section class="audience">
-			<h2>Focus on</h2>
+			<h2>Focus on <small>[optional]</small></h2>
 			<ul class="lst-spcd colcount-sm-2 colcount-md-3">
-			  <li><a href="#">Audience link</a></li>
-			  <li><a href="#">Audience link</a></li>
-			  <li><a href="#">Audience link</a></li>
-			  <li><a href="#">Audience link</a></li>
-			  <li><a href="#">Audience link</a></li>
-			  <li><a href="#">Audience link</a></li>
-			  <li><a href="#">Audience link</a></li>
-			  <li><a href="#">Audience link</a></li>
-			  <li><a href="#">Audience link</a></li>
+			  <li><a href="#">[Audience one-pager]</a></li>
+			  <li><a href="#">[Audience one-pager]</a></li>
+			  <li><a href="#">[Audience one-pager]</a></li>
+			  <li><a href="#">[Audience one-pager]</a></li>
+			  <li><a href="#">[Audience one-pager]</a></li>
+			  <li><a href="#">[Audience one-pager]</a></li>
 			</ul>
 		</section>
          <section class="gc-prtts">
-            <h2>Features</h2>
+            <h2>Features <small>[optional]</small></h2>
             <div class="row wb-eqht">
-               <section class="col-lg-4 col-md-6 mrgn-bttm-md">
-                  <div class="figcaption hght-inhrt">
-                     <figure class="well well-sm brdr-rds-0 hght-inhrt">
-                        <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
-                        <figcaption class="h3 mrgn-tp-sm"><a href="#" class="stretched-link">Title</a></figcaption>
-                        <p class="small">Details go here</p>
-                     </figure>
-                  </div>
-               </section>
-               <section class="col-lg-4 col-md-6 mrgn-bttm-md">
-                  <div class="figcaption hght-inhrt">
-                     <figure class="well well-sm brdr-rds-0 hght-inhrt">
-                        <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
-                        <figcaption class="h3 mrgn-tp-sm"><a href="#" class="stretched-link">Title</a></figcaption>
-                        <p class="small">Details go here</p>
-                     </figure>
-                  </div>
-               </section>
-               <section class="col-lg-4 col-md-6 mrgn-bttm-md">
-                  <div class="figcaption hght-inhrt">
-                     <figure class="well well-sm brdr-rds-0 hght-inhrt">
-                        <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
-                        <figcaption class="h3 mrgn-tp-sm"><a href="#" class="stretched-link">Title</a></figcaption>
-                        <p class="small">Details go here</p>
-                     </figure>
-                  </div>
-               </section>
+               <div class="col-md-4 mrgn-bttm-md">
+                       <section class="figcaption hght-inhrt">
+							<figure class="panel panel-default brdr-rds-0 hght-inhrt">
+							<img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
+							<div class="panel-body">
+								<figcaption class="h3 mrgn-tp-0"><a href="#" class="stretched-link">[Featured hyperlink text]</a></figcaption>
+								<p class="small mrgn-bttm-0">Brief description of the feature being promoted.</p>
+							</div>
+							</figure>
+						</section>
+                 </div>
+					<div class="col-md-4 mrgn-bttm-md">
+                       <section class="figcaption hght-inhrt">
+							<figure class="panel panel-default brdr-rds-0 hght-inhrt">
+							<img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
+							<div class="panel-body">
+								<figcaption class="h3 mrgn-tp-0"><a href="#" class="stretched-link">[Featured hyperlink text]</a></figcaption>
+								<p class="small mrgn-bttm-0">Brief description of the feature being promoted.</p>
+							</div>
+							</figure>
+						</section>
+                 </div>
+					<div class="col-md-4 mrgn-bttm-md">
+                       <section class="figcaption hght-inhrt">
+							<figure class="panel panel-default brdr-rds-0 hght-inhrt">
+							<img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
+							<div class="panel-body">
+								<figcaption class="h3 mrgn-tp-0"><a href="#" class="stretched-link">[Featured hyperlink text]</a></figcaption>
+								<p class="small mrgn-bttm-0">Brief description of the feature being promoted.</p>
+							</div>
+							</figure>
+						</section>
+                 </div>
             </div>
          </section>
          <div class="owner">
