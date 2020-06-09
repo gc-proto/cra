@@ -18,10 +18,8 @@
          document.write(wet.builder.refTop({
          }));
       </script>
-     
       <link href="../css/custom.css" rel="stylesheet">
-	   <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
-	    
+      <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
    </head>
    <body vocab="http://schema.org/" typeof="WebPage">
       <div id="def-top">
@@ -49,51 +47,49 @@
          });
       </script>
       <main role="main" property="mainContentOfPage" class="container">
-         <h1 property="name" id="wb-cont">[Page title]</h1>
-      <!--   <section class="band band-0 mrgn-bttm-0">
-  
-<img class="img-responsive full-width hidden-xs" alt="" src="banner1.png">
-<div class="container">
-<div class="row ">
-<div class="col-md-6 col-lg-4 pstn-bttm-sm mrgn-bttm-md opct-90">
-<div class="panel panel-default brdr-rds-0">
-<div class="panel-body">
-<p class="mrgn-bttm-0">Some sort to brief introductory sentence goes here. </p>
-
-</div>
-
-</div>
-</div>
-</div>
-
-</div></section> 
--->
-<h2>Classes used</h2>
-
-<ul class="colcount-md-3">
-<li><code>.band</code></li>
-<li><code>.container</code></li>
-<li><code>.band-most-requested</code></li>
-<li><code>.band-default</code></li>
-<li><code>.band-warning</code></li>
-<li><code>.p-0</code></li>
-<li><code>.p-xs</code></li>
-<li><code>.p-sm</code></li>
-<li><code>.custom-bg-img</code></li>
-<li><code>.parallax</code></li>
-<li><code>.outset</code></li>
-<li><code>.inset</code></li>
-</ul>
-<h2>Core coding</h2>
-<pre class="prettyprint"><code>&lt;section class="band"&gt;
+         <h1 property="name" id="wb-cont">Bands</h1>
+         <!--   <section class="band band-0 mrgn-bttm-0">
+            <img class="img-responsive full-width hidden-xs" alt="" src="banner1.png">
+            <div class="container">
+            <div class="row ">
+            <div class="col-md-6 col-lg-4 pstn-bttm-sm mrgn-bttm-md opct-90">
+            <div class="panel panel-default brdr-rds-0">
+            <div class="panel-body">
+            <p class="mrgn-bttm-0">Some sort to brief introductory sentence goes here. </p>
+            
+            </div>
+            
+            </div>
+            </div>
+            </div>
+            
+            </div></section> 
+            -->
+         <h2>Classes used</h2>
+         <ul class="colcount-md-3">
+            <li><code>.band</code></li>
+            <li><code>.container</code></li>
+            <li><code>.band-most-requested</code></li>
+            <li><code>.band-default</code></li>
+            <li><code>.band-warning</code></li>
+            <li><code>.p-0</code></li>
+            <li><code>.p-xs</code></li>
+            <li><code>.p-sm</code></li>
+            <li><code>.custom-bg-img</code></li>
+            <li><code>.parallax</code></li>
+            <li><code>.outset</code></li>
+            <li><code>.inset</code></li>
+         </ul>
+         <h2>Core coding</h2>
+         <pre class="prettyprint"><code>&lt;section class="band"&gt;
    &lt;div class="container"&gt;
      ...
    &lt;/div&gt;
 &lt;/section&gt;</code></pre>
-<h2>Basic band</h2>
-<h3>Most requested</h3>
-<p><code>.band .most-requested</code></p>
-<section class="band most-requested">
+         <h2>Basic band</h2>
+         <h3>Most requested</h3>
+         <p><code>.band .most-requested</code></p>
+         <section class="band most-requested">
             <div class="container">
                <h2>Most requested</h2>
                <ul class="lst-spcd colcount-sm-2">
@@ -108,215 +104,211 @@
                </ul>
             </div>
          </section>
-<h3>Gray</h3>
-<p><code>.band .band-default</code></p>
-<div class="band band-default">
-    <div class="container">
-	<p class="mrgn-bttm-0">Content goes here</p>
-	</div>
-	</div>
-	<h3>Add inset</h3>
-	<p><code>.band .band-default .inset</code></p>
-<div class="band band-default inset">
-    <div class="container">
-	<p class="mrgn-bttm-0">Content goes here</p>
-	</div>
-	</div>
-	<h3>Add outset</h3>
-	<p><code>.band .band-default .outset</code></p>
-<div class="band band-default outset">
-    <div class="container">
-	<p class="mrgn-bttm-0">Content goes here</p>
-	</div>
-	</div>
-	<h2>Alert band</h2>
-<h3>Warning</h3>
-	<p><code>.band .band-warning</code> + inner <code>.alert-warning</code></p>
-<div class="band band-warning">
-    <div class="container">
-	<div class="alert alert-warning mrgn-bttm-0 provisional"> 
-     <p class="mrgn-bttm-0">Content goes here</p>
-	 </div>
-	</div>
-	</div>
-	<h3>Top/bottom padding: 0px</h3>
-	<p><code>.band .band-warning .p-0</code> + inner <code>.alert-warning</code></p>
-<div class="band band-warning p-0">
-    <div class="container">
-	<div class="alert alert-warning mrgn-bttm-0 provisional"> 
-     <p class="mrgn-bttm-0">Content goes here</p>
-	 </div>
-	</div>
-	</div>
-	<h3>Top/bottom padding:5px;</h3>
-<p><code>.band .band-warning .p-xs</code> + inner <code>.alert-warning</code></p>
-<div class="band band-warning p-xs">
-    <div class="container">
-	<div class="alert alert-warning mrgn-bttm-0 provisional"> 
-     <p class="mrgn-bttm-0">Content goes here</p>
-	 </div>
-	</div>
-	</div>
-	<h3>Top/bottom padding:10px;</h3>
-	<p><code>.band .band-warning .p-sm</code> + inner <code>.alert-warning</code></p>
-<div class="band band-warning p-sm">
-    <div class="container">
-	<div class="alert alert-warning mrgn-bttm-0 provisional"> 
-     <p class="mrgn-bttm-0">Content goes here</p>
-	 </div>
-	</div>
-	</div>
-	
-<h2>No colour</h2>
-<h3>Inset only</h3>
-	<p><code>.band .inset</code></p>
-<div class="band inset">
-    <div class="container">
-	<p class="mrgn-bttm-0">Content goes here</p>
-	</div>
-	</div>
-	<h3>Outset only</h3>
-	<p><code>.band .outset</code></p>
-<div class="band outset">
-    <div class="container">
-	<p class="mrgn-bttm-0">Content goes here</p>
-	</div>
-	</div>
-	
-	<h2>Custom background image</h2>
-<h3>Static image</h3>
-<p><code>class="band p-0 custom-bg-img" data-image-src="banner2.png"</code> + inner <code>.panel .panel-default .brdr-rds-0 opct-90</code></p>
-	<div class="band p-0 mrgn-bttm-0 custom-bg-img" data-image-src="banner1.png">
-    <div class="container ">
-<div class="row mrgn-tp-lg mrgn-bttm-lg">
-<div class="col-md-6 col-lg-5">
-<div class="panel panel-default brdr-rds-0 mrgn-bttm-0 opct-90">
-<div class="panel-body">
-<p class="mrgn-bttm-0">Content goes here</p>
-
-
-
-</div>
-</div></div>
-</div>
-</div>
-  </div>
-  <h3>Parallax image</h3>
-<p><code>class="band p-0 custom-bg-img parallax" data-image-src="banner2.png"</code> + inner <code>.panel .panel-default .brdr-rds-0</code></p>
-  <div class="band band-0 mrgn-bttm-0 custom-bg-img parallax" data-image-src="banner1.png">
-    <div class="container ">
-<div class="row mrgn-tp-lg mrgn-bttm-lg">
-<div class="col-md-6 col-lg-5">
-<div class="panel panel-default brdr-rds-0 mrgn-bttm-0">
-<div class="panel-body">
-<p class="mrgn-bttm-0">Content goes here </p>
-
-</div>
-
-</div>
-</div></div>
-</div>
-
-
-  </div>
-  
-  <h2>Layering concepts</h2>
-   
-        <p>
-   
-		
-		 
-		 
-		 
-		 
-		 
-<section class="band band-sm band-default  mrgn-bttm-0">
-    <div class="container">
-	 <h2 class="mrgn-tp-0 h3 mrgn-bttm-0">Features</h2>
-	 </div>
-	 </section>
-  <section class="band band-sm  mrgn-bttm-xl custom-bg-img parallax" data-image-src="banner3.jpg">
-    <div class="container">
-	
-
-    <section class="gc-prtts mrgn-tp-md">
-           
-            <div class="row wb-eqht">
-               <section class="col-md-4 mrgn-bttm-md">
-                  <div class="figcaption hght-inhrt">
-                     <figure class="well well-sm brdr-rds-0 hght-inhrt">
-                        <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
-                        <figcaption class="h3 mrgn-tp-sm"><a href="#" class="stretched-link">Title</a></figcaption>
-                        <p class="small">Details go here</p>
-                     </figure>
+		 <details><summary>View code</summary>
+<pre><code>&lt;section class="band most-requested"&gt;
+&lt;div class="container"&gt;
+   &lt;h2&gt;Most requested&lt;/h2&gt;
+   &lt;ul class="lst-spcd colcount-sm-2"&gt;
+	  &lt;li&gt;&lt;a href="#"&gt;[Link text goes here]&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href="#"&gt;[Link text goes here]&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href="#"&gt;[Link text goes here]&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href="#"&gt;[Link text goes here]&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href="#"&gt;[Link text goes here]&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href="#"&gt;[Link text goes here]&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href="#"&gt;[Link text goes here]&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href="#"&gt;[Link text goes here]&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+		 </details>
+         <h3>Gray</h3>
+         <p><code>.band .band-default</code></p>
+         <div class="band band-default">
+            <div class="container">
+               <p class="mrgn-bttm-0">Content goes here</p>
+            </div>
+         </div>
+         <h3>Add inset</h3>
+         <p><code>.band .band-default .inset</code></p>
+         <div class="band band-default inset">
+            <div class="container">
+               <p class="mrgn-bttm-0">Content goes here</p>
+            </div>
+         </div>
+         <h3>Add outset</h3>
+         <p><code>.band .band-default .outset</code></p>
+         <div class="band band-default outset">
+            <div class="container">
+               <p class="mrgn-bttm-0">Content goes here</p>
+            </div>
+         </div>
+         <h2>Alert band</h2>
+         <h3>Warning</h3>
+         <p><code>.band .band-warning</code> + inner <code>.alert-warning</code></p>
+         <div class="band band-warning">
+            <div class="container">
+               <div class="alert alert-warning mrgn-bttm-0 provisional">
+                  <p class="mrgn-bttm-0">Content goes here</p>
+               </div>
+            </div>
+         </div>
+         <h3>Top/bottom padding: 0px</h3>
+         <p><code>.band .band-warning .p-0</code> + inner <code>.alert-warning</code></p>
+         <div class="band band-warning p-0">
+            <div class="container">
+               <div class="alert alert-warning mrgn-bttm-0 provisional">
+                  <p class="mrgn-bttm-0">Content goes here</p>
+               </div>
+            </div>
+         </div>
+         <h3>Top/bottom padding:5px;</h3>
+         <p><code>.band .band-warning .p-xs</code> + inner <code>.alert-warning</code></p>
+         <div class="band band-warning p-xs">
+            <div class="container">
+               <div class="alert alert-warning mrgn-bttm-0 provisional">
+                  <p class="mrgn-bttm-0">Content goes here</p>
+               </div>
+            </div>
+         </div>
+         <h3>Top/bottom padding:10px;</h3>
+         <p><code>.band .band-warning .p-sm</code> + inner <code>.alert-warning</code></p>
+         <div class="band band-warning p-sm">
+            <div class="container">
+               <div class="alert alert-warning mrgn-bttm-0 provisional">
+                  <p class="mrgn-bttm-0">Content goes here</p>
+               </div>
+            </div>
+         </div>
+         <h2>No colour</h2>
+         <h3>Inset only</h3>
+         <p><code>.band .inset</code></p>
+         <div class="band inset">
+            <div class="container">
+               <p class="mrgn-bttm-0">Content goes here</p>
+            </div>
+         </div>
+         <h3>Outset only</h3>
+         <p><code>.band .outset</code></p>
+         <div class="band outset">
+            <div class="container">
+               <p class="mrgn-bttm-0">Content goes here</p>
+            </div>
+         </div>
+         <h2>Custom background image</h2>
+         <h3>Static image</h3>
+         <p><code>class="band p-0 custom-bg-img" data-image-src="banner2.png"</code> + inner <code>.panel .panel-default .brdr-rds-0 opct-90</code></p>
+         <div class="band p-0 mrgn-bttm-0 custom-bg-img" data-image-src="banner1.png">
+            <div class="container ">
+               <div class="row mrgn-tp-lg mrgn-bttm-lg">
+                  <div class="col-md-6 col-lg-5">
+                     <div class="panel panel-default brdr-rds-0 mrgn-bttm-0 opct-90">
+                        <div class="panel-body">
+                           <p class="mrgn-bttm-0">Content goes here</p>
+                        </div>
+                     </div>
                   </div>
-               </section>
-               <section class="col-md-4  mrgn-bttm-md">
-                  <div class="figcaption hght-inhrt">
-                     <figure class="well well-sm brdr-rds-0 hght-inhrt">
-                        <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
-                        <figcaption class="h3 mrgn-tp-sm"><a href="#" class="stretched-link">Title</a></figcaption>
-                        <p class="small">Details go here</p>
-                     </figure>
+               </div>
+            </div>
+         </div>
+         <h3>Parallax image</h3>
+         <p><code>class="band p-0 custom-bg-img parallax" data-image-src="banner2.png"</code> + inner <code>.panel .panel-default .brdr-rds-0</code></p>
+         <div class="band band-0 mrgn-bttm-0 custom-bg-img parallax" data-image-src="banner1.png">
+            <div class="container ">
+               <div class="row mrgn-tp-lg mrgn-bttm-lg">
+                  <div class="col-md-6 col-lg-5">
+                     <div class="panel panel-default brdr-rds-0 mrgn-bttm-0">
+                        <div class="panel-body">
+                           <p class="mrgn-bttm-0">Content goes here </p>
+                        </div>
+                     </div>
                   </div>
-               </section>
-               <section class="col-md-4 mrgn-bttm-md">
-                  <div class="figcaption hght-inhrt">
-                     <figure class="well well-sm brdr-rds-0 hght-inhrt">
-                        <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
-                        <figcaption class="h3 mrgn-tp-sm"><a href="#" class="stretched-link">Title</a></figcaption>
-                        <p class="small">Details go here</p>
-                     </figure>
+               </div>
+            </div>
+         </div>
+         <h2>Layering concepts</h2>
+         <p>
+         <section class="band band-sm band-default  mrgn-bttm-0">
+            <div class="container">
+               <h2 class="mrgn-tp-0 h3 mrgn-bttm-0">Features</h2>
+            </div>
+         </section>
+         <section class="band band-sm  mrgn-bttm-xl custom-bg-img parallax" data-image-src="banner3.jpg">
+            <div class="container">
+               <section class="gc-prtts mrgn-tp-md">
+                  <div class="row wb-eqht">
+                     <section class="col-md-4 mrgn-bttm-md">
+                        <div class="figcaption hght-inhrt">
+                           <figure class="well well-sm brdr-rds-0 hght-inhrt">
+                              <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
+                              <figcaption class="h3 mrgn-tp-sm"><a href="#" class="stretched-link">Title</a></figcaption>
+                              <p class="small">Details go here</p>
+                           </figure>
+                        </div>
+                     </section>
+                     <section class="col-md-4  mrgn-bttm-md">
+                        <div class="figcaption hght-inhrt">
+                           <figure class="well well-sm brdr-rds-0 hght-inhrt">
+                              <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
+                              <figcaption class="h3 mrgn-tp-sm"><a href="#" class="stretched-link">Title</a></figcaption>
+                              <p class="small">Details go here</p>
+                           </figure>
+                        </div>
+                     </section>
+                     <section class="col-md-4 mrgn-bttm-md">
+                        <div class="figcaption hght-inhrt">
+                           <figure class="well well-sm brdr-rds-0 hght-inhrt">
+                              <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
+                              <figcaption class="h3 mrgn-tp-sm"><a href="#" class="stretched-link">Title</a></figcaption>
+                              <p class="small">Details go here</p>
+                           </figure>
+                        </div>
+                     </section>
                   </div>
                </section>
             </div>
          </section>
-	
-	
-    </div>
-  </section>  <h2 class="mrgn-tp-0 h3">Features</h2>
-		<section class="band band-sm  mrgn-bttm-xl custom-bg-img parallax outset" data-image-src="banner2.png">
-		<div class="container">
-         <section class="gc-prtts">
-          
-            <div class="row wb-eqht mrgn-tp-md">
-               <section class="col-lg-4 col-md-6 mrgn-bttm-md">
-                  <div class="figcaption hght-inhrt">
-                     <figure class="panel panel-default brdr-rds-0 hght-inhrt mrgn-bttm-0">
-                        <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
-						<div class="panel-body">
-                        <figcaption class="h3 mrgn-tp-sm"><a href="#" class="stretched-link">Title</a></figcaption>
-                        <p class="small">Details go here</p>
-						</div>
-                     </figure>
-                  </div>
-               </section>
-               <section class="col-lg-4 col-md-6 mrgn-bttm-md">
-                  <div class="figcaption hght-inhrt">
-                     <figure class="panel panel-default brdr-rds-0 hght-inhrt mrgn-bttm-0">
-                        <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
-						<div class="panel-body">
-                        <figcaption class="h3 mrgn-tp-sm"><a href="#" class="stretched-link">Title</a></figcaption>
-                        <p class="small">Details go here</p>
-						</div>
-                     </figure>
-                  </div>
-               </section>
-               <section class="col-lg-4 col-md-6 mrgn-bttm-md">
-                  <div class="figcaption hght-inhrt">
-                    <figure class="panel panel-default brdr-rds-0 hght-inhrt mrgn-bttm-0">
-                        <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
-						<div class="panel-body">
-                        <figcaption class="h3 mrgn-tp-sm"><a href="#" class="stretched-link">Title</a></figcaption>
-                        <p class="small">Details go here</p>
-						</div>
-                     </figure>
+         <h2 class="mrgn-tp-0 h3">Features</h2>
+         <section class="band band-sm  mrgn-bttm-xl custom-bg-img parallax outset" data-image-src="banner2.png">
+            <div class="container">
+               <section class="gc-prtts">
+                  <div class="row wb-eqht mrgn-tp-md">
+                     <section class="col-lg-4 col-md-6 mrgn-bttm-md">
+                        <div class="figcaption hght-inhrt">
+                           <figure class="panel panel-default brdr-rds-0 hght-inhrt mrgn-bttm-0">
+                              <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
+                              <div class="panel-body">
+                                 <figcaption class="h3 mrgn-tp-sm"><a href="#" class="stretched-link">Title</a></figcaption>
+                                 <p class="small">Details go here</p>
+                              </div>
+                           </figure>
+                        </div>
+                     </section>
+                     <section class="col-lg-4 col-md-6 mrgn-bttm-md">
+                        <div class="figcaption hght-inhrt">
+                           <figure class="panel panel-default brdr-rds-0 hght-inhrt mrgn-bttm-0">
+                              <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
+                              <div class="panel-body">
+                                 <figcaption class="h3 mrgn-tp-sm"><a href="#" class="stretched-link">Title</a></figcaption>
+                                 <p class="small">Details go here</p>
+                              </div>
+                           </figure>
+                        </div>
+                     </section>
+                     <section class="col-lg-4 col-md-6 mrgn-bttm-md">
+                        <div class="figcaption hght-inhrt">
+                           <figure class="panel panel-default brdr-rds-0 hght-inhrt mrgn-bttm-0">
+                              <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
+                              <div class="panel-body">
+                                 <figcaption class="h3 mrgn-tp-sm"><a href="#" class="stretched-link">Title</a></figcaption>
+                                 <p class="small">Details go here</p>
+                              </div>
+                           </figure>
+                        </div>
+                     </section>
                   </div>
                </section>
             </div>
          </section>
-		 </div>
-		 </section>
          <div class="owner">
             <p>From:</p>
             <ul class="list-inline">
@@ -363,6 +355,6 @@
          }));
       </script>
       <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
-	 <script src="../js/bg-img.js"></script>
+      <script src="../js/bg-img.js"></script>
    </body>
 </html>
