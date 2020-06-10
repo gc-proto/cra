@@ -113,6 +113,7 @@ ul.gcnav-steps>li ul.gcnav-steps.noline>li.active::before {
 	font-weight: inherit;
 	padding-bottom: 0px!important;
 	margin-bottom: 0px;
+	font-size: 1.52em;
 }
 .gcnav-section h1#wb-cont {
 	margin-top: 0px;
