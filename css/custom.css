@@ -332,9 +332,7 @@ h1 span.stacked span:nth-child(2) {
         background: url(images/youtube.png) no-repeat !important;
 }
 /*Full-width bands + alerts  + most requested*/
-body { 
-	overflow-x:hidden;
-}
+
 .band {
 	width: 100vw;
     position: relative;
