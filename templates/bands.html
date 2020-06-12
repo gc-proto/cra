@@ -65,6 +65,33 @@
             
             </div></section> 
             -->
+			
+<!--
+<table>
+<thead>
+  <tr>
+    <th class="tg-0pky">aaaaaaaaaaaaaaaaaaaaaaaaaaa</th>
+    <th class="tg-0pky">aaaaaaaaaaaaaaaaaaaaaaaaaaa</th>
+   <th class="tg-0pky">aaaaaaaaaaaaaaaaaaaaaaaaaaa</th>
+   <th class="tg-0pky">aaaaaaaaaaaaaaaaaaaaaaaaaaa</th>
+   <th class="tg-0pky">aaaaaaaaaaaaaaaaaaaaaaaaaaa</th>
+   <th class="tg-0pky">aaaaaaaaaaaaaaaaaaaaaaaaaaa</th>
+   <th class="tg-0pky">aaaaaaaaaaaaaaaaaaaaaaaaaaa</th>
+   <th class="tg-0pky">aaaaaaaaaaaaaaaaaaaaaaaaaaa</th>
+   <th class="tg-0pky">aaaaaaaaaaaaaaaaaaaaaaaaaaa</th>
+   <th class="tg-0pky">aaaaaaaaaaaaaaaaaaaaaaaaaaa</th>
+   <th class="tg-0pky">aaaaaaaaaaaaaaaaaaaaaaaaaaa</th>
+   <th class="tg-0pky">aaaaaaaaaaaaaaaaaaaaaaaaaaa</th>
+   <th class="tg-0pky">aaaaaaaaaaaaaaaaaaaaaaaaaaa</th>
+   <th class="tg-0pky">aaaaaaaaaaaaaaaaaaaaaaaaaaa</th>
+   <th class="tg-0pky">aaaaaaaaaaaaaaaaaaaaaaaaaaa</th>
+  </tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>
+-->
          <h2>Classes used</h2>
          <ul class="colcount-md-3">
             <li><code>.band</code></li>
@@ -365,5 +392,14 @@
       </script>
       <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
       <script src="../js/bg-img.js"></script>
+	  <script>
+	  function setVw() {
+  let vw = document.documentElement.clientWidth / 100;
+  document.documentElement.style.setProperty('--vw', `${vw}px`);
+}
+
+setVw();
+window.addEventListener('resize', setVw);
+</script>
    </body>
 </html>
