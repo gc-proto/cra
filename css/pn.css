@@ -158,7 +158,7 @@ ul.gcnav-steps>li ul.gcnav-steps.noline>li.active::before {
 	border-top: 0px;
 	border-right: 0px;
 }
-.gcnav ul.gcnav-steps>li:last-child {
+.gcnav .gcnav-menu ul.gcnav-steps>li:last-child {
 	border-left: 4px solid transparent;
 	border-bottom: 0px;
 }
