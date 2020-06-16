@@ -76,12 +76,12 @@ ul.gcnav-steps>li ul.gcnav-steps.noline>li.active::before {
 	padding-top: 10px;
 	clear: both;
 }
-.gcnav ul.gcnav-steps>li:last-child {
+.gcnav .gcnav-menu ul.gcnav-steps>li:last-child {
 	border-left: 4px solid #26374a;
 	border-bottom: 4px solid #26374a;
 	border-bottom-left-radius: 6px;
 }
-.gcnav ul.gcnav-steps>li ul.gcnav-steps>li:last-child {
+.gcnav .gcnav-menu ul.gcnav-steps>li ul.gcnav-steps>li:last-child {
 	border-left: 4px solid transparent;
 	border-bottom: 0px;
 }
