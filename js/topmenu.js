@@ -1,7 +1,7 @@
 	/*Binds a navigation button for keyboard/screen readers to skip to the section navigation menu at the top of the template page */
 		(function( $, document, wb ) {
 	"use strict";
-if($('.gcnav').length> 0){
+if($('.gcnav-menu').length> 0){
 	var pgLang = $("html").prop("lang");
 	/*Language change */
 	switch( pgLang.toLowerCase() ){
