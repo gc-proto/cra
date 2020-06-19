@@ -113,6 +113,9 @@ ul.gcnav-steps>li ul.gcnav-steps.noline>li.active::before {
 .gcnav {
 	margin: 38px -15px 0px -15px;
 }
+.gcnav-menu {
+	margin-top: 0px;
+	}
 .gcnav::after {
 	clear: both;
 }
