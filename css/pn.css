@@ -60,7 +60,7 @@ ul.gcnav-steps>li ul.gcnav-steps.noline>li.active::before {
 	margin-top: 0.825em;
 }
 /*Persistant navigation pattern default mobile */
-.gcnav h1#wb-cont-parent {
+.gcnav .gcnav-menu h1#wb-cont-parent {
 	border-bottom-width: 0px;
 	padding: 0px 20px 10px 0px;
 	background-color: #fff;
