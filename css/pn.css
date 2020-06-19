@@ -4,6 +4,7 @@ ul.gcnav-steps {
 	list-style: none;
 	padding-left: 0.57em;
 	position: relative;
+	margin-top: 0.325em;
 }
 ul.gcnav-steps li ul.gcnav-steps {
 	margin-top: 20px;
@@ -12,12 +13,15 @@ ul.gcnav-steps li ul.gcnav-steps {
 ul.gcnav-steps>li {
 	border-left: 4px solid #26374a;
 	padding: 0px 20px 30px 1em;
+	margin-top: -0.325em;
+}
+ul.gcnav-steps>li:first-child {
+	border-left: 4px solid #26374a;
+	border-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0) 0.4em, #26374a 0.4em) 1;
 }
 ul.gcnav-steps>li ul.gcnav-steps.noline>li {
 	border-left: 4px solid transparent;
-}
-ul.gcnav-steps>li::first-line {
-	line-height: 1!important;
+	border-image: none;
 }
 ul.gcnav-steps>li:last-child, ul.gcnav-steps>li.gcnav-steps-end {
 	border-left: 4px solid transparent;
@@ -35,6 +39,7 @@ ul.gcnav-steps>li>:first-child::before {
 	width: 1.2em;
 	height: 1.2em;
 	transition: width 0.2s, height 0.2s, left 0.2s, margin-top 0.2s;
+	margin-top: 0.325em;
 }
 ul.gcnav-steps>li.active>:first-child::before {
 	background-color: #26374a;
@@ -43,7 +48,7 @@ ul.gcnav-steps>li>a[href]:hover::before, .gcnav-steps>li>a[href]:focus::before {
 	width: 1.4em;
 	height: 1.4em;
 	left: -0.05em;
-	margin-top: -0.1em;
+	margin-top: 0.225em;
 }
 ul.gcnav-steps>li ul.gcnav-steps.noline>li.active::before {
 	content: " ";
@@ -52,7 +57,7 @@ ul.gcnav-steps>li ul.gcnav-steps.noline>li.active::before {
 	background-color: #26374a;
 	position: absolute;
 	margin-left: -2.8em;
-	margin-top: 0.5em;
+	margin-top: 0.825em;
 }
 /*Persistant navigation pattern default mobile */
 .gcnav h1#wb-cont-parent {
@@ -66,13 +71,13 @@ ul.gcnav-steps>li ul.gcnav-steps.noline>li.active::before {
 	float: left;
 	margin-right: 20px;
 }
-.gcnav-menu {
+.gcnav .gcnav-menu {
 	border-top: 4px solid #26374a;
 	border-right: 4px solid #26374a;
 	border-radius: 0px 6px 6px 0px;
 	margin-top: 38px;
 }
-.gcnav-menu ul.gcnav-steps {
+.gcnav .gcnav-menu ul.gcnav-steps {
 	padding-top: 10px;
 	clear: both;
 }
@@ -85,13 +90,16 @@ ul.gcnav-steps>li ul.gcnav-steps.noline>li.active::before {
 	border-left: 4px solid transparent;
 	border-bottom: 0px;
 }
-.gcnav-menu nav, .gcnav aside.gcnav-side {
+.gcnav .gcnav-menu nav, .gcnav aside.gcnav-side {
 	clear: left;
 }
-
+.gcnav>h1#wb-cont {
+	margin-left: 15px;
+	margin-right: 15px;
+}
 /*Header for navigation menu hidden in mobile except on focus*/
 @media all and (max-width:991px) {
-#gcnav-menu-header:not(:focus) {
+.gcnav .gcnav-menu #gcnav-menu-header:not(:focus) {
 	clip: rect(1px, 1px, 1px, 1px);
 	height: 1px;
 	margin: 0;
@@ -100,61 +108,59 @@ ul.gcnav-steps>li ul.gcnav-steps.noline>li.active::before {
 	width: 1px;
 }
 }
-
 /* Persistant navigation desktop */
 @media all and (min-width:992px) {
-.gcnav, .gcnav-index {
-	margin: 0px -15px 0px -15px;
+.gcnav {
+	margin: 38px -15px 0px -15px;
 }
-.gcnav::after, .gcnav-index::after {
+.gcnav::after {
 	clear: both;
 }
-.gcnav::after, .gcnav-index::after, .gcnav::before, .gcnav-::before {
+.gcnav::after, .gcnav::before {
 	content: " ";
 	display: table;
 }
-.gcnav-menu h1#wb-cont-parent {
+.gcnav .gcnav-menu h1#wb-cont-parent {
 	font-weight: inherit;
 	padding-bottom: 0px!important;
 	margin-bottom: 0px;
 	font-size: 1.52em;
 }
-.gcnav-section h1#wb-cont {
+.gcnav .gcnav-menu h1#wb-cont-parent, .gcnav .gcnav-section h1#wb-cont {
 	margin-top: 0px;
 }
-.gcnav-menu h1#wb-cont-parent, .gcnav-section {
+.gcnav .gcnav-menu h1#wb-cont-parent, .gcnav .gcnav-section {
 	width: 66.66%;
 }
-.gcnav-menu nav, .gcnav aside.gcnav-side {
+.gcnav .gcnav-menu nav, .gcnav aside.gcnav-side, .gcnav .gcnav-side {
 	width: 33.33%;
 	float: right;
 }
-.gcnav-section {
+.gcnav .gcnav-section {
 	display: inline-block;
 }
-.gcnav-menu nav {
+.gcnav .gcnav-menu nav {
 	margin-top: -20px;
 }
-.gcnav-menu h1#wb-cont-parent, .gcnav-section, .gcnav-menu nav, .gcnav aside.gcnav-side {
+.gcnav .gcnav-menu h1#wb-cont-parent, .gcnav .gcnav-section, .gcnav .gcnav-menu nav, .gcnav aside.gcnav-side, .gcnav .gcnav-side {
 	position: relative;
 	min-height: 1px;
 	padding: 0px 15px 0px 15px;
 }
-.gcnav-menu h1#wb-cont-parent {
+.gcnav .gcnav-menu h1#wb-cont-parent {
 	float: left;
 }
 .gcnav aside.gcnav-side {
 	clear: right;
 }
-#gcnav-menu-header {
-	display: inherit;
+.gcnav .gcnav-menu #gcnav-menu-header {
 	margin-top: 0px;
-	float: left;
 }
-.gcnav-menu #gcnav-menu-header {
+.gcnav #gcnav-menu-header {
 	font-size: 1.2em;
+	display: inherit;
 }
-.gcnav-menu {
+.gcnav .gcnav-menu {
 	border-top: 0px;
 	border-right: 0px;
 }
@@ -163,37 +169,7 @@ ul.gcnav-steps>li ul.gcnav-steps.noline>li.active::before {
 	border-bottom: 0px;
 }
 }
- @-moz-document url-prefix() {
-ul.gc-navseq>li>:first-child::before {
-margin-left: -2.0em;
-}
- ul.gcnav-steps>li ul.gcnav-steps>li.active::before {
- margin-left:-2.75em;
-}
-}
-/*Stacked H1*/
-h1 span.stacked {
-	display: flex;
-	flex-direction: column-reverse;
-	margin-left: -9999px;
-}
-h1 span.stacked span:nth-child(1) {
-	margin-top: -1.1em;
-}
-h1 span.stacked span:nth-child(1), h1 span.stacked span:nth-child(2) {
-	margin-left: 9999px;
-}
-h1 span.stacked span:nth-child(2) {
-	font-size: 0.8em;
-	color: #666;
-	font-weight: 500;
-	margin-bottom: 0.17em;
-}
-
-/* Single stacked h1 navigation (starts with .stack-pn) */
-	
-@media all and (min-width:992px) {
-.stack-pn .gcnav-menu {
-	margin-top: -25px;
+ul.gcnav-steps>li ul.gcnav-steps>li.active::before {
+	margin-left: -2.75em;
 }
 }
