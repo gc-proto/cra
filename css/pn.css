@@ -113,9 +113,6 @@ ul.gcnav-steps>li ul.gcnav-steps.noline>li.active::before {
 .gcnav {
 	margin: 38px -15px 0px -15px;
 }
-.gcnav-menu {
-	margin-top: 0px;
-	}
 .gcnav::after {
 	clear: both;
 }
@@ -129,7 +126,7 @@ ul.gcnav-steps>li ul.gcnav-steps.noline>li.active::before {
 	margin-bottom: 0px;
 	font-size: 1.52em;
 }
-.gcnav .gcnav-menu h1#wb-cont-parent, .gcnav .gcnav-section h1#wb-cont {
+.gcnav .gcnav-menu, .gcnav .gcnav-menu h1#wb-cont-parent, .gcnav .gcnav-section h1#wb-cont {
 	margin-top: 0px;
 }
 .gcnav .gcnav-menu h1#wb-cont-parent, .gcnav .gcnav-section {
