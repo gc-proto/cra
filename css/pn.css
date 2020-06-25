@@ -10,10 +10,12 @@ ul.gcnav-steps li ul.gcnav-steps {
 	margin-top: 20px;
 	padding-left: 0.55em;
 }
+/*border-right-width is for safari or apple browsers only */
 ul.gcnav-steps>li {
 	border-left: 4px solid #26374a;
 	padding: 0px 20px 30px 1em;
 	margin-top: -0.325em;
+	border-right-width: 0px;
 }
 ul.gcnav-steps>li:first-child {
 	border-left: 4px solid #26374a;
