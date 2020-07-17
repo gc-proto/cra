@@ -5,7 +5,7 @@
       <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
       <title>Equal heights (Pure CSS): Example 2 – Canada.ca</title>
       <meta content="width=device-width,initial-scale=1" name="viewport">
-      <meta name=”robots” content=”noindex”>
+      <meta name="robots" content="noindex">
       <!-- Meta data -->
       <!-- Meta data-->
       <!-- Load closure template scripts -->
@@ -21,6 +21,49 @@
       <link href="../css/eqht.css" rel="stylesheet">
       
       <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
+<style>
+.inset {
+	border-top: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
+	box-shadow: inset 0px 0px 8px #e3e3e3;
+}
+.band-default {
+	background: #f9f9f9;
+	outline: #f9f9f9 solid 20px;
+}
+.band {
+	margin-bottom: 20px;
+	position: relative;
+	margin-left: -49.5vw;
+	width: 99vw;
+	left: 49.5%;
+	padding: 8px 0px 8px 0px;
+}
+.band-default2 {
+	background: #f9f9f9;
+	box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 0px -4px #f9f9f9, -12px 0 0px -4px #f9f9f9;
+	padding: 20px 0px 20px 0px;
+}
+.wb-eqht-css {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	height: 100%;
+}
+.wb-eqht-css [class*='col-'] {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+.wb-eqht-css .hght-inhrt-css {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+}
+.wb-eqht-css .hght-inhrt-css .eqht-trgt-css {
+	flex: 1 1 auto;
+}
+</style>	   
      <style>
 /*Beta tag*/
 /*.csc-about .container:first-child,.yes-goal-bnr,.csc-banner-header,.csc-banner,.csc-bnr{
@@ -1861,6 +1904,7 @@ background-color:#FFF;
 	}
 }	
 </style> 
+	</noscript>
    </head>
    <body vocab="http://schema.org/" typeof="WebPage">
       <div id="def-top">
@@ -2004,7 +2048,7 @@ background-color:#FFF;
 				  <th class="hidden">Opportunity closing unix time</th>
                 </tr>
               </thead>
-              <tbody class="wb-eqht">
+              <tbody class="wb-eqht-css">
               <tr class="yes-card-toggle ln-hght-sm" style="position:relative">
                 <td><div class="h3 mrgn-bttm-0">Volunteers</div>
 				  <p class="small mrgn-tp-0 mrgn-bttm-md">Kinnears Mills, Quebec</p></td>
@@ -2062,7 +2106,7 @@ background-color:#FFF;
 					<div  class="extdsc">
 					<dl class="list-unstyled">
 						<dt>Service opportunity</dt>
-						<dd><p>Lend a hand to Camp Le Saisonnier by helping young Québécois reach their potential and adopt a healthier lifestyle. The organization needs volunteers to revamp on-site buildings so it can welcome everyone safely.</p></dd>
+						<dd><p>Lend a hand to Camp Le Saisonnier by helping young Québécois reach their potential and adopt a healthier lifestyle. The organization needs volunteers to revamp on-site buildings so it can welcome everyone safely.</p></dd>
 						<dt>Skills</dt>
 						<dd class="break-all"><p>Communication;Creativity;Teamwork;Leadership;Manual;Organizational;Problem solving</p> <p></p></dd>
 						<dt>Commitment</dt>
@@ -2104,7 +2148,7 @@ background-color:#FFF;
 					<div  class="extdsc">
 					<dl class="list-unstyled">
 						<dt>Service opportunity</dt>
-						<dd><p>Give a helping hand to Camp Jean-Jeune by doing manual labour and general maintenance work on the grounds and buildings of the camp. It will improve the experience for the 2,000 and plus children and their family who visit the camp. Restore the current infrastructure and develop new services for clients.</p></dd>
+						<dd><p>Give a helping hand to Camp Jean-Jeune by doing manual labour and general maintenance work on the grounds and buildings of the camp. It will improve the experience for the 2,000 and plus children and their family who visit the camp. Restore the current infrastructure and develop new services for clients.</p></dd>
 						<dt>Skills</dt>
 						<dd class="break-all"><p>Communication;Creativity;Teamwork;Leadership;Manual;Organizational;Problem solving</p> <p></p></dd>
 						<dt>Commitment</dt>
@@ -2146,7 +2190,7 @@ background-color:#FFF;
 					<div  class="extdsc">
 					<dl class="list-unstyled">
 						<dt>Service opportunity</dt>
-						<dd><p>Get involved and give an unforgettable summer camp experience for children and adults with special needs by improving the camp’s infrastructure and supervise campers. This project will make a significant difference in campers’ lives and how they see the world. Volunteers will be trained.</p></dd>
+						<dd><p>Get involved and give an unforgettable summer camp experience for children and adults with special needs by improving the camp’s infrastructure and supervise campers. This project will make a significant difference in campers’ lives and how they see the world. Volunteers will be trained.</p></dd>
 						<dt>Skills</dt>
 						<dd class="break-all"><p>Communication;Creativity;Teamwork;Leadership;Organizational;Problem solving;Other</p> <p>Animation</p></dd>
 						<dt>Commitment</dt>
@@ -2188,7 +2232,7 @@ background-color:#FFF;
 					<div  class="extdsc">
 					<dl class="list-unstyled">
 						<dt>Service opportunity</dt>
-						<dd><p>Create a healthy environment for the children attending Camp Le Manoir by doing some maintenance to ensure the safety of children. It is also the ideal time to start new projects, such as a camping site.</p></dd>
+						<dd><p>Create a healthy environment for the children attending Camp Le Manoir by doing some maintenance to ensure the safety of children. It is also the ideal time to start new projects, such as a camping site.</p></dd>
 						<dt>Skills</dt>
 						<dd class="break-all"><p>Communication;Creativity;Teamwork;Leadership;Manual;Organizational;Problem solving</p> <p></p></dd>
 						<dt>Commitment</dt>
@@ -2230,7 +2274,7 @@ background-color:#FFF;
 					<div  class="extdsc">
 					<dl class="list-unstyled">
 						<dt>Service opportunity</dt>
-						<dd><p>Contribute to the reopening of Village Beauceron by helping the locals to make  a place where families can have fun, where people can enjoy various leisure activities, and where everyone can learn about the region’s history.</p></dd>
+						<dd><p>Contribute to the reopening of Village Beauceron by helping the locals to make  a place where families can have fun, where people can enjoy various leisure activities, and where everyone can learn about the region’s history.</p></dd>
 						<dt>Skills</dt>
 						<dd class="break-all"><p>Communication;Creativity;Teamwork;Leadership;Manual;Organizational;Problem solving</p> <p></p></dd>
 						<dt>Commitment</dt>
@@ -2618,6 +2662,7 @@ background-color:#FFF;
 						<dd><time>2019-05-20</time></dd>
 						<dt>End date</dt>
 						<dd><time>2020-06-01</time></dd>
+
 						<dt>Duration</dt>
 						<dd><p>3-12 months</p></dd>
 						<dt>Compensation</dt>
