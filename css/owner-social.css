@@ -1,0 +1,81 @@
+/*Page owner(s) and social media links*/
+.owner {
+        float: left !important;
+}
+.owner p {
+        float: left !important;
+}
+.owner ul {
+        float: left !important;
+}
+.owner li {
+        padding: 0 10px !important;
+}
+.gc-theme .profile {
+        margin: 1.25em 0 .9em !important;
+}
+.followus {
+        float: right !important;
+        margin: 10px 0 0 40px !important;
+        background: none !important;
+        padding: 0 !important;
+}
+.band .followus {
+        float: none !important;
+		margin:0 !important;
+}
+ 
+@media screen and (max-width:479px) {
+ 
+.followus {
+        float: none !important;
+        margin-left: 0 !important;
+}
+}
+.followus h2 {
+        margin: 5px 4px 0 0 !important;
+        font-size: 16px !important;
+        display: block !important;
+        float: left !important;
+}
+.followus ul li a {
+        padding: 15px 22px 0 !important;
+        border: none !important;
+}
+.followus ul li a:hover, .followus ul li a:focus {
+        opacity: .6 !important;
+        border: none !important;
+}
+.followus .email {
+        background: url(images/email.png) no-repeat !important;
+}
+.followus .facebook {
+        background: url(images/facebook.png) no-repeat !important;
+}
+.followus .flickr {
+        background: url(images/flickr.png) no-repeat !important;
+}
+.followus .googleplus {
+        background: url(images/googleplus.png) no-repeat !important;
+}
+.followus .instagram {
+        background: url(images/instagram.png) no-repeat !important;
+}
+.followus .linkedin {
+        background: url(images/linkedin.png) no-repeat !important;
+}
+.followus .periscope {
+        background: url(images/periscope.png) no-repeat !important;
+}
+.followus .pinterest {
+        background: url(images/pinterest.png) no-repeat !important;
+}
+.followus .rss {
+        background: url(images/rss.png) no-repeat !important;
+}
+.followus .twitter {
+        background: url(images/twitter.png) no-repeat !important;
+}
+.followus .youtube {
+        background: url(images/youtube.png) no-repeat !important;
+}
