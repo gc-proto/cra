@@ -32,4 +32,9 @@
  .navbar-toggle {
     margin:3px 15px 0 0;
 }
+@media all and (min-width: 767px) and (max-width: 992px) {
+.nav>li>a {
+	padding-left:10px;
+	padding-right:10px;
+}
 

@@ -1,3 +1,17 @@
-.list-inline .btn-link {
+.topic-tools{
+	background:#26374a;
+	color:#fff;
+}
+.topic-tools a, .topic-tools a:hover, .topic-tools a:active, .topic-tools a:visited {
+	color:#fff;
+}
+.topic-tools .btn-call-to-action {
+	margin-top:10px;
 	margin-bottom:10px;
+}
+.topic-tools .text-right {
+	margin-top:25px;
+}
+.topic-tools .btn-link {
+	text-decoration:underline;
 }
