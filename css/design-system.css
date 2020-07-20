@@ -37,4 +37,12 @@
 	padding-left:10px;
 	padding-right:10px;
 }
-
+}
+.inset {
+	border: 1px solid #e3e3e3;
+	box-shadow: inset 0px 0px 8px #e3e3e3;
+}
+.outset {
+	border: 1px solid #e3e3e3;
+	box-shadow: 0px 0px 8px #e3e3e3;
+}
