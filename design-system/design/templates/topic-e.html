@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-      <title>[Page title] – Canada.ca</title>
+      <title>Navigation page templates: CRA design system – Canada.ca</title>
       <meta content="width=device-width,initial-scale=1" name="viewport">
       <meta name=”robots” content=”noindex”>
       <!-- Meta data -->
@@ -18,27 +18,16 @@
          document.write(wet.builder.refTop({
          }));
       </script>
-	  <link href="../../../css/pn.css" rel="stylesheet">
+      <link href="../../../css/pn.css" rel="stylesheet">
 	  <link href="../../../css/h1-underline.css" rel="stylesheet">  
-	  <link href="../../../css/h1-stacked.css" rel="stylesheet">   
-	  <link href="../../../css/bands.css" rel="stylesheet"> 
-	  <link href="../../../css/owner-social.css" rel="stylesheet">	 
-	  <link href="../../../css/templates.css" rel="stylesheet">
+	  <link href="../../../css/h1-stacked.css" rel="stylesheet">   	  
       <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
+      <link href="../../../css/design-system.css" rel="stylesheet">
+	  <style>
+	  iframe .topic-tools pull-right {display:none;}
+	  </style>
    </head>
-   <body vocab="http://schema.org/" typeof="WebPage">
-   <div class="topic-tools">
-  <div class="container">
-   <ul class="list-inline mrgn-bttm-0">
-		<li class="pull-right text-right">Back to: <a href="index-e.html">Templates <span class="fas fa-arrow-right"></span></a><br>
-	  <!-- <small><strong class="mrgn-lft-md">Note:</strong> Do not copy this template with "view source"</small>
-	  --> </li>
-      <li><a href="#optional-cntrl" aria-controls="optional-cntrl" class="overlay-lnk btn btn-call-to-action" role="button"><span class="fas fa-tools"></span> Options and guidance tool</a></li>
-	  <li><a href="#code-snip" aria-controls="mid-screen" class="overlay-lnk btn btn-link" role="button"><span class="fas fa-code fa-lg"></span> View code</a></li>
-	 
-   </ul>
-</div>
-</div>
+   <body vocab="http://schema.org/" typeof="WebPage" class="cnt-wdth-lmtd">
       <div id="def-top">
       </div>
       <!-- Write closure template -->
@@ -58,440 +47,314 @@
              title: "[Theme]",
              href: "#"
            }],
-           search: true,
-           siteMenu: true,
+           search: false,
+           siteMenu: false,
            showPreContent: true
          });
       </script>
-      <main role="main" property="mainContentOfPage" class="container">
-          <h1 property="name" id="wb-cont"><span class="opt-con opt-stack-h1"><span class="stacked" role="text"><span>[Page title]</span>: <span>[Persistent title]</span></span></span><span class="opt-dflt opt-reg-h1 hidden">[Page title]</span></h1>
-  <p class="opt-con opt-desc">Short description of the topic [optional].</p>
-  <section class="band band-warning mrgn-bttm-0 p-sm opt-con opt-warn">
-    <div class="container">
-      <div class="alert alert-warning provisional mrgn-bttm-0">
-        <h2 class="h5">Warning alert [optional]</h2>
-        <p>Content goes here</p>
-      </div>
-    </div>
-  </section>
-  <section class="band band-feature mrgn-bttm-0 p-sm opt-con opt-feat">
-    <div class="container">
-      <h2 class="wb-inv">Featured</h2>
-      <a class="h5" href="#">Featured link [optional]</a> </div>
-  </section>
-  <section class="band most-requested opt-con opt-most">
-    <div class="container">
-      <h2>Most requested [optional]</h2>
-      <ul class="lst-spcd colcount-sm-2">
-        <li><a href="#">[Top task hyperlink]</a></li>
-        <li><a href="#">[Top task hyperlink]</a></li>
-        <li><a href="#">[Top task hyperlink]</a></li>
-        <li><a href="#">[Top task hyperlink]</a></li>
-        <li><a href="#">[Top task hyperlink]</a></li>
-        <li><a href="#">[Top task hyperlink]</a></li>
-        <li><a href="#">[Top task hyperlink]</a></li>
-        <li><a href="#">[Top task hyperlink]</a></li>
-      </ul>
-    </div>
-  </section>
-  <section class="alert alert-info provisional opt-con opt-info">
-    <h2 class="h3">Info alert [optional]</h2>
-    <p>Content goes here</p>
-  </section>
-  <section class="gc-srvinfo mrgn-bttm-lg">
-    <h2 class="wb-inv">Services and information</h2>
-    <div class="wb-eqht row">
-      <section class="col-lg-4 col-md-6">
-        <h3><a href="#">[Topic/task link goes here]</a></h3>
-        <p>Doormat text goes here</p>
-      </section>
-      <section class="col-lg-4 col-md-6">
-        <h3><a href="#">[Topic/task link goes here]</a></h3>
-        <p>Doormat text goes here</p>
-      </section>
-      <section class="col-lg-4 col-md-6">
-        <h3><a href="#">[Topic/task link goes here]</a></h3>
-        <p>Doormat text goes here</p>
-      </section>
-      <section class="col-lg-4 col-md-6">
-        <h3><a href="#">[Topic/task link goes here]</a></h3>
-        <p>Doormat text goes here</p>
-      </section>
-      <section class="col-lg-4 col-md-6">
-        <h3><a href="#">[Topic/task link goes here]</a></h3>
-        <p>Doormat text goes here</p>
-      </section>
-      <section class="col-lg-4 col-md-6">
-        <h3><a href="#">[Topic/task link goes here]</a></h3>
-        <p>Doormat text goes here</p>
-      </section>
-    </div>
-  </section>
-  <section class="audience opt-con opt-focus">
-    <h2>Focus on <small>[optional]</small></h2>
-    <ul class="lst-spcd colcount-sm-2 colcount-md-3">
-      <li><a href="#">[Audience one-pager]</a></li>
-      <li><a href="#">[Audience one-pager]</a></li>
-      <li><a href="#">[Audience one-pager]</a></li>
-      <li><a href="#">[Audience one-pager]</a></li>
-      <li><a href="#">[Audience one-pager]</a></li>
-      <li><a href="#">[Audience one-pager]</a></li>
-    </ul>
-  </section>
-  <section class="gc-prtts opt-con opt-feature">
-    <h2>Features <small>[optional]</small></h2>
-    <div class="row wb-eqht">
-      <div class="col-md-4 mrgn-bttm-md">
-        <section class="figcaption hght-inhrt">
-          <figure class="panel panel-default brdr-rds-0 hght-inhrt"> <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
-            <div class="panel-body">
-              <figcaption class="h3 mrgn-tp-0"><a href="#" class="stretched-link">[Featured hyperlink text]</a></figcaption>
-              <p class="small mrgn-bttm-0">Brief description of the feature being promoted.</p>
+      <nav class="navbar navbar-default">
+         <div class="container">
+            <div class="navbar-header">
+               <a class="overlay-lnk navbar-toggle" role="button" aria-controls="sitenav" href="#sitenav"><span class="fas fa-bars"></span> Menu</a>
+               <a class="navbar-brand active" href="../index-e.html">CRA design system</a>
             </div>
-          </figure>
-        </section>
-      </div>
-      <div class="col-md-4 mrgn-bttm-md">
-        <section class="figcaption hght-inhrt">
-          <figure class="panel panel-default brdr-rds-0 hght-inhrt"> <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
-            <div class="panel-body">
-              <figcaption class="h3 mrgn-tp-0"><a href="#" class="stretched-link">[Featured hyperlink text]</a></figcaption>
-              <p class="small mrgn-bttm-0">Brief description of the feature being promoted.</p>
-            </div>
-          </figure>
-        </section>
-      </div>
-      <div class="col-md-4 mrgn-bttm-md">
-        <section class="figcaption hght-inhrt">
-          <figure class="panel panel-default brdr-rds-0 hght-inhrt"> <img class="img-responsive full-width" alt="" src="https://via.placeholder.com/752x250.png?text=Feature+image+goes+here">
-            <div class="panel-body">
-              <figcaption class="h3 mrgn-tp-0"><a href="#" class="stretched-link">[Featured hyperlink text]</a></figcaption>
-              <p class="small mrgn-bttm-0">Brief description of the feature being promoted.</p>
-            </div>
-          </figure>
-        </section>
-      </div>
-    </div>
-  </section>
-  <div class="owner">
-    <p>From:</p>
-    <ul class="list-inline">
-      <li><a href="#">[Department name]</a></li>
-      <li><a href="#">[Department name]</a></li>
-    </ul>
-  </div>
-  <div class="profile">
-    <section class="followus opt-con opt-follow">
-      <h2>Follow [optional]:</h2>
-      <ul>
-        <li><a href="https://www.facebook.com/canrevagency/" class="facebook" rel="external"><span class="wb-inv">Facebook</span></a></li>
-        <li><a href="https://twitter.com/CanRevAgency" class="twitter" rel="external"><span class="wb-inv">Twitter</span></a></li>
-        <li><a href="https://www.youtube.com/user/CanRevAgency" class="youtube" rel="external"><span class="wb-inv">YouTube</span></a></li>
-      </ul>
-    </section>
-    <div class="clearfix"></div>
-  </div>
-  <div class="wb-prettify all-pre"></div>
-  <section id="optional-cntrl" class="wb-overlay modal-content overlay-def wb-panel-r">
-    <header class="modal-header">
-      <h2 class="modal-title">Options and guidance</h2>
-    </header>
-    <div class="modal-body">
-		
-		<!--Stacked H1 //-->
-      <div><span class="h5">Stacked H1</span>
-        <details class="clearfix">
-          <summary class="pull-left">Guidance<span class="wb-inv">: Stacked H1</span></summary>
-          <div class="clearfix"></div>
-          <p>Guidance/governance goes here in further detail.</p>
-        </details>
-      </div>
-      <div class="btn-group btn-group-sm mrgn-tp-sm" data-wb-actionmng='[
-		{ "trggroup":"clearFilter", "action": "removeClass", "source": ".fltopts", "class": "btn-primary" }
-	]'>
-        <button class="fltopts btn btn-primary btn-show" data-wb-doaction='[
-		{ "action": "run", "trggroup": "clearFilter" },	
-		{"action": "removeClass",
-			"source": ".opt-stack-h1", "class": "hidden"}, {"action": "addClass",
-			"source": ".opt-reg-h1", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]'>Show<span class="wb-inv">: Stacked H1</span></button>
-        <button class="fltopts btn btn-default btn-hide" data-wb-doaction='[
-			{ "action": "run", "trggroup": "clearFilter" },
-				{"action": "addClass",
-			"source": ".opt-stack-h1", "class": "hidden"}, {"action": "removeClass",
-			"source": ".opt-reg-h1", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Hide<span class="wb-inv">: Stacked H1</span></button>
-      </div>
-<!--Description text //-->
- <div class="mrgn-tp-lg"><span class="h5">Description text</span>
-        <details class="clearfix">
-          <summary class="pull-left">Guidance<span class="wb-inv">: Description text</span></summary>
-          <div class="clearfix"></div>
-          <p>Guidance/governance goes here in further detail.</p>
-        </details>
-      </div>
-      <div class="btn-group btn-group-sm mrgn-tp-sm"  data-wb-actionmng='[
-		{ "trggroup":"clearFilter2", "action": "removeClass", "source": ".fltopts2", "class": "btn-primary" }
-	]'>
-        <button class="fltopts2 btn btn-primary btn-show" data-wb-doaction='[
-		{ "action": "run", "trggroup": "clearFilter2" },	
-		{"action": "removeClass",
-			"source": ".opt-desc", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Show<span class="wb-inv">: Description text</span></button>
-        <button class="fltopts2 btn btn-default btn-hide" data-wb-doaction='[
-			{ "action": "run", "trggroup": "clearFilter2" },
-				{"action": "addClass",
-			"source": ".opt-desc", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Hide<span class="wb-inv">: Description text</span></button>
-      </div>		
-<!--Warning alert //-->
-<div class="mrgn-tp-lg"><span class="h5">Warning alert</span>
-        <details class="clearfix">
-          <summary class="pull-left">Guidance<span class="wb-inv">: Description text</span></summary>
-          <div class="clearfix"></div>
-          <p>Guidance/governance goes here in further detail.</p>
-        </details>
-      </div>
-      <div class="btn-group btn-group-sm mrgn-tp-sm"  data-wb-actionmng='[
-		{ "trggroup":"clearFilter3", "action": "removeClass", "source": ".fltopts3", "class": "btn-primary" }
-	]'>
-        <button class="fltopts3 btn btn-primary btn-show" data-wb-doaction='[
-		{ "action": "run", "trggroup": "clearFilter3" },	
-		{"action": "removeClass",
-			"source": ".opt-warn", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Show<span class="wb-inv">: Warning alert</span></button>
-        <button class="fltopts3 btn btn-default btn-hide" data-wb-doaction='[
-			{ "action": "run", "trggroup": "clearFilter3" },
-				{"action": "addClass",
-			"source": ".opt-warn", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Hide<span class="wb-inv">: Warning alert</span></button>
-      </div>				
-<!--Featured link //-->
-<div class="mrgn-tp-lg"><span class="h5">Featured link</span>
-        <details class="clearfix">
-          <summary class="pull-left">Guidance<span class="wb-inv">: Featured link</span></summary>
-          <div class="clearfix"></div>
-          <p>Guidance/governance goes here in further detail.</p>
-        </details>
-      </div>
-      <div class="btn-group btn-group-sm mrgn-tp-sm"  data-wb-actionmng='[
-		{ "trggroup":"clearFilter4", "action": "removeClass", "source": ".fltopts4", "class": "btn-primary" }
-	]'>
-        <button class="fltopts4 btn btn-primary btn-show" data-wb-doaction='[
-		{ "action": "run", "trggroup": "clearFilter4" },	
-		{"action": "removeClass",
-			"source": ".opt-feat", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Show<span class="wb-inv">: Featured link</span></button>
-        <button class="fltopts4 btn btn-default btn-hide" data-wb-doaction='[
-			{ "action": "run", "trggroup": "clearFilter4" },
-				{"action": "addClass",
-			"source": ".opt-feat", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Hide<span class="wb-inv">: Featured link</span></button>
-      </div>						
-<!--Most requested //-->
-<div class="mrgn-tp-lg"><span class="h5">Most requested</span>
-        <details class="clearfix">
-          <summary class="pull-left">Guidance<span class="wb-inv">: Most requested</span></summary>
-          <div class="clearfix"></div>
-          <p>Guidance/governance goes here in further detail.</p>
-        </details>
-      </div>
-      <div class="btn-group btn-group-sm mrgn-tp-sm"  data-wb-actionmng='[
-		{ "trggroup":"clearFilter5", "action": "removeClass", "source": ".fltopts5", "class": "btn-primary" }
-	]'>
-        <button class="fltopts5 btn btn-primary btn-show" data-wb-doaction='[
-		{ "action": "run", "trggroup": "clearFilter5" },	
-		{"action": "removeClass",
-			"source": ".opt-most", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Show<span class="wb-inv">: Most requested</span></button>
-        <button class="fltopts5 btn btn-default btn-hide" data-wb-doaction='[
-			{ "action": "run", "trggroup": "clearFilter5" },
-				{"action": "addClass",
-			"source": ".opt-most", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Hide<span class="wb-inv">: Most requested</span></button>
-      </div>	
-		<!--Info alert //-->
-<div class="mrgn-tp-lg"><span class="h5">Info alert</span>
-        <details class="clearfix">
-          <summary class="pull-left">Guidance<span class="wb-inv">: Info alert</span></summary>
-          <div class="clearfix"></div>
-          <p>Guidance/governance goes here in further detail.</p>
-        </details>
-      </div>
-      <div class="btn-group btn-group-sm mrgn-tp-sm"  data-wb-actionmng='[
-		{ "trggroup":"clearFilter6", "action": "removeClass", "source": ".fltopts6", "class": "btn-primary" }
-	]'>
-        <button class="fltopts6 btn btn-primary btn-show" data-wb-doaction='[
-		{ "action": "run", "trggroup": "clearFilter6" },	
-		{"action": "removeClass",
-			"source": ".opt-info", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Show<span class="wb-inv">: Info alert</span></button>
-        <button class="fltopts6 btn btn-default btn-hide" data-wb-doaction='[
-			{ "action": "run", "trggroup": "clearFilter6" },
-				{"action": "addClass",
-			"source": ".opt-info", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Hide<span class="wb-inv">: Info alert</span></button>
-      </div>	
-		
-	<!--Topics and tasks //-->	
-      <div class="mrgn-tp-lg"><span class="h5">Topics and tasks</span>
-        <details class="clearfix">
-          <summary class="pull-left">Guidance<span class="wb-inv">: Topics and tasks</span></summary>
-          <div class="clearfix"></div>
-          <p>Guidance/governance goes here in further detail.</p>
-        </details>
-      </div>
-	<!--Focus on //-->
-<div class="mrgn-tp-lg"><span class="h5">Focus on</span>
-        <details class="clearfix">
-          <summary class="pull-left">Guidance<span class="wb-inv">: Focus on</span></summary>
-          <div class="clearfix"></div>
-          <p>Guidance/governance goes here in further detail.</p>
-        </details>
-      </div>
-      <div class="btn-group btn-group-sm mrgn-tp-sm"  data-wb-actionmng='[
-		{ "trggroup":"clearFilter7", "action": "removeClass", "source": ".fltopts7", "class": "btn-primary" }
-	]'>
-        <button class="fltopts7 btn btn-primary btn-show" data-wb-doaction='[
-		{ "action": "run", "trggroup": "clearFilter7" },	
-		{"action": "removeClass",
-			"source": ".opt-focus", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Show<span class="wb-inv">: Focus on</span></button>
-        <button class="fltopts7 btn btn-default btn-hide" data-wb-doaction='[
-			{ "action": "run", "trggroup": "clearFilter7" },
-				{"action": "addClass",
-			"source": ".opt-focus", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Hide<span class="wb-inv">: Focus on</span></button>
-      </div>			
-	<!--Features //-->
-<div class="mrgn-tp-lg"><span class="h5">Features</span>
-        <details class="clearfix">
-          <summary class="pull-left">Guidance<span class="wb-inv">: Features</span></summary>
-          <div class="clearfix"></div>
-          <p>Guidance/governance goes here in further detail.</p>
-        </details>
-      </div>
-      <div class="btn-group btn-group-sm mrgn-tp-sm"  data-wb-actionmng='[
-		{ "trggroup":"clearFilter8", "action": "removeClass", "source": ".fltopts8", "class": "btn-primary" }
-	]'>
-        <button class="fltopts8 btn btn-primary btn-show" data-wb-doaction='[
-		{ "action": "run", "trggroup": "clearFilter8" },	
-		{"action": "removeClass",
-			"source": ".opt-feature", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Show<span class="wb-inv">: Features</span></button>
-        <button class="fltopts8 btn btn-default btn-hide" data-wb-doaction='[
-			{ "action": "run", "trggroup": "clearFilter8" },
-				{"action": "addClass",
-			"source": ".opt-feature", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Hide<span class="wb-inv">: Features</span></button>
-      </div>				
-		<!--Follow //-->
-<div class="mrgn-tp-lg"><span class="h5">Follow (media)</span>
-        <details class="clearfix">
-          <summary class="pull-left">Guidance<span class="wb-inv">: Follow (media)</span></summary>
-          <div class="clearfix"></div>
-          <p>Guidance/governance goes here in further detail.</p>
-        </details>
-      </div>
-      <div class="btn-group btn-group-sm mrgn-tp-sm"  data-wb-actionmng='[
-		{ "trggroup":"clearFilter9", "action": "removeClass", "source": ".fltopts9", "class": "btn-primary" }
-	]'>
-        <button class="fltopts9 btn btn-primary btn-show" data-wb-doaction='[
-		{ "action": "run", "trggroup": "clearFilter9" },	
-		{"action": "removeClass",
-			"source": ".opt-follow", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Show<span class="wb-inv">: Follow (media)</span></button>
-        <button class="fltopts9 btn btn-default btn-hide" data-wb-doaction='[
-			{ "action": "run", "trggroup": "clearFilter9" },
-				{"action": "addClass",
-			"source": ".opt-follow", "class": "hidden"}, { "action": "addClass", "class": "btn-primary" }
-	]' >Hide<span class="wb-inv">: Follow (media)</span></button>
-      </div>		
-		
-		
-		
-      
-      <div class="mrgn-tp-xl"><strong>Reset</strong></div>
-      <button class="fltopts20 btn btn-link" data-wb-doaction='[
-			
-		{"action": "removeClass",
-			"source": ".opt-con", "class": "hidden"}, {"action": "addClass",
-			"source": ".opt-dflt", "class": "hidden"}, { "action": "addClass", "class": "btn-default", "source": ".btn-hide" }, { "action": "addClass", "class": "btn-primary", "source": ".btn-show" },  { "action": "removeClass", "class": "btn-primary", "source": ".btn-hide" }
-	]' >Show all<span class="wb-inv"></span></button>
-     
-    </div>
-  </section>
-  <section id="code-snip" class="wb-overlay modal-content overlay-def wb-popup-mid">
-    <header class="modal-header">
-      <h2 class="modal-title">Code snippet</h2>
-    </header>
-    <div class="modal-body">
-      <div class="wb-tabs">
-        <div class="tabpanels">
-          <details id="details-panel1">
-            <summary>HTML</summary>
-           <pre><code>&lt;h1 property=&quot;name&quot; id=&quot;wb-cont&quot;&gt;<span class="opt-con opt-stack-h1">&lt;span class=&quot;stacked&quot; role=&quot;text&quot;&gt;&lt;span&gt;[Page title]&lt;/span&gt;: &lt;span&gt;[Persistent title]&lt;/span&gt;&lt;/span&gt;</span><span class="opt-dflt opt-reg-h1 hidden">[Page title]</span>&lt;/h1&gt;
-<span class="opt-con opt-desc">
-&lt;!-- This component is optional //--&gt;
-&lt;p&gt;Short description of the topic.&lt;/p&gt;
-&lt;!-- End of optional component //--&gt;</span>
-<span class="opt-con opt-warn">
-&lt;!-- This component is optional //--&gt;
-&lt;section class=&quot;band band-warning mrgn-bttm-0 p-sm&quot;&gt;<br>&lt;div class=&quot;container&quot;&gt;<br>&lt;div class=&quot;alert alert-warning provisional mrgn-bttm-0&quot;&gt;<br>&lt;h2 class=&quot;h5&quot;&gt;Warning alert&lt;/h2&gt;<br>&lt;p&gt;Content goes here&lt;/p&gt;<br>&lt;/div&gt;<br>&lt;/div&gt;<br>&lt;/section&gt;
-&lt;!-- End of optional component //--&gt;</span>
-<span class="opt-con opt-feat">
-&lt;!-- This component is optional //--&gt;<br>&lt;section class=&quot;band band-feature mrgn-bttm-0 p-sm&quot;&gt;<br>&lt;div class=&quot;container&quot;&gt;<br>&lt;h2 class=&quot;wb-inv&quot;&gt;Featured&lt;/h2&gt;<br>&lt;a class=&quot;h5&quot; href=&quot;#&quot;&gt;Featured link&lt;/a&gt;&lt;/div&gt;<br>&lt;/section&gt;
-&lt;!-- End of optional component //--&gt;</span>
-<span class="opt-con opt-most">
-&lt;!-- This component is optional //--&gt;<br>&lt;section class=&quot;band most-requested&quot;&gt;<br>&lt;div class=&quot;container&quot;&gt;<br>&lt;h2&gt;Most requested [optional]&lt;/h2&gt;<br>&lt;ul class=&quot;lst-spcd colcount-sm-2&quot;&gt;<br>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Top task hyperlink]&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Top task hyperlink]&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Top task hyperlink]&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Top task hyperlink]&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Top task hyperlink]&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Top task hyperlink]&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Top task hyperlink]&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Top task hyperlink]&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;<br>&lt;/div&gt;<br>&lt;/section&gt;
-&lt;!-- End of optional component //--&gt;</span>
-<span class="opt-con opt-info">
-&lt;!-- This component is optional //--&gt;<br>&lt;section class=&quot;alert alert-info provisional&quot;&gt;<br>&lt;h2 class=&quot;h3&quot;&gt;Info alert [optional]&lt;/h2&gt;<br>&lt;p&gt;Content goes here&lt;/p&gt;<br>&lt;/section&gt;
-&lt;!-- End of optional component //--&gt;</span>
-<br>&lt;section class=&quot;gc-srvinfo mrgn-bttm-lg&quot;&gt;<br>&lt;h2 class=&quot;wb-inv&quot;&gt;Services and information&lt;/h2&gt;<br>&lt;div class=&quot;wb-eqht row&quot;&gt;<br>&lt;section class=&quot;col-lg-4 col-md-6&quot;&gt;<br>&lt;h3&gt;&lt;a href=&quot;#&quot;&gt;[Topic/task link goes here]&lt;/a&gt;&lt;/h3&gt;<br>&lt;p&gt;Doormat text goes here&lt;/p&gt;
-&lt;/section&gt;<br>&lt;section class=&quot;col-lg-4 col-md-6&quot;&gt;<br>&lt;h3&gt;&lt;a href=&quot;#&quot;&gt;[Topic/task link goes here]&lt;/a&gt;&lt;/h3&gt;<br>&lt;p&gt;Doormat text goes here&lt;/p&gt;<br>&lt;/section&gt;<br>&lt;section class=&quot;col-lg-4 col-md-6&quot;&gt;<br>&lt;h3&gt;&lt;a href=&quot;#&quot;&gt;[Topic/task link goes here]&lt;/a&gt;&lt;/h3&gt;<br>&lt;p&gt;Doormat text goes here&lt;/p&gt;<br>&lt;/section&gt;<br>&lt;section class=&quot;col-lg-4 col-md-6&quot;&gt;<br>&lt;h3&gt;&lt;a href=&quot;#&quot;&gt;[Topic/task link goes here]&lt;/a&gt;&lt;/h3&gt;<br>&lt;p&gt;Doormat text goes here&lt;/p&gt;<br>&lt;/section&gt;<br>&lt;section class=&quot;col-lg-4 col-md-6&quot;&gt;<br>&lt;h3&gt;&lt;a href=&quot;#&quot;&gt;[Topic/task link goes here]&lt;/a&gt;&lt;/h3&gt;<br>&lt;p&gt;Doormat text goes here&lt;/p&gt;<br>&lt;/section&gt;<br>&lt;section class=&quot;col-lg-4 col-md-6&quot;&gt;<br>&lt;h3&gt;&lt;a href=&quot;#&quot;&gt;[Topic/task link goes here]&lt;/a&gt;&lt;/h3&gt;<br>&lt;p&gt;Doormat text goes here&lt;/p&gt;<br>&lt;/section&gt;<br>&lt;/div&gt;<br>&lt;/section&gt;
-<span class="opt-con opt-focus">
-&lt;!-- This component is optional //--&gt;<br>&lt;section class=&quot;audience&quot;&gt;<br>&lt;h2&gt;Focus on &lt;small&gt;[optional]&lt;/small&gt;&lt;/h2&gt;<br>&lt;ul class=&quot;lst-spcd colcount-sm-2 colcount-md-3&quot;&gt;<br>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Audience one-pager]&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Audience one-pager]&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Audience one-pager]&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Audience one-pager]&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Audience one-pager]&lt;/a&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Audience one-pager]&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;<br>&lt;/section&gt;
-&lt;!-- End of optional component //--&gt;</span>
-<span class="opt-con opt-feature">
-&lt;!-- This component is optional //--&gt;<br>&lt;section class=&quot;gc-prtts&quot;&gt;<br>&lt;h2&gt;Features &lt;small&gt;[optional]&lt;/small&gt;&lt;/h2&gt;<br>&lt;div class=&quot;row wb-eqht&quot;&gt;<br>&lt;div class=&quot;col-md-4 mrgn-bttm-md&quot;&gt;<br>&lt;section class=&quot;figcaption hght-inhrt&quot;&gt;<br>&lt;figure class=&quot;panel panel-default brdr-rds-0 hght-inhrt&quot;&gt; &lt;img class=&quot;img-responsive full-width&quot; alt=&quot;&quot; src=&quot;https://via.placeholder.com/752x250.png?text=Feature+image+goes+here&quot;&gt;
-&lt;div class=&quot;panel-body&quot;&gt;<br>&lt;figcaption class=&quot;h3 mrgn-tp-0&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;stretched-link&quot;&gt;[Featured hyperlink text]&lt;/a&gt;&lt;/figcaption&gt;
-&lt;p class=&quot;small mrgn-bttm-0&quot;&gt;Brief description of the feature being promoted.&lt;/p&gt;<br>&lt;/div&gt;<br>&lt;/figure&gt;<br>&lt;/section&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;col-md-4 mrgn-bttm-md&quot;&gt;<br>&lt;section class=&quot;figcaption hght-inhrt&quot;&gt;<br>&lt;figure class=&quot;panel panel-default brdr-rds-0 hght-inhrt&quot;&gt; &lt;img class=&quot;img-responsive full-width&quot; alt=&quot;&quot; src=&quot;https://via.placeholder.com/752x250.png?text=Feature+image+goes+here&quot;&gt;
-&lt;div class=&quot;panel-body&quot;&gt;<br>&lt;figcaption class=&quot;h3 mrgn-tp-0&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;stretched-link&quot;&gt;[Featured hyperlink text]&lt;/a&gt;&lt;/figcaption&gt;
-&lt;p class=&quot;small mrgn-bttm-0&quot;&gt;Brief description of the feature being promoted.&lt;/p&gt;<br>&lt;/div&gt;<br>&lt;/figure&gt;<br>&lt;/section&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;col-md-4 mrgn-bttm-md&quot;&gt;<br>&lt;section class=&quot;figcaption hght-inhrt&quot;&gt;<br>&lt;figure class=&quot;panel panel-default brdr-rds-0 hght-inhrt&quot;&gt; &lt;img class=&quot;img-responsive full-width&quot; alt=&quot;&quot; src=&quot;https://via.placeholder.com/752x250.png?text=Feature+image+goes+here&quot;&gt;
-&lt;div class=&quot;panel-body&quot;&gt;<br>&lt;figcaption class=&quot;h3 mrgn-tp-0&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;stretched-link&quot;&gt;[Featured hyperlink text]&lt;/a&gt;&lt;/figcaption&gt;
-&lt;p class=&quot;small mrgn-bttm-0&quot;&gt;Brief description of the feature being promoted.&lt;/p&gt;<br>&lt;/div&gt;<br>&lt;/figure&gt;<br>&lt;/section&gt;<br>&lt;/div&gt;<br>&lt;/div&gt;<br>&lt;/section&gt;
-&lt;!-- End of optional component //--&gt;</span>
-<br>&lt;div class=&quot;owner&quot;&gt;<br>&lt;p&gt;From:&lt;/p&gt;<br>&lt;ul class=&quot;list-inline&quot;&gt;<br>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Department name]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#&quot;&gt;[Department name]&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;profile&quot;&gt;
-<span class="opt-con opt-follow">
-&lt;!-- This component is optional //--&gt;<br>&lt;section class=&quot;followus&quot;&gt;<br>&lt;h2&gt;Follow:&lt;/h2&gt;<br>&lt;ul&gt;<br>&lt;li&gt;&lt;a href=&quot;https://www.facebook.com/canrevagency/&quot; class=&quot;facebook&quot; rel=&quot;external&quot;&gt;&lt;span class=&quot;wb-inv&quot;&gt;Facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://twitter.com/CanRevAgency&quot; class=&quot;twitter&quot; rel=&quot;external&quot;&gt;&lt;span class=&quot;wb-inv&quot;&gt;Twitter&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/CanRevAgency&quot; class=&quot;youtube&quot; rel=&quot;external&quot;&gt;&lt;span class=&quot;wb-inv&quot;&gt;YouTube&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;<br>&lt;/section&gt;
-&lt;!-- End of optional component //--&gt;</span>
-<br>&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
-          </details>
-          <details id="details-panel2">
-            <summary>CSS</summary>
-            <pre><code>/*core fixes*/<br>.brdr-0 {<br>box-shadow:none;<br>}
-.ip-btn {<br>margin-bottom:5px !important;
-}</p>
+            <div id="navbar" class="navbar-collapse collapse">
+               <ul class="nav navbar-nav">
+                  <li class="active"><a href="../index-e.html">Design</a></li>
+                  <li><a href="../../writing/index-e.html">Writing</a></li>
 
-/*h1 underline re-design*/<br>
-h1#wb-cont {<br>border-bottom: none;<br>}<br>h1#wb-cont::after {<br>content: &quot;&quot;;<br>display: block;<br>width: 70px;<br>padding-bottom: 8px;<br>border-bottom: .18em solid #af3c43;<br>}<br>
-/*Whitespace after topic buckets so 'from' and 'follow' aren't so close*/<br>.gc-srvinfo {<br>margin-bottom: 30px;<br>}<br>
-/*Stacked H1*/<br>h1 span.stacked {<br>display: flex;<br>flex-direction: column-reverse;<br>margin-left: -9999px;<br>}
-<p>h1 span.stacked span:nth-child(1) {<br>margin-top: -1.1em;<br>}</p><p>h1 span.stacked span:nth-child(1), h1 span.stacked span:nth-child(2) {<br>margin-left: 9999px;<br>}</p><p>h1 span.stacked span:nth-child(2) {<br>font-size: 0.8em;<br>color: #666;<br>font-weight: 500;<br>margin-bottom: 0.17em;<br>}<br>
-/*Page owner(s) and social media links*/<br>.owner {<br>float: left !important;<br>}</p><p>.owner p {<br>float: left !important;<br>}</p><p>.owner ul {<br>float: left !important;<br>}</p><p>.owner li {<br>padding: 0 10px !important;<br>}</p><p>.gc-theme .profile {<br>margin: 1.25em 0 .9em !important;<br>}</p><p>.followus {<br>float: right !important;<br>margin: 10px 0 0 40px !important;<br>background: none !important;<br>padding: 0 !important;<br>}<br>.band .followus {<br>float: none !important;<br>margin:0 !important;<br>}<br>
- @media screen and (max-width:479px) {<br>.followus {<br>float: none !important;<br>margin-left: 0 !important;<br>}<br>}<br>
-.followus h2 {<br>margin: 5px 4px 0 0 !important;<br>font-size: 16px !important;<br>display: block !important;<br>float: left !important;<br>}<br>.followus ul li a {<br>padding: 15px 22px 0 !important;<br>border: none !important;<br>}<br>.followus ul li a:hover, .followus ul li a:focus {<br>opacity: .6 !important;<br>border: none !important;<br>}<br>.followus .email {<br>background: url(images/email.png) no-repeat !important;<br>}<br>.followus .facebook {<br>background: url(images/facebook.png) no-repeat !important;<br>}<br>.followus .flickr {<br>background: url(images/flickr.png) no-repeat !important;<br>}<br>.followus .googleplus {<br>background: url(images/googleplus.png) no-repeat !important;<br>}<br>.followus .instagram {<br>background: url(images/instagram.png) no-repeat !important;<br>}<br>.followus .linkedin {<br>background: url(images/linkedin.png) no-repeat !important;<br>}<br>.followus .periscope {<br>background: url(images/periscope.png) no-repeat !important;<br>}<br>.followus .pinterest {<br>background: url(images/pinterest.png) no-repeat !important;<br>}<br>.followus .rss {<br>background: url(images/rss.png) no-repeat !important;<br>}<br>.followus .twitter {<br>background: url(images/twitter.png) no-repeat !important;<br>}<br>.followus .youtube {<br>background: url(images/youtube.png) no-repeat !important;<br>}<br>/*Full-width bands + alerts  + most requested*/</p><p>.band {<br>width: 100vw;<br>position: relative;<br>left: 50%;<br>right: 50%;<br>margin-left: -50vw;<br>margin-right: -50vw;<br>padding: 15px 0;<br>margin-bottom: 15px;<br>}<br>.p-sm {<br>padding: 10px;<br>}<br>.p-xs {<br>padding: 5px;<br>}<br>
-...</code></pre>
-          </details>
-        </div>
-      </div>
-    </div>
-  </section>
+               </ul>
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="../../whats-new/index-e.html">What's new</a></li>
+				  <li><a href="../../research/index-e.html">Research</a></li>
+				  <li><a href="../../about/index-e.html">About</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <section id="sitenav" class="wb-overlay modal-content overlay-def wb-panel-l">
+         <header class="modal-header">
+            <h2 class="modal-title">Menu</h2>
+         </header>
+         <div class="modal-body">
+            <ul class="list-unstyled lst-spcd">
+               <li><a href="index-e.html">Design</a></li>
+               <li><a href="../../writing/index-e.html">Writing</a></li>
+               
+               <li><a href="../../whats-new/index-e.html">What's new</a></li>
+			   <li><a href="../../research/index-e.html">Research</a></li>
+			   <li><a href="../../about/index-e.html">About</a></li>
+            </ul>
+         </div>
+      </section>
+      <nav id="wb-bc" property="breadcrumb">
+         <h2>You are here:</h2>
+         <div class="container">
+            <ol class="breadcrumb">
+               <li><a href="../../index-e.html">CRA design system</a></li>
+			   <li><a href="../index-e.html">Design</a></li>
+			   <li><a href="index-e.html">Templates</a></li>
+            </ol>
+         </div>
+      </nav>
+      <main role="main" property="mainContentOfPage" class="container">
+         <h1 property="name" id="wb-cont"><span class="stacked" role="text"><span>Navigation page templates</span>: <span>CRA design system</span></span></h1>
+		 <h2 class="h3">On this page</h2>
+   
+     
+					<ul>
+						<li><a href="#use">When to use</a></li>
+						<li><a href="#avoid">What to avoid</a></li>
+						<li><a href="#specifications">How to implement</a></li>
+						<li><a href="#research">Research</a></li>
+						<li><a href="#changes">Latest changes</a></li>
+						<li><a href="#discuss">Discussion</a></li>
+					</ul>
+					<h2 id="use">When to use</h2>
+						<h2 id="avoid">What to avoid</h2>
+						<h2 id="specifications">How to implement</h2>
+						
+		 <p class="pull-right"><a href="topic-template-e.html" target="_blank">Open in new window</a></p>
+		 <iframe src="topic-template-e.html" height="600" width="100%" title="Iframe Example"></iframe>
+	
+									<section>
+										<h3>1: Topic title</h3>
+										<p><span class="label label-danger">Mandatory</span></p>
+										<p>Names the current topic</p>
+										<ul class="list-unstyled">
+											<li id="element2-1">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Presentation</strong></summary>
+													<ul>
+														<li>the topic title must be a unique H1</li>
+														<li>it must be the first component on the page</li>
+													</ul>
+												</details>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<h3>2: Topic introductory paragraph</h3>
+										<p><span class="label label-danger">Mandatory</span></p>
+										<p>Describes the current topic page</p>
+										<ul class="list-unstyled">
+											<li id="element2-2a">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Content</strong></summary>
+													<ul>
+														<li>provides an overview of the top tasks or sub-topics that can be accessed from the current topic</li>
+														<li>keep the text short and concise</li>
+														<li>written for a grade 6-8 reading level</li>
+													</ul>
+												</details>
+											</li>
+											<li id="element2-2b">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Presentation</strong></summary>
+													<ul>
+														<li>appears below the topic title</li>
+														<li>appears to the left of the topic image</li>
+													</ul>
+												</details>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<h3>3: Topic image</h3>
+										<p><span class="label label-info">Optional</span></p>
+										<p>Supports and enhances key messages related to the topic page</p>
+										<ul class="list-unstyled">
+											<li id="element2-3a">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Content</strong></summary>
+													<ul>
+														<li>the image must reflect key messages related to the topic</li>
+														<li>the image may appear elsewhere on the site</li>
+														<li>carousels are not allowed on topic pages</li>
+														<li>use the <a href="../common-design-patterns/images.html">Images</a> pattern</li>
+													</ul>
+												</details>
+											</li>
+											<li id="element2-3b">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Presentation</strong></summary>
+													<ul>
+														<li>the topic image appears at the top of the page</li>
+														<li> appears to the right of the introductory paragraph</li>
+														<li>the image is not hyperlinked</li>
+														<li>consult the <a href="http://wet-boew.github.io/themes-dist/GCWeb/index-en.html">Canada.ca GitHub page</a> for image sizing</li>
+													</ul>
+												</details>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<h3>4: Topic social media channels</h3>
+										<p><span class="label label-info">Optional</span></p>
+										<p>Features topic-specific social media channels</p>
+										<ul class="list-unstyled">
+											<li id="element2-4a">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Content</strong></summary>
+													<ul>
+														<li>use the <a href="../common-design-patterns/social-media-channels.html">Social media channels block (follow block)</a> pattern</li>
+													</ul>
+												</details>
+											</li>
+											<li id="element2-4b">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Presentation</strong></summary>
+													<ul>
+														<li>appears below the topic introductory paragraph</li>
+													</ul>
+												</details>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<h3>5: Services and information</h3>
+										<p><span class="label label-danger">Mandatory</span></p>
+										<p>Lists the sub-topics and destination content related to the current topic</p>
+										<ul class="list-unstyled">
+											<li id="element2-5a">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Content</strong></summary>
+													<ul>
+														<li>use the <a href="../common-design-patterns/services-information.html">Services and information</a> pattern</li>
+													</ul>
+												</details>
+											</li>
+											<li id="element2-5b">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Presentation</strong></summary>
+													<ul>
+														<li>appears below the topic social media channels and to the left of “Most requested”</li>
+													</ul>
+												</details>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<h3>6: Most requested</h3>
+										<p><span class="label label-danger">Mandatory</span> on theme pages and first-level topic pages</p>
+										<p>Features top tasks for the current topic</p>
+										<ul class="list-unstyled">
+											<li id="element2-6a">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Content</strong></summary>
+													<ul>
+														<li>use the <a href="../common-design-patterns/most-requested.html">Most requested</a> pattern</li>
+													</ul>
+												</details>
+											</li>
+											<li id="element2-6b">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Presentation</strong></summary>
+													<ul>
+														<li>appears to the right of “Services and information”</li>
+													</ul>
+												</details>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<h3>7: Contributors</h3>
+										<p><span class="label label-danger">Mandatory</span></p>
+										<p>Links to institutions that support the current topic</p>
+										<ul class="list-unstyled">
+											<li id="element2-7a">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Content</strong></summary>
+													<ul>
+														<li>use the <a href="../common-design-patterns/contributors.html">Contributors</a> pattern</li>
+													</ul>
+												</details>
+											</li>
+											<li id="element2-7b">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Presentation</strong></summary>
+													<ul>
+														<li>appears below “Most requested”</li>
+													</ul>
+												</details>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<h3>8: More information for</h3>
+										<p><span class="label label-danger">Conditional</span></p>
+										<p>Links to related government-wide audience information</p>
+										<ul class="list-unstyled">
+											<li id="element2-8a">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Content</strong></summary>
+													<ul>
+														<li>this component is mandatory when there are 1 or more doormat links in services and information related to the topic government-wide audience pages</li>
+														<li>use the <a href="../common-design-patterns/more-information.html">More information for</a> pattern</li>
+													</ul>
+												</details>
+											</li>
+											<li id="element2-8b">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Presentation</strong></summary>
+													<ul>
+														<li>appears below “Contributors”</li>
+													</ul>
+												</details>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<h3>9: What we are doing</h3>
+										<p><span class="label label-danger">Conditional</span></p>
+										<p>Provides links to program and policy development content that is most relevant to the current topic</p>
+										<ul class="list-unstyled">
+											<li id="element2-9a">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Content</strong></summary>
+													<ul>
+														<li>this component is mandatory when program and policy development content related to the current topic exists</li>
+														<li>use the <a href="../common-design-patterns/what-we-are-doing.html">What we are doing</a> pattern</li>
+													</ul>
+												</details>
+											</li>
+											<li id="element2-9b">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Presentation</strong></summary>
+													<ul>
+														<li>appears below “Services and information” and “Most requested”</li>
+													</ul>
+												</details>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<h3>10: Topic features</h3>
+										<p><span class="label label-info">Optional</span></p>
+										<p>Promotes ongoing activities being led by departments and agencies across the <abbr title="Government of Canada">GC</abbr> that are related to the current topic</p>
+										<ul class="list-unstyled">
+											<li id="element2-10a">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Content</strong></summary>
+													<ul>
+														<li>use the <a href="../common-design-patterns/feature-tiles.html">Context-specific features</a> pattern</li>
+													</ul>
+												</details>
+											</li>
+											<li id="element2-10b">
+												<details class="mrgn-bttm-sm">
+													<summary class="wb-toggle" data-toggle='{"print":"on"}'><strong>Presentation</strong></summary>
+													<ul>
+														<li>appears below “What we are doing”</li>
+													</ul>
+												</details>
+											</li>
+										</ul>
+									</section>
+								
+		 <h2 id="research">Research</h2>
+						<h2 id="changes">Latest changes</h2>
+						<h2 id="discuss">Discussion</h2>
          <div id="def-preFooter"></div>
          <!-- Write closure template -->
          <script type="text/javascript">
@@ -499,8 +362,8 @@ h1#wb-cont {<br>border-bottom: none;<br>}<br>h1#wb-cont::after {<br>content: &qu
             defPreFooter.outerHTML = wet.builder.preFooter({
             dateModified: "2020-05-05",
             showPostContent: true,
-            showFeedback: true,
-            showShare: true
+            showFeedback: false,
+            showShare: false
             });
          </script>
       </main>
@@ -510,8 +373,8 @@ h1#wb-cont {<br>border-bottom: none;<br>}<br>h1#wb-cont::after {<br>content: &qu
       <script type="text/javascript">
          var defFooter = document.getElementById("def-footer");
          defFooter.outerHTML = wet.builder.footer({
-         showFooter: true,
-         showFeatures: true
+         showFooter: false,
+         showFeatures: false
          });
       </script>
       <!-- Write closure template -->
@@ -519,6 +382,6 @@ h1#wb-cont {<br>border-bottom: none;<br>}<br>h1#wb-cont::after {<br>content: &qu
          document.write(wet.builder.refFooter({
          }));
       </script>
-      <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
+      <script src="https://test.canada.ca/cra/js/alpha-banner.js"></script>
    </body>
 </html>

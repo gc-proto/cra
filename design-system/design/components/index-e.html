@@ -95,349 +95,539 @@
       </nav>
       <main role="main" property="mainContentOfPage" class="container">
          <h1 property="name" id="wb-cont"><span class="stacked" role="text"><span>Components</span>: <span>CRA design system</span></span></h1>
-		 <div class="table-responsive">
-		  <table class="table wb-tables " data-wb-tables="{ &quot;paging&quot; : false }">
+		 <div class="row mrgn-tp-lg">
+    <div class="col-md-3">
+      <form class="wb-tables-filter" data-bind-to="dataset-filter">
+        <div class="panel panel-default outset">
+        
+		
+          
+	
+
+
+            <div class="panel-body">
+			<h2 class="wb-inv">Filter categories</h2>
+              <fieldset class="brdr-0">
+                <legend class="h3 mrgn-tp-0 mrgn-bttm-md">Commonly used by: </legend>
+                <div class="form-group">
+                  <ul class="list-unstyled">
+                   <li class="checkbox">
+                      <label for="webmasters">
+                        <input type="checkbox" id="webmasters" name="webmasters" data-column="2" value="Webmasters">
+                        Webmasters</label>
+                    </li>
+					<li class="checkbox">
+                      <label for="authors">
+                        <input type="checkbox" id="authors" name="authors" data-column="2" value="Authors">
+                        Authors</label>
+                    </li>
+                      <li class="checkbox">
+                      <label for="developers">
+                        <input type="checkbox" id="developers" name="developers" data-column="2" value="Developers">
+                        Developers</label>
+                    </li>
+                    <li class="checkbox">
+                      <label for="communications">
+                        <input type="checkbox" id="communications" name="communications" data-column="2" value="Communications">
+                        Communications</label>
+                    </li>
+                   
+                  </ul>
+                </div>
+              </fieldset>
+              <fieldset class="brdr-0">
+                <legend class="h3 mrgn-tp-0 mrgn-bttm-md">Purpose:</legend>
+                <div class="form-group">
+                  <ul class="list-unstyled">
+                   <li class="checkbox">
+                      <label for="core">
+                        <input type="checkbox" id="core" name="core" data-column="3" value="core">
+                        Core</label>
+                    </li>
+					<li class="checkbox">
+                      <label for="layout">
+                        <input type="checkbox" id="layout" name="layout" data-column="3" value="Layout">
+                        Layout</label>
+                    </li>
+                      <li class="checkbox">
+                      <label for="navigation">
+                        <input type="checkbox" id="navigation" name="navigation" data-column="3" value="Navigation">
+                        Navigation</label>
+                    </li>
+					<li class="checkbox">
+                      <label for="decisions">
+                        <input type="checkbox" id="decisions" name="decisions" data-column="3" value="Decisions">
+                        Decisions</label>
+                    </li>
+                    <li class="checkbox">
+                      <label for="data-entry">
+                        <input type="checkbox" id="data-entry" name="data-entry" data-column="3" value="Data entry">
+                        Data entry</label>
+                    </li>
+                   <li class="checkbox">
+                      <label for="data-display">
+                        <input type="checkbox" id="data-display" name="data-display" data-column="3" value="Data display">
+                        Data display</label>
+                    </li>
+					 <li class="checkbox">
+                      <label for="visual-enhancements">
+                        <input type="checkbox" id="visual-enhancements" name="visual-enhancements" data-column="3" value="Visual enhancements">
+                        Visual enhancements</label>
+                    </li>
+					<li class="checkbox">
+                      <label for="feedback">
+                        <input type="checkbox" id="feedback" name="feedback" data-column="3" value="Feedback">
+                        Feedback</label>
+                    </li>
+                  </ul>
+                </div>
+              </fieldset>
+             
+         
+            </div>
+<div class="panel-footer">
+              <button type="submit" class="btn btn-primary mrgn-rght-md mrgn-tp-sm" aria-controls="dataset-filter_info">Apply filter</button>
+              <button type="reset" class="btn btn-link mrgn-tp-sm mrgn-bttm-sm">Clear</button>
+            </div>
+          </div>
+        
+      </form>
+	
+    </div>
+    <div class="col-md-9">
+	<div class="table-responsive">
+	<table class="table wb-tables  table-striped " id="dataset-filter"  data-wb-tables='{"paging":false, "ordering":true, "columnDefs": [{ "className": "hidden", "targets": [ 2, 3 ] } ]}'>
 	    <caption class="wb-inv">Templates</caption>
 	<thead>
 	<tr>
 		<th scope="col">Type</th>
 		<th scope="col">Description</th>
-
+		<th scope="col">Used by</th>
+		<th scope="col">Purpose</th>
 	</tr>
 	</thead>
 	<tbody>
 	<tr>
 		<td><a href="#">Alignment</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td>Layout</td>
 	</tr>
 	<tr>
-		<td><a href="#">Colour</a></td>
+		<td><a href="typography-e.html">Typography</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td>Core, visual enhancements</td>
 	</tr>
+	<tr>
+		<td><a href="colour-e.html">Colour</a></td>
+		<td>asdf</td>
+		<td>xxx</td>
+		<td>Core, data display, visual enhancements</td>
+	</tr>
+	
+	
 	<tr>
 		<td><a href="#">Spacing</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td>Layout, visual enhancements</td>
 	</tr>
 	<tr>
 		<td><a href="#">Visibility</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td>Data display</td>
+	</tr>
+	<tr>
+		<td><a href="#">Buttons</a></td>
+		<td>asdf</td>
+		<td>Developers</td>
+		<td>Data input, navigation, visual enhancements</td>
 	</tr>
 	<tr>
 		<td><a href="#">Accordian</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td>Data display, decisions</td>
 	</tr>
 	<tr>
 		<td><a href="#">Expand/hide</a></td>
 		<td>asdf</td>
-		
+		<td>x</td>
+		<td>Data display, decisions</td>
 	</tr><tr>
 		<td><a href="#">Blockquote</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Breadcrumb</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td>Navigation, decisions</td>
 	</tr><tr>
 		<td><a href="#">Checkboxes</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td>Data entry, decisions</td>
 	</tr><tr>
 		<td><a href="#">Grids</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td>Core, layout</td>
 	</tr>
 	<tr>
 		<td><a href="#">Icons</a></td>
 		<td>asdf</td>
-		
-	</tr>
+		<td>xxx</td>
+		<td>Core, visual enhancements</td>
+		</tr>
 	<tr>
 		<td><a href="#">Images</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td>Visual enhancements</td>
 	</tr><tr>
 		<td><a href="#">Inputs</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td>Data entry</td>
 	</tr><tr>
 		<td><a href="#">Links</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td>Navigation, decisions</td>
 	</tr>
 	<tr>
 		<td><a href="#">Lists</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td><a href="#">Modals and overlays</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Pagination</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td>Navigation, decisions</td>
 	</tr><tr>
 		<td><a href="#">Radio buttons</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td>Data entry, decisions</td>
 	</tr><tr>
 		<td><a href="#">Select</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td>Data entry decisions</td>
 	</tr><tr>
 		<td><a href="#">Tables</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td>Data entry, data display</td>
 	</tr><tr>
 		<td><a href="#">Tabs</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Text</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Math</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Sizing</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Progress</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td><a href="#">Table of contents</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td>Navigation, decisions</td>
 	</tr>
 	<tr>
 		<td><a href="#">Alerts</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Labels</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Headings</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td><a href="#">Field flow</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td>Decisions</td>
 	</tr>
 	<tr>
 		<td><a href="#">Decision points</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td>Decisions, visual enhancements</td>
 	</tr>
 	<tr>
 		<td><a href="#">Ajax</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td><a href="#">Archived content</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Positioning</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td><a href="#">Badges</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Borders</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td>Visual enhancements</td>
 	</tr>
 	<tr>
 		<td><a href="#">Calendars</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Carousel</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Charts and graphs</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td>Data display, visual enhancements</td>
 	</tr><tr>
 		<td><a href="#">Code</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td><a href="#">Country identifier</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Data inview</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Data picture</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td><a href="#">Data list</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td><a href="#">Data tables</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td><a href="#">Date picker</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td><a href="#">Dismissable content</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Equalize (Equal height)</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Feedback form</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Feeds</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Floats</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Footnotes</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Form validation</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Geomap</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Keyboard keys</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">List group</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td><a href="#">Lists</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td><a href="#">Meter</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Multimedia player</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td>Visual enhancements</td>
 	</tr><tr>
 		<td><a href="#">Opacity</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td>Visual enhancements</td>
 	</tr><tr>
 		<td><a href="#">Panels</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td>Visual enhancements</td>
 	</tr><tr>
 		<td><a href="#">Pills</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td>Visual enhancements</td>
 	</tr><tr>
 		<td><a href="#">Session timeout</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Share widget</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Slider control (range)</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Text editing effects</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Text highlighting</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td><a href="#">Photo gallery</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td>Visual enhancements</td>
 	</tr>
 	<tr>
 		<td><a href="#">Transitions</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td>Visual enhancements</td>
 	</tr>
 	<tr>
 		<td><a href="#">Twitter embedded timeline</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td><a href="#">Wells</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td>Visual enhancements</td>
 	</tr>
 	<tr>
 		<td><a href="#">Wrapping and truncating text</a></td>
 		<td>asdf</td>
-		
+		<td>xxx</td>
+		<td></td>
 	</tr><tr>
 		<td><a href="#">Zebra striping (Advanced)</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td>Visual enhancements</td>
 	</tr>
 	<tr>
 		<td><a href="#">Steps</a></td>
 		<td>asdf</td>
-		
+		<td>Developers</td>
+		<td>Visual enhancements</td>
 	</tr>
 	
 	</tbody>
 	</table>
 	</div>
-		 
+		 </div>
+		 </div>
 		 
          <div id="def-preFooter"></div>
          <!-- Write closure template -->
