@@ -1,6 +1,7 @@
 .topic-tools{
 	background:#26374a;
 	color:#fff;
+
 }
 .topic-tools a, .topic-tools a:hover, .topic-tools a:active, .topic-tools a:visited {
 	color:#fff;
@@ -15,3 +16,4 @@
 .topic-tools .btn-link {
 	text-decoration:underline;
 }
+ 

@@ -20,6 +20,7 @@
     border:0;
      margin-bottom:10px;
 }
+
  .gcweb-menu {
     border:0;
 }
@@ -45,4 +46,19 @@
 .outset {
 	border: 1px solid #e3e3e3;
 	box-shadow: 0px 0px 8px #e3e3e3;
+}
+.template-example-title {
+	padding: 4px;
+    font-size: 20px;
+    background: #f5f5f5;
+    color: #636363;
+    font-weight: normal;
+    border: 2px solid #cfcfcf;
+    border-bottom: 0;
+    display: inline-block;
+    z-index: 10;
+	margin:0;
+}
+.template-example-title + .pull-right {
+	margin-bottom:0;
 }
