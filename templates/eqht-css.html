@@ -48,11 +48,11 @@
       </script>
       <main role="main" property="mainContentOfPage" class="container">
          <h1 property="name" id="wb-cont">Equal height (Pure CSS)</h1>
-		<p>Equal heights using no script, will render automatically upon page load. Also removes the equal heights for targeted items when panels are no longer in-line (100% width, stacked). </p>
+		<p>Equal heights using no script, will render automatically upon page load. Also removes the equal heights for targeted items when panels are no longer in-line (100% width, stacked).  Also allows stacked items to become part of the equal height (not available with current design), as long as they are the tallest in the row. </p>
   <h2>Example one, simple height on panel</h2>
-  <p>CSS attributes are applied to <code>.row</code> (<code>.wb-eqht-css</code>) and <code>.panel</code> (<code>.hght-inhrt-css</code>) divs.</p>
+  <p>CSS attributes are applied to <code>.row</code> (<code>.wb-eqht-css</code>), targeted column grid (<code>.wb-eqht-grd</code>) and <code>.panel</code> (<code>.hght-inhrt-css</code>) divs.</p>
   <div class="row wb-eqht-css">
-    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="col-xs-12 col-sm-6 col-md-3 wb-eqht-grd">
       <section class="panel panel-default hght-inhrt-css">
         <div class="panel-heading">
           <h3 class="panel-title">Column 1</h3>
@@ -69,7 +69,7 @@
         </div>
       </section>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="col-xs-12 col-sm-6 col-md-3 wb-eqht-grd">
       <section class="panel panel-default hght-inhrt-css">
         <div class="panel-heading">
           <h3 class="panel-title">Column 2</h3>
@@ -90,21 +90,33 @@
         </div>
       </section>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <section class="panel panel-default hght-inhrt-css">
+    <div class="col-xs-12 col-sm-6 col-md-3 wb-eqht-grd">
+      <section class="panel panel-default">
         <div class="panel-heading">
           <h3 class="panel-title">Column 3</h3>
         </div>
         <div class="panel-body">
-          <p>Column 3</p>
+          <p>Column 3a</p>
           <ul>
             <li>test</li>
             <li>test</li>
           </ul>
         </div>
       </section>
+	  <section class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Column 3</h3>
+        </div>
+        <div class="panel-body">
+          <p>Column 3a</p>
+          <ul>
+            <li>test</li>
+      
+          </ul>
+        </div>
+      </section>    
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="col-xs-12 col-sm-6 col-md-3 wb-eqht-grd">
       <section class="panel panel-default hght-inhrt-css">
         <div class="panel-heading">
           <h3 class="panel-title">Column 4</h3>
@@ -121,17 +133,107 @@
         </div>
       </section>
     </div>
+ <div class="col-xs-12 col-sm-6 col-md-3 wb-eqht-grd">
+      <section class="panel panel-default hght-inhrt-css">
+        <div class="panel-heading">
+          <h3 class="panel-title">Column 5</h3>
+        </div>
+        <div class="panel-body">
+          <p>Column 5</p>
+          <ul>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+ <div class="col-xs-12 col-sm-6 col-md-3 wb-eqht-grd">
+      <section class="panel panel-default hght-inhrt-css">
+        <div class="panel-heading">
+          <h3 class="panel-title">Column 6</h3>
+        </div>
+        <div class="panel-body">
+          <p>Column 6</p>
+          <ul>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+ <div class="col-xs-12 col-sm-6 col-md-3 wb-eqht-grd">
+      <section class="panel panel-default hght-inhrt-css">
+        <div class="panel-heading">
+          <h3 class="panel-title">Column 4</h3>
+        </div>
+        <div class="panel-body">
+          <p>Column 7</p>
+          <ul>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+ <div class="col-xs-12 col-sm-6 col-md-3 wb-eqht-grd">
+      <section class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Column 8</h3>
+        </div>
+        <div class="panel-body">
+          <p>Column 8a</p>
+          <ul>
+            <li>test</li>
+          
+          </ul>
+        </div>
+      </section>
+	<section class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Column 8</h3>
+        </div>
+        <div class="panel-body">
+          <p>Column 8b</p>
+          <ul>
+            <li>test</li>
+          
+          </ul>
+        </div>
+      </section>
+	 <section class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Column 8</h3>
+        </div>
+        <div class="panel-body">
+          <p>Column 8c</p>
+          <ul>
+            <li>test</li>
+          
+          </ul>
+        </div>
+      </section>
+    </div>	  
+	  
   </div>
 	<details>
 		<summary>Code</summary>
 		
-	<pre><code>&lt;div class=&quot;row wb-eqht-css&quot;&gt;<br>	&lt;div class=&quot;col-xs-12 col-sm-6 col-md-3&quot;&gt;
+	<pre><code>&lt;div class=&quot;row wb-eqht-css&quot;&gt;<br>	&lt;div class=&quot;col-xs-12 col-sm-6 col-md-3 wb-eqht-grd&quot;&gt;
 		&lt;section class=&quot;panel panel-default hght-inhrt-css&quot;&gt;<br>			&lt;div class=&quot;panel-heading&quot;&gt;<br>				&lt;h3 class=&quot;panel-title&quot;&gt;Column 1&lt;/h3&gt;<br>			&lt;/div&gt;<br>			&lt;div class=&quot;panel-body&quot;&gt;<br>				&lt;p&gt;Column 1&lt;/p&gt;<br>					...<br>			&lt;/div&gt;<br>		&lt;/section&gt;<br>	&lt;/div&gt;<br> 	...<br>&lt;/div&gt; </code></pre>
 		</details>
   <h2>Example 2, targeted height on panel body to allow for footers</h2>
-  <p>CSS attributes are applied to <code>.row</code> (<code>.wb-eqht-css</code>), <code>.panel</code> (<code>.hght-inhrt-css</code>) and <code>.panel-body</code> (<code>.eqht-trgt-css</code>) divs.</p>
+  <p>CSS attributes are applied to <code>.row</code> (<code>.wb-eqht-css</code>), targeted column grids (<code>.wb-eqht-grd</code>), <code>.panel</code> (<code>.hght-inhrt-css</code>) and <code>.panel-body</code> (<code>.eqht-trgt-css</code>) divs.</p>
   <div class="row wb-eqht-css">
-    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="col-xs-12 col-sm-6 col-md-3 wb-eqht-grd">
       <section class="panel panel-default hght-inhrt-css">
         <div class="panel-heading">
           <h3 class="panel-title">Column 1</h3>
@@ -151,7 +253,7 @@
         </footer>
       </section>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="col-xs-12 col-sm-6 col-md-3 wb-eqht-grd">
       <section class="panel panel-default hght-inhrt-css">
         <div class="panel-heading">
           <h3 class="panel-title">Column 2</h3>
@@ -175,7 +277,7 @@
         </footer>
       </section>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="col-xs-12 col-sm-6 col-md-3 wb-eqht-grd">
       <section class="panel panel-default hght-inhrt-css">
         <div class="panel-heading">
           <h3 class="panel-title">Column 3</h3>
@@ -192,7 +294,7 @@
         </footer>
       </section>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="col-xs-12 col-sm-6 col-md-3 wb-eqht-grd">
       <section class="panel panel-default hght-inhrt-css">
         <div class="panel-heading">
           <h3 class="panel-title">Column 4</h3>
@@ -216,7 +318,7 @@
 		<details>
 		<summary>Code</summary>
 		
-	<pre><code>&lt;div class=&quot;row wb-eqht-css&quot;&gt;<br>	&lt;div class=&quot;col-xs-12 col-sm-6 col-md-3&quot;&gt;
+	<pre><code>&lt;div class=&quot;row wb-eqht-css&quot;&gt;<br>	&lt;div class=&quot;col-xs-12 col-sm-6 col-md-3 wb-eqht-grd&quot;&gt;
 		&lt;section class=&quot;panel panel-default hght-inhrt-css&quot;&gt;<br>			&lt;div class=&quot;panel-heading&quot;&gt;<br>				&lt;h3 class=&quot;panel-title&quot;&gt;Column 1&lt;/h3&gt;<br>			&lt;/div&gt;<br>			&lt;div class=&quot;panel-body eqht-trgt-css&quot;&gt;<br>				&lt;p&gt;Column 1&lt;/p&gt;<br>					...<br>			&lt;/div&gt;
 			&lt;footer class=&quot;panel-footer&quot;&gt;
 				&lt;p&gt;Footer&lt;/p&gt;
