@@ -307,6 +307,49 @@
 				&lt;p&gt;Footer&lt;/p&gt;
 			&lt;/footer&gt;<br>		&lt;/section&gt;<br>	&lt;/div&gt;<br> 	...<br>&lt;/div&gt; </code></pre>
 		</details>
+	      
+	      <h2>Example 3, targeting grids with additional content that should not be targeted</h2>
+	    <p>In this example only the text inside the body is targeted to be equal height so the button links can sit on the same horizontal line in desktop</p>  
+	 <div class="panel panel-default">
+    <header class="panel-heading">
+      <p class="h4 mrgn-tp-0 panel-title">Either/or decisions</p>
+    </header>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="row wb-eqht-css">
+            <div class="col-xs-12 col-sm-6 brdr-rght mrgn-bttm-lg wb-eqht-grd">
+              <div class="col-sm-12 hght-inhrt-css">
+                <div id="calc-pnl" class="eqht-trgt-css">
+                  <p class="h5 mrgn-tp-sm">You may decide this option if:</p>
+                  <ul class="mrgn-bttm-0">
+                    <li>reason 1, and</li>
+                    <li>reason 2</li>
+                  </ul>
+                </div>
+                <a href="#"  class="btn btn-default mrgn-tp-md btn-block">Option 1</a> </div>
+            </div>
+            <div class="col-xs-1 col-sm-12 pstn-tp-sm pstn-lft-sm text-center mrgn-bttm-lg"><span class="fa-stack fa-fw text-muted"> <span class="fas fa-circle fa-stack-2x"></span><span class="fa-stack-1x fa-inverse">or</span></span></div>
+            <div class="col-xs-12 col-sm-6 mrgn-bttm-lg wb-eqht-grd">
+              <div class="col-sm-12 hght-inhrt-css">
+                <div class="eqht-trgt-css">
+                  <p class="h5 mrgn-tp-sm">You may decide this option if:</p>
+                  <ul class="mrgn-bttm-0">
+                    <li>reason 1</li>
+                    <li>reason 2</li>
+                    <li>reason 3, or</li>
+                    <li>reason 4</li>
+                  </ul>
+                </div>
+                <a href="#" class="btn btn-default mrgn-tp-md btn-block">Option 2</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>      
+	      
+	      
 	<p><strong>Notes:</strong></p>
 	<ul>
 	  <li>Using flexbox, items do no wrap by default required <code>flex-wrap:wrap</code> style, but will wrap if no override for mobile, so items need <code>.col-xs-*</code> in order to set the width in mobile	(e.g. <code>.col-xs-12</code> for 100% width)</li>
