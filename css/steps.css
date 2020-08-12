@@ -185,7 +185,7 @@ font-weight: 600;
 
 }
 
-ol.lst-stps li, .lst-stps .lst-item {
+ol.lst-stps>li, .lst-stps>.lst-item {
 
 padding-left: 45px
 
