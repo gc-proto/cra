@@ -409,9 +409,9 @@ h1 span.stacked span:nth-child(2) {
 		margin-left:15px;
 		margin-right:15px
 }
-.custom-bg-img {
+/* .custom-bg-img {
   background-image:none !important;
-}
+}*/
 }
 @media all and (min-width: 992px){
 	.most-requested h2 {
