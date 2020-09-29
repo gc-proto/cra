@@ -71,6 +71,7 @@
 }
 
 @media screen and (min-width: 992px) {
+	.ds-example>.wb-tabs>.tabpanels {background:#f9f9f9;}
 .ds-example>.wb-tabs>.tabpanels>details {
 	border:none; padding:15px;}
 .ds-example>.wb-tabs [role=tablist]>li {border:none;background:none;}
