@@ -240,7 +240,7 @@
  
 </section> 
 <h2 id="h-2" class="mrgn-bttm-0">Design options</h2>
-
+<!--
        
             <h3 class="h5">Appearance</h3>
             <dl class="dl-horizontal">
@@ -272,32 +272,40 @@
         
         </ul>
 		</div>
-	 
+	 -->
+	 <h3>Default</h3>
+	 <div class="ds-example">
 	 <div class="wb-tabs ignore-session">
 	<div class="tabpanels">
-		<details id="details-panel10">
+		<details id="tab1a">
 			<summary>Appearance</summary>
-			<div class="mrgn-tp-md"></div>
-			<dl class="dl-horizontal">
-			<dt>Default</dt><dd><a href="#">link</a></dd>
-			<dt>As an image</dt><dd><a href="#"><img alt="A generic square placeholder image with a white border around it" src="https://placehold.it/100x100?text=link"></a></dd>
-			<dt>As a button</dt><dd><a href="#" class="btn btn-default">link</a></dd>
-			</dl>
+			<div class="ds-inner">
+			<a href="#">Link</a>
+			</div>
+		</details>
+		<details id="tab1b">
+			<summary>Correct use</summary>
+			
+
+        <ul class="fa-ul">
+          <li><span class="fas fa-check fa-li text-success"></span> Use to link from one page to another</li>
+          <li><span class="fas fa-check fa-li text-success"></span> Use to link from to a section on a page</li>
+          <li><span class="fas fa-check fa-li text-success"></span> Use to open an <a href="https://wet-boew.github.io/wet-boew/demos/overlay/overlay-en.html">overlay</a> or <a href="https://wet-boew.github.io/wet-boew/demos/lightbox/lightbox-en.html">modal/lightbox</a></li>
+          <li><span class="fas fa-check fa-li text-success"></span> Use to initiate an event/query </li>
+          <li><span class="fas fa-check fa-li text-success"></span> Use to <span data-hveid="70">open a new outgoing email message</span></li>
+        
+        </ul>
+		
+		</details>
+		<details id="tab1c">
+		<summary>Code</summary>
+		
+	
+		<details id="tab1b-html">
+			<summary>HTML</summary>
 			
 		</details>
-		<details id="details-panel20">
-		<summary>Code</summary>
-		<div class="mrgn-tp-md"></div>
-	
-		<details id="details-panel10aa">
-			<summary>HTML</summary>
-			 <pre class="prettyprint prettyprinted" style=""><code><span class="com">// Default link:</span><span class="pln">
-</span><strong><span class="pun">&lt;</span><span class="pln">a href</span><span class="pun">=</span><span class="str">"#"</span><span class="pun">&gt;</span></strong><span class="pun">...&lt;/</span><span class="pln">a</span><span class="pun">&gt;</span><span class="pln">
-
-</span><span class="com">// Link and linked image:</span><span class="pln">
-</span><strong><span class="pun">&lt;</span><span class="pln">a href</span><span class="pun">=</span><span class="str">"#"</span><span class="pun">&gt;&lt;</span><span class="pln">img src</span><span class="pun">=</span><span class="str">"#"</span></strong><span class="pln"> alt</span><span class="pun">=</span><span class="str">""</span><span class="pln"> </span><span class="pun">/&gt;&lt;/</span><span class="pln">a</span><span class="pun">&gt;</span></code></pre>
-		</details>
-		<details id="details-panel20aa">
+		<details id="tab1b-angular">
 			<summary>Angular</summary>
 			<div class="mrgn-tp-md"></div>
 			<p>
@@ -309,10 +317,44 @@
 			
 			
 		</details>
-	<details id="details-panel210">
+	
+	</div>
+</div>
+	</div>
+<h3>As a button</h3>
+	 <div class="ds-example">
+	 <div class="wb-tabs ignore-session">
+	<div class="tabpanels">
+		<details id="tab1a">
+			<summary>Appearance</summary>
+			<div class="ds-inner">
+		<dl class="dl-horizontal mrgn-bttm-0">
+		<dt>Generic</dt><dd>
+			<p><a href="#" class="btn btn-default">Link as a button</a></p>
+			<div class="clearfix"></div>
+			<p class="small text-muted pull-right">Learn more about: <a href="#">Buttons</a></p></dd>
+			<dt>Pagination</dt><dd>
+			
+<ul class="pager mrgn-tp-0 mrgn-bttm-0">
+  <li class="previous"><a href="#" rel="prev">Previous</a></li>
+  <li class="next"><a href="#" rel="next">Next</a></li>
+</ul>
+<ul class="pagination mrgn-tp-0 mrgn-bttm-0">
+  <li><a href="#" rel="prev">Previous</a></li>
+  <li><a href="#">1 <span class="wb-inv">Go to Page 1</span></a></li>
+  <li><a href="#">2 <span class="wb-inv">Go to Page 2</span></a></li>
+  <li><a href="#" rel="next">Next</a></li>
+</ul>
+<div class="clearfix"></div>
+<p class="small text-muted  pull-right">Learn more about: <a href="#">Pagination</a></p>
+			</dd>
+			</dl>
+			</div>
+		</details>
+		<details id="tab1b">
 			<summary>Correct use</summary>
 			
-<div class="mrgn-tp-md"></div>
+
         <ul class="fa-ul">
           <li><span class="fas fa-check fa-li text-success"></span> Use to link from one page to another</li>
           <li><span class="fas fa-check fa-li text-success"></span> Use to link from to a section on a page</li>
@@ -323,10 +365,78 @@
         </ul>
 		
 		</details>
-	</div>
-</div>
+		<details id="tab1c">
+		<summary>Code</summary>
+		
+	
+		<details id="tab1c-html">
+			<summary>HTML</summary>
+			
+		</details>
+		<details id="tab1c-angular">
+			<summary>Angular</summary>
+			<div class="mrgn-tp-md"></div>
+			<p>
+				...
+			</p>
+		</details>
 	
 
+			
+			
+		</details>
+	
+	</div>
+</div>
+	</div>
+	<h3>On an image</h3>
+	 <div class="ds-example">
+	 <div class="wb-tabs ignore-session">
+	<div class="tabpanels">
+		<details id="tab2a">
+			<summary>Appearance</summary>
+			<div class="ds-inner">
+			<a href="#"><img alt="A generic square placeholder image with a white border around it" src="https://placehold.it/300x100?text=(Link on an image)"></a>
+			</div>
+		</details>
+		<details id="tab2b">
+			<summary>Correct use</summary>
+			
+
+        <ul class="fa-ul">
+          <li><span class="fas fa-check fa-li text-success"></span> Use to link from one page to another</li>
+          <li><span class="fas fa-check fa-li text-success"></span> Use to link from to a section on a page</li>
+          <li><span class="fas fa-check fa-li text-success"></span> Use to open an <a href="https://wet-boew.github.io/wet-boew/demos/overlay/overlay-en.html">overlay</a> or <a href="https://wet-boew.github.io/wet-boew/demos/lightbox/lightbox-en.html">modal/lightbox</a></li>
+          <li><span class="fas fa-check fa-li text-success"></span> Use to initiate an event/query </li>
+          <li><span class="fas fa-check fa-li text-success"></span> Use to <span data-hveid="70">open a new outgoing email message</span></li>
+        
+        </ul>
+		
+		</details>
+		<details id="tab2c">
+		<summary>Code</summary>
+		
+	
+		<details id="tab2c-html">
+			<summary>HTML</summary>
+			
+		</details>
+		<details id="tab2c-angular">
+			<summary>Angular</summary>
+			<div class="mrgn-tp-md"></div>
+			<p>
+				...
+			</p>
+		</details>
+	
+
+			
+			
+		</details>
+	
+	</div>
+</div>
+	</div>
 
          <div id="def-preFooter"></div>
          <!-- Write closure template -->
