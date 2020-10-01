@@ -109,6 +109,112 @@
     </ul></li></ul>
 <section>
 <h2 id="marketing">CRA marketing colours</h2>
+ <div class="row mrgn-tp-lg">
+    <div class="col-md-3">
+      <form class="wb-tables-filter" data-bind-to="dataset-filter">
+        <div class="panel panel-default outset brdr-rds-0">
+        
+		
+          
+	
+
+		<div class="panel-heading"><h2 class="panel-title">Filter</h2></div>
+            <div class="panel-body">
+			
+              
+              <fieldset class="brdr-0 p-0">
+                <legend class="h3 mrgn-tp-0 mrgn-bttm-md">Colour:</legend>
+                <div class="form-group">
+                  <ul class="list-unstyled">
+                   <li class="checkbox">
+                      <label for="black-cra">
+                        <input type="checkbox" id="black-cra" name="black-cra" data-column="0" value="black">
+                        Black</label>
+                    </li>
+					<li class="checkbox">
+                      <label for="gray-cra">
+                        <input type="checkbox" id="gray-cra" name="gray-cra" data-column="0" value="gray">
+                        Gray</label>
+                    </li>
+                      <li class="checkbox">
+                      <label for="blue-cra">
+                        <input type="checkbox" id="blue-cra" name="blue-cra" data-column="0" value="blue">
+                        Blue</label>
+                    </li>
+                  </ul>
+                </div>
+              </fieldset>
+             <fieldset class="brdr-0">
+                <legend class="h3 mrgn-tp-0 mrgn-bttm-md">Used by: </legend>
+                <div class="form-group">
+                  <ul class="list-unstyled">
+                   
+					<li class="checkbox">
+                      <label for="cra">
+                        <input type="checkbox" id="cra" name="cra" data-column="2" value="CRA">
+                        CRA</label>
+                    </li>
+                      <li class="checkbox">
+                      <label for="hrb">
+                        <input type="checkbox" id="hrb" name="hrb" data-column="2" value="HRB">
+                        HRB</label>
+                    </li>
+                    
+                   
+                  </ul>
+                </div>
+              </fieldset>
+         
+            </div>
+<div class="panel-footer">
+              <button type="submit" class="btn btn-primary mrgn-rght-md mrgn-tp-sm" aria-controls="dataset-filter_info">Apply filter</button>
+              <button type="reset" class="btn btn-link mrgn-tp-sm mrgn-bttm-sm">Clear</button>
+            </div>
+          </div>
+        
+      </form>
+	
+    </div>
+    <div class="col-md-9">
+	<div class="table-responsive">
+	<table class="table wb-tables  table-striped " id="dataset-filter"  data-wb-tables='{"paging":false, "ordering":true, }'>
+	    <caption class="wb-inv">Templates</caption>
+	<thead>
+	<tr>
+		<th scope="col">Colour</th>
+		<th scope="col">Contrast</th>
+		<th scope="col">Usage</th>
+		
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td><img src="https://via.placeholder.com/50x50/333/333/" class="img-circle"> Dark gray #333</td>
+		<td><ul class="list-unstyled lst-spcd"><li><img src="https://via.placeholder.com/50x50/333/fff/?text=text"  class="img-circle"> <span class="fas fa-check text-success"></span> Passes with white text</li>
+		<li><img src="https://via.placeholder.com/48x48/fff/333/?text=text"  class="img-circle brdr-tp brdr-bttm brdr-rght brdr-lft"> <span class="fas fa-check text-success"></span> Passes with white background</li></td>
+		<td>General</td>
+	</tr>
+	<tr>
+		<td><img src="https://via.placeholder.com/50x50/ccc/ccc/" class="img-circle"> Light gray #ccc</td>
+		<td><ul class="list-unstyled lst-spcd"><li><img src="https://via.placeholder.com/50x50/333/ccc/?text=text"  class="img-circle"> <span class="fas fa-check text-success"></span> Passes with dark grey text</li>
+		<li><img src="https://via.placeholder.com/48x48/ccc/333/?text=text"  class="img-circle brdr-tp brdr-bttm brdr-rght brdr-lft"> <span class="fas fa-check text-success"></span> Passes with dark grey background</li></td>
+		<td><ul class="list-unstyled">
+		<li>General</li>
+		<li>HRB</li>
+		</ul></td>
+	</tr>
+	<tr>
+		<td><img src="https://via.placeholder.com/50x50/335075/335075/" class="img-circle"> Blue #335075</td>
+		<td><ul class="list-unstyled lst-spcd"><li><img src="https://via.placeholder.com/50x50/335075/fff/?text=text"  class="img-circle"> <span class="fas fa-check text-success"></span> Passes with white text</li>
+		<li><img src="https://via.placeholder.com/50x50/fff/335075/?text=text"  class="img-circle"> <span class="fas fa-check text-success"></span> Passes with white background</li></td>
+		<td>General</td>
+	</tr>
+	</tbody>
+	</table>
+
+
+
+
  <div class="ds-example">
 <div class="wb-tabs ignore-session">
 	<div class="tabpanels">
