@@ -1177,90 +1177,326 @@
         <li>removed empty cells, rows and irrelevant information (underlining) and subheadings (such as those that were not aligned with the column headers)</li>
       </ul>
 <h2 id="h-2" class="mrgn-bttm-0">Design options</h2>
-<h3 id="h-2-1">Default</h3>
-         <div class="row">
-            <div class="col-md-7">
-               <div class="ds-example">
-                  <div class="wb-tabs ignore-session">
-                     <div class="tabpanels">
-                        <details id="tab1a">
-                           <summary>Appearance</summary>
-						   <div class="row">
-						   <div class="col-md-8 col-lg-9">
-                          <table class="table">
-            <caption class="wb-inv">
-            Table example with heading
-            </caption>
-            <thead>
-              <tr>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Data Data</td>
-                <td>Data Data</td>
-              </tr>
-              <tr>
-                <td>Data Data</td>
-                <td>Data Data</td>
-              </tr>
-            </tbody>
-          </table>
-						   </div>
-						   <div class="col-md-4 col-lg-3">
-                           <div class="ds-configuration">
-						   <fieldset><legend>Modifiers</legend>
-						  
-						   <div class="radio">
-  <label><input type="radio" name="optradio" checked >None</label>
-</div>
-<div class="radio">
-  <label><input type="radio" name="optradio">Bordered</label>
-</div>
-<div class="radio">
-  <label><input type="radio" name="optradio">Striping (zebra)</label>
-</div>
-<div class="radio">
-  <label><input type="radio" name="optradio">Hover row</label>
-</div>
-<div class="radio">
-  <label><input type="radio" name="optradio">Condensed</label>
-</div></fieldset>
+<h3 class="mrgn-bttm-0">Basic</h3>
 
-						   </div>
-						   </div>
-						   </div>
-                        </details>
-                        <details id="tab1b">
-                           <summary>Code</summary>
-                           <details id="tab1b-html">
-                              <summary>HTML</summary>
-                           </details>
-                           <details id="tab1b-struts">
-                              <summary>Struts</summary>
-                              <div class="mrgn-tp-md"></div>
-                              <p>
-                                 ...
-                              </p>
-                           </details>
-                        </details>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-5">
-               <h4>Correct use</h4>
-               <ul class="fa-ul">
-                  <li><span class="fas fa-check fa-li text-success"></span> [somethings goes here]</li>
-                  <li><span class="fas fa-check fa-li text-success"></span> [somethings goes here]</li>
-                  <li><span class="fas fa-check fa-li text-success"></span> [somethings goes here]</li>
-                  <li><span class="fas fa-check fa-li text-success"></span> [somethings goes here]</li>
-                  <li><span class="fas fa-check fa-li text-success"></span> [somethings goes here]</li>
-               </ul>
-            </div>
-         </div>
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="frmvld">
+
+<form>
+
+<div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"checkbox", "isoptional": true, "noForm": true, "reset": [{ "action": "removeClass", "source":"#table1, #cell7, #cell8", "class": "table-striped table-hover table-bordered table-condensed " }, { "action": "removeClass", "source":"#row1", "class": "active" }, { "action": "removeClass", "source":"#row2", "class": "success" }, { "action": "removeClass", "source":"#cell7", "class": "warning" }, { "action": "removeClass", "source":"#cell8", "class": "danger" } ]}'>
+
+<p><span class="lead mrgn-tp-0"><span class="fas fa-tools"></span> Modify the design</span></p>
+
+<ul>
+<li data-wb-fieldflow='[{"action": "addClass", "source": "#table1", "class": "table-bordered", "live": true}, {"action": "toggle", "toggle": "#gov3, .cl-tb", "live": true}]'>Bordered
+
+</li>
+<li data-wb-fieldflow='[{"action": "addClass", "source": "#table1", "class": "table-striped", "live": true}, {"action": "toggle", "toggle": "#gov1, .cl-ts", "live": true}]'>Striped rows
+
+</li>
+
+<li data-wb-fieldflow='[{"action": "addClass", "source": "#table1", "class": "table-hover", "live": true}, {"action": "toggle", "toggle": "#gov2, .cl-th", "live": true}]'>Hover effect on rows
+
+</li>
+
+
+
+<li data-wb-fieldflow='[{"action": "addClass", "source": "#table1", "class": "table-condensed", "live": true}, {"action": "toggle", "toggle": "#gov4, .cl-tc", "live": true}]'>Condensed spacing
+
+</li>
+
+<li data-wb-fieldflow='[{"action": "addClass", "source": "#row1", "class": "active", "live": true}, {"action": "toggle", "toggle": "#gov5, .cl-act", "live": true}]'>Highlight active row (first row)
+
+</li>
+
+<li data-wb-fieldflow='[{"action": "addClass", "source": "#row2", "class": "success", "live": true}, {"action": "toggle", "toggle": "#gov6, .cl-suc", "live": true}]'>Highlight active row (second row)
+
+</li>
+
+<li data-wb-fieldflow='[{"action": "addClass", "source": "#cell7", "class": "warning", "live": true}, {"action": "toggle", "toggle": "#gov7, .cl-war", "live": true}]'>Highlight warning cell (cell 1C)
+
+</li>
+
+<li data-wb-fieldflow='[{"action": "addClass", "source": "#cell8", "class": "danger", "live": true}, {"action": "toggle", "toggle": "#gov8, .cl-dan", "live": true}]'>Highlight warning cell (cell 2C)
+
+
+</li>
+
+</ul>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<div class="col-md-8">
+
+<div class="ds-example">
+
+<div class="wb-tabs">
+
+<div class="tabpanels">
+
+<details id="app1">
+
+<summary>Appearance</summary>
+
+<table class="table" id="table1">
+
+<caption>Table example</caption>
+
+<thead>
+
+<tr>
+
+<th scope="col">Header 1</th>
+
+<th scope="col">Header 2</th>
+
+<th scope="col">Header 3</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr id="row1">
+
+<td id="cell1">Item 1a</td>
+
+<td id="cell2">Item 2a</td>
+
+<td id="cell3">Item 3a</td>
+
+</tr>
+
+<tr id="row2">
+
+<td id="cell4">Item 1b</td>
+
+<td id="cell5">Item 2b</td>
+
+<td id="cell6">Item 3b</td>
+
+</tr>
+
+<tr id="row3">
+
+<td id="cell7">Item 1c</td>
+
+<td id="cell8">Item 2c</td>
+
+<td id="cell9">Item 3c</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</details>
+
+<details id="code1">
+
+<summary>Code</summary>
+
+<div class="accordion full-width">
+
+<details class="acc-group">
+
+<summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>HTML</summary>
+
+<pre><code>&lt;table class=&quot;table<span class="hidden cl-ts"> table-striped</span><span class="hidden cl-th"> table-hover</span><span class="hidden cl-tb"> table-bordered</span><span class="hidden cl-tc"> table-condensed</span>&quot;&gt;<br> &lt;caption&gt;...&lt;/caption&gt;<br> &lt;thead&gt;<br> &lt;tr&gt;<br> &lt;th scope=&quot;col&quot;&gt;...&lt;/th&gt;<br> &lt;th scope=&quot;col&quot;&gt;...&lt;/th&gt;<br> &lt;th scope=&quot;col&quot;&gt;...&lt;/th&gt;<br> &lt;/tr&gt;<br> &lt;/thead&gt;<br> &lt;tbody&gt;<br> &lt;tr<span class="hidden cl-act"> class="active"</span>&gt;<br> ...<br> &lt;/tr&gt;<br> &lt;tr<span class="hidden cl-suc"> class="success"</span>&gt;<br> ...<br> &lt;/tr&gt;<br> &lt;tr&gt;<br> &lt;td<span class="hidden cl-war"> class="warning"</span>&gt;...&lt;/td&gt;<br> &lt;td<span class="hidden cl-dan"> class="danger"</span>&gt;...&lt;/td&gt;<br> ...<br> &lt;/tr&gt;<br> &lt;/tbody&gt;<br>&lt;/table&gt;</code></pre>
+
+</details>
+
+<details class="acc-group">
+
+<summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>Struts</summary>
+
+<pre><code>code here</code></pre>
+
+</details>
+
+</div>
+
+</details>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="mrgn-tp-md wb-inv">
+
+<div class="panel panel-default panel-body hidden" id="gov1">
+
+<h3 class="mrgn-tp-0">Reminder for table striped</h3>
+
+<p>Content goes here</p>
+
+</div>
+
+<div class="panel panel-default panel-body hidden" id="gov2">
+
+<h3 class="mrgn-tp-0">Reminder for table hover</h3>
+
+<p>Content goes here</p>
+
+</div>
+
+<div class="panel panel-default panel-body hidden" id="gov3">
+
+<h3 class="mrgn-tp-0">Reminder for table bordered</h3>
+
+<p>Content goes here</p>
+
+</div>
+
+<div class="panel panel-default panel-body hidden" id="gov4">
+
+<h3 class="mrgn-tp-0">Reminder for table condensed</h3>
+
+<p>Content goes here</p>
+
+</div>
+
+<div class="panel panel-default panel-body hidden" id="gov5">
+
+<h3 class="mrgn-tp-0">Reminder for table active</h3>
+
+<p>Content goes here</p>
+
+</div>
+
+<div class="panel panel-default panel-body hidden" id="gov6">
+
+<h3 class="mrgn-tp-0">Reminder for table success</h3>
+
+<p>Content goes here</p>
+
+</div>
+
+<div class="panel panel-default panel-body hidden" id="gov7">
+
+<h3 class="mrgn-tp-0">Reminder for table warning</h3>
+
+<p>Content goes here</p>
+
+</div>
+
+<div class="panel panel-default panel-body hidden" id="gov8">
+
+<h3 class="mrgn-tp-0">Reminder for table danger</h3>
+
+<p>Content goes here</p>
+
+</div>
+
+</div>
+<h4>Correct use</h4>
+<dl class="dl-horizontal">
+<dt>General</dt>
+<dd>
+<ul class="fa-ul">     
+        <li><span class="fas fa-check fa-li text-success"></span>Use tables  to display tabular data such as financial, statistical, comparative, or numerical   information</li>
+		  <li><span class="fas fa-check fa-li text-success"></span>Use consistent  heading text in  related tables
+          <ul>
+            <li>For example, use "Name" as a header for all contact listings, not a   variety of titles such as "Contacts", "Names" or "User"</li>
+          </ul>
+        </li>
+		<li><span class="fas fa-check fa-li text-success"></span>Insert <strong>a dash  (-) </strong> in empty data cells
+          <ul>
+            <li>The dash (-) allows  the  screen reader  to correctly read the content  as "empty", and properly displays when magnified</li>
+          </ul>
+        </li>
+		</ul>
+
+</dd>
+<dt>Base coding</dt>
+<dd>
+<ul class="fa-ul"> 
+ <li><span class="fas fa-check fa-li text-success"></span>Use <code>.table</code> to style a basic table</li>
+  <li><span class="fas fa-check fa-li text-success"></span>Include the appropriate <code>scope="col"</code> or <code>scope="row</code> within the <code>&lt;th&gt;</code> tag</li>
+   <li><span class="fas fa-check fa-li text-success"></span>Place a  descriptive <code>&lt;h*&gt;</code> title tag <strong>directly above</strong> a table when it does not contain a <code>&lt;caption&gt;</code> tag</li>
+        <li><span class="fas fa-check fa-li text-success"></span>Include a <strong>visible</strong> table caption when the <code>&lt;h*&gt;</code> title  is not directly above the table, or <strong>if multiple tables appear under </strong>an <code>&lt;h*&gt;</code> tag
+          <ul>
+            <li>Use a <code>&lt;caption&gt; </code> tag on all tables to ensure they &nbsp;validate, and are accessible and        descriptive (especially on statistics or financial pages that contain        multiple tables)</li>
+          
+            <li>Use <code>.wb-inv</code> (as needed) to make the table caption invisible, yet ensure accessibility</li>
+          </ul>
+        </li>
+</ul>
+</dd>
+<dt>Modifiers</dt>
+<dd>
+<ul class="list-unstyled">
+<li><strong>Borders</strong>
+<ul class="fa-ul"> 
+  <li><span class="fas fa-check fa-li text-success"></span>Use <code>.table-bordered</code> to separate information when the table cells have a lot of data in them, and word wrap
+          <ul>
+            <li>This makes it easy for the user to tell what information belongs to which cell</li>
+</ul>
+</li></ul></li>
+<li><strong>Striped rows</strong>
+<ul class="fa-ul"> 
+
+        <li><span class="fas fa-check fa-li text-success"></span>Use <code>.table-striped</code> within the <code>&lt;tbody&gt;</code> to help  distinguish rows from each other</li>
+        <li><span class="fas fa-check fa-li text-success"></span>Use mainly on long, complex tables</li>
+     </ul>
+	 
+
+</li>
+<li><strong>Hover rows</strong>
+<ul class="fa-ul"> 
+<li><span class="fas fa-check fa-li text-success"></span>Use <code>.table-hover</code> to allow the user to highlight each row when they mouse over it</li>
+</ul>
+</li>
+
+<li><strong>Condensed spacing</strong>
+<ul class="fa-ul"> 
+<li><span class="fas fa-check fa-li text-success"></span>Use <code>.table-condensed</code> to narrow the row height</li>
+</ul>
+</li>
+<li><strong>Coloured rows and cells</strong>
+<ul class="fa-ul"> 
+<li><span class="fas fa-check fa-li text-success"></span><code>.active</code>: Applies the hover color to a particular row or cell</li>
+        <li><span class="fas fa-check fa-li text-success"></span><code>.success</code>:
+          Indicates a successful or positive action</li>
+        <li><span class="fas fa-check fa-li text-success"></span><code>.warning</code>:
+          Indicates a warning that might need attention</li>
+        <li><span class="fas fa-check fa-li text-success"></span><code>.danger</code>:
+          Indicates a dangerous or potentially negative action</li>
+</ul>
+</li>
+
+</dd>
+ </dl>
+       
+      
+        
+      
+       
+       
+      </ul>
+</div>
+
+</div>
+
+
+
+
+
+        
 <h3 id="h-2-2">toc2b</h3>
 <p>[content]</p>
 <h3 id="h-2-3">toc2c</h3>

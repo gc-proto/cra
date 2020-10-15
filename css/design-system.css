@@ -69,11 +69,12 @@
 /* .cnt-wdth-lmtd main .ds-example * {
 	max-width: 100%;
 } */
+legend.h5 {margin-top:0;}
 .ds-example>.wb-tabs>.tabpanels {background:#f9f9f9;}
 .ds-example>.wb-tabs>.tabpanels legend {font-size:80%; font-weight:700; margin: 0 0 5px;}
 .ds-example>.wb-tabs>.tabpanels fieldset {padding-top:0;}
 .ds-example>.wb-tabs>.tabpanels>details>summary {background:#fff;}
-
+.ds-example>.wb-tabs [role=tablist]>li:focus,.ds-example>.wb-tabs [role=tablist]>li:hover{background:#ddd;}
 @media screen and (min-width: 992px) {
 	.ds-configuration {background:#fff; padding: 0 10px; margin:-30px -30px -30px 0}
 	
