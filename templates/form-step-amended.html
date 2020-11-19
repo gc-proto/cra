@@ -103,10 +103,10 @@
 <div class="provisional wb-steps steps-solo">
 <form action="#" method="get" id="steps-example">
 <fieldset id="client">
-<legend>Client Information</legend>
+<legend>Client Information <progress value="0" max="100" /></legend>
 	
 <div>
-<progress value="0" max="100" />	
+	
 <div class="form-group">
 <label for="firstname"><span class="field-name">First name</span></label>
 <input class="form-control" id="firstname" name="firstname" type="text" data-rule-minlength="2" >
@@ -122,10 +122,10 @@
 </div>
 </fieldset>
 <fieldset id="contact">
-<legend>Contact Information</legend>
+<legend>Contact Information<progress value="37.5" max="100" /></legend>
 	
 <div>
-<progress value="37.5" max="100" />	
+	
 <div class="form-group">
 <label for="preferredNumber">Preferred: <span class="field-name">Phone Number</span></label>
 <input class="form-control" id="preferredNumber" name="preferredNumber" type="tel" data-rule-phoneus="true">
@@ -141,10 +141,10 @@
 </div>
 </fieldset>
 <fieldset id="questionaire">
-<legend>Ethics Questionnaire</legend>
+<legend>Ethics Questionnaire<progress value="75" max="100" /></legend>
 	
 <div>
-<progress value="75" max="100" />	
+	
 <p><small>For each of the following examples, indicate whether or not you feel that there is an ethical issue.</small></p>
 <fieldset class="subfields">
 <legend><span class="field-name">Ethics 1</span>: You pay $10.00 bucks for a purchase, but receive change for $20.00 bucks. Would you keep the extra money?</legend>
@@ -168,14 +168,14 @@
 </fieldset>
 </div>
 </fieldset>
-<fieldset id="contact">
-<legend>Survey complete</legend>
+<!--<fieldset id="finished">
+<legend>Survey complete<progress value="100" max="100" /></legend>
 	
 <div>
-<progress value="100" max="100" />	
+	
 	<p>You have completed the survey and can now submit your response.</p>
 </div>
-</fieldset>	
+</fieldset>//-->	
 <input type="submit" name="submit" value="Submit" class="btn btn-primary">
 </form>
 </div>
