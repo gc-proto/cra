@@ -100,10 +100,11 @@
 </header>
 <main property="mainContentOfPage" class="container" typeof="WebPageElement">
          <h1 property="name" id="wb-cont">Form step (amended)</h1>
-<div class="wb-frmvld provisional wb-steps steps-solo">
+<div class="provisional wb-steps steps-solo">
 <form action="#" method="get" id="steps-example">
 <fieldset id="client">
 <legend>Client Information</legend>
+<progress value="0" max="100" />	
 <div>
 <div class="form-group">
 <label for="firstname" class="required"><span class="field-name">First name</span></label>
@@ -121,6 +122,7 @@
 </fieldset>
 <fieldset id="contact">
 <legend>Contact Information</legend>
+	<progress value="37.5" max="100" />
 <div>
 <div class="form-group">
 <label for="preferredNumber" class="required">Preferred: <span class="field-name">Phone Number</span></label>
@@ -138,6 +140,7 @@
 </fieldset>
 <fieldset id="questionaire">
 <legend>Ethics Questionnaire</legend>
+<progress value="75" max="100" />	
 <div>
 <p><small>For each of the following examples, indicate whether or not you feel that there is an ethical issue.</small></p>
 <fieldset class="subfields">
@@ -162,6 +165,13 @@
 </fieldset>
 </div>
 </fieldset>
+<fieldset id="contact">
+<legend>Contact Information</legend>
+	<progress value="100" max="100" />
+<div>
+	<p>You have completed the survey and can now submit your response.</p>
+</div>
+</fieldset>	
 <input type="submit" name="submit" value="Submit" class="btn btn-primary">
 </form>
 </div>
