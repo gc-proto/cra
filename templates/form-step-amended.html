@@ -261,9 +261,11 @@
 <script src="https://canada.ca/etc/designs/canada/wet-boew/js/navigation.js"></script>
 <script>
 	$( ".wb-steps" ).on( "wb-updated.wb-steps", function( event ) {
-	$('button:contains("Next")').each(function() {
-  $(this).insertBefore( $(this).prev('button') );
-});	
+	<script>
+$('button:contains("Next")').each(function() {
+  $(this).insertBefore("button:contains('Previous')");
+  });
+</script>
 		
 });
 	
