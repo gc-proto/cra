@@ -259,6 +259,16 @@
 		<![endif]--> 
 <script src="https://canada.ca/etc/designs/canada/wet-boew/js/theme.min.js"></script> 
 <script src="https://canada.ca/etc/designs/canada/wet-boew/js/navigation.js"></script>
+<script>
+	$( ".wb-steps" ).on( "wb-updated.wb-steps", function( event ) {
+	$('button:contains("Next")').each(function() {
+  $(this).insertBefore( $(this).prev('button') );
+});	
+		
+});
+	
+	
 
+	</script>
 </body>
 </html>
