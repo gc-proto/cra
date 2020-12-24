@@ -20,333 +20,11 @@
       </script>
       <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
       <link href="../css/custom.css" rel="stylesheet">
-	  <style>
-	#test {
-    animation: cssAnimation 0s 5s forwards;
-  visibility: hidden;
-
-}
-@keyframes  cssAnimation {
-  to   { visibility: visible; }
-
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-	.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 12px 18px 12px 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-
- 
-}
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.collapsible:before {
-	font-family: "Glyphicons Halflings";
-  content: "\e114";
-  color: white;
- 
-
-  float: left;
-  margin-right: 10px;
-}
-
-	
-.panel-show-more .panel-body {
-
- max-height: 250px;
-  overflow: auto;
-  transition: max-height 0.5s ease-out;
- 
-}	
-	/*vertical table*/
-
-.table-vertical td {
-
-        display: block;
-
-        clear: both;
-
-        border-width: 0 !important;
-
-}
-
-.table-vertical tr:not(.dtrg-group) td {
-
-        padding: 0px!important;
-
-}
-
-.table-vertical thead {
-
-        clip: rect(1px, 1px, 1px, 1px);
-
-        height: 1px;
-
-        margin: 0;
-
-        overflow: hidden;
-
-        position: absolute;
-
-        width: 1px;
-
-}
-
-.table-vertical.table-bordered tr {
-
-        border-bottom: 1px solid #ddd;
-
-        border-left: hidden;
-
-        border-right: hidden
-
-}
-
-.table-vertical.dataTable {
-
-        border-collapse: collapse
-
-}
-
-.table-vertical td.vertical-table-inline:not(:empty) {
-
-        display: inline;
-
-        padding-right: 8px!important;
-
-}
-
-.table-vertical td.vertical-table-inline:not(:empty) ~ td.vertical-table-inline:not(:empty) {
-
-        display: inline;
-
-        padding-left: 8px!important;
-
-        padding-right: 8px!important;
-
-}
-
-td.vertical-table-inline:empty {
-
-        display: inline;
-
-        clear: both;
-
-        border-width: 0 !important;
-
-        padding: 0px!important;
-
-}
-
-/*vertical table w/ headers */
-
-.table-vertical-header td {
-
-        display: block;
-
-        clear: both;
-
-        border-width: 0 !important;
-
-}
-
-.table-vertical-header thead {
-
-        clip: rect(1px, 1px, 1px, 1px);
-
-        height: 1px;
-
-        margin: 0;
-
-        overflow: hidden;
-
-        position: absolute;
-
-        width: 1px;
-
-}
-
-.table-vertical-header td {
-
-        margin-left: 165px;
-
-}
-
-.table-vertical-header td::before {
-
-        display: inline-block;
-
-        padding-right: 15px;
-
-        width: 160px;
-
-        margin-left: -165px;
-
-        float: left;
-
-        text-align: right;
-
-		color:#555;
-
-        content: attr(data-header);
-
-}
-
-.table-vertical-header.table-bordered tr {
-
-        border-bottom: 1px solid #ddd;
-
-        border-left: hidden;
-
-        border-right: hidden
-
-}
-
-.table-vertical-header.dataTable {
-
-        border-collapse: collapse
-
-}
-
-.table-vertical-header thead, .table-vertical-header td:empty {
-
-        clip: rect(1px, 1px, 1px, 1px);
-
-        height: 1px;
-
-        margin: 0;
-
-        overflow: hidden;
-
-        position: absolute;
-
-        width: 1px;
-
-}
-
-/*panel scroll*/
-
-.panel-scroll {
-
-        min-height: 300px;
-
-        max-height: 300px;
-
-        overflow-x: hidden;
-
-        overflow-y: auto;
-
-}
-
- 
-
-@media screen and (max-width:767px) {
-
-.panel-scroll {
-
-        max-height: none;
-
-        overflow-x: none;
-
-        overflow-y: none;
-
-}
-
-}
-
-/* Row Group headers */
-
-table.dataTable tr.dtrg-group td {
-
-        font-weight: bold;
-
-        background-color: #e0e0e0;
-
-        padding-top: 15px;
-
-}
-
-table.dataTable tr.dtrg-group td.bg-inherit {
-
-        background: inherit;
-
-        padding-left: 0px;
-
-}
-
-table.table-vertical-header tr.dtrg-start>td {
-
-        margin-left: 0
-
-}
-
-table.table-row-group .table-vertical-header>tr>td {
-
-        position: inherit!important
-
-}
-
-
-.ds-example {margin-top:15px;border: 1px solid #e3e3e3;
-	box-shadow: 0px 0px 8px #e3e3e3;}
-
-
-
-.ds-example>.wb-tabs>.tabpanels {background:#f9f9f9;}
-
-.ds-example>.wb-tabs>.tabpanels fieldset {padding-top:0;}
-.ds-example>.wb-tabs>.tabpanels>details>summary {background:#fff; border-radius: 0;}
-.ds-example>.wb-tabs [role=tablist]>li:focus,.ds-example>.wb-tabs [role=tablist]>li:hover{background:#ddd;}
-.ds-example>.wb-tabs {margin-bottom:0;}
-.ds-example>.wb-tabs>.tabpanels>details {margin-bottom:0;}
-.ds-example .panel-body {box-shadow: none;}
-@media screen and (max-width: 991px){
-	.ds-example>.wb-tabs .tgl-panel {
-		margin-top:15px;
-	}
-}
-@media screen and (min-width: 992px) {
-
-	
-.ds-example>.wb-tabs>.tabpanels>details {
-	border:none; padding:15px;}
-.ds-example>.wb-tabs [role=tablist]>li {border:none;background:none;}
-.ds-example>.wb-tabs [role=tablist]>li.active a {border-width:0 0 4px;}
-/* .ds-example>.wb-tabs>.tabpanels>details:first-child {padding: 30px;} */
-.ds-example>.wb-tabs>.tabpanels>details {padding: 30px;}
-.ds-example>.wb-tabs>.tabpanels>details {background:#f9f9f9;padding: 30px; margin-bottom:0;}
-}
-
+<link href="http://test.canada.ca/covid-19-guidance/proto/css/conjunction.css" rel="stylesheet">
+<style>
+#dataset-filter_filter {padding-left:15px;}
 </style>
+
    </head>
    <body vocab="http://schema.org/" typeof="WebPage"  class="cnt-wdth-lmtd">
       <div id="def-top">
@@ -383,823 +61,749 @@ table.table-row-group .table-vertical-header>tr>td {
       <main role="main" property="mainContentOfPage" class="container"><h1 property="name" id="wb-cont"><span class="stacked"><span>Reporting income</span> - 
 <span>Personal income tax</span>
 </span></h1>
-  
-  <p >When you prepare your tax return, you must report as income most amounts you receive in the year. As a resident of Canada, you have to report your income from all sources, both inside and outside Canada. Report all income in Canadian dollars.</p>
+  <div class="row">
+  <div class="col-md-8">
+  <p>When you prepare your tax return, you must report as income most amounts you receive in the year.</p>
+<p>As a resident of Canada, you have to report your income from all sources, both inside and outside Canada. Report all income in Canadian dollars.</p>
   <p>For income that is not taxed, refer to: <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/amounts-that-taxed.html">Amounts that are not taxed</a>
-   <div class="alert alert-info">
-  <h2 class="h3">Reporting COVID-19 benefit payments</h2>
+  </div>
+  <div class="col-md-4">
+ 
+  <h2 class="h4 mrgn-tp-0">Reporting COVID-19 benefit payments</h2>
   <p>If you received the CERB, CESB, CRB, CRCB, or CRSB, you:</p>
-  <div class="mrgn-lft-xl">
+ 
   <ul class="fa-ul">
   <li><span class="fas fa-check text-success fa-li"></span> must report the income on line ###### of your tax return</li>
-  <li><span class="fas fa-check text-success fa-li"></span> may have to pay on those payments (taxes are paid on a net income of greater than $12,000)<br> Refer to: <a href="tax-brackets1.html">How tax brackets work</a></li></ul>
+  <li><span class="fas fa-check text-success fa-li"></span> may have to pay tax, depending on your total income</li></ul>
+
+ 
   </div>
   </div>
-<div class="ds-example">
-
-<div class="wb-tabs">
-
-<div class="tabpanels">
-
-<details id="filter">
-
-<summary>By specific source of income</summary>
-
-  <div class="row">
-    <div class="col-md-4">
-      <form class="wb-tables-filter" data-bind-to="dataset-filter">
-        <div class="panel panel-default panel-show-more">
-          <header class="panel-heading">
-            <h2 class="panel-title">Select your income source(s)</h2>
-          </header>
-		
-          
+   
+<div class="inset ">
+<div class="panel-body mrgn-bttm-0">
+         <h6 class="mrgn-tp-0 h4">Option: Customize the results to your situation</h6>
+          <p>Narrow down the income types to only the ones that apply to you.</p><p> 
+        
+        
+			<strong>Use:</strong> <a href="#mid-screen" aria-controls="mid-screen" class="overlay-lnk" role="button"><span class="fas fa-filter"></span> Income checklist filter</a></p>
+   
+</div>
+<hr>
+<section id="mid-screen" class="wb-overlay modal-content overlay-def wb-popup-mid">
+    <header class="modal-header">
+      <h2 class="modal-title">Income sources</h2>
+    </header>
+    <div class="modal-body">
 	
-
-
-            <div class="panel-body">
-			
-			<fieldset class="brdr-0">
-                <legend class="h3 mrgn-tp-0 mrgn-bttm-md">COVID-19 payments to you</legend>
-                <div class="form-group">
-                  <ul class="list-unstyled">
-                    <li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience56a" class="pull-left checkbox-lg ">
-                        <input type="checkbox" id="dt_audience56a" name="dt_audience" data-column="2" value="CERB">
-                        CERB, CESB, CRB, CRCB, CRSB</label><a href="income-types.html#wages" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience16b" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience16b" name="dt_audience" data-column="2" value="Provincial COVID-19">
-                        Provincial COVID-19 payments</label> <a href="income-types.html#child" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li>
-                    
-                   
-                  </ul>
-                </div>
-              </fieldset>
-			
-			
-			
-			
-			
-              <fieldset class="brdr-0">
-                <legend class="h3 mrgn-tp-0 mrgn-bttm-md">Common income sources</legend>
-                <div class="form-group">
-                  <ul class="list-unstyled">
-                    <li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience56" class="pull-left checkbox-lg ">
-                        <input type="checkbox" id="dt_audience56" name="dt_audience" data-column="2" value="Wages or salary">
-                        Wages or salary </label><a href="income-types.html#wages" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                    <label for="dt_audience48" class="pull-left checkbox-lg">
-                      <input type="checkbox" id="dt_audience48" name="dt_audience" data-column="2" value="Commissions">
-                      Commissions </label> <a href="income-types.html#commissions" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                  </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience99" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience99" name="dt_audience" data-column="2" value="Wages or salary">
-                        Bonuses </label><a href="income-types.html#bonuses" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                    <label for="dt_audience61" class="pull-left checkbox-lg">
-                      <input type="checkbox" id="dt_audience61" name="dt_audience" data-column="2" value="Tips and gratuities">
-                      Tips and gratuities</label> <a href="income-types.html#tips" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                  </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience3" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience3" name="dt_audience" data-column="2" value="Self-employment">
-                        Self-employment</label> <a href="income-types.html#self-employment" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience16" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience16" name="dt_audience" data-column="2" value="Lottery and prizes">
-                        Spousal support </label><a href="income-types.html#spousal" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience16" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience16" name="dt_audience" data-column="2" value="Child support">
-                        Child support</label> <a href="income-types.html#child" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience5" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience5" name="dt_audience" data-column="2" value="Pension and savings plans">
-                        Pension and savings plans </label><a href="income-types.html#pension" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-					<label for="dt_audience15" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience15" name="dt_audience" data-column="2" value="Stocks, Bonds or Funds">
-                        Stocks, Bonds or Funds </label><a href="income-types.html#stocks" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience17" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience17" name="dt_audience" data-column="2" value="Foreign Investment">
-                        Foreign investment </label><a href="income-types.html#foreign" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience17" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience17" name="dt_audience" data-column="2" value="Rental">
-                        Rental </label><a href="income-types.html#rental" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience17" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience17" name="dt_audience" data-column="2" value="Foreign Investment">
-                        Benefit payments </label><a href="income-types.html#benefit" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience12" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience12" name="dt_audience" data-column="2" value="Estate and death">
-                        Estate and death </label><a href="income-types.html#estate" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience13" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience13" name="dt_audience" data-column="2" value="Education">
-                         Scholarships, fellowships and bursaries </label><a href="income-types.html#scholarships" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience29" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience29" name="dt_audience" data-column="2" value="Gifts">
-                        Gifts </label><a href="income-types.html#gifts" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience11" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience11" name="dt_audience" data-column="2" value="Settlements">
-                        Settlements or compensation </label><a href="income-types.html#settlements" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience16" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience16" name="dt_audience" data-column="2" value="Lottery and prizes">
-                        Lottery and prizes </label><a href="income-types.html#lottery" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li>
-                    
-                   
-                  </ul>
-                </div>
-              </fieldset>
-              <fieldset class="brdr-0">
-                <legend class="h3 mrgn-tp-sm mrgn-bttm-md">Additional income sources</legend>
-                <div class="form-group">
-                  <ul class="list-unstyled"><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience19" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience19" name="dt_audience" data-column="2" value="Clergy">
-                        Clergy </label><a href="income-types.html#clergy" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience34" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience34" name="dt_audience" data-column="2" value="Contract novation">
-                        Contract novation </label><a href="income-types.html#contract" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience55" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience55" name="dt_audience" data-column="2" value="Co-working">
-                        Co-working </label><a href="income-types.html#co-working" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience52" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience52" name="dt_audience" data-column="2" value="Crowdfunding">
-                        Crowdfunding </label><a href="income-types.html#crowdfunding" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience58" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience58" name="dt_audience" data-column="2" value="Emergency services volunteers">
-                        Emergency services volunteers </label><a href="income-types.html#emergency" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience14" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience14" name="dt_audience" data-column="2" value="Gains from theft or embezzlement">
-                        Gains from theft or embezzlement </label><a href="income-types.html#gains" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience36" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience36" name="dt_audience" data-column="2" value="Gambling and betting">
-                        Gambling and betting </label><a href="income-types.html#gambling" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience31" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience31" name="dt_audience" data-column="2" value="Inducements received to change employment">
-                        Inducements received to change employment </label><a href="income-types.html#inducements" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience33" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience33" name="dt_audience" data-column="2" value="Occasional employment earnings">
-                        Occasional employment earnings </label><a href="income-types.html#occasional" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience33" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience33" name="dt_audience" data-column="2" value="Options to purchase">
-                        Options to purchase </label><a href="income-types.html#options" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience53" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience53" name="dt_audience" data-column="2" value="Peer-to-Peer lending">
-                        Peer-to-Peer lending </label><a href="income-types.html#peer" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience24" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience24" name="dt_audience" data-column="2" value="Rebates">
-                        Rebates </label><a href="income-types.html#rebates" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience13" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience13" name="dt_audience" data-column="2" value="Education and research">
-                        Research grants </label><a href="income-types.html#research" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience51" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience51" name="dt_audience" data-column="2" value="Ridesharing">
-                        Ridesharing and carsharing (Uber, Lyft, GetAround, etc.) </label><a href="income-types.html#ridesharing" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience23" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience23" name="dt_audience" data-column="2" value="Royalties">
-                        Royalties </label><a href="income-types.html#royalties" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience57" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience57" name="dt_audience" data-column="2" value="Security options benefits">
-                        Security options benefits </label><a href="income-types.html#security" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li><li class="checkbox brdr-bttm full-width clearfix">
-                      <label for="dt_audience57" class="pull-left checkbox-lg">
-                        <input type="checkbox" id="dt_audience57" name="dt_audience" data-column="2" value="Union payments">
-                        Union payments </label><a href="income-types.html#union" class="wb-lbx lbx-dfn pull-right mrgn-bttm-sm opct-90"><span class="far fa-question-circle"></span><span class="wb-inv">definition</span></a>
-                    </li>
-                   
-                  </ul>
-					<p>If your income source is not listed above and you have questions, please <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information.html">contact us.</a></p>
-                </div>
-              </fieldset>
-             
-         
+      <form class="wb-tables-filter" data-bind-to="dataset-filter"><p>Check the income sources you have, and then <button type="submit" class="btn btn-primary btn-lg mrgn-rght-md mrgn-tp-sm overlay-close" aria-controls="dataset-filter_info">Apply filter</button></p>
+        <fieldset class="brdr-0 provisional gc-chckbxrdio chkbxrdio-grp">
+          <legend class="h3 mrgn-tp-0 mrgn-bttm-md">COVID-19 benefits</legend>
+          <div class="form-group row">
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience56a" name="dt_audience" data-column="2" value="CERB">
+                  <label for="dt_audience56a" class="">CERB, CESB, CRB, CRCB, CRSB</label>
+                
+               </div>
             </div>
-			  <button class="collapsible">Show more</button>
-            <div class="panel-footer">
-              <button type="submit" class="btn btn-primary mrgn-rght-md mrgn-tp-sm" aria-controls="dataset-filter_info">Apply filter</button>
-              <button type="reset" class="btn btn-link mrgn-tp-sm mrgn-bttm-sm">Clear</button>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience16b" name="dt_audience" data-column="2" value="Provincial COVID-19">
+                  <label for="dt_audience16b" class="">Provincial COVID-19 payments</label>
+              
+                 </div>
             </div>
           </div>
-        
+        </fieldset>
+        <fieldset class="brdr-0 provisional gc-chckbxrdio chkbxrdio-grp">
+          <legend class="h3 mrgn-tp-0 mrgn-bttm-md">Common income sources</legend>
+          <div class="form-group row">
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience56" name="dt_audience" data-column="2" value="Wages or salary">
+                  <label for="dt_audience56" class="">Wages or salary </label>
+               
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience56" name="dt_audience" data-column="2" value="Wages or salary">
+                  <label for="dt_audience56" class="">Bonuses </label>
+               
+             </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience61" name="dt_audience" data-column="2" value="Tips and gratuities">
+                  <label for="dt_audience61" class="">Tips and gratuities</label>
+               
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+              
+                  <input type="checkbox" id="dt_audience3" name="dt_audience" data-column="2" value="Self-employment">
+                  <label for="dt_audience3" class="">Self-employment</label>
+                
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience16" name="dt_audience" data-column="2" value="Lottery and prizes">
+                  <label for="dt_audience16" class="">Spousal support </label>
+                
+                 </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+                
+                  <input type="checkbox" id="dt_audience16" name="dt_audience" data-column="2" value="Child support">
+                  <label for="dt_audience16" class="">Child support</label>
+                
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience5" name="dt_audience" data-column="2" value="Pension and savings plans">
+                  <label for="dt_audience5" class="">Pension and savings plans </label>
+              
+                 </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+              
+                  <input type="checkbox" id="dt_audience15" name="dt_audience" data-column="2" value="Stocks, Bonds or Funds">
+                  <label for="dt_audience15" class="">Stocks, Bonds or Funds </label>
+               
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+                
+                  <input type="checkbox" id="dt_audience17" name="dt_audience" data-column="2" value="Foreign Investment">
+                  <label for="dt_audience17" class="">Foreign investment </label>
+              
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+                
+                  <input type="checkbox" id="dt_audience17" name="dt_audience" data-column="2" value="Rental">
+                  <label for="dt_audience17" class="">Rental </label>
+                
+                 </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience17" name="dt_audience" data-column="2" value="Foreign Investment">
+                  <label for="dt_audience17" class="">Benefit payments </label>
+               
+          </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+                
+                  <input type="checkbox" id="dt_audience12" name="dt_audience" data-column="2" value="Estate and death">
+                  <label for="dt_audience12" class="">Estate and death </label>
+               
+           </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience13" name="dt_audience" data-column="2" value="Education">
+                  <label for="dt_audience13" class="">Scholarships, fellowships and bursaries </label>
+                
+                 </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience29" name="dt_audience" data-column="2" value="Gifts">
+                  <label for="dt_audience29" class="">Gifts </label>
+                
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience11" name="dt_audience" data-column="2" value="Settlements">
+                  <label for="dt_audience11" class="">Settlements or compensation </label>
+               
+                 </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+                
+                  <input type="checkbox" id="dt_audience16" name="dt_audience" data-column="2" value="Lottery and prizes">
+                  <label for="dt_audience16" class="">Lottery and prizes </label>
+                
+                </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="brdr-0 provisional gc-chckbxrdio chkbxrdio-grp">
+          <legend class="h3 mrgn-tp-sm mrgn-bttm-md">Additional income sources</legend>
+          <div class="form-group">
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+                
+                  <input type="checkbox" id="dt_audience19" name="dt_audience" data-column="2" value="Clergy">
+                  <label for="dt_audience19" class=""> Clergy </label>
+                
+                 </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience34" name="dt_audience" data-column="2" value="Contract novation">
+                  <label for="dt_audience34" class=""> Contract novation </label>
+               
+                 </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience55" name="dt_audience" data-column="2" value="Co-working">
+                  <label for="dt_audience55" class=""> Co-working </label>
+                
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience52" name="dt_audience" data-column="2" value="Crowdfunding">
+                  <label for="dt_audience52" class=""> Crowdfunding </label>
+               
+                 </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience58" name="dt_audience" data-column="2" value="Emergency services volunteers">
+                  <label for="dt_audience58" class=""> Emergency services volunteers </label>
+               
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience14" name="dt_audience" data-column="2" value="Gains from theft or embezzlement">
+                  <label for="dt_audience14" class=""> Gains from theft or embezzlement </label>
+               
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+                
+                  <input type="checkbox" id="dt_audience36" name="dt_audience" data-column="2" value="Gambling and betting">
+                  <label for="dt_audience36" class=""> Gambling and betting </label>
+               
+             </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+                
+                  <input type="checkbox" id="dt_audience31" name="dt_audience" data-column="2" value="Inducements received to change employment">
+                  <label for="dt_audience31" class=""> Inducements received to change employment </label>
+                
+             </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+                
+                  <input type="checkbox" id="dt_audience33" name="dt_audience" data-column="2" value="Occasional employment earnings">
+                  <label for="dt_audience33" class=""> Occasional employment earnings </label>
+               
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+              
+                  <input type="checkbox" id="dt_audience33" name="dt_audience" data-column="2" value="Options to purchase">
+                  <label for="dt_audience33" class=""> Options to purchase </label>
+               
+                 </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+                
+                  <input type="checkbox" id="dt_audience53" name="dt_audience" data-column="2" value="Peer-to-Peer lending">
+                  <label for="dt_audience53" class=""> Peer-to-Peer lending </label>
+               
+           </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+                
+                  <input type="checkbox" id="dt_audience24" name="dt_audience" data-column="2" value="Rebates">
+                  <label for="dt_audience24" class=""> Rebates </label>
+                
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+                
+                  <input type="checkbox" id="dt_audience13" name="dt_audience" data-column="2" value="Education and research">
+                  <label for="dt_audience13" class=""> Research grants </label>
+               
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience51" name="dt_audience" data-column="2" value="Ridesharing">
+                  <label for="dt_audience51" class=""> Ridesharing and carsharing (Uber, Lyft, GetAround, etc.) </label>
+               
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience23" name="dt_audience" data-column="2" value="Royalties">
+                  <label for="dt_audience23" class=""> Royalties </label>
+               
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+               
+                  <input type="checkbox" id="dt_audience57" name="dt_audience" data-column="2" value="Security options benefits">
+                  <label for="dt_audience57" class=""> Security options benefits </label>
+               
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="checkbox">
+                
+                  <input type="checkbox" id="dt_audience57" name="dt_audience" data-column="2" value="Union payments">
+                  <label for="dt_audience57" class=""> Union payments </label>
+               
+               </div>
+            </div>
+          </div>
+        </fieldset>
+        <p>If your income source is not listed above and you have questions, please <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information.html">contact us.</a></p>
+        <button type="submit" class="btn btn-primary btn-lg mrgn-rght-md mrgn-tp-sm overlay-close" aria-controls="dataset-filter_info">Apply filter</button>
       </form>
-	
     </div>
-    <div class="col-md-8">
-	
-	<table class="table wb-tables table-vertical-header table-striped table-bordered" id="dataset-filter"  data-wb-tables='{"paging":false, "order": [[ 1, "asc" ]], "columnDefs": [{ "className": "hidden", "targets": [ 2 ] } ]}'>
-   <thead>
+    <div class="modal-footer hidden"></div>
+  </section>
+  <table class="table wb-tables table-striped" id="dataset-filter" data-wb-tables='{"paging":false, "order": [[ 2, "desc" ]], "columnDefs": [{ "className": "hidden", "targets": [2 ] } ]}' >
+    <thead>
       <tr>
-         <th data-header="Income type:" scope="col">Income type</th>
-            <th data-header="Report on:" scope="col">Report on</th>
-            <th data-header="Income source(s):" scope="col">Income source(s)</th>
-
-		 <th data-header="Taxable?" scope="col">Taxable?</th>
+        <th scope="col">Income type</th>
+        <th scope="col">Report on</th>
+        <th scope="col">Income source(s)</th>
+        <th scope="col" class="nowrap">Report on line</th>
+        <th scope="col">Taxable?</th>
       </tr>
-   </thead>
-   <tbody>
+    </thead>
+    <tbody>
       <tr>
-         
-         <td><span class="h4 mrgn-tp-0">Wages or salary (earned in Canada)</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-101-employment-income.html">Line 101 - Employment income</a></td>
-		
-		  <td>Wages or salary</td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
-      </tr>
-      <tr>
-        
-          <td><span class="h4 mrgn-tp-0">Security option benefits</span></td>
-         <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-101-employment-income/line-101-security-option-benefits.html">Line 101 – Employment income (Security option benefits)</a></td>
-		
-		  <td></td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
-	 </tr>
-      <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Emergency services volunteers</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-101-employment-income/line-101-emergency-services-volunteers.html">Line 101 – Employment income (Emergency services volunteers)</a></td>
-		
-		  <td></td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Wages or salary (earned in Canada)</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-101-employment-income.html">Employment income (Line 101)</a><br>
+          including:
+          <ul>
+            <li>Security option benefits</li>
+            <li>Emergency services volunteers</li>
+            <li>Wage-loss replacement plan income</li>
+          </ul></td>
+        <td>Wages or salary</td>
+        <td>101</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-        
-          <td><span class="h4 mrgn-tp-0">Wage-loss replacement plan income</span></td>
-		  <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-101-employment-income/line-101-wage-loss-replacement-plan-income.html">Line 101 – Employment income (Wage-loss replacement plan income)</a></td>
-		 
-		  <td></td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Commissions (Employment)</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-102-commissions-box-42.html">Commissions (Line 102)</a></td>
+        <td>Commissions</td>
+        <td>102</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Commissions (Employment)</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-102-commissions-box-42.html">Line 102 – Commissions</a></td>
-		
-		  <td>Commissions</td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
-      </tr>
-      <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Wage loss replacement contributions</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-103-wage-loss-replacement-contributions.html">Line 103 – Wage loss replacement contributions</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
-      </tr>
-      <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Other employment income</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-104-other-employment-income.html">Line 104 – Other employment income</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Wage loss replacement contributions</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-103-wage-loss-replacement-contributions.html">Wage loss replacement contributions (Line 103)</a></td>
+        <td></td>
+        <td>103</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
 	  <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Tips and gratuities</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-104-other-employment-income/line-104-employment-income-reported-on-a-t4-slip.html">Line 104 – Other employment income (Employment income not reported on a T4 slip)</a></td>
-		 <td>Tips and gratuities</td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Tips and gratuities</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-104-other-employment-income.html">Other employment income (Line 104)</a>
+          </td>
+        <td>Tips and gratuities</td>
+        <td>104</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Employment income not reported on a T4 slip</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-104-other-employment-income/line-104-employment-income-reported-on-a-t4-slip.html">Line 104 – Other employment income (Employment income not reported on a T4 slip)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Other employment income</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-104-other-employment-income.html">Other employment income (Line 104)</a><br>
+          including:
+          <ul>
+           
+            <li>Net research grants</li>
+            <li>Clergy's housing allowance and/or an amount for eligible utilities</li>
+            <li>Wages or salary earned outside of Canada (Foreign employment income)</li>
+            <li>Income-maintenance insurance plans (wage loss replacement plans)</li>
+            <li>Certain GST/HST and Quebec sales tax (QST) rebates</li>
+            <li>Royalties</li>
+            <li>Amounts you received under a supplementary unemployment benefit plan (a guaranteed annual wage plan)</li>
+            <li>Taxable benefit for premiums paid to cover you under a group term life insurance plan</li>
+            <li>Taxable benefit for premiums paid to cover you under a group term life insurance plan</li>
+            <li>Veterans' benefits</li>
+            <li>Medical premium benefits </li>
+            <li>Wage Earner Protection Program</li>
+          </ul></td>
+        <td>Compensation, Clergy, Wages or salary, Foreign, Benefit payments</td>
+        <td>104</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Net research grants</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-104-other-employment-income/line-104-net-research-grants.html">Line 104 – Other employment income (Net research grants)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Old age security pension (OAS)</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-113-old-security-pension-oas.html">Old age security (Line 113)</a></td>
+        <td></td>
+        <td>113</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Clergy's housing allowance and/or an amount for eligible utilities</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-104-other-employment-income/line-104-clergy-s-housing-allowance-amount-eligible-utilities.html">Line 104 – Other employment income (Clergy's housing allowance and/or an amount for eligible utilities)</a></td>
-		 <td>Compensation, Clergy</td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
-      </tr>
-	  <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Wages or salary (earned outside of Canada)</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-104-other-employment-income/line-104-foreign-employment-income.html">Line 104 – Other employment income (Foreign employment income)</a></td>
-		 <td>Wages or salary</td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
-      </tr>
-      <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Foreign employment income (Foreign wages,salary, etc)</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-104-other-employment-income/line-104-foreign-employment-income.html">Line 104 – Other employment income (Foreign employment income)</a></td>
-		 <td>Foreign</td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>CPP or QPP benefits</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-114-cpp-qpp-benefits.html">CPP or QPP benefits (Line 114)</a><br>
+          including:
+          <ul>
+            <li>Survivor benefit</li>
+            <li>Disability benefit</li>
+            <li>Child benefit</li>
+            <li>Death benefit</li>
+          </ul></td>
+        <td></td>
+        <td>114</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-        
-          <td><span class="h4 mrgn-tp-0">Income-maintenance insurance plans (wage loss replacement plans)</span></td>
-		  <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-104-other-employment-income/line-104-income-maintenance-insurance-plans-wage-loss-replacement-plans.html">Line 104 – Other employment income (Income-maintenance insurance plans (wage loss replacement plans))</a></td>
-		  <td>Compensation</td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Other pensions and superannuation</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-115-other-pensions-superannuation.html">Other pensions or superannuation (Line 115)</a></td>
+        <td></td>
+        <td>115</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Certain GST/HST and Quebec sales tax (QST) rebates</span></td>
-     
-	  <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-104-other-employment-income/line-104-certain-gst-hst-quebec-sales-tax-rebates.html">Line 104 – Other employment income (Certain GST/HST and Quebec sales tax (QST) rebates)</a></td>
-	  <td></td>
-	   <td><span class="fas fa-check text-success"></span> Yes</td>
- </tr>
-      <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Royalties</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-104-other-employment-income/line-104-royalties.html">Line 104 – Other employment income (Royalties)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Annuity, PRPP, and registered retirement income fund (RRIF), including life income fund payments</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-115-other-pensions-superannuation/line-115-annuity-pooled-registered-pension-plan-prpp-registered-retirement-income-fund-rrif-including-life-income-fund-payments.html">Other pensions or superannuation (Annuity, PRPP, and registered retirement income fund (RRIF), including life income fund payments) (Line 115)</a></td>
+        <td></td>
+        <td>115</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Amounts you received under a supplementary unemployment benefit plan (a guaranteed annual wage plan)</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-104-other-employment-income/line-104-amounts-you-received-under-a-supplementary-unemployment-benefit-plan-a-guaranteed-annual-wage-plan.html">Line 104 – Other employment income (Amounts you received under a supplementary unemployment benefit plan (a guaranteed annual wage plan))</a></td>
-		 <td>Benefit payments</td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Pensions from a foreign country</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-115-other-pensions-superannuation/line-115-pensions-a-foreign-country.html">Other pensions or superannuation (Pensions from a foreign country) (Line 115)</a></td>
+        <td></td>
+        <td>115</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Taxable benefit for premiums paid to cover you under a group term life insurance plan</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-104-other-employment-income/line-104-taxable-benefit-premiums-paid-cover-you-under-a-group-term-life-insurance-plan.html">Line 104 – Other employment income (Taxable benefit for premiums paid to cover you under a group term life insurance plan)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Elected split-pension amount</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-116-elected-split-pension-amount.html">Elected split-pension amount (Line 116)</a></td>
+        <td></td>
+        <td>116</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Employee profit-sharing plan</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-104-other-employment-income/line-104-employee-profit-sharing-plan.html">Line 104 – Other employment income (Employee profit-sharing plan)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Universal child care benefit (UCCB)</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-117-universal-child-care-benefit-uccb.html">Universal Child Care Benefit (Line 117)</a></td>
+        <td></td>
+        <td>117</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Veterans' benefits</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/tax-slips/understand-your-tax-slips/t4-slips/t4a-statement-pension-retirement-annuity-other-income.html">Line 104 – Other employment income Veterans' benefits</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Canada child benefit (CCB)</td>
+        <td>You do not report this income source</td>
+        <td></td>
+        <td></td>
+        <td><span class="fas fa-times text-danger"></span> No</td>
       </tr>
       <tr>
-          <td><span class="h4 mrgn-tp-0">Medical premium benefits </span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/tax-slips/understand-your-tax-slips/t4-slips/t4a-statement-pension-retirement-annuity-other-income.html#bx118">Line 104 – Other employment income (Medical premium benefits)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>GST/HST credit </td>
+        <td>You do not report this income source</td>
+        <td></td>
+        <td></td>
+        <td><span class="fas fa-times text-danger"></span> No</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Wage Earner Protection Program</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/tax-slips/understand-your-tax-slips/t4-slips/t4a-statement-pension-retirement-annuity-other-income.html">Line 104 – Other employment income (Wage Earner Protection Program)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Employment insurance and other benefits</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-119-employment-insurance-other-benefits.html">Employment insurance and other benefits (Line 119)</a>
+          <p>This includes:</p>
+          <ul class="fa-ul">
+            <li><span class="fas fa-check text-success fa-li"></span> Canada Emergency Respose Benefit (CERB)</li>
+            <li><span class="fas fa-check text-success fa-li"></span> Canada Emergency Student Benefit (CESB)</li>
+            <li><span class="fas fa-check text-success fa-li"></span> Canada Recovery Benefit (CRB)</li>
+            <li><span class="fas fa-check text-success fa-li"></span> Canada Recovery Sickness Benefit (CRSB)</li>
+            <li><span class="fas fa-check text-success fa-li"></span> Canada Recovery Caregiving Benefit (CRCB)</li>
+          </ul></td>
+        <td>CERB</td>
+        <td>119</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Old age security pension (OAS)</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-113-old-security-pension-oas.html">Line 113 – Old age security</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Taxable amount of dividends (eligible and other than eligible) from taxable Canadian corporations</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-120-taxable-amount-dividends-eligible-other-than-eligible-taxable-canadian-corporations.html">Taxable amount of dividends from Canadian corporations (Line 120)</a></td>
+        <td></td>
+        <td>120</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-   
-          <td><span class="h4 mrgn-tp-0">CPP or QPP benefits</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-114-cpp-qpp-benefits.html">Line 114 – CPP or QPP benefits</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Interest and other investment income</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-121-interest-other-investment-income.html">Interest and other investment income (Line 121)</a></td>
+        <td></td>
+        <td>121</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">CPP or QPP survivor benefit</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-114-cpp-qpp-benefits/line-114-cpp-qpp-survivor-benefit-box-15.html">Line 114 – CPP or QPP benefits (Survivor benefit)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Bank accounts, term deposits, guaranteed investment certificates (GICs), and other similar investments</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-121-interest-other-investment-income/line-121-bank-accounts-term-deposits-guaranteed-income-certificates-gics-other-similar-investments.html">Interest and other investment income (Bank accounts, term deposits, guaranteed investment certificates (GICs), and other similar investments) (Line 121)</a></td>
+        <td></td>
+        <td>121</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-        
-          <td><span class="h4 mrgn-tp-0">CPP or QPP disability benefit</span></td>
-		  <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-114-cpp-qpp-benefits/line-114-cpp-qpp-disability-benefit-box-16.html">Line 114 – CPP or QPP benefits (Disability benefit)</a></td>
-		  <td></td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Canada savings bonds</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-121-interest-other-investment-income/line-121-canada-savings-bonds-csbs.html">Interest and other investment income (Canada savings bonds) (Line 121)</a></td>
+        <td></td>
+        <td>121</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">CPP or QPP child benefit</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-114-cpp-qpp-benefits/line-114-cpp-qpp-child-benefit-box-17.html">Line 114 – CPP or QPP benefits (Child benefit)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Treasury bills</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-121-interest-other-investment-income/line-121-treasury-bills.html">Interest and other investment income (Treasury bills) (Line 121)</a></td>
+        <td></td>
+        <td>121</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-        
-          <td><span class="h4 mrgn-tp-0">CPP or QPP death benefit</span></td>
-		  <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-114-cpp-qpp-benefits/line-114-cpp-qpp-death-benefit-box-18.html">Line 114 – CPP or QPP benefits (Death benefit)</a></td>
-		  <td></td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Earnings on a life insurance policy</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-121-interest-other-investment-income/line-121-earnings-on-a-life-insurance-policy.html">Interest and other investment income (Earnings on a life insurance policy) (Line 121)</a></td>
+        <td></td>
+        <td>121</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Other pensions and superannuation</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-115-other-pensions-superannuation.html">Line 115 – Other pensions or superannuation</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Foreign interest and dividends</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-121-interest-other-investment-income/line-121-foreign-interest-dividends.html">Interest and other investment income (Foreign interest and dividends) (Line 121)</a></td>
+        <td></td>
+        <td>121</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Annuity, PRPP, and registered retirement income fund (RRIF), including life income fund payments</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-115-other-pensions-superannuation/line-115-annuity-pooled-registered-pension-plan-prpp-registered-retirement-income-fund-rrif-including-life-income-fund-payments.html">Line 115 – Other pensions or superannuation (Annuity, PRPP, and registered retirement income fund (RRIF), including life income fund payments)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Net partnership income: limited or non-active partners only</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-122-net-partnership-income-limited-non-active-partners-only.html">Net partnership income: limited or non-active partners only (Line 122)</a></td>
+        <td></td>
+        <td>122</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Pensions from a foreign country</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-115-other-pensions-superannuation/line-115-pensions-a-foreign-country.html">Line 115 – Other pensions or superannuation (Pensions from a foreign country)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Registered disability savings plan (RDSP) income</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-125-registered-disability-savings-plan-rdsp-income.html">Registered disability savings plan (Line 125)</a></td>
+        <td></td>
+        <td>125</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-        
-          <td><span class="h4 mrgn-tp-0">Elected split-pension amount</span></td>
-		  <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-116-elected-split-pension-amount.html">Line 116 – Elected split-pension amount</a></td>
-		  <td></td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Rental income</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/rental-income-line-126-net-line-160-gross.html">net rental income and 160 gross rental income (Line 126)</a></td>
+        <td></td>
+        <td>126</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-        
-          <td><span class="h4 mrgn-tp-0">Universal child care benefit (UCCB)</span></td>
-		  <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-117-universal-child-care-benefit-uccb.html">Line 117 – Universal Child Care Benefit</a></td>
-		  <td></td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
-      </tr>
-	  <tr>
-        
-          <td><span class="h4 mrgn-tp-0">Canada child benefit (CCB)</span></td>
-		  <td>You do not report this income source</td>
-		  <td></td>
-
-		   <td><span class="fas fa-times text-danger"></span> No</td>
-      </tr>
-	  <tr>
-        
-          <td><span class="h4 mrgn-tp-0">GST/HST credit </span></td>
-		  <td>You do not report this income source</td>
-		  <td></td>
-
-		   <td><span class="fas fa-times text-danger"></span> No</td>
+        <td>Capital gains</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-127-capital-gains.html">Capital gains (Line 127)</a></td>
+        <td></td>
+        <td>127</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-        
-          <td><span class="h4 mrgn-tp-0">Employment insurance and other benefits</span></td>
-		  <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-119-employment-insurance-other-benefits.html">Line 119 – Employment insurance and other benefits</a>
-		  <p>This includes:</p>
-		  <ul class="fa-ul">
-		  <li><span class="fas fa-check text-success fa-li"></span> Canada Emergency Respose Benefit (CERB)</li>
-		  <li><span class="fas fa-check text-success fa-li"></span> Canada Emergency Student Benefit (CESB)</li>
-		   <li><span class="fas fa-check text-success fa-li"></span> Canada Recovery Benefit (CRB)</li>
-		   <li><span class="fas fa-check text-success fa-li"></span> Canada Recovery Sickness Benefit (CRSB)</li>
-		   <li><span class="fas fa-check text-success fa-li"></span> Canada Recovery Caregiving Benefit (CRCB)</li>
-		   
-		   
-		  </ul></td>
-		  <td>CERB</td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Spousal support</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/lines-156-128-support-payments-received.html"> Support payments received (Line 128)</a></td>
+        <td></td>
+        <td></td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Taxable amount of dividends (eligible and other than eligible) from taxable Canadian corporations</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-120-taxable-amount-dividends-eligible-other-than-eligible-taxable-canadian-corporations.html">Line 120 – Taxable amount of dividends from Canadian corporations</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Child support</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/lines-156-128-support-payments-received.html">Support payments received (Line 128)</a></td>
+        <td></td>
+        <td>128</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Interest and other investment income</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-121-interest-other-investment-income.html">Line 121 – Interest and other investment income</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Registered retirement savings plan (RRSP) income</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-129-registered-retirement-savings-plan-rrsp-income.html">Registered retirement savings plan income (Line 129)</a></td>
+        <td></td>
+        <td>129</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Bank accounts, term deposits, guaranteed investment certificates (GICs), and other similar investments</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-121-interest-other-investment-income/line-121-bank-accounts-term-deposits-guaranteed-income-certificates-gics-other-similar-investments.html">Line 121 – Interest and other investment income (Bank accounts, term deposits, guaranteed investment certificates (GICs), and other similar investments)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Other income</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income.html">Other Income (Line 130)</a></td>
+        <td></td>
+        <td>130</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Canada savings bonds</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-121-interest-other-investment-income/line-121-canada-savings-bonds-csbs.html">Line 121 – Interest and other investment income (Canada savings bonds)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Scholarships, fellowships, bursaries, and study grants (awards)</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income/line-130-scholarships-fellowships-bursaries-study-grants-artists-project-grants-awards.html">Other Income (Scholarships, fellowships, bursaries, and study grants (awards)) (Line 130)</a></td>
+        <td></td>
+        <td>130</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Treasury bills</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-121-interest-other-investment-income/line-121-treasury-bills.html">Line 121 – Interest and other investment income (Treasury bills)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Lump-sum payments</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income/line-130-lump-payments.html">Other Income (Lump-sum payments) (Line 130)</a></td>
+        <td></td>
+        <td>130</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Earnings on a life insurance policy</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-121-interest-other-investment-income/line-121-earnings-on-a-life-insurance-policy.html">Line 121 – Interest and other investment income (Earnings on a life insurance policy)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Retiring allowance (severance pay)</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income.html">Other Income ( (Line 130)<a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income/line-130-retiring-allowance-severance-pay.html">)</a></td>
+        <td></td>
+        <td>130)<a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income/line-130-retiring-allowance-severance-pay.html"></td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Foreign interest and dividends</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-121-interest-other-investment-income/line-121-foreign-interest-dividends.html">Line 121 – Interest and other investment income (Foreign interest and dividends)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Death benefits (other than Canada or Quebec Pension Plan death benefits)</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income/line-130-death-benefits-other-than-canada-quebec-pension-plan-death-benefits.html">Other Income (Death benefits (other than Canada or Quebec Pension Plan death benefits)) (Line 130)</a></td>
+        <td></td>
+        <td>130</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Net partnership income: limited or non-active partners only</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-122-net-partnership-income-limited-non-active-partners-only.html">Line 122 – Net partnership income: limited or non-active partners only</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Other kinds of income</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income/line-130-other-kinds-income.html">Other Income (Other kinds of income) (Line 130)</a></td>
+        <td></td>
+        <td>130</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Registered disability savings plan (RDSP) income</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-125-registered-disability-savings-plan-rdsp-income.html">Line 125 – Registered disability savings plan</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Business (self-employment)</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-135-143-net-income-lines-162-170-gross-income.html">(Self employment income: Business income) (Line 162 (Gross) and line 135 (Net))</a></td>
+        <td></td>
+        <td>162 (Gross) and line 135 (Net)</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-        
-          <td><span class="h4 mrgn-tp-0">Rental income</span></td>
-		  <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/rental-income-line-126-net-line-160-gross.html">Line 126 – net rental income and 160 gross rental income</a></td>
-		  <td></td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Professional (self-employment)</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-135-143-net-income-lines-162-170-gross-income.html">(Self employment income: Professional income) (Line 164 (Gross) and line 137 (Net))</a></td>
+        <td></td>
+        <td>164 (Gross) and line 137 (Net)</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Capital gains</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-127-capital-gains.html">Line 127 – Capital gains</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
-      </tr>
-      
-      <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Spousal support</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/lines-156-128-support-payments-received.html">Line 128 –&nbsp;Support payments received</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
-      </tr>
-	    <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Child support</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/lines-156-128-support-payments-received.html">Line 128 – Support payments received</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Commissions (self-employment)</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-135-143-net-income-lines-162-170-gross-income.html">(Self employment income: Commission income) (Line 166 (Gross) and line 139 (Net))</a></td>
+        <td>Commissions</td>
+        <td>166 (Gross) and line 139 (Net)</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Registered retirement savings plan (RRSP) income</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-129-registered-retirement-savings-plan-rrsp-income.html">Line 129 – Registered retirement savings plan income</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Farming (self-employment)</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-135-143-net-income-lines-162-170-gross-income.html">(Self employment income: Farming income) (Line 168 (Gross) and line 141 (Net))</a></td>
+        <td></td>
+        <td>168 (Gross) and line 141 (Net)</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Other income</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income.html">Line 130 – Other Income</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Fishing (self-employment)</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-135-143-net-income-lines-162-170-gross-income.html">(Self employment income: Fishing income) (Line 170 (Gross) and line 143 (Net))</a></td>
+        <td></td>
+        <td>170 (Gross) and line 143 (Net)</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Scholarships, fellowships, bursaries, and study grants (awards)</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income/line-130-scholarships-fellowships-bursaries-study-grants-artists-project-grants-awards.html">Line 130 – Other Income (Scholarships, fellowships, bursaries, and study grants (awards))</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Worker's compensation benefits</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-144-workers-compensation-benefits.html">Workers’ compensation benefits (Line 144)</a></td>
+        <td></td>
+        <td>144</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Lump-sum payments</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income/line-130-lump-payments.html">Line 130 – Other Income (Lump-sum payments)</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Social assistance payments</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-145-social-assistance-payments.html">Social benefits payments (Line 145)</a></td>
+        <td></td>
+        <td>145</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-        
-          <td><span class="h4 mrgn-tp-0">Retiring allowance (severance pay)</span></td>
-		  <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income.html">Line 130 – Other Income (<a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income/line-130-retiring-allowance-severance-pay.html">)</a></td>
-		  <td></td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Net federal supplements</td>
+        <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-146-net-federal-supplements.html">Net federal supplements (Line 146)</a></td>
+        <td></td>
+        <td>146</td>
+        <td><span class="fas fa-check text-success"></span> Yes</td>
       </tr>
       <tr>
-        
-          <td><span class="h4 mrgn-tp-0">Death benefits (other than Canada or Quebec Pension Plan death benefits)</span></td>
-		  <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income/line-130-death-benefits-other-than-canada-quebec-pension-plan-death-benefits.html">Line 130 – Other Income (Death benefits (other than Canada or Quebec Pension Plan death benefits))</a></td>
-		  <td></td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Gifts</td>
+        <td><p>There is no "gift tax" in Canada.  Any resident of Canada who receives a gift or inheritance of any amount from almost any source (except from an employer) will not have to include this in their income.  However, if capital property (e.g. real estate, investments) is given as a gift, the person who has given the gift will be deemed to have sold the capital property at fair market value (FMV), and will have to pay tax on any resulting capital gain.  The FMV is deemed to be the "cost" to the person to whom the shares were given.  If money or capital property is given or loaned to a spouse or a related minor child, attribution rules will apply. </p>
+          <p>Refer to: <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/p113/p113-gifts-income-tax-2016.html">P113 - Gifts and Income Tax</a></td>
+        <td>Gifts</td>
+        <td>&nbsp;</td>
+        <td><span class="fas fa-times text-danger"></span> No</td>
       </tr>
       <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Other kinds of income</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income/line-130-other-kinds-income.html">Line 130 – Other Income (Other kinds of income)</a></td>
-
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
-      </tr>
-	   <tr>
-             <td><span class="h4 mrgn-tp-0">Business (self-employment)</span></td>
-            <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-135-143-net-income-lines-162-170-gross-income.html">Line 162 (Gross) and line 135 (Net) - (Self employment income: Business income)</a></td>
-             <td></td>
-			  <td><span class="fas fa-check text-success"></span> Yes</td>
-          </tr>
-          <tr>
-             <td><span class="h4 mrgn-tp-0">Professional (self-employment)</span></td>
-            <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-135-143-net-income-lines-162-170-gross-income.html">Line 164 (Gross) and line 137 (Net) - (Self employment income: Professional income)</a></td>
-             <td></td>
-			  <td><span class="fas fa-check text-success"></span> Yes</td>
-          </tr>
-          <tr>
-             <td><span class="h4 mrgn-tp-0">Commissions (self-employment)</span></td>
-            <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-135-143-net-income-lines-162-170-gross-income.html">Line 166 (Gross) and line 139 (Net) - (Self employment income: Commission income)</a></td>
-       
-		  <td>Commissions</td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
-          </tr>
-          <tr>
-             <td><span class="h4 mrgn-tp-0">Farming (self-employment)</span></td>
-            <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-135-143-net-income-lines-162-170-gross-income.html">Line 168 (Gross) and line 141 (Net) - (Self employment income: Farming income)</a></td>
-             <td></td>
-			  <td><span class="fas fa-check text-success"></span> Yes</td>
-          </tr>
-          <tr>
-             <td><span class="h4 mrgn-tp-0">Fishing (self-employment)</span></td>
-            <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-135-143-net-income-lines-162-170-gross-income.html">Line 170 (Gross) and line 143 (Net) - (Self employment income: Fishing income)</a></td>
-            <td></td>
-			 <td><span class="fas fa-check text-success"></span> Yes</td>
-          </tr>
-     
-      <tr>
-         
-          <td><span class="h4 mrgn-tp-0">Worker's compensation benefits</span></td>
-		 <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-144-workers-compensation-benefits.html">Line 144 – Workers’ compensation benefits</a></td>
-		 <td></td>
-		  <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Elementary and secondary school scholarships and bursaries</td>
+        <td>You <strong>do not</strong> have to report this income</td>
+        <td>Education</td>
+        <td>&nbsp;</td>
+        <td><span class="fas fa-times text-danger"></span> No</td>
       </tr>
       <tr>
-        
-          <td><span class="h4 mrgn-tp-0">Social assistance payments</span></td>
-		  <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-145-social-assistance-payments.html">Line 145 – Social benefits payments</a></td>
-		  <td></td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Post-secondary school scholarships, fellowships, and bursaries</td>
+        <td><p>You <strong>may</strong> have to report this income</p>
+          <p>Refer to: <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income/line-130-scholarships-fellowships-bursaries-study-grants-artists-project-grants-awards.html">Other income (Scholarships, fellowships, bursaries, and study grants (awards) (Line 130)</a></p>
+        </td>
+        <td>Education</td>
+        <td>&nbsp;</td>
+        <td> Sometimes</td>
       </tr>
       <tr>
-        
-          <td><span class="h4 mrgn-tp-0">Net federal supplements</span></td>
-		  <td><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-146-net-federal-supplements.html">Line 146 – Net federal supplements</a></td>
-		  <td></td>
-		   <td><span class="fas fa-check text-success"></span> Yes</td>
+        <td>Lottery and prizes</td>
+        <td>You <strong>do not</strong> have to report this income
+          <p>Refer to: <a href="https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index/series-3-property-investments-savings-plans/series-3-property-investments-savings-plans-folio-9-miscellaneous-payments-receipts/income-tax-folio-s3-f9-c1-lottery-winnings-miscellaneous-receipts-income-losses-crime.html">Income Tax Folio S3-F9-C1, Lottery Winnings, Miscellaneous Receipts, and Income (and Losses) from Crime</a></td>
+        <td>Lottery and prizes</td>
+        <td>&nbsp;</td>
+        <td><span class="fas fa-times text-danger"></span> No</td>
       </tr>
-	   <tr>
-        
-          <td><span class="h4 mrgn-tp-0">Gifts</span></td>
-		  <td> <p>There is no "gift tax" in Canada.  Any resident of Canada who receives a gift or inheritance of any amount from almost any source (except from an employer) will not have to include this in their income.  However, if capital property (e.g. real estate, investments) is given as a gift, the person who has given the gift will be deemed to have sold the capital property at fair market value (FMV), and will have to pay tax on any resulting capital gain.  The FMV is deemed to be the "cost" to the person to whom the shares were given.  If money or capital property is given or loaned to a spouse or a related minor child, attribution rules will apply. 
-   </p>
-   <p>Refer to: <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/p113/p113-gifts-income-tax-2016.html">P113 - Gifts and Income Tax</a></td>
-		  <td>Gifts</td>
-		    <td><span class="fas fa-times text-danger"></span> No</td>
-      </tr>
-	  <tr>
-             <td><span class="h4 mrgn-tp-0">Elementary and secondary school scholarships and bursaries</span></td>
-            <td>You <strong>do not</strong> have to report this income</td>
-            <td>Education</td>
-			 <td><span class="fas fa-times text-danger"></span> No</td>
-          </tr>
-	  <tr>
-             <td><span class="h4 mrgn-tp-0">Post-secondary school scholarships, fellowships, and bursaries</span></td>
-            <td><p>You <strong>may</strong> have to report this income</p>
-              <p>Refer to: <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income/line-130-scholarships-fellowships-bursaries-study-grants-artists-project-grants-awards.html">Line 130 - Other income (Scholarships, fellowships, bursaries, and study grants (awards)</a></p>
-              </a></td>
-            <td>Education</td>
-			 <td> Sometimes</td>
-          </tr>
-		   <tr>
-             <td><span class="h4 mrgn-tp-0">Lottery and prizes</span></td>
-            <td>You <strong>do not</strong> have to report this income
-			<p>Refer to: <a href="https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index/series-3-property-investments-savings-plans/series-3-property-investments-savings-plans-folio-9-miscellaneous-payments-receipts/income-tax-folio-s3-f9-c1-lottery-winnings-miscellaneous-receipts-income-losses-crime.html">Income Tax Folio S3-F9-C1, Lottery Winnings, Miscellaneous Receipts, and Income (and Losses) from Crime</a></td>
-            <td>Lottery and prizes</td>
-			 <td><span class="fas fa-times text-danger"></span> No</td>
-          </tr>
-	 </tbody>
-</table>
-
-</details>
-
-<details id="code1">
-
-<summary>By general category of income</summary>
-<div class="wb-eqht row">
-      
-        <section class="col-lg-4 col-md-6">
-          <h3><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/employment-self-employment-income.html" class="stretched-link">Employment income</a></h3>
-          <p> Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs. </p>
-        </section>
-		<section class="col-lg-4 col-md-6">
-          <h3><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-13499-14299-gross-income-lines-13500-14300-net-income.html" class="stretched-link"><span class="nowrap">Self-employment</span> or partnership income</a></h3>
-          <p> Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs. </p>
-        </section>
-     <section class="col-lg-4 col-md-6">
-          <h3><a href="https://www.canada.ca/en/revenue-agency/campaigns/track-report-tips-gratuities.html" class="stretched-link">Tip and gratuities</a></h3>
-          <p> Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs. </p>
-        </section>
-   <section class="col-lg-4 col-md-6">
-          <h3><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/pension-savings-plans-income.html" class="stretched-link">Pension and savings plan income</a></h3>
-          <p> Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs. </p>
-        </section>
-		 <section class="col-lg-4 col-md-6">
-          <h3><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/benefit-income.html" class="stretched-link">Government payments</a></h3>
-          <p> Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs. </p>
-        </section>
-		 <section class="col-lg-4 col-md-6">
-          <h3><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/investment-income.html" class="stretched-link">Investment income</a></h3>
-          <p> Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs. </p>
-        </section>
-		 <section class="col-lg-4 col-md-6">
-          <h3><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-13499-14299-gross-income-lines-13500-14300-net-income.html" class="stretched-link">Business or professional income</a></h3>
-          <p> Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs. </p>
-        </section>
-		 <section class="col-lg-4 col-md-6">
-          <h3><a href="https://www.canada.ca/en/revenue-agency/campaigns/track-report-tips-gratuities.html" class="stretched-link">Foreign income</a></h3>
-          <p> Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs. </p>
-        </section>
-		<!--
-		 <section class="col-lg-4 col-md-6">
-          <h3><a href="#" class="stretched-link">Compensation and insurance payments</a></h3>
-          <p> Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs. </p>
-        </section>
-		-->
-		<!--
-		 <section class="col-lg-4 col-md-6">
-          <h3><a href="#" class="stretched-link">Prizes and awards</a></h3>
-          <p> Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs. </p>
-        </section>
-		-->
-     <section class="col-lg-4 col-md-6">
-          <h3><a href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance/sharing-economy.html" class="stretched-link">Sharing economy income</a></h3>
-          <p> Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs. </p>
-        </section>
-		<section class="col-lg-4 col-md-6">
-          <h3><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/rental-income-line-12599-gross-line-12600-net.html" class="stretched-link">Rental income</a></h3>
-          <p> Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs. </p>
-        </section>
-		
-		<section class="col-lg-4 col-md-6">
-          <h3><a href="https://www.canada.ca/content/canadasite/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-130-other-income/line-130-scholarships-fellowships-bursaries-study-grants-artists-project-grants-awards.html" class="stretched-link">Scholarships, fellowships, bursaries, and study grants (awards)</a></h3>
-          <p> Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs. </p>
-        </section>
-     <section class="col-lg-4 col-md-6">
-          <h3><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/amounts-that-taxed.html" class="stretched-link">Income that is not taxed</a></h3>
-          <p> Summary of the information or tasks that can be accomplished on the sub-topic page. Remove prose or promotional messaging. Use action verbs. </p>
-        </section>
-  
-    </div>
-</details>
-
-</div>
-
-</div>
-
-</div>
-    </div>
+    </tbody>
+  </table>
+  <form class="wb-tables-filter" data-bind-to="dataset-filter">
+    <button type="reset" class="btn btn-default btn-lg mrgn-tp-sm mrgn-bttm-sm">Clear filter</button>
+  </form>
+  <p>You can also locate <a href="income-types.html">income sources by topic</a>.</p>
   </div>
-  
+  <div class="profile">
+    <section class="followus">
+      <h2>Follow:</h2>
+      <ul>
+        <li><a href="https://www.facebook.com/canrevagency/" class="facebook"  rel="external"><span class="wb-inv">Facebook</span></a></li>
+        <li><a href="https://twitter.com/CanRevAgency" class="twitter" rel="external"><span class="wb-inv">Twitter</span></a></li>
+        <li><a href="https://www.youtube.com/user/CanRevAgency" class="youtube" rel="external"><span class="wb-inv">YouTube</span></a></li>
+      </ul>
+    </section>
+    <div class="owner">
+      <p>From:</p>
+      <ul class="list-inline">
+        <li><a href="http://workzone/english/r1713497special/chad_crf000/tbs-refresh/examples/institution-example1-e.html">Canada Revenue Agency</a></li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+  </div>
   <section id="dfn1" class="mfp-hide modal-dialog modal-content overlay-def">
     <header class="modal-header">
       <h2 class="modal-title">Earned income</h2>
@@ -1227,34 +831,6 @@ table.table-row-group .table-vertical-header>tr>td {
       <p>For more information <a target="_blank" href="#">include only one authoritative link to more detailed information page (use target blank)</a></p>
     </div>
   </section>
-  
-  <!--<section id="dfn1" class="mfp-hide modal-dialog modal-content overlay-def">
-			<header class="modal-header">
-				<h2 class="modal-title">Definition for: X</h2>
-			</header>
-			<div class="modal-body">
-				<p>Brief overview goes here. Keep to two or three sentences.</p>
-				<p>For more information <a target="_blank" href=#">include only one authoritative link to more detailed information page (use target blank)</a></p>
-			</div>
-		</section>//-->
-  
- <div class="owner">
-            <p>From:</p>
-            <ul class="list-inline">
-               <li><a href="https://www.canada.ca/en/revenue-agency.html">Canada Revenue Agency</a></li>
-            </ul>
-         </div>
-         <div class="profile">
-            <section class="followus">
-               <h2>Follow:</h2>
-               <ul>
-                  <li><a href="https://www.facebook.com/canrevagency/" class="facebook" rel="external"><span class="wb-inv">Facebook</span></a></li>
-                  <li><a href="https://twitter.com/CanRevAgency" class="twitter" rel="external"><span class="wb-inv">Twitter</span></a></li>
-                  <li><a href="https://www.youtube.com/user/CanRevAgency" class="youtube" rel="external"><span class="wb-inv">YouTube</span></a></li>
-               </ul>
-            </section>
-            <div class="clearfix"></div>
-         </div>
          <div id="def-preFooter"></div>
          <!-- Write closure template -->
          <script type="text/javascript">
