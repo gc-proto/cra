@@ -24,7 +24,7 @@ counter-increment: item;
 
 }
 
-ol.lst-stps>li, ol.lst-stps>li>ol>li .lst-stps .lst-item {
+ol.lst-stps>li, ol.lst-stps>li>ol>li, .lst-stps .lst-item {
 
 list-style: none inside;
 
