@@ -24,7 +24,7 @@ counter-increment: item;
 
 }
 
-ol.lst-stps li, .lst-stps .lst-item {
+ol.lst-stps>li, ol.lst-stps>li>ol>li .lst-stps .lst-item {
 
 list-style: none inside;
 
@@ -122,7 +122,7 @@ margin-bottom: 0px
 
 {margin-top:15px;}
 
-.lst-stps.lst-stps-striped li, .lst-stps.lst-stps-striped .lst-item
+.lst-stps.lst-stps-striped>li, .lst-stps.lst-stps-striped>li>ol>li, .lst-stps.lst-stps-striped .lst-item
 
 {padding-top: 23px;
 
