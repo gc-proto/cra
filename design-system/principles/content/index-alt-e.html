@@ -97,45 +97,331 @@
       </nav>
       <main role="main" property="mainContentOfPage" class="container">
          <h1 property="name" id="wb-cont"><span class="stacked" role="text"><span>Content design principles</span>: <span>CRA design system</span></span></h1>
-		 <p class="pull-left mrgn-tp-sm">Filter: </p>
-		   <ul class="list-inline mrgn-bttm-lg" role="toolbar" data-wb-actionmng='[
+		 <p>Category filter: </p>
+		  
+<div class="btn-group btn-group-justified wb-eqht" role="toolbar" data-wb-actionmng='[{"trggroup": "test", "action": "removeClass", "source": ".wb-toggle", "class": "btn-primary" }]'>
+  <div class="btn-group  hght-inhrt">
+<button title="Make content findable" type="button" class="btn btn-default hght-inhrt wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-findable)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-findable">
 
-{"trggroup": "test", "action": "removeClass", "source": ".wb-toggle", "class": "btn-primary" }]'>
+<span class="fas fa-sliders-h"></span> Make content findable</button> 
+</div><div class="btn-group  hght-inhrt">
+<button title="Make content easy to understand" type="button" class="btn btn-default hght-inhrt wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-understand)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-understand">
 
-<li>
+<span class="fas fa-sliders-h"></span> Make content easy to understand</button> 
+</div><div class="btn-group  hght-inhrt">
+<button title="Make content accessible and inclusive" type="button" class="btn btn-default hght-inhrt wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-accessible)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-accessible">
 
-<button title="Alberta" type="button" class="btn btn-default btn-sm wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-ab)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-ab">
+<span class="fas fa-sliders-h"></span> Make content accessible and inclusive</button> 
+</div><div class="btn-group  hght-inhrt">
+<button title=" Make content actionable" class="btn btn-default hght-inhrt wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-actionable)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-actionable">
 
-Make content findable</button></li>
-<li>
-
-<button title="British Columbia" type="button" class="btn btn-default btn-sm wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-bc)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-bc">
-
-Make content easy to understand</button></li>
-<li>
-
-<button title="Manitoba" type="button" class="btn btn-default btn-sm wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-mb)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-mb">
-
-Make content accessible and inclusive</button></li>
-<li>
-<button title="New Brunswick" class="btn btn-default btn-sm wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-nb)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-nb">
-
-Make content actionable</button>
-
-</li>
+<span class="fas fa-sliders-h"></span> Make content actionable</button>
+</div><div class="btn-group  hght-inhrt">
 
 
+<button class="btn btn-primary hght-inhrt wb-toggle mrgn-bttm-sm" data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".fltr-none", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" }]'>Show all</button>
 
-<li>
-
-
-<button class="btn btn-link btn-lg mrgn-tp-sm" data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".fltr-none", "class": "hidden"}]'>Show all</button>
-
-</li>
-
-</ul>
+</div></div>
 		   
-		   
+		    <table class="table wb-tables tbl-gridify table-striped" id="table1" data-wb-tables='{"ordering":false, "lengthMenu": [ [15, 30, -1], [15, 30, "All"] ], "columns": [
+            null, { "className": "wb-inv"}, { "className": "hidden"}, null]}'>
+            <thead>
+               <tr>
+                  <th scope="col">Image Title/Description</th>
+                  <th scope="col">Topics</th>
+                  <th scope="col">Media type</th>
+                  <th scope="col">Date</th>
+               </tr>
+            </thead>
+            <tbody class="wb-eqht mrgn-tp-md">
+               <tr class="col-sm-6 col-md-4 mrgn-bttm-lg filterclass fltr-understand fltr-accessible">
+                  <td class="eqht-trgt brdr-0">
+                     <h3 class="mrgn-tp-md">
+                        <a href="audience-e.html">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <img src="http://placehold.it/750X250" alt="" class="full-width mrgn-bttm-md">
+                                 <span class="h6  btn btn-primary btn-xs pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg">Chad</span>
+                              </div>
+                           </div>
+                           Consider the needs of the audience
+                        </a>
+                     </h3>
+                     <p class="mrgn-bttm-0">Ensure your service is usable by those who will find it most challenging and use words and images that respect differences
+                  </td>
+                  <td> Tag1, Tag2</td>
+                  <td>Video</td>
+                  <td class="text-right">January 6, 2020</td>
+               </tr>
+                <tr class="col-sm-6 col-md-4 mrgn-bttm-lg filterclass fltr-findable fltr-understand">
+                  <td class="eqht-trgt brdr-0">
+                     <h3 class="mrgn-tp-md">
+                        <a href="scannable-e.html">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <img src="http://placehold.it/750X250" alt="" class="full-width mrgn-bttm-md">
+                                 <span class="h6  btn btn-primary btn-xs pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg">Video</span>
+                              </div>
+                           </div>
+                           Create scannable content
+                        </a>
+                     </h3>
+                     <p>Titles, headings, lists and whitespace help people find what they are looking for
+                  </td>
+                  <td> Tag1, Tag3</td>
+                  <td>Video</td>
+                  <td class="text-right">January 5, 2020</td>
+               </tr>
+			   <tr class="col-sm-6 col-md-4 mrgn-bttm-lg filterclass fltr-understand fltr-accessible">
+                  <td class="eqht-trgt brdr-0">
+                     <h3 class="mrgn-tp-md">
+                        <a href="format-e.html">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <img src="http://placehold.it/750X250" alt="" class="full-width mrgn-bttm-md">
+                                 <span class="h6  btn btn-primary btn-xs pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg">Infographic</span>
+                              </div>
+                           </div>
+                           Determine the right format
+                        </a>
+                     </h3>
+                     <p class="mrgn-bttm-0">Prioritize usability over engagement, as these two often have different objectives and produce the opposite results
+                  </td>
+                  <td> Tag1, Tag2</td>
+                  <td>Infographic</td>
+                  <td class="text-right">January 3, 2020</td>
+               </tr>
+                <tr class="col-sm-6 col-md-4 mrgn-bttm-lg filterclass fltr-understand fltr-actionable">
+                  <td class="eqht-trgt brdr-0">
+                     <h3 class="mrgn-tp-md">
+                        <a href="tasks-e.html">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <img src="http://placehold.it/750X250" alt="" class="full-width mrgn-bttm-md">
+                                 <span class="h6  btn btn-primary btn-xs pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg">Video</span>
+                              </div>
+                           </div>
+                           Determine user tasks
+                        </a>
+                     </h3>
+                     <p class="mrgn-bttm-0">Then make the information tailored to their needs
+                  </td>
+                  <td> Tag2, Tag3</td>
+                  <td>Video</td>
+                  <td class="text-right">January 4, 2020</td>
+               </tr>
+                
+                <tr class="col-sm-6 col-md-4 mrgn-bttm-lg filterclass fltr-findable fltr-understand fltr-accessible fltr-actionable">
+                  <td class="eqht-trgt brdr-0">
+                     <h3 class="mrgn-tp-md">
+                        <a href="consistency-e.html">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <img src="http://placehold.it/750X250" alt="" class="full-width mrgn-bttm-md">
+                                 <span class="h6  btn btn-primary btn-xs pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg">Video</span>
+                              </div>
+                           </div>
+                           Ensure consistency and predictability
+                        </a>
+                     </h3>
+                     <p>use a standardized approaches and patterns so that people can scan content</p>
+                  </td>
+                  <td> Tag1, Tag3</td>
+                  <td>Video</td>
+                  <td class="text-right">January 2, 2020</td>
+               </tr>
+                <tr class="col-sm-6 col-md-4 mrgn-bttm-lg filterclass fltr-findable fltr-understand fltr-accessible fltr-actionable">
+                  <td class="eqht-trgt brdr-0">
+                     <h3 class="mrgn-tp-md">
+                        <a href="point-e.html">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <img src="http://placehold.it/750X250" alt="" class="full-width mrgn-bttm-md">
+                                 <span class="h6  btn btn-primary btn-xs pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg">Video</span>
+                              </div>
+                           </div>
+                           Get to the point
+                        </a>
+                     </h3>
+                     <p class="mrgn-bttm-0">Be comprehensive in what needs to be done and take out everything that doesn't help complete the immediate task
+                  </td>
+                  <td> Tag2, Tag3</td>
+                  <td>Video</td>
+                  <td class="text-right">January 1, 2020</td>
+               </tr>
+			   <tr class="col-sm-6 col-md-4 mrgn-bttm-lg filterclass fltr-findable fltr-understand fltr-accessible fltr-actionable">
+                  <td class="eqht-trgt brdr-0">
+                     <h3 class="mrgn-tp-md">
+                        <a href="time-e.html">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <img src="http://placehold.it/750X250" alt="" class="full-width mrgn-bttm-md">
+                                 <span class="h6  btn btn-primary btn-xs pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg">Video</span>
+                              </div>
+                           </div>
+                           Give enough time to read and use content
+                        </a>
+                     </h3>
+                     <p class="mrgn-bttm-0">People who are stressed, have a motor or cognitive disability will often need more time to complete tasks before they time out
+                  </td>
+                  <td> Tag2, Tag3</td>
+                  <td>Video</td>
+                  <td class="text-right">January 1, 2020</td>
+               </tr>
+			   <tr class="col-sm-6 col-md-4 mrgn-bttm-lg filterclass fltr-findable fltr-understand fltr-accessible fltr-actionable">
+                  <td class="eqht-trgt brdr-0">
+                     <h3 class="mrgn-tp-md">
+                        <a href="strategy-e.html">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <img src="http://placehold.it/750X250" alt="" class="full-width mrgn-bttm-md">
+                                 <span class="h6  btn btn-primary btn-xs pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg">Video</span>
+                              </div>
+                           </div>
+                           Have a content strategy
+                        </a>
+                     </h3>
+                     <p class="mrgn-bttm-0">So you don’t duplicate or produce contradictory information that will prevent users from finding the right answers
+                  </td>
+                  <td> Tag2, Tag3</td>
+                  <td>Video</td>
+                  <td class="text-right">January 1, 2020</td>
+               </tr>
+			   <tr class="col-sm-6 col-md-4 mrgn-bttm-lg filterclass fltr-findable fltr-understand fltr-accessible fltr-actionable">
+                  <td class="eqht-trgt brdr-0">
+                     <h3 class="mrgn-tp-md">
+                        <a href="keywords-e.html">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <img src="http://placehold.it/750X250" alt="" class="full-width mrgn-bttm-md">
+                                 <span class="h6  btn btn-primary btn-xs pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg">Video</span>
+                              </div>
+                           </div>
+                           Identify users’ keywords
+                        </a>
+                     </h3>
+                     <p class="mrgn-bttm-0">This will help make the task intuitive and easy to understand
+                  </td>
+                  <td> Tag2, Tag3</td>
+                  <td>Video</td>
+                  <td class="text-right">January 1, 2020</td>
+               </tr>
+			   <tr class="col-sm-6 col-md-4 mrgn-bttm-lg filterclass fltr-findable fltr-understand fltr-accessible fltr-actionable">
+                  <td class="eqht-trgt brdr-0">
+                     <h3 class="mrgn-tp-md">
+                        <a href="../components/images-e.html">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <img src="http://placehold.it/750X250" alt="" class="full-width mrgn-bttm-md">
+                                 <span class="h6  btn btn-primary btn-xs pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg">Video</span>
+                              </div>
+                           </div>
+                           Make images perceivable to all
+                        </a>
+                     </h3>
+                     <p class="mrgn-bttm-0">People who can’t see need you to describe images for them in text
+                  </td>
+                  <td> Tag2, Tag3</td>
+                  <td>Video</td>
+                  <td class="text-right">January 1, 2020</td>
+               </tr>
+			   <tr class="col-sm-6 col-md-4 mrgn-bttm-lg filterclass fltr-findable fltr-understand fltr-accessible fltr-actionable">
+                  <td class="eqht-trgt brdr-0">
+                     <h3 class="mrgn-tp-md">
+                        <a href="search-e.html">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <img src="http://placehold.it/750X250" alt="" class="full-width mrgn-bttm-md">
+                                 <span class="h6  btn btn-primary btn-xs pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg">Video</span>
+                              </div>
+                           </div>
+                           Make it easy to find content in search
+                        </a>
+                     </h3>
+                     <p class="mrgn-bttm-0">make sure your page title is clear in search results, people only look at a couple results on the top of the page to see if they found the right information
+                  </td>
+                  <td> Tag2, Tag3</td>
+                  <td>Video</td>
+                  <td class="text-right">January 1, 2020</td>
+               </tr>
+			   <tr class="col-sm-6 col-md-4 mrgn-bttm-lg filterclass fltr-findable fltr-understand fltr-accessible fltr-actionable">
+                  <td class="eqht-trgt brdr-0">
+                     <h3 class="mrgn-tp-md">
+                        <a href="../components/vidoes-e.html">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <img src="http://placehold.it/750X250" alt="" class="full-width mrgn-bttm-md">
+                                 <span class="h6  btn btn-primary btn-xs pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg">Video</span>
+                              </div>
+                           </div>
+                           Make videos perceivable to all
+                        </a>
+                     </h3>
+                     <p class="mrgn-bttm-0">By providing captions and transcripts for your videos you make them accessible to people who can’t see and those who can’t watch them in certain environments - noisy spaces, slow internet
+                  </td>
+                  <td> Tag2, Tag3</td>
+                  <td>Video</td>
+                  <td class="text-right">January 1, 2020</td>
+               </tr>
+			   <tr class="col-sm-6 col-md-4 mrgn-bttm-lg filterclass fltr-findable fltr-understand fltr-accessible fltr-actionable">
+                  <td class="eqht-trgt brdr-0">
+                     <h3 class="mrgn-tp-md">
+                        <a href="point-need-e.html">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <img src="http://placehold.it/750X250" alt="" class="full-width mrgn-bttm-md">
+                                 <span class="h6  btn btn-primary btn-xs pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg">Video</span>
+                              </div>
+                           </div>
+                           Provide content at the point of need
+                        </a>
+                     </h3>
+                     <p class="mrgn-bttm-0">Don’t send people searching elsewhere, and avoid FAQs. too much information will make it difficult for people to find answers
+                  </td>
+                  <td> Tag2, Tag3</td>
+                  <td>Video</td>
+                  <td class="text-right">January 1, 2020</td>
+               </tr>
+			   <tr class="col-sm-6 col-md-4 mrgn-bttm-lg filterclass fltr-findable fltr-understand fltr-accessible fltr-actionable">
+                  <td class="eqht-trgt brdr-0">
+                     <h3 class="mrgn-tp-md">
+                        <a href="important-e.html">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <img src="http://placehold.it/750X250" alt="" class="full-width mrgn-bttm-md">
+                                 <span class="h6  btn btn-primary btn-xs pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg">Video</span>
+                              </div>
+                           </div>
+                           Start with the most important information
+                        </a>
+                     </h3>
+                     <p class="mrgn-bttm-0">people scan to find specific keywords, if they don’t see them, they may think this information does not exist
+                  </td>
+                  <td> Tag2, Tag3</td>
+                  <td>Video</td>
+                  <td class="text-right">January 1, 2020</td>
+               </tr>
+			   <tr class="col-sm-6 col-md-4 mrgn-bttm-lg filterclass fltr-findable fltr-understand fltr-accessible fltr-actionable">
+                  <td class="eqht-trgt brdr-0">
+                     <h3 class="mrgn-tp-md">
+                        <a href="#">
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <img src="http://placehold.it/750X250" alt="" class="full-width mrgn-bttm-md">
+                                 <span class="h6  btn btn-primary btn-xs pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg">Video</span>
+                              </div>
+                           </div>
+                           Title here
+                        </a>
+                     </h3>
+                     <p class="mrgn-bttm-0">Short description here.
+                  </td>
+                  <td> Tag2, Tag3</td>
+                  <td>Video</td>
+                  <td class="text-right">January 1, 2020</td>
+               </tr>
+            </tbody>
+         </table>
 		   
 		   <div class="wb-eqht row">
 		 <section class="col-md-6">
@@ -160,7 +446,7 @@ Make content actionable</button>
 			
 
          </div>
-		  <h2>All activities</h2>
+		
 		   <div class="row mrgn-tp-lg">
     <div class="col-md-3">
       <form class="wb-tables-filter" data-bind-to="dataset-filter">
