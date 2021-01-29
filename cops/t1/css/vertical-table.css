@@ -82,7 +82,7 @@ td.vertical-table-inline:empty {
 }
 
 @media (min-width:992px) {
-.table-vertical-header td::before {
+.table-vertical-header:not(.vertical-header-collapsed) td::before {
 	display: inline-block;
 	margin-left: -165px;
 	width: 160px;
@@ -90,7 +90,7 @@ td.vertical-table-inline:empty {
 	padding-right: 15px;
 	text-align: right;
 }
-.table-vertical-header td {
+.table-vertical-header:not(.vertical-header-collapsed) td {
 	margin-left: 165px;
 }
 }
