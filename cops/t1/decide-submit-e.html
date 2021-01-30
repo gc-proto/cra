@@ -62,8 +62,8 @@
       </script>
 <main role="main" property="mainContentOfPage" class="container">
   <h1 property="name" id="wb-cont" class="provisional gc-thickline"><span class="stacked"><span>Options for who does your taxes and how to submit them</span> - <span>Personal income tax</span> </span></h1>
-  <p><span class="fas fa-sliders-h"></span> Filter by feature </p>
-  <div class="list-inline mrgn-bttm-lg" data-wb-actionmng='[
+  <p class="pull-left mrgn-tp-sm"><span class="fas fa-sliders-h"></span> Filter by your preference:  </p>
+ <!--  <div class="list-inline mrgn-bttm-lg" data-wb-actionmng='[
 		{ "trggroup": "clearFilter", "action": "removeClass", "source": ".btn-optns", "class": "btn-primary" },
 		{ "trggroup":"clearFilter", "action": "tblfilter", "source": "#table1", "column": 5, "value": "" }
 	]'>
@@ -98,6 +98,35 @@
 		]'>View all</button>
 		 </div>
 		 </div>
+		 -->
+		 
+		  <ul class="list-inline mrgn-bttm-lg" data-wb-actionmng='[
+		{ "trggroup": "clearFilter", "action": "removeClass", "source": ".btn-optns", "class": "btn-primary" },
+		{ "trggroup":"clearFilter", "action": "tblfilter", "source": "#table1", "column": 5, "value": "" }
+	]'>
+		 	<li>
+            <button type="button" class="btn btn-default btn-optns mrgn-bttm-md brdr-rds-0" data-wb-doaction='[
+			{ "action": "run", "trggroup": "clearFilter" },
+			{ "action": "tblfilter", "source": "#table1", "column": 5, "value": "you-complete" },
+			{ "action": "addClass", "class": "btn-primary" }
+		]'><span class="fas fa-user"></span> You want to complete the return</button>
+		</li>
+		<li>
+            <button type="button" class="btn btn-default btn-optns mrgn-bttm-md brdr-rds-0" data-wb-doaction='[
+			{ "action": "run", "trggroup": "clearFilter" },
+			{ "action": "tblfilter", "source": "#table1", "column": 5, "value": "someone" },
+			{ "action": "addClass", "class": "btn-primary" }
+		]'><span class="fas fa-user-friends"></span> You want someone else to complete the return</button>
+        
+         </li>
+		 
+		 <li>
+		   <button type="button" class="btn btn-default btn-primary btn-optns mrgn-bttm-md brdr-rds-0" data-wb-doaction='[
+			{ "action": "run", "trggroup": "clearFilter" },
+			{ "action": "addClass", "class": "btn-primary" }
+		]'>All options</button>
+		</li>
+		 </ul>
   <table class="table wb-tables table-vertical-header strong vertical-header-collapsed table-striped table-gridify" aria-live="polite" id="table1" data-wb-tables='{"ordering":false,  "paging": false, "oLanguage": {
    "sSearch": "Filter by keyword"
  }}'>
