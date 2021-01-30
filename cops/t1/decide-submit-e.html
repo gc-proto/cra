@@ -69,7 +69,7 @@
 	]'>
 	
 	<div class="btn-group">
-            <button type="button" class="btn btn-default btn-optns mrgn-bttm-md" data-wb-doaction='[
+            <button type="button" class="btn btn-default btn-optns mrgn-bttm-md brdr-rds-0" data-wb-doaction='[
 			{ "action": "run", "trggroup": "clearFilter" },
 			{ "action": "tblfilter", "source": "#table1", "column": 5, "value": "you-complete" },
 			{ "action": "addClass", "class": "btn-primary" }
@@ -92,7 +92,10 @@
 			{ "action": "tblfilter", "source": "#table1", "column": 5, "value": "quick" },
 			{ "action": "addClass", "class": "btn-primary" }
 		]'><span class="far fa-clock"></span> Quick processing time</button>
-		   <button type="button" class="btn btn-link btn-optns mrgn-bttm-md" data-wb-doaction='{ "action": "run", "trggroup": "clearFilter" }'>View all</button>
+		   <button type="button" class="btn btn-default btn-primary btn-optns mrgn-bttm-md" data-wb-doaction='[
+			{ "action": "run", "trggroup": "clearFilter" },
+			{ "action": "addClass", "class": "btn-primary" }
+		]'>View all</button>
 		 </div>
 		 </div>
   <table class="table wb-tables table-vertical-header strong vertical-header-collapsed table-striped table-gridify" aria-live="polite" id="table1" data-wb-tables='{"ordering":false,  "paging": false, "oLanguage": {
@@ -110,23 +113,16 @@
     </thead>
     <tbody class="mrgn-tp-md wb-eqht-css">
       <tr class="col-md-4 col-sm-6">
-        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/netfile-overview/certified-software-netfile-program.html">
-                           
-                                 <img src="images/computer.png" alt="" class="full-width mrgn-bttm-sm">
-                               
-                             
-                           Using certified software
-                        </a>
-						</td>
-        <td><p>Complete your tax return online with automated software, and send your return online, by mail, or dropped off.</p></td>
+        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/netfile-overview/certified-software-netfile-program.html" class="stretched-link"><img src="images/computer.png" alt="" class="full-width mrgn-bttm-sm"> Using certified software</a></td>
+        <td>Complete your tax return online with automated software, and send your return online, by mail, or dropped off.</td>
         <td data-header="Who can use">Anyone</td>
         <td data-header="Cost">Free  or  varies</td>
         <td data-header="Processing time" class="mrgn-bttm-md">Typically within 2 weeks</td>
         <td class="hidden">Automatic, you-complete, quick, netfile</td>
       </tr>
       <tr class="col-md-4 col-sm-6">
-        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/campaigns/file-my-return.html"> <img src="images/phone.png" alt="" class="full-width mrgn-bttm-sm"> Using an automated phone line</a></td>
-        <td><p>Answer questions  using an automated phone system to file your return.</p></td>
+        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/campaigns/file-my-return.html" class="stretched-link"><img src="images/phone.png" alt="" class="full-width mrgn-bttm-sm"> Using an automated phone line</a></td>
+        <td>Answer questions  using an automated phone system to file your return.</td>
         <td data-header="Who can use">Those with a low to modest income and a simple tax situation</td>
         <td data-header="Cost">Free</td>
         <td data-header="Processing time" class="mrgn-bttm-md">Typically within 2 weeks</td>
@@ -134,32 +130,32 @@
       </tr>
      
       <tr class="col-md-4 col-sm-6">
-        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/community-volunteer-income-tax-program/need-a-hand-complete-your-tax-return.html"> <img src="images/cvitp.png" alt="" class="full-width mrgn-bttm-sm"> Using a community volunteer tax clinic</a></td>
-        <td><p>Volunteers at a tax clinic complete your tax return for you. </p></td>
+        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/community-volunteer-income-tax-program/need-a-hand-complete-your-tax-return.html" class="stretched-link"><img src="images/cvitp.png" alt="" class="full-width mrgn-bttm-sm"> Using a community volunteer tax clinic</a></td>
+        <td>Volunteers at a tax clinic complete your tax return for you. </td>
         <td data-header="Who can use">Those with a low to modest income and a simple tax situation</td>
         <td data-header="Cost">Free</td>
         <td data-header="Processing time" class="mrgn-bttm-md">Typically within 2 weeks</td>
         <td class="hidden">Automatic, someone, quick, CVITP, Free tax clinic</td>
       </tr>
       <tr class="col-md-4 col-sm-6">
-        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/tax/representative-authorization.html"> <img src="images/rep.png" alt="" class="full-width mrgn-bttm-sm"> Using a representative</a></td>
-        <td><p>A representative is a person or business that you authorize to deal with the CRA for you. For example, your spouse or common-law partner, other family member, friend, or accountant. Your return can then be sent online, by mail, or dropped off.</p></td>
+        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/tax/representative-authorization.html" class="stretched-link"><img src="images/rep.png" alt="" class="full-width mrgn-bttm-sm"> Using a representative</a></td>
+        <td>A representative is a person or business that you authorize to deal with the CRA for you. For example, your spouse or common-law partner, other family member, friend, or accountant. Your return can then be sent online, by mail, or dropped off.</td>
         <td data-header="Who can use">Anyone</td>
         <td data-header="Cost">Free or varies</td>
         <td data-header="Processing time" class="mrgn-bttm-md">Typically within 2 weeks</td>
         <td class="hidden">Automatic, someone, quick</td>
       </tr>
       <tr class="col-md-4 col-sm-6">
-        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/efile-individuals/discounter-information-individuals.html"> <img src="images/discounter.png" alt="" class="full-width mrgn-bttm-sm">Using a discounter</a></td>
-        <td><p>A discounter is a tax preparer who calculates your refund, and immediately pays you part of your refund—called a discounted tax refund—before your taxes taxes are assessed by CRA. They send your return online.</p></td>
+        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/efile-individuals/discounter-information-individuals.html" class="stretched-link"> <img src="images/discounter.png" alt="" class="full-width mrgn-bttm-sm">Using a discounter</a></td>
+        <td>A discounter is a tax preparer who calculates your refund, and immediately pays you part of your refund—called a discounted tax refund—before your taxes taxes are assessed by CRA. They send your return online.</td>
         <td data-header="Who can use">Anyone</td>
         <td data-header="Cost">Varies</td>
         <td data-header="Processing time" class="mrgn-bttm-md">Typically within 2 weeks</td>
         <td class="hidden">Automatic, someone, quick</td>
       </tr>
 	   <tr class="col-md-4 col-sm-6">
-        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/getting-a-tax-return.html"> <img src="images/paper.png" alt="" class="full-width mrgn-bttm-sm"> Using a paper guide</a></td>
-        <td><p>A paper-based way to file your taxes.  The calculations are done manually. The return is then mailed in or dropped off.</p></td>
+        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/getting-a-tax-return.html" class="stretched-link"><img src="images/paper.png" alt="" class="full-width mrgn-bttm-sm"> Using a paper guide</a></td>
+        <td>A paper-based way to file your taxes.  The calculations are done manually. The return is then mailed in or dropped off.</td>
         <td data-header="Who can use">Anyone</td>
         <td data-header="Cost">Free</td>
         <td data-header="Processing time" class="mrgn-bttm-md">Typically within 8 weeks</td>
