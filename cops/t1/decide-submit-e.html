@@ -63,11 +63,11 @@
 <main role="main" property="mainContentOfPage" class="container">
   <h1 property="name" id="wb-cont" class="provisional gc-thickline"><span class="stacked"><span>Options for who does your taxes and how to submit them</span> - <span>Personal income tax</span> </span></h1>
   <p><span class="fas fa-sliders-h"></span> Filter by feature </p>
-  <ul class="list-inline mrgn-bttm-lg" data-wb-actionmng='[
+  <div class="list-inline mrgn-bttm-lg" data-wb-actionmng='[
 		{ "trggroup": "clearFilter", "action": "removeClass", "source": ".btn-optns", "class": "btn-primary" },
 		{ "trggroup":"clearFilter", "action": "tblfilter", "source": "#table1", "column": 5, "value": "" }
 	]'>
-	<li>
+	
 	<div class="btn-group">
             <button type="button" class="btn btn-default btn-optns mrgn-bttm-md" data-wb-doaction='[
 			{ "action": "run", "trggroup": "clearFilter" },
@@ -80,26 +80,21 @@
 			{ "action": "addClass", "class": "btn-primary" }
 		]'><span class="fas fa-user-friends"></span> Someone else completes the return</button>
         
-          </div>
-		  </li>
-    <li>
-      <button type="button" class="btn btn-default btn-optns mrgn-bttm-md" data-wb-doaction='[
+         
+		  <button type="button" class="btn btn-default btn-optns mrgn-bttm-md" data-wb-doaction='[
 			{ "action": "run", "trggroup": "clearFilter" },
 			{ "action": "tblfilter", "source": "#table1", "column": 5, "value": "Automatic" },
 			{ "action": "addClass", "class": "btn-primary" }
 		]'><span class="fas fa-calculator"></span> Calculations are done for you</button>
-    </li>
-	
-    <li>
-      <button type="button" class="btn btn-default btn-optns mrgn-bttm-md" data-wb-doaction='[
+		
+		 <button type="button" class="btn btn-default btn-optns mrgn-bttm-md" data-wb-doaction='[
 			{ "action": "run", "trggroup": "clearFilter" },
 			{ "action": "tblfilter", "source": "#table1", "column": 5, "value": "quick" },
 			{ "action": "addClass", "class": "btn-primary" }
 		]'><span class="far fa-clock"></span> Quick processing time</button>
-    </li>
-    <li>
-      <button type="button" class="btn btn-link btn-optns" data-wb-doaction='{ "action": "run", "trggroup": "clearFilter" }'>View all</button>
-  </ul>
+		   <button type="button" class="btn btn-link btn-optns mrgn-bttm-md" data-wb-doaction='{ "action": "run", "trggroup": "clearFilter" }'>View all</button>
+		 </div>
+		 </div>
   <table class="table wb-tables table-vertical-header strong vertical-header-collapsed table-striped table-gridify" aria-live="polite" id="table1" data-wb-tables='{"ordering":false,  "paging": false, "oLanguage": {
    "sSearch": "Filter by keyword"
  }}'>
@@ -123,7 +118,7 @@
                            Using certified software
                         </a>
 						</td>
-        <td><p>Complete your tax return online with automated software, and send your return online, by mail, or drop off.</p></td>
+        <td><p>Complete your tax return online with automated software, and send your return online, by mail, or dropped off.</p></td>
         <td data-header="Who can use">Anyone</td>
         <td data-header="Cost">Free  or  varies</td>
         <td data-header="Processing time" class="mrgn-bttm-md">Typically within 2 weeks</td>
@@ -148,7 +143,7 @@
       </tr>
       <tr class="col-md-4 col-sm-6">
         <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/tax/representative-authorization.html"> <img src="images/rep.png" alt="" class="full-width mrgn-bttm-sm"> Using a representative</a></td>
-        <td><p>A representative is a person or business that you authorize to deal with the CRA for you. For example, your spouse or common-law partner, other family member, friend, or accountant. They send your return online, by mail, or drop off.</p></td>
+        <td><p>A representative is a person or business that you authorize to deal with the CRA for you. For example, your spouse or common-law partner, other family member, friend, or accountant. Your return can then be sent online, by mail, or dropped off.</p></td>
         <td data-header="Who can use">Anyone</td>
         <td data-header="Cost">Free or varies</td>
         <td data-header="Processing time" class="mrgn-bttm-md">Typically within 2 weeks</td>
