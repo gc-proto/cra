@@ -62,9 +62,9 @@
       </script>
 <main role="main" property="mainContentOfPage" class="container">
   <h1 property="name" id="wb-cont" class="provisional gc-thickline"><span class="stacked"><span>Options for doing your taxes</span> - <span>Personal income tax</span> </span></h1>
- 
+  <!-- 
   <p class="pull-left mrgn-tp-sm"><span class="fas fa-sliders-h"></span> Filter by your preference (optional):  </p><div class="clearfix hidden-lg"></div>
- <!--  <div class="list-inline mrgn-bttm-lg" data-wb-actionmng='[
+ <div class="list-inline mrgn-bttm-lg" data-wb-actionmng='[
 		{ "trggroup": "clearFilter", "action": "removeClass", "source": ".btn-optns", "class": "btn-primary" },
 		{ "trggroup":"clearFilter", "action": "tblfilter", "source": "#table1", "column": 5, "value": "" }
 	]'>
@@ -100,7 +100,7 @@
 		 </div>
 		 </div>
 		 -->
-		 
+		 <!--
 		  <ul class="list-inline mrgn-bttm-lg" data-wb-actionmng='[
 		{ "trggroup": "clearFilter", "action": "removeClass", "source": ".btn-optns", "class": "btn-primary" },
 		{ "trggroup":"clearFilter", "action": "tblfilter", "source": "#table1", "column": 5, "value": "" }
@@ -127,9 +127,12 @@
 		]'>Reset</button>
 		</li>
 		 </ul>
+		
   <table class="table wb-tables table-vertical-header strong vertical-header-collapsed table-striped table-gridify" aria-live="polite" id="table1" data-wb-tables='{"ordering":false,  "paging": false, "oLanguage": {
    "sSearch": "Filter by keyword"
  }}'>
+  -->
+   <table class="table table-vertical-header strong vertical-header-collapsed table-striped table-gridify" aria-live="polite" id="table1" >
     <thead>
       <tr>
         <th scope="col">Type</th>
@@ -149,23 +152,9 @@
         <td data-header="Processing time" class="mrgn-bttm-md">Typically within 2 weeks</td>
         <td class="hidden">Automatic, you-complete, quick, netfile</td>
       </tr>
-      <tr class="col-md-4 col-sm-6 position-relative-chris">
-        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/campaigns/file-my-return.html" class="stretched-link-chris"><img src="images/phone.png" alt="" class="full-width mrgn-bttm-sm"> Using our automated phone line</a></td>
-        <td>Answer questions on our automated phone line to file your taxes directly with us.</td>
-        <td data-header="Who can use">Those with a low to modest income and a simple tax situation</td>
-        <td data-header="Cost">Free</td>
-        <td data-header="Processing time" class="mrgn-bttm-md">Typically within 2 weeks</td>
-        <td class="hidden">Automatic, you-complete, quick</td>
-      </tr>
      
-      <tr class="col-md-4 col-sm-6 position-relative-chris">
-        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/community-volunteer-income-tax-program/need-a-hand-complete-your-tax-return.html" class="stretched-link-chris"><img src="images/cvitp.png" alt="" class="full-width mrgn-bttm-sm"> Using a community volunteer tax clinic</a></td>
-        <td>Volunteers at a tax clinic complete your taxes for you. </td>
-        <td data-header="Who can use">Those with a low to modest income and a simple tax situation</td>
-        <td data-header="Cost">Free</td>
-        <td data-header="Processing time" class="mrgn-bttm-md">Typically within 2 weeks</td>
-        <td class="hidden">Automatic, someone, quick, CVITP, Free tax clinic</td>
-      </tr>
+     
+     
       <tr class="col-md-4 col-sm-6 position-relative-chris">
         <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/tax/representative-authorization.html" class="stretched-link-chris"><img src="images/rep.png" alt="" class="full-width mrgn-bttm-sm"> Using a representative</a></td>
         <td>A representative is a person or business that you authorize to deal with the CRA for you. For example, your spouse or common-law partner, a family member, friend, or accountant. Your taxes are then sent to us online, by mail, or dropped off.</td>
@@ -175,12 +164,20 @@
         <td class="hidden">Automatic, someone, quick</td>
       </tr>
       <tr class="col-md-4 col-sm-6 position-relative-chris">
-        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/efile-individuals/discounter-information-individuals.html" class="stretched-link-chris"> <img src="images/discounter.png" alt="" class="full-width mrgn-bttm-sm">Using a discounter</a></td>
+        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/efile-individuals/discounter-information-individuals.html" class="stretched-link-chris"> <img src="images/discounter.png" alt="" class="full-width mrgn-bttm-sm">Using a service provider who pays your refund immediately</a></td>
         <td>A discounter is a tax preparer who calculates your refund, and immediately pays you part of your refund—called a discounted tax refund—before your taxes taxes are assessed by CRA. Your taxes are sent to us online.</td>
         <td data-header="Who can use">Anyone</td>
         <td data-header="Cost">Varies</td>
         <td data-header="Processing time" class="mrgn-bttm-md">Typically within 2 weeks</td>
         <td class="hidden">Automatic, someone, quick</td>
+      </tr>
+	   <tr class="col-md-4 col-sm-6 position-relative-chris">
+        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/community-volunteer-income-tax-program/need-a-hand-complete-your-tax-return.html" class="stretched-link-chris"><img src="images/cvitp.png" alt="" class="full-width mrgn-bttm-sm"> Using a community volunteer tax clinic</a></td>
+        <td>Volunteers at a tax clinic complete your taxes for you. </td>
+        <td data-header="Who can use">Those with a low to modest income and a simple tax situation</td>
+        <td data-header="Cost">Free</td>
+        <td data-header="Processing time" class="mrgn-bttm-md">Typically within 2 weeks</td>
+        <td class="hidden">Automatic, someone, quick, CVITP, Free tax clinic</td>
       </tr>
 	   <tr class="col-md-4 col-sm-6 position-relative-chris">
         <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/getting-a-tax-return.html" class="stretched-link-chris"><img src="images/paper.png" alt="" class="full-width mrgn-bttm-sm"> Using a paper guide</a></td>
@@ -189,6 +186,14 @@
         <td data-header="Cost">Free</td>
         <td data-header="Processing time" class="mrgn-bttm-md">Typically within 8 weeks</td>
         <td class="hidden">Manual, you-complete</td>
+      </tr>
+	   <tr class="col-md-4 col-sm-6 position-relative-chris">
+        <td class="h3 mrgn-tp-md mrgn-bttm-0"><a href="https://www.canada.ca/en/revenue-agency/campaigns/file-my-return.html" class="stretched-link-chris"><img src="images/phone.png" alt="" class="full-width mrgn-bttm-sm"> Using our automated phone line</a></td>
+        <td>Answer questions on our automated phone line to file your taxes directly with us.</td>
+        <td data-header="Who can use">Anyone who received a letter from us inviting them to use this service.  Qualifying individuals have a low to modest income and a simple tax situation.</td>
+        <td data-header="Cost">Free</td>
+        <td data-header="Processing time" class="mrgn-bttm-md">Typically within 2 weeks</td>
+        <td class="hidden">Automatic, you-complete, quick</td>
       </tr>
     </tbody>
   </table>
