@@ -229,6 +229,7 @@
     <div class="col-xs-12 col-sm-4 pull-right"><a href="https://canada.ca/content/canadasite/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/tax-slips/understand-your-tax-slips/t4-slips/t4e-statement-employment-insurance-other-benefits/_jcr_content/par/details_0_4/accPar/img_0_0/image.img.jpg/1574095667539.jpg"  class="wb-lbx" role="button" title="T4E slip"> <img src="https://canada.ca/content/canadasite/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/tax-slips/understand-your-tax-slips/t4-slips/t4e-statement-employment-insurance-other-benefits/_jcr_content/par/details_0_4/accPar/img_0_0/image.img.jpg/1574095667539.jpg" alt="T4E slip" class="img-responsive hidden-xs img-thumbnail"/>View T4E tax slip </a> </div>
     <div class="col-sm-8 pull-left">
       <h2 id="h-2">Box numbers for income sources</h2>
+	    <div class="mrgn-tp-lg">
       <p class="pull-left mrgn-tp-sm"><span class="fas fa-sliders-h"></span> Quick filter: </p>
       <div class="clearfix visible-xs"></div>
       <ul class="list-inline mrgn-bttm-lg"  data-wb-actionmng='[
@@ -242,19 +243,16 @@
 			{ "action": "addClass", "class": "btn-primary" }
 		]'>COVID-19 payments</button>
         </li>
-        <!--<li><button type="button" class="fltopts btn btn-default" data-wb-doaction='[
-			{ "action": "run", "trggroup": "clearFilter" },
-			{ "action": "tblfilter", "source": "#t4e-tbl", "column": 3, "value": "Another" },
-			{ "action": "addClass", "class": "btn-primary" }
-		]'>[...]</button></li>//-->
+       
         <li>
           <button type="button" class="btn btn-link" data-wb-doaction='{ "action": "run", "trggroup": "clearFilter" }'>Reset</button>
         </li>
       </ul>
+	    </div>
     </div>
   </div>
   <table class="table wb-tables" data-wb-tables='{"paging": false, "columns": [{"className": "h3 mrgn-tp-0"}, null, {"className": "hidden"}]}' id="t4e-tbl">
-    <caption>
+    <caption class="wb-inv">
     Income sources
     </caption>
     <thead>
