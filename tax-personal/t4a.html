@@ -223,7 +223,7 @@
 	<h2 id="h-1">Overview</h2>
 	<div class="row">
     <div class="col-sm-8">
-      <p>For detailed information on the amounts shown in the boxes of your T4A slip, see the corresponding box number below.</p>
+      <p>For more information about the amounts shown on your <span class="nowrap">T4A tax slip</span>, see the corresponding box number below.</p>
       <p>If you have any questions about the amounts shown on your T4A slip, contact the issuer of the slip.</p>
 	   
     </div>
@@ -231,11 +231,10 @@
       </a></div>
 <div class="col-sm-8 pull-left">
 	<h2 id="h-2">Box numbers for income sources</h2>
-	<p>The boxes related to your income sources on the T4A slip and what line numbers on your return to add the amounts.</p>
-		</div>
-	</div>
-	<p>Quick filter:</p>
-	<ul class="list-inline mrgn-bttm-lg"  data-wb-actionmng='[
+	<div class="mrgn-tp-lg">
+	<p class="pull-left mrgn-tp-sm"><span class="fas fa-sliders-h"></span> Quick filter:</p>
+	<div class="clearfix visible-xs"></div>
+  <ul class="list-inline mrgn-bttm-lg"  data-wb-actionmng='[
 		{ "trggroup":"clearFilter", "action": "removeClass", "source": ".fltopts", "class": "btn-primary" },
 		{ "trggroup":"clearFilter", "action": "tblfilter", "source": "#t4a-tbl", "column": 2, "value": "" }
 	]'>
@@ -244,17 +243,17 @@
 			{ "action": "tblfilter", "source": "#t4a-tbl", "column": 2, "value": "COVID-19" },
 			{ "action": "addClass", "class": "btn-primary" }
 		]'>COVID-19 payments</button></li>
-		<!--<li><button type="button" class="fltopts btn btn-default" data-wb-doaction='[
-			{ "action": "run", "trggroup": "clearFilter" },
-			{ "action": "tblfilter", "source": "#t4a-tbl", "column": 3, "value": "Another" },
-			{ "action": "addClass", "class": "btn-primary" }
-		]'>[...]</button></li>//-->
-<li><button type="button" class="btn btn-link" data-wb-doaction='{ "action": "run", "trggroup": "clearFilter" }'>View all</button></li>
+		
+<li><button type="button" class="btn btn-link" data-wb-doaction='{ "action": "run", "trggroup": "clearFilter" }'>Reset</button></li>
 </ul>
+	</div>
+	  </div>
+	</div>
+ 
 
 	
-  <table class="table wb-tables" data-wb-tables='{"paging": false, "columnDefs": [{"className": "hidden", "targets": [2]}]}' id="t4a-tbl">
-    <caption>
+  <table class="table wb-tables" data-wb-tables='{"paging": false, "columns": [{"className": "h3 mrgn-tp-0"}, null, {"className": "hidden"}]}' id="t4a-tbl">
+    <caption class="wb-inv">
     Income sources
     </caption>
     <thead>
@@ -266,17 +265,17 @@
     </thead>
     <tbody>
       <tr id="bx16">
-        <td><p class="h3 mrgn-tp-0">016</p></td>
+       <td>016</td>
         <td><p class="h3 mrgn-tp-0">Pension or superannuation - line 11500</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-11500-other-pensions-superannuation.html">line 11500</a> of your return.</p>
-          <p>It may qualify for the pension income amount. See <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-31400-pension-income-amount.html">line 31400</a>.</p>
-          <p>Also see lines <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-11500-other-pensions-superannuation.html">11500</a> and <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income.html">13000</a>.</p>
-          <p>Box 016 includes the amount from box 128, Veteran's benefits eligible for pension splitting.&nbsp;<br>
-            See <a href="/en/revenue-agency/services/forms-publications/forms/t1032.html">Form T1032, Joint Election to Split Pension Income</a></p></td>
+          <p>Eligible pension   may qualify for the pension income amount. See <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-31400-pension-income-amount.html">line 31400</a>.</p>
+          <p>Also see <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-11500-other-pensions-superannuation.html"> line 11500</a> and <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income.html">line 13000</a>.</p>
+          <p><strong>Box 016</strong> includes the amount from box 128 - Veteran's benefits eligible for pension splitting.&nbsp;</p>
+          <p>See <a href="/en/revenue-agency/services/forms-publications/forms/t1032.html">Form T1032, Joint Election to Split Pension Income</a></p></td>
         <td></td>
       </tr>
       <tr id="bx18">
-        <td><p class="h3 mrgn-tp-0">018</p></td>
+       <td>018</td>
         <td><p class="h3 mrgn-tp-0">Lump-sum payments - line 13000</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income.html">line 13000</a> of your return.</p>
           <p><strong>Box 018 </strong>includes the following amounts:</p>
@@ -291,19 +290,19 @@
         <td></td>
       </tr>
       <tr id="bx20">
-        <td><p class="h3 mrgn-tp-0">020</p></td>
+       <td>020</td>
         <td><p class="h3 mrgn-tp-0">Self-employed commissions</p>
           <p>Enter your gross commissions income on <strong>line 13899</strong> and your net commissions income on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-13499-14299-gross-income-lines-13500-14300-net-income.html">line 13900</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx22">
-        <td><p class="h3 mrgn-tp-0">022</p></td>
+       <td>022</td>
         <td><p class="h3 mrgn-tp-0">Income tax deducted - line 43700</p>
           <p>Enter on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-43700-total-income-tax-deducted.html">line 43700</a> of your return the total income tax deducted from <strong>all</strong> your Canadian information slips issued in your name.</p></td>
         <td></td>
       </tr>
       <tr id="bx24">
-        <td><p class="h3 mrgn-tp-0">024</p></td>
+       <td>024</td>
         <td><p class="h3 mrgn-tp-0">Annuities</p>
           <p>See <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-11500-other-pensions-superannuation.html">line 11500</a> to find out how to report this amount.</p>
           <p><strong>Box 024</strong> includes the following amounts:</p>
@@ -314,33 +313,33 @@
         <td></td>
       </tr>
       <tr id="bx48">
-        <td><p class="h3 mrgn-tp-0">048</p></td>
+       <td>048</td>
         <td><p class="h3 mrgn-tp-0">Fees for services</p>
           <p>Enter the amount shown in box 048 on the applicable self-employment line of your return <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-13499-14299-gross-income-lines-13500-14300-net-income.html">(lines 13500 to 14300)</a>.</p></td>
         <td></td>
       </tr>
       <tr id="bx14">
-        <td><p class="h3 mrgn-tp-0">014</p></td>
+       <td>014</td>
         <td><p class="h3 mrgn-tp-0">Recipient number</p>
-          <p>Do not report it on your return.</p></td>
+          <p>Do not report this on your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx28">
-        <td><p class="h3 mrgn-tp-0">028</p></td>
+       <td>028</td>
         <td><p class="h3 mrgn-tp-0">Other income</p>
           <p>Amounts not reported anywhere else on the T4A slip. See <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income.html">line 13000</a>&nbsp;and <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-13499-14299-gross-income-lines-13500-14300-net-income.html">lines 13499 to 14300</a>.</p></td>
         <td></td>
       </tr>
       <tr id="bx30">
-        <td><p class="h3 mrgn-tp-0">030</p></td>
+       <td>030</td>
         <td><p class="h3 mrgn-tp-0">Patronage allocations</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income.html">line 13000</a> of your return.</p>
-          <p><strong>Do not</strong> report the amount if it was for goods and services you consumed and for which you cannot deduct the cost when you calculate your income.</p>
+          <p><strong>Do not</strong> report this amount if it was for goods and services you consumed and cannot deduct the cost for when you calculate your income.</p>
           <p>This amount does not qualify for the federal dividend tax credit.</p></td>
         <td></td>
       </tr>
       <tr id="bx32">
-        <td><p class="h3 mrgn-tp-0">032</p></td>
+       <td>032</td>
         <td><p class="h3 mrgn-tp-0">Registered pension plan contributions (past service)</p>
           <p>Enter the amount you can deduct on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-20700-registered-pension-plan-rpp-deduction.html">line 20700</a> of your return. For more information, see <a href="/en/revenue-agency/services/forms-publications/publications/t4040.html">Guide T4040, RRSPs and Other Registered Plans for Retirement</a>.</p>
           <p><strong>Box 032</strong> includes the following amounts:</p>
@@ -351,315 +350,322 @@
         <td></td>
       </tr>
       <tr id="bx34">
-        <td><p class="h3 mrgn-tp-0">034</p></td>
+       <td>034</td>
         <td><p class="h3 mrgn-tp-0">Pension adjustment</p>
           <p>This amount is not an income or a deduction.</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-20600-pension-adjustment.html">line 20600</a>&nbsp;of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx36">
-        <td><p class="h3 mrgn-tp-0">036</p></td>
+       <td>036</td>
         <td><p class="h3 mrgn-tp-0">Plan registration number</p>
-          <p>Do not report it on your return.</p>
-          <h3 id="bx37">Box 037 - Advanced life deferred annuity purchase</h3>
-          <p>This is an amount you transferred to purchase an Advanced Life Deferred Annuity (ALDA). Do not report the amount on your return and do not claim a deduction for the amount transferred.</p></td>
+          <p>Do not report this on your return.</p>
+          
+          </td>
+        <td></td>
+      </tr>
+      <tr id="bx37">
+        <td>037</td>
+        <td><p class="h3 mrgn-tp-0">Advanced life deferred annuity purchase</p>
+		  <p>This is an amount you transferred to purchase an Advanced Life Deferred Annuity (ALDA). Do not report the amount on your return and do not claim a deduction for the amount transferred.</p>
+		  </td>
         <td></td>
       </tr>
       <tr id="bx40">
-        <td><p class="h3 mrgn-tp-0">040</p></td>
+       <td>040</td>
         <td><p class="h3 mrgn-tp-0">RESP accumulated income payments</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income/line-13000-other-kinds-income.html">line 13000</a> of your return and complete <a href="/en/revenue-agency/services/forms-publications/forms/t1172.html">Form T1172, Additional Tax on Accumulated Income Payments from RESPs.</a></p>
-          <p><strong>Box 040</strong> includes the amount from box 122, RESP accumulated income payments paid to other.</p></td>
+          <p><strong>Box 040</strong> includes the amount from box 122 - RESP accumulated income payments paid to other.</p></td>
         <td></td>
       </tr>
       <tr id="bx42">
-        <td><p class="h3 mrgn-tp-0">042</p></td>
+       <td>042</td>
         <td><p class="h3 mrgn-tp-0">RESP educational assistance payments</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income.html">line 13000</a> of your return.</p>
-          <p>For more information, see information sheet <a href="/en/revenue-agency/services/forms-publications/publications/rc4092.html">RC4092, Registered Education Savings Plans (RESP)</a>.</p></td>
+          <p>For more information, see <a href="/en/revenue-agency/services/forms-publications/publications/rc4092.html">information sheet RC4092, Registered Education Savings Plans (RESP)</a>.</p></td>
         <td></td>
       </tr>
       <tr id="bx46">
-        <td><p class="h3 mrgn-tp-0">046</p></td>
+       <td>046</td>
         <td><p class="h3 mrgn-tp-0">Charitable donations</p>
           <p>Enter this amount on line 1 of your <a href="/en/revenue-agency/services/forms-publications/tax-packages-years/general-income-tax-benefit-package/5000-s9.html">Schedule 9, Donations and Gifts</a>.</p>
-          <p>For more information, go to <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-34900-donations-gifts.html">line 34900</a>.</p></td>
+          <p>For more information, see <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-34900-donations-gifts.html">line 34900</a>.</p></td>
         <td></td>
       </tr>
       <tr id="bx102">
-        <td><p class="h3 mrgn-tp-0">102</p></td>
+       <td>102</td>
         <td><p class="h3 mrgn-tp-0">Lump-sum payments - non-resident services transferred under paragraph 60(j)</p>
           <p>This amount is already included&nbsp;in <strong>box 018</strong>.</p></td>
         <td></td>
       </tr>
       <tr id="bx104">
-        <td><p class="h3 mrgn-tp-0">104</p></td>
+       <td>104</td>
         <td><p class="h3 mrgn-tp-0">Research grants</p>
-          <p>The amount of research grants received minus any allowable expenses incurred for the purpose of carrying on the research work must be reported on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-10400-other-employment-income/line-10400-net-research-grants.html">line 10400</a> of your return.</p></td>
+          <p>The amount of research grants received <strong>minus</strong> any allowable expenses incurred for the purpose of carrying on the research work must be reported on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-10400-other-employment-income/line-10400-net-research-grants.html">line 10400</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx105">
-        <td><p class="h3 mrgn-tp-0">105</p></td>
+       <td>105</td>
         <td><p class="h3 mrgn-tp-0">Scholarships, fellowships, bursaries, and artists' project grants</p>
           <p>Enter this amount at <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income/line-13010-scholarships-fellowships-bursaries-artists-project-grants-awards.html">line 13010</a> of your return.&nbsp;<br>
           </p></td>
         <td></td>
       </tr>
       <tr id="bx106">
-        <td><p class="h3 mrgn-tp-0">106</p></td>
+       <td>106</td>
         <td><p class="h3 mrgn-tp-0">Death benefits</p>
           <p>This amount is a death benefit from sources other than the Canada Pension Plan or the Quebec Pension Plan.</p>
           <p>For more information, see <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income/line-13000-death-benefits-other-than-canada-quebec-pension-plan-death-benefits.html">line 13000</a>.</p></td>
         <td></td>
       </tr>
       <tr id="bx107">
-        <td><p class="h3 mrgn-tp-0">107</p></td>
+       <td>107</td>
         <td><p class="h3 mrgn-tp-0">Payments from a wage-loss replacement plan</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-10400-other-employment-income/line-10400-income-maintenance-insurance-plans-wage-loss-replacement-plans.html">line 10400</a> of your return.<br>
           </p></td>
         <td></td>
       </tr>
       <tr id="bx108">
-        <td><p class="h3 mrgn-tp-0">108</p></td>
+       <td>108</td>
         <td><p class="h3 mrgn-tp-0">Lump-sum payments from a registered pension plan (RPP) that you cannot transfer</p>
           <p>This amount is already included in <strong>box 018</strong>.</p></td>
         <td></td>
       </tr>
       <tr id="bx109">
-        <td><p class="h3 mrgn-tp-0">109</p></td>
+       <td>109</td>
         <td><p class="h3 mrgn-tp-0">Periodic payments from an unregistered plan</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income.html">line 13000</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx110">
-        <td><p class="h3 mrgn-tp-0">110</p></td>
+       <td>110</td>
         <td><p class="h3 mrgn-tp-0">Lump-sum payments accrued to December 31, 1971</p>
           <p>This amount is already included in <strong>box 018</strong>.</p></td>
         <td></td>
       </tr>
       <tr id="bx111">
-        <td><p class="h3 mrgn-tp-0">111</p></td>
+       <td>111</td>
         <td><p class="h3 mrgn-tp-0">Income averaging annuity contracts (IAAC)</p>
           <p>This amount is included in <strong>box 024</strong>.</p></td>
         <td></td>
       </tr>
       <tr id="bx115">
-        <td><p class="h3 mrgn-tp-0">115</p></td>
+       <td>115</td>
         <td><p class="h3 mrgn-tp-0">Deferred profit-sharing plan (DPSP) annuity or instalment payments</p>
           <p>This amount is already included in <strong>box 024</strong>.</p></td>
         <td></td>
       </tr>
       <tr id="bx116">
-        <td><p class="h3 mrgn-tp-0">116</p></td>
+       <td>116</td>
         <td><p class="h3 mrgn-tp-0">Medical travel assistance</p>
-          <p>Do not report it on your return.</p></td>
+          <p>Do not report this on your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx117">
-        <td><p class="h3 mrgn-tp-0">117</p></td>
+       <td>117</td>
         <td><p class="h3 mrgn-tp-0">Loan benefits</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income.html">line 13000</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx118">
-        <td><p class="h3 mrgn-tp-0">118</p></td>
+       <td>118</td>
         <td><p class="h3 mrgn-tp-0">Medical premium benefits</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-10400-other-employment-income.html">line 10400</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx119">
-        <td><p class="h3 mrgn-tp-0">119</p></td>
+       <td>119</td>
         <td><p class="h3 mrgn-tp-0">Premiums paid to a group term life insurance plan</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-10400-other-employment-income/line-10400-taxable-benefit-premiums-paid-cover-you-under-a-group-term-life-insurance-plan.html">line 10400</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx122">
-        <td><p class="h3 mrgn-tp-0">122</p></td>
+       <td>122</td>
         <td><p class="h3 mrgn-tp-0">RESP accumulated income payments paid to other</p>
           <p>This amount is already included in <strong>box 40</strong>.</p></td>
         <td></td>
       </tr>
       <tr id="bx123">
-        <td><p class="h3 mrgn-tp-0">123</p></td>
+       <td>123</td>
         <td><p class="h3 mrgn-tp-0">Payments from a revoked <abbr title="deferred profit-sharing plan">DPSP</abbr></p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income.html">line 13000</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx124">
-        <td><p class="h3 mrgn-tp-0">124</p></td>
+       <td>124</td>
         <td><p class="h3 mrgn-tp-0">Board and lodging at special work sites</p>
-          <p>Do not report it on your return.</p></td>
+          <p>Do not report this on your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx125">
-        <td><p class="h3 mrgn-tp-0">125</p></td>
+       <td>125</td>
         <td><p class="h3 mrgn-tp-0">Disability benefits paid out of a superannuation or pension plan</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income.html">line 13000</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx126">
-        <td><p class="h3 mrgn-tp-0">126</p></td>
+       <td>126</td>
         <td><p class="h3 mrgn-tp-0">Pre-1990 past service contributions while a contributor</p>
           <p>This&nbsp;amount is already included&nbsp;in <strong>box 032</strong>.</p></td>
         <td></td>
       </tr>
       <tr id="bx127">
-        <td><p class="h3 mrgn-tp-0">127</p></td>
+       <td>127</td>
         <td><p class="h3 mrgn-tp-0">Veterans' benefits</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-10400-other-employment-income.html">line 10400</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx128">
-        <td><p class="h3 mrgn-tp-0">128&nbsp;</p></td>
+       <td>128&nbsp;</td>
         <td><p class="h3 mrgn-tp-0">Veterans' benefits eligible for pension splitting</p>
           <p>This&nbsp;amount is already included&nbsp;in <strong>box 016</strong>.</p>
           <p>See <a href="/en/revenue-agency/services/forms-publications/forms/t1032.html">Form T1032, Joint Election to Split Pension Income</a>.</p></td>
         <td></td>
       </tr>
       <tr id="bx129">
-        <td><p class="h3 mrgn-tp-0">129</p></td>
+       <td>129</td>
         <td><p class="h3 mrgn-tp-0">Tax deferred cooperative share</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income.html">line 13000</a> of your return.</p>
           <p>This amount may be deferred. For more information, see <a href="/en/revenue-agency/services/forms-publications/publications/t4002/t4002-4.html#tocch2ln9605">Line 9605 - Patronage dividends</a> in <a href="/en/revenue-agency/services/forms-publications/publications/t4002.html">Guide&nbsp;T4002, Self-employed Business, Professional, Commission, Farming, and Fishing Income</a>.</p></td>
         <td></td>
       </tr>
       <tr id="bx130">
-        <td><p class="h3 mrgn-tp-0">130</p></td>
+       <td>130</td>
         <td><p class="h3 mrgn-tp-0">Apprenticeship incentive grant or Apprenticeship completion grant</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income.html">line 13000</a> of your return.</p>
-          <p>For more information, visit <a href="https://www.canada.ca/en/employment-social-development/services/apprentices/grants.html" rel="external">Service Canada</a>, or call <strong><span class="nowrap">1-866-742-3644</span></strong>.</p></td>
+          <p>For more information, visit <a href="https://www.canada.ca/en/employment-social-development/services/apprentices/grants.html" rel="external">Service Canada</a>, or call <strong class="nowrap">1-866-742-3644</strong>.</p></td>
         <td></td>
       </tr>
       <tr id="bx131">
-        <td><p class="h3 mrgn-tp-0">131</p></td>
+       <td>131</td>
         <td><p class="h3 mrgn-tp-0">Registered disability savings plan</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-125-registered-disability-savings-plan-rdsp-income.html">line 12500</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx132">
-        <td><p class="h3 mrgn-tp-0">132</p></td>
+       <td>132</td>
         <td><p class="h3 mrgn-tp-0">Wage Earner Protection Program</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-10400-other-employment-income.html">line 10400</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx133">
-        <td><p class="h3 mrgn-tp-0">133</p></td>
+       <td>133</td>
         <td><p class="h3 mrgn-tp-0">Variable pension benefits</p>
           <p>See line <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-11500-other-pensions-superannuation.html">line 11500</a>.</p></td>
         <td></td>
       </tr>
       <tr id="bx134">
-        <td><p class="h3 mrgn-tp-0">134</p></td>
+       <td>134</td>
         <td><p class="h3 mrgn-tp-0">Tax-Free Savings Account (TFSA) taxable amount</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income.html">line 13000</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx135">
-        <td><p class="h3 mrgn-tp-0">135</p></td>
+       <td>135</td>
         <td><p class="h3 mrgn-tp-0">Recipient-paid premiums for private health services plans</p>
           <p>See <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/lines-33099-33199-eligible-medical-expenses-you-claim-on-your-tax-return.html">line 33099</a>.</p></td>
         <td></td>
       </tr>
       <tr id="bx136">
-        <td><p class="h3 mrgn-tp-0">136</p></td>
+       <td>136</td>
         <td><p class="h3 mrgn-tp-0">Parents of Murdered or Missing Children/Parents of Young Victims of Crimes</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income/line-13000-other-kinds-income.html">line 13000</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx142">
-        <td><p class="h3 mrgn-tp-0">142</p></td>
+       <td>142</td>
         <td><p class="h3 mrgn-tp-0">Indian (exempt income) - Eligible retiring allowance (for 2009 and prior years only)</p>
-          <p>Do not report it on your return.</p></td>
+          <p>Do not report this on your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx143">
-        <td><p class="h3 mrgn-tp-0">143</p></td>
+       <td>143</td>
         <td><p class="h3 mrgn-tp-0">Indian (exempt income) - Non-eligible retiring allowances (for 2009 and prior years only)</p>
-          <p>Do not report it on your return.</p></td>
+          <p>Do not report this on your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx144">
-        <td><p class="h3 mrgn-tp-0">144</p></td>
+       <td>144</td>
         <td><p class="h3 mrgn-tp-0">Indian (exempt income) - Other income</p>
-          <p>Do not report it on your return.</p></td>
+          <p>Do not report this on your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx146">
-        <td><p class="h3 mrgn-tp-0">146</p></td>
+       <td>146</td>
         <td><p class="h3 mrgn-tp-0">Indian (exempt income) - Pension or superannuation</p>
-          <p>Do not report it on your return.</p></td>
+          <p>Do not report this on your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx148">
-        <td><p class="h3 mrgn-tp-0">148</p></td>
+       <td>148</td>
         <td><p class="h3 mrgn-tp-0">Indian (exempt income) - Lump-sum payments</p>
-          <p>Do not report it on your return.</p></td>
+          <p>Do not report this on your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx150">
-        <td><p class="h3 mrgn-tp-0">150</p></td>
+       <td>150</td>
         <td><p class="h3 mrgn-tp-0">Labour Adjustment Benefits Act and Appropriation Acts</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income.html">line 13000</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx152">
-        <td><p class="h3 mrgn-tp-0">152</p></td>
+       <td>152</td>
         <td><p class="h3 mrgn-tp-0">SUBP qualified under the Income Tax Act</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-10400-other-employment-income.html">line 10400</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx154">
-        <td><p class="h3 mrgn-tp-0">154</p></td>
+       <td>154</td>
         <td><p class="h3 mrgn-tp-0">Cash award or prize from payer</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income.html">line 13000</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx156">
-        <td><p class="h3 mrgn-tp-0">156</p></td>
+       <td>156</td>
         <td><p class="h3 mrgn-tp-0">Bankruptcy settlement</p>
           <p>Enter this amount on <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-10400-other-employment-income.html">line 10400</a> of your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx158">
-        <td><p class="h3 mrgn-tp-0">158</p></td>
+       <td>158</td>
         <td><p class="h3 mrgn-tp-0">Lump-sum payments that you cannot transfer that are not reported elsewhere</p>
           <p>This amount is included in <strong>box 018</strong>.</p></td>
         <td></td>
       </tr>
       <tr id="bx162">
-        <td><p class="h3 mrgn-tp-0">162</p></td>
+       <td>162</td>
         <td><p class="h3 mrgn-tp-0">Pre-1990 past services contributions while not a contributor</p>
           <p>This amount is already included in <strong>box 032</strong>.</p></td>
         <td></td>
       </tr>
       <tr id="bx180">
-        <td><p class="h3 mrgn-tp-0">180</p></td>
+       <td>180</td>
         <td><p class="h3 mrgn-tp-0">Lump-sum payments from a deferred profit-sharing plan (DPSP) that you cannot transfer</p>
           <p>This amount is included in <strong>box 018</strong>.</p></td>
         <td></td>
       </tr>
       <tr id="bx190">
-        <td><p class="h3 mrgn-tp-0">190</p></td>
+       <td>190</td>
         <td><p class="h3 mrgn-tp-0">Lump-sum payments from an unregistered plan</p>
           <p>This amount is included in <strong>box 018</strong>.</p></td>
         <td></td>
       </tr>
       <tr id="bx194">
-        <td><p class="h3 mrgn-tp-0">194</p></td>
+       <td>194</td>
         <td><p class="h3 mrgn-tp-0">PRPP payments</p>
-          <p>See <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-11500-other-pensions-superannuation.html">line 11500</a> and <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income/line-13000-other-kinds-income.html">13000</a>.</p></td>
+          <p>See <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-11500-other-pensions-superannuation.html">line 11500</a> and <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-13000-other-income/line-13000-other-kinds-income.html">line 13000</a>.</p></td>
         <td></td>
       </tr>
       <tr id="bx195">
-        <td><p class="h3 mrgn-tp-0">195</p></td>
+       <td>195</td>
         <td><p class="h3 mrgn-tp-0">Indian (exempt income) - PRPP payments</p>
-          <p>Do not report it on your return.</p></td>
+          <p>Do not report this on your return.</p></td>
         <td></td>
       </tr>
       <tr id="bx196">
-        <td><p class="h3 mrgn-tp-0">196</p></td>
+       <td>196</td>
         <td><p class="h3 mrgn-tp-0">Tuition assistance for adult basic education</p>
-          <p>Enter at <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-25600-additional-deductions/line-25600-adult-basic-education-tuition-assistance.html">line 25600</a> the amount of tuition assistance that is more than the scholarship exemption you can claim for this tuition assistance.</p></td>
+          <p>Enter at <a href="/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-25600-additional-deductions/line-25600-adult-basic-education-tuition-assistance.html">line 25600</a> the amount of tuition assistance that is <strong>more</strong> than the scholarship exemption you can claim for this tuition assistance.</p></td>
         <td></td>
       </tr>
       <tr id="bx197">
@@ -723,9 +729,9 @@
 	
  <h2 id="h-3">Related information</h2>
 	<ul><li><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/tax-slips/a-copy-your-tax-slips.html">Get a copy of your slip</a></li>
-		<li><a href="https://canada.ca/content/canadasite/en/revenue-agency/campaigns/covid-19-update/covid-19-t4a.html">Covid benefits and the T4A tax slip</a></li> 
-		<li><a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/completing-filing-information-returns/t4a-information-payers.html">Issuing and maintaining a T4A tax slip to an individual</a></li>
-	    </ul>	
+		<li><a href="https://canada.ca/content/canadasite/en/revenue-agency/campaigns/covid-19-update/covid-19-t4a.html">Covid-19 benefits and the T4A tax slip</a></li> 
+		<li><a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/completing-filing-information-returns/t4a-information-payers.html">Issuing a T4A tax slip to an individual</a></li>
+  </ul>	
 	
   <div id="def-preFooter"></div>
   <!-- Write closure template --> 
