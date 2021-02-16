@@ -1,5 +1,7 @@
-position: relative;
- overflow-x: hidden;
+
+.provisional.profile {
+	position: relative;
+	overflow-x: hidden;
 }
 .provisional.profile .pagetag {
 	max-width: 65ch;
