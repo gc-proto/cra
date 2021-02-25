@@ -1,0 +1,7 @@
+#wb-bc li:first-child  {display:none;}
+#wb-bc li:nth-child(2):before {display:none;}
+#wb-bc li:nth-child(2) a {padding-left:0;}
+#wb-bc ol {padding-left:0;}
+h1 {margin-top:.25em;}
+.transactBar {display:none;}
+#wb-info nav h2, #wb-info nav ul {display:none;}
