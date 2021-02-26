@@ -190,19 +190,21 @@
               <section>
                 <h2 id="h-1">Before you make a request</h2>
                 <p>Your request has to meet the following criteria for us to consider it for remission</p>
+                
+                
                 <div class="mrgn-tp-lg beforeCall">
                   <label for="input1" class="container-checks">
                     <input id="input1" class="btnCheck" type="checkbox">
-                    Social Insurance Number (or business number) <span class="checkmark"></span> </label>
+                    Already requested relief under Taxpayer Relief Provisions <span class="checkmark"></span> </label>
                   <label for="input2" class="container-checks">
                     <input id="input2" class="btnCheck" type="checkbox">
-                    Full name and date of birth (or business name) <span class="checkmark"></span> </label>
+                    Filed your tax return and received your notice of assessment, reassessment or determination <span class="checkmark"></span> </label>
                   <label for="input3" class="container-checks">
                     <input id="input3" class="btnCheck" type="checkbox">
-                    Your complete address (or complete business address) <span class="checkmark"></span> </label>
+                    Pursued other options to resolve debt (such as bankruptcy) <span class="checkmark"></span> </label>
                   <label for="input4" class="container-checks">
                     <input id="input4" class="btnCheck" type="checkbox">
-                    Your personal (or business) account open or an assessed return, notice of assessment, reassessment, or other tax document<span class="checkmark"></span> </label>
+                    Resolved any litigation related to this payment before the courts<span class="checkmark"></span> </label>
                   <span id="check-message">
                     <label for="input5" class="label label-danger">You need all of the above to be considered for remission
                       <input id="input5" class="wb-inv" type="text">
@@ -218,8 +220,10 @@
 	
               <section>
                 <h2 id="h-2">Request remission</h2>
-                <!-- Need to redo this section based on the remissions screening tool content -->
-                
+                <p>Fill out form <mark>???</mark> and send it to the address specified at the bottom of the form.</p>
+                <ul>
+                    <li>Download form <mark>???</mark></li>
+                </ul>
               </section>
 
               <section>
@@ -271,10 +275,10 @@
          <script>
             $(".btnCheck").click(function(event) {
                 if ($('.beforeCall input[type="checkbox"]').not(':checked').length == 0) {
-                    document.getElementById("check-message").innerHTML = '<label class="label label-success">You are ready to call</label>';
+                    document.getElementById("check-message").innerHTML = '<label class="label label-success">You are ready to make a request</label>';
                     $("#find-relief-rescue").addClass("hidden");
                 } else {
-                    document.getElementById("check-message").innerHTML = '<label class="label label-danger">You need all of the above to call about an account</label>';
+                    document.getElementById("check-message").innerHTML = '<label class="label label-danger">You need all of the above to be considered for remission</label>';
                     $("#find-relief-rescue").removeClass("hidden");
             
                 }
