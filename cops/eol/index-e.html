@@ -120,6 +120,56 @@
               </ol>
       </section>
           </div>
+	 <div class="col-md-4">
+            <div class="panel panel-default">
+        <header class="panel-heading">
+                <h2 class="panel-title">Multimedia</h2>
+              </header>
+        <div class="panel-body">
+                <div class="btn-group">
+            <button class="btn btn-primary" type="button">English</button>
+            <button class="btn btn-default" type="button">Français</button>
+            <button class="btn btn-default" type="button">ᐃᓄᒃᑎᑐᑦ</button>
+          </div>
+                <div class="btn-group">
+            <button class="btn btn-default" type="button">ᓀᐦᐃᔭᐁᐧᐃᐧᐣ</button>
+            <button class="btn btn-default" type="button">ਪੰਜਾਬੀ</button>
+            <button class="btn btn-default" type="button">中国人</button>
+          </div>
+			<a href="#mltmd-overlay" aria-controls="mltmd-overlay" class="overlay-lnk" role="button"><img src="http://nono-c.com/wp-content/uploads/2019/03/video-placeholder.jpg" alt="" class="img-responsive">
+		<span id="ovly-en">Open the video</span><span id="ovly-fr" class="hidden">Open the video (in French)</span><span id="ovly-ik" class="hidden">Open the video (in Inuktitut)</span><span id="ovly-cr" class="hidden">Open the video (in Cree)</span><span id="ovly-pj" class="hidden">Open the video (in Punjabi)</span><span id="ovly-mn" class="hidden">Open the video (in Mandarin)</span></a>
+
+
+			
+			
+              </div>
+      </div>
+		<section id="mltmd-overlay" class="wb-overlay modal-content overlay-def wb-popup-full">
+	<header class="modal-header">
+		<h2 class="modal-title" id="hdr-en">Video in English</h2>
+		<h2 class="modal-title hidden" id="hdr-fr">Video in French</h2>
+		<h2 class="modal-title hidden" id="hdr-ik">Video in English with Inuktitut sub titles</h2>
+		<h2 class="modal-title hidden" id="hdr-cr">Video in English with Cree sub titles</h2>
+		<h2 class="modal-title hidden" id="hdr-pj">Video in English with Punjabi sub titles</h2>
+		<h2 class="modal-title hidden" id="hdr-mn">Video in English with Mandarin sub titles</h2>
+	</header>
+	<div class="modal-body">
+		<div class="row">
+			<div class="col-xs-12">
+				<figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "https://wet-boew.github.io/v4.0-ci/demos/multimedia/multimedia-en.html"}'>
+					<video poster="http://nono-c.com/wp-content/uploads/2019/03/video-placeholder.jpg" title="">
+						<source type="video/webm" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-eng.webm" />
+						<source type="video/mp4" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-eng.mp4" />
+						<track src="cpts-lg-en.html" kind="captions" data-type="text/html" srclang="en" label="English" />
+					</video>
+					<figcaption>Video title here (<a href="cpts-lg-en.html">Transcript in English</a>)</figcaption>
+					<figcaption id="fc-fr" class="hidden">Video title here (<a href="cpts-lg-en.html">Transcript in French</a>)</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+</section>	
+          </div>	
   </div>
         <div id="def-preFooter"></div>
         
