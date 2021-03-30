@@ -52,519 +52,537 @@
       <main role="main" property="mainContentOfPage" class="container">
           <h1 property="name" id="wb-cont" class="provisional gc-thickline"><span class="stacked"><span>Components: Design and coding</span> - <span>CRA web service manual</span></span></h1>
 		  <p>Intro statement goes here</p>
-          <div class="row mrgn-tp-lg">
-    <div class="col-md-3">
-      <form class="wb-tables-filter" data-bind-to="dataset-filter">
-        <div class="panel panel-default outset brdr-rds-0">
-        
-		
-          
-	
+          <ul class="wb-filter list-unstyled row wb-eqht-grd list-grid-hover" id="filtergroup">
 
-		<div class="panel-heading"><h2 class="panel-title"><span class="fas fa-sliders-h"></span> Filter by category</h2></div>
-            <div class="panel-body">
-			
-              
-              <fieldset class="brdr-0 p-0">
-                <legend class="h3 mrgn-tp-0 mrgn-bttm-md">Purpose:</legend>
-                <div class="form-group">
-                  <ul class="list-unstyled">
-                   <li class="checkbox">
-                      <label for="core-design">
-                        <input type="checkbox" id="core-design" name="core-design" data-column="3" value="core">
-                        Core design</label>
-                    </li>
-					<li class="checkbox">
-                      <label for="layout">
-                        <input type="checkbox" id="layout" name="layout" data-column="3" value="Layout">
-                        Layout</label>
-                    </li>
-                      <li class="checkbox">
-                      <label for="navigation">
-                        <input type="checkbox" id="navigation" name="navigation" data-column="3" value="Navigation">
-                        Navigation</label>
-                    </li>
-					<li class="checkbox">
-                      <label for="presenting-choices">
-                        <input type="checkbox" id="presenting-choices" name="presenting-choices" data-column="3" value="Presenting choices">
-                        Presenting choices</label>
-                    </li>
-                    <li class="checkbox">
-                      <label for="entering-data">
-                        <input type="checkbox" id="entering-data" name="entering-data" data-column="3" value="Entering data">
-                        Entering data</label>
-                    </li>
-                   <li class="checkbox">
-                      <label for="data-display">
-                        <input type="checkbox" id="data-display" name="data-display" data-column="3" value="Displaying content">
-                        Displaying content</label>
-                    </li>
-					 <li class="checkbox">
-                      <label for="visual-enhancements">
-                        <input type="checkbox" id="visual-enhancements" name="visual-enhancements" data-column="3" value="Visual enhancements">
-                        Visual enhancements</label>
-                    </li>
-					<li class="checkbox">
-                      <label for="feedback">
-                        <input type="checkbox" id="feedback" name="feedback" data-column="3" value="Feedback">
-                        Feedback</label>
-                    </li>
-                  </ul>
-                </div>
-              </fieldset>
-             
-         
-            </div>
-<div class="panel-footer">
-              <button type="submit" class="btn btn-primary mrgn-rght-md mrgn-tp-sm" aria-controls="dataset-filter_info">Apply filter</button>
-              <button type="reset" class="btn btn-link mrgn-tp-sm mrgn-bttm-sm">Clear</button>
-            </div>
-          </div>
-        
-      </form>
-	
-    </div>
-    <div class="col-md-9">
-	<div class="table-responsive">
-	<table class="table wb-tables  table-striped " id="dataset-filter"  data-wb-tables='{"paging":false, "ordering":true, "columnDefs": [{ "className": "hidden", "targets": [ 2, 3 ] } ]}'>
-	    <caption class="wb-inv">Templates</caption>
-	<thead>
-	<tr>
-		<th scope="col">Type</th>
-		<th scope="col">Description</th>
-		<th scope="col">Used by</th>
-		<th scope="col">Purpose</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td><a href="#">Alignment</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td>Layout</td>
-	</tr>
-	<tr>
-		<td><a href="typography-e.html">Typography</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td>Core design, visual enhancements</td>
-	</tr>
-	<tr>
-		<td><a href="colour-e.html">Colour</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td>Core design, displaying content, visual enhancements</td>
-	</tr>
-	
-	
-	<tr>
-		<td><a href="#">Spacing</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td>Layout, visual enhancements</td>
-	</tr>
-	<tr>
-		<td><a href="#">Visibility</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td>Displaying content</td>
-	</tr>
-	<tr>
-		<td><a href="buttons-e.html">Buttons</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td>Data input, navigation, visual enhancements</td>
-	</tr>
-	<tr>
-		<td><a href="#">Accordian</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td>Displaying content, presenting choices</td>
-	</tr>
-	<tr>
-		<td><a href="#">Expand/hide</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td>Displaying content, presenting choices</td>
-	</tr><tr>
-		<td><a href="blockquote-e.html">Blockquote</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Breadcrumb</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td>Navigation, presenting choices</td>
-	</tr><tr>
-		<td><a href="#">Checkboxes</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td>Entering data, presenting choices</td>
-	</tr><tr>
-		<td><a href="#">Grids</a></td>
-		<td>asdf</td>
-		<td>Developers, authors</td>
-		<td>Core design, layout</td>
-	</tr>
-	<tr>
-		<td><a href="icons-e.html">Icons</a></td>
-		<td>asdf</td>
-		<td>Developers, authors</td>
-		<td>Core design, visual enhancements</td>
-		</tr>
-	<tr>
-		<td><a href="#">Images</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td>Visual enhancements</td>
-	</tr><tr>
-		<td><a href="#">Inputs</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td>Entering data</td>
-	</tr><tr>
-		<td><a href="links-e.html">Links</a></td>
-		<td>asdf</td>
-		<td>Developers, authors</td>
-		<td>Navigation, presenting choices</td>
-	</tr>
-	<tr>
-		<td><a href="#">Lists</a></td>
-		<td>asdf</td>
-		<td>Developers, authors</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><a href="#">Modals and overlays</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td>Feedback</td>
-	</tr><tr>
-		<td><a href="#">Pagination</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td>Navigation, presenting choices</td>
-	</tr><tr>
-		<td><a href="#">Radio buttons</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td>Entering data, presenting choices</td>
-	</tr><tr>
-		<td><a href="#">Select</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td>Entering data, presenting choices</td>
-	</tr><tr>
-		<td><a href="tables-e.html">Tables</a></td>
-		<td>asdf</td>
-		<td>Developers, authors</td>
-		<td>Entering data, displaying content</td>
-	</tr><tr>
-		<td><a href="#">Tabs</a></td>
-		<td>asdf</td>
-		<td>Developers, authors</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Text</a></td>
-		<td>asdf</td>
-		<td>Developers, authors</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Math</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Sizing</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Progress</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><a href="#">Table of contents</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td>Navigation, presenting choices</td>
-	</tr>
-	<tr>
-		<td><a href="alerts-e.html">Alerts</a></td>
-		<td>asdf</td>
-		<td>Developers, authors</td>
-		<td>Feedback</td>
-	</tr><tr>
-		<td><a href="#">Labels</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><a href="#">Examples</a></td>
-		<td>asdf</td>
-		<td>authors</td>
-		<td>presenting choices</td>
-	</tr>
-	<tr>
-		<td><a href="headings-e.html">Headings</a></td>
-		<td>asdf</td>
-		<td>Developers, authors</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><a href="#">Field flow</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td>Presenting choices, feedback</td>
-	</tr>
-	<tr>
-		<td><a href="#">Decision points</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td>Presenting choices, visual enhancements</td>
-	</tr>
-	<tr>
-		<td><a href="#">Ajax</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><a href="#">Archived content</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td>Feedback</td>
-	</tr><tr>
-		<td><a href="#">Positioning</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><a href="#">Badges</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="borders-e.html">Borders</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td>Visual enhancements</td>
-	</tr>
-	<tr>
-		<td><a href="#">Calendars</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Carousel</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Charts and graphs</a></td>
-		<td>asdf</td>
-		<td>Developers, authors</td>
-		<td>Displaying content, visual enhancements</td>
-	</tr><tr>
-		<td><a href="#">Code</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><a href="#">Country identifier</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Data inview</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Data picture</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><a href="#">Data list</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><a href="#">Data tables</a></td>
-		<td>asdf</td>
-		<td>Developers, authors</td>
-		<td>Entering data, displaying content, feedback</td>
-	</tr>
-	<tr>
-		<td><a href="#">Date picker</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><a href="#">Dismissable content</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td>Feedback</td>
-	</tr><tr>
-		<td><a href="#">Equalize (Equal height)</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Feedback form</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td>Feedback</td>
-	</tr><tr>
-		<td><a href="#">Feeds</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Floats</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Footnotes</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Form validation</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td>Feedback</td>
-	</tr><tr>
-		<td><a href="#">Geomap</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Keyboard keys</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">List group</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><a href="lists-e.html">Lists</a></td>
-		<td>asdf</td>
-		<td>Developers, authors</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><a href="#">Meter</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Multimedia player</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td>Visual enhancements</td>
-	</tr><tr>
-		<td><a href="#">Opacity</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td>Visual enhancements</td>
-	</tr><tr>
-		<td><a href="#">Panels</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td>Visual enhancements</td>
-	</tr><tr>
-		<td><a href="#">Pills</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td>Visual enhancements</td>
-	</tr><tr>
-		<td><a href="#">Session timeout</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td>Feedback</td>
-	</tr><tr>
-		<td><a href="#">Share widget</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Slider control (range)</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Text editing effects</a></td>
-		<td>asdf</td>
-		<td>Developers, authors</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Text highlighting</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><a href="#">Photo gallery</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td>Visual enhancements</td>
-	</tr>
-	<tr>
-		<td><a href="#">Transitions</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td>Visual enhancements</td>
-	</tr>
-	<tr>
-		<td><a href="#">Twitter embedded timeline</a></td>
-		<td>asdf</td>
-		<td>What to do if you were scammed</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td><a href="#">Wells</a></td>
-		<td>asdf</td>
-		<td>Developers, authors</td>
-		<td>Visual enhancements</td>
-	</tr>
-	<tr>
-		<td><a href="#">Wrapping and truncating text</a></td>
-		<td>asdf</td>
-		<td>Authors</td>
-		<td></td>
-	</tr><tr>
-		<td><a href="#">Zebra striping (Advanced)</a></td>
-		<td>asdf</td>
-		<td>Developers</td>
-		<td>Visual enhancements</td>
-	</tr>
-	<tr>
-		<td><a href="#">Steps</a></td>
-		<td>asdf</td>
-		<td>Developers, authors</td>
-		<td>Visual enhancements, displaying content</td>
-	</tr>
-	
-	</tbody>
-	</table>
-	</div>
-		 </div>
-		 </div>
+<!-- Alerts -->
+
+<li class="col-md-4" id="alerts">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"> <img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/alerts.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Alerts-e.html">Alerts</a></h3>
+
+<p>Use to provide contextual feedback messages for typical user actions. Choose from a handful of available and flexible alert messages.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Colour, Attention</p>
+
+</div></div></li>
+
+<!-- Alignment -->
+
+<li class="col-md-4" id="alignment">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"> <img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/alignment.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Alignment-e.html">Alignment</a></h3>
+
+<p>Use to align text to the left, centre or right. Or, use to align a block of content or an image to the centre.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Position, Left, Right, Center</p>
+
+</div></div></li>
+
+<!-- Archived content -->
+
+<li class="col-md-4" id="archived">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"> <img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/archived.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Archived-e.html">Archived content</a></h3>
+
+<p>Use to help users identify Web pages that have been archived online.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Overlay, Invisible, Visible, Show, Hidden, Close, Exit, Deleted</p>
+
+</div></div></li>
+
+<!-- Badges -->
+
+<li class="col-md-4" id="badges">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/badges.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Badges-e.html">Badges</a></h3>
+
+<p>Use badges (numerical indicators) to highlight the number of updates, new or unread items associated with a link.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Links, Counter, Number</p>
+
+</div></div></li>
+
+<!-- Blockquote -->
+
+<li class="col-md-4" id="blockquote">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/blockquote.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Blockquote-e.html">Blockquote</a></h3>
+
+<p>Use quotations to cite a group of words by someone other than the original author or speaker.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Quotation</p>
+
+</div></div></li>
+
+<!-- Borders -->
+
+<li class="col-md-4" id="borders">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt ">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/borders.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Borders-e.html">Borders</a></h3>
+
+<p>Use to add single or multiple borders to design elements in order to separate or call attention to content. Additionally, remove default borders or sharpen corners that appear in design components such as a "well".</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Horizontal rule, Rounded, Sharpened corners</p>
+
+</div></div></li>
+
+<!-- Buttons -->
+
+<li class="col-md-4" id="buttons">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/buttons.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="buttons-e.html">Buttons</a></h3>
+
+<p>Use buttons to create a call to action that entices the user to submit content from a form, or to take users to a webpage that provides additional information.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Colour, Links</p>
+
+</div></div></li>
+
+<!-- Calendar -->
+
+<li class="col-md-4" id="calendar">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/calendar.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Calendar-e.html">Calendar</a></h3>
+
+<p>Use the calendar of events interface to navigate a chronological list of events.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Tables, Dates</p>
+
+</div></div></li>
+
+<!-- Carousel -->
+
+<li class="col-md-4" id="carousel">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/carousel.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Carousel-e.html">Carousel</a></h3>
+
+<p>Use a carousel to tab or cycle through content in a slide show format.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Tabs, Invisible, Slideshow, Show, Images, Slider, Details, Summary, Expand, Gallery</p>
+
+</div></div></li>
+
+<!-- Code -->
+
+<li class="col-md-4" id="code">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/code.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Code-e.html">Code</a></h3>
+
+<p>Use to emulate source code and display it in monospace font.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Coding, Prettify</p>
+
+</div></div></li>
+
+<!-- Country identifier -->
+
+<li class="col-md-4" id="country">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/country.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Country-e.html">Country identifier</a></h3>
+
+<p>Use a country identifier, a basic AjaxLoader wrapper, to insert Ajaxed-in content, based on a visitor's country</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Location</p>
+
+</div></div></li>
+
+<!-- Data inview -->
+
+<li class="col-md-4" id="data_inview">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/data_inview.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="data_inview-e.html">Data inview</a></h3>
+
+<p>Use data inview to display an overlay when a section moves out of the viewport.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Overlay, Visible, Invisible, Show, Hidden, Close, Exit, Bar, Navigation</p>
+
+</div></div></li>
+
+<!-- Equal height (Equalize) -->
+
+<li class="col-md-4" id="equalize">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/equalize.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="equalize-e.html">Equal height (Equalize)</a></h3>
+
+<p>Use to make grid cells the same height. Make the inner elements (panels, wells and so forth) inherit the height from the parent grid.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Panels, Wells, Borders</p>
+
+</div></div></li>
+
+<!-- Footnotes -->
+
+<li class="col-md-4" id="footnotes">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/footnotes.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Footnotes-e.html">Footnotes</a></h3>
+
+<p>Use a footnote to note a reference, citation, or comment that provides details about something on that page. It is non-critical content that relates to the main text, and is always at the bottom of the page.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: References, Links, Cites</p>
+
+</div></div></li>
+
+<!-- Grids -->
+
+<li class="col-md-4" id="grids">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Grids.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Grids-e.html">Grids</a></h3>
+
+<p>Use a grid system (a series of rows and columns that house content) to create page layouts.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Responsive, Viewports, Devices, Resolution</p>
+
+</div></div></li>
+
+<!-- Headings -->
+
+<li class="col-md-4" id="headings">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Headings.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Headings-e.html">Headings</a></h3>
+
+<p>Use a heading to title a section of content that immediately follows it. Headings are large, bold, concise text that are hierarchical in nature.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Size, Text</p>
+
+</div></div></li>
+
+<!-- Icons -->
+
+<li class="col-md-4" id="icons">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Icons.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Icons-e.html">Icons</a></h3>
+
+<p>Use one of the two icon sets, Glyphicons or Font Awesome for decorative purposes.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Colour, Images, Fonts</p>
+
+</div></div></li>
+
+<!-- Images -->
+
+<li class="col-md-4" id="Images">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"> <img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Images.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Images-e.html">Images</a></h3>
+
+<p>Use images to visually represent a noun (person, place, thing) or a verb (action).</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Thumbnais, Responsive, Photos, Visual, Decorative</p>
+
+</div></div></li>
+
+<!-- Invisible and visible content -->
+
+<li class="col-md-4" id="incisible_visible">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Invisible_visible.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Invisible_visible-e.html">Invisible and visible content</a></h3>
+
+<p>Use to show or hide content. There are styles specific to assistive technology (aid screen-reader users), responsive design, general usage and print.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Printing, Hidden, Devices, Viewports, Resolution</p>
+
+</div></div></li>
+
+<!-- Keyboard keys -->
+
+<li class="col-md-4" id="keyboard">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Keyboard.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Keyboard-e.html">Keyboard keys</a></h3>
+
+<p>Use to mimic the keys of a computer keyboard.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: </p>
+
+</div></div></li>
+
+<!-- Labels -->
+
+<li class="col-md-4" id="labels">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Labels.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Labels-e.html">Labels</a></h3>
+
+<p>Use the appropriate label to describe and highlight text-based (non-numerical) information.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Colour, Attention </p>
+
+</div></div></li>
+
+<!-- Links -->
+
+<li class="col-md-4" id="links">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Links.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Links-e.html">Links</a></h3>
+
+<p>Use a link (text and/or image) to take a user to another webpage, jump to another location within the same webpage, or perform a user-control function determined by client-side scripting (JavaScript).</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Hyperlinks</p>
+
+</div></div></li>
+
+<!-- Mathematical equations -->
+
+<li class="col-md-4" id="math">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/xplaceholder.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="math-e.html">Mathematical equations</a></h3>
+
+<p>Use to display mathematical formulas within a page.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Variables, Calculations</p>
+
+</div></div></li>
+
+<!-- Pagination -->
+
+<li class="col-md-4" id="pagination">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Pagination.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Pagination-e.html">Pagination</a></h3>
+
+<p>Use a pagination index for long documents that are best broken up over several pages. </p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Buttons, Links, Navigation</p>
+
+</div></div></li>
+
+<!-- Panels -->
+
+<li class="col-md-4" id="panels">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Panels.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Panels-e.html">Panels</a></h3>
+
+<p>Use to create a visual grouping of content. Panels have colour themed options, as well as offer a distinct header and footer.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Boxes, Menu, Navigation, Layout</p>
+
+</div></div></li>
+
+<!-- Positioning -->
+
+<li class="col-md-4" id="position">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt ">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Position.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Position-e.html">Positioning</a></h3>
+
+<p>Use to position content on top of other content.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Links, Images, Layout</p>
+
+</div></div></li>
+
+<!-- Text sizing -->
+
+<li class="col-md-4" id="sizing">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Sizing.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Sizing-e.html">Text sizing</a></h3>
+
+<p>Use to override the default size of any text (make text large or small).</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Headings</p>
+
+</div></div></li>
+
+<!-- Tables -->
+
+<li class="col-md-4" id="tables">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Tables.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Tables-e.html">Tables</a></h3>
+
+<p>Use to organize data into rows and columns in order to create data cells.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Tabular, Zebra striping, Hover, Responsive, Colour, Table validator</p>
+
+</div></div></li>
+
+<!-- Text editing effects -->
+
+<li class="col-md-4" id="text_editing">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Text_editing.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Text_editing-e.html">Text editing effects</a></h3>
+
+<p>Use to indicate text edits on a page.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Edits, Versions, Documents</p>
+
+</div></div></li>
+
+<!-- Text colour -->
+
+<li class="col-md-4" id="text_colour">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Text_colour.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Text_colour-e.html">Text colour</a></h3>
+
+<p>Use colour as a presentation element for decorative purposes to convey information.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Background</p>
+
+</div></div></li>
+
+<!-- Variables -->
+
+<li class="col-md-4" id="variables">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt ">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Variables.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Variables-e.html">Variables</a></h3>
+
+<p>Use when there is reference to a variable like “x.”, "n" or "y" within a sentence (a non-mathematical phrase).</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Calculations</p>
+
+</div></div></li>
+
+<!-- Wells -->
+
+<li class="col-md-4" id="wells">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt ">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Wells.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Wells-e.html">Wells</a></h3>
+
+<p>Use to spotlight content by placing it in a light grey box.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Layout, Boxes</p>
+
+</div></div></li>
+
+<!-- Wrapping and truncating text -->
+
+<li class="col-md-4" id="wrapping_truncating">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"><img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Wrapping_truncating.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Wrapping_truncating-e.html">Wrapping and truncating text</a></h3>
+
+<p>Use to prevent text from wrapping to the next line.</p>
+
+</div> <p class="hidden"><span class="fa fa-tag"></span>Tags: Break, Group</p>
+
+</div></div></li>
+
+</ul>
         <div id="def-preFooter"></div>
          <!-- Write closure template --> 
          <script type="text/javascript">
