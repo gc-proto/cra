@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="no-js lt-ie9" lang="en" dir="ltr">
+   <![endif]-->
+   <!--[if gt IE 8]><!-->
+   <html class="no-js" lang="en" dir="ltr">
+      <!--<![endif]-->
+      <head>
+         <meta charset="utf-8">
+         <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+         <title>How to make a request - Remissions – Canada.ca</title>
+         <meta content="width=device-width,initial-scale=1" name="viewport">
+         <meta name=”robots” content=”noindex, follow”>
+         <!-- Meta data -->
+         <!-- Meta data-->
+         <!-- Load closure template scripts -->
+         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
+         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+         <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
+
+
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+         <!-- Write closure template -->
+         <script type="text/javascript">
+            document.write(wet.builder.refTop({
+            }));
+         </script>
+         <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
+         <link href="../../css/pn.css" rel="stylesheet">
+         <link href="../../css/h1-underline.css" rel="stylesheet">
+         <link href="../../css/cews.css" rel="stylesheet">
+         <link href="../../css/checkbox-radio-CRA.css" rel="stylesheet">
+         <link href="../../css/bullets-with-questions.css" rel="stylesheet">
+
+          <style type="text/css">
+             div.hidden-action {
+             transform: scaleX(0);
+             overflow: hidden;
+             display: none;
+             }
+             div.visible-action {
+             transform: scaleX(1);
+             display: visible;
+             }
+             /*Checkbox/Fieldflow radio input sizing,positioning*/
+             .checkbox-zebra > li:nth-child(2n+1) {
+             background-color: #f5f5f5;
+             margin-left: -50px;
+             padding-top: 10px;
+             padding-bottom: 15px;
+             padding-left: 50px;
+             }
+             .checkbox-zebra [role="checkbox"]::before {
+             background-color: #fff;
+             }
+             .std-blt {
+             font-size: 20px;
+             line-height: 1.65em;
+             }
+             .std-blt {
+             list-style-type: disc;
+             }
+             .std-blt li label {
+             display: block;
+             padding-left: 0px;
+             }
+             /********
+             ********
+             ** New checklist example
+             ** May 15, 2020
+             ** Replacing checkkboxes with clickable divs that convey a sense of success to the user
+             ********
+             ********/
+             /* One input per line */
+             .provisional [role="checkbox"] { /* (0,2,0) */
+             cursor: pointer;
+             display: inline-block;
+             padding-left: 15px;
+             position: relative;
+             }
+             .provisional [role="checkbox"]::before,
+             .provisional [role="checkbox"]::after { /* (0,2,1) */
+             content: "";
+             left: 0;
+             position: absolute;
+             top: 0;
+             transform: translate(-100%, 0%);
+             }
+             .provisional .wb-checklist.wb-checklist-sm { /* (0,3,0) */
+             font-size: 17px;
+             }
+             /* the basic, unchecked style */
+             .provisional [role="checkbox"]::before { /* (0,2,1) */
+             border: 4px solid #fff;
+             box-shadow: 0 0 0 2px #000;
+             display: inline-block;
+             height: 36px;
+             width: 36px;
+             }
+             .provisional .wb-checklist-sm [role="checkbox"]::before { /* (0,3,1) */
+             border-width: 3px;
+             height: 24px;
+             transform: translate(-100%, 20%);
+             width: 24px;
+             }
+             /* hover styling */
+             .provisional [role="checkbox"][aria-checked="false"]:hover::before { /* (0,3,1) */
+             background-image: linear-gradient(to bottom, hsl(10, 0%, 90%), hsl(10, 0%, 100%) 50%);
+             }
+             /* focus styling */
+             .provisional [role="checkbox"]:focus { /* (0,3,0) */
+             outline: none;
+             }
+             .provisional [role="checkbox"]:focus::before { /* (0,3,2) */
+             box-shadow: 0 0 0 2px #000, 0 0 8px 4px rgb(59, 153, 252);
+             }
+             /* the checked style using the [aria-checked='true'] pseudo class and aria-checked=true attribute */
+             .provisional [role="checkbox"][aria-checked="true"]::before { /* (0,3,1) */
+             background-color: #318000;
+             border: none;
+             }
+             .provisional [role="checkbox"][aria-checked="true"]::after { /* (0,3,1) */
+             border-color: white;
+             border-style: solid;
+             border-width: 0 5px 5px 0;
+             display: inline-block;
+             height: 26px;
+             width: 13px;
+             transform: translate(-185%, 10%) rotate(45deg);
+             }
+             .provisional .wb-checklist-sm [role="checkbox"][aria-checked="true"]::after { /* (0,3,1) */
+             border-width: 0 4px 4px 0;
+             height: 16px;
+             width: 9px;
+             transform: translate(-185%, 40%) rotate(45deg);
+             }
+          </style>  </head>
+      <body vocab="http://schema.org/" typeof="WebPage">
+         <div id="def-top"> </div>
+         <!-- Write closure template -->
+         <script type="text/javascript">
+            var defTop = document.getElementById("def-top");
+            defTop.outerHTML = wet.builder.top({
+            	lngLinks: [{
+            		lang: "fr",
+            		href: "#",
+            		text: "Français"
+            	}],
+            	breadcrumbs: [{
+             title: "Canada.ca",
+             href: "https://www.canada.ca/en.html"
+              }, {
+                title: "Canada Revenue Agency",
+                href: "https://www.canada.ca/en/revenue-agency.html"
+              }, {
+                title: "Contact the CRA",
+                href: "../contact-cra.html"
+              }, {
+                title: "Service complaints and objections",
+                href: "../service-feedback-button.html"
+              }, {
+                title: "Apply for penalty or interest relief",
+                href: "../taxpayer-relief/cancel-waive-penalties-interest.html"
+              }
+              ],
+            	search: true,
+            	siteMenu: true,
+            	showPreContent: true
+            });
+         </script>
+         <main role="main" property="mainContentOfPage" class="container">
+          <div class="gcnav">
+            <section class="gcnav-menu">
+              <h1 property="name" id="wb-cont-parent">Remissions</h1>
+              <nav aria-label="Section menu">
+                <h2 id="gcnav-menu-header">Sections</h2>
+                <ul class="gcnav-steps">
+                    <li><a href="eligibility.html">When to request a remission review</a></li>
+                  <li class="active"><a aria-current="page">How to make a request</a></li>
+                  <li><a href="after.html">After you make a request</a></li>
+                </ul>
+              </nav>
+            </section>
+            <aside class="hidden-xs hidden-sm gcnav-side" data-ajax-replace="index.html #gcnav-side>"> </aside>
+            <section class="gcnav-section">
+              <h1 property="name" id="wb-cont">How to make a request</h1>
+              <h2 class="h3 mrgn-tp-sm">On this page</h2>
+              <ul>
+                <li><a href="#h-1">Pursue all other options before requesting remission</a></li>
+                <!--li><a href="#h-2">Requesting a remission review does not stop collection actions</a></li -->
+                <li><a href="#h-3">Eligibility criteria</a></li>
+              </ul>
+
+              <section>
+                <h2 id="h-1">Pursue all other options before requesting remission</h2>
+                <p>Remissions is a rare and extraordinary measure. As such, we won’t accept all requests for remission for review.</p>
+                <p>You must pursue all other options available to resolve your debt before requesting remission. In most cases, there are other ways we can help you address your debt.</p>
+                <p class="small"><a href="../service-feedback-button.html" class="btn btn-default">Find other options to reduce your debt</a></p>
+              </section>
+
+              <!--section>
+                <h2 id="h-2">Requesting a remission review does not stop collection actions</h2>
+                <p>You should continue to make payments toward your debt while we consider your request. To review options to repay your debt before requesting a remissions review:</p>
+                <ul>
+                  <li><a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/when-you-money-collections-cra.html">Find out what to do if you have debt with the CRA</a></li>
+                </ul>
+              </section-->
+
+              <section>
+                <h2 id="h-3">Eligibility criteria</h2>
+                <p>To apply for remission, you must meet all the following criteria:</p>
+                <section class="gc-nav-section experimental provisional">
+                           <section>
+                              <section>
+                                 <ul class="checkbox-lg checkbox-zebra">
+                                    <li class="checkbox">
+                                       <input type="checkbox" id="eg1" class="action-checkbox cb-dmm">
+                                      <label for="eg1">You have already been assessed the amount(s) in question</label>
+                                    </li>
+
+                                    <li class="checkbox">
+                                       <input type="checkbox" id="eg4" class="action-checkbox cb-dmm">
+                                       <label for="eg4">You have filed your tax returns up to date</label>
+
+                                    </li>
+
+               			  <li class="checkbox">
+               			     <input type="checkbox" id="eg11" class="action-checkbox cb-dmm">
+               			     <label for="eg11">You have planned how you can ensure future compliance with your tax obligations (for example, paying future tax debts in full and by the due date)</label>
+
+               			   </li>
+                                    <li class="checkbox">
+                                       <input type="checkbox" id="eg6" class="action-checkbox cb-dmm">
+                                       <label for="eg6">You understand that remission is a rare measure, granted in only the most extraordinary of cases</label>
+                                    </li>
+               		     <li class="checkbox">
+                                       <input type="checkbox" id="eg5" class="action-checkbox cb-dmm">
+                                       <label for="eg5">You have asked the CRA to adjust any returns with errors or omissions on your part</label>
+                                    </li>
+
+                                 </ul>
+                                 <div class="alert alert-warning provisional" id="action-no-msg">
+                                    <p>You need all of the above to apply for remision.</p>
+               					  <h3>If you’re not eligible for remission</h3>
+               				<p>You may want to <a href="../service-feedback-button.html">find other options to reduce your debt</a>.</p>
+                                 </div>
+                                 <div class="alert alert-success hidden provisional" id="action-msg1">
+               			  <h3>You meet the criteria </h3>
+                                    <p>If you meet all the above criteria, you may seek remission.</p>
+                                    <p>Be aware, requesting a remission review does not stop collection actions. You should continue to make payments toward your debt while we consider your request.</p>
+
+                                 </div>
+                              </section>
+                              <div class="clearfix"></div>
+
+
+
+                <!--div class="wb-frmvld">
+                  <div id="question1" class="wb-fieldflow" data-wb-fieldflow='{
+                    "noForm": false,
+                    "renderas": "radio",
+                    "base": { "live": false },
+                    "noreqlabel": true,
+                    "default": { "action": "addClass", "source":"#extreme-hardship-criteria,#financial-setback-criteria,#mistake-by-cra-criteria,#unintended-results-criteria,#other-circumstances-criteria", "class": "hidden" }
+                  }'>
+                    <p><span class="h3">Based on what type of circumstances are you making a request?</span></p>
+                    <ul>
+                      <li data-wb-fieldflow='[
+                        { "action" : "removeClass", "source":"#checklist", "class": "hidden"},
+                        { "action" : "removeClass", "source":"#extreme-hardship-criteria", "class": "hidden"}
+                      ]'>Extreme financial hardship</li>
+                      <li data-wb-fieldflow='[
+                        { "action" : "removeClass", "source":"#checklist", "class": "hidden"},
+                        { "action" : "removeClass", "source":"#financial-setback-criteria", "class": "hidden"}
+                      ]'>Financial setback with an extenuating factor</a></li>
+                      <li data-wb-fieldflow='[
+                        { "action" : "removeClass", "source":"#checklist", "class": "hidden"},
+                        { "action" : "removeClass", "source":"#mistake-by-cra-criteria", "class": "hidden"}
+                      ]'>Mistakes made by the CRA</li>
+                      <li data-wb-fieldflow='[
+                        { "action" : "removeClass", "source":"#checklist", "class": "hidden"},
+                        { "action" : "removeClass", "source":"#unintended-results-criteria", "class": "hidden"}
+                      ]'>Unintended results of the legislation</li>
+                      <li data-wb-fieldflow='[
+                        { "action" : "removeClass", "source":"#checklist", "class": "hidden"},
+                        { "action" : "removeClass", "source":"#other-circumstances-criteria", "class": "hidden"}
+                      ]'>Other circumstances</li>
+                    </ul>
+                  </div>
+                </div> -->
+
+
+
+                <section id="ready-to-apply" class="hidden">
+                <!-- <ol class="lst-stps"> -->
+                  <h3>What to include in your request</h3>
+                  <p>You or your authorized representative may request a remission review by sending a letter, with attachments, using 1 of the methods identified under Where to send your request.</p>
+                  <p>We require a complete and verifiable account of your circumstances to conduct a remission review. If you don’t provide enough information, we won’t be able to accept your request.</p>
+                  <p>All requests for a remission review must include the information in Identification and Details of request:</p>
+                  <h4>Identification</h4>
+                  <ul>
+                    <li>Taxpayer name</li>
+                    <li>Account number</li>
+                    <li>Authorized representative (if applicable)</li>
+                    <li>Complete mailing address*</li>
+                    <li>Daytime telephone number*</li>
+                  </ul>
+                  <p>We require a mailing address and telephone number where we can contact you or your authorized representative about your remission request.</p>
+
+                  <h4>Details of request</h4>
+                  <ul>
+                    <li>Tax year(s) or period(s) the amount requested relates to</li>
+                    <li>Dollar amount(s) of the debt</li>
+                    <li>Type of debt (for example, tax, interest, penalty, or other debt)</li>
+                    <li>Reason(s) you are requesting a remission review (see <a href="eligibility.html#h-2">Situations that may be accepted for review</a>)</li>
+                  </ul>
+
+                  <details>
+                    <summary>Examples of documents or information you may need to provide</summary>
+                    <p>Depending on your request, here are some examples of what you should include:</p>
+                    <ul>
+                      <li>Dates and descriptions of significant events related to your debt.
+                        <ul>
+                          <li>This might include how the debt arose, actions you took to try to resolve it, why you are now asking for a remission review.</li>
+                          <li>We may not accept your request for review if you don’t tell us all your facts and circumstances.</li>
+                        </ul>
+                      </li>
+                      <li>Copies of any communications with or from us about the issue.</li>
+                      <li>If you are requesting remission because you are in extreme financial hardship, include documentation of your family income since the time your debt arose.</li>
+                      <li>If you believe there were extenuating factors in your case, describe how they impacted your ability to meet your tax, filing or payment obligations. Include any supporting documents that apply, for example medical records.</li>
+                      <li>If you believe that we made an error or incorrectly informed you, include evidence of the error, for example, written instructions you received.</li>
+                      <li>If you believe there have been unintended results of tax legislation in your case, explain, with proof, how the application of the legislation led to an inequitable outcome in your case.</li>
+                      <li>Any other factors you believe are relevant to your remission request and any substantiation in support of your position</li>
+                    </ul>
+                  </details>
+
+                  <h3>Where to send your request</h3>
+                  <dl class="dl-horizontal brdr-0">
+                    <dt>Online</dt>
+                    <dd>
+                      <p>Sign into My Account, My Business Account or Represent a client and submit a request through the:</p>
+                      <ul>
+                        <li>Submit documents service
+                          <ul>Select “Send remission request and supporting documents”</ul>
+                        </li>
+                      </ul>
+                      <p class="h3">For personal tax related requests</p>
+                      <div class=""> <a class="btn btn-default" href="/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html">Sign in to My Account</a> <span class="register mrgn-lft-md"><a href="/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html" class="mrgn-tp-lg">Register</a></span> </div>
+                      <p><strong>Alternative:</strong> <a href="">Represent a client</a></p>
+                      <p class="h3">For business tax related requests</p>
+                      <div class=""> <a class="btn btn-default" href="">Sign in to My Business Account</a> <span class="register mrgn-lft-md"><a href="" class="mrgn-tp-lg">Register</a></span> </div>
+                      <p><strong>Alternative:</strong> <a href="">Represent a client</a></p>
+                    </dd>
+                    <dt>By mail</dt>
+                    <dd>
+                      <details>
+                        <summary>How to submit a request by mail</summary>
+                        <p>Mail your request for a remission review and supporting documents to:</p>
+                        <p class="well">
+                          Remissions and Delegations Section<br>
+                          Legislative Policy Directorate<br>
+                          Legislative Policy and Regulatory Affairs Branch<br>
+                          7th Floor, Tower A, Place de Ville<br>
+                          320 Queen Street<br>
+                          Ottawa ON K1A 0L5
+                        </p>
+                      </details>
+                    </dd>
+                  </dl>
+                </section>
+              </section>
+
+              <section>
+                <nav role="navigation" class="mrgn-bttm-lg mrgn-tp-lg">
+                  <h3 class="wb-inv">Section navigation</h3>
+                  <ul class="pager">
+                    <li class="next"><a href="after.html" rel="next"><span class="wb-inv">Next: </span>After you make a request</a></li>
+                  </ul>
+                </nav>
+              </section>
+              <aside class="hidden-md hidden-lg" data-ajax-replace="index.html #gcnav-side>"> </aside>
+            </div>
+            <div id="def-preFooter"> </div>
+            <!-- Write closure template -->
+            <script type="text/javascript">
+               var defPreFooter = document.getElementById("def-preFooter");
+               defPreFooter.outerHTML = wet.builder.preFooter({
+               dateModified: "2020-03-13",
+               showPostContent: true,
+               showFeedback: true,
+               showShare: true
+               });
+            </script>
+         </main>
+         <div id="def-footer"> </div>
+         <!-- Write closure template -->
+         <script type="text/javascript">
+            var defFooter = document.getElementById("def-footer");
+            defFooter.outerHTML = wet.builder.footer({
+            showFooter: true,
+            showFeatures: true
+            });
+         </script>
+         <!-- Write closure template -->
+         <script type="text/javascript">
+            document.write(wet.builder.refFooter({
+            }));
+         </script>
+         <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
+         <!--script below adds the skip to section navigation at top of page when .gcnav class exists //-->
+         <script src="../js/topmenu.js"></script>
+
+        <script>
+           $(".action-checkbox").change(function(){
+           if ($('.action-checkbox:checked').length == $('.action-checkbox').length) {
+           $("#action-msg1").removeClass("hidden").addClass("visible");
+           $("#action-no-msg").addClass("hidden").removeClass("visible");
+           $("#ready-to-apply").removeClass("hidden").addClass("visible");
+           }
+           if ($('.action-checkbox:checked').length !== $('.action-checkbox').length) {
+           $("#action-msg1").addClass("hidden").removeClass("visible");
+           $("#action-no-msg").removeClass("hidden").addClass("visible");
+           $("#ready-to-apply").addClass("hidden").removeClass("visible");
+
+           }
+           })
+
+        </script>
+
+
+      </body>
+   </html>
