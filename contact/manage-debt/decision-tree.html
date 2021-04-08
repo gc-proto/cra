@@ -100,73 +100,6 @@
 							<!-- question 1 -->
 							<p>Is there an error on your Notice of Assessment, Reassessment or Determination?</p> 
 							<ul>
-								<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q1", "class": "hidden", "live":true}'>I'm not sure, I need help reviewing it</li>
-								<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q2", "class": "hidden", "live":true}'>No, I have an issue with a payment or overpayment</li>
-								<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q3", "class": "hidden", "live":true}'>No, I did not yet receive a notice</li>
-								<li>No, but I am unable to pay
-									<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
-										<!-- question 2a - no -->
-										<p>Is there anything you believe you could change in your tax return to reduce your amount owing?</p>
-										<ul>
-											<li>Yes
-												<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
-													<!-- question 3a - yes -->
-													<p>Has it been 3 years or more since the tax return was filed?</p>
-													<ul>
-														<li>Yes
-															<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
-																<!-- question 4a - yes -->
-																<p>Did you experience financial hardship or extraordinary circumstances such as a flood or fire?</p>
-																<ul>
-																	<li>Yes
-																		<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
-																			<!-- question 5a - yes -->
-																			<p>Have you accrued penalties or interest?</p>
-																			<ul>
-																				<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q4", "class": "hidden", "live":true}'>Yes</li>
-																				<li>No
-																					<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
-																						<!-- question 6a - no -->
-																						<p>Have you tried to get a loan to cover your tax debt?</p>
-																						<ul>
-																							<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q5", "class": "hidden", "live":true}'>Yes, it's not enough</li>
-																							<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q6", "class": "hidden", "live":true}'>No</li>
-																						</ul>
-																					</div>
-																				</li>
-																			</ul>
-																		</div>
-																	</li>
-																	<li>No
-																		<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
-																			<!-- question 5b - no -->
-																			<p>Have you tried to get a loan to cover your tax debt?</p>
-																			<ul>
-																				<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q5", "class": "hidden", "live":true}'>Yes, it's not enough</li>
-																				<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q6", "class": "hidden", "live":true}'>No</li>
-																			</ul>
-																		</div>
-																	</li>
-																</ul>
-															</div>
-														</li>
-														<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q12", "class": "hidden", "live":true}'>No</li>
-													</ul>
-												</div>
-											</li>
-											<li>No
-												<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
-													<!-- question 3b - no -->
-													<p>Have you tried to get a loan to cover your tax debt?</p>
-													<ul>
-														<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q2", "class": "hidden", "live":true}'>Yes, it's not enough</li>
-														<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q2", "class": "hidden", "live":true}'>No</li>
-													</ul>
-												</div>
-											</li>
-										</ul>
-									</div>	
-								</li>
 								<li>Yes, the notice or asessed amount owing is wrong
 									<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
 										<!-- question 2b - yes -->
@@ -249,6 +182,73 @@
 										</ul>
 									</div>	
 								</li>
+								<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q2", "class": "hidden", "live":true}'>No, I have an issue with a payment or overpayment</li>
+								<li>No, but I am unable to pay
+									<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+										<!-- question 2a - no -->
+										<p>Is there anything you believe you could change in your tax return to reduce your amount owing?</p>
+										<ul>
+											<li>Yes
+												<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+													<!-- question 3a - yes -->
+													<p>Has it been 3 years or more since the tax return was filed?</p>
+													<ul>
+														<li>Yes
+															<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+																<!-- question 4a - yes -->
+																<p>Did you experience financial hardship or extraordinary circumstances such as a flood or fire?</p>
+																<ul>
+																	<li>Yes
+																		<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+																			<!-- question 5a - yes -->
+																			<p>Have you accrued penalties or interest?</p>
+																			<ul>
+																				<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q4", "class": "hidden", "live":true}'>Yes</li>
+																				<li>No
+																					<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+																						<!-- question 6a - no -->
+																						<p>Have you tried to get a loan to cover your tax debt?</p>
+																						<ul>
+																							<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q5", "class": "hidden", "live":true}'>Yes, it's not enough</li>
+																							<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q6", "class": "hidden", "live":true}'>No</li>
+																						</ul>
+																					</div>
+																				</li>
+																			</ul>
+																		</div>
+																	</li>
+																	<li>No
+																		<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+																			<!-- question 5b - no -->
+																			<p>Have you tried to get a loan to cover your tax debt?</p>
+																			<ul>
+																				<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q5", "class": "hidden", "live":true}'>Yes, it's not enough</li>
+																				<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q6", "class": "hidden", "live":true}'>No</li>
+																			</ul>
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</li>
+														<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q12", "class": "hidden", "live":true}'>No</li>
+													</ul>
+												</div>
+											</li>
+											<li>No
+												<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+													<!-- question 3b - no -->
+													<p>Have you tried to get a loan to cover your tax debt?</p>
+													<ul>
+														<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q2", "class": "hidden", "live":true}'>Yes, it's not enough</li>
+														<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q2", "class": "hidden", "live":true}'>No</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>	
+								</li>
+								<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q3", "class": "hidden", "live":true}'>No, I did not yet receive a notice</li>
+								<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q1", "class": "hidden", "live":true}'>I'm not sure, I need help reviewing it</li>
 							</ul>
 						</div>
 					</form>
