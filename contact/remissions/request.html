@@ -183,28 +183,24 @@
               <h2 class="h3 mrgn-tp-sm">On this page</h2>
               <ul>
                 <li><a href="#h-1">Pursue all other options before requesting remission</a></li>
-                <li><a href="#h-2">Requesting a remission review does not stop collection actions</a></li>
-                <li><a href="#h-3">request remission review</a></li>
+                <li><a href="#h-2">request remission review</a></li>
               </ul>
 
               <section>
                 <h2 id="h-1">Pursue all other options before requesting remission</h2>
                 <p>Remissions is a rare and extraordinary measure. As such, we won’t accept all requests for remission for review.</p>
                 <p>You must pursue all other options available to resolve your debt before requesting remission. In most cases, there are other ways we can help you address your debt.</p>
-                <p class="small"><a href="" class="btn btn-default">Find other options to reduce your debt</a></p>
+                <p class="small"><a href="../service-feedback-button.html" class="btn btn-default">Find other options to reduce your debt</a></p>
               </section>
 
               <section>
                 <h2 id="h-2">Requesting a remission review does not stop collection actions</h2>
                 <p>You should continue to make payments toward your debt while we consider your request. To review options to repay your debt before requesting a remissions review:</p>
-                <ul>
-                  <li><a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/when-you-money-collections-cra.html">Find out what to do if you have debt with the CRA</a></li>
-                </ul>
+                <p><a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/when-you-money-collections-cra.html">Find out what to do if you have debt with the CRA</a></p>
               </section>
 
               <section>
-                <h2 id="h-3">request remission review</h2>
-                <p>Ensure you meet these criteria (if applicable) to see how to make a request:</p>
+                <h2 id="h-2">Request remission review</h2>
                 
                 <div class="wb-frmvld">
                   <div id="question1" class="wb-fieldflow" data-wb-fieldflow='{
@@ -212,7 +208,7 @@
                     "renderas": "radio",
                     "base": { "live": false },
                     "noreqlabel": true,
-                    "default": { "action": "addClass", "source":"#extreme-hardship-criteria,#financial-setback-criteria,#mistake-by-cra-criteria,#unintended-results-criteria,#other-circumstances-criteria", "class": "hidden" }
+                    "default": { "action": "addClass", "source":"#ready-to-apply,#extreme-hardship-criteria,#financial-setback-criteria,#mistake-by-cra-criteria,#unintended-results-criteria,#other-circumstances-criteria", "class": "hidden" }
                   }'>
                     <p><span class="h3">Based on what type of circumstances are you making a request?</span></p>
                     <ul>
@@ -240,14 +236,15 @@
                   </div>
                 </div>
 
-                <div class="mrgn-tp-lg beforeCall checklist">
+                <div id="checklist" class="mrgn-tp-lg beforeCall hidden">
+                  <p>Before you can submit a request, ensure you meet the criteria for a remission review:</p>
                   <label for="input1" class="container-checks">
                     <input id="input1" class="btnCheck" type="checkbox">
-                    <span class="extreme-hardship-criteria hidden">Since the time your debt arose, your family income has been, and continues to be, under the low-income cut-off (LICO) amounts established by Statistics Canada?</span>
-                    <span class="financial-setback-criteria hidden">You are able to provide substantiation to verify your circumstances (for example, detailed medical records)</span>
-                    <span class="mistake-by-cra-criteria hidden">You are able to demonstrate that the CRA confirmed the advice or instructions in writing.</span>
-                    <span class="unintended-results-criteria hidden">You able to explain (with supporting documentation) how the application of tax legislation led to an inequitable outcome in your case.</span>
-                    <span class="other-circumstances-criteria hidden">You can provide complete background information and documents to support the circumstances of your request.</span>
+                    <span id="extreme-hardship-criteria" class="hidden">Since the time your debt arose, your family income has been, and continues to be, under the low-income cut-off (LICO) amounts established by Statistics Canada?</span>
+                    <span id="financial-setback-criteria" class="hidden">You are able to provide substantiation to verify your circumstances (for example, detailed medical records)</span>
+                    <span id="mistake-by-cra-criteria" class="hidden">You are able to demonstrate that the CRA confirmed the advice or instructions in writing.</span>
+                    <span id="unintended-results-criteria" class="hidden">You able to explain (with supporting documentation) how the application of tax legislation led to an inequitable outcome in your case.</span>
+                    <span id="other-circumstances-criteria" class="hidden">You can provide complete background information and documents to support the circumstances of your request.</span>
                     <span class="checkmark"></span> 
                   </label>
                   <label for="input2" class="container-checks">
@@ -256,78 +253,60 @@
                   </label>
                   <label for="input3" class="container-checks">
                     <input id="input3" class="btnCheck" type="checkbox">
-                    You have filed your tax returns up to date<span class="checkmark"></span>
+                    You have already applied for or cannot find other options for debt relief (<a href="../service-feedback-button.html">find other options to reduce your debt</a>)<span class="checkmark"></span>
                   </label>
                   <label for="input4" class="container-checks">
                     <input id="input4" class="btnCheck" type="checkbox">
-                    You have planned how you can ensure future compliance with your tax obligations (for example, paying future tax debts in full and by the due date)<span class="checkmark"></span>
+                    You are unable to pay your debt (either in part or in full) by using existing funds or assets, re-arranging finances, or borrowing funds<span class="checkmark"></span>
                   </label>
                   <label for="input5" class="container-checks">
                     <input id="input5" class="btnCheck" type="checkbox">
-                    You understand that remission is a rare measure, granted in only the most extraordinary of cases<span class="checkmark"></span>
+                    You have filed your tax returns up to date<span class="checkmark"></span>
                   </label>
                   <label for="input6" class="container-checks">
                     <input id="input6" class="btnCheck" type="checkbox">
-                    You have asked the CRA to adjust any returns with errors or omissions on your part<span class="checkmark"></span>
+                    You have planned how you can ensure future compliance with your tax obligations (for example, paying future tax debts in full and by the due date)<span class="checkmark"></span>
                   </label>
                   <label for="input7" class="container-checks">
                     <input id="input7" class="btnCheck" type="checkbox">
-                    You understand that remission is a rare measure, granted in only the most extraordinary of cases<span class="checkmark"></span>
+                    You have asked the CRA to adjust any returns with errors or omissions on your part<span class="checkmark"></span>
                   </label>
                   <label for="input8" class="container-checks">
                     <input id="input8" class="btnCheck" type="checkbox">
-                    You understand that remission is a rare measure, granted in only the most extraordinary of cases<span class="checkmark"></span>
+                    You have resolved any civil or other litigation that was already in process concerning the issue<span class="checkmark"></span>
+                  </label>
+                  <label for="input9" class="container-checks">
+                    <input id="input9" class="btnCheck" type="checkbox">
+                    You understand that remission is a rare measure, granted in only the most extraordinary of cases (read about the <a href="eligibility.html#h-2">scenarios we will or will not accept for review</a>)<span class="checkmark"></span>
                   </label>
 
-<!--                     
-                  <label for="input2" class="container-checks">
-                    <input id="input2" class="btnCheck" type="checkbox">
-                     <span class="checkmark"></span> </label>
-                  <label for="input3" class="container-checks">
-                    <input id="input3" class="btnCheck" type="checkbox">
-                    You have submitted a request under the CRA’s Voluntary Disclosures Program. Under this program, you may be eligible for relief of penalties and some of the interest that you would otherwise be required to pay <span class="checkmark"></span> </label>
-                  <label for="input4" class="container-checks">
-                    <input id="input4" class="btnCheck" type="checkbox">
-                    You have already filed a notice of objection with the CRA or an appeal with the courts in respect of this issue, and those cases have been finalized <span class="checkmark"></span> </label>
-                  <label for="input5" class="container-checks">
-                    <input id="input5" class="btnCheck" type="checkbox">
-                    You have already applied for penalty and interest relief (for any qualifying years) under the taxpayer relief provisions of the Income Tax Act or Excise Tax Act, and those cases have been finalized <span class="checkmark"></span> </label>
-                  <label for="input6" class="container-checks">
-                    <input id="input6" class="btnCheck" type="checkbox">
-                    You have resolved any civil or other litigation that was already in process concerning this issue<span class="checkmark"></span> </label>
 
-                    You are unable to pay your debt (either in part or in full) by using existing funds or assets, re-arranging finances, or borrowing funds
-
-                    If you are in the process of declaring bankruptcy, that process has been finalized (Note: in most cases, bankruptcy will resolve any outstanding debts). -->
-
-                  <span id="check-message">
-                    <label for="input6" class="label label-danger">You need all of the above to be considered for remission
-                      <input id="input6" class="wb-inv" type="text">
-                    </label>
-                    </span></p>
-                  <!-- <div id="find-relief-rescue">
-                    <p>Unless you meet all the criteria above, your request for remission is unlikely to be considered.</p>
-                    <p><a href="" class="btn btn-default">Find tax relief for your situation</a></p>
-                  </div> -->
+                  <div class="alert alert-warning provisional" id="check-message">
+                    <p>You need all of the above to apply for remision.</p>
+                    <h3>If you’re not eligible for remission</h3>
+                    <p>You may <a href="../service-feedback-button.html">find other options to reduce your debt</a>.</p>
+                  </div>
+                  <div class="alert alert-success hidden provisional ready-to-apply">
+                    <h3>If you meet all the above criteria, you may seek remission</h3>
+                  </div>
                 </div>
 
-                <section id="ready-to-apply" class="hidden">
+                <section class="hidden ready-to-apply">
                 <!-- <ol class="lst-stps"> -->
-                  <h3>What to include in your request</h3>
-                  <p>You or your authorized representative may request a remission review by sending a letter, with attachments, using 1 of the methods identified under Where to send your request.</p>
+                  <h2>What to include in your request</h2>
+                  <p>You or your authorized representative may request a remission review by sending a letter, with attachments.</p>
                   <p>We require a complete and verifiable account of your circumstances to conduct a remission review. If you don’t provide enough information, we won’t be able to accept your request.</p>
-                  <p>All requests for a remission review must include the information in Identification and Details of request:</p>
+                  <p>All requests for a remission review must include:</p>
                   <h4>Identification</h4>
                   <ul>
                     <li>Taxpayer name</li>
                     <li>Account number</li>
                     <li>Authorized representative (if applicable)</li>
-                    <li>Complete mailing address*</li>
-                    <li>Daytime telephone number*</li>
+                    <li>Complete mailing address where we can contact you or your authorized representative about your remission request</li>
+                    <li>Daytime telephone number where we can contact you or your authorized representative about your remission request</li>
                   </ul>
-                  <p>We require a mailing address and telephone number where we can contact you or your authorized representative about your remission request.</p>
                   
-                  <h4>Details of request</h4>
+                  <h3>Details of request</h3>
                   <ul>
                     <li>Tax year(s) or period(s) the amount requested relates to</li>
                     <li>Dollar amount(s) of the debt</li>
@@ -354,7 +333,7 @@
                     </ul>
                   </details>
 
-                  <h3>Where to send your request</h3>
+                  <h2>Where to send your request</h2>
                   <dl class="dl-horizontal brdr-0">
                     <dt>Online</dt>
                     <dd>
@@ -365,10 +344,10 @@
                         </li>
                       </ul>
                       <p class="h3">For personal tax related requests</p>
-                      <div class=""> <a class="btn btn-default" href="/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html">Sign in to My Account</a> <span class="register mrgn-lft-md"><a href="/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html" class="mrgn-tp-lg">Register</a></span> </div>
+                      <div class=""> <a class="btn btn-primary btn-lg" href="/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html">Sign in to My Account</a> <span class="register mrgn-lft-md"><a href="/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html" class="mrgn-tp-lg">Register</a></span> </div>
                       <p><strong>Alternative:</strong> <a href="">Represent a client</a></p>
                       <p class="h3">For business tax related requests</p>
-                      <div class=""> <a class="btn btn-default" href="">Sign in to My Business Account</a> <span class="register mrgn-lft-md"><a href="" class="mrgn-tp-lg">Register</a></span> </div>
+                      <div class=""> <a class="btn btn-primary btn-lg" href="">Sign in to My Business Account</a> <span class="register mrgn-lft-md"><a href="" class="mrgn-tp-lg">Register</a></span> </div>
                       <p><strong>Alternative:</strong> <a href="">Represent a client</a></p>
                     </dd>
                     <dt>By mail</dt>
@@ -434,11 +413,11 @@
                 if ($('.beforeCall input[type="checkbox"]').not(':checked').length == 0) {
                     // document.getElementById("check-message").innerHTML = '<label class="label label-success">You are ready to make a request</label>';
                     $("#check-message").addClass("hidden");
-                    $("#ready-to-apply").removeClass("hidden");
+                    $(".ready-to-apply").removeClass("hidden");
                 } else {
                     // document.getElementById("check-message").innerHTML = '<label class="label label-danger">You need all of the above to be considered for remission</label>';
                     $("#check-message").removeClass("hidden");
-                    $("#ready-to-apply").addClass("hidden");
+                    $(".ready-to-apply").addClass("hidden");
                 }
             });
         </script>
