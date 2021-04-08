@@ -55,178 +55,371 @@
       <main role="main" property="mainContentOfPage" class="container">
           <h1 property="name" id="wb-cont" class="provisional gc-thickline"><span class="stacked"><span>Alerts</span> - <span>CRA web service manual</span></span></h1>
           <div class="all-pre wb-prettify">
-   <p>[short description]</p>
-   <h2 class="h3 mrgn-tp-md">On this page</h2>
-   <ul>
-      <li>
-         <a href="#h-1">Content approach</a>
-         <ul>
-            <li><a href="#h-1-1">Purpose of alerts</a></li>
-         </ul>
-      </li>
-      <li>
-         <a href="#h-2">Design options</a>
-         <ul>
-            <li><a href="#h-2-1">Basic alerts</a></li>
-         </ul>
-      </li>
-   </ul>
-   <h2 id="h-1" class="mrgn-bttm-0">Content approach</h2>
-   <p>[content]</p>
-   <h3 id="h-1-1">Purpose of alerts</h3>
-   <p>Alerts are used to call attention to information that needs to stand out from the rest of the page content. Use to provide contextual feedback messages for typical user actions. Choose from a handful of available and flexible alert messages.</p>
-   <h2 id="h-2" class="mrgn-bttm-0">Design options</h2>
-   <h3 id="h-2-1">Basic alerts</h3>
-   <p>Use to wrap any text and an optional dismiss button in <code>.alert</code>, or one of the four contextual classes (for example, <code>.alert-success</code>) for basic alert messages.</p>
-   <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so always specify a type with a contextual class. Choose from success, info, warning, or danger.</p>
-   <div class="row">
-      <!-- Field flow options -->
-      <div class="col-md-4 ds-modifier">
-         <form>
-            <p><span class="lead mrgn-tp-0"><span class="fas fa-tools"></span> Modify the design</span></p>
-            <div class="row">
-               <div class="col-md-6">
-                  <div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"radio", "isoptional": true, "noForm": true, "reset": [{ "action": "removeClass", "source":"#alert1", "class": "alert alert-info alert-success alert-warning alert-danger                " } ]}'>
-                     <p><span class="h4 mrgn-tp-0">Type</span></p>
-                     <ul>
-                        <li data-wb-fieldflow='[{"action": "addClass", "source": "#alert1", "class": "alert alert-info", "live": true}, {"action": "toggle", "toggle": ".cl-alert-info", "live": true}]'>Info</li>
-                        <li data-wb-fieldflow='[{"action": "addClass", "source": "#alert1", "class": "alert alert-success", "live": true}, {"action": "toggle", "toggle": ".cl-alert-success", "live": true}]'>Success</li>
-                        <li data-wb-fieldflow='[{"action": "addClass", "source": "#alert1", "class": "alert alert-warning", "live": true}, {"action": "toggle", "toggle": ".cl-alert-warning", "live": true}]'>Warning</li>
-                        <li data-wb-fieldflow='[{"action": "addClass", "source": "#alert1", "class": "alert alert-danger", "live": true}, {"action": "toggle", "toggle": ".cl-alert-danger", "live": true}]'>Danger</li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"checkbox", "isoptional": true, "noForm": true, "reset": [{ "action": "addClass", "source":"#title1", "class": "hidden"} ]}'>
-                     <p><span class="h4 mrgn-tp-0">Heading</span></p>
-                     <ul>
-                        <li data-wb-fieldflow='[{"action": "removeClass", "source": "#title1", "class": "hidden", "live": true}, {"action": "toggle", "toggle": ".cl-hidden", "live": true}]'>Add title</li>
-                     </ul>
-                  </div>
-                  <div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"checkbox", "isoptional": true, "noForm": true, "reset": [{ "action": "removeClass", "source":"#link1", "class": "alert-link                   "} ]}'>
-                     <p><span class="h4 mrgn-tp-0">Links</span></p>
-                     <ul>
-                        <li data-wb-fieldflow='[{"action": "addClass", "source": "#link1", "class": "alert-link", "live": true}, {"action": "toggle", "toggle": ".cl-alert-link", "live": true}]'>Alert link</li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </form>
-      </div>
-      <!-- Field flow appearance -->
-      <div class="col-md-8">
-         <div class="ds-example">
-            <div class="wb-tabs">
-               <div class="tabpanels">
-                  <details id="app1">
-                     <summary>Appearance</summary>
-                     <div class="panel panel-body brdr-0 brdr-rds-0">
-                        <section id="alert1" class="alert alert-info">
-                           <span id="title1" class="hidden">
-                              <h2 class="mrgn-tp-0">Title</h2>
-                           </span>
-                           <p>Content of your alert <a href="" id="link1">link text</a>.</p>
-                        </section>
-                     </div>
-                  </details>
-                  <!-- Field flow code -->
-                  <details id="app2">
-                     <summary>Code</summary>
-                     <details>
-                        <summary>HTML</summary>
-                        <pre><code>// Alert
-&lt;section class="<span class="cl-alert-info">alert alert-info </span><span class="hidden cl-alert-success">alert alert-success </span><span class="hidden cl-alert-warning">alert alert-warning </span><span class="hidden cl-alert-danger">alert alert-danger </span>"&gt;
-<span class="hidden cl-hidden">&lt;h2 class="mrgn-tp-0"&gt;Title&lt;/h2&gt;<br></span>&lt;p&gt;Content of your alert &lt;a href="" class="<span class="hidden cl-alert-link">alert-link </span>"&gt;link text&lt;/a&gt;.&lt;/p&gt;   
 
-&lt;/section&gt;   
+<p>[short description]</p>
+
+<h2 class="h3 mrgn-tp-md">On this page</h2>
+
+<ul>
+
+<li>
+
+<a href="#h-1">Content approach</a>
+
+<ul>
+
+<li><a href="#h-1-1">Purpose of alerts</a></li>
+
+</ul>
+
+</li>
+
+<li>
+
+<a href="#h-2">Design options</a>
+
+<ul>
+
+<li><a href="#h-2-1">Basic alerts</a></li>
+
+<li><a href="#h-2-2">Related components</a></li>
+
+</ul>
+
+</li>
+
+</ul>
+
+<h2 id="h-1" class="mrgn-bttm-0">Content approach</h2>
+
+<h3 id="h-1-1">Purpose of alerts</h3>
+
+<p>Alerts are used to call attention to information that needs to stand out from the rest of the page content. Use to provide contextual feedback messages for typical user actions. Choose from a handful of available and flexible alert messages.</p>
+
+<h2 id="h-2" class="mrgn-bttm-0">Design options</h2>
+
+<h3 id="h-2-1">Basic alerts</h3>
+
+<p>Use to wrap any text and an optional dismiss button in <code>.alert</code>, or one of the four contextual classes (for example, <code>.alert-success</code>) for basic alert messages.</p>
+
+<p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so always specify a type with a contextual class. Choose from success, info, warning, or danger.</p>
+
+<div class="row">
+
+<!-- Field flow options -->
+
+<div class="col-md-4 ds-modifier">
+
+<form>
+
+<p><span class="lead mrgn-tp-0"><span class="fas fa-tools"></span> Modify the design</span></p>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="radioselected">
+
+<div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"radio", "isoptional": true, "noForm": true, "reset": [{ "action": "removeClass", "source":"#alert1", "class": "alert alert-info alert-success alert-warning alert-danger " } ]}'>
+
+<p><span class="h4 mrgn-tp-0">Type</span></p>
+
+<ul>
+
+<li data-wb-fieldflow='[{"action": "addClass", "source": "#alert1", "class": "alert alert-info", "live": true}, {"action": "toggle", "toggle": ".cl-alert-info", "live": true}]'>Info</li>
+
+<li data-wb-fieldflow='[{"action": "addClass", "source": "#alert1", "class": "alert alert-success", "live": true}, {"action": "toggle", "toggle": ".cl-alert-success", "live": true}]'>Success</li>
+
+<li data-wb-fieldflow='[{"action": "addClass", "source": "#alert1", "class": "alert alert-warning", "live": true}, {"action": "toggle", "toggle": ".cl-alert-warning", "live": true}]'>Warning</li>
+
+<li data-wb-fieldflow='[{"action": "addClass", "source": "#alert1", "class": "alert alert-danger", "live": true}, {"action": "toggle", "toggle": ".cl-alert-danger", "live": true}]'>Danger</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"checkbox", "isoptional": true, "noForm": true, "reset": [{ "action": "addClass", "source":"#title1", "class": "hidden"} ]}'>
+
+<p><span class="h4 mrgn-tp-0">Heading</span></p>
+
+<ul>
+
+<li data-wb-fieldflow='[{"action": "removeClass", "source": "#title1", "class": "hidden", "live": true}, {"action": "toggle", "toggle": ".cl-hidden", "live": true}]'>Add title</li>
+
+</ul>
+
+</div>
+
+<div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"checkbox", "isoptional": true, "noForm": true, "reset": [{ "action": "removeClass", "source":"#link1", "class": "alert-link "} ]}'>
+
+<p><span class="h4 mrgn-tp-0">Links</span></p>
+
+<ul>
+
+<li data-wb-fieldflow='[{"action": "addClass", "source": "#link1", "class": "alert-link", "live": true}, {"action": "toggle", "toggle": ".cl-alert-link", "live": true}]'>Alert link</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+<!-- Field flow appearance -->
+
+<div class="col-md-8">
+
+<div class="ds-example">
+
+<div class="wb-tabs">
+
+<div class="tabpanels">
+
+<details id="app1">
+
+<summary>Appearance</summary>
+
+<div class="panel panel-body brdr-0 brdr-rds-0">
+
+<section id="alert1" class="alert alert-info">
+
+<span id="title1" class="hidden">
+
+<h2 class="mrgn-tp-0">Title</h2>
+
+</span>
+
+<p>Content of your alert <a href="" id="link1">link text</a>.</p>
+
+</section>
+
+</div>
+
+</details>
+
+<!-- Field flow code -->
+
+<details id="app2">
+
+<summary>Code</summary>
+
+<details>
+
+<summary>HTML</summary>
+
+<pre><code>// Alert
+
+&lt;section class="<span class="cl-alert-info">alert alert-info </span><span class="hidden cl-alert-success">alert alert-success </span><span class="hidden cl-alert-warning">alert alert-warning </span><span class="hidden cl-alert-danger">alert alert-danger </span>"&gt;
+
+<span class="hidden cl-hidden">&lt;h2 class="mrgn-tp-0"&gt;Title&lt;/h2&gt;<br></span>&lt;p&gt;Content of your alert &lt;a href="" class="<span class="hidden cl-alert-link">alert-link </span>"&gt;link text&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/section&gt;
+
 </code>
+
 </pre>
-                     </details>
-                     <details>
-                        <summary>Struts</summary>
-                        <pre><code>code here</code></pre>
-                     </details>
-                  </details>
-               </div>
-            </div>
-         </div>
-         <!-- Field flow warnings -->
-         <div class="mrgn-tp-md "></div>
-      </div>
-   </div>
-   <h4>Correct use</h4>
-   <dl class="dl-horizontal">
-      <dt>General</dt>
-      <dd>
-         <ul class="fa-ul">
-            <li><span class="fas fa-check fa-li text-success"></span>Place in the logical flow of a page</li>
-            <li><span class="fas fa-check fa-li text-success"></span>Ensure it relates to the content immediately around it</li>
-            <li><span class="fas fa-check fa-li text-success"></span>Begin <code>&lt;section&gt;</code> with a heading that is specific to the featured content, and contained within it</li>
-            <li><span class="fas fa-check fa-li text-success"></span>Use a general heading only if a specific heading is not possible (for example, "Congratulations", "Summary", "Attention", etc.)</li>
-            <li>
-               <span class="fas fa-times fa-li text-danger"></span>Do not use <code>&lt;section&gt;</code> within another section, or validation issues occur
-               <ul>
-                  <li>Use <code>&lt;div&gt;</code> to style the alert</li>
-               </ul>
-            </li>
-         </ul>
-      </dd>
-	  <dt>Info alert</dt>
-      <dd>
-         <ul class="fa-ul">
-            <li><span class="fas fa-check fa-li text-success"></span>Use <code>.alert-info</code> <strong>to highlight fairly important information</strong></li>
-            <li><span class="fas fa-check fa-li text-success"></span>With the Info alert, the title appears next to a letter "i" icon; the content background is blue</li>
-            <li><span class="fas fa-check fa-li text-success"></span>Use to highlight targeted information for specific segment groups</li>
-         </ul>
-      </dd>
-      <dt>Success alert</dt>
-      <dd>
-         <ul class="fa-ul">
-            <li><span class="fas fa-check fa-li text-success"></span>Use <code>.alert-success</code> <strong>to acknowledge something positive</strong> for example, a completed task, something that  is correct</li>
-            <li><span class="fas fa-check fa-li text-success"></span>With the Success alert, the title appears next to a checkmark icon; the content background is green.</li>
-         </ul>
-      </dd>
-      <dt>Warning alert</dt>
-      <dd>
-         <ul class="fa-ul">
-            <li><span class="fas fa-check fa-li text-success"></span>Use <code>.alert-warning</code> <strong>to warn the user</strong></li>
-            <li><span class="fas fa-check fa-li text-success"></span>With the Warning alert, the title appears next to a caution icon; the content background is yellow.</li>
-         </ul>
-      </dd>
-      <dt>Danger alert</dt>
-      <dd>
-         <ul class="fa-ul">
-            <li><span class="fas fa-check fa-li text-success"></span>Use <code>.alert-danger</code><strong> for</strong> <strong>very important, negative or dangerous, information/actions</strong> for example, systems that are down, pending changes to X, "Are you sure you want to delete X?"</li>
-            <li><span class="fas fa-check fa-li text-success"></span>With the Danger alert, the title appears next to an exclamation icon; the content background is red.</li>
-         </ul>
-      </dd>
-      <dt>Alert link</dt>
-      <dd>
-         <ul class="fa-ul">
-            <li><span class="fas fa-check fa-li text-success"></span>To override the default appearance of a link, use the <code>.alert-link</code> utility class to quickly provide matching coloured links within any alert</li>
-         </ul>
-      </dd>
-   </dl>
-   <!--
-      <h3 id="h-2-2">Enhanced use</h3>
-      <h4>Alert links</h4>
-      <p>Use to override the default appearance of a link, use the <code>.alert-link</code> utility class to quickly provide matching coloured links within any alert.</p>
-      <section class="alert alert-success">
-       <p>... <a href="#" class="alert-link">link text</a>.</p>
-      </section>
-      
-      <section class="alert alert-info">
-       <p>... <a href="#" class="alert-link">link text</a>.</p>
-      </section>
-      
-      <section class="alert alert-warning">
-      <p>... <a href="#" class="alert-link">link text</a>.</p>
-      </section>
-      
-      <section class="alert alert-danger">
-       <p>... <a href="#" class="alert-link">link text</a>.</p>
-      </section>
-      -->
+
+</details>
+
+<details>
+
+<summary>Struts</summary>
+
+<pre><code>code here</code></pre>
+
+</details>
+
+</details>
+
+<details id="app3">
+
+<summary>Prototyping libraries</summary>
+
+<p>Download the library of components:</p>
+
+<ul class="fa-ul">
+
+<li><a href=""><span class="fa fa-li fa-download"></span> Axure library</a></li>
+
+<li><a href=""><span class="fa fa-li fa-download"></span> Figma library</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Field flow warnings -->
+
+<div class="mrgn-tp-md "></div>
+
+</div>
+
+</div>
+
+<h4>Correct use</h4>
+
+<dl class="dl-horizontal">
+
+<dt>General</dt>
+
+<dd>
+
+<ul class="fa-ul">
+
+<li><span class="fas fa-check fa-li text-success"></span>Place in the logical flow of a page</li>
+
+<li><span class="fas fa-check fa-li text-success"></span>Ensure it relates to the content immediately around it</li>
+
+<li><span class="fas fa-check fa-li text-success"></span>Begin <code>&lt;section&gt;</code> with a heading that is specific to the featured content, and contained within it</li>
+
+<li><span class="fas fa-check fa-li text-success"></span>Use a general heading only if a specific heading is not possible (for example, "Congratulations", "Summary", "Attention", etc.)</li>
+
+<li>
+
+<span class="fas fa-times fa-li text-danger"></span>Do not use <code>&lt;section&gt;</code> within another section, or validation issues occur
+
+<ul>
+
+<li>Use <code>&lt;div&gt;</code> to style the alert</li>
+
+</ul>
+
+</li>
+
+</ul>
+
+</dd>
+
+<dt>Info alert</dt>
+
+<dd>
+
+<ul class="fa-ul">
+
+<li><span class="fas fa-check fa-li text-success"></span>Use <code>.alert-info</code> <strong>to highlight fairly important information</strong></li>
+
+<li><span class="fas fa-check fa-li text-success"></span>With the Info alert, the title appears next to a letter "i" icon; the content background is blue</li>
+
+<li><span class="fas fa-check fa-li text-success"></span>Use to highlight targeted information for specific segment groups</li>
+
+</ul>
+
+</dd>
+
+<dt>Success alert</dt>
+
+<dd>
+
+<ul class="fa-ul">
+
+<li><span class="fas fa-check fa-li text-success"></span>Use <code>.alert-success</code> <strong>to acknowledge something positive</strong> for example, a completed task, something that is correct</li>
+
+<li><span class="fas fa-check fa-li text-success"></span>With the Success alert, the title appears next to a checkmark icon; the content background is green.</li>
+
+</ul>
+
+</dd>
+
+<dt>Warning alert</dt>
+
+<dd>
+
+<ul class="fa-ul">
+
+<li><span class="fas fa-check fa-li text-success"></span>Use <code>.alert-warning</code> <strong>to warn the user</strong></li>
+
+<li><span class="fas fa-check fa-li text-success"></span>With the Warning alert, the title appears next to a caution icon; the content background is yellow.</li>
+
+</ul>
+
+</dd>
+
+<dt>Danger alert</dt>
+
+<dd>
+
+<ul class="fa-ul">
+
+<li><span class="fas fa-check fa-li text-success"></span>Use <code>.alert-danger</code><strong> for</strong> <strong>very important, negative or dangerous, information/actions</strong> for example, systems that are down, pending changes to X, "Are you sure you want to delete X?"</li>
+
+<li><span class="fas fa-check fa-li text-success"></span>With the Danger alert, the title appears next to an exclamation icon; the content background is red.</li>
+
+</ul>
+
+</dd>
+
+<dt>Alert link</dt>
+
+<dd>
+
+<ul class="fa-ul">
+
+<li><span class="fas fa-check fa-li text-success"></span>To override the default appearance of a link, use the <code>.alert-link</code> utility class to quickly provide matching coloured links within any alert</li>
+
+</ul>
+
+</dd>
+
+</dl>
+
+<h3 id="h-2-2">Related components</h3>
+
+<p>Additional add-on features and behaviours are available.</p>
+
+<ul class="list-unstyled row wb-eqht-grd list-grid-hover">
+
+<!-- Dismissable content -->
+
+<li class="col-md-4" id="dismissable">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"> <img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/dismissable.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="dismissable-e.html">Dismissable content</a></h3>
+
+</div></div></div></li>
+
+<!-- Headings -->
+
+<li class="col-md-4" id="Headings">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"> <img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Headings.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Headings-e.html">Headings</a></h3>
+
+</div></div></div></li>
+
+<!-- Labels -->
+
+<li class="col-md-4" id="Labels">
+
+<div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+
+<div class="panel-body p-0"> <img class="img-responsive hidden-xs" src="http://workzone/WET4/development/gxp031/cra-master/design-system/components/images/components/Labels.jpg">
+
+<div class="panel-body"><h3 class="mrgn-tp-0"><a class="stretched-link" href="Labels-e.html">Labels</a></h3>
+
+</div></div></div></li>
+
+</ul>
+
 </div>
 
 	   <div id="def-preFooter"></div>
@@ -256,5 +449,6 @@
          }));
       </script> 
       <script src="https://test.canada.ca/cra/js/alpha-banner.js"></script>
+	   <script src="js/components.js"></script>
    </body>
 </html>
