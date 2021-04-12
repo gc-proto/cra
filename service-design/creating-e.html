@@ -19,10 +19,11 @@
          }));
       </script>
       <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
-      <link rel="stylesheet" href="css/provisional-topic.css"/>
-      <link rel="stylesheet" href="css/service-design.css"/>
-      <link rel="stylesheet" href="css/step-list.css"/>
-      <link rel="stylesheet" href="css/stacked-header.css"/>
+      <link rel="stylesheet" href="../css/provisional-topic.css"/>
+      <link rel="stylesheet" href="../css/service-design.css"/>
+      <link rel="stylesheet" href="../css/step-list.css"/>
+      <link rel="stylesheet" href="../css/stacked-header.css"/>
+	  <link href="../../css/design-system.css" rel="stylesheet">
    </head>
    <body vocab="http://schema.org/" typeof="WebPage" class="cnt-wdth-lmtd">
       <div id="def-top"> </div>
@@ -46,411 +47,397 @@
            showPreContent: true
          });
       </script>
-      <main role="main" property="mainContentOfPage" class="container">
-          <h1 property="name" id="wb-cont" class="provisional gc-thickline"><span class="stacked"><span>Create and maintain content</span> - <span>CRA web service manual</span></span></h1>
-          <p>Use these rules to create content that is easy to find, understand, and use.</p>
+<main role="main" property="mainContentOfPage" class="container">
+<h1 property="name" id="wb-cont" class="provisional gc-thickline"><span class="stacked"><span>Create and maintain content</span> - <span>CRA web service manual</span></span></h1>
+<p>Use these rules to create content that is easy to find, understand, and use.</p>
 
-		
-		  <div class="row mrgn-bttm-lg">
-		   <div class="col-md-2">
-		   <p class="mrgn-tp-md"><span class="fas fa-sliders-h"></span> Category filter</p>
-		   </div>
-		  <div class="col-md-9">
-<div class="btn-group btn-group-justified wb-eqht" role="toolbar" data-wb-actionmng='[{"trggroup": "test", "action": "removeClass", "source": ".wb-toggle", "class": "btn-primary" }]'>
-  <div class="btn-group  hght-inhrt">
-<button title="Make content findable" type="button" class="btn btn-default hght-inhrt wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-findable)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-findable">
+	<div class="row">
+     <div class="col-xs-6 col-md-12 mrgn-bttm-md" role="toolbar" data-wb-actionmng='[{"trggroup": "test", "action": "removeClass", "source": ".wb-toggle", "class": "btn-primary" }]'>
+	<span class="mrgn-rght-md"><span class="fas fa-sliders-h"></span> Make your content: </span>
+            <button title="Make content findable" type="button" class="btn btn-default wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-findable)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-findable">
+           Findable</button> 
+            <button title="Make content easy to understand" type="button" class="btn btn-default wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-understand)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-understand">
+            Easy to understand</button>
+            <button title=" Make content actionable" class="btn btn-default wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-actionable)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-actionable">
+            Task-oriented</button>
+            <button title="Make content accessible and inclusive" type="button" class="btn btn-default wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-accessible)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-accessible">
+            Accessible and inclusive</button> 
+      <button class="btn btn-link hght-inhrt wb-toggle" data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".fltr-none", "class": "hidden"}]'>Reset</button>
+   </div>
+   </div>
 
-Make content findable</button> 
-</div><div class="btn-group  hght-inhrt">
-<button title="Make content easy to understand" type="button" class="btn btn-default hght-inhrt wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-understand)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-understand">
+<ul class="wb-filter list-unstyled row wb-eqht-grd list-grid-hover" id="filtergroup" data-wb-filter='{ "selector": ".filterclass" }'>  
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-understand fltr-accessible">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3 ">
+               <a class="stretched-link" href="audience-e.html">                          
+               Consider the needs of the audience
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>Be aware of literacy and numeracy levels</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Design for accessibilty and inclusiveness</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Know about device, screen size and technology use</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Stop writing for specialists </li>
+               <li><span class="fas fa-check text-success fa-li"></span>Create bilingual content</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+	  </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-findable fltr-understand">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="scannable-e.html">
+               Create scannable content
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-understand fltr-accessible">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="format-e.html">
+               Determine the right format
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span> Know the different format types</li>
+               <li><span class="fas fa-check text-success fa-li"></span> Avoid frequently asked questions (FAQs)</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-understand fltr-actionable">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="tasks-e.html">
+               Determine user tasks
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-findable fltr-actionable">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="consistency-e.html">
+               Ensure consistency and predictability
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-actionable">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="point-e.html">
+               Get to the point
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-accessible">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="time-e.html">
+               Give enough time to read and use content
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-findable">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="strategy-e.html">
+               Have a content strategy
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-findable fltr-actionable">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="keywords-e.html">
+               Identify users’ keywords
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-accessible">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="../../components/images-e.html">
+               Make images perceivable to all
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-findable">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="search-e.html">
+               Make it easy to find content in search
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-accessible">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="../../components/vidoes-e.html">
+               Make videos perceivable to all
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-findable fltr-actionable">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="point-need-e.html">
+               Provide content at the point of need
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-findable fltr-understand">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="important-e.html">
+               Start with the most important information
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-understand">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="data-e.html">
+               Use data and research
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+               <li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-findable fltr-understand fltr-accessible">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="structure-e.html">
+               Use effective content structure
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>Present information gradually through progressive disclosure</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Write in complete blocks</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Consider page length</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Know when to alphabetize</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-findable  fltr-accessible fltr-actionable">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="../../components/links-e.html">
+               Use links effectively
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>Use links strategically</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Carefully select related content</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Write descriptive links</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Focus on the task</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Make sure that links work</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Link correctly to non-government or internal-to-government content</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Correctly capitalize links</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-understand">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="tone-e.html">
+               Use the right tone and voice
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>Address the person in page titles, links and navigation labels</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Use "we" to refer to the Government of Canada</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Use contractions</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Distinguish between an obligation and a recommendation</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Explain references to legislation</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: xxx, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-understand fltr-accessible">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="plain-e.html">
+               Write in plain language
+               </a>
+            </h2>
+            <p class="mrgn-bttm-0">	
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>Avoid jargon, idioms, and expressions</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Use abbreviations and acronyms correctly</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Use short and simply sentences and paragraphs</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Write in an active voice</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Use verbs correctly</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Check the readability score</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: gerund, xxx</p>
+      </div>
+   </li>
+   <li class="col-md-4 col-sm-6 col-xs-12 mrgn-tp-md filterclass fltr-findable fltr-accessible">
+      <div class="panel panel-default brdr-rds-0 position-relative hght-inhrt">
+         <div class="panel-body">
+            <h2 class="mrgn-tp-0 h3">
+               <a class="stretched-link" href="../../components/headings-e.html">
+               Write useful page titles and headings
+               </a>
+            </h2>
+            <ul class="fa-ul">
+               <li><span class="fas fa-check text-success fa-li"></span>Create clear paths to information</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Write useful headings</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Make the page heading unique</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Front-load keywords</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Correctly capitalize headings</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Avoid punctuation</li>
+               <li><span class="fas fa-check text-success fa-li"></span>Correctly structure headings</li>
+            </ul>
+         </div>
+         <p class="hidden"><span class="fa fa-tag"></span>Tags: scent of information, H1</p>
+      </div>
+   </li>
+</ul>  
 
-Make content easy to understand</button> 
-</div>
-<div class="btn-group  hght-inhrt">
-<button title=" Make content actionable" class="btn btn-default hght-inhrt wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-actionable)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-actionable">
-
-Make content actionable</button>
-</div>
-<div class="btn-group  hght-inhrt">
-<button title="Make content accessible and inclusive" type="button" class="btn btn-default hght-inhrt wb-toggle mrgn-bttm-sm" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on"}' data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".filterclass:not(.fltr-accessible)", "class": "hidden"}, {"action": "addClass", "class": "btn-primary" } ]' id="btn-accessible">
-
-Make content accessible and inclusive</button> 
-</div></div>
-		</div>
-		<div class="col-md-1">
-
-
-<button class="btn btn-link hght-inhrt wb-toggle mrgn-tp-md" data-wb-doaction='[{"action": "run", "trggroup": "test"}, {"action": "removeClass", "source": ".filterclass, .prov", "class": "hidden"}, {"action": "addClass", "source": ".fltr-none", "class": "hidden"}]'>Reset</button>
-</div></div>
-
-		    <table class="table wb-tables tbl-gridify" id="table1" data-wb-tables='{"ordering":false, "oLanguage": {
-   "sSearch": "Keyword filter"
- }, "bInfo" : false,  "paging":false, "lengthMenu": [ [15, 30, -1], [15, 30, "All"] ], "columns": [
-            null, { "className": "wb-inv"} ]}'>
-            <thead>
-               <tr>
-                  <th scope="col">Title and description</th>
-                  <th scope="col">Topics</th>
-                 
-                 
-               </tr>
-            </thead>
-            <tbody class="wb-eqht mrgn-tp-md">
-               <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-understand fltr-accessible">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="audience-e.html">
-                          
-                           Consider the needs of the audience
-                        </a>
-                     </h3>
-                    
-					 <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>Be aware of literacy and numeracy levels</li><li>
-<span class="fas fa-check text-success fa-li"></span>Design for accessibilty and inclusiveness</li><li>
-<span class="fas fa-check text-success fa-li"></span>Know about device, screen size and technology use</li><li>
-<span class="fas fa-check text-success fa-li"></span>Stop writing for specialists </li><li>
-<span class="fas fa-check text-success fa-li"></span>Create bilingual content</li></ul>
-                  </td>
-                 <td> Tag1, Tag3</td>
-                
-                  
-               </tr>
-                <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-findable fltr-understand">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="scannable-e.html">
-                          
-                           Create scannable content
-                        </a>
-                     </h3>
-                   <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li></ul>
-                  </td>
-                  <td> Tag1, Tag3</td>
-                 
-               </tr>
-			   <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-understand fltr-accessible">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="format-e.html">
-                          
-                           Determine the right format
-                        </a>
-                     </h3>
-                    <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span> Know the different format types</li>
-<li><span class="fas fa-check text-success fa-li"></span> Avoid frequently asked questions (FAQs)</li></ul>
-                  </td>
-                  <td> Tag1, Tag2</td>
-                  
-               </tr>
-                <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-understand fltr-actionable">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="tasks-e.html">
-                           
-                           Determine user tasks
-                        </a>
-                     </h3>
-                    <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li></ul>
-                  </td>
-                  <td> Tag2, Tag3</td>
-                  
-                  
-               </tr>
-                
-                <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-findable fltr-actionable">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="consistency-e.html">
-                          
-                           Ensure consistency and predictability
-                        </a>
-                     </h3>
-                     <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li></ul>
-                  </td>
-                  <td> Tag1, Tag3</td>
-                  
-                
-               </tr>
-                <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-actionable">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="point-e.html">
-                           
-                           Get to the point
-                        </a>
-                     </h3>
-                     <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li></ul>
-                  </td>
-                  <td> Tag2, Tag3</td>
-                  
-                 
-               </tr>
-			   <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-accessible">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="time-e.html">
-                           
-                           Give enough time to read and use content
-                        </a>
-                     </h3>
-                     <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li></ul>
-                  </td>
-                  <td> Tag2, Tag3</td>
-                  
-                 
-               </tr>
-			   <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-findable">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="strategy-e.html">
-                         
-                           Have a content strategy
-                        </a>
-                     </h3>
-                     <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li></ul>
-                  </td>
-                  <td> Tag2, Tag3</td>
-                  
-                 
-               </tr>
-			   <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-findable fltr-actionable">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="keywords-e.html">
-                          
-                           Identify users’ keywords
-                        </a>
-                     </h3>
-                    <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li></ul>
-                  </td>
-                  <td> Tag2, Tag3</td>
-                  
-                 
-               </tr>
-			   <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-accessible">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="../../components/images-e.html">
-                           
-                           Make images perceivable to all
-                        </a>
-                     </h3>
-                     <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li></ul>
-                  </td>
-                  <td> Tag2, Tag3</td>
-                  
-                 
-               </tr>
-			   <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-findable">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="search-e.html">
-                           
-                           Make it easy to find content in search
-                        </a>
-                     </h3>
-                    <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li></ul>
-                  </td>
-                  <td> Tag2, Tag3</td>
-                  
-                 
-               </tr>
-			   <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-accessible">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="../../components/vidoes-e.html">
-                           
-                           Make videos perceivable to all
-                        </a>
-                     </h3>
-                     <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li></ul>
-                  </td>
-                  <td> Tag2, Tag3</td>
-                  
-                 
-               </tr>
-			   <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-findable fltr-actionable">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="point-need-e.html">
-                           
-                           Provide content at the point of need
-                        </a>
-                     </h3>
-                    <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li></ul>
-                  </td>
-                  <td> Tag2, Tag3</td>
-                  
-                 
-               </tr>
-			   <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-findable fltr-understand">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="important-e.html">
-                           
-                           Start with the most important information
-                        </a>
-                     </h3>
-                     <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li></ul>
-                  </td>
-                  <td> Tag2, Tag3</td>
-                  
-                 
-               </tr>
-			   <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-understand">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="data-e.html">
-                          
-                           Use data and research
-                        </a>
-                     </h3>
-                     <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li>
-<li><span class="fas fa-check text-success fa-li"></span>[details from ToC]</li></ul>
-                  </td>
-                  <td> Tag2, Tag3</td>
-                  
-                 
-               </tr>
-			   <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-findable fltr-understand fltr-accessible">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="structure-e.html">
-                          
-                           Use effective content structure
-                        </a>
-                     </h3>
-                    <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>Present information gradually through progressive disclosure</li>
-<li><span class="fas fa-check text-success fa-li"></span>Write in complete blocks</li>
-<li><span class="fas fa-check text-success fa-li"></span>Consider page length</li>
-<li><span class="fas fa-check text-success fa-li"></span>Know when to alphabetize</li>
-</ul>
-                  </td>
-                  <td> Tag2, Tag3</td>
-                  
-                 
-               </tr>
-			   <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-findable  fltr-accessible fltr-actionable">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="../../components/links-e.html">
-                          
-                           Use links effectively
-                        </a>
-                     </h3>
-                    <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>Use links strategically</li>
-<li><span class="fas fa-check text-success fa-li"></span>Carefully select related content</li>
-<li><span class="fas fa-check text-success fa-li"></span>Write descriptive links</li>
-<li><span class="fas fa-check text-success fa-li"></span>Focus on the task</li>
-<li><span class="fas fa-check text-success fa-li"></span>Make sure that links work</li>
-<li><span class="fas fa-check text-success fa-li"></span>Link correctly to non-government or internal-to-government content</li>
-<li><span class="fas fa-check text-success fa-li"></span>Correctly capitalize links</li>
-					 </ul>
-                  </td>
-                  <td> Tag2, Tag3</td>
-                  
-                 
-               </tr>
-			   <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-understand">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="tone-e.html">
-                          
-                           Use the right tone and voice
-                        </a>
-                     </h3>
-                     <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>Address the person in page titles, links and navigation labels</li>
-<li><span class="fas fa-check text-success fa-li"></span>Use "we" to refer to the Government of Canada</li>
-<li><span class="fas fa-check text-success fa-li"></span>Use contractions</li>
-<li><span class="fas fa-check text-success fa-li"></span>Distinguish between an obligation and a recommendation</li>
-<li><span class="fas fa-check text-success fa-li"></span>Explain references to legislation</li></ul>
-                  </td>
-                  <td> Tag2, Tag3</td>
-                  
-                 
-               </tr>
-			   <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-understand fltr-accessible">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="plain-e.html">
-                           
-                           Write in plain language
-                        </a>
-                     </h3>
-                     <p class="mrgn-bttm-0">	<ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>Avoid jargon, idioms, and expressions</li>
-<li><span class="fas fa-check text-success fa-li"></span>Use abbreviations and acronyms correctly</li>
-<li><span class="fas fa-check text-success fa-li"></span>Use short and simply sentences and paragraphs</li>
-<li><span class="fas fa-check text-success fa-li"></span>Write in an active voice</li>
-<li><span class="fas fa-check text-success fa-li"></span>Use verbs correctly</li>
-<li><span class="fas fa-check text-success fa-li"></span>Check the readability score</li></ul>
-                  </td>
-                  <td>gerund</td>
-                  
-                 
-               </tr>
-			   <tr class="col-sm-6 col-md-4  brdr-rght brdr-lft brdr-tp brdr-bttm filterclass fltr-findable fltr-accessible">
-                  <td class="eqht-trgt brdr-0">
-                     <h3 class="mrgn-tp-md">
-                        <a href="../../components/headings-e.html">
-                           
-                           Write useful page titles and headings
-                        </a>
-                     </h3>
-                     <ul class="small fa-ul"><li><span class="fas fa-check text-success fa-li"></span>Create clear paths to information</li>
-<li><span class="fas fa-check text-success fa-li"></span>Write useful headings</li>
-<li><span class="fas fa-check text-success fa-li"></span>Make the page heading unique</li>
-<li><span class="fas fa-check text-success fa-li"></span>Front-load keywords</li>
-<li><span class="fas fa-check text-success fa-li"></span>Correctly capitalize headings</li>
-<li><span class="fas fa-check text-success fa-li"></span>Avoid punctuation</li>
-<li><span class="fas fa-check text-success fa-li"></span>Correctly structure headings</li></ul>
-                  </td>
-                  <td>scent of information, h1</td>
-                  
-                 
-               </tr>
-			  
-			  
-            </tbody>
-         </table>
-		 
         <div id="def-preFooter"></div>
          <!-- Write closure template --> 
          <script type="text/javascript">
