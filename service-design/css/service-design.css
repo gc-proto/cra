@@ -31,3 +31,9 @@ h1 {margin-top:.25em;}
 .ds-example>.wb-tabs>.tabpanels>details {padding: 30px;}
 .ds-example>.wb-tabs>.tabpanels>details {background:#f9f9f9;padding: 30px; margin-bottom:0;}
 }
+
+.list-grid-hover .panel:hover {
+	background-color:#f5f5f5;
+	border: 1px solid #959595;
+	box-shadow: 0px 0px 8px #e3e3e3;
+} 
