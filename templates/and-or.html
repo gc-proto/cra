@@ -261,5 +261,12 @@
          }));
       </script>
       <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
+	      <script>
+$( ".wb-fieldflow" ).on( "wb-ready.wb-fieldflow", function( event ) {
+	$(".radioselected .radio:first-of-type label input").prop("checked", true);
+	}
+);
+ 
+	</script>
    </body>
 </html>
