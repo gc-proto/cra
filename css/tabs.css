@@ -1,0 +1,27 @@
+.ds-example {margin-top:15px;border: 1px solid #e3e3e3;
+	box-shadow: 0px 0px 8px #e3e3e3;}
+
+.ds-example>.wb-tabs>.tabpanels {background:#f9f9f9;}
+.ds-example>.wb-tabs>.tabpanels legend {font-size:80%; font-weight:700; margin: 0 0 5px;}
+.ds-example>.wb-tabs>.tabpanels fieldset {padding-top:0;}
+.ds-example>.wb-tabs>.tabpanels>details>summary {background:#fff; border-radius: 0;}
+.ds-example>.wb-tabs [role=tablist]>li:focus,.ds-example>.wb-tabs [role=tablist]>li:hover{background:#ddd;}
+.ds-example>.wb-tabs {margin-bottom:0;}
+.ds-example>.wb-tabs>.tabpanels>details {margin-bottom:0;}
+.ds-example .panel-body {box-shadow: none;}
+@media screen and (max-width: 991px){
+	.ds-example>.wb-tabs .tgl-panel {
+		margin-top:15px;
+	}
+}
+@media screen and (min-width: 992px) {
+	.ds-configuration {background:#fff; padding: 0 10px; margin:-30px -30px -30px 0}
+	
+.ds-example>.wb-tabs>.tabpanels>details {
+	border:none; padding:15px;}
+.ds-example>.wb-tabs [role=tablist]>li {border:none;background:none;}
+.ds-example>.wb-tabs [role=tablist]>li.active a {border-width:0 0 4px;}
+/* .ds-example>.wb-tabs>.tabpanels>details:first-child {padding: 30px;} */
+.ds-example>.wb-tabs>.tabpanels>details {padding: 30px;}
+.ds-example>.wb-tabs>.tabpanels>details {background:#f9f9f9;padding: 30px; margin-bottom:0;}
+}
