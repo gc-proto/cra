@@ -24,10 +24,10 @@
 	padding-right: 15px;
 	width: 100%;
 }
-[class*=cnjnctn-type-] [class*=cnjnctn-col]> :first-child {
+[class*=cnjnctn-type-] [class*=cnjnctn-col]> :first-child:not([class*=mrgn-tp-]) {
 	margin-top: 0px;
 }
-[class*=cnjnctn-type-] [class*=cnjnctn-col]> :last-child {
+[class*=cnjnctn-type-] [class*=cnjnctn-col]> :last-child:not([class*=mrgn-bttm-]) {
 	margin-bottom: 0px;
 }
 [class*=cnjnctn-type-] [class*=cnjnctn-col]:not(:last-child) {
