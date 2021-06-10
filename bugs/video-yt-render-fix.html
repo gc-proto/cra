@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+      <title>Video bug with doaction and youtube video part 1 – Canada.ca</title>
+      <meta content="width=device-width,initial-scale=1" name="viewport">
+      <meta name=”robots” content=”noindex”>
+      <!-- Meta data -->
+      <!-- Meta data-->
+      <!-- Load closure template scripts -->
+      <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+      <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+      <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+		 
+		 <style>
+			 	.wb-mltmd-fix iframe, .wb-mltmd-fix object, .wb-mltmd-fix video {
+	display: block;
+	width: 100%;
+}
+	.wb-mltmd-fix {
+ display:block;
+ position:relative
+}
+.wb-mltmd.video:not(.playing):not(.waiting) .display {
+ cursor:pointer;
+ position:relative
+}
+.wb-mltmd.video:not(.playing):not(.waiting) .display:before {
+ text-align:center
+}
+.wb-mltmd.video:not(.playing):not(.waiting) .display:after {
+ color:#fff;
+ content:"";
+ font-family:"Glyphicons Halflings";
+ font-size:65px;
+ text-align:center
+}
+.wb-mltmd.video.waiting .display {
+ position:relative
+}
+.wb-mltmd.video.waiting .display:after,
+.wb-mltmd.video.waiting .display:before {
+ display:block
+}
+.wb-mltmd.audio object {
+ position:absolute
+}
+.wb-mltmd-fix video {
+ height:auto;
+ width:100%
+}
+.wb-mltmd.cc_on .wb-mm-cc {
+ display:table;
+ height:calc(2.875em + 1em);
+ padding:.5em
+}
+.wb-mltmd.cc_on:not(.errmsg) .cc:after {
+ border-bottom:3px solid #4aafff;
+ content:" ";
+ display:block;
+ margin-left:-2px;
+ width:1.2em
+}
+.wb-mltmd.youtube.video:not(.playing):not(.waiting) .display:before {
+ background:#3e3e3e
+}
+.wb-mltmd.skn-lt {
+ border-bottom:1px solid #ddd;
+ color:#000
+}
+.wb-mltmd.skn-lt .wb-mm-ctrls {
+ background:#fff;
+ color:#000
+}
+.wb-mltmd.skn-lt .wb-mm-ctrls .btn {
+ background:#fff;
+ border:0;
+ color:#000
+}
+.wb-mltmd.skn-lt .wb-mm-ctrls .btn[disabled]:active:hover {
+ color:#000
+}
+.wb-mltmd-fix .wb-share {
+ text-align:right
+}
+.wb-mltmd-fix details[open],
+.wb-mltmd-fix summary {
+ border-top-left-radius:0;
+ border-top-right-radius:0
+}
+			 
+			 </style>
+      <!-- Write closure template -->
+      <script type="text/javascript">
+         document.write(wet.builder.refTop({
+         }));
+      </script>
+     
+      <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
+   </head>
+   <body vocab="http://schema.org/" typeof="WebPage">
+      <div id="def-top">
+      </div>
+      <!-- Write closure template -->
+      <script type="text/javascript">
+         var defTop = document.getElementById("def-top");
+         defTop.outerHTML = wet.builder.top({
+           lngLinks: [{
+         
+             lang: "fr",
+             href: "#",
+             text: "Français"
+           }],
+           breadcrumbs: [{
+             title: "Canada.ca",
+             href: "https://www.canada.ca/en.html"
+           }],
+           search: true,
+           siteMenu: true,
+           showPreContent: true
+         });
+      </script>
+      <main role="main" property="mainContentOfPage" class="container">
+         <h1 property="name" id="wb-cont">Video bug with doaction and youtube video part 3 - fix</h1>
+        <p>There seems to be a bug that conflicts the doaction plugin and the multimedia plugin when rendering YouTube videos.</p>
+        <p>This example pulls in the multimedia script (<code>multimedia.js</code>, and then changes the compent name to the class <code>wb-mltmd-fix-fix</code> , along with adding custom CSS to fix the sizing issues (based on the <code>wb-mltmd-fix</code> being used for CSS rendering) so that now YouTube video does render, and the doaction scripts work as intended.</p>
+        <p>The code added is <code>	wb.ready( $( eventTarget ), componentName );</code></p>
+		<h2>Plugins above video</h2>
+        <h3>Fieldflow<span class="label label-success">Works</span></h3>
+	<div class="wb-fieldflow">
+	<p>Find the plugin for the action you need:</p>
+
+	<ul>
+		<li><a href="https://wet-boew.github.io/v4.0-ci/demos/data-ajax/data-ajax-en.html">Inserting content</a></li>
+		<li><a href="https://wet-boew.github.io/v4.0-ci/demos/lightbox/lightbox-en.html">Photo galery</a></li>
+		<li><a href="https://wet-boew.github.io/v4.0-ci/demos/charts/charts-en.html">Draw charts</a></li>
+		<li><a href="https://wet-boew.github.io/v4.0-ci/demos/details/details-en.html">Expand and collapse content</a></li>
+		<li><a href="https://wet-boew.github.io/v4.0-ci/demos/equalheight/equalheight-en.html">Set a consistant height</a></li>
+		<li><a href="https://wet-boew.github.io/v4.0-ci/demos/overlay/overlay-en.html">Popup content</a></li>
+	</ul>
+</div>
+        <h3>Do action<span class="label label-sucess">Works</span></h3>
+	<p><button class="btn btn-default" data-wb-doaction='{"action": "addClass", "source": "#example1", "class": "bg-info"}'>Pressing this button...</button></p>
+	<div id="example1"><p>&hellip;should make this background blue</p></div>
+	<h2>Video HTML5<span class="label label-info">Conflict is not here</span></h2>
+	<figure class="wb-mltmd-fix">
+<video poster="demo/video1-en.jpg" title="Looking for a Job">
+<source type="video/mp4" src="https://wet-boew.github.io/wet-boew-attachments/videos/video1-en.mp4">
+<track src="#inline-captions" kind="captions" data-type="text/html" srclang="en" label="English">
+</video>
+<figcaption>
+<details id="inline-captions">
+<summary>Looking for a Job - HTML5 Transcript/Captions</summary>
+<p class="wet-boew-vd"><strong>(Animated pen draws a red line that leads into the text Looking for A Job)</strong></p>
+<p class="wet-boew-vd"><strong>(Cut to a medium shot of the Host. LINE DRAWING GRAPHIC: Stick person appears and waves.)</strong></p>
+<p><span class="wb-tmtxt" data-begin="2.50s" data-dur="3.84s">Hi, my name is Eric, and I&#39;m a Service Canada employee.</span></p>
+<p><span class="wb-tmtxt" data-begin="6.34s" data-dur="1.87s">You may have heard the old saying that, </span>
+<span class="wb-tmtxt" data-begin="8.21s" data-dur="1.84s">when you&#39;re out of work, finding a job is your </span>
+<span class="wb-tmtxt" data-begin="10.04s" data-dur="1.70s">full-time occupation.</span></p>
+<p class="wet-boew-vd"><strong>(LINE DRAWING GRAPHIC: Stick person walks to right side of screen. Screenshot of job bank website appears in animated computer screen.)</strong></p>
+<p><span class="wb-tmtxt" data-begin="11.75s" data-dur="2.40s">Well, there&#39;s a lot of truth to that:</span></p>
+<p><span class="wb-tmtxt" data-begin="14.15s" data-dur="2.57s">finding a job does take time… and effort.</span></p>
+<p class="wet-boew-vd"><strong>(LINE DRAWING GRAPHIC: Stick person rests head against computer screen in discouragement. But then perks-up.)</strong></p>
+<p><span class="wb-tmtxt" data-begin="16.72s" data-dur="1.40s">But don&#39;t get discouraged.</span></p>
+<p><span class="wb-tmtxt" data-begin="18.12s" data-dur="1.90s">There are a number of online tools and programs available </span>
+<span class="wb-tmtxt" data-begin="20.02s" data-dur="1.94s">to help you find a job.</span></p>
+<p class="wet-boew-vd"><strong>(Close-up of the Host.)</strong></p>
+<p><span class="wb-tmtxt" data-begin="21.96s" data-dur="2.30s">No matter what you&#39;re looking for there are many Web sites </span>
+<span class="wb-tmtxt" data-begin="24.26s" data-dur="2.37s">where employers post job notices looking for people </span>
+<span class="wb-tmtxt" data-begin="26.63s" data-dur="1.90s">to fill vacant positions.</span></p>
+<p class="wet-boew-vd"><strong>(Job Bank website reappears.)</strong></p>
+<p><span class="wb-tmtxt" data-begin="28.53s" data-dur="2.34s">One of these sites is called Job Bank.</span></p>
+<p><span class="wb-tmtxt" data-begin="30.86s" data-dur="2.17s">It&#39;s updated every day, and lists job opportunities </span>
+<span class="wb-tmtxt" data-begin="33.03s" data-dur="2.17s">that are available across the country.</span></p>
+<p class="wet-boew-vd"><strong>(Close-up of the screen. Stick person’s profile. Words “Updated Daily and “48 Hours” appear on screen.)</strong></p>
+<p><span class="wb-tmtxt" data-begin="35.20s" data-dur="2.30s">Since the job ads on Job Bank are updated daily, </span>
+<span class="wb-tmtxt" data-begin="37.50s" data-dur="2.20s">you should check them regularly.</span></p>
+<p><span class="wb-tmtxt" data-begin="39.71s" data-dur="3.57s">And, you can search for jobs posted in the last 48 hours.</span></p>
+<p class="wet-boew-vd"><strong>(Words “Advertise your Skills” and “Email your matches” appear on screen.)</strong></p>
+<p><span class="wb-tmtxt" data-begin="43.28s" data-dur="2.40s">On Job Bank you can also advertise your skills, </span>
+<span class="wb-tmtxt" data-begin="45.68s" data-dur="2.57s">and even ask them to send you e-mails when jobs </span>
+<span class="wb-tmtxt" data-begin="48.25s" data-dur="2.34s">that match your search criteria are posted.</span></p>
+<p class="wet-boew-vd"><strong>(Close-up of the Host. LINE DRAWING GRAPHIC: of the Parliament Building. The web address jobs.gc.ca appears in large letters on the front lawn, stick person points to words.)</strong></p>
+<p><span class="wb-tmtxt" data-begin="50.58s" data-dur="1.80s">If you&#39;re thinking about working in the public sector, </span>
+<span class="wb-tmtxt" data-begin="52.39s" data-dur="2.70s">jobs.gc.ca is the official Web site </span>
+<span class="wb-tmtxt" data-begin="55.09s" data-dur="2.90s">for Government of Canada listings open to the public.</span></p>
+<p><span class="wb-tmtxt" data-begin="57.99s" data-dur="1.57s">Keep in mind, that some departments, </span>
+<span class="wb-tmtxt" data-begin="59.56s" data-dur="2.50s">like the Canada Revenue Agency and Parks Canada, </span>
+<span class="wb-tmtxt" data-begin="62.06s" data-dur="2.34s">post jobs on their own sites too.</span></p>
+<p class="wet-boew-vd"><strong>(Medium shot of the Host. LINE DRAWING GRAPHIC: stick person points to Job Bank web page, where words “User ID” and “Password” are highlighted.)</strong></p>
+<p><span class="wb-tmtxt" data-begin="64.40s" data-dur="2.44s">When you apply for jobs, potential employers might ask </span>
+<span class="wb-tmtxt" data-begin="66.83s" data-dur="2.34s">you to send them your résumé and a covering letter.</span></p>
+<p><span class="wb-tmtxt" data-begin="69.17s" data-dur="2.17s">Of course, you&#39;ll want to make a good first impression </span>
+<span class="wb-tmtxt" data-begin="71.34s" data-dur="2.04s">on any potential employer.</span></p>
+<p class="wet-boew-vd"><strong>(The text Résumé Builder appears across stick person’s screen.)</strong></p>
+<p><span class="wb-tmtxt" data-begin="73.37s" data-dur="1.57s">Here we can help too!</span></p>
+<p><span class="wb-tmtxt" data-begin="74.94s" data-dur="1.67s">Check out our online Résumé Builder </span>
+<span class="wb-tmtxt" data-begin="76.61s" data-dur="1.84s">on the Job Bank Web site.</span></p>
+<p><span class="wb-tmtxt" data-begin="78.45s" data-dur="2.04s">It can show you how to create a first-class résumé </span>
+<span class="wb-tmtxt" data-begin="80.48s" data-dur="2.64s">by giving you tips and different layout options.</span></p>
+<p class="wet-boew-vd"><strong>(Medium shot of the Host. LINE DRAWING GRAPHIC: one stick person talks to another stick person behind a desk labelled Career Counsellor.)</strong></p>
+<p><span class="wb-tmtxt" data-begin="83.12s" data-dur="2.24s">And if you&#39;re not sure which jobs you&#39;d like to apply for, </span>
+<span class="wb-tmtxt" data-begin="85.35s" data-dur="2.54s">check out our Career Navigator tool to explore </span>
+<span class="wb-tmtxt" data-begin="87.89s" data-dur="2.44s">occupations that you might be interested in.</span></p>
+<p><span class="wb-tmtxt" data-begin="90.32s" data-dur="2.90s">As well, career counsellors are usually available through </span>
+<span class="wb-tmtxt" data-begin="93.23s" data-dur="2.44s">your provincial or territorial government to help out.</span></p>
+<p class="wet-boew-vd"><strong>(Close-up of the Host. LINE DRAWING GRAPHIC: Stick person take a bow. Service Canada logo appears.)</strong></p>
+<p><span class="wb-tmtxt" data-begin="95.66s" data-dur="3.00s">At Service Canada, we&#39;re people serving people.</span></p>
+<p class="wet-boew-vd"><strong>(Dip to black.)</strong></p>
+</details>
+</figcaption>
+</figure>
+	<h2>Video - YouTube<span class="label label-info">Conflict is here</span></h2>
+<figure class="wb-mltmd-fix" data-wb-mltmd-fix='{"shareUrl": "https://www.youtube.com/watch?v=9znKJqnFuuY"}'>
+	<video title="Suspect">
+		<source type="video/youtube" src="https://www.youtube.com/watch?v=9znKJqnFuuY" />
+	</video>
+	<figcaption>
+		<p>Suspect</p>
+	</figcaption>
+</figure>
+<h2>Plugins below video</h2>
+<h3>Fieldflow<span class="label label-sucess">Works</span></h3>
+	<div class="wb-fieldflow">
+	<p>Find the plugin for the action you need:</p>
+
+	<ul>
+		<li><a href="https://wet-boew.github.io/v4.0-ci/demos/data-ajax/data-ajax-en.html">Inserting content</a></li>
+		<li><a href="https://wet-boew.github.io/v4.0-ci/demos/lightbox/lightbox-en.html">Photo galery</a></li>
+		<li><a href="https://wet-boew.github.io/v4.0-ci/demos/charts/charts-en.html">Draw charts</a></li>
+		<li><a href="https://wet-boew.github.io/v4.0-ci/demos/details/details-en.html">Expand and collapse content</a></li>
+		<li><a href="https://wet-boew.github.io/v4.0-ci/demos/equalheight/equalheight-en.html">Set a consistant height</a></li>
+		<li><a href="https://wet-boew.github.io/v4.0-ci/demos/overlay/overlay-en.html">Popup content</a></li>
+	</ul>
+</div>
+	<h3>Do action<span class="label label-sucess">Works</span></h3>
+	<p><button class="btn btn-default" data-wb-doaction='{"action": "addClass", "source": "#example2", "class": "bg-info"}'>Pressing this button...</button></p>
+	<div id="example2"><p>&hellip;should make this background blue</p></div>
+        
+
+         <div id="def-preFooter"></div>
+         <!-- Write closure template -->
+         <script type="text/javascript">
+            var defPreFooter = document.getElementById("def-preFooter");
+            defPreFooter.outerHTML = wet.builder.preFooter({
+            dateModified: "2020-05-05",
+            showPostContent: true,
+            showFeedback: true,
+            showShare: true
+            });
+         </script>
+      </main>
+      <div id="def-footer">
+      </div>
+      <!-- Write closure template -->
+      <script type="text/javascript">
+         var defFooter = document.getElementById("def-footer");
+         defFooter.outerHTML = wet.builder.footer({
+         showFooter: true,
+         showFeatures: true
+         });
+      </script>
+      <!-- Write closure template -->
+      <script type="text/javascript">
+         document.write(wet.builder.refFooter({
+         }));
+      </script>
+      <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
+	      <script>
+/**
+ * @title WET-BOEW Multimedia PLayer
+ * @overview An accessible multimedia player for <audio> and <video> tags
+ * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ * @author WET Community
+ */
+/* globals YT */
+( function( $, window, wb, undef ) {
+"use strict";
+
+/* Local scoped variables*/
+var componentName = "wb-mltmd-fix",
+	selector = "." + componentName,
+	initEvent = "wb-init" + selector,
+	ctrls = selector + " .wb-mm-ctrls",
+	dispCtrls = selector + " .display," + ctrls,
+	template,
+	i18n, i18nText,
+	youtubeReadyEvent = "ready.youtube",
+	captionsLoadedEvent = "ccloaded" + selector,
+	captionsLoadFailedEvent = "ccloadfail" + selector,
+	captionsVisibleChangeEvent = "ccvischange" + selector,
+	renderUIEvent = "renderui" + selector,
+	initializedEvent = "inited" + selector,
+	youtubeEvent = "youtube" + selector,
+	resizeEvent = "resize" + selector,
+	templateLoadedEvent = "templateloaded" + selector,
+	cuepointEvent = "cuepoint" + selector,
+	captionClass = "cc_on",
+	multimediaEvents = [
+		"durationchange",
+		"playing",
+		"pause",
+		"ended",
+		"volumechange",
+		"timeupdate",
+		"waiting",
+		"canplay",
+		"seeked",
+		"progress",
+		captionsLoadedEvent,
+		captionsLoadFailedEvent,
+		captionsVisibleChangeEvent,
+		cuepointEvent
+	].join( " " ),
+	$document = wb.doc,
+	$window = wb.win,
+
+	/**
+	 * @function init
+	 * @param {jQuery Event} event Event that triggered the function call
+	 */
+	init = function( event ) {
+
+		// Start initialization
+		// returns DOM object = proceed with init
+		// returns undefined = do not proceed with init (e.g., already initialized)
+		var eventTarget = wb.init( event, componentName, selector );
+
+		if ( eventTarget ) {
+
+			// Only initialize the i18nText once
+			if ( !i18nText ) {
+
+				// YT workaround for when played inside a modal dialog, like with lightbox
+				//
+				// the issue is when the iFrame is moved, it reloads and then it doesn't emit the right event to
+				// adjust the WET multimedia controller to represent its current state.
+				//
+				// This needs to be executed only once, that is why it is in the i18nText conditional
+				window.addEventListener( "message", function( e ) {
+					var data, frames, i, i_len, i_cache;
+
+					// Ensure we don't conflict with other postMessage listener
+					try {
+						data = JSON.parse( e.data );
+
+						// Only for a specific YT message
+						if ( data.event && data.event === "infoDelivery" && data.info && data.info.playerState ) {
+
+							// Find the iFrame and evaluate if it needs to be reposted
+							frames = document.getElementsByTagName( "iframe" );
+
+							i_len = frames.length;
+							for ( i = 0; i < i_len; i++ ) {
+								i_cache = frames[ i ];
+								if ( i_cache.dataset.L2 && i_cache.contentWindow === e.source  ) {
+
+									// Prepare the event data and emulate the YT object for our event management need
+									youTubeEvents.call( i_cache, {
+										target: i_cache.parentElement.parentElement.object,
+										data: data.info.playerState
+									} );
+									break;
+								}
+							}
+						}
+					} catch ( err ) {
+
+						/* swallow error */
+					}
+				} );
+
+				//
+				// END YT workaround
+				//
+
+				i18n = wb.i18n;
+				i18nText = {
+					play: i18n( "mmp-play" ),
+					pause: i18n( "pause" ),
+					volume: i18n( "volume" ),
+					cc_on: i18n( "cc", "on" ),
+					cc_off: i18n( "cc", "off" ),
+					cc_error: i18n( "cc-err" ),
+					mute_on: i18n( "mute", "on" ),
+					mute_off: i18n( "mute", "off" ),
+					duration: i18n( "dur" ),
+					position: i18n( "pos" )
+				};
+			}
+
+			if ( template === undef ) {
+				template = "";
+				$( eventTarget ).trigger( {
+					type: "ajax-fetch.wb",
+					fetch: {
+						url: wb.getPath( "/assets" ) + "/mediacontrols.html"
+					}
+				} );
+			} else if ( template !== "" ) {
+				$( eventTarget ).trigger( templateLoadedEvent );
+			}
+		}
+	wb.ready( $( eventTarget ), componentName );		
+	},
+
+	/* helper functions*/
+
+	/**
+	 * @method formatTime
+	 * @description format a number of seconds to SMTPE Timecode format (HH:MM:SS.FF)
+	 * @param {Float} time The time to format
+	 * @returns {String} the formatted time
+	 */
+	formatTime = function( time ) {
+		var index = 2,
+			timecode = "",
+			secondsIn, current, pad;
+
+		pad = function( number, digits ) {
+			return new Array( Math.max( digits - String( number ).length + 1, 0 ) ).join( 0 ) + number;
+		};
+
+		time = Math.floor( time );
+
+		//Loop to extract hours, minutes and seconds
+		while ( index >= 0 ) {
+
+			//Get the number of seconds for the current iteration (hour, minute or second)
+			secondsIn = Math.pow( 60, index );
+			current = Math.floor( time / secondsIn );
+
+			if ( timecode !== "" ) {
+				timecode += ":";
+			}
+
+			timecode += pad( current, 2 );
+			time -= secondsIn * current;
+			index -= 1;
+		}
+		return timecode;
+	},
+
+	/**
+	 * @method parseTime
+	 * @description parse an SMTPE Timecode string (HH:MM:SS.FF) or duration (45s) and returns the number of seconds for the timecode
+	 * @param {String} time The timecode or duration string to parse
+	 * @returns {Float} the number of seconds in time
+	 */
+	parseTime = function( time ) {
+		var i, parts, timeStringPortion, partLength, seconds;
+
+		if ( time !== undef ) {
+			if ( time.charAt( time.length - 1 ) === "s" ) {
+
+				//Duration parsing
+				return parseFloat( time.substring( 0, time.length - 1 ) );
+			} else {
+
+				//SMTPE Timecode Parsing
+				parts = time.split( ":" ).reverse();
+				seconds = 0;
+
+				for ( i = 0, partLength = parts.length; i < partLength; i += 1 ) {
+					timeStringPortion = i === 0 ?
+						parseFloat( parts[ i ] ) :
+						parseInt( parts[ i ], 10 );
+					seconds += timeStringPortion * Math.pow( 60, i );
+				}
+				return seconds;
+			}
+		}
+		return -1;
+	},
+
+	/*
+	 * Peformant micro templater
+	 * @credit: https://github.com/premasagar/tim/blob/master/tinytim.js
+	 * @todo: caching
+	 */
+	tmpl = ( function() {
+		var start = "{{",
+			end = "}}",
+
+			// e.g. config.person.name
+			path = "[a-z0-9_$][\\.a-z0-9_]*",
+			pattern = new RegExp( start + "\\s*(" + path + ")\\s*" + end, "gi" );
+		return function( template, data ) {
+
+			// Merge data into the template string
+			return template.replace( pattern, function( tag, token ) {
+				var path = token.split( "." ),
+					len = path.length,
+					lookup = data,
+					i = 0;
+				for ( ; i < len; i += 1 ) {
+					lookup = lookup[ path[ i ] ];
+
+					// Property not found
+					if ( lookup === undef ) {
+						throw "tim: '" + path[ i ] + "' not found in " + tag;
+					}
+
+					// Return the required value
+					if ( i === len - 1 ) {
+						return lookup;
+					}
+				}
+			} );
+		};
+	}() ),
+
+	/**
+	 * @method parseHtml
+	 * @description parse an HTML fragment and extract embed captions
+	 * @param {String} content The HTML fragment containing the captions
+	 * @returns {Array} An array of captions objects (ex: {text: "Caption", begin: 0, end :10})
+	 */
+	parseHtml = function( content ) {
+		var captions = [],
+			captionSelector = ".wb-tmtxt",
+			captionElements = content.find( captionSelector ),
+			len = captionElements.length,
+			i, captionElement, json, begin, end;
+
+		for ( i = 0; i !== len; i += 1 ) {
+			captionElement = $( captionElements[ i ] );
+			begin = -1;
+			end = -1;
+
+			if ( captionElement.attr( "data-begin" ) !== undef ) {
+				begin = parseTime( captionElement.attr( "data-begin" ) );
+				end = captionElement.attr( "data-end" ) !== undef ?
+					parseTime( captionElement.attr( "data-end" ) ) :
+					parseTime( captionElement.attr( "data-dur" ) ) + begin;
+			} else if ( captionElement.attr( "data" ) !== undef ) {
+				json = captionElement.attr( "data" )
+					.replace( /(begin|dur|end)/g, "\"$1\"" )
+					.replace( /'/g, "\"" );
+				json = $.parseJSON( json );
+				begin = parseTime( json.begin );
+				end = json.end !== undef ?
+					parseTime( json.end ) :
+					parseTime( json.dur ) + begin;
+			}
+
+			//Removes nested captions if an
+			captionElement = captionElement.clone();
+			captionElement.find( captionSelector ).detach();
+
+			captions[ captions.length ] = {
+				text: captionElement.html(),
+				begin: begin,
+				end: end
+			};
+		}
+		return captions;
+	},
+
+	/**
+	 * @method parseXml
+	 * @description parse an TTML (Xml) document and extract captions
+	 * @param {String} content The TTML fragment containing the captions
+	 * @returns {Array} An array of captions objects (ex: {text: "Caption", begin: 0, end :10})
+	 */
+	parseXml = function( content ) {
+		var captions = [],
+			captionSelector = "[begin]",
+			captionElements = content.find( captionSelector ),
+			len = captionElements.length,
+			i, captionElement, begin, end;
+
+		for ( i = 0; i !== len; i += 1 ) {
+			captionElement = $( captionElements[ i ] );
+			begin = parseTime( captionElement.attr( "begin" ) );
+			end = captionElement.attr( "end" ) !== undef ?
+				parseTime( captionElement.attr( "end" ) ) :
+				parseTime( captionElement.attr( "dur" ) ) + begin;
+
+			captionElement = captionElement.clone();
+			captionElement.find( captionSelector ).detach();
+
+			captions[ captions.length ] = {
+				text: captionElement.html(),
+				begin: begin,
+				end: end
+			};
+		}
+		return captions;
+	},
+
+	/**
+	 * @method loadCaptionsExternal
+	 * @description Loads captions from an external source (HTML embed or TTML)
+	 * @param {Object} elm The jQuery object for the multimedia player loading the captions
+	 * @param {String} url The url for the captions resource to load
+	 * @fires ccloaded.wb-mltmd-fix
+	 * @fires ccloadfail.wb-mltmd-fix
+	 */
+	loadCaptionsExternal = function( elm, url ) {
+		$.ajax( {
+			url: url,
+			dataType: "html",
+
+			//Filters out images and objects from the content to avoid loading them
+			dataFilter: function( data ) {
+				return data.replace( /<img|object [^>]*>/g, "" );
+			},
+			success: function( data ) {
+				var captionItems = data.indexOf( "<html" ) !== -1 ?
+					parseHtml( $( data ) ) :
+					parseXml( $( data ) );
+
+				if ( captionItems.length ) {
+					elm.trigger( {
+						type: captionsLoadedEvent,
+						captions: captionItems
+					} );
+				} else {
+					elm.trigger( {
+						type: captionsLoadFailedEvent
+					} );
+				}
+			},
+			error: function( response, textStatus, errorThrown ) {
+				elm.trigger( {
+					type: captionsLoadFailedEvent,
+					error: errorThrown
+				} );
+			}
+		} );
+	},
+
+	/**
+	 * @method loadCaptionsInternal
+	 * @description Loads same page captions emebed in HTML
+	 * @param {Object} elm The jQuery object for the multimedia player loading the captions
+	 * @param {Object} obj The jQUery object containing the captions
+	 * @fires ccloaded.wb-mltmd-fix
+	 */
+	loadCaptionsInternal = function( elm, obj ) {
+		var captionItems = parseHtml( obj );
+
+		if ( captionItems.length ) {
+			elm.trigger( {
+				type: captionsLoadedEvent,
+				captions: captionItems
+			} );
+		} else {
+			elm.trigger( {
+				type: captionsLoadFailedEvent
+			} );
+		}
+	},
+
+	/**
+	 * @method updateCaptions
+	 * @description Update the captions for a multimedia player (called from the timeupdate event of the HTML5 media API)
+	 * @param {Object} area The jQuery object for the element where captions are displayed
+	 * @param {Float} seconds The current time of the media (use to sync the captions)
+	 * @param {Object} captions The JavaScript object containing the captions
+	 */
+	updateCaptions = function( area, seconds, captions ) {
+		var caption, i,
+			captionsLength = captions.length;
+
+		// added &#160; (non-breaking space) to prevent caption space from collapsing
+		// Used .html() instead of .append for performance purposes
+		// https://jsperf.com/jquery-append-vs-html-list-performance/2
+		area.html( "&#160;" );
+
+		for ( i = 0; i < captionsLength; i += 1 ) {
+			caption = captions[ i ];
+			if ( seconds >= caption.begin && seconds <= caption.end ) {
+				area.html( $( "<div>" + caption.text + "</div>" ) );
+			}
+		}
+	},
+
+	/**
+	 * @method playerApi
+	 * @description Normalizes the calls to the HTML5 media API
+	 * @param {String} fn The function to call
+	 * @param {object} args The arguments to send to the function call
+	 */
+	playerApi = function( fn, args ) {
+		var $this, method;
+
+		switch ( fn ) {
+		case "play":
+			try {
+				this.object.play();
+			} catch ( ex ) {
+				this.object.doPlay();
+			}
+			break;
+		case "pause":
+			try {
+				this.object.pause();
+			} catch ( ex ) {
+				this.object.doPause();
+			}
+			break;
+		case "getCaptionsVisible":
+			return $( this ).hasClass( captionClass );
+		case "setCaptionsVisible":
+			$this = $( this );
+			if ( args ) {
+				$this.addClass( captionClass );
+			} else {
+				$this.removeClass( captionClass );
+			}
+			$this.trigger( captionsVisibleChangeEvent );
+			break;
+		case "getBuffering":
+			return this.object.buffering || false;
+		case "setBuffering":
+			this.object.buffering = args;
+			break;
+		case "getPreviousTime":
+			return this.object.previousTime;
+		case "setPreviousTime":
+			this.object.previousTime = args;
+			break;
+		default:
+			method = fn.charAt( 3 ).toLowerCase() + fn.substr( 4 );
+			switch ( fn.substr( 0, 3 ) ) {
+			case "get":
+				return typeof this.object[ method ] !== "function" ?
+					this.object[ method ] :
+					this.object[ method ]();
+			case "set":
+				typeof this.object[ method ] !== "function" ?
+					this.object[ method ] = args :
+					this.object[ fn ]( args );
+			}
+		}
+	},
+
+	/**
+	 * @method youTubeApi
+	 * @description Normalizes the calls to the YouTube API
+	 * @param {String} fn The function to call
+	 * @param {object} args The arguments to send to the function call
+	 */
+	youTubeApi = function( fn, args ) {
+		var $media = $( this.object.getIframe() ),
+			state;
+
+		switch ( fn ) {
+		case "play":
+			return this.object.playVideo();
+		case "pause":
+			return this.object.pauseVideo();
+		case "getPaused":
+			state = this.object.getPlayerState();
+			return state === -1 || state === 0 || state === 2 || state === 5;
+		case "getPlayed":
+			return this.object.getPlayerState() > -1;
+		case "getEnded":
+			return this.object.getPlayerState() === 0;
+		case "getDuration":
+			return this.object.getDuration();
+		case "getCurrentTime":
+			return this.object.getCurrentTime();
+		case "setCurrentTime":
+			return this.object.seekTo( args, true );
+		case "getMuted":
+			return this.object.isMuted();
+		case "setMuted":
+			if ( args ) {
+				this.object.mute();
+			} else {
+				this.object.unMute();
+			}
+			setTimeout( function() {
+				$media.trigger( "volumechange" );
+			}, 50 );
+			break;
+		case "getVolume":
+			return this.object.getVolume() / 100;
+		case "setVolume":
+			this.object.setVolume( args * 100 );
+			setTimeout( function() {
+				$media.trigger( "volumechange" );
+			}, 50 );
+			break;
+		case "getCaptionsVisible":
+			return $( this ).hasClass( captionClass );
+		case "setCaptionsVisible":
+			if ( args ) {
+				$( this ).addClass( captionClass );
+				try {
+					this.object.loadModule( "cc" );
+					this.object.setOption( "cc", "track", { languageCode: this.object.getOption( "cc", "tracklist" )[ 0 ].languageCode } );
+				} catch ( e ) {
+					this.object.loadModule( "captions" );
+					this.object.setOption( "captions", "track", { languageCode: this.object.getOption( "captions", "tracklist" )[ 0 ].languageCode } );
+				}
+			} else {
+				$( this ).removeClass( captionClass );
+				this.object.unloadModule( "cc" );
+				this.object.unloadModule( "captions" );
+			}
+			$media.trigger( "ccvischange" );
+		}
+	},
+
+	/**
+	 * @method youTubeEvents
+	 * @description Youtube API event manager
+	 * @param {object} event The event object fior the triggered event
+	 */
+	youTubeEvents = function( event ) {
+		var media = event.target.getIframe(),
+			$media = $( media ),
+			timeline = function() {
+				$media.trigger( "timeupdate" );
+			},
+			$mltmPlayerElm;
+
+		switch ( event.data ) {
+		case null:
+			$media
+				.trigger( "canplay" )
+				.trigger( "durationchange" );
+			break;
+		case -1:
+			event.target.unMute();
+			$media.trigger( "durationchange" );
+			break;
+		case 0:
+			$media.trigger( "ended" );
+			media.timeline = clearInterval( media.timeline );
+			break;
+		case 1:
+			if ( media.dataset.L2 ) {
+
+				// Reset the close caption state when iframe was reloaded
+				$mltmPlayerElm = $media.parentsUntil( selector ).parent();
+				youTubeApi.call( $mltmPlayerElm.get( 0 ), "setCaptionsVisible", $mltmPlayerElm.hasClass( captionClass ) );
+			}
+			$media
+				.trigger( "canplay" )
+				.trigger( "play" )
+				.trigger( "playing" );
+			media.timeline = setInterval( timeline, 250 );
+			break;
+		case 2:
+			$media.trigger( "pause" );
+			media.timeline = clearInterval( media.timeline );
+			break;
+		case 3:
+			media.timeline = clearInterval( media.timeline );
+			break;
+		}
+	},
+
+	youTubeAPIReady = function() {
+		var youTube = window.youTube;
+		youTube.ready = true;
+		$document.trigger( youtubeReadyEvent );
+	},
+
+	onResize = function() {
+		$( selector + " object, " + selector + " iframe, " +  selector + " video" ).trigger( resizeEvent );
+	};
+
+$document.on( "timerpoke.wb " + initEvent, selector, init );
+
+$window.on( "resize", onResize );
+
+$document.on( "ready", onResize );
+
+$document.on( "ajax-fetched.wb " + templateLoadedEvent, selector, function( event ) {
+	var $this = $( this );
+
+	if ( event.type === "ajax-fetched" ) {
+		template = event.fetch.pointer.html();
+
+		//Notify all player waiting for the controls to load
+		$this = $( selector );
+	}
+
+	$this.trigger( {
+		type: initializedEvent
+	} );
+} );
+
+$document.on( initializedEvent, selector, function( event ) {
+	if ( event.namespace === componentName ) {
+		var $this = $( this ),
+			$media = $this.children( "audio, video" ).eq( 0 ),
+			captions = $media.children( "track[kind='captions']" ).attr( "src" ) || undef,
+			id = $this.attr( "id" ),
+			mId = $media.attr( "id" ) || id + "-md",
+			type = $media.is( "audio" ) ? "audio" : "video",
+			title = $media.attr( "title" ) || "",
+			width = type === "video" ? $media.attr( "width" ) || $media.width() : 0,
+			height = type === "video" ? $media.attr( "height" ) || $media.height() : 0,
+			settings = wb.getData( $this, componentName ),
+			data = $.extend( {
+				media: $media,
+				captions: captions,
+				id: id,
+				mId: mId,
+				type: type,
+				title: title,
+				height: height,
+				width: width
+			}, i18nText ),
+			media = $media.get( 0 ),
+			youTube = window.youTube,
+			url;
+
+		if ( $media.attr( "id" ) === undef ) {
+			$media.attr( "id", mId );
+		}
+
+		if ( settings !== undef ) {
+			data.shareUrl = settings.shareUrl;
+		}
+
+		$this.addClass( type );
+
+		if ( $media.find( "[type='video/youtube']" ).length > 0 ) {
+
+			// lets tweak some variables and start the load sequence
+			url = wb.getUrlParts( $this.find( "[type='video/youtube']" ).attr( "src" ) );
+
+			// lets set the flag for the call back
+			data.youTubeId = url.params.v ? url.params.v : url.pathname.substr( 1 );
+
+			if ( youTube.ready === false ) {
+				$document.one( youtubeReadyEvent, function() {
+					$this.trigger( youtubeEvent, data );
+				} );
+			} else {
+				$this.trigger( youtubeEvent, data );
+			}
+
+			// finally lets load safely
+			return Modernizr.load( {
+				load: "https://www.youtube.com/iframe_api"
+			} );
+
+		} else if ( media.error === null && media.currentSrc !== "" && media.currentSrc !== undef ) {
+			$this.trigger( renderUIEvent, [ type, data ] );
+		} else {
+
+			// Do nothing since IE8 support is no longer required
+			return;
+		}
+
+		// Identify that initialization has completed
+		wb.ready( $this, componentName );
+	}
+} );
+
+/*
+ *  Youtube Video mode Event
+ */
+$document.on( youtubeEvent, selector, function( event, data ) {
+	if ( event.namespace === componentName ) {
+		var mId = data.mId,
+			$this = $( event.currentTarget ),
+			$media, ytPlayer;
+
+		ytPlayer = new YT.Player( mId, {
+			videoId: data.youTubeId,
+			playerVars: {
+				autoplay: 0,
+				controls: 0,
+				origin: wb.pageUrlParts.host,
+				modestbranding: 1,
+				rel: 0,
+				showinfo: 0,
+				html5: 1,
+				cc_load_policy: 1
+			},
+			events: {
+				onReady: function( event ) {
+					onResize();
+					youTubeEvents( event );
+				},
+				onStateChange: youTubeEvents,
+				onApiChange: function() {
+
+					//If captions were enabled before the module was ready, re-enable them
+					var t = $this.get( 0 );
+					t.player( "setCaptionsVisible", t.player( "getCaptionsVisible" ) );
+				}
+			}
+		} );
+
+		$this.addClass( "youtube" );
+
+		$media = $this.find( "#" + mId ).attr( "tabindex", -1 );
+
+		data.media = $media;
+		data.ytPlayer = ytPlayer;
+
+		// Detect if the YT player reloads, like when magnific Popup show the modal, because it moves the iframe
+		// and then the iframe gets refreshed and reloaded. So the issue is that the iframe stops emitting the event
+		// needed to adjust the multimedia player controler, like the "onStateChange" event.
+		$media.on( "load", function( evt ) {
+
+			var elm = evt.currentTarget,
+				ds = elm.dataset;
+
+			// Do nothing on the first load and add a flag to indicate it is loaded a second time
+			if ( ds.L1 ) {
+				ds.L2 = true;
+			} else {
+				ds.L1 = true;
+			}
+		} );
+
+		$this.trigger( renderUIEvent, [ "youtube", data ] );
+	}
+} );
+
+$document.on( renderUIEvent, selector, function( event, type, data ) {
+	if ( event.namespace === componentName ) {
+		var $this = $( event.currentTarget ),
+			captionsUrl = wb.getUrlParts( data.captions ),
+			currentUrl = wb.getUrlParts( window.location.href ),
+			$media = data.media,
+			$eventReceiver;
+
+		$media
+			.after( tmpl( template, data ) )
+			.wrap( "<div class=\"display\"></div>" );
+
+		$eventReceiver = $media.is( "object" ) ? $media.children( ":first-child" ) : $media;
+
+		// Create an adapter for the event management
+		$eventReceiver.on( multimediaEvents, function( event ) {
+			$this.trigger( event );
+		} );
+
+		this.object = data.ytPlayer || $media.get( 0 );
+		this.player = ( data.ytPlayer ) ? youTubeApi : playerApi;
+
+		// Trigger the duration change for cases where the event was called before the event binding
+		if ( type !== "youtube" && !isNaN( this.player( "getDuration" ) ) ) {
+			$eventReceiver.trigger( "durationchange" );
+		}
+
+		// Load the progress polyfill if needed
+		$this.find( "progress" ).trigger( "wb-init.wb-progress" );
+
+		// Load the slider polyfill if needed
+		$this.find( "input[type='range']" ).trigger( "wb-init.wb-slider" );
+
+		// Create the share widgets if needed
+		if ( data.shareUrl !== undef ) {
+			$( "<div class='wb-share' data-wb-share='{\"type\": \"" +
+				( type === "audio" ? type : "video" ) + "\", \"title\": \"" +
+				data.title.replace( /'/g, "&apos;" ) + "\", \"url\": \"" + data.shareUrl +
+				"\", \"pnlId\": \"" + data.id + "-shr\"}'></div>" )
+				.insertBefore( $media.parent() )
+				.trigger( "wb-init.wb-share" );
+		}
+
+		if ( data.captions === undef ) {
+			return 1;
+		}
+
+		// Load the captions
+		if ( currentUrl.absolute.replace( currentUrl.hash || "#", "" ) !== captionsUrl.absolute.replace( captionsUrl.hash || "#", "" ) ) {
+			loadCaptionsExternal( $media, captionsUrl.absolute );
+		} else {
+			loadCaptionsInternal( $media, $( "#" + wb.jqEscape( captionsUrl.hash.substring( 1 ) ) ) );
+		}
+	}
+} );
+
+/*
+ * UI Bindings
+ */
+
+$document.on( "click", selector, function( event ) {
+	var $target = $( event.target ),
+		className = $target.attr( "class" ) || "";
+
+	// Ignore middle and right mouse buttons
+	if ( event.which === 2 || event.which === 3 ) {
+		return true;
+	}
+
+	// Optimized multiple class tests to include child glyphicon because Safari was reporting the click event
+	// from the child span not the parent button, forcing us to have to check for both elements
+	// JSPerf for multiple class matching https://jsperf.com/hasclass-vs-is-stackoverflow/7
+	if ( className.match( /playpause|-play|-pause|display/ ) || $target.is( "object" ) || $target.is( "video" ) ) {
+		this.player( "getPaused" ) || this.player( "getEnded" ) ? this.player( "play" ) : this.player( "pause" );
+	} else if ( className.match( /(^|\s)cc\b|-subtitles/ ) && !$target.attr( "disabled" ) && !$target.parent().attr( "disabled" ) ) {
+		this.player( "setCaptionsVisible", !this.player( "getCaptionsVisible" ) );
+	} else if ( className.match( /\bmute\b|-volume-(up|off)/ ) ) {
+		this.player( "setMuted", !this.player( "getMuted" ) );
+	} else if ( $target.is( "progress" ) || $target.hasClass( "progress" ) || $target.hasClass( "progress-bar" ) ) {
+		this.player( "setCurrentTime", this.player( "getDuration" ) * ( ( event.pageX - $target.offset().left ) / $target.width() ) );
+	} else if ( className.match( /\brewind\b|-backward/ ) ) {
+		this.player( "setCurrentTime", this.player( "getCurrentTime" ) - this.player( "getDuration" ) * 0.05 );
+	} else if ( className.match( /\bfastforward\b|-forward/ ) ) {
+		this.player( "setCurrentTime", this.player( "getCurrentTime" ) + this.player( "getDuration" ) * 0.05 );
+	} else if ( className.match( /cuepoint/ ) ) {
+		$( this ).trigger( { type: "cuepoint", cuepoint: $target.data( "cuepoint" ) } );
+	}
+} );
+
+$document.on( "input change", selector, function( event ) {
+	var target = event.target;
+
+	if ( $( target ).hasClass( "volume" ) ) {
+		event.currentTarget.player( "setMuted", false );
+		event.currentTarget.player( "setVolume", target.value / 100 );
+	}
+} );
+
+$document.on( "keydown", dispCtrls, function( event ) {
+	var playerTarget = event.currentTarget.parentNode,
+		which = event.which,
+		volume = 0,
+		step = 0.05,
+		$playerTarget = $( playerTarget );
+
+	if ( !( event.ctrlKey || event.altKey || event.metaKey ) ) {
+		switch ( which ) {
+		case 32:
+
+			// Mute/unmute if focused on the mute/unmute button or volume input.
+			if ( $( event.target ).hasClass( "mute" ) || event.target.nodeName === "INPUT" ) {
+				$playerTarget.find( ".mute" ).trigger( "click" );
+			} else if ( $( event.target ).hasClass( "cc" ) ) {
+
+				// Show/hide captions if focused on the closed captions button.
+				$playerTarget.find( ".cc" ).trigger( "click" );
+			} else {
+
+				// Play/pause if focused on anything else (i.e. the video itself, play/pause button or progress bar).
+				$playerTarget.find( ".playpause" ).trigger( "click" );
+			}
+			break;
+
+		case 37:
+			playerTarget.player( "setCurrentTime", this.parentNode.player( "getCurrentTime" ) - this.parentNode.player( "getDuration" ) * 0.05 );
+			break;
+
+		case 39:
+			playerTarget.player( "setCurrentTime", this.parentNode.player( "getCurrentTime" ) + this.parentNode.player( "getDuration" ) * 0.05 );
+			break;
+
+		case 38:
+			volume = Math.round( playerTarget.player( "getVolume" ) * 100 ) / 100 + step;
+			playerTarget.player( "setVolume", volume < 1 ? volume : 1 );
+			break;
+
+		case 40:
+			volume = Math.round( playerTarget.player( "getVolume" ) * 100 ) / 100 - step;
+			playerTarget.player( "setVolume", volume > 0 ? volume : 0 );
+			break;
+
+		default:
+			return true;
+		}
+		return false;
+	}
+} );
+
+$document.on( "keyup", ctrls, function( event ) {
+	if ( event.which === 32 && !( event.ctrlKey || event.altKey || event.metaKey ) ) {
+
+		// Allows the spacebar to be used for play/pause without double triggering
+		return false;
+	}
+} );
+
+$document.on( "wb-activate", selector, function() {
+	this.player( "play" );
+} );
+
+$document.on( "closed.wb-overlay", ".wb-overlay", function( event ) {
+	var mltmdPlayer = event.currentTarget.querySelector( selector );
+	if ( mltmdPlayer ) {
+		mltmdPlayer.player( "pause" );
+	}
+} );
+
+$document.on( multimediaEvents, selector, function( event, simulated ) {
+	var eventTarget = event.currentTarget,
+		eventType = event.type,
+		eventNamespace = event.namespace,
+		$this = $( eventTarget ),
+		invStart = "<span class='wb-inv'>",
+		invEnd = "</span>",
+		currentTime, $button, $slider, buttonData, isPlay, isMuted, isCCVisible, skipTo, volume;
+	switch ( eventType ) {
+	case "playing":
+	case "pause":
+	case "ended":
+		isPlay = eventType === "playing";
+		$button = $this.find( ".playpause" );
+		buttonData = $button.data( "state-" + ( isPlay ? "off" : "on" ) );
+		if ( isPlay ) {
+			$this.addClass( "playing" );
+			$this.find( ".progress" ).addClass( "active" );
+		} else {
+			if ( eventType === "ended" ) {
+				this.loading = clearTimeout( this.loading );
+			}
+			$this.removeClass( "playing" );
+		}
+		$button
+			.attr( "title", buttonData )
+			.children( "span" )
+			.toggleClass( "glyphicon-play", !isPlay )
+			.toggleClass( "glyphicon-pause", isPlay )
+			.html( invStart + buttonData + invEnd );
+		break;
+
+	case "volumechange":
+		isMuted = eventTarget.player( "getMuted" );
+		$button = $this.find( ".mute" );
+		buttonData = $button.data( "state-" + ( isMuted ? "off" : "on" ) );
+		volume = eventTarget.player( "getVolume" ) * 100;
+		$button
+			.attr( {
+				title: buttonData,
+				"aria-pressed": isMuted
+			} )
+			.children( "span" )
+			.toggleClass( "glyphicon-volume-up", !isMuted )
+			.toggleClass( "glyphicon-volume-off", isMuted )
+			.html( invStart + buttonData + invEnd );
+		$slider = $this.find( "input[type='range']" );
+		$slider[ 0 ].value = isMuted ? 0 : volume;
+		$slider.trigger( "wb-update.wb-slider" );
+		break;
+
+	case "timeupdate":
+		currentTime = eventTarget.player( "getCurrentTime" );
+		$this.find( "progress" )
+			.attr(
+				"value",
+				Math.round( currentTime / eventTarget.player( "getDuration" ) * 1000 ) / 10
+			).trigger( "wb-update.wb-progress" );
+
+		$this.find( ".wb-mm-tmln-crrnt span:nth-child(2)" )
+			.text( formatTime( currentTime ) );
+
+		if ( $this.hasClass( captionClass ) && $.data( eventTarget, "captions" ) !== undef ) {
+			updateCaptions(
+				$this.find( ".wb-mm-cc" ),
+				currentTime,
+				$.data( eventTarget, "captions" )
+			);
+		}
+		break;
+
+	case "durationchange":
+		$this.find( ".wb-mm-tmln-ttl span:nth-child(2)" )
+			.text( formatTime( eventTarget.player( "getDuration" ) ) );
+
+		// Skip to pointer from the querystring
+		skipTo = wb.pageUrlParts.params[ event.target.id ];
+		if ( skipTo ) {
+			skipTo = parseTime( skipTo );
+			eventTarget.player( "setCurrentTime", skipTo );
+		}
+		break;
+
+	case "ccloaded":
+		if ( eventNamespace === componentName ) {
+			$.data( eventTarget, "captions", event.captions );
+		}
+		break;
+
+	case "ccloadfail":
+		if ( eventNamespace === componentName ) {
+			if ( !$this.hasClass( "errmsg" ) ) {
+				$this.addClass( "cc_on errmsg" )
+					.find( ".wb-mm-cc" )
+					.append( "<div>" + i18nText.cc_error + "</div>" )
+					.end()
+					.find( ".cc" )
+					.attr( "disabled", "" )
+					.removeAttr( "aria-pressed" );
+			}
+		}
+		break;
+
+	case "ccvischange":
+		if ( eventNamespace === componentName ) {
+			isCCVisible = eventTarget.player( "getCaptionsVisible" );
+			$button = $this.find( ".cc" );
+			buttonData = $button.data( "state-" + ( isCCVisible ? "off" : "on" ) );
+			$button.attr( {
+				title: buttonData,
+				"aria-pressed": isCCVisible
+			} ).children( "span" ).html( invStart + buttonData + invEnd );
+		}
+		break;
+
+	case "waiting":
+		if ( !simulated ) {
+			$document.off( "progress", selector );
+		}
+		this.loading = setTimeout( function() {
+			$this.addClass( "waiting" );
+		}, 500 );
+		break;
+
+	case "canplay":
+	case "seeked":
+		this.loading = clearTimeout( this.loading );
+		$this.removeClass( "waiting" );
+		break;
+	case "cuepoint":
+		eventTarget.player( "setCurrentTime", parseTime( event.cuepoint ) );
+		break;
+	}
+} );
+
+// Fallback for browsers that don't implement the waiting events
+$document.on( "progress", selector, function( event ) {
+	var eventTarget = event.currentTarget,
+		$this = $( eventTarget );
+
+	// Waiting detected
+	if ( this.player( "getPaused" ) === false && this.player( "getCurrentTime" ) === this.player( "getPreviousTime" ) ) {
+		if ( eventTarget.player( "getBuffering" ) === false ) {
+			eventTarget.player( "setBuffering", true );
+			$this.trigger( "waiting", true );
+		}
+
+	// Waiting has ended
+	} else if ( eventTarget.player( "getBuffering" ) === true ) {
+		eventTarget.player( "setBuffering", false );
+		$this.trigger( "canplay", true );
+	}
+	eventTarget.player( "setPreviousTime", eventTarget.player( "getCurrentTime" ) );
+} );
+
+$document.on( resizeEvent, selector, function( event ) {
+	if ( event.namespace === componentName ) {
+		var media = event.target,
+			$media = $( media ),
+			ratio, newHeight;
+
+		if ( $( event.currentTarget ).hasClass( "video" ) ) {
+
+			if ( media.videoWidth === 0 || media.videoWidth === undef ) {
+				ratio = $media.attr( "height" ) / $media.attr( "width" );
+
+				// Calculate the new height based on the specified ratio or assume a default 16:9 ratio
+				newHeight = Math.round( $media.width() * ( !isNaN( ratio ) ? ratio : 0.5625 ) );
+
+				$media.css( "height", newHeight + "px" );
+			} else {
+				$media.css( "height", "" );
+			}
+		}
+	}
+} );
+
+window.onYouTubeIframeAPIReady = youTubeAPIReady;
+
+window.youTube = {
+	ready: false
+};
+
+wb.add( selector );
+
+} )( jQuery, window, wb );
+
+ 
+	</script>
+   </body>
+</html>
