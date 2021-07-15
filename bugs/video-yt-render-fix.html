@@ -955,7 +955,8 @@ $document.on( initializedEvent, selector, function( event ) {
 		}
 
 		// Identify that initialization has completed
-		wb.ready( $this, componentName );
+		//wb.ready( $this, componentName );
+		wb.ready( $(eventTarget), componentName );
 	}
 } );
 
