@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+      <title>Decision tree templates – Canada.ca</title>
+      <meta content="width=device-width,initial-scale=1" name="viewport">
+      <meta name=”robots” content=”noindex”>
+      <!-- Meta data -->
+      <!-- Meta data-->
+      <!-- Load closure template scripts -->
+      <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_43/cdts/compiled/soyutils.js"></script>
+      <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_43/cdts/compiled/wet-en.js"></script>
+      <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+      <!-- Write closure template -->
+      <script type="text/javascript">
+         document.write(wet.builder.refTop({
+         }));
+      </script>
+      <link href="../css/and-or.css" rel="stylesheet">
+	   <link href="../css/tabs.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
+   </head>
+   <body vocab="http://schema.org/" typeof="WebPage">
+      <div id="def-top">
+      </div>
+      <!-- Write closure template -->
+      <script type="text/javascript">
+         var defTop = document.getElementById("def-top");
+         defTop.outerHTML = wet.builder.top({
+           lngLinks: [{
+         
+             lang: "fr",
+             href: "#",
+             text: "Français"
+           }],
+           breadcrumbs: [{
+             title: "Canada.ca",
+             href: "https://www.canada.ca/en.html"
+           }, {
+             title: "[Theme]",
+             href: "#"
+           }],
+           search: true,
+           siteMenu: true,
+           showPreContent: true
+         });
+      </script>
+      <main role="main" property="mainContentOfPage" class="container">
+         <h1 property="name" id="wb-cont">Decision tree templates</h1>
+		 <h2>Modal overlay</h2>
+ <p><a href="#dt" class="wb-lbx btn btn-success" role="button"> <span class="fa fa-map-signs fa-2x pull-left mrgn-rght-md"></span><strong>Deciding on a pet</strong> <br>
+    <small>Decision tree</small></a></p>
+  <section aria-modal="true" id="dt" class="mfp-hide modal-dialog modal-content">
+    <div class="modal-body">
+      <p class="h2 mrgn-tp-0">Type of pet</p>
+      <p>What type of pet do you prefer?</p>
+      <ul class="list-inline mrgn-tp-lg mrgn-bttm-md">
+        <li><a class="wb-lbx btn btn-default" href="#dt-1">Dog</a></li>
+        <li><a class="wb-lbx btn btn-default" href="#dt-2">Cat</a></li>
+        <li><a class="wb-lbx btn btn-default" href="#dt-3">Neither</a></li>
+      </ul>
+    </div>
+    <div class="modal-footer hidden"></div>
+  </section>
+  <section aria-modal="true" id="dt-1" class="mfp-hide modal-dialog modal-content">
+    <div class="modal-body">
+      <ol class="breadcrumb brdr-rds-0 small mrgn-rght-lg">
+        <li><a class="wb-lbx" href="#dt">Type of pet</a></li>
+      </ol>
+      <p class="h2 mrgn-tp-0">You selected dog</p>
+      <p>Do you like big dogs or small dogs?</p>
+      <ul class="list-inline mrgn-tp-lg mrgn-bttm-md">
+        <li><a class="wb-lbx btn btn-default" href="#dt-1-1">Big dogs</a></li>
+        <li><a class="wb-lbx btn btn-default" href="#dt-1-2-end">Small dogs</a></li>
+      </ul>
+    </div>
+  </section>
+  <section aria-modal="true" id="dt-1-1" class="mfp-hide modal-dialog modal-content">
+    <div class="modal-body">
+      <ol class="breadcrumb brdr-rds-0 small mrgn-rght-lg">
+        <li><a class="wb-lbx" href="#dt">Type of pet</a></li>
+        <li><a class="wb-lbx" href="#dt-1">You selected dog</a></li>
+      </ol>
+      <p class="h2 mrgn-tp-0">You like big dogs</p>
+      <p>Do you have a backyard?</p>
+      <ul class="list-inline mrgn-tp-lg mrgn-bttm-md">
+        <li ><a class="wb-lbx btn btn-default" href="#dt-1-1-1-end">Yes</a></li>
+        <li><a class="wb-lbx btn btn-default" href="#dt-1-2-1-end">No</a></li>
+      </ul>
+    </div>
+  </section>
+  <section aria-modal="true" id="dt-1-2-end" class="mfp-hide modal-dialog modal-content">
+    <div class="modal-body">
+      <ol class="breadcrumb brdr-rds-0 small mrgn-rght-lg">
+        <li><a class="wb-lbx" href="#dt">Type of pet</a></li>
+        <li><a class="wb-lbx" href="#dt-1">You selected dog</a></li>
+      </ol>
+      <p class="h2 mrgn-tp-0">You like small dogs</p>
+      <p>Small dogs are easy to maintain. You might like a chihuahua.</p>
+      <ul class="list-inline mrgn-tp-lg mrgn-bttm-md">
+        <li>
+          <button class="btn btn-success popup-modal-dismiss" type="button">End</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section aria-modal="true" id="dt-1-1-1-end" class="mfp-hide modal-dialog modal-content">
+    <div class="modal-body">
+      <ol class="breadcrumb brdr-rds-0 small mrgn-rght-lg">
+        <li><a class="wb-lbx" href="#dt">Type of pet</a></li>
+        <li><a class="wb-lbx" href="#dt-1">You selected dog</a></li>
+        <li><a class="wb-lbx" href="#dt-1-1">You like big dogs</a></li>
+      </ol>
+      <p class="h2 mrgn-tp-0">You do have a backyard</p>
+      <p>The dog will have plenty of room to run. You might like a husky.</p>
+      <ul class="list-inline mrgn-tp-lg mrgn-bttm-md">
+        <li>
+          <button class="btn btn-success popup-modal-dismiss" type="button">End</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section aria-modal="true" id="dt-1-2-1-end" class="mfp-hide modal-dialog modal-content">
+    <div class="modal-body">
+      <ol class="breadcrumb brdr-rds-0 small mrgn-rght-lg">
+        <li><a class="wb-lbx" href="#dt">Type of pet</a></li>
+        <li><a class="wb-lbx" href="#dt-1">You selected dog</a></li>
+        <li><a class="wb-lbx" href="#dt-1-1">You like big dogs</a></li>
+      </ol>
+      <p class="h2 mrgn-tp-0">You do not have a backyard</p>
+      <p>You better have a big house. You might like a great dane.</p>
+      <ul class="list-inline mrgn-tp-lg mrgn-bttm-md">
+        <li>
+          <button class="btn btn-success popup-modal-dismiss" type="button">End</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section aria-modal="true" id="dt-2" class="mfp-hide modal-dialog modal-content">
+    <div class="modal-body">
+      <ol class="breadcrumb brdr-rds-0 small mrgn-rght-lg">
+        <li><a class="wb-lbx" href="#dt">Type of pet</a></li>
+      </ol>
+      <p class="h2 mrgn-tp-0">You selected cat</p>
+      <p>Do you like short haired or long haired cats?</p>
+      <ul class="list-inline mrgn-tp-lg mrgn-bttm-md">
+        <li><a class="wb-lbx btn btn-default" href="#dt-2-1-end">Short haired</a></li>
+        <li><a class="wb-lbx btn btn-default" href="#dt-2-2-end">Long haired</a></li>
+      </ul>
+    </div>
+  </section>
+  <section aria-modal="true" id="dt-2-1-end" class="mfp-hide modal-dialog modal-content">
+    <div class="modal-body">
+      <ol class="breadcrumb brdr-rds-0 small mrgn-rght-lg">
+        <li><a class="wb-lbx" href="#dt">Type of pet</a></li>
+        <li><a class="wb-lbx" href="#dt-2">You selected cat</a></li>
+      </ol>
+      <p class="h2 mrgn-tp-0">You like short haired cats</p>
+      <p>They do not shed as much. You might like a siamese.</p>
+      <ul class="list-inline mrgn-tp-lg mrgn-bttm-md">
+        <li>
+          <button class="btn btn-success popup-modal-dismiss" type="button">End</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section aria-modal="true" id="dt-2-2-end" class="mfp-hide modal-dialog modal-content">
+    <div class="modal-body">
+      <ol class="breadcrumb brdr-rds-0 small mrgn-rght-lg">
+        <li><a class="wb-lbx" href="#dt">Type of pet</a></li>
+        <li><a class="wb-lbx" href="#dt-2">You selected cat</a></li>
+      </ol>
+      <p class="h2 mrgn-tp-0">You like long haired cats</p>
+      <p>They are really soft. You might like a persian.</p>
+      <ul class="list-inline mrgn-tp-lg mrgn-bttm-md">
+        <li>
+          <button class="btn btn-success popup-modal-dismiss">End</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section aria-modal="true" id="dt-3" class="mfp-hide modal-dialog modal-content">
+    <div class="modal-body">
+      <ol class="breadcrumb brdr-rds-0 small mrgn-rght-lg">
+        <li><a class="wb-lbx" href="#dt">Type of pet</a></li>
+      </ol>
+      <p class="h2 mrgn-tp-0">You selected neither</p>
+      <p>Not everyone is a dog or cat person. Maybe you might get a goldfish.</p>
+      <ul class="list-inline mrgn-tp-lg mrgn-bttm-md">
+        <li>
+          <button class="btn btn-success popup-modal-dismiss" type="button">End</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+        
+
+         <div id="def-preFooter"></div>
+         <!-- Write closure template -->
+         <script type="text/javascript">
+            var defPreFooter = document.getElementById("def-preFooter");
+            defPreFooter.outerHTML = wet.builder.preFooter({
+            dateModified: "2020-05-05",
+            showPostContent: true,
+            showFeedback: true,
+            showShare: true
+            });
+         </script>
+      </main>
+      <div id="def-footer">
+      </div>
+      <!-- Write closure template -->
+      <script type="text/javascript">
+         var defFooter = document.getElementById("def-footer");
+         defFooter.outerHTML = wet.builder.footer({
+         showFooter: true,
+         showFeatures: true
+         });
+      </script>
+      <!-- Write closure template -->
+      <script type="text/javascript">
+         document.write(wet.builder.refFooter({
+         }));
+      </script>
+      <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
+	     
+   </body>
+</html>
