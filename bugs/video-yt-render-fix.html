@@ -403,7 +403,8 @@ var componentName = "wb-mltmd-fix",
 				$( eventTarget ).trigger( templateLoadedEvent );
 			}
 		}
-	wb.ready( $( eventTarget ), componentName );		
+	wb.ready( $(eventTarget), componentName );	
+			
 	},
 
 	/* helper functions*/
@@ -956,6 +957,7 @@ $document.on( initializedEvent, selector, function( event ) {
 
 		// Identify that initialization has completed
 		wb.ready( $this, componentName );
+		
 	}
 } );
 
