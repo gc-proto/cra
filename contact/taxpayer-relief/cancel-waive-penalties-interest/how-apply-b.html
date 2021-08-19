@@ -202,15 +202,39 @@
               <h1 property="name" id="wb-cont">How to apply</h1>
 
               <section>
-                <p>
-                  It is important that you provide the Canada Revenue Agency (CRA) with a complete and accurate description of the circumstances to explain why your situation merits relief. To support a request, you should provide all relevant information including the following, where applicable:
-                </p>
+                <p>It is important that you provide the Canada Revenue Agency (CRA) with a complete and accurate description of the circumstances to explain why your situation merits relief. To support a request, you should provide all relevant information including the following, where applicable:</p>
 
-                <ul>
-                  <li>your social insurance number (SIN), account number, partnership number, trust account number, business number (BN), or any other identification number assigned to you by the CRA</li>
-                  <li>the tax year(s) or fiscal period(s) involved</li>
-                  <li>any documentation relevant to your qualifying situation:
-                    <li>documentation related to the primary basis of your request:
+                <ul class="fa-ul">
+                  <li><span class="fas fa-check text-success fa-li"></span>your social insurance number (SIN), account number, partnership number, trust account number, business number (BN), or any other identification number assigned to you by the CRA</li>
+                  <li><span class="fas fa-check text-success fa-li"></span>the tax year(s) or fiscal period(s) involved</li>
+                  <li><span class="fas fa-check text-success fa-li"></span>any documentation relevant to your qualifying situation:
+                    <div id="checklist" class="mrgn-tp-lg situationalDocumentation">
+                      <label for="financial-hardship" class="container-checks">
+                        <input id="financial-hardship" class="btnCheck" type="checkbox">
+                        Inability to pay or financial hardship<span class="checkmark"></span>
+                      </label>
+                      <label for="death" class="container-checks">
+                        <input id="death" class="btnCheck" type="checkbox">
+                        Death of a loved one<span class="checkmark"></span>
+                      </label>
+                      <label for="accident" class="container-checks">
+                        <input id="accident" class="btnCheck" type="checkbox">
+                        An accident, serious illness or emotional distress<span class="checkmark"></span>
+                      </label>
+                      <label for="disaster" class="container-checks">
+                        <input id="disaster" class="btnCheck" type="checkbox">
+                        Natural or human-made disaster<span class="checkmark"></span>
+                      </label>
+                      <label for="civil-disturbance" class="container-checks">
+                        <input id="civil-disturbance" class="btnCheck" type="checkbox">
+                        Civil disturbance or disruptions in services<span class="checkmark"></span>
+                      </label>
+                      <label for="cra-action" class="container-checks">
+                        <input id="cra-action" class="btnCheck" type="checkbox">
+                        CRA delay or error<span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <!-- <li>documentation related to the primary basis of your request:
                       <div class="wb-frmvld" id="inline-ff"><form>
                       <div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"checkbox", "noForm": true, "isoptional": true}'>
                       	<p>&nbsp;</p>
@@ -219,43 +243,90 @@
                           <li data-wb-fieldflow='[{"action": "toggle", "toggle": "#death-accident",  "live": true}]'>Death/ accident/ serious illness/ emotional or mental distress</li>
                           <li data-wb-fieldflow='[{"action": "toggle", "toggle": "#disaster", "live": true}]'>Natural or human-made disaster</li>
                           <li data-wb-fieldflow='[{"action": "toggle", "toggle": "#civil-disturbance", "live": true}]'>Civil disturbance or disruptions in services</li>
-                          <li data-wb-fieldflow='[{"action": "toggle", "toggle": "#cra-action",  "live": true}]'>CRA delay or error</li>
-	</ul>
+                          <li data-wb-fieldflow='[{"action": "toggle", "toggle": "#cra-action",  "live": true}]'>CRA delay or error</li> -->
+                    </li>
+                  </ul>
                       </div></form></div>
 
-
-                      <details id="financial-hardship" class="hidden">
-                      <summary>Supporting documents for financial hardship</summary>
-                      <p>Fill out <a href="#">Form RC376, Taxpayer Relief Request – Statement of Income and Expenses and Assets and Liabilities for Individuals</a>, to
-                    state your financial situation or provide a written statement. Documents to support your financial disclosure may include:
-                    current mortgage statements and property assessments or rental agreements, loans and monthly bills, all bank and credit card
-                    statements for the most recent three months and all current investment statements.</p>
-                    <p>Business clients should include a copy of their income and expense statement and assets and liabilities statement.</p>
-                    </details>
-                    <br />
-
-                      <details id="death-accident" class="hidden"><summary>Supporting documentation for death/ accident/ serious illness / distress</summary>
-                        <p>Death certificate or obituary. Doctor's certificate or letter indicating the
-                      type of illness, length of treatment (onset of illness and the date or
-                      expected date of recovery), hospital dates, if they apply, and any
-                      explanations regarding the effect the medical condition may have had
-                      on meeting your tax obligations.</p></details>
-                    <details id="disaster" class="hidden">
-                      <summary>Supporting documentation for natural or human-made disaster</summary>
-                      <p>Insurance statements, fire/police report</p>
-                    </details>
-
-                    <details id="civil-disturbance" class="hidden">
-                     <summary>Supporting documentation for civil disturbance</summary>
-                    <p>Usually not required as such events are public knowledge.</p>
-                    </details>
-
-                      <details id="cra-action" class="hidden">
-                        <summary>Supporting documentation for CRA delay or error</summary>
-                        <p>Explain in writing the details and timelines of the delay or error
-                      caused by the CRA.</p>
-                    </details>
-
+                      <div class="panel panel-default financial-hardship hidden">
+                        <header class="panel-heading">
+                         <h5 class="panel-title">Financial hardship</h5>
+                        </header>
+                        <div class="panel-body">
+                          <p>You will also need to provide:</p>
+                          <ul class="fa-ul">
+                            <li><span class="fas fa-check text-success fa-li"></span>A completed <a href="#">Form RC376, Taxpayer Relief Request – Statement of Income and Expenses and Assets and Liabilities for Individuals</a></li>
+                            <li><span class="fas fa-check text-success fa-li"></span>Documents to support your financial disclosure, such as:
+                              <li>current mortgage statements</li>
+                              <li>property assessments</li>
+                              <li>rental agreements</li>
+                              <li>loans and monthly bills</li>
+                              <li>bank and credit card for the most recent 3 months</li>
+                              <li>current investment statements</li>
+                              <li>loans and monthly bills</li>
+                            </li>
+                            <li><span class="fas fa-check text-success fa-li"></span>Business clients should include a copy of their income and expense statement and assets and liabilities statement.</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="panel panel-default death hidden">
+                        <header class="panel-heading">
+                         <h5 class="panel-title">Death of a loved one</h5>
+                        </header>
+                        <div class="panel-body">
+                          <p>You will also need to provide:</p>
+                          <ul class="fa-ul">
+                            <li><span class="fas fa-check text-success fa-li"></span>A death certificate or obituary</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="panel panel-default accident hidden">
+                        <header class="panel-heading">
+                         <h5 class="panel-title">An accident, serious illness or emotional distress</h5>
+                        </header>
+                        <div class="panel-body">
+                          <p>You will also need to provide:</p>
+                          <ul class="fa-ul">
+                            <li><span class="fas fa-check text-success fa-li"></span>A doctor's certificate or letter indicating the type of illness, length of treatment (onset of illness and the date or expected date of recovery)</li>
+                            <li><span class="fas fa-check text-success fa-li"></span>Hospital dates, if they apply</li>
+                            <li><span class="fas fa-check text-success fa-li"></span>An explanations regarding the effect the medical condition may have had on meeting your tax obligations</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="panel panel-default disaster hidden">
+                        <header class="panel-heading">
+                         <h5 class="panel-title">Natural or human-made disaster</h5>
+                        </header>
+                        <div class="panel-body">
+                          <p>You will also need to provide:</p>
+                          <ul class="fa-ul">
+                            <li><span class="fas fa-check text-success fa-li"></span>Insurance statements</li>
+                            <li><span class="fas fa-check text-success fa-li"></span>Fire, police or another in evidence of the disaster</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="panel panel-default civil-disturbance hidden">
+                        <header class="panel-heading">
+                         <h5 class="panel-title">Civil disturbance</h5>
+                        </header>
+                        <div class="panel-body">
+                          <p>You will also need to provide:</p>
+                          <ul class="fa-ul">
+                            <li><span class="fas fa-check text-success fa-li"></span>As such events are public knowledge, you will likely only need a description of the disturbance</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="panel panel-default cra-action hidden">
+                        <header class="panel-heading">
+                         <h5 class="panel-title">CRA mistake or delay</h5>
+                        </header>
+                        <div class="panel-body">
+                          <p>You will also need to provide:</p>
+                          <ul class="fa-ul">
+                            <li><span class="fas fa-check text-success fa-li"></span>An explanation in writing of the details and timelines of the delay or error caused by the CRA</li>
+                          </ul>
+                        </div>
+                      </div>
                     </li>
 
 
@@ -403,15 +474,24 @@
          <script src="../js/topmenu.js"></script>
          <script>
             $(".btnCheck").click(function(event) {
-                if ($('.beforeCall input[type="checkbox"]').not(':checked').length == 0) {
-                    // document.getElementById("check-message").innerHTML = '<label class="label label-success">You are ready to make a request</label>';
-                    $("#check-message").addClass("hidden");
-                    $("#ready-to-apply").removeClass("hidden");
-                } else {
-                    // document.getElementById("check-message").innerHTML = '<label class="label label-danger">You need all of the above to be considered for remission</label>';
-                    $("#check-message").removeClass("hidden");
-                    $("#ready-to-apply").addClass("hidden");
-                }
+              var elm = event.currentTarget,
+                $elm = $(elm),
+                $elmId = $elm.attr("id");
+              if ($("." + $elmId).hasClass("hidden")) {
+                $("." + $elmId).removeClass("hidden");
+              } else {
+                $("." + $elmId).addClass("hidden");
+              }
+              
+                // if ($('.situationalDocumentation input[type="checkbox"]').not(':checked').length == 0) {
+                //     // document.getElementById("check-message").innerHTML = '<label class="label label-success">You are ready to make a request</label>';
+                //     $("#check-message").addClass("hidden");
+                //     $("#ready-to-apply").removeClass("hidden");
+                // } else {
+                //     // document.getElementById("check-message").innerHTML = '<label class="label label-danger">You need all of the above to be considered for remission</label>';
+                //     $("#check-message").removeClass("hidden");
+                //     $("#ready-to-apply").addClass("hidden");
+                // }
             });
         </script>
       </body>
