@@ -121,28 +121,29 @@
                         <!-- question 1 -->
                         <p>Do you have an impairment in physical or mental functions</p>
                         <ul>
-                            <li>Yes
+                            <li>Yes <!-- proceed to q2 -->
                                 <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
                                     <!-- question 2 - yes -->
                                     <p>Has the impairment lasted or is it expected to last for a continuous period of at least 12 months?</p>
                                     <ul>
-                                        <li>Yes
+                                        <li>Yes <!-- proceed to q3 -->
                                             <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
                                                 <!-- question 3 - yes -->
                                                 <p>Is the impairment present all or substantially all of the time (at least 90% of the time)?</p>
                                                 <ul>
-                                                    <li>Yes
+                                                    <li>Yes <!-- proceed to q4 -->
                                                         <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
                                                             <!-- question 4 - yes -->
-                                                            <p>Do you receive life-sustaining therapy that supports a vital function?<br>
-                                                                This may include the following therapies:
-                                                    <li>kidney dialysis</li>
-                                                    <li>insulin therapy</li>
-                                                    <li>oxygen therapy</li>
-                                                    <li>chest physiotherapy</li>
+                                                            <p>Do you receive life-sustaining therapy that supports a vital function?
+                                                                This may include the following therapies:<br>
+                                                    - kidney dialysis<br>
+                                                    - insulin therapy<br>
+                                                    - oxygen therapy<br>
+                                                    - chest physiotherapy<br>
                                                     </p>
+                                                            
                                                     <ul>
-                                                        <li>Yes
+                                                        <li>Yes <!-- proceed to q5 -->
                                                             <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
                                                                 <!-- question 5 - yes -->
                                                                 <p>Do you receive the life-sustaining therapy at least 3 times per week, for an average of 14 hours per week?</p>
@@ -231,13 +232,152 @@
                                                                                     </li>
                                                                                     
                                                                             <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q13", "class": "hidden", "live":true}'>No</li>
-                                                                            
-                                                        
                                                     </ul>
                                             </div>
                                         </li>
-                                    
-                                        <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q1", "class": "hidden", "live":true}'>No</li>
+                                                                                </ul></div>
+                                                                            </li>
+                                                                            
+                                                                        <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q18", "class": "hidden", "live":true}'>>No</li>
+                                                                                
+                                                                        </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                        </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                                
+                                                                                
+                                                                                </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                            
+                                                                    </ul>
+                                                                        </div>
+                                                                    </li>
+                                                                
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                       <li>No <!-- proceed to q6 --> 
+                                                            <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                                                                            <!-- question 6 - no -->
+
+                                                                            <p>Are you blind in both eyes?<br>
+                                                                                One of these options must apply:
+                                                                    <li>You have a visual acuity of 20/200 (6/60) or worse on the Snellen Chart (or an equivalent) in both eyes</li>
+                                                                    <li>Your field of vision less than 20 degrees in both eyes after correction</li>
+                                                                    </p>
+
+                                                                    <ul>
+                                                                        <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q10", "class": "hidden", "live":true}'>Yes</li>
+                                                                        <li>No
+                                                                            <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                                                                                <!-- question 7 - no -->
+                                                                                <p>Do you have severe or profound hearing loss in both ears even when using any applicable devices?
+                                                                                <br>
+                                                                                    <small>Severe hearing loss is in the range of 71-90dB.<br>
+                                                                                    Profound hearing loss is 91dB+</small></p>
+                                                                                
+                                                                                <ul>
+                                                                        <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q11", "class": "hidden", "live":true}'>Yes</li>
+                                                                        <li>No
+                                                                            <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                                                                                <!-- question 8 - no -->
+                                                                            <p>Do any of the following statements apply to you?<br>
+                                                                             <li>I am confined to a bed or wheelchair at all times.</li>
+                                                                             <li>I have had a limb amputated.</li>
+                                                                             <li>Tube feeding is my primary means of feeding myself.</li> 
+                                                                             <li>I have chronic renal failure.</li> 
+                                                                             <li>I require catheterization to manage my bladder functions.</li> 
+                                                                             <li>Sign language is my primary means of communication.</li></p>
+                                                                                
+                                                                                <ul>
+                                                                        <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q12", "class": "hidden", "live":true}'>Yes</li>
+                                                                        <li>No
+                                                                            <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                                                                                <!-- question 9 - no -->
+                                                                            
+                                                                        <p>Do you have an impairment in any of the following categories?<br>
+                                                                            <li>vision</li>
+                                                                            <li>speaking</li>
+                                                                            <li>hearing</li>
+                                                                            <li>walking</li>
+                                                                            <li>eliminating (bowel or bladder functions)</li>
+                                                                            <li>feeding (including food preparation)</li>
+                                                                            <li>dressing</li>
+                                                                            <li>mental functions necessary for everyday life</li>
+                                                                        </p>
+                                                                                
+                                                                        <ul>
+                                                                        <li>Yes <!-- proceed to q10 -->
+                                                                            <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                                                                                
+                                                            <!-- question 10 - yes -->
+                                                                                <p>Does the impairment in 1 or more of these categories make you unable to do the activity, or make you take 3 times longer than someone of similar age without the impairment?<br>
+                                                                                <small>This must be the case even with the appropriate medication, devices, and therapy.</small></p>
+                                                                                
+                                                                                <ul>
+                                                                                   <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q14", "class": "hidden", "live":true}'>Yes</li>
+                                                                                    <li>No <!-- proceed to q11 -->                                                                       
+                                                                            <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                                                                                
+                                                                                <!-- questio 11 - no -->
+                                                                                <p>Do you have impairments in 2 or more of the categories in Question 9 that significantly limit your ability to do the activities?
+                                                                                <br>
+                                                                                <small>These limitations must exist together all or substantially all of the time.</small></p>
+                                                                                
+                                                                                <ul>
+                                                                                   <li>Yes <!-- proceed to q12 -->
+                                                                                       <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                                                                                           <!-- questio 12 - yes -->
+                                                                                           <p>Is the combined effect of these significant limitations comparable to being unable – or taking an inordinate amount of time –  in one category, even with appropriate medication, devices, and therapy?</p>
+                                                                                           
+                                                                                           <ul>
+                                                                                   <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q16", "class": "hidden", "live":true}'>Yes</li>
+                                                                                    <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q17", "class": "hidden", "live":true}'>No</li>
+        
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    
+                                                                            <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q13", "class": "hidden", "live":true}'>No</li>
+                                                    </ul>
+                                            </div>
+                                        </li>
+                                                                                </ul></div>
+                                                                            </li>
+                                                                            
+                                                                        <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q18", "class": "hidden", "live":true}'>>No</li>
+                                                                                
+                                                                        </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                        </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                                
+                                                                                
+                                                                                </ul>
+                                                                            </div>
+                                                                        </li>
+                                                                            
+                                                                    </ul>
+                                                                        </div>
+                                                        </li>
+                                                    </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q2", "class": "hidden", "live":true}'>No</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                         <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q2A", "class": "hidden", "live":true}'>No</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                            <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q1", "class": "hidden", "live":true}'>No</li>
                             
                         </ul>
                     
@@ -250,8 +390,13 @@
                 <p>The impairment must be prolonged, meaning that it has lasted or is expected to last for a continuous period of at least 12 months. </p>
             </section>
 
+            <section id="digital-q2A" class="results alert alert-info provisional hidden">
+                <h2 class="h4 mrgn-tp-sm">You are not eligible for the DTC</h2>
+                <p>XXXX</p>
+            </section>
+                
             <section id="digital-q2" class="results alert alert-info provisional hidden">
-                <h2 class="h4 mrgn-tp-sm">XXX</h2>
+                <h2 class="h4 mrgn-tp-sm">You are not eligible for the DTC</h2>
                 <p>XXXX</p>
             </section>
 
@@ -325,6 +470,11 @@
                 <p>xx</p>
             </section>
             <section id="digital-q17" class="results alert alert-info provisional hidden">
+                <h2 class="h4 mrgn-tp-sm">You are not eligible for the DTC</h2>
+                <p>xx</p>
+            </section>
+                
+                <section id="digital-q18" class="results alert alert-info provisional hidden">
                 <h2 class="h4 mrgn-tp-sm">You are not eligible for the DTC</h2>
                 <p>xx</p>
             </section>
