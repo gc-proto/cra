@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+
+<title>Secure drop zone</title>
+
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta name="robots" content="noindex, nofollow, noarchive" />
+<meta name="format-detection" content="telephone=no" />
+
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" href="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/css/theme.min.css" />
+
+<script src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/wet-boew/js/jquery/2.1.4/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/assets/favicon.ico" rel="shortcut icon" />
+<link rel="stylesheet" href="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/css/ie8-theme.min.css" />
+<script src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/wet-boew/js/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/wet-boew/js/ie8-wet-boew.min.js"></script>
+<![endif]-->
+<noscript>
+    <link rel="stylesheet" href="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/wet-boew/css/noscript.min.css" />
+</noscript>
+
+<!-- CustomCSSStart -->
+<link rel="stylesheet" href="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/cra-arc/apps.css" />
+<link rel="stylesheet" href="https://careers-carrieres.cra-arc.gc.ca/gol-ged/wcis/iss-sdi/pub/css/custom.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+<!-- CustomCSSEnd -->
+
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage">
+
+    <ul id="wb-tphp">
+        <li class="wb-slc">
+            <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+        </li>
+        <li class="wb-slc visible-sm visible-md visible-lg">
+            <a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
+        </li>
+        <li class="wb-slc visible-md visible-lg">
+            <a class="wb-sl" href="#wb-sec">Skip to section menu</a>
+        </li>
+    </ul>
+
+<header role="banner">
+    <div id="wb-bnr" class="container">
+        <section id="wb-lng" class="visible-md visible-lg text-right">
+            <h2 class="wb-inv">Language selection</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="list-inline margin-bottom-none">
+                            <li>
+                                <div lang="fr">
+                                    
+                                    <a href="https://careers-carrieres.cra-arc.gc.ca:443/gol-ged/wcis/iss-sdi/pub/cralgnrgstrstpn.action?request_locale=fr_CA&rtrnlnk=" lang="fr">Français</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+        <div class="row">
+            <div class="brand col-xs-8 col-sm-9 col-md-6">
+                    
+                    <img alt="" src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/assets/sig-blk-en.svg" />
+                    <span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span>
+                </div>
+                <section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
+                    
+                    <h2>Menu</h2>
+                    <ul class="list-inline text-right chvrn">
+                        <li>
+                            <a href="#mb-pnl" title="Menu" aria-controls="mb-pnl" class="overlay-lnk" role="button">
+                                <span class="glyphicon glyphicon-th-list">
+                                    <span class="wb-inv">Menu</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="mb-pnl"></div>
+                </section>
+                
+            </div>
+        </div>
+        
+        <div id="brand-container-cra" style="background: black;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8" id="brand-text-cra">
+                        Canada Revenue Agency
+                    </div>
+                    <div id="login-logout-div" class="pull-right mrgn-rght-md">
+                         
+                            <a id="loginButton" href="#" class="btn btn-default iss-button login-logout-button btn-sm" role="button">Sign out</a>
+                        
+                    </div>                
+                </div>
+            </div>
+        </div>
+        
+<span data-trgt="mb-pnl" class="wb-menu hide"></span>
+
+<style>
+main {
+    font-size: 20px;
+    line-height: 1.65em;
+}
+
+body {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 16px;
+    line-height: 1.4375;
+    color: #333;
+    background-color: #fff;
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.4375;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-style: outset;
+    height: auto;
+    min-height: 36px;
+    min-width: 36px;
+    white-space: normal;
+    color: #335075;
+    background-color: #eaebed;
+    border-color: #dcdee1;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea-width {
+    width: 800px;
+}
+
+/*h1 underline re-design*/ h1#wb-cont {
+border-bottom: none;
+}
+h1#wb-cont::after {
+  content: "";
+  display: block;
+  width: 70px;
+  padding-bottom: 8px;
+  border-bottom: .18em solid #af3c43;
+}/*Section menu mobile*/
+.gcnav h1#wb-cont-parent {
+  border-bottom-width: 0px;
+  padding: 0px 20px 10px 12px;
+  background-color: #fff;
+  display: inline-block;
+  font-size: 1.1em;
+  color: #555;
+  margin-top: -19px;
+  float: left;
+  margin-right: 20px;
+}
+.gcnav-menu {
+  border-top: 4px solid #26374a;
+  border-right: 4px solid #26374a;
+  border-radius: 0px 6px 6px 0px;
+  margin-top: 38px;
+}
+.gcnav-menu .gcnav-steps {
+  padding-top: 10px;
+  clear: both;
+}
+.gcnav ul.gcnav-steps>li:last-child {
+  border-left: 4px solid #26374a;
+  border-bottom: 4px solid #26374a;
+  border-bottom-left-radius: 6px;
+}
+#gcnav-menu-header, .gcnav-menu-pager {
+  display: none;
+}/* Section menu desktop*/
+
+@media all and (min-width:992px) {
+.gcnav {
+  margin: 0px -15px 0px -15px;
+}
+.gcnav::after {
+  clear: both;
+}
+.gcnav::after, .gcnav::before {
+  content: " ";
+  display: table;
+}
+.gcnav-menu h1#wb-cont-parent {
+  font-weight: inherit;
+  padding-bottom: 0px!important;
+  margin-bottom: 0px;
+}
+.gcnav-section h1#wb-cont {
+  margin-top: 0px;
+}
+
+.gcnav-section {
+  display: inline-block;
+}
+.gcnav-menu nav {
+  margin-top: -20px;
+}
+.gcnav-menu h1#wb-cont-parent, .gcnav-menu ul.gcnav-menu-pager, .gcnav-section, .gcnav-menu nav, .gcnav aside.gcnav-side {
+  position: relative;
+  min-height: 1px;
+  padding: 0px 15px 0px 15px;
+}
+.gcnav-menu h1#wb-cont-parent, .gcnav-menu ul.gcnav-menu-pager {
+  float: left;
+}
+.gcnav aside.gcnav-side {
+  clear: right;
+}
+#gcnav-menu-header, .gcnav-menu-pager {
+  display: inherit;
+  margin-top: 0px;
+}
+.gcnav-menu #gcnav-menu-header {
+  font-size: 1.2em;
+}
+.gcnav-menu {
+  border-top: 0px;
+  border-right: 0px;
+}
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border: 2px solid #333;
+}
+/* for checks, container */
+.container-checks {
+  display: block;
+  position: relative;
+  padding-left: 55px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* hide default checkbox */
+.container-checks input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* mouse-over, grey */
+.container-checks:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container-checks input:checked ~ .checkmark {
+  background-color: #fff;
+}
+/* create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* show the checkmark when checked */
+.container-checks input:checked ~ .checkmark:after {
+  display: block;
+}
+/* style the checkmark/indicator */
+.container-checks .checkmark:after {
+  left: 14px;
+  top: 5px;
+  width: 10px;
+  height: 22px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+</style>    
+
+
+</header>
+
+
+<main role="main" property="mainContentOfPage">
+<div class="container">
+<div class="gcnav">
+<section class="gcnav-menu">
+<h1 property="name" id="wb-cont-parent">Secure drop zone A1B2 C3D4 E5F6 G7H8</h1>
+</section>
+
+<section class="gcnav-section">
+<h1 property="name" id="wb-cont" style="margin-bottom: 20px">Download and upload files</h1>
+
+<!-- Content starts -->
+
+<section class="label label-danger" style="font-size: 12pt; padding-top: 6px">
+    <strong>Your secure drop zone will close in 10 days on July 10, 2021 at 11:59 PM EST</strong>
+</section>
+
+<p class="mrgn-tp-md">Please confirm you have downloaded all available files and uploaded all necessary files before continuing. This secure drop zone will close after you submit your files for your security.</p>
+
+<table class="table table-simple mrgn-bttm-0">
+<thead>
+    <tr>
+        <th>Files downloaded</th>
+    </tr>    
+</thead>
+<tbody>
+    <tr>
+        <td>Notice of Assessment</td>
+    </tr>
+    <tr>
+        <td>Form for Appeals</td>
+    </tr>
+    <tr>
+        <td>Pre-authorized Debit Confirmation</td>
+    </tr>  
+</tbody>
+</table>
+
+<table class="table table-simple mrgn-bttm-0 mrgn-tp-md">
+<thead>
+    <tr>
+        <th>Files downloaded</th>
+    </tr>    
+</thead>
+<tbody>
+    <tr>
+        <td>Notice of Assessment</td>
+    </tr>
+    <tr>
+        <td>Form for Appeals</td>
+    </tr>
+    <tr>
+        <td>Pre-authorized Debit Confirmation</td>
+    </tr>  
+</tbody>
+</table>
+
+<form class="mrgn-tp-md" action="https://test.canada.ca/cra/sdz/sdz-6.html" method="get" id="sdz8">
+
+<label for="check" class="container-checks">
+      <input id="check" class="btnCheck" type="checkbox">
+      <span class="text-danger"><strong>*</strong></span> I verify that I have downloaded available files and uploaded all required files. <span class="text-danger">(required)</span><span class="checkmark"></span> </label>
+
+<button class="btn btn-info btn-lg mrgn-rght-sm" id="btncheck">Submit and close drop zone</button> <button class="btn btn-default btn-lg mrgn-rght-sm">Go back</button>
+</form>
+<!-- Content ends -->
+
+</section>
+</div>
+
+
+<div class="row pagedetails mrgn-tp-md">
+    <div class="col-xs-12 datemod">
+        <dl class="mrgn-bttm-md">
+            <dd class="inline-block">Date modified: 2020-02-13</dd>
+        </dl>
+    </div>
+    
+</div>
+</div>
+</main>
+
+
+
+<footer role="contentinfo" id="wb-info">
+<div class="brand">
+    <div class="container">
+        <div class="row ">
+            <nav class="col-md-10 ftr-urlt-lnk">
+                <h2 class="wb-inv">About this site</h2>
+                <ul>                    
+                    <li><a href="http://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+                    <li><a href="http://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+                </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg">
+                <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+            </div>
+            <div class="col-xs-6 col-md-2 text-right">
+                <img src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada" />
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+<!--[if gte IE 9 | !IE ]><!-->
+
+<script src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/wet-boew/js/ie8-wet-boew2.min.js"></script>
+
+<![endif]-->
+<script src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/js/theme.min.js"></script>
+
+<!-- CustomScriptsStart -->
+<script>
+$('#check').change(function () {
+    $('#btncheck').prop("disabled", !this.checked);
+}).change()
+</script>  
+<!-- CustomScriptsEnd -->
+
+</body>
+</html>

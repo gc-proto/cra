@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+
+<title>Secure drop zone</title>
+
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta name="robots" content="noindex, nofollow, noarchive" />
+<meta name="format-detection" content="telephone=no" />
+
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" href="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/css/theme.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/assets/favicon.ico" rel="shortcut icon" />
+<link rel="stylesheet" href="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/css/ie8-theme.min.css" />
+<script src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/wet-boew/js/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/wet-boew/js/ie8-wet-boew.min.js"></script>
+<![endif]-->
+<noscript>
+    <link rel="stylesheet" href="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/wet-boew/css/noscript.min.css" />
+</noscript>
+
+<!-- CustomCSSStart -->
+<link rel="stylesheet" href="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/cra-arc/apps.css" />
+<link rel="stylesheet" href="https://careers-carrieres.cra-arc.gc.ca/gol-ged/wcis/iss-sdi/pub/css/custom.css" />
+<!-- CustomCSSEnd -->
+
+<style>
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.eot");
+  src: url("https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.woff") format("woff"), url("https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("https://www.canada.ca/etc/designs/canada/wet-boew/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.alert-info > :first-child::before, .alert-success > :first-child::before, .alert-warning > :first-child::before, .alert-danger > :first-child::before {
+  color: inherit;
+  content: none; }
+
+.alert {
+  background-clip: content-box;
+  background-color: inherit;
+  border-left: 6px solid #000;
+  margin-bottom: 23px;
+  margin-left: 10px;
+  padding: 0 0 0 15px; }
+  .alert > p, .alert > ul, .alert > ol {
+    margin-bottom: 0px; }
+  .alert > * {
+    margin-left: 15px; }
+  .alert details {
+    margin-left: .5em;
+    padding-top: 15px; }
+  .alert > :first-child:not(details) {
+    margin-top: auto;
+    padding-top: 15px; }
+  .alert > :last-child {
+    padding-bottom: 25px; }
+  .alert::before {
+    font-family: "Glyphicons Halflings";
+    font-size: 26px;
+    line-height: 2.3em;
+    margin-left: -1.27em;
+    padding: 2px;
+    position: absolute; }
+  .alert > :first-child {
+    margin-left: 15px; }
+
+.alert-info {
+  border-color: #269abc;
+  -o-border-image: linear-gradient(to bottom, #269abc 16px, #269abc 16px, transparent 16px, transparent 48px, #269abc 48px, #269abc 48px) 1 100%;
+     border-image: linear-gradient(to bottom, #269abc 16px, #269abc 16px, transparent 16px, transparent 48px, #269abc 48px, #269abc 48px) 1 100%; }
+  .alert-info::before {
+    color: #269abc;
+    content: ""; }
+
+.alert-success {
+  border-color: #278400;
+  -o-border-image: linear-gradient(to bottom, #278400 16px, #278400 16px, transparent 16px, transparent 48px, #278400 48px, #278400 48px) 1 100%;
+     border-image: linear-gradient(to bottom, #278400 16px, #278400 16px, transparent 16px, transparent 48px, #278400 48px, #278400 48px) 1 100%; }
+  .alert-success::before {
+    color: #278400;
+    content: ""; }
+
+.alert-warning {
+  border-color: #ee7100;
+  -o-border-image: linear-gradient(to bottom, #ee7100 16px, #ee7100 16px, transparent 16px, transparent 48px, #ee7100 48px, #ee7100 48px) 1 100%;
+     border-image: linear-gradient(to bottom, #ee7100 16px, #ee7100 16px, transparent 16px, transparent 48px, #ee7100 48px, #ee7100 48px) 1 100%; }
+  .alert-warning::before {
+    color: #ee7100;
+    content: ""; }
+
+.alert-danger {
+  border-color: #d3080c;
+  -o-border-image: linear-gradient(to bottom, #d3080c 16px, #d3080c 16px, transparent 16px, transparent 48px, #d3080c 48px, #d3080c 48px) 1 100%;
+     border-image: linear-gradient(to bottom, #d3080c 16px, #d3080c 16px, transparent 16px, transparent 48px, #d3080c 48px, #d3080c 48px) 1 100%; }
+  .alert-danger::before {
+    color: #d3080c;
+    content: ""; }
+
+main {
+    font-size: 20px;
+    line-height: 1.65em;
+}
+
+body {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 16px;
+    line-height: 1.4375;
+    color: #333;
+    background-color: #fff;
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.4375;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-style: outset;
+    height: auto;
+    min-height: 36px;
+    min-width: 36px;
+    white-space: normal;
+    color: #335075;
+    background-color: #eaebed;
+    border-color: #dcdee1;
+}   
+</style>
+
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage">
+
+    <ul id="wb-tphp">
+        <li class="wb-slc">
+            <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+        </li>
+        <li class="wb-slc visible-sm visible-md visible-lg">
+            <a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
+        </li>
+        <li class="wb-slc visible-md visible-lg">
+            <a class="wb-sl" href="#wb-sec">Skip to section menu</a>
+        </li>
+    </ul>
+
+<header role="banner">
+    <div id="wb-bnr" class="container">
+        <section id="wb-lng" class="visible-md visible-lg text-right">
+            <h2 class="wb-inv">Language selection</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="list-inline margin-bottom-none">
+                            <li>
+                                <div lang="fr">
+                                    
+                                    <a href="https://careers-carrieres.cra-arc.gc.ca:443/gol-ged/wcis/iss-sdi/pub/cralgnrgstrstpn.action?request_locale=fr_CA&rtrnlnk=" lang="fr">Français</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+        <div class="row">
+            <div class="brand col-xs-8 col-sm-9 col-md-6">
+                    
+                    <img alt="" src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/assets/sig-blk-en.svg" />
+                    <span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span>
+                </div>
+                <section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
+                    
+                    <h2>Menu</h2>
+                    <ul class="list-inline text-right chvrn">
+                        <li>
+                            <a href="#mb-pnl" title="Menu" aria-controls="mb-pnl" class="overlay-lnk" role="button">
+                                <span class="glyphicon glyphicon-th-list">
+                                    <span class="wb-inv">Menu</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="mb-pnl"></div>
+                </section>
+                
+            </div>
+        </div>
+        
+        <div id="brand-container-cra" style="background: black;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8" id="brand-text-cra">
+                        Canada Revenue Agency
+                    </div>
+                    <div id="login-logout-div" class="pull-right mrgn-rght-md">
+                         
+                            <!--a id="loginButton" href="#" class="btn btn-default iss-button login-logout-button btn-sm" role="button">Login / Register</a-->
+                        
+                    </div>                
+                </div>
+            </div>
+        </div>
+        
+<span data-trgt="mb-pnl" class="wb-menu hide"></span>
+</header>
+
+<div class="container" id="iss-main-cont">
+<div class="row">
+<main role="main" property="mainContentOfPage" class="col-md-12">
+
+<h1 id="wb-cont" style="margin-bottom: 20px">Secure drop zone</h1>
+
+<!-- Content starts -->
+
+<style>
+#an4:valid {
+    color: green;
+}
+#an4:invalid {
+    color: red;
+}
+</style>
+
+<div class="wb-frmvld">
+    <form action="https://test.canada.ca/cra/sdz/sdz-2.html" method="get" id="sdz1">
+        <div class="form-group">
+        <label for="an4" class="required"><span class="field-name">Secure drop zone code</span> <strong class="required">(required)</strong></label>
+        <!--div class="form-inline">
+            <input class="form-control letter" id="an1" type="text" size="4" maxlength="4" pattern="ACGH" data-msg="Custom msg" required="required" /> &nbsp;-&nbsp;
+            <input class="form-control letter" id="an2" type="text" size="4" maxlength="4" pattern="1460" data-msg="Custom msg" required="required" /> &nbsp;-&nbsp;
+            <input class="form-control letter" id="an3" type="text" size="4" maxlength="4" pattern="TUJH" data-msg="Custom msg" required="required" /> &nbsp;-&nbsp;
+            <input class="form-control letter" id="an4" name="an4" type="text" size="4" maxlength="4" pattern="2579" data-msg="Custom msg" required="required" onkeyup="myFunction()" />
+        </div-->
+        <div class="form-inline">
+            <input class="form-control" id="an4" name="an4" type="text" pattern="[aA][cC][gG][hH]1460[tT][uU][jJ][hH]2579" data-msg="Please enter a code in the following format: abcd1234efgh5678" maxlength="16" required="required" onKeyDown="CountLeft(this.form.text,16);" onKeyUp="CountLeft(this.form.text,16);" />
+        </div>
+        <button type="submit" class="btn btn-info btn-lg mrgn-rght-sm" id="enter" disabled="disabled">Enter</button>
+        </div>
+    </form>
+</div>
+
+<!-- Content ends -->
+
+<div class="row pagedetails mrgn-tp-md">
+    <div class="col-xs-12 datemod">
+        <dl class="mrgn-bttm-md">
+            <dd class="inline-block">Date modified: 2020-02-13</dd>
+        </dl>
+    </div>
+    
+</div>
+</main>
+
+</div>
+</div>
+
+<footer role="contentinfo" id="wb-info">
+<div class="brand">
+    <div class="container">
+        <div class="row ">
+            <nav class="col-md-10 ftr-urlt-lnk">
+                <h2 class="wb-inv">About this site</h2>
+                <ul>                    
+                    <li><a href="http://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+                    <li><a href="http://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+                </ul>
+            </nav>
+            <div class="col-xs-6 visible-sm visible-xs tofpg">
+                <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+            </div>
+            <div class="col-xs-6 col-md-2 text-right">
+                <img src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada" />
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+<!--[if gte IE 9 | !IE ]><!-->
+
+<script src="https://wet-boew.github.io/v4.0-ci/wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/wet-boew/js/ie8-wet-boew2.min.js"></script>
+
+<![endif]-->
+<script src="https://careers-carrieres.cra-arc.gc.ca/ebci/wet/v4.0.28.1/GCWeb/js/theme.min.js"></script>
+
+<!-- CustomScriptsStart -->
+
+<script>
+(function() {
+        $('input#an4').keyup(function() {
+            $('#enter').attr('disabled', $(this).val().length < 16? true : false);
+        });
+    })()
+</script>  
+  
+<!-- CustomScriptsEnd -->
+
+</body>
+</html>
