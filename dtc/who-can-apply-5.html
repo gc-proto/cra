@@ -9,7 +9,7 @@
 
 <head>
     <meta charset="utf-8">
-    <!-- Web Experience Toolkit (WET) / -Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
     <title>Who can apply - Disability tax credit (DTC) – Canada.ca</title>
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <meta name=”robots” content=”noindex, follow”>
@@ -23,6 +23,7 @@
     <!-- Write closure template -->
     <script type="text/javascript">
         document.write(wet.builder.refTop({}));
+
     </script>
     <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
     <link href="../css/pn.css" rel="stylesheet">
@@ -163,6 +164,7 @@
         .checkbox-lg label {
             font-size: 1em;
         }
+
     </style>
 
 
@@ -196,12 +198,13 @@
                 href: "#"
             }, {
                 title: "Disability tax credit",
-                href: "index.html"
+                href: "index.html" 
             }],
             search: true,
             siteMenu: true,
             showPreContent: true
         });
+
     </script>
     <main role="main" property="mainContentOfPage" class="container">
         <div class="gcnav">
@@ -231,151 +234,306 @@
 
                 <section>
                     <h2 id="h-1">Impairments that warrant the DTC</h2>
-                    <p>Answer these questions to determine if you may be eligible to receive the DTC:</p>
+                    <p class="lead">To determine if you may be eligible to receive the DTC, select all that apply:</p>
+                    <section class="gc-nav-section experimental provisional">
+                        <ul class="checkbox-lg checkbox-zebra">
+                            <!-- Vision -->
+                            <li class="checkbox">
+                                <input type="checkbox" id="eg1" class="action-checkbox cb-dmm">
+                                <label for="eg1"><strong>Vision:</strong></label>
+                                <br />
+                                <label for="eg1" class="mrgn-tp-md"><strong>To be eligible</strong></label>
+                                <p><label class="mrgn-lft-0">You must be blind in both eyes, even with the use of corrective lenses or medication.</label></p>
 
+                                <!--<label for="eg1" class="mrgn-tp-md"><strong>To be eligible</strong></label>
+                                <p><label class="mrgn-lft-0">You or they must meet one of the following criteria in both eyes:</label></p>
 
-                    <div class="row">
-                        <div class="wb-frmvld fieldflow-lg col-md-10">
-                            <form>
-                                <div class="wb-fieldflow" data-wb-fieldflow='{
-							"renderas":"checkbox", 
-							"reset": { "action": "addClass", "source":".results", "class": "hidden"}, 
-							"noForm": true,					     
-							"noreqlabel": true
-						}'>
-                                    <!-- question 1 -->
-                                    <p>Select your impairment(s)</p>
+                                <ul class="std-blt lst-spcd">
+                                    <li>
+                                        <label>Visual acuity is 20/200 (6/60)</label>
+                                    </li>
+                                    <li>
+                                        <label>The greatest diameter of the field of vision is 20 degrees or less</label>
+                                    </li>
+
+                                </ul>-->
+
+                                <details class="mrgn-lft-lg">
+                                    <summary>Example for vision impariment</summary>
+                                    <p>Penalties or interest may be cancelled or waived in whole or in part when they result from circumstances beyond a taxpayer's control. Extraordinary circumstances that may have prevented a taxpayer from making a payment when due, filing a return on time, or otherwise complying with a tax obligation include, but are not limited to, the following examples:</p>
                                     <ul>
-                                        <li>Vision
-						<p>You are blind in both eyes, even with the use of corrective lenses or medication.</p>
-                                            <!-- proceed to q2 -->
-                                            <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"checkbox", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
-                                            <!-- question 2-->
-                                            <p>Eligibility criteria for Vision</p>
-                                            <ul>
-                                            <li>test</li>
-                                            <li>test</li>
-                                            <li>test</li>
-                                            </ul>    
-                                                </div>
-                                                    </li>
-                                                    <!--<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q2", "class": "hidden", "live":true}'>No</li>-->
-
-
-                                        <li>Life sustaining therapy
-						<p>You receive regular therapy at least 3 times per week, and totaling an average of 14 hours. Examples of this are kidney dialysis, insulin therapy, oxygen therapy, or chest physiotherapy.</p>
-                                            <!-- proceed to q2 -->
-                                            <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"checkbox", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
-                                            <!-- question 2-->
-                                            <p>Eligibility criteria for Life sustaining therapy</p>
-                                            <ul>
-                                            <li>test</li>
-                                            <li>test</li>
-                                            <li>test</li>
-                                            </ul>    
-                                                </div>
-                                                    </li>
-                                        <li>Marked restriction 
-						<p>You take an excessive amount of time to do 1 or more of the basic daily categories, even with therapy, devices, and medication.  This means that it takes you 3 times the time it take a person, of the same age with no impairment, to complete an activity.  </p>
-					    </li>
-                                        <li>Cumulative 
-						<p>You are significantly restricted in:</p>
-					    <div class="cnjnctn-type-and cnjnctn-xs">
-                  <div class="cnjnctn-col">
-				   <h4 class="mrgn-tp-sm text-muted h5">Two or more of the basic categories </h4>
-				   <p>These restrictions exist together at least 90% of the time even with therapy, devices, and medication.</p>
-				  
-				   </div>
-                
-                  <div class="cnjnctn-col">
-				    <h4 class="mrgn-tp-sm text-muted h5">Vision and 1 or more of the categories </h4>
-				  <p>These restrictions exist together at least 90% of the time even with therapy, devices, and medication.</p>
-				  </div>
-				  </div>
-					    
-					    </li>
-
+                                        <li>natural or human-made disasters, such as a flood or fire;</li>
+                                        <li>civil disturbances or disruptions in services, such as a postal strike;</li>
+                                        <li>serious illness or accident; and</li>
+                                        <li>serious emotional or mental distress, such as death in the immediate family.</li>
                                     </ul>
-                                </div>
-                            </form>
+                                </details>
 
-                            <!-- ANSWERS -->
-                            <section id="digital-q1" class="results alert alert-warning provisional hidden">
-                                <h2 class="h4 mrgn-tp-sm">You are not eligible for the DTC</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu rhoncus ipsum, id dapibus lacus.</p>
-                            </section>
+                                <!--<p><span class="fa-stack fa-fw text-muted"> <span class="fas fa-circle fa-stack-2x"></span><span class="fa-stack-1x fa-inverse">or</span></span></p>-->
 
-                            <section id="digital-q2" class="results alert alert-warning provisional hidden">
-                                <h2 class="h4 mrgn-tp-sm">You are not eligible for the DTC</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu rhoncus ipsum, id dapibus lacus.</p>
-                            </section>
+                            </li>
 
-                            <section id="digital-q3" class="results alert alert-warning provisional hidden">
-                                <h2 class="h4 mrgn-tp-sm">You are not eligible for the DTC</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu rhoncus ipsum, id dapibus lacus.</p>
-                            </section>
+                            <!-- Life sustaining therapy -->
+                            <li class="checkbox">
+                                <input type="checkbox" id="eg2" class="action-checkbox cb-dmm">
+                                <label for="eg2"><strong>Life sustaining therapy:</strong></label>
+                                <br />
+                                <label for="eg2" class="mrgn-tp-md"><strong>To be eligible</strong></label>
+                                <p><label class="mrgn-lft-0">You must receive regular therapy at least 3 times per week, and totaling an average of 14 hours. Examples of this are kidney dialysis, insulin therapy, oxygen therapy, or chest physiotherapy.</label></p>
+
+                                <!--<label for="eg2" class="mrgn-tp-md"><strong>To be eligible</strong></label>
+                                <p><label class="mrgn-lft-0">You or they must meet one of the following criteria in both eyes:</label></p>
+
+                                <ul class="std-blt lst-spcd">
+                                    <li>
+                                        <label>Visual acuity is 20/200 (6/60)</label>
+                                    </li>
+                                    <li>
+                                        <label>The greatest diameter of the field of vision is 20 degrees or less</label>
+                                    </li>
+
+                                </ul>-->
+
+                                <details class="mrgn-lft-lg">
+                                    <summary>Example for life sustaining therapy</summary>
+                                    <p>Penalties or interest may be cancelled or waived in whole or in part when they result from circumstances beyond a taxpayer's control. Extraordinary circumstances that may have prevented a taxpayer from making a payment when due, filing a return on time, or otherwise complying with a tax obligation include, but are not limited to, the following examples:</p>
+                                    <ul>
+                                        <li>natural or human-made disasters, such as a flood or fire;</li>
+                                        <li>civil disturbances or disruptions in services, such as a postal strike;</li>
+                                        <li>serious illness or accident; and</li>
+                                        <li>serious emotional or mental distress, such as death in the immediate family.</li>
+                                    </ul>
+                                </details>
+
+                                <!--<p><span class="fa-stack fa-fw text-muted"> <span class="fas fa-circle fa-stack-2x"></span><span class="fa-stack-1x fa-inverse">or</span></span></p>-->
+
+                            </li>
+
+                            <!-- Hearing -->
+                            <li class="checkbox">
+                                <input type="checkbox" id="eg2" class="action-checkbox cb-dmm">
+                                <label for="eg2"><strong>Hearing:</strong></label>
+                                <br />
+                                <label for="eg2" class="mrgn-tp-md"><strong>Overview</strong></label>
+                                <p><label class="mrgn-lft-0">You are considered blind in both eyes, even with the use of corrective lenses or medication.</label></p>
+
+                                <label for="eg2" class="mrgn-tp-md"><strong>To be eligible</strong></label>
+                                <p><label class="mrgn-lft-0">You or they must meet one of the following criteria in both eyes:</label></p>
+
+                                <ul class="std-blt lst-spcd">
+                                    <li>
+                                        <label>Visual acuity is 20/200 (6/60)</label>
+                                    </li>
+                                    <li>
+                                        <label>The greatest diameter of the field of vision is 20 degrees or less</label>
+                                    </li>
+
+                                </ul>
+
+                                <details class="mrgn-lft-lg">
+                                    <summary>Example for life sustaining therapy</summary>
+                                    <p>Penalties or interest may be cancelled or waived in whole or in part when they result from circumstances beyond a taxpayer's control. Extraordinary circumstances that may have prevented a taxpayer from making a payment when due, filing a return on time, or otherwise complying with a tax obligation include, but are not limited to, the following examples:</p>
+                                    <ul>
+                                        <li>natural or human-made disasters, such as a flood or fire;</li>
+                                        <li>civil disturbances or disruptions in services, such as a postal strike;</li>
+                                        <li>serious illness or accident; and</li>
+                                        <li>serious emotional or mental distress, such as death in the immediate family.</li>
+                                    </ul>
+                                </details>
+
+                            </li>
 
 
-                            <section id="digital-q4" class="results alert alert-info provisional hidden">
-                                <!-- for Q5-->
-                                <h2 class="h4 mrgn-tp-sm">You may be eligible for the DTC</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu rhoncus ipsum, id dapibus lacus.</p>
-                            </section>
+                            <!-- Walking -->
+                            <li class="checkbox">
+                                <input type="checkbox" id="eg2" class="action-checkbox cb-dmm">
+                                <label for="eg2"><strong>Walking:</strong></label>
+                                <br />
+                                <label for="eg2" class="mrgn-tp-md"><strong>Overview</strong></label>
+                                <p><label class="mrgn-lft-0">You are considered blind in both eyes, even with the use of corrective lenses or medication.</label></p>
 
-                            <section id="digital-q5" class="results alert alert-info provisional hidden">
-                                <!-- for Q6-->
-                                <h2 class="h4 mrgn-tp-sm">You may be eligible for the DTC</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu rhoncus ipsum, id dapibus lacus.</p>
-                            </section>
+                                <label for="eg2" class="mrgn-tp-md"><strong>To be eligible</strong></label>
+                                <p><label class="mrgn-lft-0">You or they must meet one of the following criteria in both eyes:</label></p>
 
-                            <section id="digital-q6" class="results alert alert-info provisional hidden">
-                                <!-- for Q7-->
-                                <h2 class="h4 mrgn-tp-sm">You may be eligible for the DTC</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu rhoncus ipsum, id dapibus lacus.</p>
-                            </section>
+                                <ul class="std-blt lst-spcd">
+                                    <li>
+                                        <label>Visual acuity is 20/200 (6/60)</label>
+                                    </li>
+                                    <li>
+                                        <label>The greatest diameter of the field of vision is 20 degrees or less</label>
+                                    </li>
 
-                            <section id="digital-q7" class="results alert alert-info provisional hidden">
-                                <!-- for Q8-->
-                                <h2 class="h4 mrgn-tp-sm">You may be eligible for the DTC</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu rhoncus ipsum, id dapibus lacus.</p>
-                            </section>
+                                </ul>
 
-                            <section id="digital-q9" class="results alert alert-info provisional hidden">
-                                <!-- for Q10-->
-                                <h2 class="h4 mrgn-tp-sm">You may be eligible for the DTC</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu rhoncus ipsum, id dapibus lacus.</p>
-                            </section>
+                                <details class="mrgn-lft-lg">
+                                    <summary>Example for life sustaining therapy</summary>
+                                    <p>Penalties or interest may be cancelled or waived in whole or in part when they result from circumstances beyond a taxpayer's control. Extraordinary circumstances that may have prevented a taxpayer from making a payment when due, filing a return on time, or otherwise complying with a tax obligation include, but are not limited to, the following examples:</p>
+                                    <ul>
+                                        <li>natural or human-made disasters, such as a flood or fire;</li>
+                                        <li>civil disturbances or disruptions in services, such as a postal strike;</li>
+                                        <li>serious illness or accident; and</li>
+                                        <li>serious emotional or mental distress, such as death in the immediate family.</li>
+                                    </ul>
+                                </details>
 
-                            <section id="digital-q11a" class="results alert alert-info provisional hidden">
-                                <!-- for Q12-->
-                                <h2 class="h4 mrgn-tp-sm">You may be eligible for the DTC</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu rhoncus ipsum, id dapibus lacus.</p>
-                            </section>
+                            </li>
 
 
+                            <!-- Eliminating -->
+                            <li class="checkbox">
+                                <input type="checkbox" id="eg2" class="action-checkbox cb-dmm">
+                                <label for="eg2"><strong>Eliminating (bowel and bladder functions):</strong></label>
+                                <br />
+                                <label for="eg2" class="mrgn-tp-md"><strong>Overview</strong></label>
+                                <p><label class="mrgn-lft-0">You are considered blind in both eyes, even with the use of corrective lenses or medication.</label></p>
+
+                                <label for="eg2" class="mrgn-tp-md"><strong>To be eligible</strong></label>
+                                <p><label class="mrgn-lft-0">You or they must meet one of the following criteria in both eyes:</label></p>
+
+                                <ul class="std-blt lst-spcd">
+                                    <li>
+                                        <label>Visual acuity is 20/200 (6/60)</label>
+                                    </li>
+                                    <li>
+                                        <label>The greatest diameter of the field of vision is 20 degrees or less</label>
+                                    </li>
+
+                                </ul>
+
+                                <details class="mrgn-lft-lg">
+                                    <summary>Example for eliminating</summary>
+                                    <p>Penalties or interest may be cancelled or waived in whole or in part when they result from circumstances beyond a taxpayer's control. Extraordinary circumstances that may have prevented a taxpayer from making a payment when due, filing a return on time, or otherwise complying with a tax obligation include, but are not limited to, the following examples:</p>
+                                    <ul>
+                                        <li>natural or human-made disasters, such as a flood or fire;</li>
+                                        <li>civil disturbances or disruptions in services, such as a postal strike;</li>
+                                        <li>serious illness or accident; and</li>
+                                        <li>serious emotional or mental distress, such as death in the immediate family.</li>
+                                    </ul>
+                                </details>
+
+                            </li>
 
 
-                            <section id="digital-q8" class="results alert alert-warning provisional hidden">
-                                <!-- for Q9-->
-                                <h2 class="h4 mrgn-tp-sm">You are not eligible for the DTC</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu rhoncus ipsum, id dapibus lacus.</p>
-                            </section>
+                            <!-- Feeding -->
+                            <li class="checkbox">
+                                <input type="checkbox" id="eg2" class="action-checkbox cb-dmm">
+                                <label for="eg2"><strong>Feeding:</strong></label>
+                                <br />
+                                <label for="eg2" class="mrgn-tp-md"><strong>Overview</strong></label>
+                                <p><label class="mrgn-lft-0">You are considered blind in both eyes, even with the use of corrective lenses or medication.</label></p>
 
-                            <section id="digital-q10" class="results alert alert-warning provisional hidden">
-                                <!-- for Q11-->
-                                <h2 class="h4 mrgn-tp-sm">You are not eligible for the DTC</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu rhoncus ipsum, id dapibus lacus.</p>
-                            </section>
+                                <label for="eg2" class="mrgn-tp-md"><strong>To be eligible</strong></label>
+                                <p><label class="mrgn-lft-0">You or they must meet one of the following criteria in both eyes:</label></p>
 
-                            <section id="digital-q11b" class="results alert alert-warning provisional hidden">
-                                <!-- for Q12-->
-                                <h2 class="h4 mrgn-tp-sm">You are not eligible for the DTC</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu rhoncus ipsum, id dapibus lacus.</p>
-                            </section>
+                                <ul class="std-blt lst-spcd">
+                                    <li>
+                                        <label>Visual acuity is 20/200 (6/60)</label>
+                                    </li>
+                                    <li>
+                                        <label>The greatest diameter of the field of vision is 20 degrees or less</label>
+                                    </li>
 
+                                </ul>
+
+                                <details class="mrgn-lft-lg">
+                                    <summary>Example for feeding</summary>
+                                    <p>Penalties or interest may be cancelled or waived in whole or in part when they result from circumstances beyond a taxpayer's control. Extraordinary circumstances that may have prevented a taxpayer from making a payment when due, filing a return on time, or otherwise complying with a tax obligation include, but are not limited to, the following examples:</p>
+                                    <ul>
+                                        <li>natural or human-made disasters, such as a flood or fire;</li>
+                                        <li>civil disturbances or disruptions in services, such as a postal strike;</li>
+                                        <li>serious illness or accident; and</li>
+                                        <li>serious emotional or mental distress, such as death in the immediate family.</li>
+                                    </ul>
+                                </details>
+
+                            </li>
+
+
+                            <!-- Dressing -->
+                            <li class="checkbox">
+                                <input type="checkbox" id="eg2" class="action-checkbox cb-dmm">
+                                <label for="eg2"><strong>Dressing:</strong></label>
+                                <br />
+                                <label for="eg2" class="mrgn-tp-md"><strong>Overview</strong></label>
+                                <p><label class="mrgn-lft-0">You are considered blind in both eyes, even with the use of corrective lenses or medication.</label></p>
+
+                                <label for="eg2" class="mrgn-tp-md"><strong>To be eligible</strong></label>
+                                <p><label class="mrgn-lft-0">You or they must meet one of the following criteria in both eyes:</label></p>
+
+                                <ul class="std-blt lst-spcd">
+                                    <li>
+                                        <label>Visual acuity is 20/200 (6/60)</label>
+                                    </li>
+                                    <li>
+                                        <label>The greatest diameter of the field of vision is 20 degrees or less</label>
+                                    </li>
+
+                                </ul>
+
+                                <details class="mrgn-lft-lg">
+                                    <summary>Example for Dressing</summary>
+                                    <p>Penalties or interest may be cancelled or waived in whole or in part when they result from circumstances beyond a taxpayer's control. Extraordinary circumstances that may have prevented a taxpayer from making a payment when due, filing a return on time, or otherwise complying with a tax obligation include, but are not limited to, the following examples:</p>
+                                    <ul>
+                                        <li>natural or human-made disasters, such as a flood or fire;</li>
+                                        <li>civil disturbances or disruptions in services, such as a postal strike;</li>
+                                        <li>serious illness or accident; and</li>
+                                        <li>serious emotional or mental distress, such as death in the immediate family.</li>
+                                    </ul>
+                                </details>
+
+                            </li>
+
+
+                            <!-- Mental functions -->
+                            <li class="checkbox">
+                                <input type="checkbox" id="eg2" class="action-checkbox cb-dmm">
+                                <label for="eg2"><strong>Mental functions:</strong></label>
+                                <br />
+                                <label for="eg2" class="mrgn-tp-md"><strong>Overview</strong></label>
+                                <p><label class="mrgn-lft-0">You are considered blind in both eyes, even with the use of corrective lenses or medication.</label></p>
+
+                                <label for="eg2" class="mrgn-tp-md"><strong>To be eligible</strong></label>
+                                <p><label class="mrgn-lft-0">You or they must meet one of the following criteria in both eyes:</label></p>
+
+                                <ul class="std-blt lst-spcd">
+                                    <li>
+                                        <label>Visual acuity is 20/200 (6/60)</label>
+                                    </li>
+                                    <li>
+                                        <label>The greatest diameter of the field of vision is 20 degrees or less</label>
+                                    </li>
+
+                                </ul>
+
+                                <details class="mrgn-lft-lg">
+                                    <summary>Example for mental functions</summary>
+                                    <p>Penalties or interest may be cancelled or waived in whole or in part when they result from circumstances beyond a taxpayer's control. Extraordinary circumstances that may have prevented a taxpayer from making a payment when due, filing a return on time, or otherwise complying with a tax obligation include, but are not limited to, the following examples:</p>
+                                    <ul>
+                                        <li>natural or human-made disasters, such as a flood or fire;</li>
+                                        <li>civil disturbances or disruptions in services, such as a postal strike;</li>
+                                        <li>serious illness or accident; and</li>
+                                        <li>serious emotional or mental distress, such as death in the immediate family.</li>
+                                    </ul>
+                                </details>
+
+                            </li>
+
+
+                        </ul>
+
+                        <!-- ALERTS -->
+                        <!--<div class="alert alert-warning provisional" id="action-no-msg">
+                            <h3>If you don't meet the above</h3>
+                            <p><a href="#h-2">Other options</a> may better fit your situation.</p>
                         </div>
+                        <div class="alert alert-success hidden provisional" id="action-msg1">
+                            <h3>You meet the criteria </h3>
+                            <p>If you meet all the above criteria, you may <a href="how-apply.html">apply to have your penalties or interest cancelled or waived</a>.</p>
+                            <p>Be aware, meeting the above criteria does not guarantee that your request will be granted. Your application will be reviewed so please ensure you're providing sufficient supporting information for consideration. </p>
+                        </div>-->
                         <div class="clearfix"></div>
-                    </div>
+                    </section>
+
                 </section>
                 <!-- <div class="table-responsive section"> -->
 
@@ -385,7 +543,7 @@
                 <p>To report any suspected misuse, go to: <a href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/suspected-tax-cheating-in-canada-overview.html">CRA's Leads program</a>.</p>
 
 
-
+              
                 <!--
         <table class="table table-striped">
 <tbody><tr><th scope="col">Situation</th>
@@ -513,6 +671,7 @@
                 showFeedback: true,
                 showShare: true
             });
+
         </script>
     </main>
     <div id="def-footer"> </div>
@@ -523,10 +682,12 @@
             showFooter: true,
             showFeatures: true
         });
+
     </script>
     <!-- Write closure template -->
     <script type="text/javascript">
         document.write(wet.builder.refFooter({}));
+
     </script>
     <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
     <!--script below adds the skip to section navigation at top of page when .gcnav class exists //-->
@@ -547,5 +708,8 @@
 
             }
         })
+
     </script>
-</body></html>
+</body>
+
+</html>
