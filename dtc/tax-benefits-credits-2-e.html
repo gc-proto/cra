@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
-      <head>
+   <head>
       <meta charset="utf-8">
       <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
       <title>Benefits and credits - Personal income tax – Canada.ca</title>
@@ -9,8 +9,8 @@
       <!-- Meta data -->
       <!-- Meta data-->
       <!-- Load closure template scripts -->
-      <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
-      <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+      <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
+      <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
       <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
       <!-- Write closure template -->
@@ -18,157 +18,15 @@
          document.write(wet.builder.refTop({
          }));
       </script>
-     <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
-   <link rel="stylesheet" href="/css/stacked-header.css"/>
-	      
-			   
-	      <link href="../css/h1-underline.css" rel="stylesheet">
-	      <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
-    <link href="../css/pn.css" rel="stylesheet">
-    <link href="../css/h1-underline.css" rel="stylesheet">
-    <link href="../css/steps.css" rel="stylesheet">
-    <link href="../css/checkbox-radio-CRA.css" rel="stylesheet">
-    <style type="text/css">
-        div.hidden-action {
-            transform: scaleX(0);
-            overflow: hidden;
-            display: none;
-        }
-
-        div.visible-action {
-            transform: scaleX(1);
-            display: visible;
-        }
-
-        /*Checkbox/Fieldflow radio input sizing,positioning*/
-        .checkbox-zebra>li:nth-child(2n+1) {
-            background-color: #f5f5f5;
-            margin-left: -50px;
-            padding-top: 10px;
-            padding-bottom: 15px;
-            padding-left: 50px;
-        }
-
-        .checkbox-zebra [role="checkbox"]::before {
-            background-color: #fff;
-        }
-
-        .std-blt {
-            font-size: 20px;
-            line-height: 1.65em;
-        }
-
-        .std-blt {
-            list-style-type: disc;
-        }
-
-        .std-blt li label {
-            display: block;
-            padding-left: 0px;
-        }
-
-        /********
-        ********
-        ** New checklist example
-        ** May 15, 2020
-        ** Replacing checkkboxes with clickable divs that convey a sense of success to the user
-        ********
-        ********/
-        /* One input per line */
-        .provisional [role="checkbox"] {
-            /* (0,2,0) */
-            cursor: pointer;
-            display: inline-block;
-            padding-left: 15px;
-            position: relative;
-        }
-
-        .provisional [role="checkbox"]::before,
-        .provisional [role="checkbox"]::after {
-            /* (0,2,1) */
-            content: "";
-            left: 0;
-            position: absolute;
-            top: 0;
-            transform: translate(-100%, 0%);
-        }
-
-        .provisional .wb-checklist.wb-checklist-sm {
-            /* (0,3,0) */
-            font-size: 17px;
-        }
-
-        /* the basic, unchecked style */
-        .provisional [role="checkbox"]::before {
-            /* (0,2,1) */
-            border: 4px solid #fff;
-            box-shadow: 0 0 0 2px #000;
-            display: inline-block;
-            height: 36px;
-            width: 36px;
-        }
-
-        .provisional .wb-checklist-sm [role="checkbox"]::before {
-            /* (0,3,1) */
-            border-width: 3px;
-            height: 24px;
-            transform: translate(-100%, 20%);
-            width: 24px;
-        }
-
-        /* hover styling */
-        .provisional [role="checkbox"][aria-checked="false"]:hover::before {
-            /* (0,3,1) */
-            background-image: linear-gradient(to bottom, hsl(10, 0%, 90%), hsl(10, 0%, 100%) 50%);
-        }
-
-        /* focus styling */
-        .provisional [role="checkbox"]:focus {
-            /* (0,3,0) */
-            outline: none;
-        }
-
-        .provisional [role="checkbox"]:focus::before {
-            /* (0,3,2) */
-            box-shadow: 0 0 0 2px #000, 0 0 8px 4px rgb(59, 153, 252);
-        }
-
-        /* the checked style using the [aria-checked='true'] pseudo class and aria-checked=true attribute */
-        .provisional [role="checkbox"][aria-checked="true"]::before {
-            /* (0,3,1) */
-            background-color: #318000;
-            border: none;
-        }
-
-        .provisional [role="checkbox"][aria-checked="true"]::after {
-            /* (0,3,1) */
-            border-color: white;
-            border-style: solid;
-            border-width: 0 5px 5px 0;
-            display: inline-block;
-            height: 26px;
-            width: 13px;
-            transform: translate(-185%, 10%) rotate(45deg);
-        }
-
-        .provisional .wb-checklist-sm [role="checkbox"][aria-checked="true"]::after {
-            /* (0,3,1) */
-            border-width: 0 4px 4px 0;
-            height: 16px;
-            width: 9px;
-            transform: translate(-185%, 40%) rotate(45deg);
-        }
-
-        .checkbox-lg label {
-            font-size: 1em;
-        }
-
-    </style>
-      </head>
-      <body vocab="http://schema.org/" typeof="WebPage" class="cnt-wdth-lmtd">
-<div id="def-top"> </div>
-<!-- Write closure template --> 
-<script type="text/javascript">
+      <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
+      <link href="../css/custom.css" rel="stylesheet">
+	   <link href="http://test.canada.ca/covid-19-guidance/proto/css/conjunction.css" rel="stylesheet">
+   </head>
+   <body vocab="http://schema.org/" typeof="WebPage">
+      <div id="def-top">
+      </div>
+      <!-- Write closure template -->
+      <script type="text/javascript">
          var defTop = document.getElementById("def-top");
          defTop.outerHTML = wet.builder.top({
            lngLinks: [{
@@ -182,58 +40,32 @@
              href: "https://www.canada.ca/en.html"
            }, {
              title: "Taxes",
-             href: "https://www.canada.ca/en/services/taxes.html"
+             href: "../tax-theme/index.html"
            }
 		   , {
              title: "Income tax",
-             href: "https://www.canada.ca/en/services/taxes/income-tax.html"
+             href: "../tax-income/index.html"
+           }, {
+             title: "Personal income tax",
+             href: "index.html"
            }],
            search: true,
            siteMenu: true,
            showPreContent: true
          });
       </script>
-	      
-<main role="main" property="mainContentOfPage" class="container">
-		      <div class="container">
-        <div class="gcnav">
-            <section class="gcnav-menu">
-                <h1 property="name" id="wb-cont-parent">Personal income tax</h1>
-                <!--<nav aria-label="Section menu">
-                    <h2 id="gcnav-menu-header">Sections</h2>
-                    <ul class="gcnav-steps">
-                        <li class="active"><a aria-current="page">Who is eligible</a></li>
-                        <li><a href="#">How to apply</a></li>
-                        <li><a href="#">Claiming the disability amount</a></li>
-                        <li><a href="#">Related benefits</a></li>
-                        <li><a href="#">Contact the CRA</a></li>
-                    </ul>
-                </nav>-->
-            </section>
-            <aside class="hidden-xs hidden-sm gcnav-side" data-ajax-replace="index.html #gcnav-side>"> </aside>
-            <section class="gcnav-section">
-		    <h1 property="name" id="wb-cont">Benefits and credits</h1></div>
-<!--<main role="main" property="mainContentOfPage" class="container-fluid p-0">
-             <div class="container">
-    <h1 property="name" id="wb-cont" class="provisional gc-thickline"><span class="stacked"><span>Benefits and credits</span> - <span>Personal income tax</span> </span></h1>
-  </div>-->
-	      
-        <div class="bg-info">
-   <!-- <div class="container">
-            <div class="mrgn-tp-md" data-ajax-replace="https://www.canada.ca/content/dam/cra-arc/includes/covid19-t4a.txt#t4a-eng"> </div>
-          </div>-->
-  </div>
-        <div class="provisional most-requested-bullets well well-sm brdr-0 mrgn-tp-0">
-    <div class="container">
-            <div class="row">
-        <div class="pddng-r-0 col-md-2">
-                <h2 class="mrgn-tp-md h4">Most requested </h2>
-              </div>
-        <div class="col-md-10"> 
-                
-                <!-- change to colcount-md-1 if you only have 2-3 most requested items -->
-                <ul class="wb-eqht mrgn-tp-md mrgn-bttm-md colcount-md-2 small">
-			<li><a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html">My Account</a></li>
+      <main role="main" property="mainContentOfPage" class="container"><h1 property="name" id="wb-cont"><span class="stacked"><span>Benefits and credits</span> - 
+<span>Personal income tax</span>
+</span></h1>
+  
+
+ <section class="band most-requested">
+            <div class="container">
+               <h2>Most requested</h2>
+               
+			    <ul class="lst-spcd colcount-sm-2">
+			     
+                  <li><a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html">My Account</a></li>
       
             <li><a href="https://www.canada.ca/en/services/benefits/calendar.html">Benefit payment dates</a></li>
             <li><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/outreach.html">Request an CRA outreach session</a></li>
@@ -241,88 +73,88 @@
             <li><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/change-your-address.html">Change your address</a></li>
             <li><a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html">Direct deposit</a></li>
 			<li><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/child-family-benefits-calculator.html">Child and family benefits calculator</a></li>
-            <!--<li><a href="#">Tax refund</a></li>-->
-          </ul>
-              </div>
-      </div>
-          </div>
-  </div>
-        <div class="container gc-srvinfo">
-    <h2>Benefits and credits</h2>
-    <div class="wb-eqht row">
-            <!--<div class="col-lg-4 col-md-6">
-        <h3 class="h5"><a href="https://www.canada.ca/en/services/benefits/calendar.html">Benefit payment dates</a></h3> 
-     <p>List of benefit payment dates, including the Canada child benefit and GST/HST credit, and provincial payment dates.</p> 
-      </div>-->
-           <div class="col-lg-4 col-md-6">
-       <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/goods-services-tax-harmonized-sales-tax-gst-hst-credit.html">GST/HST credit</a></h3> 
-     <p>Eligibility for the GST/HST sales tax credit, how it is affected by marital status, and information about payments.</p> 
-      </div>
-	   
-	<div class="col-lg-4 col-md-6">
-        <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit.html">Disability tax credit</a></h3> 
-     <p>Eligibility for the Disability tax credit, how to fill out form T2201, and how to claim the disability amount.</p> 
-      </div>            
+               </ul>
+            </div>
+         </section>
 
-            
-	    
-	    <div class="col-lg-4 col-md-6">
-        <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-workers-benefit.html">Canada workers benefit</a></h3> 
-     <p>Eligibility for the benefit, how to apply, and information about payments.</p>
-      </div>
- 
-	    	    <div class="col-lg-4 col-md-6">
-        <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs.html">Provincial and territorial benefits</a></h3> 
-     <p>Select your province or territory to see the programs the Canada Revenue Agency administers on its behalf.</p>
-	    </div></div>
-	    
-  <h2>Child benefits and credits</h2>
-		<div class="wb-eqht row">
-	         <div class="col-lg-4 col-md-6">
-        <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits.html">Child and family benefits</a></h3> 
-     <p>Overview of child and family benefits, what to do after applying, and information about payments.</p> 
-      </div>
-	    
-	     
-	     <div class="col-lg-4 col-md-6">
-        <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview.html">Canada child benefit</a></h3> 
-     <p>Eligibility for the Canada child benefit, how to apply, and how the CRA calculates your payment.</p>
-      </div>
-	    
-	    
-           
-              <div class="col-lg-4 col-md-6">
-        <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/ccb-young-child-supplement.html">CCB young child supplement</a></h3> 
-     <p>Entitlement amounts and payment dates in 2021 for families with children under the age of six.</p> 
-      </div>
-           <div class="col-lg-4 col-md-6">
-        <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/childrens-special-allowances.html">Children's special allowances</a></h3> 
-     <p>Fact sheet on the Children's Special Allowances program, and apply for direct deposit.</p>
-      </div>
-	   
-	    
-	    <div class="col-lg-4 col-md-6">
-        <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/child-disability-benefit.html">Child disability benefit</a></h3> 
-     <p>Eligibility for the Child disability benefit, when it is issued, how to apply, and how the benefit is calculated.</p> 
-      </div>
-	    
-                      <!--<div class="col-lg-4 col-md-6">
-        <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/outreach.html">Request a Canada Revenue Agency Outreach information session</a></h3> 
-     <p>Service organizations can request a visit from a CRA Outreach officer to learn more about benefits and credits.</p> 
-      </div>-->
-	    
-	  <!--<div class="col-lg-4 col-md-6">
-        <h3><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/frequently-asked-questions-individuals/canadian-income-tax-rates-individuals-current-previous-years.html">Tax rates</a></h3>
-        <p>Find federal, provincial and territorial tax rates for current and previous tax years</p>
-      </div>
-	
-	  <div class="col-lg-4 col-md-6">
-        <h3><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs.html">Understanding taxes</a></h3>
-        <p>Learn about our tax system, how it works, why we pay taxes, and your rights as a taxpayer</p>
-      </div>  -->
-	  
+          
+	 <h2>Benefits and credits</h2>
+		 <div class="wb-eqht row">
+		   <div class="col-lg-4 col-md-6">
+            <section>
+              <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/goods-services-tax-harmonized-sales-tax-gst-hst-credit.html">GST/HST credit</a></h3> 
+     <p>Eligibility for the GST/HST sales tax credit, how it is affected by marital status, and information about payments.</p>
+            </section>
           </div>
-    <div class="row wb-eqht mrgn-tp-md">
+             
+		    <div class="col-lg-4 col-md-6">
+            <section>
+              <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit.html">Disability tax credit</a></h3> 
+     <p>Eligibility for the Disability tax credit, how to fill out form T2201, and how to claim the disability amount.</p> 
+            </section>
+          </div>
+             
+              <div class="col-lg-4 col-md-6">
+            <section>
+              <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-workers-benefit.html">Canada workers benefit</a></h3> 
+     <p>Eligibility for the benefit, how to apply, and information about payments.</p> 
+            </section>
+          </div>
+             
+             <div class="col-lg-4 col-md-6">
+            <section>
+              <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/provincial-territorial-programs.html">Provincial and territorial benefits</a></h3> 
+     <p>Select your province or territory to see the programs the Canada Revenue Agency administers on its behalf.</p>
+            </section>
+          </div>
+          
+        
+             
+		 </div>
+          
+          
+          
+     <h2>Child benefits and credits</h2>
+		 <div class="wb-eqht row">
+             <!-- 1 -->
+		   <div class="col-lg-4 col-md-6">
+            <section>
+              <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits.html">Child and family benefits</a></h3> 
+     <p>Overview of child and family benefits, what to do after applying, and information about payments.</p> 
+            </section>
+          </div>
+             <!-- 2 -->
+		    <div class="col-lg-4 col-md-6">
+            <section>
+              <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview.html">Canada child benefit</a></h3> 
+     <p>Eligibility for the Canada child benefit, how to apply, and how the CRA calculates your payment.</p>
+            </section>
+          </div>
+             <!-- 3 -->
+             <div class="col-lg-4 col-md-6">
+            <section>
+              <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/ccb-young-child-supplement.html">CCB young child supplement</a></h3> 
+     <p>Entitlement amounts and payment dates in 2021 for families with children under the age of six.</p> 
+            </section>
+          </div>
+             <!-- 4 -->
+             <div class="col-lg-4 col-md-6">
+            <section>
+              <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/childrens-special-allowances.html">Children's special allowances</a></h3> 
+     <p>Fact sheet on the Children's Special Allowances program, and apply for direct deposit.</p>
+            </section>
+          </div>
+             <!-- 5 -->
+             <div class="col-lg-4 col-md-6">
+            <section>
+              <h3 class="h5"><a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/child-disability-benefit.html">Child disability benefit</a></h3> 
+     <p>Eligibility for the Child disability benefit, when it is issued, how to apply, and how the benefit is calculated.</p> 
+            </section>
+          </div>
+		 </div>
+          
+          <h2>Features</h2>
+          <div class="row wb-eqht mrgn-tp-md">
             <div class="col-md-4 col-sm-6">
         <div class="well well-sm brdr-rds-0 eqht-trgt position-relative"> <img class="img-responsive full-width" src="https://www.canada.ca/content/dam/cra-arc/camp-promo/features/doingyourtaxes.jpg" alt="">
                 <h3 class="h5"><a class="stretched-link" href="https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/doing-your-taxes.html">Taxes: One step at a time</a></h3>
@@ -342,34 +174,54 @@
               </div>
       </div>
           </div>
-    <div id="def-preFooter"></div>
-    
-    <!-- Write closure template --> 
-    <script type="text/javascript">
+          
+          
+	<div class="owner">
+            <p>From:</p>
+            <ul class="list-inline">
+               <li><a href="https://www.canada.ca/en/revenue-agency.html">Canada Revenue Agency</a></li>
+            </ul>
+         </div>
+          
+          
+         <div class="profile">
+            <section class="followus">
+               <h2>Follow:</h2>
+               <ul>
+                  <li><a href="https://www.facebook.com/canrevagency/" class="facebook" rel="external"><span class="wb-inv">Facebook</span></a></li>
+                  <li><a href="https://twitter.com/CanRevAgency" class="twitter" rel="external"><span class="wb-inv">Twitter</span></a></li>
+                  <li><a href="https://www.youtube.com/user/CanRevAgency" class="youtube" rel="external"><span class="wb-inv">YouTube</span></a></li>
+               </ul>
+            </section>
+            <div class="clearfix"></div>
+         </div>
+         <div id="def-preFooter"></div>
+         <!-- Write closure template -->
+         <script type="text/javascript">
             var defPreFooter = document.getElementById("def-preFooter");
             defPreFooter.outerHTML = wet.builder.preFooter({
-            dateModified: "2021-01-30",
+            dateModified: "2020-05-05",
             showPostContent: true,
             showFeedback: true,
             showShare: true
             });
-         </script> 
-  </div>
+         </script>
       </main>
-<div id="def-footer"> </div>
-<!-- Write closure template --> 
-<script type="text/javascript">
+      <div id="def-footer">
+      </div>
+      <!-- Write closure template -->
+      <script type="text/javascript">
          var defFooter = document.getElementById("def-footer");
          defFooter.outerHTML = wet.builder.footer({
          showFooter: true,
          showFeatures: true
          });
-      </script> 
-<!-- Write closure template --> 
-<script type="text/javascript">
+      </script>
+      <!-- Write closure template -->
+      <script type="text/javascript">
          document.write(wet.builder.refFooter({
          }));
-      </script> 
-<script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
-</body>
+      </script>
+      <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
+   </body>
 </html>
