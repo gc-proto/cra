@@ -243,7 +243,7 @@ input[type="file"] {
 
 <div class="wb-frmvld">
     <form action="https://test.canada.ca/cra/sdz/sdz-2.html" method="get" id="sdz1">
-        <div class="form-group">
+        <div class="form-group an4">
         <label for="an4" class="required"><span class="field-name">Secure drop zone code</span> <strong class="required">(required)</strong></label>
         <!--div class="form-inline">
             <input class="form-control letter" id="an1" type="text" size="4" maxlength="4" pattern="ACGH" data-msg="Custom msg" required="required" /> &nbsp;-&nbsp;
@@ -252,7 +252,7 @@ input[type="file"] {
             <input class="form-control letter" id="an4" name="an4" type="text" size="4" maxlength="4" pattern="2579" data-msg="Custom msg" required="required" onkeyup="myFunction()" />
         </div-->
         <div class="form-inline">
-            <input class="form-control" id="an4" name="an4" type="text" pattern="[aA][cC][gG][hH]1460[tT][uU][jJ][hH]2579" data-msg="Please enter a code in the following format: abcd1234efgh5678" maxlength="16" required="required" onKeyDown="CountLeft(this.form.text,16);" onKeyUp="CountLeft(this.form.text,16);" />
+            <input class="form-control" id="an4" name="an4" type="text" pattern="[aA][cC][gG][hH]1460[tT][uU][jJ][hH]2579" data-msg="Please enter a code in the following format: abcd1234efgh5678" maxlength="16" required="required" />
         </div>
         <button type="submit" class="btn btn-info btn-lg mrgn-rght-sm" id="enter" disabled="disabled">Enter</button>
         </div>
@@ -309,14 +309,22 @@ input[type="file"] {
 
 <!-- CustomScriptsStart -->
 
-<script>
+<!--script>
 (function() {
         $('input#an4').keyup(function() {
             $('#enter').attr('disabled', $(this).val().length < 16? true : false);
         });
     })()
-</script>  
+</script-->  
   
+<script>
+$(document).ready(function() {
+  $('#an4').on('input', function() {
+    $('#enter').attr('disabled',$(this).val().length < 16? true : false);
+  });
+});
+</script>
+
 <!-- CustomScriptsEnd -->
 
 </body>
