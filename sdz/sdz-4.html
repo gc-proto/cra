@@ -253,6 +253,10 @@ h1#wb-cont::after {
 .modal-body .btn-lg {
     padding: 40px 16px;    
     }    
+
+.popup-modal-dismiss {
+    display: none;
+}
 </style>    
 
 
@@ -263,7 +267,7 @@ h1#wb-cont::after {
 <div class="container">
 <div class="gcnav">
 <section class="gcnav-menu">
-<h1 property="name" id="wb-cont-parent">Secure drop zone A1B2 C3D4 E5F6 G7H8</h1>
+<h1 property="name" id="wb-cont-parent">Secure drop zone ACGH 1460 TUJH 2579</h1>
 </section>
 
 <section class="gcnav-section">
@@ -346,10 +350,11 @@ Add files
 <p class="text-center mrgn-bttm-md">or drop the files to upload</p>
 </div>    
 
-<section id="upload" class="mfp-hide modal-dialog modal-content overlay-def">
+<section id="upload" class="mfp-hide modal-dialog modal-content overlay-def lbx-modal">
   <div class="modal-body">
     <p><a href="https://test.canada.ca/cra/sdz/sdz-4-1.html" class="btn btn-primary btn-lg">You uploaded files. Please click to continue.</a></p>
   </div>
+
 </section>
 
 <div id="fileList"></div>
