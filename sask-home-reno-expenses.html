@@ -315,6 +315,7 @@
    <tr><td>Equipment rentals</td><td>Yes</td><td>Services and other costs </td></tr>
    <tr><td>GST/HST paid</td><td>Yes</td><td>Services and other costs </td></tr>
    <tr><td>Incidental expenses </td><td>Yes</td><td>Services and other costs </td></tr>
+        </tbody>
 </table>  
 
 <h4>Window coverings</h4>
@@ -384,7 +385,38 @@
 
 
 </section>
+<div id="def-preFooter">
+</div>
+<!-- Write closure template -->
+<script type="text/javascript">
+	var defPreFooter = document.getElementById("def-preFooter");
+	defPreFooter.outerHTML = wet.builder.preFooter({
+		dateModified: "August 26, 2021",
+		showPostContent: true,
+		showFeedback: true,
+		showShare: true
+	});
+</script>
+
 </main>
+
+<div id="def-footer">
+
+</div>
+<!-- Write closure template -->
+<script type="text/javascript">
+    var defFooter = document.getElementById("def-footer");
+    defFooter.outerHTML = wet.builder.footer({
+        showFooter: true,
+        showFeatures: true
+    });
+</script>
+<!-- Write closure template -->
+<script type="text/javascript">
+    document.write(wet.builder.refFooter({
+    }));
+</script>
+
 </body>
 </html>
 © 2021 GitHub, Inc.
