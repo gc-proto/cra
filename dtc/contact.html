@@ -313,20 +313,24 @@
                             <!-- Winnipeg -->
                             <dt><strong>Winnipeg Tax Centre</strong></dt>
                             <dd>
-                                <p id="addressWinni">Winnipeg Tax Centre<br>
+                                <p>Winnipeg Tax Centre<br>
                                     Post Office Box 14000, Station Main<br>
                                     Winnipeg MB R3C 3M2</p>
+                                <p class="wb-inv" id="addressWinni">Winnipeg Tax Centre - Post Office Box 14000, Station Main - Winnipeg MB R3C 3M2</p>
                                 <!-- The button used to copy the text -->
-                                <a class="btn btn-default" onclick="myFunction()">Copy address</a>
-                        
+                                <a class="btn btn-default" id="addressWinni" onclick="copyToClipboard(document.getElementById('addressWinni').innerHTML)">Copy address</a>
                             </dd>
                             <hr>
+                            
                               <!-- Subdury -->
                             <dt><strong>Sudbury Tax Centre</strong></dt>
                             <dd>
                                 <p>Sudbury Tax Centre<br>
                                     Post Office Box 20000, Station A<br>
                                     Sudbury ON P3A 5C1</p>
+                                <p class="wb-inv" id="addressSud">Sudbury Tax Centre - Post Office Box 20000, Station A - Sudbury ON P3A 5C1</p>
+                                <!-- The button used to copy the text -->
+                                <a class="btn btn-default" id="addressSud" onclick="copyToClipboard(document.getElementById('addressSud').innerHTML)">Copy address</a>
                             </dd>
                             <hr>
                               <!-- Jonquière -->
@@ -335,6 +339,9 @@
                                 <p>Jonquière Tax Centre<br>
                                     2251 René-Lévesque Blvd<br>
                                     Jonquière QC G7S 5J2</p>
+                                <p class="wb-inv" id="addressJonq">Jonquière Tax Centre - 2251 René-Lévesque Blvd - Jonquière QC G7S 5J2</p>
+                                <!-- The button used to copy the text -->
+                                <a class="btn btn-default" id="addressJonq" onclick="copyToClipboard(document.getElementById('addressJonq').innerHTML)">Copy address</a>
                             </dd>
                 </dl>
 
@@ -403,23 +410,14 @@
 
     </script>
     
-    <!-- copy to clipboard -->
-    <script>
-        function myFunction() {
-            /* Get the text field */
-            var copyText = document.getElementById("addressWinni").innerHTML;
+        <!-- copy to clipboard -->
 
-            /* Select the text field */
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-            /* Copy the text inside the text field */
-            navigator.clipboard.writeText(copyText.value);
-
-            /* Alert the copied text */
-            alert("Copied the text: " + copyText.value);
-        }
-    </script>
+        <script>
+            function copyToClipboard(text) {
+                window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+            }
+        </script>
+    
 </body>
 
 </html>
