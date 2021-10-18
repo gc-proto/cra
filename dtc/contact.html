@@ -318,6 +318,7 @@
                                     Winnipeg MB R3C 3M2</p>
                                 <!-- The button used to copy the text -->
                                 <a class="btn btn-default" onclick="myFunction()">Copy address</a>
+                        
                             </dd>
                             <hr>
                               <!-- Subdury -->
@@ -406,7 +407,7 @@
     <script>
         function myFunction() {
             /* Get the text field */
-            var copyText = document.getElementById("addressWinni");
+            var copyText = document.getElementById("addressWinni").innerHTML;
 
             /* Select the text field */
             copyText.select();
