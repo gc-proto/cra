@@ -262,7 +262,7 @@
                         </ul>
 
 
-                        <dl class="dl-horizontal brdr-0">
+                        <dl class="dl-horizontal">
                             <dt>Before you call:</dt>
                             <dd>
                                 <p>To verify your identity, you'll need your:</p>
@@ -306,8 +306,36 @@
                     </dd>
                     <dt>By mail:</dt>
                     <dd>
-                        <p>Send documentation to a tax centre</p>
-                        <p>[addresses]</p>
+                        <dl class="dl-horizontal brdr-0">
+                        
+                        <p>Send documentation to the tax centre closest to you</p>
+                        
+                            <!-- Winnipeg -->
+                            <dt><strong>Winnipeg Tax Centre</strong></dt>
+                            <dd>
+                                <p id="addressWinni">Winnipeg Tax Centre<br>
+                                    Post Office Box 14000, Station Main<br>
+                                    Winnipeg MB R3C 3M2</p>
+                                <!-- The button used to copy the text -->
+                                <a class="btn btn-default" onclick="myFunction()">Copy address</a>
+                            </dd>
+                            <hr>
+                              <!-- Subdury -->
+                            <dt><strong>Sudbury Tax Centre</strong></dt>
+                            <dd>
+                                <p>Sudbury Tax Centre<br>
+                                    Post Office Box 20000, Station A<br>
+                                    Sudbury ON P3A 5C1</p>
+                            </dd>
+                            <hr>
+                              <!-- Jonquière -->
+                            <dt><strong>Jonquière Tax Centre</strong></dt>
+                            <dd>
+                                <p>Jonquière Tax Centre<br>
+                                    2251 René-Lévesque Blvd<br>
+                                    Jonquière QC G7S 5J2</p>
+                            </dd>
+                </dl>
 
                     </dd>
                     
@@ -372,6 +400,24 @@
             }
         })
 
+    </script>
+    
+    <!-- copy to clipboard -->
+    <script>
+        function myFunction() {
+            /* Get the text field */
+            var copyText = document.getElementById("addressWinni");
+
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+            /* Copy the text inside the text field */
+            navigator.clipboard.writeText(copyText.value);
+
+            /* Alert the copied text */
+            alert("Copied the text: " + copyText.value);
+        }
     </script>
 </body>
 
