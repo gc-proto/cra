@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* Web Experience Toolkit (WET) / Bote  outils de l'exprience Web (BOEW)
+Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+Conditions rgissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+*/
+
+li.list-odd{background-color:#ddd !important;border:1px solid #ccc;}
+li.list-even{background-color:#eee !important;border:1px solid #ccc;}
+ol.zebra li,ol.zebra li li{list-style-type:none;}
+ol.zebra li{margin-bottom:2px;margin-right:0;min-height:39px;padding:10px;}
+tr.table-odd td,tr.table-even tr.table-odd td{background-color:#f0fcff;}
+tr.table-even td,tr.table-odd tr.table-even td{background-color:transparent;}
+li.list-hover{background-color:#f0fcff !important;} 
+tr.table-hover td{background-color:#eee !important;} 
+
+/* Styles for the checkboxList widget */
+.checkboxList label,.checkboxList label:hover{background-color:transparent;color:#000;}

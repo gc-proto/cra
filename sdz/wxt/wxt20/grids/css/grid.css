@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+*/
+
+/* Table of contents 
+   Body appearance
+   Basic grid
+   Grid decoration
+   Grid positioning
+   IE fixes
+
+Colours used - change as appropriate, but ensure colour contrast requirements are met
+white - #fff
+       primary background colour + text/link color when put with dark backgrounds 
+	   (colour validates against black #000 and dark gray #555)
+light gray - #eee
+       background color 
+	   (colour validates against black #000 and dark gray #555)
+medium gray - #ccc
+       main border color 
+dark gray - #555
+       background colour + some borders  
+	   (colour validates contrast against white #fff and light gray #eee)
+dark theme colour - #00556b
+       background colour 
+	   (colour validates contrast against white #fff)
+ */
+
+
+/* ---- Body appearance ---- */
+body {background:#eee;}
+#cn-body-inner-3col, #cn-body-inner-2col, #cn-body-inner-1col {background:#fff;}
+#cn-body-inner-2col #cn-centre-col-inner {margin-left:0;padding-left:0;}
+
+/* ---- Basic grid ---- */
+.span-1,.span-2,.span-3,.span-4,.span-5,.span-6,.span-6-full,.span-full,.border-top,.border-right,.border-bottom,.border-left{display:inline;float:left;position:relative;}
+#cn-centre-col-inner .span-1,#cn-centre-col-inner .span-2,#cn-centre-col-inner .span-3,#cn-centre-col-inner .span-4,#cn-centre-col-inner .span-5,#cn-centre-col-inner .span-6, .span-full{margin-bottom:20px;}
+.row-start {margin-left:0 !important;}
+.row-end {margin-right:0  !important;}
+.clear {clear:both;display:block;height:0 !important;min-height:0 !important;margin:0;overflow:hidden;visibility:hidden;width:0;}
+.span-1 .span-1,.span-2 .span-2,.span-3 .span-3,.span-4 .span-4,.span-5 .span-5,.span-6 .span-6,.span-full .span-full, #cn-right-col-inner .span-2 {margin-left:0 !important;margin-right:0 !important;}
+.border-span-1,.border-span-2,.border-span-3,.border-span-4,.border-span-5,.border-span-6,.border-span-full {background-repeat:no-repeat;border-bottom:1px solid #ccc !important;}
+.span-full {margin-left:0px;margin-right:0px;}
+img.image-actual {width:auto !important;height:auto;}
+.span-1 img,.span-2 img,.span-3 img,.span-4 img,.span-5 img,.span-6 img{width:100%;height:auto;}
+#cn-body-inner-1col #cn-centre-col-inner {left:0;margin-left:0px;margin-right:0px;}
+
+/* ---- Grid decoration ----*/
+.equalize {margin-bottom:0 !important;}
+.color-attention {color:#bd1821 !important;} /*change as appropriate, but ensure there is enough colour contrast between text color and default white background*/
+.color-accent {color:#00556b !important;} /*change as appropriate, but ensure there is enough colour contrast between text color and default white background*/
+.background-white{background:#fff !important;color:#000;}
+.background-light {background-color:#eee !important;color:#000;} /*change as appropriate, but ensure there is enough colour contrast between bg color and text color */
+.background-highlight{background-color:#ffffc9 !important;color:#000;} /*change as appropriate, but ensure there is enough colour contrast between bg color and text color */
+.background-dark {background-color:#555 !important;color:#fff;} /*change as appropriate, but ensure there is enough colour contrast betweenn bg color and text color */
+.background-accent {background-color:#00556b !important;color:#fff;} /*change as appropriate, but ensure there is enough colour contrast between bg color and text color */
+p.background-light,p.background-dark,p.background-accent {margin:0;padding:5px;}
+h2.background-light,h3.background-light,h4.background-light,h5.background-light,h6.background-light {color:#000;border-bottom:none;margin:0;padding:5px;}
+h2.background-dark,h3.background-dark,h4.background-dark,h5.background-dark,h6.background-dark {color:#fff;border-bottom:none;margin:0;padding:5px;}
+h2.background-accent,h3.background-accent,h4.background-accent,h5.background-accent,h6.background-accent {color:#fff;border-bottom:none;margin:0;padding:5px;}
+.background-light p,.background-dark p,.background-accent p,.border-span-1 p,.border-span-2 p,.border-span-3 p,.border-span-4 p,.border-span-5 p,.border-span-6 p,.border-span-full p {margin-left: 10px;margin-right: 10px;}
+.background-accent a:link,.background-accent a:visited,.background-accent a:hover,.background-dark a:link,.background-dark a:visited,.background-dark a:hover,.module-billboard a:hover,.module-billboard a:focus {color:#fff;text-decoration:underline;} /*change as appropriate, but ensure there is enough colour contrast between bg color and text color */
+.background-accent a:hover,.background-accent a:focus,.background-dark a:hover,.background-dark a:focus {text-decoration:none;}
+.border-top{background-image:url(../images/border.gif);background-repeat:repeat-x;background-position:0 0;min-height:1px;}
+.border-right{background-image:url(../images/border.gif);background-repeat:repeat-y;background-position:right 0;}
+.border-bottom{background-image:url(../images/border.gif);background-repeat:repeat-x;background-position:0 bottom;min-height:1px;}
+.border-left{background-image:url(../images/border.gif);background-repeat:repeat-y;background-position:left 0;}
+.border-none{border:none;}
+.span-footer{background:url(../images/span-footer.gif) right bottom no-repeat;margin-bottom:20px;padding-bottom:20px;}
+
+/* ---- Grid positioning ----*/
+.float-right {float:right !important;background-color:#fff;} /*white background fixes rendering problems in some browsers.  If a grid cell is floated right and there happens to be a heading with a border-bottom to the left, like an h2, some browsers actually draw the border bottom all the way across the screen, which slices through the foat-right grid cell. The white bg masks this.*/
+.margin-bottom-none {margin-bottom:0 !important;}
+.margin-bottom-small {margin-bottom:2px !important;}
+.margin-bottom-medium {margin-bottom:10px !important;}
+.margin-bottom-large {margin-bottom:20px !important;}
+.margin-bottom-xlarge {margin-bottom:57px !important;}
+.margin-top-none {margin-top:0 !important;}
+.margin-top-small {margin-top:2px !important;}
+.margin-top-medium {margin-top:10px !important;}
+.margin-top-large {margin-top:20px !important;}
+.margin-top-xlarge {margin-top:57px !important;}
+.margin-right-none {margin-right:0 !important;}
+.margin-right-small {margin-right:2px !important;}
+.margin-right-medium {margin-right:10px !important;}
+.margin-right-large {margin-right:20px !important;}
+.margin-right-xlarge {margin-right:50px !important;}
+
+/* ---- WET 3.0 features ---- */
+#cn-centre-col-inner .span-7,#cn-centre-col-inner .span-8,#cn-centre-col-inner .span-9,#cn-centre-col-inner .span-10,#cn-centre-col-inner .span-11,#cn-centre-col-inner .span-12{margin-bottom:20px;}
+.span-7,.span-8,.span-9,.span-10,.span-11,.span-12{display:inline;float:left;position:relative;}
+.span-7 .span-7,.span-8 .span-8,.span-9 .span-9,.span-10 .span-10,.span-11 .span-11,.span-12 .span-12{margin-left:0!important;margin-right:0!important;}
+.span-7 img,.span-8 img,.span-9 img,.span-10 img,.span-11 img,.span-12 img{width:100%;height:auto;}
+
+/* ---- IE fixes ---- */
+*:first-child+html .equalize {margin-bottom:20px !important;}
+* html .border-top, * html .border-bottom{height:1px;}

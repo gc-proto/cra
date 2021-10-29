@@ -1,0 +1,39 @@
+/*Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+	Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+	Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+*/
+
+.cal-container.picker-overlay{
+	position:absolute;
+	z-index:10;
+	margin-top: -2em;
+}
+
+.picker-field{
+	width:7em;
+	margin:0;
+}
+
+.picker-toggle-visible, .picker-toggle-hidden{
+	display:inline;
+}
+
+.picker-toggle-visible a, .picker-toggle-hidden a{
+	margin-left:0; 
+}
+.picker-toggle-visible img, .picker-toggle-hidden img{
+	margin:0;
+	width:auto;
+}
+
+div.cal-days a{
+	text-decoration:underline;
+}
+
+div.cal-days ol.cal-day-list li.datepicker-selected a{
+	background-color:#00556b;
+	color:#FFF;
+}
+
+/* #cn-centre-col {position:relative;z-index:1000;} */
+.cal-nextmonth img,.cal-prevmonth img{width:auto;}

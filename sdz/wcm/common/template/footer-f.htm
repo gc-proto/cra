@@ -1,0 +1,85 @@
+<!-- SEARCH CONTENT ENDS / CONTENU RECHERCHE TERMINE -->
+<p class="mrgn-tp-lg pull-left" id="icms_feedback">
+<a class="btn btn-default"><span class="glyphicon glyphicon-comment"></span> Rétroaction</a>
+</p>
+<dl property="dateModified" id="wb-dtmd">
+<dt>Dernière mise à jour&nbsp;: </dt>
+<dd>
+<time></time>
+</dd>
+</dl>
+</main>
+<!--footer content-->
+<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+<!--#include virtual="/wet_templates/footerlinks-f.htm" -->
+</footer>
+<script type="text/javascript" async>
+try {
+    if ($("meta[name=\"subsite\"]").attr("content").length > 0) {
+        $.get($("meta[name=\"subsite\"]").attr("content"), function(data) {
+            $("#wb-auto-1").replaceWith(data);
+        }).fail(function() {
+            console.log("Could not get sub site")
+        });
+    } else if ($("meta[name=\"leftmenu\"]").attr("content").length > 0) {
+        $.get($("meta[name=\"leftmenu\"]").attr("content"), function(data) {
+            //$(data).insertAfter("main");
+            $("main").wrap("<div class='container'><div class='row'></div></div>");
+            $("main").addClass("col-md-9 col-md-push-3").removeClass("container");
+            document.querySelector("main").insertAdjacentHTML('afterend', data);
+        }).fail(function() {
+            console.log("Could not get left menu")
+        });
+    }
+
+} catch (e) {
+    console.log("Metadata field is missing: " + e);
+}
+</script>
+<!--[if gte IE 9 | !IE ]><!--> 
+<script src="/wet40/js/wet-boew.min.js"></script> 
+<!--<![endif]--> 
+<!--[if lt IE 9]><script src="/wet40/js/ie8-wet-boew2.min.js"></script><![endif]--> 
+<script src="/wet40/js/theme.min.js"></script> 
+<script src="/wcm/breadcrumb.js"></script> 
+<script src="/wcm/site_search.js" type="text/javascript"></script> 
+<script type="text/javascript">
+//insert left_menu or sub-site but not both
+
+$(document).ready(function () {
+    "use strict";
+    //call emebedded search
+    findSearch("find-f.htm");
+    createBreadcrumb();
+});
+
+$(function () {
+    "use strict";
+    var link = $("meta[name=\"languagelink\"]").attr("content");
+    var linkText = $("meta[name=\"languagelinktext\"]").attr("content");
+    var languageLink;
+    var datemodified = $("meta[name=\"dcterms.modified\"]").attr("content");
+    var feedback_link = $("meta[name=\"feedback\"]").attr("content");
+    var lastupdated = $("meta[name=\"lastupdated\"]").attr("content");
+    var locationUrl = $(location).attr("href");
+    var index = locationUrl.indexOf("/", 8);
+    locationUrl = locationUrl.substring(index);
+
+    if (linkText === undefined) {
+        linkText = "Fran&ccedil;ais";
+    }
+    languageLink = "<a href=\"" + link + "\" lang=\"en\">" + linkText + "</a>";
+    $("#icms_otherlanguagelink").html(languageLink);
+    //lastupdated
+    $("#wb-dtmd > dd > time").html(lastupdated);
+    //feedback link
+    if (locationUrl === feedback_link) {
+        $("#icms_feedback").addClass("hidden");
+    } else {
+        $("#icms_feedback").html("<a href=\"" + feedback_link + "\" class=\"btn btn-default\"><span class=\"glyphicon glyphicon-comment\"></span> Rétroaction sur cette page Web</a>");
+    }
+});
+</script> 
+<script src="/wcm/common/cms-widgets.js" type="text/javascript"></script>
+</body>
+</html>

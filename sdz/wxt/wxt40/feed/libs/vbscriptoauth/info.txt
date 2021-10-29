@@ -1,0 +1,3 @@
+scottdesapio.com/VBScriptOAuth/
+
+https://github.com/sdesapio/Classic-ASP-VBScript-OAuth

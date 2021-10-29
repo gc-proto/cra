@@ -1,0 +1,38 @@
+/*Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+	Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+	Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+*/
+
+div.cal-days a.calEvent{
+	color:#FFF;
+	background:#36C;
+}
+
+ul.ev-details{
+	position:absolute;
+	z-index:5;
+	border:1px solid #333;
+	padding:0.5em;
+	width:10em;
+	margin:0;
+	margin-top:-0.5em;
+	font-weight:normal;
+}
+
+ul.ev-details, ul.ev-details a{
+	background-color:#FFF;
+}
+
+
+div.cal-days ol.cal-day-list ul.ev-details li{
+	border:0;
+	width:100%;
+	list-style-type:none;
+	
+}
+
+div.cal-days ol.cal-day-list ul.ev-details li a{
+	color:#000;
+}
+
+#cn-centre-col {position:relative;z-index:1000;}

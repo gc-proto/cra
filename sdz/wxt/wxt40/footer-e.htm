@@ -1,0 +1,43 @@
+<!--footer content-->
+<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+  
+  
+  
+  
+  
+<!--#include virtual="/wet_templates/footerlinks-e.htm" -->
+  
+  
+  
+  
+  
+  
+</footer>
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="/wxt/wxt40/js/jquery.js"></script>
+<script src="/wxt/wxt40/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]><script src="/wxt/wxt40/js/ie8-wet-boew2.min.js"></script><![endif]-->
+<script src="/wxt/wxt40/js/theme.min.js"></script>
+<script src="/wcm/breadcrumb.js"></script>
+<script>
+$(function () {
+    "use strict";
+    $("#icms_feedback").html("<a href=\"/english/frames/feedback-e.html\" class=\"btn btn-default\"><span class=\"glyphicon glyphicon-comment\"></span> Feedback about this webpage</a>");
+});
+</script>
+<script src="/wcm/site_search.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+$(document).ready(function () {
+    "use strict";
+    //call emebedded search
+    var contents = findSearch("e");
+    
+    if (contents !== null) {
+        $("#icms_search").replaceWith(contents);
+    }
+	createBreadcrumb();
+});
+/* ]]> */
+</script>
