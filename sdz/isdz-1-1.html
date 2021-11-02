@@ -103,13 +103,13 @@
 <h1 id="wb-cont" property="name" class="wb-inv">Secure Drop Zone Manager</h1>
 <h2>Welcome, abc123, to the Secure Drop Zone Manager</h2>
 <div class="row mrgn-tp-lg">
-<div class="col-md-6"><a href="#asdz" aria-controls="centred-popup" class="wb-lbx" role="button">About Secure Drop Zone</a></div>
+<div class="col-md-6"><a href="#asdz1" aria-controls="centred-popup" class="wb-lbx" role="button">About Secure Drop Zone</a></div>
 <div class="col-md-6 text-right"><a href="isdz-2.html" class="btn btn-primary" style="background-color: #26374a;">Create Drop Zone</a></div>
 </div>
 
-<section id="asdz" class="mfp-hide modal-dialog modal-content overlay-def">
+<section id="asdz1" class="mfp-hide modal-dialog modal-content overlay-def">
   <header class="modal-header">
-    <h2 class="modal-title">About Secure Drop Zone</h2>
+    <h2 class="modal-title">About Secure Drop Zoneh</h2>
   </header>
   <div class="modal-body">
     <p>The Drop Zone Management is an application for CRA users to manage one time, adhoc communications with external entities to either receive, or deliver documents.</p>
@@ -129,7 +129,6 @@
     padding: 10px; 
     color: black;
   }
-
   .mdz-na a:link {
     text-decoration: none;
   }
@@ -143,15 +142,15 @@
 </style>
 
 <div class="list-inline mrgn-tp-lg">
-  <div class="col-md-2 mdz-a text-center"><strong>My Drop Zones</strong></div>
-  <div class="col-md-2 mdz-na text-center"><a href="isdz-1-1.html"><strong>Historic Drop Zone</strong></a></div>
+  <div class="col-md-2 mdz-na text-center"><a href="isdz-1.html"><strong>My Drop Zones</strong></a></div>
+  <div class="col-md-2 mdz-a text-center"><strong>Historic Drop Zone</strong></div>
   <div class="col-md-8 mdz-na">&nbsp;</div>
 </div>
 
 <div class="clearfix"></div>
 
 <div class="mrgn-bttm-lg">
-<h3>My Drop Zones</h3>
+<h3>Historic Drop Zones</h3>
 <details>
   <summary>Filter active Drop Zones</summary>
   <p></p>
@@ -159,20 +158,31 @@
 
 </div>  
 
-<table id="sdzb" class="table wb-tables mrgn-tp-lg" data-wb-tables='{ "buttons": ["print"], "lengthMenu": [ 5, 10, 20, 50 ], "paging" : true, "order": [5, "asc"]}'>
+<section id="hdz-status" class="mfp-hide modal-dialog modal-content overlay-def">
+  <header class="modal-header">
+    <h2 class="modal-title">Status</h2>
+  </header>
+  <div class="modal-body">
+    <p>There are three statuses for Historic Drop Zones:</p>
+    <p><strong>Closed:</strong> Secure Drop Zones that have been closed by a manager or supervisor.</p>
+    <p><strong><span class="text-danger">Expired:</span></strong> Secure Drop Zones that expired without the client taking any action.</p>
+    <p><strong><span class="text-success">Completed:</span></strong> Secure Drop Zones that have been successfully completed.</p>
+  </div>
+</section>
+
+<table id="sdzb" class="table wb-tables mrgn-tp-lg" data-wb-tables='{ "buttons": ["print"], "lengthMenu": [ 5, 10, 20, 50 ], "paging" : true, "order": [4, "asc"]}'>
 <thead>
   <tr>
-    <th><span class="wb-inv">Action icons</span></th>
     <th>Dropzone number</th>
     <th>Reference number</th>
     <th>Client information</th>
     <th>Note to client</th>
     <th>Expiry date</th>
+    <th>Status <a href="#hdz-status" aria-controls="centred-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign" style="color: black"><span class="wb-inv">Question icon - click to show what status' are</span></span></a></th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td><img src="attach_file_black_24dp.svg"></td>
     <td><a href="#" class="nowrap">PONH 8740 ABYT 0098</a></td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
@@ -180,9 +190,9 @@
     Business number: 4323489273</td>
     <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td><span class="nowrap">2021-09-27</span></td>
+    <td><strong>Closed</strong></td>
   </tr>
   <tr>
-    <td><img src="attach_file_black_24dp.svg"></td>
     <td><a href="#" class="nowrap">QYML 5017 TFCZ 5567</a></td>
     <td>TBD</td>
     <td>kmartins@cra-arc.gc.ca<br>
@@ -190,9 +200,10 @@
     Transaction identification number: 893745017834756</td>
     <td>I am sending the following documents: RC201, T2062, T18, and GST70.</td>
     <td><span class="nowrap">2021-09-29</span></td>
+    <td><strong><span class="text-danger">Expired</span></td>
+    <td></td>
   </tr>
     <tr>
-    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
@@ -200,9 +211,9 @@
     Business number: 4323489273</td>
     <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-02</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
     <tr>
-    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
@@ -210,9 +221,9 @@
     Business number: 4323489273</td>
     <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
     <tr>
-    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
@@ -220,9 +231,9 @@
     Business number: 4323489273</td>
     <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
     <tr>
-    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
@@ -230,9 +241,9 @@
     Business number: 4323489273</td>
     <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
-      <tr>
-    <td></td>
+  <tr>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
@@ -240,9 +251,9 @@
     Business number: 4323489273</td>
     <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
-    <tr>
-    <td></td>
+  <tr>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
@@ -250,9 +261,9 @@
     Business number: 4323489273</td>
     <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
-    <tr>
-    <td></td>
+  <tr>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
@@ -260,9 +271,9 @@
     Business number: 4323489273</td>
     <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
-      <tr>
-    <td></td>
+  <tr>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
@@ -270,9 +281,9 @@
     Business number: 4323489273</td>
     <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
-    <tr>
-    <td></td>
+  <tr>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
@@ -280,9 +291,10 @@
     Business number: 4323489273</td>
     <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed:</span></strong></td>
   </tr>
-    <tr>
-    <td></td>
+  <tr>
+
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
@@ -290,6 +302,7 @@
     Business number: 4323489273</td>
     <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
 </tbody>
 </table>  
