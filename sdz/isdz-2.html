@@ -123,7 +123,7 @@
     padding: 40px 16px;    
     }    
 
-.popup-modal-dismiss {
+.dismiss.popup-modal-dismiss {
     display: none;
 }    
 </style>
@@ -174,9 +174,9 @@
 <h1 id="wb-cont" property="name" class="wb-inv">Secure Drop Zone Manager</h1>
 <h2>Create new secure drop zone</h2>
 
-<p><span class="label label-default mrgn-rght-sm" style="font-size: 16px;">Draft</span> Expiring: 2021-10-04</p>
+<p><span class="label label-info mrgn-rght-sm" style="font-size: 16px;">Draft</span> Expiring: 2021-10-04</p>
 
-<div class="row col-md-6">
+<!--div class="row col-md-6">
 <div class="wb-frmvld"><form>
 <div class="wb-fieldflow" data-wb-fieldflow='{
   "defaultselectedlabel":"Select what to do",
@@ -194,13 +194,9 @@
   </ul>
 </div>
 </form></div>
-</div>
+</div-->
 
-<div class="clearfix"></div>
-
-<section id="choice3" class="hidden reset mrgn-tp-md">
-
-<section class="alert alert-warning col-md-8">
+<section class="alert alert-warning col-md-8 mrgn-tp-md">
   <h3>Make sure you have all the documents you are sending ready for uploads before proceeding</h3>
   <p>Once you have created a Secure Drop Zone, the 15 day expiration time will start.</p>
 </section>
@@ -262,16 +258,29 @@
 </div>
 
 <div class="form-group">
-<label for="uploaded" class="required"><span class="field-name">Files uploaded [PLACEHOLDER]</span> <strong class="required">(required)</strong></label>
+<label for="uploaded"><span class="field-name">Files</span></label>
 <hr class="mrgn-tp-0">
 
-<a href="#upload" class="btn btn-default wb-lbx">+ Add files</a> No files selected
+<p>Acceptable file types <a href="#filetypes" aria-controls="centred-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign" style="color: black"><span class="wb-inv">Question icon - click to show what status' are</span></span></a></p>
+
+<section id="filetypes" class="mfp-hide modal-dialog modal-content overlay-def">
+  <header class="modal-header">
+    <h2 class="modal-title">Acceptable file types</h2>
+  </header>
+  <div class="modal-body">
+    <p>You can upload the following file types: .pdf, .doc, .docx, .xls, .xlsx, .txt, .jpg, .tiff, .tif, .xps</p>
+  </div>
+</section>
+
+<a href="#upload" class="btn btn-default wb-lbx dismiss">Add files from FileNet</a> <br><br>
+
+<a href="#upload" class="btn btn-default wb-lbx dismiss">Choose files from your computer</a> &nbsp;No files selected
 
 </div>    
 
 <section id="upload" class="mfp-hide modal-dialog modal-content overlay-def lbx-modal">
   <div class="modal-body">
-    <p><a href="isdz-2-1.html" class="btn btn-primary btn-lg">You uploaded files. Please click to continue.</a></p>
+    <p><a href="isdz-2-1.html" class="btn btn-primary btn-lg">You added files. Please click to continue.</a></p>
   </div>
 </section>
 
@@ -289,7 +298,6 @@
 
 </div>
 
-</section>
 
 
 <div class="clearfix"></div>
