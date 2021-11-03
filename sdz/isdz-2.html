@@ -304,23 +304,23 @@ function showfield(name){
   </div>
 </section>
 
-<section id="filenet" class="mfp-hide modal-dialog modal-content overlay-def lbx-modal wb-popup-mid">
+<section id="filenet" class="mfp-hide modal-dialog modal-content overlay-def lbx-modal">
   <header class="modal-header">
     <h2 class="modal-title">Add files from FileNet</h2>
   </header>
   <div class="modal-body">
     
   <form class="form-inline">    
-
+  <div class="form-group">
     <label for="doclass"><span class="field-name">Document class</span></label>
-    <select class="form-control" id="efax" name="efax">
+    <select id="efax" name="efax">
       <option value="efax">eFax and Drop Zone</option>
     </select>
-  
-
+  </div>    
+  <div class="form-group">
     <label for="docid"><span class="field-name">Document ID</span></label>
-    <input class="form-control" id="docid" name="efax" type="text" data-rule-minlength="2" />
-
+    <input id="docid" name="efax" type="text" data-rule-minlength="2" />
+  </div>
   <button type="submit" class="btn btn-default">Search</button>
 
 </form>  
