@@ -2,152 +2,184 @@
 <!--[if lt IE 9]>
 <html class="no-js lt-ie9" lang="en" dir="ltr">
    <![endif]-->
-   <!--[if gt IE 8]><!-->
+   <!--[if gt IE 8]>
+<!-->
    <html class="no-js" lang="en" dir="ltr">
       <!--<![endif]-->
-      <head>
-         <meta charset="utf-8">
-         <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-         <title>Cumulative (2 or more categories) - Disability Tax Credit – Canada.ca</title>
-         <meta content="width=device-width,initial-scale=1" name="viewport">
-         <meta name=”robots” content=”noindex, follow”>
-         <!-- Meta data -->
-         <!-- Meta data-->
-         <!-- Load closure template scripts -->
-         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
-         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
-         <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
-         <!-- Write closure template -->
-         <script type="text/javascript">
-            document.write(wet.builder.refTop({
-            }));
-         </script>
-         <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
-         <link href="../css/pn.css" rel="stylesheet">
-         <link href="../css/h1-underline.css" rel="stylesheet">
-		 <link href="../css/checkbox-radio-CRA.css" rel="stylesheet">
-	      <link href="../css/steps.css" rel="stylesheet">
-	      <link href="https://test.canada.ca/covid-19-guidance/proto/css/conjunction.css" rel="stylesheet">
-		 <style type="text/css">
-         div.hidden-action {
-         transform: scaleX(0);
-         overflow: hidden;
-         display: none;
-         }
-         div.visible-action {
-         transform: scaleX(1);
-         display: visible;
-         }
-         /*Checkbox/Fieldflow radio input sizing,positioning*/
-         .checkbox-zebra > li:nth-child(2n+1) {
-         background-color: #f5f5f5;
-         margin-left: -50px;
-         padding-top: 10px;
-         padding-bottom: 15px;
-         padding-left: 50px;
-         }
-         .checkbox-zebra [role="checkbox"]::before {
-         background-color: #fff;
-         }
-         .std-blt {
-         font-size: 20px;
-         line-height: 1.65em;
-         }
-         .std-blt {
-         list-style-type: disc;
-         }
-         .std-blt li label {
-         display: block;
-         padding-left: 0px;
-         }
-         /********
+
+<head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>Cumulative (2 or more categories) - Disability Tax Credit – Canada.ca</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name=”robots” content=”noindex, follow”>
+    <!-- Meta data -->
+    <!-- Meta data-->
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+    <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        document.write(wet.builder.refTop({}));
+    </script>
+    <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
+    <link href="../css/pn.css" rel="stylesheet">
+    <link href="../css/h1-underline.css" rel="stylesheet">
+    <link href="../css/checkbox-radio-CRA.css" rel="stylesheet">
+    <link href="../css/steps.css" rel="stylesheet">
+    <link href="https://test.canada.ca/covid-19-guidance/proto/css/conjunction.css" rel="stylesheet">
+    <style type="text/css">
+        div.hidden-action {
+            transform: scaleX(0);
+            overflow: hidden;
+            display: none;
+        }
+
+        div.visible-action {
+            transform: scaleX(1);
+            display: visible;
+        }
+
+        /*Checkbox/Fieldflow radio input sizing,positioning*/
+        .checkbox-zebra>li:nth-child(2n+1) {
+            background-color: #f5f5f5;
+            margin-left: -50px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            padding-left: 50px;
+        }
+
+        .checkbox-zebra [role="checkbox"]::before {
+            background-color: #fff;
+        }
+
+        .std-blt {
+            font-size: 20px;
+            line-height: 1.65em;
+        }
+
+        .std-blt {
+            list-style-type: disc;
+        }
+
+        .std-blt li label {
+            display: block;
+            padding-left: 0px;
+        }
+
+        /********
          ********
          ** New checklist example
          ** May 15, 2020
          ** Replacing checkkboxes with clickable divs that convey a sense of success to the user
          ********
          ********/
-         /* One input per line */
-         .provisional [role="checkbox"] { /* (0,2,0) */
-         cursor: pointer;
-         display: inline-block;
-         padding-left: 15px;
-         position: relative;
-         }
-         .provisional [role="checkbox"]::before,
-         .provisional [role="checkbox"]::after { /* (0,2,1) */
-         content: "";
-         left: 0;
-         position: absolute;
-         top: 0;
-         transform: translate(-100%, 0%);
-         }
-         .provisional .wb-checklist.wb-checklist-sm { /* (0,3,0) */
-         font-size: 17px;
-         }
-         /* the basic, unchecked style */
-         .provisional [role="checkbox"]::before { /* (0,2,1) */
-         border: 4px solid #fff;
-         box-shadow: 0 0 0 2px #000;
-         display: inline-block;
-         height: 36px;
-         width: 36px;
-         }
-         .provisional .wb-checklist-sm [role="checkbox"]::before { /* (0,3,1) */
-         border-width: 3px;
-         height: 24px;
-         transform: translate(-100%, 20%);
-         width: 24px;
-         }
-         /* hover styling */
-         .provisional [role="checkbox"][aria-checked="false"]:hover::before { /* (0,3,1) */
-         background-image: linear-gradient(to bottom, hsl(10, 0%, 90%), hsl(10, 0%, 100%) 50%);
-         }
-         /* focus styling */
-         .provisional [role="checkbox"]:focus { /* (0,3,0) */
-         outline: none;
-         }
-         .provisional [role="checkbox"]:focus::before { /* (0,3,2) */
-         box-shadow: 0 0 0 2px #000, 0 0 8px 4px rgb(59, 153, 252);
-         }
-         /* the checked style using the [aria-checked='true'] pseudo class and aria-checked=true attribute */
-         .provisional [role="checkbox"][aria-checked="true"]::before { /* (0,3,1) */
-         background-color: #318000;
-         border: none;
-         }
-         .provisional [role="checkbox"][aria-checked="true"]::after { /* (0,3,1) */
-         border-color: white;
-         border-style: solid;
-         border-width: 0 5px 5px 0;
-         display: inline-block;
-         height: 26px;
-         width: 13px;
-         transform: translate(-185%, 10%) rotate(45deg);
-         }
-         .provisional .wb-checklist-sm [role="checkbox"][aria-checked="true"]::after { /* (0,3,1) */
-         border-width: 0 4px 4px 0;
-         height: 16px;
-         width: 9px;
-         transform: translate(-185%, 40%) rotate(45deg);
-         }
-      </style>
-      <style>
-         .checkbox-lg label {font-size: 1em;}
-      </style>
-      </head>
-      <body vocab="http://schema.org/" typeof="WebPage">
-         <div id="def-top"> </div>
-         <!-- Write closure template --> 
-         <script type="text/javascript">
-            var defTop = document.getElementById("def-top");
-            defTop.outerHTML = wet.builder.top({
-            	lngLinks: [{
-            		lang: "fr",
-            		href: "#",
-            		text: "Français"
-            	}],
-            	breadcrumbs: [{
+        /* One input per line */
+        .provisional [role="checkbox"] {
+            /* (0,2,0) */
+            cursor: pointer;
+            display: inline-block;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .provisional [role="checkbox"]::before,
+        .provisional [role="checkbox"]::after {
+            /* (0,2,1) */
+            content: "";
+            left: 0;
+            position: absolute;
+            top: 0;
+            transform: translate(-100%, 0%);
+        }
+
+        .provisional .wb-checklist.wb-checklist-sm {
+            /* (0,3,0) */
+            font-size: 17px;
+        }
+
+        /* the basic, unchecked style */
+        .provisional [role="checkbox"]::before {
+            /* (0,2,1) */
+            border: 4px solid #fff;
+            box-shadow: 0 0 0 2px #000;
+            display: inline-block;
+            height: 36px;
+            width: 36px;
+        }
+
+        .provisional .wb-checklist-sm [role="checkbox"]::before {
+            /* (0,3,1) */
+            border-width: 3px;
+            height: 24px;
+            transform: translate(-100%, 20%);
+            width: 24px;
+        }
+
+        /* hover styling */
+        .provisional [role="checkbox"][aria-checked="false"]:hover::before {
+            /* (0,3,1) */
+            background-image: linear-gradient(to bottom, hsl(10, 0%, 90%), hsl(10, 0%, 100%) 50%);
+        }
+
+        /* focus styling */
+        .provisional [role="checkbox"]:focus {
+            /* (0,3,0) */
+            outline: none;
+        }
+
+        .provisional [role="checkbox"]:focus::before {
+            /* (0,3,2) */
+            box-shadow: 0 0 0 2px #000, 0 0 8px 4px rgb(59, 153, 252);
+        }
+
+        /* the checked style using the [aria-checked='true'] pseudo class and aria-checked=true attribute */
+        .provisional [role="checkbox"][aria-checked="true"]::before {
+            /* (0,3,1) */
+            background-color: #318000;
+            border: none;
+        }
+
+        .provisional [role="checkbox"][aria-checked="true"]::after {
+            /* (0,3,1) */
+            border-color: white;
+            border-style: solid;
+            border-width: 0 5px 5px 0;
+            display: inline-block;
+            height: 26px;
+            width: 13px;
+            transform: translate(-185%, 10%) rotate(45deg);
+        }
+
+        .provisional .wb-checklist-sm [role="checkbox"][aria-checked="true"]::after {
+            /* (0,3,1) */
+            border-width: 0 4px 4px 0;
+            height: 16px;
+            width: 9px;
+            transform: translate(-185%, 40%) rotate(45deg);
+        }
+    </style>
+    <style>
+        .checkbox-lg label {
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage">
+    <div id="def-top"> </div>
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        var defTop = document.getElementById("def-top");
+        defTop.outerHTML = wet.builder.top({
+            lngLinks: [{
+                lang: "fr",
+                href: "#",
+                text: "Français"
+            }],
+            breadcrumbs: [{
                 title: "Canada.ca",
                 href: "https://www.canada.ca/en.html"
             }, {
@@ -172,14 +204,14 @@
                 title: "Who is eligible",
                 href: "eligible.html"
             }],
-            	search: true,
-            	siteMenu: true,
-            	showPreContent: true
-            });
-         </script>
-         <main role="main" property="mainContentOfPage" class="container">
+            search: true,
+            siteMenu: true,
+            showPreContent: true
+        });
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
         <div class="gcnav">
-   <section class="gcnav-menu">
+            <section class="gcnav-menu">
                 <h1 property="name" id="wb-cont-parent">Disability tax credit (DTC)</h1>
                 <nav aria-label="Section menu">
                     <h2 id="gcnav-menu-header">Sections</h2>
@@ -199,100 +231,102 @@
                 </nav>
             </section>
             <aside class="hidden-xs hidden-sm gcnav-side" data-ajax-replace="index.html #gcnav-side>"> </aside>
-  <section class="gcnav-section">
-    <h1 property="name" id="wb-cont">Cumulative effect (2 or more categories)</h1>
-	<h2 class="h3 mrgn-tp-md">On this page</h2>
-    <ul>
-      <li><a href="#h_1">Overview</a></li>
-      <li><a href="#h_2">Eligibility criteria</a></li>
+            <section class="gcnav-section">
+                <h1 property="name" id="wb-cont">Cumulative effect (2 or more categories)</h1>
+                <h2 class="h3 mrgn-tp-md">On this page</h2>
+                <ul>
+                    <li><a href="#h_1">Overview</a></li>
+                    <li><a href="#h_2">Eligibility criteria</a></li>
 
-    </ul>
-	
-      <h2 id="h_1" >Overview</h2>
-                  <div class="row">
-              <div class="col-md-7">
-                <p>Some people may be severely impacted by 2 or more mental or physical impairments, even with the help of appropriate therapy, medication, and devices. The DTC aims to offset some of the costs caused by care, treatment and related activities by reducing the amount of income tax you may have to pay. </p>
-	<p>The cumulative effect category lets you combine the effects of impairments in <strong>2 or more</strong> of the categories below:</p>
-              </div>
+                </ul>
 
-<div class="col-md-5" id="video1-launch">
-                <figure class="thumbnail position-relative">
-                  
-                  <div class="row">
-                    <div class="col-xs-12"> <span class="small well well-sm pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg brdr-rds-0" aria-hidden="true">2:18</span> <img alt="" src="https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/tx/ndvdls/sgmnts/dsblts/mdcl-prcttnr/imgs/cmltv.jpg" class="img-responsive"></div>
-                  </div>
-                  <figcaption class="caption">
-                    <h4 class="mrgn-tp-0">Video for cumulative effect</h4>
-                    <!--<p>Examples that may or may not qualify for DTC.</p>-->
-                    <p class="mrgn-bttm-0"><a href="#video-player1" data-wb-doaction='[{"action": "removeClass", "source": "#video-player1", "class": "hidden" }, {"action": "ajax", "url": "video-paystub.html#paystub-video", "container": "#vp1", "trigger": true}]' class="btn btn-primary btn-lg stretched-link"><span class="far fa-play-circle fa-lg"></span> Launch video<span class="wb-inv">: Cumulative effect</span></a></p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-      
-        <div aria-live="polite" >
-         
-<figure class="wb-mltmd hidden" id="video-player1">
-	                 
-        <video poster="https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/tx/ndvdls/sgmnts/dsblts/mdcl-prcttnr/imgs/cmltv.jpg">         
-          <source src="https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/vc/tx/ndvdls/sgmnts/dsblts/mdcl-prcttnr/cmltv-eng.mp4">
-          <track data-type="application/ttml+xml" kind="captions" label="English" src="https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/vdgllry/tx/ndvdls/sgmnts/dsblts/mdcl-prcttnr/cmltv-eng.xml" srclang="en">
-        </video>
-	<figcaption>
-	<details>
-        <summary>Transcript and alternative formats</summary>
-       
-        <h4>Transcript</h4>
-         <p>For some people, the cumulative effect of significant restrictions in two or more basic activities of daily living may pose a significant challenge.</p>
-        <p>In this first example, a person with arthritis is having a follow-up appointment with the doctor to discuss continuing difficulties.</p>
-        <p>Doctor: &quot;Have you noticed any improvement in your condition since you've been taking the new medication?&quot;</p>
-        <p>Patient: &quot;I'm still having difficulties with feeding myself and dressing in the morning. However as the day progresses and the medication starts to work, I can manage much more easily.&quot;</p>
-        <p>In this first example, the individual has an impairment that is not present all or substantially all of the time, and is responding to medication.</p>
-        <p>Therefore, the individual would not qualify for the disability tax credit.</p>
-        <p>In the second example, a person has a follow-up appointment after receiving a medical device.</p>
-        <p>The patient is wearing an electric hook at the elbow due to amputation.</p>
-        <p>Doctor: &quot;How are you adjusting to your electric hook?&quot;</p>
-        <p>Patient: &quot;Each week I find my hook getting easier to use.&quot;</p>
-        <p>Doctor: &quot;Do you find your ability to dress and feed yourself is improving?&quot;</p>
-        <p>Patient: &quot;Most of the time, it really doesn't take extra time to do those activities, but depending on what I'm wearing or trying to eat, it can sometimes take a little longer.&quot;</p>
-        <p>While this individual clearly has a severe and prolonged impairment that affects both feeding and dressing, they are not significantly restricted in these two activities all or substantially all of the time, and therefore would not qualify for the disability tax credit.</p>
-        <p>In the third example, a person who has suffered from lupus for 10 years is at a regular follow-up visit to the doctor. This person has been treated with high doses of cortisone, which has resulted in hand malformations and the loss of fine motor skills.</p>
-        <p>The patient is sitting. The patient's hands, held on her lap, are slightly bent at the wrists and turned inward.</p>
-        <p>Doctor: &quot;How have you been feeling since our last visit?&quot;</p>
-        <p>Patient: &quot;I'm still able to do some things without help. However, I am having significant problems everyday with getting dressed and undressed, as well as feeding myself. It takes me considerably longer to do these activities than it did last year.&quot;</p>
-        <p>In the third example, the individual is significantly restricted in both dressing and feeding all or substantially all of the time, and therefore would qualify for the disability tax credit.</p>
-               
-		 <h4>Alternative formats</h4>
-        <ul>
-          <li><a href="https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/vc/tx/ndvdls/sgmnts/dsblts/mdcl-prcttnr/cmltv-eng.mp4">MPG4</a></li>
-          <li><a href="https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/vc/tx/ndvdls/sgmnts/dsblts/mdcl-prcttnr/cmltv-eng.webm">WEBM</a></li>
-        </ul>
-      </details>
-	</figcaption>
-</figure>
-           
-          </div>
-	  
-	  
-						   <ul class="colcount-sm-3">
-						  
-						   <li class="small"><a href="walking.html">Walking</a></li>
-							    <li class="small"><a href="mental.html">Mental functions</a></li>
-						   <li class="small"><a href="dressing.html">Dressing</a></li>
-							   <li class="small"><a href="eating.html">Feeding</a></li>
-						   <li class="small"><a href="eliminating.html">Eliminating (bowel or bladder functions)</a></li>
-						   <li class="small"><a href="speaking.html">Speaking</a></li>
-						   
-						  
-						   <li class="small"><a href="hearing.html">Hearing</a></li>
-						   <li class="small"><a href="vision.html">Vision</a></li>
-						   </ul>
-	  
-	  <p>Eligibility in the cumulative category is based on the effects of the impairments, not a diagnosis or the presence of one or more conditions.</p>
-	
-				
-	  
-	   <!--<details>
+                <h2 id="h_1">Overview</h2>
+                <div class="row">
+                    <div class="col-md-7">
+                        <p class="mrgn-tp-md">Some people may be significantly limited by 2 or more mental or physical impairments, but do not meet the criteria for a marked restriction.</p>
+			<p>The cumulative category lets you combine the effects of impairments in <strong>2 or more</strong> categories if, together, they are equivalent to a marked restriction in 1 category.</p>
+			    <p>The cumulative effects categories are:</p>
+			    
+                    </div>
+
+                    <div class="col-md-5" id="video1-launch">
+                        <figure class="thumbnail position-relative">
+
+                            <div class="row">
+                                <div class="col-xs-12"> <span class="small well well-sm pstn-rght-xs pstn-bttm-xs mrgn-bttm-lg mrgn-rght-lg brdr-rds-0" aria-hidden="true">2:18</span> <img alt="" src="https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/tx/ndvdls/sgmnts/dsblts/mdcl-prcttnr/imgs/cmltv.jpg" class="img-responsive"></div>
+                            </div>
+                            <figcaption class="caption">
+                                <h4 class="mrgn-tp-0">Video for cumulative effect</h4>
+                                <!--<p>Examples that may or may not qualify for DTC.</p>-->
+                                <p class="mrgn-bttm-0"><a href="#video-player1" data-wb-doaction='[{"action": "removeClass", "source": "#video-player1", "class": "hidden" }, {"action": "ajax", "url": "video-paystub.html#paystub-video", "container": "#vp1", "trigger": true}]' class="btn btn-primary btn-lg stretched-link"><span class="far fa-play-circle fa-lg"></span> Launch video<span class="wb-inv">: Cumulative effect</span></a></p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div aria-live="polite">
+
+                    <figure class="wb-mltmd hidden" id="video-player1">
+
+                        <video poster="https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/tx/ndvdls/sgmnts/dsblts/mdcl-prcttnr/imgs/cmltv.jpg">
+                            <source src="https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/vc/tx/ndvdls/sgmnts/dsblts/mdcl-prcttnr/cmltv-eng.mp4">
+                            <track data-type="application/ttml+xml" kind="captions" label="English" src="https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/vdgllry/tx/ndvdls/sgmnts/dsblts/mdcl-prcttnr/cmltv-eng.xml" srclang="en">
+                        </video>
+                        <figcaption>
+                            <details>
+                                <summary>Transcript and alternative formats</summary>
+
+                                <h4>Transcript</h4>
+                                <p>For some people, the cumulative effect of significant restrictions in two or more basic activities of daily living may pose a significant challenge.</p>
+                                <p>In this first example, a person with arthritis is having a follow-up appointment with the doctor to discuss continuing difficulties.</p>
+                                <p>Doctor: &quot;Have you noticed any improvement in your condition since you've been taking the new medication?&quot;</p>
+                                <p>Patient: &quot;I'm still having difficulties with feeding myself and dressing in the morning. However as the day progresses and the medication starts to work, I can manage much more easily.&quot;</p>
+                                <p>In this first example, the individual has an impairment that is not present all or substantially all of the time, and is responding to medication.</p>
+                                <p>Therefore, the individual would not qualify for the disability tax credit.</p>
+                                <p>In the second example, a person has a follow-up appointment after receiving a medical device.</p>
+                                <p>The patient is wearing an electric hook at the elbow due to amputation.</p>
+                                <p>Doctor: &quot;How are you adjusting to your electric hook?&quot;</p>
+                                <p>Patient: &quot;Each week I find my hook getting easier to use.&quot;</p>
+                                <p>Doctor: &quot;Do you find your ability to dress and feed yourself is improving?&quot;</p>
+                                <p>Patient: &quot;Most of the time, it really doesn't take extra time to do those activities, but depending on what I'm wearing or trying to eat, it can sometimes take a little longer.&quot;</p>
+                                <p>While this individual clearly has a severe and prolonged impairment that affects both feeding and dressing, they are not significantly restricted in these two activities all or substantially all of the time, and therefore would not qualify for the disability tax credit.</p>
+                                <p>In the third example, a person who has suffered from lupus for 10 years is at a regular follow-up visit to the doctor. This person has been treated with high doses of cortisone, which has resulted in hand malformations and the loss of fine motor skills.</p>
+                                <p>The patient is sitting. The patient's hands, held on her lap, are slightly bent at the wrists and turned inward.</p>
+                                <p>Doctor: &quot;How have you been feeling since our last visit?&quot;</p>
+                                <p>Patient: &quot;I'm still able to do some things without help. However, I am having significant problems everyday with getting dressed and undressed, as well as feeding myself. It takes me considerably longer to do these activities than it did last year.&quot;</p>
+                                <p>In the third example, the individual is significantly restricted in both dressing and feeding all or substantially all of the time, and therefore would qualify for the disability tax credit.</p>
+
+                                <h4>Alternative formats</h4>
+                                <ul>
+                                    <li><a href="https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/vc/tx/ndvdls/sgmnts/dsblts/mdcl-prcttnr/cmltv-eng.mp4">MPG4</a></li>
+                                    <li><a href="https://www.canada.ca/content/dam/cra-arc/migration/cra-arc/vc/tx/ndvdls/sgmnts/dsblts/mdcl-prcttnr/cmltv-eng.webm">WEBM</a></li>
+                                </ul>
+                            </details>
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+
+                
+<ul class="colcount-sm-3">
+
+                    <li class="small"><a href="walking.html">Walking</a></li>
+                    <li class="small"><a href="mental.html">Mental functions</a></li>
+                    <li class="small"><a href="dressing.html">Dressing</a></li>
+                    <li class="small"><a href="eating.html">Feeding</a></li>
+                    <li class="small"><a href="eliminating.html">Eliminating (bowel or bladder functions)</a></li>
+                    <li class="small"><a href="speaking.html">Speaking</a></li>
+
+
+                    <li class="small"><a href="hearing.html">Hearing</a></li>
+                    <li class="small"><a href="vision.html">Vision</a></li>
+	</ul>
+                
+
+
+
+                <!--<details>
                                     <summary>Video for cumulative effect </summary>
 			      
                                     
@@ -333,50 +367,55 @@
       </details>
 
                                 </details>-->
-                    
-		    <details>
-                                    <summary>Example of people who may be eligible</summary>
-			      
-                                    
-			      
-			     <h3 class="panel-title">Meet Gerry</h3>
-			  
-                                    <!--<p>Gerry can walk 100 metres (approximately one city block), but then must take time to recuperate. He can carry out the mental functions necessary for everyday life, but can concentrate on any topic for only a short period of time.</p>
 
+               
+		    <!--<p>The DTC aims to offset some of the costs caused by care, treatment and related activities by reducing the amount of income tax you may have to pay. </p>-->
+		 <p>Eligibility in the cumulative category is based on the effects of the impairments, not a diagnosis or the presence of one or more conditions.</p>
+		    <details>
+                    <summary>Example of people who may be eligible</summary>
+                    <!--<h3 class="panel-title">Meet Gerry</h3>-->
+
+                    <!--<p>Gerry can walk 100 metres (approximately one city block), but then must take time to recuperate. He can carry out the mental functions necessary for everyday life, but can concentrate on any topic for only a short period of time.</p>
 <p>The cumulative effect of these two limitations is equal to being unable or taking an inordinate amount of time in one impairment category.</p>
 			      <h3 class="panel-title">Meet Maria</h3>
 <p>Maria always takes a long time for walking, dressing, and feeding. The extra time it takes her to do these activities, when added together, is equal to being unable or taking an inordinate amount of time in one impairment category.</p>-->
-			    <h3 class="panel-title">Evelyne is her mother Joan's caregiver</h3>
-			    <p>Evelyne is the caregiver to her mother, Joan, who lives with her.</p> 
-    <p>For years, Joan was able to manage on her own despite having a progressive medical condition. Gradually her condition began to worsen such that she struggles to walk, dress and feed herself.</p> 
-    <p>Evelyne applied for the disability tax credit (DTC) for her mother. As a result of the information provided by the medical practitioner on the DTC application form, Joan is now eligible for DTC and  she qualifies under the category of cumulative effect of significant limitations. Joan needs constant care and supervision.</p> 
-    <p>As Joan has little taxable income and her daughter helps with her food, clothing, and shelter throughout the year, Evelyne may claim any unused portion of the tax credit.</p> 
-    <p>Since Joan is eligible for the DTC, she may also be eligible for other government programs for persons with disabilities.</p> 
-			    
-			    <section data-ajax-replace="https://test.canada.ca/cra/dtc/about-dtc.html#evelyne"></section>
-                                </details>
-	  
-                  
-                  <h2 id="h_2" >Eligibility criteria</h2>
-          <p>To be eligible you must meet <strong>all</strong> the criteria below:</p>
-                  <section>
-                     <ul class="checkbox-lg checkbox-zebra">
-                        <li class="checkbox">
-                           <input type="checkbox" id="eg1" class="action-checkbox cb-dmm">
-                           <label for="eg1">You have significant limitations in 2 or more of the categories below:</label>
-				<ul class="colcount-sm-3">
+                    <h3 class="panel-title mrgn-bttm-md">Evelyne is her mother Joan's caregiver</h3>
+                    <div class="row">
+                        <div class="col-md-3 pull-left mrgn-tp-sm mrgn-rght-md">
+                            <img src="images/evelyne.jpeg">
+                        </div>
+                        <div class="mrgn-lft-md mrgn-rght-md">
+                            <p>Evelyne is the caregiver to her mother, Joan, who lives with her.</p>
+                            <p>For years, Joan was able to manage on her own despite having a progressive medical condition. Gradually her condition became worse and now she struggles to walk, dress and feed herself.</p>
+                            <p>Evelyne applied for the Disability tax credit (DTC) for her mother. As a result of the information provided by the medical practitioner on the DTC application form, Joan is now eligible for DTC and she qualifies under the category of cumulative effect of significant limitations. Joan needs constant care and supervision.</p>
+                            <p>As Joan has little taxable income and her daughter helps with her food, clothing, and shelter throughout the year, Evelyne may claim any unused portion of the tax credit.</p>
+                            <p>Since Joan is eligible for the DTC, she may also be eligible for other government programs for persons with disabilities.</p>
+                            <section data-ajax-replace="https://test.canada.ca/cra/dtc/about-dtc.html#evelyne"></section>
+                        </div>
+                    </div>
+                </details>
 
-<li class="small">Walking</li>
-	<li class="small">Mental functions</li>
-<li class="small">Dressing</li>
-	<li class="small">Feeding</li>
-<li class="small">Eliminating (bowel or bladder functions)</li>
-<li class="small">Speaking</li>
-<li class="small">Hearing</li>
-<li class="small">Vision</li>
-				    </ul>
-				
-				<!--<div><label class="mrgn-lft-0 mrgn-tp-0">
+
+                <h2 id="h_2">Eligibility criteria</h2>
+                <p>To be eligible under cumulative effect, you must meet <strong>all</strong> the criteria below:</p>
+                <section>
+                    <ul class="checkbox-lg checkbox-zebra">
+                        <li class="checkbox">
+                            <input type="checkbox" id="eg1" class="action-checkbox cb-dmm">
+                            <label for="eg1">You have significant limitations in 2 or more of the categories below:</label>
+                            <label for="eg1"><ul class="colcount-sm-3">
+
+                                <li class="small">Walking</li>
+                                <li class="small">Mental functions</li>
+                                <li class="small">Dressing</li>
+                                <li class="small">Feeding</li>
+                                <li class="small">Eliminating (bowel or bladder functions)</li>
+                                <li class="small">Speaking</li>
+                                <li class="small">Hearing</li>
+                                <li class="small">Vision</li>
+                            </ul></label>
+
+                            <!--<div><label class="mrgn-lft-0 mrgn-tp-0">
 				    <div class="cnjnctn-grd flex-fw-xs">
 				      <div class="cnjnctn-col">
 				   <h4 class="mrgn-tp-sm text-muted h5">2 or more of the below categories: </h4>
@@ -416,89 +455,88 @@
 				      </div></label></div>-->
 
                         </li>
-	  <li class="checkbox">
-                           <input type="checkbox" id="eg2" class="action-checkbox cb-dmm">
-                           <label for="eg3">Your impairments have lasted or are expected to last for a continuous period of 12 months</label>
+                        <li class="checkbox">
+                            <input type="checkbox" id="eg2" class="action-checkbox cb-dmm">
+                            <label for="eg2">Your impairments have lasted or are expected to last for a continuous period of 12 months</label>
                         </li>
-	                          <li class="checkbox">
-                           <input type="checkbox" id="eg3" class="action-checkbox cb-dmm">
-                           <label for="eg2">Your impairments exist together all or substantially all of the time (at least 90%)</label>
+                        <li class="checkbox">
+                            <input type="checkbox" id="eg3" class="action-checkbox cb-dmm">
+                            <label for="eg3">Your impairments exist together all or substantially all of the time (at least 90%)</label>
                         </li>
-	   <li class="checkbox">
-                           <input type="checkbox" id="eg4" class="action-checkbox cb-dmm">
-                           <label for="eg2">If the limitations were combined into one, their cumulative effect would be both of the following:</label>
-		   
-		   <ul>
-			<li class="small">equivalent to being unable or taking 3 times longer to do the activity of one of the categories</li>
-			<li class="small">present all or almost all of the time (at least 90%), even with the use of appropriate therapy, medications, and devices</li>
-				    </ul>
-		
-		   
-			     </li>
-	  
-                     </ul>
+                        <li class="checkbox">
+                            <input type="checkbox" id="eg4" class="action-checkbox cb-dmm">
+                            <label for="eg4">If the limitations were combined into one, their effect together would be <strong>both</strong> of the following:
+
+                            <ul>
+                                <li class="small">Equivalent to being unable or taking 3 times longer to do the activity of one of the categories</li>
+                                <li class="small">Present all or almost all of the time (at least 90%), even with the use of appropriate therapy, medications, and devices</li>
+                            </ul></label>
+
+
+                        </li>
+
+                    </ul>
                     <!-- checkbox responses -->
                     <div class="alert alert-warning" id="action-no-msg">
                         <p>You need all of the above to be eligible for the DTC.</p>
-                        <div class="mrgn-tp-md">
-                        <p><strong>If you’re not sure that you’re eligible</strong></p>
-                        <p>You may still apply for the tax credit to find out for sure. The CRA bases its decision on your medical practitioner’s assessment.</p>
-                        </div>
+                        <h3>If you’re not sure that you’re eligible</h3>
+                            <p>You may still apply for the tax credit to find out for sure. The CRA bases its decision on your medical practitioner’s assessment.</p>
                     </div>
                     <div class="alert alert-success hidden provisional" id="action-msg1">
-                        <p><strong>You may be eligible for the DTC</strong></p>
+                        <h3>You may be eligible for the DTC</h3>
                         <p>This does not guarantee eligibility. When you apply, the CRA will base its decision on your medical practitioner’s assessment.</p>
-			    <details>
-<summary>Which medical practitioners can certify this</summary>
+                        <details>
+                            <summary>Which medical practitioners can certify this</summary>
 
-			     <table class="table table-bordered ">
-                        <!--<caption>
+                            <table class="table table-bordered ">
+                                <!--<caption>
                         <strong>Which medical practitioners can certify this</strong>
                         </caption>-->
-                        <thead>
-                            <tr>
-                                <th scope="col">Medical practitioner</th>
-                                <th scope="col">Can certify</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Medical doctor</td>
-                                <td>all impairments</td>
-                            </tr>
-                            <tr>
-                                <td>Nurse practitioner</td>
-                                <td>all impairments</td>
-                            </tr>
-                            <tr>
-                                <td>Optometrist</td>
-                                <td>vision</td>
-                            </tr>
-                            <tr>
-                                <td>Audiologist</td>
-                                <td>hearing</td>
-                            </tr>
-                            <tr>
-                                <td>Occupational therapist</td>
-                                <td>walking, feeding, dressing</td>
-                            </tr>
-                            <tr>
-                                <td>Physiotherapist</td>
-                                <td>walking</td>
-                            </tr>
-                            <tr>
-                                <td>Psychologist</td>
-                                <td>mental functions necessary for everyday life</td>
-                            </tr>
-                            <tr>
-                                <td>Speech-language pathologist</td>
-                                <td>speaking</td>
-                            </tr>
-                        </tbody>
-                    </table></details>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Medical practitioner</th>
+                                        <th scope="col">Can certify</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Medical doctor</td>
+                                        <td>all impairments</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nurse practitioner</td>
+                                        <td>all impairments</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Optometrist</td>
+                                        <td>vision</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Audiologist</td>
+                                        <td>hearing</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Occupational therapist</td>
+                                        <td>walking, feeding, dressing</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Physiotherapist</td>
+                                        <td>walking</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Psychologist</td>
+                                        <td>mental functions necessary for everyday life</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Speech-language pathologist</td>
+                                        <td>speaking</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </details>
                     </div>
-                  </section>
-      <!--<h2 id="h_2" >Examples</h2>
+                </section>
+                <!--<h2 id="h_2" >Examples</h2>
      
       <p>The cumulative effects of the significant restrictions in basic functions can include, but are not limited to, the following (<strong>this list is illustrative and not exhaustive</strong>):</p>
       <dl class="dl-horizontal">
@@ -529,56 +567,53 @@
         <li><span class="far fa-li fa-address-card"></span>gender</li>
       </ul>
       <p>Refer to: <a href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/income-statistics-gst-hst-statistics/disability-tax-credit-statistics/disability-tax-credit-glance.html">Disability Tax Credit at a glance</a></p>-->
-    <nav role="navigation" class="mrgn-bttm-lg mrgn-tp-lg">
-      <h3 class="wb-inv">Section navigation</h3>
-      <ul class="pager">
-        <li class="next"><a href="how-apply.html" rel="next"><span class="wb-inv">Next: </span>How to apply</a></li>
-      </ul>
-    </nav>
-  </section>
-  <aside class="hidden-md hidden-lg" data-ajax-replace="index.html #gcnav-side>"> </aside>
-</div>
-            <div id="def-preFooter"> </div>
-            <!-- Write closure template --> 
-            <script type="text/javascript">
-               var defPreFooter = document.getElementById("def-preFooter");
-               defPreFooter.outerHTML = wet.builder.preFooter({
-               dateModified: "2020-03-13",
-               showPostContent: true,
-               showFeedback: true,
-               showShare: true
-               });
-            </script> 
-         </main>
-         <div id="def-footer"> </div>
-         <!-- Write closure template --> 
-         <script type="text/javascript">
-            var defFooter = document.getElementById("def-footer");
-            defFooter.outerHTML = wet.builder.footer({
+                <nav role="navigation" class="mrgn-bttm-lg mrgn-tp-lg">
+                    <h3 class="wb-inv">Section navigation</h3>
+                    <ul class="pager">
+                        <li class="next"><a href="how-apply.html" rel="next"><span class="wb-inv">Next: </span>How to apply</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <aside class="hidden-md hidden-lg" data-ajax-replace="index.html #gcnav-side>"> </aside>
+        </div>
+        <div id="def-preFooter"> </div>
+        <!-- Write closure template -->
+        <script type="text/javascript">
+            var defPreFooter = document.getElementById("def-preFooter");
+            defPreFooter.outerHTML = wet.builder.preFooter({
+                dateModified: "2020-03-13",
+                showPostContent: true,
+                showFeedback: true,
+                showShare: true
+            });
+        </script>
+    </main>
+    <div id="def-footer"> </div>
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        var defFooter = document.getElementById("def-footer");
+        defFooter.outerHTML = wet.builder.footer({
             showFooter: true,
             showFeatures: true
-            });
-         </script> 
-         <!-- Write closure template --> 
-         <script type="text/javascript">
-            document.write(wet.builder.refFooter({
-            }));
-         </script> 
-         <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
-         <!--script below adds the skip to section navigation at top of page when .gcnav class exists //-->
-		   <script>
-            $(".action-checkbox").change(function(){
+        });
+    </script>
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        document.write(wet.builder.refFooter({}));
+    </script>
+    <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
+    <!--script below adds the skip to section navigation at top of page when .gcnav class exists //-->
+    <script>
+        $(".action-checkbox").change(function() {
             if ($('.action-checkbox:checked').length == $('.action-checkbox').length) {
-            $("#action-msg1").removeClass("hidden").addClass("visible");
-            $("#action-no-msg").addClass("hidden").removeClass("visible");
+                $("#action-msg1").removeClass("hidden").addClass("visible");
+                $("#action-no-msg").addClass("hidden").removeClass("visible");
             }
             if ($('.action-checkbox:checked').length !== $('.action-checkbox').length) {
-            $("#action-msg1").addClass("hidden").removeClass("visible");
-            $("#action-no-msg").removeClass("hidden").addClass("visible");
+                $("#action-msg1").addClass("hidden").removeClass("visible");
+                $("#action-no-msg").removeClass("hidden").addClass("visible");
             }
-            })
-            
-         </script>
-         <script src="../js/topmenu.js"></script>
-      </body>
-   </html>
+        })
+    </script>
+    <script src="../js/topmenu.js"></script>
+</body></html>
