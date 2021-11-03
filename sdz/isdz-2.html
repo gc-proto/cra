@@ -235,21 +235,32 @@
   <input class="form-control" id="refnumber" name="refnumber" type="text" data-rule-minlength="2" />
 </div>
 
+<script type="text/javascript">
+function showfield(name){
+  if(name=='Other')document.getElementById('div1').innerHTML='<div class="form-group"><label for="refnumber"><span class="field-name">Reference number:</span></label><input class="form-control" id="refnumber" name="refnumber" type="text" data-rule-minlength="2" /></div>';
+  else document.getElementById('div1').innerHTML='';
+}
+</script>
+
 <div class="form-group">
-  <label for="clienttype"><span class="field-name">Title</span></label>
-  <select class="form-control" id="clienttype" name="clienttype">
-    <option label="Select a title"></option>
+  <label for="clienttype"><span class="field-name">Client identifier type:</span></label>
+  <select class="form-control" id="clienttype" name="clienttype" onchange="showfield(this.options[this.selectedIndex].value)">
+    <option label="Select a client idenitifer type"></option>
+    <option value="Other">Other</option>
     <option value="bn">Business number</option>
-    <option value="sin">Social insurance number</option>
-    <option value="ttn">Temporary tax number</option>
+    <option value="drn">Discounter Registration Number ("Discounter Code")</option>
+    <option value="din">Dependant identification number</option>
+    <option value="efn">EFILER number</option>
+    <option value="gid">Group identifier</option>
     <option value="itn">Individual tax number</option>
-    <option value="tan">Trust account number</option>
-    <option value="san">Subledger account number</option>
+    <option value="nregpn">Non-registered plan number</option>
     <option value="nrpn">Non-resident plan number</option>
-    <option value="rpn">Registered plan number</option>
-    <option value="tin">Transaction identification number</option>
-    <option value="ri">Representative identifier</option>
+    <option value="nrrn">Non-resident represehntative number</option>
   </select>
+</div>
+
+<div id="div1">
+
 </div>
 
 <div class="form-group">
