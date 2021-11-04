@@ -166,27 +166,7 @@
 <h1 id="wb-cont" property="name" class="wb-inv">Secure Drop Zone Manager</h1>
 <h2>Create new secure drop zone</h2>
 
-<p><span class="label label-default mrgn-rght-sm" style="font-size: 16px;">Draft</span> Expiring: 2021-10-04</p>
-
-<div class="row col-md-6">
-<div class="wb-frmvld"><form>
-<div class="wb-fieldflow" data-wb-fieldflow='{
-  "defaultselectedlabel": false,
-  "reset": { "action": "addClass", "source":".reset", "class": "hidden"}, 
-  "noreqlabel": true,
-  "noForm": true
-}'>
-
-  <p><strong>What would you like to do?</strong></p>
-
-  <ul>
-    <li data-wb-fieldflow='{"action":"removeClass", "source":"#choice3", "class": "hidden", "live": true}'>Send and request documents</li>
-    <li data-wb-fieldflow='{"action":"removeClass", "source":"#choice1", "class": "hidden", "live": true}'>Send documents</li>
-    <li data-wb-fieldflow='{"action":"removeClass", "source":"#choice2", "class": "hidden", "live": true}'>Request documents</li>
-  </ul>
-</div>
-</form></div>
-</div>
+<p><span class="label label-info mrgn-rght-sm" style="font-size: 16px;">Draft</span> Expiring: 2021-10-04</p>
 
 <div class="clearfix"></div>
 
@@ -213,7 +193,7 @@
 
 <div class="form-group">
   <label for="clientname"><span class="field-name">Client name (First and last name):</span></label>
-  <input class="form-control" id="clientname" name="clientname" type="text" autocomplete="given-name" data-rule-minlength="2" />
+  <input value="Patrick Conroy" class="form-control" id="clientname" name="clientname" type="text" autocomplete="given-name" data-rule-minlength="2" />
 </div>
 
 <div class="form-group">
@@ -234,17 +214,26 @@
 <div class="form-group">
   <label for="clienttype"><span class="field-name">Title</span></label>
   <select class="form-control" id="clienttype" name="clienttype">
-    <option label="Select a title"></option>
+    <option label="Select a client idenitifer type"></option>
+    <option value="Other">Other</option>
     <option value="bn">Business number</option>
-    <option value="sin">Social insurance number</option>
-    <option value="ttn">Temporary tax number</option>
+    <option value="drn">Discounter Registration Number ("Discounter Code")</option>
+    <option value="din">Dependant identification number</option>
+    <option value="efn">EFILER number</option>
+    <option value="gid">Group identifier</option>
     <option value="itn">Individual tax number</option>
-    <option value="tan">Trust account number</option>
-    <option value="san">Subledger account number</option>
+    <option value="nregpn">Non-registered plan number</option>
     <option value="nrpn">Non-resident plan number</option>
+    <option value="nrrn">Non-resident representative number</option>
+    <option value="pan">PAYDAC account number</option>
     <option value="rpn">Registered plan number</option>
+    <option value="rid">Representative identifier</option>
+    <option value="sin">Social insurance number</option>
+    <option value="san">Subledger account number</option>
+    <option value="tfn">T5 filer number</option>
+    <option value="ttn">Temporary tax number</option>
     <option value="tin">Transaction identification number</option>
-    <option value="ri">Representative identifier</option>
+    <option value="tan">Trust account number</option>
   </select>
 </div>
 
@@ -254,43 +243,70 @@
 </div>
 
 <div class="form-group">
-<label for="uploaded" class="required"><span class="field-name">Files uploaded [PLACEHOLDER]</span> <strong class="required">(required)</strong></label>
+<label for="uploaded"><span class="field-name">Files</span></label>
 <hr class="mrgn-tp-0">
+
+<p>Acceptable file types <a href="#filetypes" aria-controls="centred-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign" style="color: black"><span class="wb-inv">Question icon - click to show what status' are</span></span></a></p>
+
+<section id="filetypes" class="mfp-hide modal-dialog modal-content overlay-def">
+  <header class="modal-header">
+    <h3 class="modal-title">Acceptable file types</h3>
+  </header>
+  <div class="modal-body">
+    <p>You can upload the following file types: .pdf, .doc, .docx, .xls, .xlsx, .txt, .jpg, .tiff, .tif, .xps</p>
+  </div>
+</section>
+
+<a href="#filenet" class="btn btn-default wb-lbx dismiss">Add files from FileNet</a> <br><br>
+
+<a href="#upload" class="btn btn-default wb-lbx dismiss">Choose files from your computer</a> &nbsp;No files selected
+
+<section class="alert alert-success col-md-8">
+  <h3>yYour file was successfully uploaded</h3>
+</section>
 
 <table class="table table-striped">
 <thead>
 <tr>
+  <th style="width: 20px;"><span class="wb-inv">Download icon</span></th>
+  <th>Name</th>
+  <th>Document ID</th>
+  <th>Date uploaded</th>
+  <th>Source</th>
   <th style="width: 20px;"><span class="wb-inv">Delete icon</span></th>
-  <th>File name</th>
-  <th>File size</th>
-  <th>Upload date</th>
 </tr>  
 </thead>
 <tbody>
   <tr>
+    <td><a href="#"><img src="download.svg" style="padding-bottom: 3px;"></a></td>
+    <td><a href="">Request.docx</a></td>
+    <td><a href="#93498134098504859">93498134098504859</a></td>
+    <td>2021-10-22</td>
+    <td>eFax and Drop Zone</td>
     <td><a href="#"><img src="delete.svg" style="padding-bottom: 3px;"></a></td>
-    <td>FileOne.xls</td>
-    <td>2 MB</td>
-    <td>2021-06-07</td>
   </tr>
-  <tr>
-    <td><a href="#"><img src="delete.svg" style="padding-bottom: 3px;"></a></td>
-    <td>FileOne.xls</td>
-    <td>2 MB</td>
-    <td>2021-06-07</td>
-  </tr>
-  <tr>
-    <td><a href="#"><img src="delete.svg" style="padding-bottom: 3px;"></a></td>
-    <td>FileOne.xls</td>
-    <td>2 MB</td>
-    <td>2021-06-07</td>
-  </tr>    
 </tbody>
 </table>
 
 <a href="#upload" class="btn btn-default wb-lbx">+ Add files</a> No files selected
 
 </div>    
+
+<section id="93498134098504859" class="mfp-hide modal-dialog modal-content overlay-def lbx-modal">
+  <header class="modal-header">
+    <h3 class="modal-title">Document ID: 93498134098504859</h3>
+  </header>
+  <div class="modal-body">
+    <p><strong>Document title:</strong> Request.docx</p>
+    <p><strong>Program area:</strong> eFax and Drop Zone</p>
+    <p><strong>Reference number:</strong> Refence number 7</p>
+    <p><strong>Client identifier:</strong> Business number 7</p>
+    <p><strong>Confirmation number:</strong> DKJ459JGJH4I5TUJG45998</p>
+    <p><strong>Created date:</strong> 2021-09-09</p>
+    <p><strong>Source code:</strong> Internal-local</p>
+    <p><strong>Status code:</strong> Prending</p>
+  </div>
+</section>
 
 <section id="upload" class="mfp-hide modal-dialog modal-content overlay-def lbx-modal">
   <div class="modal-body">
