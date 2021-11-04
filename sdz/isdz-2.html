@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!-->
@@ -348,9 +347,39 @@ function showfield(name){
   </div>
   <button class="btn btn-default btn-sm" id="search" disabled="disabled">Search</button>
 
+<section id="filesadded" class="hidden"> 
+  <table>
+    <thead>
+      <tr>
+        <th><span class="wb-inv">Checkbox column</span></th>
+        <th>Document ID</th>
+        <th>Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>  
+  </table>
+</section>
+
 </form>  
 </div>
+<div class="modal-footer">
+<button class="btn btn-default" type="button">Add file</button><button class="btn btn-primary popup-modal-dismiss" type="button">Add file</button>
+</div>
 </section>
+
+<script>
+  $(function () {
+   $("#search").click(function () {
+   $("#filesadded").removeClass("hidden");
+   });
+});
+</script>
 
 <script>
 $(document).ready(function() {
@@ -359,7 +388,6 @@ $(document).ready(function() {
   });
 });
 </script>
-
 
 <div class="clearfix"></div>
 <!-- SEARCH CONTENT ENDS / CONTENU RECHERCHE TERMINE --> 
