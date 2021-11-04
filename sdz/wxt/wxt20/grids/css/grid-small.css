@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+*/
+
+.span-1,.span-2,.span-3,.span-4,.span-5,.span-6,.span-full{margin-left:5px;margin-right:5px;}
+#cn-banner{background:url(../images/banner-small.jpg) 0 0 no-repeat #00556b;}
+#cn-centre-col-inner{left:155px;display:inline;float:left;position:relative;margin-left:5px;padding-left:0;margin-bottom:10px;}
+#cn-body-inner-2col #cn-centre-col-inner{padding-left:0 !important; width:605px;}
+#cn-body-inner-3col #cn-centre-col-inner{margin:0;padding:0px;width:405px;}
+.span-1{width:90px;}
+.span-2{width:190px;}
+.span-3{width:290px;}
+.span-4{width:390px;}
+.span-5{width:490px;}
+.span-6{width:590px;}
+.span-full,#cn-body-inner-1col #cn-centre-col-inner{width:760px;}
+.border-span-1{background-image:url(../images/border-800-span-1.gif);}
+.border-span-2,.module-versatile{background-image:url(../images/border-800-span-2.gif);}
+.border-span-3{background-image:url(../images/border-800-span-3.gif);}
+.border-span-4,.module-table-contents,.module-welcomepage{background-image:url(../images/border-800-span-4.gif);}
+.border-span-5{background-image:url(../images/border-800-span-5.gif);}
+.border-span-6{background-image:url(../images/border-800-span-6.gif);}
+.border-span-6-full{background-image:url(../images/border-800-span-6-full.gif);}
+.border-span-full{background-image:url(../images/border-800-span-full.gif);}
+.span-2 .calendar-month td,.span-2 .calendar-month th{width:26px;height:32px;padding:0;}
+* html body{width:780px;}
+
+/*Override all borders in 3 column layout to ensure 800x600 design adheres to clf2 dimensions*/
+#cn-body-inner-3col #cn-centre-col .module-welcomepage,#cn-body-inner-3col #cn-centre-col .border-span-4
+{background-image:url(../images/border-800-span-4-full.gif)!important;}
+#cn-body-inner-3col #cn-centre-col .border-span-2,#cn-centre-col #cn-centre-col .module-versatile{background-image:url(../images/border-800-span-2-full.gif)!important;}
+#cn-body-inner-3col #cn-right-col .border-span-2,#cn-body-inner-3col #cn-right-col  .module-versatile{background-image:url(../images/border-800-span-2-full2.gif)!important;}
+#cn-body-inner-3col .span-4{margin-left:0 !important;margin-right:0 !important;width:405px;}
+#cn-body-inner-3col #cn-centre-col .span-1{width:92px !important;}
+#cn-body-inner-3col #cn-centre-col .span-2{width:197px !important;}
+#cn-body-inner-3col #cn-right-col .span-2{margin-left:0 !important;margin-right:0!important;width:195px;}
+#cn-body-inner-3col .border-span-1{background-image:url(../images/border-800-span-1-full.gif)!important;}
+
+/*Additional CSS for plugins that work within the grid system (delete if the plugin is not used by your site)*/
+
+/*Codaslider CSS*/
+.span-6 #slider,.span-6 .scroll {width: 590px}
+.span-6 .scroll-panel {width: 550px}
+.span-5 #slider,.span-5 .scroll {width: 490px}
+.span-5 .scroll-panel {width: 450px}
+.span-4 #slider,.span-4 .scroll {width: 390px}
+.span-4 .scroll-panel {width: 350px}
+.span-3 #slider,.span-3 .scroll {width: 290px}
+.span-3 .scroll-panel {width: 250px}
+.span-2 #slider,.span-2 .scroll {width: 190px}
+.span-2 .scroll-panel {width: 150px}
+.slider-nav img {width:auto !important;} /*for when JavaScript is turned off */
+
+/*InfoZone overrides*/
+#cn-banner{min-height:57px;}
+* html #cn-banner{height:57px;}
+#cn-cmb ul li a{min-height:35px;}
+* html #cn-cmb ul li a{height:27px;}
+#cn-left-col img{width:150px;height:42px;margin:0 0 -3px;} 
+
+/*Toolbar overrides*/
+.toolbar{margin-left:-10px;}
+.toolbar a{padding-left:5px !important;}
+.toolbar a.toolbar-homepage,.toolbar .toolbar-top-page a{background:none !important;}
+
+/* ---- WET 3.0 features ---- */
+#cn-body-inner-2col .grid-12 .span-1{width:40px;}
+#cn-body-inner-2col .grid-12 .span-2{width:90px;}
+#cn-body-inner-2col .grid-12 .span-3{width:140px;}
+#cn-body-inner-2col .grid-12 .span-4{width:190px;}
+#cn-body-inner-2col .grid-12 .span-5{width:240px;}
+#cn-body-inner-2col .grid-12 .span-6{width:290px;}
+#cn-body-inner-2col .grid-12 .span-7{width:340px;}
+#cn-body-inner-2col .grid-12 .span-8{width:390px;}
+#cn-body-inner-2col .grid-12 .span-9{width:440px;}
+#cn-body-inner-2col .grid-12 .span-10{width:490px;}
+#cn-body-inner-2col .grid-12 .span-11{width:540px;}
+#cn-body-inner-2col .grid-12 .span-12{width:590px;}
+.span-7,.span-8,.span-9,.span-10,.span-11,.span-12{margin-left:5px;margin-right:5px;}

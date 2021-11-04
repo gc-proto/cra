@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+*/
+
+/* Left menu expand/hide */
+#cn-left-col{background:none;}
+#cn-left-col-gap{background:transparent url(bg-cn-centre-col-gap.gif) repeat-y right top;}
+#cn-left-col h3,#cn-left-col #cn-search-box #cn-search-submit{background:#555;}
+#cn-left-col a:link,#cn-left-col a:visited{color:#fff;font-weight:700;}
+#cn-left-col ul ul a:link,#cn-left-col ul ul a:visited{color:#00556B;font-weight:400;}
+#cn-left-col li{border-top:none;list-style-type:none;border-bottom:2px solid #fff;border-left:none;margin:0;}
+#cn-left-col li:first-child{border-bottom:2px solid #fff;}
+#cn-left-col li li:first-child{border-bottom:0px;}
+#cn-left-col a{display:block;line-height:normal;font-weight:400;border-left:6px solid #00556B;background-color:#00799C;margin:0;padding:3px 5px;}
+#cn-left-col a:hover,#cn-left-col a:focus,#cn-left-col a:active{color:#fff;background-color:#00799C;border-color:#000;}
+#cn-left-col ul ul a:hover,#cn-left-col ul ul a:focus,#cn-left-col ul ul a:active{color:#c00;}
+#cn-left-col ul,#cn-left-col ul ul{padding-left:0;margin:2px 0 0;}
+#cn-left-col li li{border-bottom:none;border-top:0;margin-bottom:0;padding:1px 0 0 1px;}
+#cn-left-col li li a,#cn-left-col li li a:link,#cn-left-col li li a:visited,#cn-left-col li li a:hover{background-color:#eee;line-height:normal;border-left:3px solid #000;border-right:1px solid #eee;border-bottom:1px solid #ccc;margin-left:0;padding:2px 4px 3px 12px;}
+#cn-left-col li li li{font-size:90%;padding:0 0 1px 1px;}
+#cn-left-col li li li a,#cn-left-col li li li a:link,#cn-left-col li li li a:visited,#cn-left-col li li li a:hover{margin-left:0;background-color:#f0fcff !important;list-style:none;list-style-image:none;border-left:1px solid #000;border-bottom:1px solid #ccc;border-right:1px solid #eee;margin-top:0;font-weight:400;padding-left:20px;}
+#cn-left-col li.nav-open a,#cn-left-col li.nav-current a{border-left:6px solid #000;}
+#cn-left-col li li.nav-current a{border-left-color:#000; border-left-style:double !important; background:#fff !important;border-right:none !important;}
+#cn-left-col li li li.nav-current a:link,#cn-left-col li li li.nav-current a,#cn-left-col li li li.nav-current a:hover,#cn-left-col li li li.nav-current a:visited{border-left:1px solid #000;background-color:#fff !important;border-right:none;}
+.toggle-menu{display:none;}
+#cn-left-col .toggle-menu-spacer{padding-bottom:18px !important;}
+#cn-left-col .toggle-menu-link-expand{background:transparent url(sprite-expandhide-menu.gif) no-repeat 0 0;}
+#cn-left-col .toggle-menu-link-collapse,#cn-left-col a:active.toggle-menu-link-collapse{background:transparent url(sprite-expandhide-menu.gif) no-repeat 0 -26px;color:#00556B !important;}
+#cn-left-col a:hover.toggle-menu-link-expand,#cn-left-col a:focus.toggle-menu-link-expand{background-position:0 -78px;color:#00556B;background-color:transparent;}
+#cn-left-col a:link.toggle-menu-link-collapse,#cn-left-col a:hover.toggle-menu-link-collapse,,#cn-left-col a:focus.toggle-menu-link-collapse,,#cn-left-col a:active.toggle-menu-link-collapse{background:transparent url(sprite-expandhide-menu.gif) no-repeat 0 -26px;color:#00556B;}
+#cn-left-col a:hover.toggle-menu-link-collapse,#cn-left-col a:focus.toggle-menu-link-collapse{background-position:0 -52px;}
+#cn-left-col ul a.toggle-menu-link-expand,#cn-left-col ul a.toggle-menu-link-collapse{float:right;border:none;font-size:68%;height:15px;position:relative;text-align:left;width:49px;z-index:10;font-weight:400;margin:-15px 0 0;padding:0 0 0 15px;}
+#cn-left-col #cn-search-box a:link,#cn-left-col #cn-search-box a:visited,#cn-left-col #cn-search-box a:hover{background-color:transparent;border:none;color:#000;font-weight:400;}
+#cn-left-col .nav-hidden{display:none;}
+* html #cn-left-col-gap{padding-right:0;}
+* html #cn-left-col h3,* html #cn-left-col li a,* html #cn-left-col li li a{width:auto;}
+* html #cn-left-col li{display:block;}
+
+/* Content area expand/hide */
+.toggle-link-expand,.toggle-link-collapse{padding-left:15px;margin:0 0 0 25px;}
+.toggle-link-expand{background:transparent url(sprite-expandhide.gif) no-repeat 0 -108px;}
+.toggle-link-collapse{background:transparent url(sprite-expandhide.gif) no-repeat 0 -189px;}
+.toggle-content{border:1px solid #ccc;padding:10px;margin:0 0 10px 40px;}
+.collapse{display:none;}
+.toggle-all-controls{margin-bottom:10px;}
+.toggle-all-expand,.toggle-all-collapse{margin-right:10px;color:#333;text-decoration:none;padding:0 0 3px 19px;}
+.toggle-all-expand{background:transparent url(sprite-expandhide.gif) no-repeat 0 -52px;}
+.toggle-all-collapse{background:transparent url(sprite-expandhide.gif) no-repeat 0 -81px;}
+.toggle-all-expand span,.toggle-all-collapse span{background:transparent url(sprite-expandhide.gif) no-repeat right 0;padding:1px 10px 3px 5px;}
+a:hover.toggle-all-expand span,a:hover.toggle-all-collapse span{background-position:right -25px;}
+.toggle-all-expand span span,.toggle-all-collapse span span{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;}
+
+.span-2 .toggle-link-expand,.span-2 .toggle-link-collapse,.span-2 .toggle-content{margin-left:0;}
+
+/* ie fixes */
+* html .toggle-link-expand, * html .toggle-link-collapse{display:inline-block;} /* for word wrapping links, otherwise bg image is dropped */
+*:first-child+html .toggle-link-expand,*:first-child+html .toggle-link-collapse{display:inline-block;}
+*:first-child+html .toggle-all-controls {width: 100%;}
+*:first-child+html .toggle-all-expand, *:first-child+html .toggle-all-collapse{float: left;}

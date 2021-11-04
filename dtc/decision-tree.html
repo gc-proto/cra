@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]>
+<!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>DTC eligibility questionnaire - Canada.ca</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <!-- Meta data -->
+    <!-- Meta data-->
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_39/cdts/compiled/wet-en.js"></script>
+    <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        document.write(wet.builder.refTop({}));
+    </script>
+    <style>
+        /*Checkbox/Fieldflow radio input sizing,positioning*/
+        .checkbox-lg>li.checkbox {
+            margin-top: 0px;
+        }
+
+        .checkbox-lg>li {
+            margin-left: -40px;
+            padding-left: 40px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+            padding-right: 15px;
+        }
+
+        .checkbox-zebra>li:nth-child(2n+1) {
+            background-color: #f5f5f5;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+
+        .checkbox-lg>li.checkbox input[type=checkbox],
+        .fieldflow-lg .radio input[type=radio] {
+            margin-top: 12px;
+            transform: scale(2);
+        }
+
+        .checkbox-lg label,
+        .fieldflow-lg,
+        .fieldflow-lg label,
+        .fieldflow-lg div,
+        .fieldflow-lg select,
+        .std-blt {
+            font-size: 20px;
+            line-height: 1.65em;
+        }
+
+        .std-blt {
+            list-style-type: disc;
+        }
+
+        .std-blt li label {
+            display: block;
+            padding-left: 0px;
+        }
+
+        .fieldflow-lg .radio label {
+            margin-left: 40px;
+        }
+
+        .fieldflow-lg .radio input[type=radio] {
+            margin-left: -40px;
+        }
+
+        .fieldflow-lg fieldset legend {
+            font-size: 22px;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage">
+    <div id="def-top">
+    </div>
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        var defTop = document.getElementById("def-top");
+        defTop.outerHTML = wet.builder.top({
+            lngLinks: [{
+                lang: "fr",
+                href: "cdts-examplaire-fr.html",
+                text: "Français"
+            }],
+            breadcrumbs: [{
+                title: "Home",
+                href: "https://www.canada.ca/en.html"
+            }],
+            search: true,
+            siteMenu: true,
+            showPreContent: true
+        });
+    </script>
+
+    <main role="main" property="mainContentOfPage" class="container">
+        <h1 property="name" id="wb-cont">DTC eligibility questionnaire</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu rhoncus ipsum, id dapibus lacus. Morbi ut gravida arcu. Duis est erat, auctor sed sodales quis, ultrices a velit. Ut sollicitudin euismod enim, in hendrerit libero malesuada sed. In nulla erat, laoreet eget sapien vel, ultrices volutpat nisl. In consequat.</p>
+
+         <h3>Find out if you should apply</h3>
+                <p>Answer a few questions to find out if your situation might qualify.</p>
+                <!-- decisison tree starts -->
+                <div class="row">
+                    <div class="wb-frmvld fieldflow-lg col-md-10">
+                        <form>
+                            <div class="wb-fieldflow" data-wb-fieldflow='{
+							"renderas":"radio", 
+							"reset": { "action": "addClass", "source":".results", "class": "hidden"}, 
+							"noForm": true,					     
+							"noreqlabel": true
+						}'>
+                                <!-- question 1 -->
+                                <p>Q1 Do you have an impairment in physical or mental functions?</p>
+                                <ul>
+                                    <li>Yes
+                                        <!-- proceed to q2 -->
+                                        <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                                            <!-- question 2 -->
+                                            <p>Q2 Has the impairment lasted or is it expected to last for a continuous period of at least 12 months?</p>
+                                            <ul>
+                                                <li>Yes
+                                                    <!-- proceed to q3 -->
+                                                    <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                                                        <!-- question 3 -->
+                                                        <p>Q3 Is the impairment present all or substantially all of the time (at least 90% of the time)?</p>
+                                                        <ul>
+                                                            <li>Yes
+                                                                <!-- proceed to q4 -->
+                                                                <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                                                                    <!-- question 4 -->
+                                                                    <div class="wb-fieldflow-header">
+                                                                        <p class="wb-fieldflow-label">Q4 Do you receive life-sustaining therapy that supports a vital function?</p>
+                                                                        <p class="text-muted small"><span class="fas fa-info-circle text-muted"></span> <strong>This may include the following therapies:</strong>
+                                                                            <br>○ kidney dialysis
+                                                                            <br>○ insulin therapy
+                                                                            <br>○ oxygen therapy
+                                                                            <br>○ chest physiotherapy
+
+                                                                        </p>
+                                                                    </div>
+
+<ul>
+<li>Yes
+<!-- proceed to q5 -->
+<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+<!-- question 5 - yes -->
+<p>Q5 Do you receive the life-sustaining therapy at least 3 times per week, for an average of 14 hours per week?</p>
+<ul>
+<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q5yes", "class": "hidden", "live":true}'>Yes</li>
+<li>No
+<!-- proceed to q6 -->
+<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+    <!-- question 6 -->
+    <div class="wb-fieldflow-header">
+        <p class="wb-fieldflow-label">Q6 Are you blind in both eyes?</p>
+        <p class="text-muted small"><span class="fas fa-info-circle text-muted"></span> <strong>One of the following must apply:</strong>
+            <br>○ Your eyesight is 20/200 (6/60) or worse on an eye chart (Snellen or an equivalent) in both eyes
+            <br>○ Your field of vision is less than 20 degrees in both eyes after correction
+        </p>
+    </div>
+
+    <ul>
+        <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q5", "class": "hidden", "live":true}'>Yes</li>
+        <li>No
+            <!-- proceed to q7 -->
+            <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                <!-- question 7 -->
+                <div class="wb-fieldflow-header">
+                    <p class="wb-fieldflow-label">Q7 Do you have severe or profound hearing loss in both ears even when using hearing support devices?</p>
+                    <p class="text-muted small"><span class="fas fa-info-circle text-muted"></span> <strong>Severe hearing loss is in the range of 71 to 90dB. Profound hearing loss is 91dB+.</strong>
+                    </p>
+                </div>
+                <ul>
+                    <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q6", "class": "hidden", "live":true}'>Yes</li>
+                    <li>No
+                        <!-- proceed to q8 -->
+                        <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                            <!-- question 8 -->
+                            <div class="wb-fieldflow-header">
+                                <p class="wb-fieldflow-label">Q8 Do any of the following statements apply to you?</p>
+                                <p class="small">○ I am confined to a bed or wheelchair at all times.
+                                    <br>○ I have had a limb amputated.
+                                    <br>○ Tube feeding is my primary means of feeding myself.
+                                    <br>○ I have chronic renal failure.
+                                    <br>○ I require catheterization to manage my bladder functions.
+                                    <br>○ Sign language is my primary means of communication.
+                                </p>
+                            </div>
+
+                            <ul>
+                                <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q7", "class": "hidden", "live":true}'>Yes</li>
+                                <li>No
+                                    <!-- proceed to q9 -->
+                                    <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                                        <!-- question 9 -->
+                                        <div class="wb-fieldflow-header">
+                                            <p class="wb-fieldflow-label">Q9 Do you have an impairment in any of the following categories?</p>
+                                            <p class="small">○ vision
+                                                <br>○ speaking
+                                                <br>○ hearing
+                                                <br>○ walking
+                                                <br>○ eliminating (bowel or bladder functions)
+                                                <br>○ feeding (including food preparation)
+                                                <br>○ dressing
+                                                <br>○ mental functions necessary for everyday life
+                                            </p>
+                                        </div>
+                                        <ul>
+                                            <li>Yes
+                                                <!-- proceed to q10 -->
+                                                <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+
+                                                    <!-- question 10 -->
+                                                    <div class="wb-fieldflow-header">
+                                                        <p class="wb-fieldflow-label">Q10 Are <span class="text-info">unable</span> to do the activity as a result of the impairment?</p>
+                                                        <p class="text-muted small"><span class="fas fa-info-circle text-muted"></span> <strong>This must be the case even with the appropriate medication, devices, and therapy.</strong>
+                                                        </p>
+                                                    </div>
+
+                                                    <ul>
+                                                        <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q10yes", "class": "hidden", "live":true}'>Yes</li>
+                                                        <li>No
+                                                            <!-- proceed to q11 -->
+                                                            <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+
+                                                                <!-- question 11 -->
+
+                                                                <div class="wb-fieldflow-header">
+                                                                    <p class="wb-fieldflow-label">Q11 Does it take you <span class="text-info">3 times longer</span> to do the activity than someone of similar age who does not have the impairment?</p>
+                                                                    <p class="text-muted small">
+
+                                                                        <span class="fas fa-info-circle text-muted"></span> <strong>This must be true even with the appropriate medication, devices, and therapy.</strong>
+                                                                    </p>
+                                                                </div>
+
+                                                                <ul>
+                                                                    <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q11yes", "class": "hidden", "live":true}'>Yes</li>
+                                                                    <li>No
+                                                                        <!-- proceed to q12 -->
+                                                                        <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+
+                                                                            <!-- question 12 -->
+
+                                                                            <div class="wb-fieldflow-header">
+                                                                                <p class="wb-fieldflow-label">Q12 Are you significantly limited in <span class="text-info">2 or more</span> of the following categories as a result of an impairment?</p>
+                                                                                <p class="text-muted small">
+
+                                                                                    <span class="fas fa-info-circle text-muted"></span> <strong>These limitations must exist together all or substantially all of the time.</strong>
+                                                                                    <br>○ vision
+                                                                                    <br>○ speaking
+                                                                                    <br>○ hearing
+                                                                                    <br>○ walking
+                                                                                    <br>○ eliminating (bowel or bladder functions)
+                                                                                    <br>○ feeding (including food preparation)
+                                                                                    <br>○ dressing
+                                                                                    <br>○ mental functions necessary for everyday life
+                                                                                </p>
+                                                                            </div>
+
+
+                                                                            <ul>
+                                                                                <li>Yes
+                                                                                    <!-- proceed to q13 -->
+
+                                                                                    <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                                                                                        <!-- question 13 -->
+                                                                                        <div class="wb-fieldflow-header">
+                                                                                            <p class="wb-fieldflow-label">Q13 If you combine the effects of these limitations, is it be like being unable (or taking 3 times longer) to do one of the activities?</p>
+                                                                                            <p class="text-muted small"><span class="fas fa-info-circle text-muted"></span> <strong>For Example:</strong> If a person always takes a long time to walk and dress, the extra time it takes to do these 2 activities is equal to being severly impacted in 1 of the activities.
+                                                                                            </p>
+                                                                                        </div>
+
+                                                                                        <ul>
+                                                                                            <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q13yes", "class": "hidden", "live":true}'>Yes</li>
+                                                                                            <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q13no", "class": "hidden", "live":true}'>No</li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </li> <!-- Q12 Yes ends -->
+                                                                                <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q12no", "class": "hidden", "live":true}'>No</li>
+                                                                            </ul>
+
+
+                                                                        </div>
+                                                                    </li> <!-- Q11 No ends-->
+                                                                </ul>
+                                                            </div>
+                                                        </li> <!-- Q10 No ends -->
+                                                    </ul>
+                                                </div>
+
+                                            </li> <!-- Q9 Yes ends -->
+                                            <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q8", "class": "hidden", "live":true}'>No</li>
+                                        </ul>
+                                    </div>
+                                </li> <!-- Q8 No ends -->
+                            </ul>
+
+                        </div>
+                    </li> <!-- Q7 No ends -->
+                </ul>
+
+            </div>
+        </li> <!-- Q6 No ends -->
+    </ul>
+
+</div>
+</li> <!-- Q5 No ends -->
+</ul>
+</div>
+</li> <!-- Q4 Yes ends -->
+<li>No
+<!-- proceed to q6 -->
+<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+<!-- question 6 -->
+<div class="wb-fieldflow-header">
+<p class="wb-fieldflow-label">Q6 Are you blind in both eyes?</p>
+<p class="text-muted small"><span class="fas fa-info-circle text-muted"></span> <strong>One of the following must apply:</strong>
+<br>○ Your eyesight is 20/200 (6/60) or worse on an eye chart (Snellen or an equivalent) in both eyes
+<br>○ Your field of vision is less than 20 degrees in both eyes after correction
+</p>
+</div>
+
+<ul>
+<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q5", "class": "hidden", "live":true}'>Yes</li>
+<li>No
+<!-- proceed to q7 -->
+<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+    <!-- question 7 -->
+    <div class="wb-fieldflow-header">
+        <p class="wb-fieldflow-label">Q7 Do you have severe or profound hearing loss in both ears even when using hearing support devices?</p>
+        <p class="text-muted small"><span class="fas fa-info-circle text-muted"></span> <strong>Severe hearing loss is in the range of 71 to 90dB. Profound hearing loss is 91dB+.</strong>
+        </p>
+    </div>
+    <ul>
+        <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q6", "class": "hidden", "live":true}'>Yes</li>
+        <li>No
+            <!-- proceed to q8 -->
+            <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                <!-- question 8 -->
+                <div class="wb-fieldflow-header">
+                    <p class="wb-fieldflow-label">Q8 Do any of the following statements apply to you?</p>
+                    <p class="small">○ I am confined to a bed or wheelchair at all times.
+                        <br>○ I have had a limb amputated.
+                        <br>○ Tube feeding is my primary means of feeding myself.
+                        <br>○ I have chronic renal failure.
+                        <br>○ I require catheterization to manage my bladder functions.
+                        <br>○ Sign language is my primary means of communication.
+                    </p>
+                </div>
+
+                <ul>
+                    <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q7", "class": "hidden", "live":true}'>Yes</li>
+                    <li>No
+                        <!-- proceed to q9 -->
+                        <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                            <!-- question 9 -->
+                            <div class="wb-fieldflow-header">
+                                <p class="wb-fieldflow-label">Q9 Do you have an impairment in any of the following categories?</p>
+                                <p class="small">○ vision
+                                    <br>○ speaking
+                                    <br>○ hearing
+                                    <br>○ walking
+                                    <br>○ eliminating (bowel or bladder functions)
+                                    <br>○ feeding (including food preparation)
+                                    <br>○ dressing
+                                    <br>○ mental functions necessary for everyday life
+                                </p>
+                            </div>
+                            <ul>
+                                <li>Yes
+                                    <!-- proceed to q10 -->
+                                    <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+
+                                        <!-- question 10 -->
+                                        <div class="wb-fieldflow-header">
+                                            <p class="wb-fieldflow-label">Q10 Are <span class="text-info">unable</span> to do the activity as a result of the impairment?</p>
+                                            <p class="text-muted small"><span class="fas fa-info-circle text-muted"></span> <strong>This must be the case even with the appropriate medication, devices, and therapy.</strong>
+                                            </p>
+                                        </div>
+
+                                        <ul>
+                                            <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q10yes", "class": "hidden", "live":true}'>Yes</li>
+                                            <li>No
+                                                <!-- proceed to q11 -->
+                                                <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+
+                                                    <!-- question 11 -->
+
+                                                    <div class="wb-fieldflow-header">
+                                                        <p class="wb-fieldflow-label">Q11 Does it take you <span class="text-info">3 times longer</span> to do the activity than someone of similar age who does not have the impairment?</p>
+                                                        <p class="text-muted small">
+
+                                                            <span class="fas fa-info-circle text-muted"></span> <strong>This must be true even with the appropriate medication, devices, and therapy.</strong>
+                                                        </p>
+                                                    </div>
+
+                                                    <ul>
+                                                        <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q11yes", "class": "hidden", "live":true}'>Yes</li>
+                                                        <li>No
+                                                            <!-- proceed to q12 -->
+                                                            <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+
+                                                                <!-- question 12 -->
+
+                                                                <div class="wb-fieldflow-header">
+                                                                    <p class="wb-fieldflow-label">Q12 Are you significantly limited in <span class="text-info">2 or more</span> of the following categories as a result of an impairment?</p>
+                                                                    <p class="text-muted small">
+
+                                                                        <span class="fas fa-info-circle text-muted"></span> <strong>These limitations must exist together all or substantially all of the time.</strong>
+                                                                        <br>○ vision
+                                                                        <br>○ speaking
+                                                                        <br>○ hearing
+                                                                        <br>○ walking
+                                                                        <br>○ eliminating (bowel or bladder functions)
+                                                                        <br>○ feeding (including food preparation)
+                                                                        <br>○ dressing
+                                                                        <br>○ mental functions necessary for everyday life
+                                                                    </p>
+                                                                </div>
+
+
+                                                                <ul>
+                                                                    <li>Yes
+                                                                        <!-- proceed to q13 -->
+
+                                                                        <div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "reset": { "action": "addClass", "source":".results", "class": "hidden"}, "noreqlabel": true}'>
+                                                                            <!-- question 13 -->
+                                                                            <div class="wb-fieldflow-header">
+                                                                                <p class="wb-fieldflow-label">Q13 If you combine the effects of these limitations, is it be like being unable (or taking 3 times longer) to do one of the activities?</p>
+                                                                                <p class="text-muted small"><span class="fas fa-info-circle text-muted"></span> <strong>For Example:</strong> If a person always takes a long time to walk and dress, the extra time it takes to do these 2 activities is equal to being severly impacted in 1 of the activities.
+                                                                                </p>
+                                                                            </div>
+
+                                                                            <ul>
+                                                                                <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q13yes", "class": "hidden", "live":true}'>Yes</li>
+                                                                                <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q13no", "class": "hidden", "live":true}'>No</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </li> <!-- Q12 Yes ends -->
+                                                                    <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q12no", "class": "hidden", "live":true}'>No</li>
+                                                                </ul>
+
+
+                                                            </div>
+                                                        </li> <!-- Q11 No ends-->
+                                                    </ul>
+                                                </div>
+                                            </li> <!-- Q10 No ends -->
+                                        </ul>
+                                    </div>
+
+                                </li> <!-- Q9 Yes ends -->
+                                <li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q8", "class": "hidden", "live":true}'>No</li>
+                            </ul>
+
+                        </div>
+                    </li> <!-- Q8 No ends -->
+                </ul>
+
+            </div>
+        </li> <!-- Q7 No ends -->
+    </ul>
+
+</div>
+</li> <!-- Q6 No ends -->
+</ul>
+
+</div>
+</li> <!-- Q4 No ends -->
+
+</ul> <!-- Q4 ends -->
+</div>
+</li> <!-- Q3 Yes ends -->
+<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q3", "class": "hidden", "live":true}'>No</li>
+</ul> <!-- Q3 ends -->
+</div>
+</li>
+<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q2", "class": "hidden", "live":true}'>No</li>
+
+</ul> <!-- Q2 ends -->
+</div>
+</li>
+
+<li data-wb-fieldflow='{"action": "removeClass", "source": "#digital-q1", "class": "hidden", "live":true}'>No</li>
+
+</ul> <!-- Q1 ends -->
+</div>
+</form>
+
+
+                        <!-- ANSWERS -->
+
+                        <!-- No -->
+                        <section id="digital-q1" class="results alert alert-warning provisional hidden">
+                            <h2 class="h4 mrgn-tp-sm">You may not be eligible for the DTC</h2>
+                            <p>You may still apply for the tax credit to find out for sure. Your medical practitioner will determine if your are eligible or not.</p>
+                        </section>
+
+                        <section id="digital-q2" class="results alert alert-warning provisional hidden">
+                            <h2 class="h4 mrgn-tp-sm">You may not be eligible for the DTC</h2>
+                            <p>You may still apply for the tax credit to find out for sure. Your medical practitioner will determine if your are eligible or not.</p>
+                        </section>
+
+                        <section id="digital-q3" class="results alert alert-warning provisional hidden">
+                            <h2 class="h4 mrgn-tp-sm">You may not be eligible for the DTC</h2>
+                            <p>You may still apply for the tax credit to find out for sure. Your medical practitioner will determine if your are eligible or not.</p>
+                        </section>
+
+                        <section id="digital-q8" class="results alert alert-warning provisional hidden">
+                            <!-- for Q9-->
+                            <h2 class="h4 mrgn-tp-sm">You may not be eligible for the DTC</h2>
+                            <p>You may still apply for the tax credit to find out for sure. Your medical practitioner will determine if your are eligible or not.</p>
+                        </section>
+
+                        <section id="digital-q12no" class="results alert alert-warning provisional hidden">
+                            <!-- for Q12-->
+                            <h2 class="h4 mrgn-tp-sm">You may not be eligible for the DTC</h2>
+                            <p>You may still apply for the tax credit to find out for sure. Your medical practitioner will determine if your are eligible or not.</p>
+                        </section>
+
+                        <section id="digital-q13no" class="results alert alert-warning provisional hidden">
+                            <!-- for Q13-->
+                            <h2 class="h4 mrgn-tp-sm">You may not be eligible for the DTC</h2>
+                            <p>You may still apply for the tax credit to find out for sure. Your medical practitioner will determine if your are eligible or not.</p>
+                        </section>
+
+
+                        <!-- Yes -->
+                        <section id="digital-q5yes" class="results alert alert-info provisional hidden">
+                            <!-- for Q5-->
+                            <h2 class="h4 mrgn-tp-sm">You may be eligible for the DTC</h2>
+                            <p>This response does not guarantee eligibility. When you apply, your medical practitioner will determine if you are eligibile or not.</p>
+                        </section>
+
+                        <section id="digital-q5" class="results alert alert-info provisional hidden">
+                            <!-- for Q6-->
+                            <h2 class="h4 mrgn-tp-sm">You may be eligible for the DTC</h2>
+                            <p>This response does not guarantee eligibility. When you apply, your medical practitioner will determine if you are eligibile or not.</p>
+                        </section>
+
+                        <section id="digital-q6" class="results alert alert-info provisional hidden">
+                            <!-- for Q7-->
+                            <h2 class="h4 mrgn-tp-sm">You may be eligible for the DTC</h2>
+                            <p>This response does not guarantee eligibility. When you apply, your medical practitioner will determine if you are eligibile or not.</p>
+                        </section>
+
+                        <section id="digital-q7" class="results alert alert-info provisional hidden">
+                            <!-- for Q8-->
+                            <h2 class="h4 mrgn-tp-sm">You may be eligible for the DTC</h2>
+                            <p>This response does not guarantee eligibility. When you apply, your medical practitioner will determine if you are eligibile or not.</p>
+                        </section>
+
+                        <section id="digital-q10yes" class="results alert alert-info provisional hidden">
+                            <!-- for Q10-->
+                            <h2 class="h4 mrgn-tp-sm">You may be eligible for the DTC</h2>
+                            <p>This response does not guarantee eligibility. When you apply, your medical practitioner will determine if you are eligibile or not.</p>
+                        </section>
+
+                        <section id="digital-q11yes" class="results alert alert-info provisional hidden">
+                            <!-- for Q11-->
+                            <h2 class="h4 mrgn-tp-sm">You may be eligible for the DTC</h2>
+                            <p>This response does not guarantee eligibility. When you apply, your medical practitioner will determine if you are eligibile or not.</p>
+                        </section>
+
+                        <section id="digital-q13yes" class="results alert alert-info provisional hidden">
+                            <!-- for Q13-->
+                            <h2 class="h4 mrgn-tp-sm">You may be eligible for the DTC</h2>
+                            <p>This response does not guarantee eligibility. When you apply, your medical practitioner will determine if you are eligibile or not. </p>
+                        </section>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- decisison tree ends -->
+        
+        <div id="def-preFooter"></div>
+        <!-- Write closure template -->
+        <script type="text/javascript">
+            var defPreFooter = document.getElementById("def-preFooter");
+            defPreFooter.outerHTML = wet.builder.preFooter({
+                dateModified: "March 9, 2021",
+                showPostContent: true,
+                showFeedback: true,
+                showShare: true
+            });
+        </script>
+    </main>
+    <div id="def-footer">
+
+    </div>
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        var defFooter = document.getElementById("def-footer");
+        defFooter.outerHTML = wet.builder.footer({
+            showFooter: true,
+            showFeatures: true
+        });
+    </script>
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        document.write(wet.builder.refFooter({}));
+    </script>
+    <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
+</body></html>

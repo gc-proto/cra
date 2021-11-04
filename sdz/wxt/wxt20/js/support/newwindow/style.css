@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+Terms and conditions of use: http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Terms
+Conditions régissant l'utilisation : http://tbs-sct.ircan.gc.ca/projects/gcwwwtemplates/wiki/Conditions
+*/
+
+/** New window CSS **/
+a.cn-external2 {padding-right: 17px; background: url('new_window_extern.gif') top right no-repeat;}
+a.cn-internal2 {padding-right: 22px; background: url('new_window_intern.gif') top right no-repeat;}
+* html a.cn-internal2, * html a.cn-external2 {display: inline-block;}
