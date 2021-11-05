@@ -35,10 +35,8 @@
 <meta name="leftmenu" content="" />
 <meta name="subsite" content="" />
 <!--[if gte IE 9 | !IE ]><!-->
-<link href="/wet40/assets/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="wet40/assets/favicon.ico" rel="icon" type="image/x-icon"/>
 <script src="wet40/js/jquery.js"></script>
-
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.0.1/css/buttons.dataTables.min.css"/>
  
 <link rel="stylesheet" href="wet40/css/wet-boew.min.css"/>
 <!--<![endif]-->
@@ -149,14 +147,8 @@
 
 <div class="clearfix"></div>
 
-<style>
-  label {
-    display: block;
-  }
-</style>
-
 <div class="mrgn-bttm-lg">
-<h3>My Drop Zones</h3>
+<h3>Historic Drop Zones</h3>
 <details>
   <summary>Filter active Drop Zones</summary>
   <form role="form" class="form-inline mrgn-tp-md">
@@ -211,127 +203,129 @@
   </div>
 </section>
 
-<table id="sdzb" class="table wb-tables mrgn-tp-lg" data-wb-tables='{ "buttons": ["print"], "lengthMenu": [ 5, 10, 20, 50 ], "paging" : true, "order": [5, "asc"]}'>
+<table id="sdzb" class="table wb-tables mrgn-tp-lg" data-wb-tables='{ "buttons": ["print"], "lengthMenu": [ 5, 10, 20, 50 ], "paging" : true, "order": [4, "asc"]}'>
 <thead>
   <tr>
-    <th><span class="wb-inv">Action icons</span></th>
     <th>Dropzone number</th>
     <th>Reference number</th>
     <th>Client information</th>
     <th>Expiry date</th>
+    <th>Status <a href="#hdz-status" aria-controls="centred-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign" style="color: black"><span class="wb-inv">Question icon - click to show what status' are</span></span></a></th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td><img src="attach_file_black_24dp.svg"></td>
     <td><a href="#" class="nowrap">PONH 8740 ABYT 0098</a></td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
     <td><span class="nowrap">2021-09-27</span></td>
+    <td><strong>Closed</strong></td>
   </tr>
   <tr>
-    <td><img src="attach_file_black_24dp.svg"></td>
     <td><a href="#" class="nowrap">QYML 5017 TFCZ 5567</a></td>
     <td>TBD</td>
     <td>kmartins@cra-arc.gc.ca<br>
     (613) 990-6430<br>
     Transaction identification number: 893745017834756</td>
     <td><span class="nowrap">2021-09-29</span></td>
+    <td><strong><span class="text-danger">Expired</span></td>
+    <td></td>
   </tr>
     <tr>
-    <td></td>
-    <td>HDUR 8402 HQPO 2990</td>
+    <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
-    <td>jsmith@hotmail.com<br>
-    (613) 736-1167<br>
-    T5 filer number: aa8925830</td>
+    <td>kconnelly@importantbusiness.com<br>
+    (416) 907-6799<br>
+    Business number: 4323489273</td>
     <td>2021-10-02</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
     <tr>
-    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
     <tr>
-    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
     <tr>
-    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
-      <tr>
-    <td></td>
+  <tr>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
-    <tr>
-    <td></td>
+  <tr>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
-    <tr>
-    <td></td>
+  <tr>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
-      <tr>
-    <td></td>
+  <tr>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
-    <tr>
-    <td></td>
+  <tr>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed:</span></strong></td>
   </tr>
-    <tr>
-    <td></td>
+  <tr>
+
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
     <td>2021-10-05</td>
+    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
 </tbody>
-</table>
+</table>  
 
 <!-- SEARCH CONTENT ENDS / CONTENU RECHERCHE TERMINE --> 
 <p class="mrgn-tp-lg pull-left" id="icms_feedback">
@@ -437,7 +431,7 @@ try {
 <script src="wcm/breadcrumb.js"></script> 
 <script src="wcm/site_search.js" type="text/javascript"></script> 
 
-<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+
 
 <script type="text/javascript">
 //insert left_menu or sub-site but not both
@@ -476,14 +470,6 @@ $(function () {
 });
 </script> 
 
-<script>
-$('#sdzb').DataTable( {
-    buttons: [
-        'print'
-    ]
-} );
-</script>
 <script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/theme.min.js"></script>
-<script src="wcm/common/cms-widgets.js" type="text/javascript"></script>
 </body>
 </html>
