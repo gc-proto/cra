@@ -122,7 +122,7 @@
     padding: 40px 16px;    
     }    
 
-.dismiss.popup-modal-dismiss {
+.popup-modal-dismiss {
     display: none;
 }    
 </style>
@@ -289,6 +289,9 @@ function showfield(name){
   <div class="modal-body">
     <p>You can upload the following file types: .pdf, .doc, .docx, .xls, .xlsx, .txt, .jpg, .tiff, .tif, .xps</p>
   </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary popup-modal-dismiss" type="button">Close</button>
+  </div>
 </section>
 
 <a href="#filenet" class="btn btn-default wb-lbx dismiss">Add files from FileNet</a> <br><br>
@@ -300,9 +303,6 @@ function showfield(name){
 <section id="upload" class="mfp-hide modal-dialog modal-content overlay-def lbx-modal">
   <div class="modal-body">
     <p><a href="isdz-2-1.html" class="btn btn-primary btn-lg">You added files. Please click to continue.</a></p>
-  </div>
-  <div class="modal-footer">
-
   </div>
 </section>
 
@@ -348,10 +348,10 @@ function showfield(name){
     <label for="docid"><span class="field-name">Document ID</span></label>
     <input id="docid" name="efax" type="text" pattern="934981340985048549" />
   </div>
-  <button class="btn btn-default btn-sm" id="search" disabled="disabled">Search</button>
+  <a class="btn btn-default btn-sm" id="search" disabled="disabled">Search</a>
 
 <section id="filesadded" class="hidden"> 
-  <table>
+  <table class="table">
     <thead>
       <tr>
         <th><span class="wb-inv">Checkbox column</span></th>
@@ -361,9 +361,12 @@ function showfield(name){
     </thead>
     <tbody>
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>
+          <label for="934981340985048549"><span class="wb-inv"></span></label>
+          <input type="checkbox" id="934981340985048549" name="934981340985048549">
+        </td>
+        <td>934981340985048549</td>
+        <td>Request.docx</td>
       </tr>
     </tbody>  
   </table>
