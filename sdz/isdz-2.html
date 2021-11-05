@@ -125,6 +125,11 @@
 .popup-modal-dismiss {
     display: none;
 }    
+
+input[type=checkbox] {
+    transform: scale(2);
+}
+
 </style>
 
 <header role="banner">
@@ -236,7 +241,7 @@
 
 <script type="text/javascript">
 function showfield(name){
-  if(name=='Other' || 'bn' || 'drn' || 'din' || 'efn' || 'gid' || 'itn' || 'nregpn' || 'nrpn' || 'nrrn' || 'pan' || 'rpn' || 'rid' || 'sin' || 'san' || 'tfn' || 'ttn' || 'tin' || 'tan')document.getElementById('div1').innerHTML='<div class="form-group"><label for="refnumber" class="required"><span class="field-name">Reference number:</span> <strong class="required">(required)</strong></label><input class="form-control" id="refnumber" name="refnumber" type="text" data-rule-minlength="2" /></div>';
+  if(name=='Other' || 'bn' || 'drn' || 'din' || 'efn' || 'gid' || 'itn' || 'nregpn' || 'nrpn' || 'nrrn' || 'pan' || 'rpn' || 'rid' || 'sin' || 'san' || 'tfn' || 'ttn' || 'tin' || 'tan')document.getElementById('div1').innerHTML='<div class="form-group"><label for="cinumber"><span class="field-name">Client identifier number:</span></label><input class="form-control" id="cinumber" name="cinumber" type="text" data-rule-minlength="2" /></div>';
   else document.getElementById('div1').innerHTML='';
 }
 </script>
@@ -307,7 +312,7 @@ function showfield(name){
 </section>
 
 <div class="text-right mrgn-tp-md">
-<a type="submit" class="btn btn-default mrgn-rght-md" id="cancel">Cancel</a> <a type="submit" class="btn btn-primary" id="create" style="background-color: #26374a; color: white;" disabled>Create secure drop zone</a>
+<a type="submit" class="btn btn-default mrgn-rght-md" id="cancel">Cancel</a> <a href="isdz-2-1.html" type="submit" class="btn btn-primary" id="create" style="background-color: #26374a; color: white;" disabled="disabled">Create secure drop zone</a>
 </div>
 
 </div>
@@ -337,7 +342,7 @@ function showfield(name){
 
 </form>
 
-  <form class="form-inline" role="form">
+  <form class="form-inline mrgn-tp-md" role="form">
   <div class="form-group">
     <label for="doclass"><span class="field-name">Document class</span></label>
     <select id="efax" name="efax">
@@ -346,7 +351,7 @@ function showfield(name){
   </div>    
   <div class="form-group">
     <label for="docid"><span class="field-name">Document ID</span></label>
-    <input id="docid" name="efax" type="text" pattern="934981340985048549" />
+    <input id="docid" name="efax" type="text" pattern="012345678912345678" />
   </div>
   <a class="btn btn-default btn-sm" id="search" disabled="disabled">Search</a>
 
@@ -362,10 +367,10 @@ function showfield(name){
     <tbody>
       <tr>
         <td>
-          <label for="934981340985048549"><span class="wb-inv"></span></label>
-          <input type="checkbox" id="934981340985048549" name="934981340985048549">
+          <label for="012345678912345678"><span class="wb-inv"></span></label>
+          <input type="checkbox" id="012345678912345678" name="012345678912345678">
         </td>
-        <td>934981340985048549</td>
+        <td>012345678912345678</td>
         <td>Request.docx</td>
       </tr>
     </tbody>  
@@ -375,9 +380,37 @@ function showfield(name){
 </form>  
 </div>
 <div class="modal-footer">
-<button class="btn btn-default" type="button">Cancel</button><button class="btn btn-primary" type="button" disabled="disabled">Add file</button>
+<button class="btn btn-default" type="button">Cancel</button><a href="isdz-2-1.html" id="addfile" class="btn btn-primary" type="button" disabled>Add file</a>
 </div>
 </section>
+
+<script>
+  $("input[type=text]").keyup(function() {
+
+        if ($("#clientphone").val() !== '' ||
+            $("#clientemail").val() !== '' 
+            )  
+                {
+
+            $("#create").removeAttr("disabled");
+        } else {
+            $("#create").attr("disabled", "disabled");
+        }
+    });
+</script>
+
+<script>
+     $('#012345678912345678').click(function () {
+        //check if checkbox is checked
+        if ($(this).is(':checked')) {
+
+            $('#addfile').removeAttr('disabled'); //enable input
+
+        } else {
+            $('#addfile').attr('disabled', true); //disable input
+        }
+    });
+</script>  
 
 <script>
   $(function () {

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!-->
@@ -123,9 +122,10 @@
     padding: 40px 16px;    
     }    
 
-.popup-modal-dismiss {
-    display: none;
-}    
+input[type=checkbox] {
+    transform: scale(2);
+}
+
 </style>
 
 <header role="banner">
@@ -174,36 +174,202 @@
 <h1 id="wb-cont" property="name" class="wb-inv">Secure Drop Zone Manager</h1>
 <h2>Secure Drop Zone DBTR 3567 XYER 8769</h2>
 
-<p><span class="label label-success mrgn-rght-sm" style="font-size: 16px;">Active</span> Created: 2021-09-20 &nbsp;&nbsp; Expiring: 2021-10-04</p>
+<p class="mrgn-tp-md"><span class="label label-success mrgn-rght-sm" style="font-size: 16px;">Active</span> Created: 2021-09-20 &nbsp; Expiring: 2021-10-04 &nbsp;&nbsp; <a href="#instructions" class="wb-lbx">View instructions for client</a></p>
 
-<div class="alert alert-success col-md-8 mrgn-tp-md mrgn-bttm-lg">
-  <h3>Your secure drop Zone has been successfully created.</h3>
-  <p>Communicate the instructions below to your client.</p>
-</div>
+<section id="instructions" class="mfp-hide modal-dialog modal-content overlay-def">
+  <header class="modal-header">
+    <h2 class="modal-title">Instructions for client</h2>
+  </header>
+  <div class="modal-body">
+    <ul class="list-unstyled">
+      <li>1. Let the client know they should have received an email with the link.</li>
+      <li>2. Give them the secure drop zone code:
+      <p class="h2 mrgn-tp-md mrgn-lft-md">DBTR  3567  XYER  8769</p></li>
+      <li>3. There is multi-factor authentication, so they will be prompted to get a text/call to verify their identity.</li>
+      <li>4. Once logged in they can download and upload the documents.</li>
+      <li>5. After they submit, they can close the drop zone. If they don’t, it will close in 15 days.</li>
+      <li>6. Let them know they can contact you if they have any issues.</li>
+    </ul>
+  </div>
+</section>
 
 <div class="clearfix"></div>
 
-<div class="row col-md-8">
-<h4 class="mrgn-tp-0">Instructions for the client</h4>
+<h3>Client information</h3>
 
-<ul class="list-unstyled">
-  <li>1. Let the client know they should have received an email with the link.</li>
-  <li>2. Give them the secure drop zone code:
-  <p class="h2 mrgn-tp-md mrgn-lft-md">DBTR  3567  XYER  8769</p></li>
-  <li>3. There is multi-factor authentication, so they will be prompted to get a text/call to verify their identity.</li>
-  <li>4. Once logged in they can download and upload the documents.</li>
-  <li>5. After they submit, they can close the drop zone. If they don’t, it will close in 15 days.</li>
-  <li>6. Let them know they can contact you if they have any issues.</li>
-</ul>
+<hr class="col-md-8">
+
+<div class="row">
+
+<div class="col-md-8">
+
+<div class="wb-frmvld">
+
+<form action="#" method="get" id="sendrequest">
+
+<div class="form-group">
+  <label for="clientname"><span class="field-name">Client name (First and last name):</span></label>
+  <input class="form-control" id="clientname" name="clientname" type="text" autocomplete="given-name" data-rule-minlength="2" />
+</div>
+
+<div class="form-group">
+  <label for="clientemail" class="required"><span class="field-name">Client email:</span> <strong class="required">(required)</strong></label>
+  <input class="form-control" id="clientemail" name="clientemail" type="text" required="required" type="email" autocomplete="email" />
+</div>
+
+<div class="form-group">
+  <label for="clientphone" class="required"><span class="field-name">Client phone:</span> <strong class="required">(required)</strong></label>
+  <input class="form-control" id="clientphone" name="clientphone" type="tel" autocomplete="tel" required="required" data-rule-phoneUS="true" />
+</div>
+
+<div class="form-group">
+  <label for="refnumber"><span class="field-name">Reference number:</span></label>
+  <input class="form-control" id="refnumber" name="refnumber" type="text" data-rule-minlength="2" />
+</div>
+
+<div class="form-group">
+  <label for="clienttype"><span class="field-name">Client identifier type:</span></label>
+  <select class="form-control" id="clienttype" name="clienttype">
+    <option label="Select a client idenitifer type"></option>
+    <option value="Other">Other</option>
+    <option value="bn">Business number</option>
+    <option value="drn">Discounter Registration Number ("Discounter Code")</option>
+    <option value="din">Dependant identification number</option>
+    <option value="efn">EFILER number</option>
+    <option value="gid">Group identifier</option>
+    <option value="itn">Individual tax number</option>
+    <option value="nregpn">Non-registered plan number</option>
+    <option value="nrpn">Non-resident plan number</option>
+    <option value="nrrn">Non-resident representative number</option>
+    <option value="pan">PAYDAC account number</option>
+    <option value="rpn">Registered plan number</option>
+    <option value="rid">Representative identifier</option>
+    <option value="sin">Social insurance number</option>
+    <option value="san">Subledger account number</option>
+    <option value="tfn">T5 filer number</option>
+    <option value="ttn">Temporary tax number</option>
+    <option value="tin">Transaction identification number</option>
+    <option value="tan">Trust account number</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="cinumber"><span class="field-name">Client identifier number:</span></label>
+  <input class="form-control" id="cinumber" name="cinumber" type="text" data-rule-minlength="2" />
+</div>
+
+<div class="form-group">
+<label for="note"><span class="field-name">Information for the client (this will appear in the secure drop zone):</span></label>
+<textarea class="form-control" rows="2" style="min-width: 100%" placeholder="Please submit all receipts related to your business from 2020."></textarea>
+</div>
+
+</div>
+
+</form>
+
+<h3 class="h4">Files</h3>
+<hr>
+
+<table class="table">
+<thead>
+<tr>
+  <th style="width: 20px;"><span class="wb-inv">Download icon</span></th>
+  <th>Name</th>
+  <th>Document ID</th>
+  <th>Date uploaded</th>
+  <th>Source</th>
+  <th>Status</th>
+  <th style="width: 20px;"><span class="wb-inv">Delete icon</span></th>
+</tr>  
+</thead>
+<tbody>
+  <tr>
+    <td><a href="#"><img src="download.svg" style="padding-bottom: 3px;"></a></td>
+    <td><a href="#">Request.docx</a></td>
+    <td><a class="wb-lbx" href="#012345678912345678">012345678912345678</a></td>
+    <td>2021-10-22</td>
+    <td>eFax and Drop Zone</td>
+    <td>Uploaded</td>
+    <td><a href="#"><img src="delete.svg" style="padding-bottom: 3px;"></a></td>
+  </tr>
+</tbody>
+</table>
 
 </div>  
 
-<div class="clearfix"></div>
-
-<div class="mrgn-bttm-lg">
-<a href="isdz-1ac.html" class="btn btn-default bth-lg">Close instructions</a>
 </div>
 
+</div>
+
+<section id="012345678912345678" class="mfp-hide modal-dialog modal-content overlay-def lbx-modal">
+  <header class="modal-header">
+    <h3 class="modal-title">Document ID: 012345678912345678</h3>
+  </header>
+  <div class="modal-body">
+    <p><strong>Document title:</strong> Request.docx</p>
+    <p><strong>Program area:</strong> eFax and Drop Zone</p>
+    <p><strong>Reference number:</strong> Refence number 7</p>
+    <p><strong>Client identifier:</strong> Business number 7</p>
+    <p><strong>Confirmation number:</strong> DKJ459JGJH4I5TUJG45998</p>
+    <p><strong>Created date:</strong> 2021-09-09</p>
+    <p><strong>Source code:</strong> Internal-local</p>
+    <p><strong>Status code:</strong> Prending</p>
+  </div>
+</section>
+
+<!-- Add files modal -->
+<style>
+  .modal-width {
+    width: 800px;
+  }
+</style>
+
+
+<script>
+  $("input[type=text]").keyup(function() {
+
+        if ($("#clientphone").val() !== '' ||
+            $("#clientemail").val() !== '' 
+            )  
+                {
+
+            $("#create").removeAttr("disabled");
+        } else {
+            $("#create").attr("disabled", "disabled");
+        }
+    });
+</script>
+
+<script>
+     $('#012345678912345678').click(function () {
+        //check if checkbox is checked
+        if ($(this).is(':checked')) {
+
+            $('#addfile').removeAttr('disabled'); //enable input
+
+        } else {
+            $('#addfile').attr('disabled', true); //disable input
+        }
+    });
+</script>  
+
+<script>
+  $(function () {
+   $("#search").click(function () {
+   $("#filesadded").removeClass("hidden");
+   });
+});
+</script>
+
+<script>
+$(document).ready(function() {
+  $('#docid').on('input', function() {
+    $('#search').attr('disabled',$(this).val().length < 17? true : false);
+  });
+});
+</script>
+
+<div class="clearfix"></div>
 <!-- SEARCH CONTENT ENDS / CONTENU RECHERCHE TERMINE --> 
 <p class="mrgn-tp-lg pull-left" id="icms_feedback">
 <a class="btn btn-default"><span class="glyphicon glyphicon-comment"></span> Feedback</a>
