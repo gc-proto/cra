@@ -195,9 +195,20 @@ input[type=checkbox] {
 
 <div class="clearfix"></div>
 
-<h3>Client information</h3>
+<div class="row mrgn-tp-lg">
+  <div class="col-md-4"><h3 class="h4">Client information</h3></div>
+  <div class="col-md-4 text-right"><button class="btn btn-default">Edit information</button></div>
+</div>
 
-<hr class="col-md-8">
+<div class="row">
+
+<div class="col-md-8">
+
+<hr class="mrgn-tp-0">
+
+</div>
+
+</div>
 
 <div class="row">
 
@@ -209,30 +220,29 @@ input[type=checkbox] {
 
 <div class="form-group">
   <label for="clientname"><span class="field-name">Client name (First and last name):</span></label>
-  <input class="form-control" id="clientname" name="clientname" type="text" autocomplete="given-name" data-rule-minlength="2" />
+  <input value="Patrick Conroy" class="form-control" id="clientname" name="clientname" type="text" autocomplete="given-name" data-rule-minlength="2" disabled />
 </div>
 
 <div class="form-group">
   <label for="clientemail" class="required"><span class="field-name">Client email:</span> <strong class="required">(required)</strong></label>
-  <input class="form-control" id="clientemail" name="clientemail" type="text" required="required" type="email" autocomplete="email" />
+  <input value="pconroy@gmail.com" class="form-control" id="clientemail" name="clientemail" type="text" type="email" autocomplete="email" disabled />
 </div>
 
 <div class="form-group">
   <label for="clientphone" class="required"><span class="field-name">Client phone:</span> <strong class="required">(required)</strong></label>
-  <input class="form-control" id="clientphone" name="clientphone" type="tel" autocomplete="tel" required="required" data-rule-phoneUS="true" />
+  <input value="416-786-9987" class="form-control" id="clientphone" name="clientphone" type="tel" autocomplete="tel" data-rule-phoneUS="true" disabled />
 </div>
 
 <div class="form-group">
   <label for="refnumber"><span class="field-name">Reference number:</span></label>
-  <input class="form-control" id="refnumber" name="refnumber" type="text" data-rule-minlength="2" />
+  <input value="Reference number1" class="form-control" id="refnumber" name="refnumber" type="text" data-rule-minlength="2" disabled />
 </div>
 
 <div class="form-group">
   <label for="clienttype"><span class="field-name">Client identifier type:</span></label>
-  <select class="form-control" id="clienttype" name="clienttype">
-    <option label="Select a client idenitifer type"></option>
-    <option value="Other">Other</option>
+  <select class="form-control" id="clienttype" name="clienttype" disabled>
     <option value="bn">Business number</option>
+    <option value="Other">Other</option>
     <option value="drn">Discounter Registration Number ("Discounter Code")</option>
     <option value="din">Dependant identification number</option>
     <option value="efn">EFILER number</option>
@@ -255,12 +265,12 @@ input[type=checkbox] {
 
 <div class="form-group">
   <label for="cinumber"><span class="field-name">Client identifier number:</span></label>
-  <input class="form-control" id="cinumber" name="cinumber" type="text" data-rule-minlength="2" />
+  <input value="856392764" class="form-control" id="cinumber" name="cinumber" type="text" data-rule-minlength="2" disabled />
 </div>
 
 <div class="form-group">
 <label for="note"><span class="field-name">Information for the client (this will appear in the secure drop zone):</span></label>
-<textarea class="form-control" rows="2" style="min-width: 100%" placeholder="Please submit all receipts related to your business from 2020."></textarea>
+<textarea class="form-control" rows="2" style="min-width: 100%" placeholder="Please submit all receipts related to your business from 2020." disabled></textarea>
 </div>
 
 </div>

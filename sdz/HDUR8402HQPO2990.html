@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!-->
@@ -35,13 +34,12 @@
 <meta name="leftmenu" content="" />
 <meta name="subsite" content="" />
 <!--[if gte IE 9 | !IE ]><!-->
-<link href="wet40/assets/favicon.ico" rel="icon" type="image/x-icon"/>
-<script src="wet40/js/jquery.js"></script>
-
+<link href="/wet40/assets/favicon.ico" rel="icon" type="image/x-icon"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <link rel="stylesheet" href="wet40/css/wet-boew.min.css"/>
 <!--<![endif]-->
 <link rel="stylesheet" href="wet40/css/theme.min.css"/>
-<!--[if lt IE 9]><link href="wet40/assets/favicon.ico" rel="shortcut icon"/> <link rel="stylesheet" href="wet40/css/ie8-wet-boew.min.css"/> <link rel="stylesheet" href="wet40/fa/css/fa.css"> <script src="wet40/js/ie8-jquery.js"></script> <script src="wet40/js/ie8-wet-boew.min.js"></script><![endif]-->
+<!--[if lt IE 9]><link href="/wet40/assets/favicon.ico" rel="shortcut icon"/> <link rel="stylesheet" href="/wet40/css/ie8-wet-boew.min.css"/> <link rel="stylesheet" href="/wet40/fa/css/fa.css"> <script src="wet40/js/ie8-jquery.js"></script> <script src="wet40/js/ie8-wet-boew.min.js"></script><![endif]-->
 <noscript>
 <link rel="stylesheet" href="wet40/css/noscript.min.css"/>
 </noscript>
@@ -53,6 +51,82 @@
   <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
   <li class="wb-slc visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to site information</a></li>
 </ul>
+
+<style>
+.alert-info > :first-child::before, .alert-success > :first-child::before, .alert-warning > :first-child::before, .alert-danger > :first-child::before {
+  color: inherit;
+  content: none; }
+
+.alert {
+  background-clip: content-box;
+  background-color: inherit;
+  border-left: 6px solid #000;
+  margin-bottom: 23px;
+  margin-left: 10px;
+  padding: 0 0 0 15px; }
+  .alert > p, .alert > ul, .alert > ol {
+    margin-bottom: 0px; }
+  .alert > * {
+    margin-left: 15px; }
+  .alert details {
+    margin-left: .5em;
+    padding-top: 15px; }
+  .alert > :first-child:not(details) {
+    margin-top: auto;
+    padding-top: 15px; }
+  .alert > :last-child {
+    padding-bottom: 25px; }
+  .alert::before {
+    font-family: "Glyphicons Halflings";
+    font-size: 26px;
+    line-height: 2.3em;
+    margin-left: -1.27em;
+    padding: 2px;
+    position: absolute; }
+  .alert > :first-child {
+    margin-left: 15px; }
+
+.alert-info {
+  border-color: #269abc;
+  -o-border-image: linear-gradient(to bottom, #269abc 16px, #269abc 16px, transparent 16px, transparent 48px, #269abc 48px, #269abc 48px) 1 100%;
+     border-image: linear-gradient(to bottom, #269abc 16px, #269abc 16px, transparent 16px, transparent 48px, #269abc 48px, #269abc 48px) 1 100%; }
+  .alert-info::before {
+    color: #269abc;
+    content: ""; }
+
+.alert-success {
+  border-color: #278400;
+  -o-border-image: linear-gradient(to bottom, #278400 16px, #278400 16px, transparent 16px, transparent 48px, #278400 48px, #278400 48px) 1 100%;
+     border-image: linear-gradient(to bottom, #278400 16px, #278400 16px, transparent 16px, transparent 48px, #278400 48px, #278400 48px) 1 100%; }
+  .alert-success::before {
+    color: #278400;
+    content: ""; }
+
+.alert-warning {
+  border-color: #ee7100;
+  -o-border-image: linear-gradient(to bottom, #ee7100 16px, #ee7100 16px, transparent 16px, transparent 48px, #ee7100 48px, #ee7100 48px) 1 100%;
+     border-image: linear-gradient(to bottom, #ee7100 16px, #ee7100 16px, transparent 16px, transparent 48px, #ee7100 48px, #ee7100 48px) 1 100%; }
+  .alert-warning::before {
+    color: #ee7100;
+    content: ""; }
+
+.alert-danger {
+  border-color: #d3080c;
+  -o-border-image: linear-gradient(to bottom, #d3080c 16px, #d3080c 16px, transparent 16px, transparent 48px, #d3080c 48px, #d3080c 48px) 1 100%;
+     border-image: linear-gradient(to bottom, #d3080c 16px, #d3080c 16px, transparent 16px, transparent 48px, #d3080c 48px, #d3080c 48px) 1 100%; }
+  .alert-danger::before {
+    color: #d3080c;
+    content: ""; }
+
+.modal-body .btn-lg {
+    padding: 40px 16px;    
+    }    
+
+input[type=checkbox] {
+    transform: scale(2);
+}
+
+</style>
 
 <header role="banner">
   <div id="wb-bnr">
@@ -95,234 +169,199 @@
     </div>
   </nav>
   <span data-trgt="mb-pnl" class="wb-menu hide"></span></header>
-
 <!-- SEARCH CONTENT BEGINS / CONTENU RECHERCHE COMMENCE -->
 <main class="container" property="mainContentOfPage" role="main">
 <h1 id="wb-cont" property="name" class="wb-inv">Secure Drop Zone Manager</h1>
-<h2>Welcome, abc123, to the Secure Drop Zone Manager</h2>
-<div class="row mrgn-tp-lg">
-<div class="col-md-6"><a href="#asdz" aria-controls="centred-popup" class="wb-lbx" role="button">About Secure Drop Zone</a></div>
-<div class="col-md-6 text-right"><a href="isdz-2.html" class="btn btn-primary" style="background-color: #26374a;">Create Drop Zone</a></div>
-</div>
+<h2>Secure Drop Zone HDUR 8402 HQPO 2990</h2>
 
-<section id="asdz" class="mfp-hide modal-dialog modal-content overlay-def">
+<p class="mrgn-tp-md"><span class="label label-success mrgn-rght-sm" style="font-size: 16px;">Active</span> Created: 2021-09-20 &nbsp; Expiring: 2021-10-04 &nbsp;&nbsp; <a href="#instructions" class="wb-lbx">View instructions for client</a></p>
+
+<section id="instructions" class="mfp-hide modal-dialog modal-content overlay-def">
   <header class="modal-header">
-    <h2 class="modal-title">About Secure Drop Zone</h2>
+    <h2 class="modal-title">Instructions for client</h2>
   </header>
   <div class="modal-body">
-    <p>The Drop Zone Management is an application for CRA users to manage one time, adhoc communications with external entities to either receive, or deliver documents.</p>
-    <p>Creating a Drop Zone will enable you to receive/deliver documents from/to an external user.</p>
-    <p>My Drop Zones will enable you to view all the Drop Zones that you have created.</p>
+    <ul class="list-unstyled">
+      <li>1. Let the client know they should have received an email with the link.</li>
+      <li>2. Give them the secure drop zone code:
+      <p class="h2 mrgn-tp-md mrgn-lft-md">HDUR 8402 HQPO 2990</p></li>
+      <li>3. There is multi-factor authentication, so they will be prompted to get a text/call to verify their identity.</li>
+      <li>4. Once logged in they can download and upload the documents.</li>
+      <li>5. After they submit, they can close the drop zone. If they don’t, it will close in 15 days.</li>
+      <li>6. Let them know they can contact you if they have any issues.</li>
+    </ul>
   </div>
 </section>
 
-<style>
-  .mdz-a {
-    background-color: #295376; 
-    padding: 10px; 
-    color: white;
-  }
-  .mdz-na {
-    background-color: #e4eef2; 
-    padding: 10px; 
-    color: black;
-  }
+<div class="clearfix"></div>
 
-  .mdz-na a:link {
-    text-decoration: none;
-  }
-  .mdz-na a:visited {
-    text-decoration: none;
-    color: black;
-  }
-  .mdz-na a:hover {
-    color: blue;
-  }
-</style>
+<div class="row mrgn-tp-lg mrgn-bttm-lg">
 
-<div class="list-inline mrgn-tp-lg">
-  <div class="col-md-2 mdz-a text-center"><strong>My Drop Zones</strong></div>
-  <div class="col-md-2 mdz-na text-center"><a href="isdz-1-1.html"><strong>Historic Drop Zone</strong></a></div>
-  <div class="col-md-8 mdz-na">&nbsp;</div>
+<div class="col-md-8">
+
+<div class="row">
+  <div class="col-md-6"><h3 class="h4">Client information</h3></div>
+  <div class="col-md-6 text-right"><button class="btn btn-default">Edit information</button></div>
 </div>
 
 <div class="clearfix"></div>
 
-<style>
-  label {
-    display: block;
-  }
-</style>
+<hr class="mrgn-tp-0">
 
-<div class="mrgn-bttm-lg">
-<h3>My Drop Zones</h3>
-<details>
-  <summary>Filter active Drop Zones</summary>
-  <form role="form" class="form-inline mrgn-tp-md">
-      <div class="form-group">
-      <label for="searchbydd"><span class="field-name">Search by</span></label>
-      <select class="form-control" id="searchbydd" name="searchbydd">
-        <option label="Select category"></option>
-        <option value="value1">Value 1</option>
-      </select>
-      </div>
-      <div class="form-group">
-      <label for="searchby"><span class="wb-inv">Search by search term</span> &nbsp; </label>
-      <input class="form-control" id="searchby" name="searchby" type="text" pattern="934981340985048549" />
-    </div>
-  </form>
-    <form role="form" class="form-inline mrgn-tp-md">
-      <div class="form-group">
-      <label for="searchbydd"><span class="field-name">Filter by</span></label>
-      <select class="form-control" id="searchbydd" name="searchbydd">
-        <option label="Select category"></option>
-        <option value="value1">Value 1</option>
-      </select>
-      </div>
-      <div class="form-group">
-      <label for="searchby"><span class="wb-inv">Search by filter term</span> &nbsp; </label>
-      <input class="form-control" id="searchby" name="searchby" type="text" pattern="934981340985048549" />
-    </div>
-  </form>
-    <form role="form" class="form-inline mrgn-tp-md">
-      <div class="form-group">
-        <label for="startdate">Start date<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
-        <input class="form-control" type="date" id="startdate" name="startdate" min="2013-03-27" max="2013-05-07" />
-      </div>
-      <div class="form-group">
-        <label for="enddate">End date<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
-        <input class="form-control" type="date" id="enddate" name="enddate" min="2013-03-27" max="2016-05-07" />
-      </div>
-  </form>
-</details>
+<div class="wb-frmvld">
+
+<form action="#" method="get" id="sendrequest">
+
+<div class="form-group">
+  <label for="clientname"><span class="field-name">Client name (First and last name):</span></label>
+  <input value="John Smith" class="form-control" id="clientname" name="clientname" type="text" autocomplete="given-name" data-rule-minlength="2" disabled />
+</div>
+
+<div class="form-group">
+  <label for="clientemail" class="required"><span class="field-name">Client email:</span> <strong class="required">(required)</strong></label>
+  <input value="jsmith@hotmail.com" class="form-control" id="clientemail" name="clientemail" type="text" type="email" autocomplete="email" disabled />
+</div>
+
+<div class="form-group">
+  <label for="clientphone" class="required"><span class="field-name">Client phone:</span> <strong class="required">(required)</strong></label>
+  <input value="613-736-1167" class="form-control" id="clientphone" name="clientphone" type="tel" autocomplete="tel" data-rule-phoneUS="true" disabled />
+</div>
+
+<div class="form-group">
+  <label for="refnumber"><span class="field-name">Reference number:</span></label>
+  <input value="Reference number1" class="form-control" id="refnumber" name="refnumber" type="text" data-rule-minlength="2" disabled />
+</div>
+
+<div class="form-group">
+  <label for="clienttype"><span class="field-name">Client identifier type:</span></label>
+  <select class="form-control" id="clienttype" name="clienttype" disabled>
+    <option value="tfn">T5 filer number</option>
+    <option value="Other">Other</option>
+    <option value="bn">Business number</option>
+    <option value="drn">Discounter Registration Number ("Discounter Code")</option>
+    <option value="din">Dependant identification number</option>
+    <option value="efn">EFILER number</option>
+    <option value="gid">Group identifier</option>
+    <option value="itn">Individual tax number</option>
+    <option value="nregpn">Non-registered plan number</option>
+    <option value="nrpn">Non-resident plan number</option>
+    <option value="nrrn">Non-resident representative number</option>
+    <option value="pan">PAYDAC account number</option>
+    <option value="rpn">Registered plan number</option>
+    <option value="rid">Representative identifier</option>
+    <option value="sin">Social insurance number</option>
+    <option value="san">Subledger account number</option>
+    <option value="ttn">Temporary tax number</option>
+    <option value="tin">Transaction identification number</option>
+    <option value="tan">Trust account number</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="cinumber"><span class="field-name">Client identifier number:</span></label>
+  <input value="aa8925830" class="form-control" id="cinumber" name="cinumber" type="text" data-rule-minlength="2" disabled />
+</div>
+
+<div class="form-group">
+<label for="note"><span class="field-name">Information for the client (this will appear in the secure drop zone):</span></label>
+<textarea class="form-control" rows="2" style="min-width: 100%" placeholder="Hi John, please send the following documents: NOAs from 2018 to 2020." disabled></textarea>
+</div>
+
+</form>
 
 </div>  
 
-<table id="sdzb" class="table wb-tables mrgn-tp-lg" data-wb-tables='{ "buttons": ["print"], "lengthMenu": [ 5, 10, 20, 50 ], "paging" : true, "order": [4, "asc"]}'>
-<thead>
-  <tr>
-    <th><span class="wb-inv">Action icons</span></th>
-    <th>Dropzone number</th>
-    <th>Reference number</th>
-    <th>Client information</th>
-    <th>Expiry date</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td><img src="attach_file_black_24dp.svg"></td>
-    <td><a href="#" class="nowrap">PONH 8740 ABYT 0098</a></td>
-    <td>TBD</td>
-    <td>kconnelly@importantbusiness.com<br>
-    (416) 907-6799<br>
-    Business number: 4323489273</td>
-    <td><span class="nowrap">2021-09-27</span></td>
-  </tr>
-  <tr>
-    <td><img src="attach_file_black_24dp.svg"></td>
-    <td><a href="#" class="nowrap">QYML 5017 TFCZ 5567</a></td>
-    <td>TBD</td>
-    <td>kmartins@cra-arc.gc.ca<br>
-    (613) 990-6430<br>
-    Transaction identification number: 893745017834756</td>
-    <td><span class="nowrap">2021-09-29</span></td>
-  </tr>
-    <tr>
-    <td></td>
-    <td>HDUR 8402 HQPO 2990</td>
-    <td>TBD</td>
-    <td>jsmith@hotmail.com<br>
-    (613) 736-1167<br>
-    T5 filer number: aa8925830</td>
-    <td>2021-10-02</td>
-  </tr>
-    <tr>
-    <td></td>
-    <td>PONH 8740 ABYT 0098</td>
-    <td>TBD</td>
-    <td>kconnelly@importantbusiness.com<br>
-    (416) 907-6799<br>
-    Business number: 4323489273</td>
-    <td>2021-10-05</td>
-  </tr>
-    <tr>
-    <td></td>
-    <td>PONH 8740 ABYT 0098</td>
-    <td>TBD</td>
-    <td>kconnelly@importantbusiness.com<br>
-    (416) 907-6799<br>
-    Business number: 4323489273</td>
-    <td>2021-10-05</td>
-  </tr>
-    <tr>
-    <td></td>
-    <td>PONH 8740 ABYT 0098</td>
-    <td>TBD</td>
-    <td>kconnelly@importantbusiness.com<br>
-    (416) 907-6799<br>
-    Business number: 4323489273</td>
-    <td>2021-10-05</td>
-  </tr>
-      <tr>
-    <td></td>
-    <td>PONH 8740 ABYT 0098</td>
-    <td>TBD</td>
-    <td>kconnelly@importantbusiness.com<br>
-    (416) 907-6799<br>
-    Business number: 4323489273</td>
-    <td>2021-10-05</td>
-  </tr>
-    <tr>
-    <td></td>
-    <td>PONH 8740 ABYT 0098</td>
-    <td>TBD</td>
-    <td>kconnelly@importantbusiness.com<br>
-    (416) 907-6799<br>
-    Business number: 4323489273</td>
-    <td>2021-10-05</td>
-  </tr>
-    <tr>
-    <td></td>
-    <td>PONH 8740 ABYT 0098</td>
-    <td>TBD</td>
-    <td>kconnelly@importantbusiness.com<br>
-    (416) 907-6799<br>
-    Business number: 4323489273</td>
-    <td>2021-10-05</td>
-  </tr>
-      <tr>
-    <td></td>
-    <td>PONH 8740 ABYT 0098</td>
-    <td>TBD</td>
-    <td>kconnelly@importantbusiness.com<br>
-    (416) 907-6799<br>
-    Business number: 4323489273</td>
-    <td>2021-10-05</td>
-  </tr>
-    <tr>
-    <td></td>
-    <td>PONH 8740 ABYT 0098</td>
-    <td>TBD</td>
-    <td>kconnelly@importantbusiness.com<br>
-    (416) 907-6799<br>
-    Business number: 4323489273</td>
-    <td>2021-10-05</td>
-  </tr>
-    <tr>
-    <td></td>
-    <td>PONH 8740 ABYT 0098</td>
-    <td>TBD</td>
-    <td>kconnelly@importantbusiness.com<br>
-    (416) 907-6799<br>
-    Business number: 4323489273</td>
-    <td>2021-10-05</td>
-  </tr>
-</tbody>
-</table>
+</div>
 
+<div class="col-md-1"></div>
+
+<div class="well well-md col-md-3">
+<h3 class="h4 mrgn-tp-sm">Reassignment details</h3>
+<p><strong>Date:</strong> 2021-09-20</p>
+<p><strong>To user:</strong> abc123</p>
+<p><strong>From user:</strong> wer567</p>
+<p><strong>By admin:</strong> htg753</p>
+<hr>
+<p><strong>Date:</strong> 2021-09-20</p>
+<p><strong>To user:</strong> abc123</p>
+<p><strong>From user:</strong> wer567</p>
+<p><strong>By admin:</strong> htg753</p>
+</div>  
+
+</div>
+
+<section id="012345678912345678" class="mfp-hide modal-dialog modal-content overlay-def lbx-modal">
+  <header class="modal-header">
+    <h3 class="modal-title">Document ID: 012345678912345678</h3>
+  </header>
+  <div class="modal-body">
+    <p><strong>Document title:</strong> Request.docx</p>
+    <p><strong>Program area:</strong> eFax and Drop Zone</p>
+    <p><strong>Reference number:</strong> Refence number 7</p>
+    <p><strong>Client identifier:</strong> Business number 7</p>
+    <p><strong>Confirmation number:</strong> DKJ459JGJH4I5TUJG45998</p>
+    <p><strong>Created date:</strong> 2021-09-09</p>
+    <p><strong>Source code:</strong> Internal-local</p>
+    <p><strong>Status code:</strong> Prending</p>
+  </div>
+</section>
+
+<!-- Add files modal -->
+<style>
+  .modal-width {
+    width: 800px;
+  }
+</style>
+
+
+<script>
+  $("input[type=text]").keyup(function() {
+
+        if ($("#clientphone").val() !== '' ||
+            $("#clientemail").val() !== '' 
+            )  
+                {
+
+            $("#create").removeAttr("disabled");
+        } else {
+            $("#create").attr("disabled", "disabled");
+        }
+    });
+</script>
+
+<script>
+     $('#012345678912345678').click(function () {
+        //check if checkbox is checked
+        if ($(this).is(':checked')) {
+
+            $('#addfile').removeAttr('disabled'); //enable input
+
+        } else {
+            $('#addfile').attr('disabled', true); //disable input
+        }
+    });
+</script>  
+
+<script>
+  $(function () {
+   $("#search").click(function () {
+   $("#filesadded").removeClass("hidden");
+   });
+});
+</script>
+
+<script>
+$(document).ready(function() {
+  $('#docid').on('input', function() {
+    $('#search').attr('disabled',$(this).val().length < 17? true : false);
+  });
+});
+</script>
+
+<div class="clearfix"></div>
 <!-- SEARCH CONTENT ENDS / CONTENU RECHERCHE TERMINE --> 
 <p class="mrgn-tp-lg pull-left" id="icms_feedback">
-<a class="btn btn-default"><span class="glyphicon glyphicon-comment"></span> Feedback</a>
+<a class="btn btn-default mrgn"><span class="glyphicon glyphicon-comment"></span> Feedback</a>
 </p> 
 <dl property="dateModified" id="wb-dtmd"> 
 <dt>Last updated: </dt> 
@@ -393,6 +432,7 @@
 </div>
 
 </footer> 
+
 <script type="text/javascript" async>
 try {
     if ($("meta[name=\"subsite\"]").attr("content").length > 0) {
@@ -423,7 +463,6 @@ try {
 
 <script src="wcm/breadcrumb.js"></script> 
 <script src="wcm/site_search.js" type="text/javascript"></script> 
-
 <script type="text/javascript">
 //insert left_menu or sub-site but not both
 
@@ -460,8 +499,7 @@ $(function () {
     }
 });
 </script> 
-
 <script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/theme.min.js"></script>
-
+<script src="wcm/common/cms-widgets.js" type="text/javascript"></script>
 </body>
 </html>
