@@ -148,11 +148,52 @@
 
 <div class="clearfix"></div>
 
+<style>
+  label {
+    display: block;
+  }
+</style>
+
 <div class="mrgn-bttm-lg">
 <h3>My Drop Zones</h3>
 <details>
   <summary>Filter active Drop Zones</summary>
-  <p></p>
+  <form role="form" class="form-inline mrgn-tp-md">
+      <div class="form-group">
+      <label for="searchbydd"><span class="field-name">Search by</span></label>
+      <select class="form-control" id="searchbydd" name="searchbydd">
+        <option label="Select category"></option>
+        <option value="value1">Value 1</option>
+      </select>
+      </div>
+      <div class="form-group">
+      <label for="searchby"><span class="wb-inv">Search by search term</span> &nbsp; </label>
+      <input class="form-control" id="searchby" name="searchby" type="text" pattern="934981340985048549" />
+    </div>
+  </form>
+    <form role="form" class="form-inline mrgn-tp-md">
+      <div class="form-group">
+      <label for="searchbydd"><span class="field-name">Filter by</span></label>
+      <select class="form-control" id="searchbydd" name="searchbydd">
+        <option label="Select category"></option>
+        <option value="value1">Value 1</option>
+      </select>
+      </div>
+      <div class="form-group">
+      <label for="searchby"><span class="wb-inv">Search by filter term</span> &nbsp; </label>
+      <input class="form-control" id="searchby" name="searchby" type="text" pattern="934981340985048549" />
+    </div>
+  </form>
+    <form role="form" class="form-inline mrgn-tp-md">
+      <div class="form-group">
+        <label for="startdate">Start date<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
+        <input class="form-control" type="date" id="startdate" name="startdate" min="2013-03-27" max="2013-05-07" />
+      </div>
+      <div class="form-group">
+        <label for="enddate">End date<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
+        <input class="form-control" type="date" id="enddate" name="enddate" min="2013-03-27" max="2016-05-07" />
+      </div>
+  </form>
 </details>
 
 </div>  
