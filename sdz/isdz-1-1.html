@@ -149,11 +149,52 @@
 
 <div class="clearfix"></div>
 
+<style>
+  label {
+    display: block;
+  }
+</style>
+
 <div class="mrgn-bttm-lg">
-<h3>Historic Drop Zones</h3>
+<h3>My Drop Zones</h3>
 <details>
   <summary>Filter active Drop Zones</summary>
-  <p></p>
+  <form role="form" class="form-inline mrgn-tp-md">
+      <div class="form-group">
+      <label for="searchbydd"><span class="field-name">Search by</span></label>
+      <select class="form-control" id="searchbydd" name="searchbydd">
+        <option label="Select category"></option>
+        <option value="value1">Value 1</option>
+      </select>
+      </div>
+      <div class="form-group">
+      <label for="searchby"><span class="wb-inv">Search by search term</span> &nbsp; </label>
+      <input class="form-control" id="searchby" name="searchby" type="text" pattern="934981340985048549" />
+    </div>
+  </form>
+    <form role="form" class="form-inline mrgn-tp-md">
+      <div class="form-group">
+      <label for="searchbydd"><span class="field-name">Filter by</span></label>
+      <select class="form-control" id="searchbydd" name="searchbydd">
+        <option label="Select category"></option>
+        <option value="value1">Value 1</option>
+      </select>
+      </div>
+      <div class="form-group">
+      <label for="searchby"><span class="wb-inv">Search by filter term</span> &nbsp; </label>
+      <input class="form-control" id="searchby" name="searchby" type="text" pattern="934981340985048549" />
+    </div>
+  </form>
+    <form role="form" class="form-inline mrgn-tp-md">
+      <div class="form-group">
+        <label for="startdate">Start date<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
+        <input class="form-control" type="date" id="startdate" name="startdate" min="2013-03-27" max="2013-05-07" />
+      </div>
+      <div class="form-group">
+        <label for="enddate">End date<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
+        <input class="form-control" type="date" id="enddate" name="enddate" min="2013-03-27" max="2016-05-07" />
+      </div>
+  </form>
 </details>
 
 </div>  
@@ -170,142 +211,127 @@
   </div>
 </section>
 
-<table id="sdzb" class="table wb-tables mrgn-tp-lg" data-wb-tables='{ "buttons": ["print"], "lengthMenu": [ 5, 10, 20, 50 ], "paging" : true, "order": [4, "asc"]}'>
+<table id="sdzb" class="table wb-tables mrgn-tp-lg" data-wb-tables='{ "buttons": ["print"], "lengthMenu": [ 5, 10, 20, 50 ], "paging" : true, "order": [5, "asc"]}'>
 <thead>
   <tr>
+    <th><span class="wb-inv">Action icons</span></th>
     <th>Dropzone number</th>
     <th>Reference number</th>
     <th>Client information</th>
-    <th>Note to client</th>
     <th>Expiry date</th>
-    <th>Status <a href="#hdz-status" aria-controls="centred-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign" style="color: black"><span class="wb-inv">Question icon - click to show what status' are</span></span></a></th>
   </tr>
 </thead>
 <tbody>
   <tr>
+    <td><img src="attach_file_black_24dp.svg"></td>
     <td><a href="#" class="nowrap">PONH 8740 ABYT 0098</a></td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
-    <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td><span class="nowrap">2021-09-27</span></td>
-    <td><strong>Closed</strong></td>
   </tr>
   <tr>
+    <td><img src="attach_file_black_24dp.svg"></td>
     <td><a href="#" class="nowrap">QYML 5017 TFCZ 5567</a></td>
     <td>TBD</td>
     <td>kmartins@cra-arc.gc.ca<br>
     (613) 990-6430<br>
     Transaction identification number: 893745017834756</td>
-    <td>I am sending the following documents: RC201, T2062, T18, and GST70.</td>
     <td><span class="nowrap">2021-09-29</span></td>
-    <td><strong><span class="text-danger">Expired</span></td>
+  </tr>
+    <tr>
     <td></td>
-  </tr>
-    <tr>
-    <td>PONH 8740 ABYT 0098</td>
+    <td>HDUR 8402 HQPO 2990</td>
     <td>TBD</td>
-    <td>kconnelly@importantbusiness.com<br>
-    (416) 907-6799<br>
-    Business number: 4323489273</td>
-    <td>Read, complete, and send all the documents attached to this drop zone.</td>
+    <td>jsmith@hotmail.com<br>
+    (613) 736-1167<br>
+    T5 filer number: aa8925830</td>
     <td>2021-10-02</td>
-    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
     <tr>
+    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
-    <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
-    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
     <tr>
+    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
-    <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
-    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
     <tr>
+    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
-    <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
-    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
-  <tr>
+      <tr>
+    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
-    <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
-    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
-  <tr>
+    <tr>
+    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
-    <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
-    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
-  <tr>
+    <tr>
+    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
-    <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
-    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
-  <tr>
+      <tr>
+    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
-    <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
-    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
-  <tr>
+    <tr>
+    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
-    <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
-    <td><strong><span class="text-success">Completed:</span></strong></td>
   </tr>
-  <tr>
-
+    <tr>
+    <td></td>
     <td>PONH 8740 ABYT 0098</td>
     <td>TBD</td>
     <td>kconnelly@importantbusiness.com<br>
     (416) 907-6799<br>
     Business number: 4323489273</td>
-    <td>Read, complete, and send all the documents attached to this drop zone.</td>
     <td>2021-10-05</td>
-    <td><strong><span class="text-success">Completed</span></strong></td>
   </tr>
 </tbody>
-</table>  
+</table>
 
 <!-- SEARCH CONTENT ENDS / CONTENU RECHERCHE TERMINE --> 
 <p class="mrgn-tp-lg pull-left" id="icms_feedback">
