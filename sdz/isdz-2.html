@@ -332,7 +332,14 @@ function showfield(name){
   }
 </style>
 
-<section id="filenet" class="mfp-hide modal-content overlay-def modal-dialog modal-width">
+<script>
+  $('#filenet').modal({
+    backdrop: 'static',
+    keyboard: false
+})
+</script>
+
+<section id="filenet" class="mfp-hide modal-content overlay-def modal-dialog modal-width" data-backdrop="static" data-keyboard="false">
   <header class="modal-header">
     <h2 class="modal-title">Add files from FileNet</h2>
   </header>
