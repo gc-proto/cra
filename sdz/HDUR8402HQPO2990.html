@@ -212,8 +212,17 @@ input[type=checkbox] {
         document.getElementById(refnumber).disabled = false;
         document.getElementById(clienttype).disabled = false;
         document.getElementById(cinumber).disabled = false;
-        document.getElementById(note).disabled = false; 
+        document.getElementById(note).disabled = false;
     }
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#edit").click(function(){
+    $("#test, #test2").removeClass("hidden");
+    $("#edit").addClass("hidden")
+  });
+});
 </script>
 
 <div class="clearfix"></div>
@@ -285,6 +294,7 @@ input[type=checkbox] {
 <label for="uploaded"><span class="field-name">Files</span></label>
 <hr class="mrgn-tp-0">
 
+<div class="hidden" id="test">
 <p>Acceptable file types <a href="#filetypes" aria-controls="centred-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign" style="color: black"><span class="wb-inv">Question icon - click to show what status' are</span></span></a></p>
 
 <section id="filetypes" class="mfp-hide modal-dialog modal-content overlay-def">
@@ -302,7 +312,7 @@ input[type=checkbox] {
 <a href="#filenet" class="btn btn-default wb-lbx" data-toggle="modal" data-backdrop="static" data-keyboard="false">Add files from FileNet</a> <br><br>
 
 <a href="#upload" class="btn btn-default wb-lbx dismiss">Choose files from your computer</a> &nbsp;No files selected
-
+</div>
 </div>    
 
 <table class="table">
@@ -336,7 +346,7 @@ input[type=checkbox] {
   </div>
 </section>
 
-<div class="text-right mrgn-tp-md">
+<div class="text-right mrgn-tp-md hidden" id="test2">
 <a type="submit" class="btn btn-default mrgn-rght-md" id="cancel">Cancel</a> <a href="isdz-2-1.html" type="submit" class="btn btn-primary" id="create" style="background-color: #26374a; color: white;">Save changes</a>
 </div>
 
