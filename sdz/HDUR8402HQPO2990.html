@@ -347,8 +347,29 @@ $(document).ready(function(){
 </section>
 
 <div class="text-right mrgn-tp-md hidden" id="test2">
-<a type="submit" class="btn btn-default mrgn-rght-md" id="cancel">Cancel</a> <a href="isdz-2-1.html" type="submit" class="btn btn-primary" id="create" style="background-color: #26374a; color: white;">Save changes</a>
+<button type="button" class="btn btn-default mrgn-rght-md" id="cancel">Cancel</button> <button type="button" class="btn btn-primary" id="create" style="background-color: #26374a; color: white;" onclick="toggleDisable('clientname','clientemail','clientphone','refnumber','clienttype','cinumber','note')">Save changes</button>
 </div>
+
+<script>
+   function toggleDisable(clientname, clientemail, clientphone, refnumber, clienttype, cinumber, note) {
+        document.getElementById(clientname).disabled = true;
+        document.getElementById(clientemail).disabled = true;
+        document.getElementById(clientphone).disabled = true;
+        document.getElementById(refnumber).disabled = true;
+        document.getElementById(clienttype).disabled = true;
+        document.getElementById(cinumber).disabled = true;
+        document.getElementById(note).disabled = true;
+    }
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#create").click(function(){
+    $("#test, #test2").addClass("hidden");
+    $("#edit").removeClass("hidden")
+  });
+});
+</script>
 
 </div>  
 
