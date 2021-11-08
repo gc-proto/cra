@@ -201,8 +201,20 @@ input[type=checkbox] {
 
 <div class="row">
   <div class="col-md-6"><h3 class="h4">Client information</h3></div>
-  <div class="col-md-6 text-right"><button class="btn btn-default">Edit information</button></div>
+  <div class="col-md-6 text-right"><button type="button" class="btn btn-default" id="edit" onclick="toggleEnable('clientname','clientemail','clientphone','refnumber','clienttype','cinumber','note')">Edit information</button></div>
 </div>
+
+<script>
+   function toggleEnable(clientname, clientemail, clientphone, refnumber, clienttype, cinumber, note) {
+        document.getElementById(clientname).disabled = false;
+        document.getElementById(clientemail).disabled = false;
+        document.getElementById(clientphone).disabled = false;
+        document.getElementById(refnumber).disabled = false;
+        document.getElementById(clienttype).disabled = false;
+        document.getElementById(cinumber).disabled = false;
+        document.getElementById(note).disabled = false; 
+    }
+</script>
 
 <div class="clearfix"></div>
 
@@ -264,7 +276,7 @@ input[type=checkbox] {
 
 <div class="form-group">
 <label for="note"><span class="field-name">Information for the client (this will appear in the secure drop zone):</span></label>
-<textarea class="form-control" rows="2" style="min-width: 100%" placeholder="Hi John, please send the following documents: NOAs from 2018 to 2020." disabled></textarea>
+<textarea id="note" class="form-control" rows="2" style="min-width: 100%" placeholder="Hi John, please send the following documents: NOAs from 2018 to 2020." disabled></textarea>
 </div>
 
 </form>

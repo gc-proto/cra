@@ -122,10 +122,6 @@
     padding: 40px 16px;    
     }    
 
-.popup-modal-dismiss {
-    display: none;
-}    
-
 input[type=checkbox] {
     transform: scale(2);
 }
@@ -176,44 +172,53 @@ input[type=checkbox] {
 <!-- SEARCH CONTENT BEGINS / CONTENU RECHERCHE COMMENCE -->
 <main class="container" property="mainContentOfPage" role="main">
 <h1 id="wb-cont" property="name" class="wb-inv">Secure Drop Zone Manager</h1>
-<h2>Create new secure drop zone</h2>
+<h2>Secure Drop Zone MGTE 9367 ENHY 3523</h2>
 
-<p><span class="label label-info mrgn-rght-sm" style="font-size: 16px;">Draft</span> Expiring: 2021-10-04</p>
+<p class="mrgn-tp-md"><span class="label label-default mrgn-rght-sm" style="font-size: 16px;">Closed</span> Created: 2021-09-20 &nbsp; Expiring: 2021-10-05 &nbsp;&nbsp; <a href="#instructions" class="wb-lbx">View instructions for client</a></p>
 
-<!--div class="row col-md-6">
-<div class="wb-frmvld"><form>
-<div class="wb-fieldflow" data-wb-fieldflow='{
-  "defaultselectedlabel":"Select what to do",
-  "reset": { "action": "addClass", "source":".reset", "class": "hidden"}, 
-  "noreqlabel": true,
-  "noForm": true
-}'>
-
-  <p><strong>What would you like to do?</strong></p>
-
-  <ul>
-    <li data-wb-fieldflow='{"action":"removeClass", "source":"#choice1", "class": "hidden", "live": true}'>Send documents</li>
-    <li data-wb-fieldflow='{"action":"removeClass", "source":"#choice2", "class": "hidden", "live": true}'>Request documents</li>
-    <li data-wb-fieldflow='{"action":"removeClass", "source":"#choice3", "class": "hidden", "live": true}'>Send and request documents</li>
-  </ul>
-</div>
-</form></div>
-</div-->
-
-<section class="alert alert-warning col-md-8 mrgn-tp-md">
-  <h3>Make sure you have all the documents you are sending ready for uploads before proceeding</h3>
-  <p>Once you have created a Secure Drop Zone, the 15 day expiration time will start.</p>
+<section id="instructions" class="mfp-hide modal-dialog modal-content overlay-def">
+  <header class="modal-header">
+    <h2 class="modal-title">Instructions for client</h2>
+  </header>
+  <div class="modal-body">
+    <ul class="list-unstyled">
+      <li>1. Let the client know they should have received an email with the link.</li>
+      <li>2. Give them the secure drop zone code:
+      <p class="h2 mrgn-tp-md mrgn-lft-md">MGTE 9367 ENHY 3523</p></li>
+      <li>3. There is multi-factor authentication, so they will be prompted to get a text/call to verify their identity.</li>
+      <li>4. Once logged in they can download and upload the documents.</li>
+      <li>5. After they submit, they can close the drop zone. If they don’t, it will close in 15 days.</li>
+      <li>6. Let them know they can contact you if they have any issues.</li>
+    </ul>
+  </div>
 </section>
 
 <div class="clearfix"></div>
 
-<h3>Client information</h3>
-
-<hr class="col-md-8">
-
-<div class="row">
+<div class="row mrgn-tp-lg mrgn-bttm-lg">
 
 <div class="col-md-8">
+
+<div class="row">
+  <div class="col-md-6"><h3 class="h4">Client information</h3></div>
+  <div class="col-md-6 text-right hidden"><button type="button" class="btn btn-default" id="edit" onclick="toggleEnable('clientname','clientemail','clientphone','refnumber','clienttype','cinumber','note')">Edit information</button></div>
+</div>
+
+<script>
+   function toggleEnable(clientname, clientemail, clientphone, refnumber, clienttype, cinumber, note) {
+        document.getElementById(clientname).disabled = false;
+        document.getElementById(clientemail).disabled = false;
+        document.getElementById(clientphone).disabled = false;
+        document.getElementById(refnumber).disabled = false;
+        document.getElementById(clienttype).disabled = false;
+        document.getElementById(cinumber).disabled = false;
+        document.getElementById(note).disabled = false; 
+    }
+</script>
+
+<div class="clearfix"></div>
+
+<hr class="mrgn-tp-0">
 
 <div class="wb-frmvld">
 
@@ -221,35 +226,28 @@ input[type=checkbox] {
 
 <div class="form-group">
   <label for="clientname"><span class="field-name">Client name (First and last name):</span></label>
-  <input class="form-control" id="clientname" name="clientname" type="text" autocomplete="given-name" data-rule-minlength="2" />
+  <input value="John Smith" class="form-control" id="clientname" name="clientname" type="text" autocomplete="given-name" data-rule-minlength="2" disabled />
 </div>
 
 <div class="form-group">
   <label for="clientemail" class="required"><span class="field-name">Client email:</span> <strong class="required">(required)</strong></label>
-  <input class="form-control" id="clientemail" name="clientemail" type="text" required="required" type="email" autocomplete="email" />
+  <input value="sd@homedepot.com" class="form-control" id="clientemail" name="clientemail" type="text" type="email" autocomplete="email" disabled />
 </div>
 
 <div class="form-group">
   <label for="clientphone" class="required"><span class="field-name">Client phone:</span> <strong class="required">(required)</strong></label>
-  <input class="form-control" id="clientphone" name="clientphone" type="tel" autocomplete="tel" required="required" data-rule-phoneUS="true" />
+  <input value="613-736-1167" class="form-control" id="clientphone" name="clientphone" type="tel" autocomplete="tel" data-rule-phoneUS="true" disabled />
 </div>
 
 <div class="form-group">
   <label for="refnumber"><span class="field-name">Reference number:</span></label>
-  <input class="form-control" id="refnumber" name="refnumber" type="text" data-rule-minlength="2" />
+  <input value="Reference number1" class="form-control" id="refnumber" name="refnumber" type="text" data-rule-minlength="2" disabled />
 </div>
-
-<script type="text/javascript">
-function showfield(name){
-  if(name=='Other' || 'bn' || 'drn' || 'din' || 'efn' || 'gid' || 'itn' || 'nregpn' || 'nrpn' || 'nrrn' || 'pan' || 'rpn' || 'rid' || 'sin' || 'san' || 'tfn' || 'ttn' || 'tin' || 'tan')document.getElementById('div1').innerHTML='<div class="form-group"><label for="cinumber"><span class="field-name">Client identifier number:</span></label><input class="form-control" id="cinumber" name="cinumber" type="text" data-rule-minlength="2" /></div>';
-  else document.getElementById('div1').innerHTML='';
-}
-</script>
 
 <div class="form-group">
   <label for="clienttype"><span class="field-name">Client identifier type:</span></label>
-  <select class="form-control" id="clienttype" name="clienttype" onchange="showfield(this.options[this.selectedIndex].value)">
-    <option label="Select a client idenitifer type"></option>
+  <select class="form-control" id="clienttype" name="clienttype" disabled>
+    <option value="tfn">T5 filer number</option>
     <option value="Other">Other</option>
     <option value="bn">Business number</option>
     <option value="drn">Discounter Registration Number ("Discounter Code")</option>
@@ -265,56 +263,20 @@ function showfield(name){
     <option value="rid">Representative identifier</option>
     <option value="sin">Social insurance number</option>
     <option value="san">Subledger account number</option>
-    <option value="tfn">T5 filer number</option>
     <option value="ttn">Temporary tax number</option>
     <option value="tin">Transaction identification number</option>
     <option value="tan">Trust account number</option>
   </select>
 </div>
 
-<div id="div1">
-
+<div class="form-group">
+  <label for="cinumber"><span class="field-name">Client identifier number:</span></label>
+  <input value="3943948394" class="form-control" id="cinumber" name="cinumber" type="text" data-rule-minlength="2" disabled />
 </div>
 
 <div class="form-group">
-<label for="note"><span class="field-name">Note to client (your client will see this):</span></label>
-<textarea class="form-control" rows="2" style="min-width: 100%" placeholder="Here you can list the documents your client needs to upload or download and other instructions you deem necessary"></textarea>
-</div>
-
-<div class="form-group">
-<label for="uploaded"><span class="field-name">Files</span></label>
-<hr class="mrgn-tp-0">
-
-<p>Acceptable file types <a href="#filetypes" aria-controls="centred-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign" style="color: black"><span class="wb-inv">Question icon - click to show what status' are</span></span></a></p>
-
-<section id="filetypes" class="mfp-hide modal-dialog modal-content overlay-def">
-  <header class="modal-header">
-    <h2 class="modal-title">Acceptable file types</h2>
-  </header>
-  <div class="modal-body">
-    <p>You can upload the following file types: .pdf, .doc, .docx, .xls, .xlsx, .txt, .jpg, .tiff, .tif, .xps</p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-primary popup-modal-dismiss" type="button">Close</button>
-  </div>
-</section>
-
-<a href="#filenet" class="btn btn-default wb-lbx" data-toggle="modal" data-backdrop="static" data-keyboard="false">Add files from FileNet</a> <br><br>
-
-<a href="#upload" class="btn btn-default wb-lbx dismiss">Choose files from your computer</a> &nbsp;No files selected
-
-</div>    
-
-<section id="upload" class="mfp-hide modal-dialog modal-content overlay-def lbx-modal">
-  <div class="modal-body">
-    <p><a href="isdz-2-1.html" class="btn btn-primary btn-lg">You added files. Please click to continue.</a></p>
-  </div>
-</section>
-
-<div class="text-right mrgn-tp-md">
-<a type="submit" class="btn btn-default mrgn-rght-md" id="cancel">Cancel</a> <a href="isdz-2-1.html" type="submit" class="btn btn-primary" id="create" style="background-color: #26374a; color: white;" disabled="disabled">Create secure drop zone</a>
-</div>
-
+<label for="note"><span class="field-name">Information for the client (this will appear in the secure drop zone):</span></label>
+<textarea id="note" class="form-control" rows="2" style="min-width: 100%" placeholder="Hi John, please send the following documents: NOAs from 2018 to 2020." disabled></textarea>
 </div>
 
 </form>
@@ -323,7 +285,38 @@ function showfield(name){
 
 </div>
 
+<div class="col-md-1"></div>
+
+<div class="well well-md col-md-3">
+<h3 class="h4 mrgn-tp-sm">Reassignment details</h3>
+<p><strong>Date:</strong> 2021-09-20</p>
+<p><strong>To user:</strong> abc123</p>
+<p><strong>From user:</strong> wer567</p>
+<p><strong>By admin:</strong> htg753</p>
+<hr>
+<p><strong>Date:</strong> 2021-09-20</p>
+<p><strong>To user:</strong> abc123</p>
+<p><strong>From user:</strong> wer567</p>
+<p><strong>By admin:</strong> htg753</p>
+</div>  
+
 </div>
+
+<section id="012345678912345678" class="mfp-hide modal-dialog modal-content overlay-def lbx-modal">
+  <header class="modal-header">
+    <h3 class="modal-title">Document ID: 012345678912345678</h3>
+  </header>
+  <div class="modal-body">
+    <p><strong>Document title:</strong> Request.docx</p>
+    <p><strong>Program area:</strong> eFax and Drop Zone</p>
+    <p><strong>Reference number:</strong> Refence number 7</p>
+    <p><strong>Client identifier:</strong> Business number 7</p>
+    <p><strong>Confirmation number:</strong> DKJ459JGJH4I5TUJG45998</p>
+    <p><strong>Created date:</strong> 2021-09-09</p>
+    <p><strong>Source code:</strong> Internal-local</p>
+    <p><strong>Status code:</strong> Prending</p>
+  </div>
+</section>
 
 <!-- Add files modal -->
 <style>
@@ -332,61 +325,6 @@ function showfield(name){
   }
 </style>
 
-<section id="filenet" class="mfp-hide modal-content overlay-def modal-dialog modal-width" data-backdrop="static" data-keyboard="false">
-  <header class="modal-header">
-    <h2 class="modal-title">Add files from FileNet</h2>
-  </header>
-  <div class="modal-body">
-    
-<form class="form-inline" role="form" method="get" action="#">
-
-</form>
-
-  <form class="form-inline mrgn-tp-md" role="form">
-  <div class="form-group">
-    <label for="doclass"><span class="field-name">Document class</span></label>
-    <select id="efax" name="efax">
-      <option value="efax">eFax and Drop Zone</option>
-    </select>
-  </div>    
-  <div class="form-group">
-    <label for="docid"><span class="field-name">Document ID</span></label>
-    <input id="docid" name="efax" type="text" pattern="012345678912345678" />
-  </div>
-  <a class="btn btn-default btn-sm" id="search" disabled="disabled">Search</a>
-
-<section id="filesadded" class="hidden"> 
-  <table class="table">
-    <thead>
-      <tr>
-        <th><span class="wb-inv">Checkbox column</span></th>
-        <th>Document ID</th>
-        <th>Title</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <label for="012345678912345678"><span class="wb-inv"></span></label>
-          <input type="checkbox" id="012345678912345678" name="012345678912345678">
-        </td>
-        <td>012345678912345678</td>
-        <td>Request.docx</td>
-      </tr>
-    </tbody>  
-  </table>
-</section>
-
-</form>  
-</div>
-<div class="modal-footer">
-<button class="btn btn-default" type="button">Cancel</button><a href="isdz-2-1.html" id="addfile" class="btn btn-primary" type="button" disabled>Add file</a>
-</div>
-</section>
-
-<script> 
-$('.wb-lbx').modal({backdrop: 'static', keyboard: false})  
-</script>
 
 <script>
   $("input[type=text]").keyup(function() {
@@ -435,7 +373,7 @@ $(document).ready(function() {
 <div class="clearfix"></div>
 <!-- SEARCH CONTENT ENDS / CONTENU RECHERCHE TERMINE --> 
 <p class="mrgn-tp-lg pull-left" id="icms_feedback">
-<a class="btn btn-default"><span class="glyphicon glyphicon-comment"></span> Feedback</a>
+<a class="btn btn-default mrgn"><span class="glyphicon glyphicon-comment"></span> Feedback</a>
 </p> 
 <dl property="dateModified" id="wb-dtmd"> 
 <dt>Last updated: </dt> 
