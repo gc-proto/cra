@@ -281,6 +281,65 @@ input[type=checkbox] {
 
 </form>
 
+<div class="form-group">
+<label for="uploaded"><span class="field-name">Files</span></label>
+<hr class="mrgn-tp-0">
+
+<p>Acceptable file types <a href="#filetypes" aria-controls="centred-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign" style="color: black"><span class="wb-inv">Question icon - click to show what status' are</span></span></a></p>
+
+<section id="filetypes" class="mfp-hide modal-dialog modal-content overlay-def">
+  <header class="modal-header">
+    <h2 class="modal-title">Acceptable file types</h2>
+  </header>
+  <div class="modal-body">
+    <p>You can upload the following file types: .pdf, .doc, .docx, .xls, .xlsx, .txt, .jpg, .tiff, .tif, .xps</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary popup-modal-dismiss" type="button">Close</button>
+  </div>
+</section>
+
+<a href="#filenet" class="btn btn-default wb-lbx" data-toggle="modal" data-backdrop="static" data-keyboard="false">Add files from FileNet</a> <br><br>
+
+<a href="#upload" class="btn btn-default wb-lbx dismiss">Choose files from your computer</a> &nbsp;No files selected
+
+</div>    
+
+<table class="table">
+<thead>
+<tr>
+  <th style="width: 20px;"><span class="wb-inv">Download icon</span></th>
+  <th>Name</th>
+  <th>Document ID</th>
+  <th>Date uploaded</th>
+  <th>Source</th>
+  <th>Status</th>
+  <th style="width: 20px;"><span class="wb-inv">Delete icon</span></th>
+</tr>  
+</thead>
+<tbody>
+  <tr>
+    <td><a href="#"><img src="download.svg" style="padding-bottom: 3px;"></a></td>
+    <td><a href="#">Request.docx</a></td>
+    <td><a class="wb-lbx" href="#012345678912345678">012345678912345678</a></td>
+    <td>2021-10-22</td>
+    <td>eFax and Drop Zone</td>
+    <td>Uploaded</td>
+    <td><a href="#"><img src="delete.svg" style="padding-bottom: 3px;"></a></td>
+  </tr>
+</tbody>
+</table>
+
+<section id="upload" class="mfp-hide modal-dialog modal-content overlay-def lbx-modal">
+  <div class="modal-body">
+    <p><a href="isdz-2-1.html" class="btn btn-primary btn-lg">You added files. Please click to continue.</a></p>
+  </div>
+</section>
+
+<div class="text-right mrgn-tp-md">
+<a type="submit" class="btn btn-default mrgn-rght-md" id="cancel">Cancel</a> <a href="isdz-2-1.html" type="submit" class="btn btn-primary" id="create" style="background-color: #26374a; color: white;">Save changes</a>
+</div>
+
 </div>  
 
 </div>
