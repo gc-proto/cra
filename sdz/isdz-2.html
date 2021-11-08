@@ -353,7 +353,7 @@ function showfield(name){
     <label for="docid"><span class="field-name">Document ID</span></label>
     <input id="docid" name="efax" type="text" pattern="012345678912345678" />
   </div>
-  <a class="btn btn-default btn-sm" id="search" disabled="disabled">Search</a>
+  <button type="button" class="btn btn-default btn-sm" id="search" disabled="disabled">Search</button>
 
 <section id="filesadded" class="hidden"> 
   <table class="table">
@@ -390,12 +390,10 @@ $('.wb-lbx').modal({backdrop: 'static', keyboard: false})
 
 <script>
   $("input[type=text]").keyup(function() {
-
         if ($("#clientphone").val() !== '' ||
             $("#clientemail").val() !== '' 
             )  
                 {
-
             $("#create").removeAttr("disabled");
         } else {
             $("#create").attr("disabled", "disabled");
@@ -405,13 +403,10 @@ $('.wb-lbx').modal({backdrop: 'static', keyboard: false})
 
 <script>
      $('#012345678912345678').click(function () {
-        //check if checkbox is checked
         if ($(this).is(':checked')) {
-
-            $('#addfile').removeAttr('disabled'); //enable input
-
+            $('#addfile').removeAttr('disabled'); 
         } else {
-            $('#addfile').attr('disabled', true); //disable input
+            $('#addfile').attr('disabled', true); 
         }
     });
 </script>  
