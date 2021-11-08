@@ -212,8 +212,8 @@
   <label for="clienttype"><span class="field-name">Title</span></label>
   <select class="form-control" id="clienttype" name="clienttype">
     <option label="Select a client idenitifer type"></option>
+    <option value="bn">Business number</option>    
     <option value="Other">Other</option>
-    <option value="bn">Business number</option>
     <option value="drn">Discounter Registration Number ("Discounter Code")</option>
     <option value="din">Dependant identification number</option>
     <option value="efn">EFILER number</option>
@@ -232,6 +232,11 @@
     <option value="tin">Transaction identification number</option>
     <option value="tan">Trust account number</option>
   </select>
+</div>
+
+<div class="form-group">
+  <label for="cinumber"><span class="field-name">Client identifier number:</span></label>
+  <input value="1234948394" class="form-control" id="cinumber" name="cinumber" type="text" data-rule-minlength="2" disabled />
 </div>
 
 <div class="form-group">
