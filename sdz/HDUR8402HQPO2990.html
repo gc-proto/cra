@@ -176,6 +176,11 @@ input[type=checkbox] {
 
 <p class="mrgn-tp-md"><span class="label label-success mrgn-rght-sm" style="font-size: 16px;">Active</span> Created: 2021-09-20 &nbsp; Expiring: 2021-10-04 &nbsp;&nbsp; <a href="#instructions" class="wb-lbx">View instructions for client</a></p>
 
+<section class="alert alert-success col-md-8 mrgn-tp-md hidden" id="saved">
+  <h3 class="h4">Success!</h3>
+  <p>Your changes have been saved.</p>
+</section>
+
 <section id="instructions" class="mfp-hide modal-dialog modal-content overlay-def">
   <header class="modal-header">
     <h2 class="modal-title">Instructions for client</h2>
@@ -220,7 +225,7 @@ input[type=checkbox] {
 $(document).ready(function(){
   $("#edit").click(function(){
     $("#test, #test2").removeClass("hidden");
-    $("#edit").addClass("hidden")
+    $("#edit, #saved").addClass("hidden")
   });
 });
 </script>
@@ -366,7 +371,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#create").click(function(){
     $("#test, #test2").addClass("hidden");
-    $("#edit").removeClass("hidden")
+    $("#edit, #saved").removeClass("hidden")
   });
 });
 </script>
