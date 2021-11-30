@@ -49,77 +49,74 @@ a:visited {
       </ul>
     </nav>
     <header>
-      <div id="wb-bnr" class="container">
-        <div class="row">
-          <section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
-            <h2 class="wb-inv">Language selection</h2>
-            <div class="row">
-              <div class="col-md-12">
-                <ul class="list-inline mrgn-bttm-0">
-                  <li> <a lang="fr" href="/fr/services/sante/systeme-et-services-sante.html"> <span class="hidden-xs">Fran&ccedil;ais</span> <abbr title="Fran&ccedil;ais" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase">fr</abbr> </a> </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" resource="#wb-publisher" typeof="GovernmentOrganization"> <a href="/en.html" property="url"> <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt="Government of Canada" property="logo"/> <span class="wb-inv"> / <span lang="fr">Gouvernement du Canada</span> </span> </a>
-            <meta property="name" content="Government of Canada"/>
-            <meta property="areaServed" typeof="Country" content="Canada"/>
-            <link property="logo" href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/wmms-blk.svg"/>
-          </div>
-          <section id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
-            <h2>Search</h2>
-            <form action="/en/sr/srb.html" method="get" name="cse-search-box" role="search">
-              <div class="form-group wb-srch-qry">
-                <label for="wb-srch-q" class="wb-inv">Search Canada.ca</label>
-                <input name="cdn" value="canada" type="hidden"/>
-                <input name="st" value="s" type="hidden"/>
-                <input name="num" value="10" type="hidden"/>
-                <input name="langs" value="en" type="hidden"/>
-                <input name="st1rt" value="1" type="hidden"/>
-                <input name="s5bm3ts21rch" value="x" type="hidden"/>
-                <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca"/>
-                <datalist id="wb-srch-q-ac"> </datalist>
-              </div>
-              <div class="form-group submit">
-                <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
-              </div>
-            </form>
-          </section>
-        </div>
+  <div id="wb-bnr" class="container">
+    <div class="row">
+      <section id="wb-lng" class="col-xs-3 col-sm-12 text-right pull-right">
+        <h2 class="wb-inv">Language selection</h2>
+        <ul class="list-inline mrgn-bttm-0">
+          <li> <a lang="fr" hreflang="fr" href="404.html"> <span class="hidden-xs">Français</span> <abbr title="Français" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase">fr</abbr> </a> </li>
+        </ul>
+      </section>
+      <div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization"> <a href="404.html" property="URL"> <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt="Government of Canada" property="logo"> <span class="wb-inv"> / <span lang="fr">Gouvernement du Canada</span> </span></a>
+        <meta property="name" content="Government of Canada">
+        <meta property="areaServed" typeof="Country" content="Canada">
+        <link property="logo" href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/wmms-blk.svg">
       </div>
-      <nav class="gcweb-v2 gcweb-menu" typeof="SiteNavigationElement">
+      <section id="wb-srch" class="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4">
+        <h2>Search</h2>
+        <form action="/en/revenue-agency/search.html" method="get" name="cse-search-box" role="search">
+          <div class="form-group wb-srch-qry">
+            <label for="wb-srch-q" class="wb-inv">Search Canada.ca</label>
+            <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search CRA">
+            <input name="cdn" value="canada" type="hidden"/>
+            <input name="st" value="s" type="hidden"/>
+            <input name="num" value="10" type="hidden"/>
+            <input name="langs" value="en" type="hidden"/>
+            <input name="st1rt" value="1" type="hidden"/>
+            <input name="s5bm3ts21rch" value="x" type="hidden"/>
+            <input type="hidden" name="_charset_" value="UTF-8"/>
+            <datalist id="wb-srch-q-ac"></datalist>
+          </div>
+          <div class="form-group submit">
+            <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"> <span class="glyphicon-search glyphicon"></span> <span class="wb-inv">Search</span></button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+  <nav class="gcweb-v2 gcweb-menu" typeof="SiteNavigationElement">
         <div class="container">
           <h2 class="wb-inv">Menu</h2>
           <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
           <ul role="menu" aria-orientation="vertical" data-ajax-replace="https://www.canada.ca/content/dam/canada/sitemenu/sitemenu-v2-en.html">
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Jobs and the workplace</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Immigration and citizenship</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Travel and tourism</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Business and industry</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Benefits</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Health</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Taxes</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Environment and natural resources</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">National security and defence</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Culture, history and sport</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Policing, justice and emergencies</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Transport and infrastructure</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Canada and the world</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Money and finances</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Science and innovation</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="404.html">Jobs and the workplace</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="404.html">Immigration and citizenship</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="404.html">Travel and tourism</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="404.html">Business and industry</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="benefits.html">Benefits</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="health.html">Health</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="404.html">Taxes</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="404.html">Environment and natural resources</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="404.html">National security and defence</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="404.html">Culture, history and sport</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="404.html">Policing, justice and emergencies</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="404.html">Transport and infrastructure</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="404.html">Canada and the world</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="404.html">Money and finances</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="404.html">Science and innovation</a></li>
           </ul>
         </div>
       </nav>
-      <nav id="wb-bc" property="breadcrumb">
-        <h2 class="wb-inv">You are here:</h2>
-        <div class="container">
-          <ol class="breadcrumb">
-            <li><a href='#'>Canada.ca</a></li>
-            <li><a href='#'>Health</a></li>
-          </ol>
-        </div>
-      </nav>
-    </header>
+  <nav id="wb-bc" property="breadcrumb">
+    <h2 class="wb-inv">You are here:</h2>
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="404.html">Canada.ca</a></li>
+        <li><a href="health.html">Health</a></li>
+      </ol>
+    </div>
+  </nav>
+</header>
   </div>
 </div>
 <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
@@ -138,9 +135,9 @@ a:visited {
         <section class="lnkbx">
           <h2> Most requested </h2>
           <ul>
-            <li> <a href="#">Canada's health care system</a> </li>
-            <li> <a href="#">Medical assistance in dying</a> </li>
-            <li> <a href="#">Employee Assistance Program (EAP)</a> </li>
+            <li> <a href="404.html">Canada's health care system</a> </li>
+            <li> <a href="404.html">Medical assistance in dying</a> </li>
+            <li> <a href="404.html">Employee Assistance Program (EAP)</a> </li>
           </ul>
         </section>
       </div>
@@ -148,36 +145,36 @@ a:visited {
         <h2>Services and information</h2>
         <div class="wb-eqht row">
           <div class="col-md-6">
-            <h3><a href="#">Health cards</a> </h3>
+            <h3><a href="404.html">Health cards</a> </h3>
             <p>Discover information about health care card services and benefits. Find out how to apply for a health card in your province or territory.</p>
           </div>
           <div class="col-md-6">
-            <h3><a href="#">Health care system</a> </h3>
+            <h3><a href="404.html">Health care system</a> </h3>
             <p>Find out about our health care system, including the role of provinces and territories. Also find information on the types of care available and coverage for pharmaceuticals.</p>
           </div>
           <div class="col-md-6">
-            <h3><a href="#">Health services</a> </h3>
+            <h3><a href="404.html">Health services</a> </h3>
             <p>Explore all the health-related services and benefits offered in Canada.</p>
           </div>
           <div class="col-md-6">
-            <h3><a href="#">Funding</a> </h3>
+            <h3><a href="404.html">Funding</a> </h3>
             <p>Access information on funding programs that help maintain and improve Canada's health care system. Also find grant and contribution funding opportunities.</p>
           </div>
           <div class="col-md-6">
-            <h3><a href="#">Training</a> </h3>
+            <h3><a href="404.html">Training</a> </h3>
             <p>Get information on careers and professional development, hazardous materials, and health and safety training in the workplace and school programs.</p>
           </div>
           <div class="col-md-6">
-            <h3><a href="#">Consultations</a> </h3>
+            <h3><a href="404.html">Consultations</a> </h3>
             <p>Find information on public consultations conducted by the government on health-related topics.</p>
           </div>
           <div class="col-md-6">
-            <h3><a href="#">External Advisory Bodies<br>
+            <h3><a href="404.html">External Advisory Bodies<br>
               </a> </h3>
             <p>Find information about Health Canada's external advisory bodies.</p>
           </div>
           <div class="col-md-6">
-            <h3><a href="#">Calendar of health promotion days</a> </h3>
+            <h3><a href="404.html">Calendar of health promotion days</a> </h3>
             <p>The calendar features health awareness days, weeks and months.</p>
           </div>
         </div>
@@ -186,7 +183,7 @@ a:visited {
         <section class="lnkbx">
           <h2> Contributors </h2>
           <ul>
-            <li> <a href="#">Health Canada</a> </li>
+            <li> <a href="404.html">Health Canada</a> </li>
           </ul>
         </section>
       </div>
@@ -197,31 +194,31 @@ a:visited {
         <section class="col-lg-4 col-md-6">
           <h3>Laws and regulations</h3>
           <ul>
-            <li><a href="#">Canada Health Transfer, Canada Social Transfer and Wait Times Reduction Transfer Regulations </a></li>
-            <li><a href="#">Veterans Health Care Regulations </a></li>
-            <li><a href="#">Canada Health Care, Early Childhood Development and Other Social Services Funding Act </a></li>
-            <li><a href="#">Special Counting of Prior Service Regulations (Health Care Services for the Benefit of the Canadian Forces) </a></li>
+            <li><a href="404.html">Canada Health Transfer, Canada Social Transfer and Wait Times Reduction Transfer Regulations </a></li>
+            <li><a href="404.html">Veterans Health Care Regulations </a></li>
+            <li><a href="404.html">Canada Health Care, Early Childhood Development and Other Social Services Funding Act </a></li>
+            <li><a href="404.html">Special Counting of Prior Service Regulations (Health Care Services for the Benefit of the Canadian Forces) </a></li>
           </ul>
         </section>
         <section class="col-lg-4 col-md-6">
           <h3>Publications</h3>
           <ul>
-            <li><a href="#">Canada Health Act Annual Report 2014-2015 </a></li>
-            <li><a href="#">Canada's Health Care System Report </a></li>
-            <li><a href="#">Report of the Advisory Panel on Healthcare Innovation </a></li>
-            <li><a href="#">Unleashing Innovation: Excellent Healthcare for Canada </a></li>
+            <li><a href="404.html">Canada Health Act Annual Report 2014-2015 </a></li>
+            <li><a href="404.html">Canada's Health Care System Report </a></li>
+            <li><a href="404.html">Report of the Advisory Panel on Healthcare Innovation </a></li>
+            <li><a href="404.html">Unleashing Innovation: Excellent Healthcare for Canada </a></li>
           </ul>
-          <p><a href="#">All related publications</a></p>
+          <p><a href="404.html">All related publications</a></p>
         </section>
         <section class="col-lg-4 col-md-6">
           <h3>Consultations</h3>
           <ul>
-            <li><a href="#"><strong></strong>National Pharmacare Online Consultation<br>
+            <li><a href="404.html">National Pharmacare Online Consultation<br>
               </a></li>
-            <li><a href="#">Consultation on palliative care </a></li>
-            <li><a href="#">Consultation on proposed front-of-package labelling<br>
+            <li><a href="404.html">Consultation on palliative care </a></li>
+            <li><a href="404.html">Consultation on proposed front-of-package labelling<br>
               </a></li>
-            <li><a href="#">Bromate in Drinking Water </a></li>
+            <li><a href="404.html">Bromate in Drinking Water </a></li>
           </ul>
         </section>
       </div>
@@ -359,15 +356,15 @@ a:visited {
         <nav class="container wb-navcurr">
           <h2 class="wb-inv">About government</h2>
           <ul class="list-unstyled colcount-sm-2 colcount-md-3">
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Departments and agencies</a></li>
-            <li><a href="#">Public service and military</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Treaties, laws and regulations</a></li>
-            <li><a href="#">Government-wide reporting</a></li>
-            <li><a href="#">Prime Minister</a></li>
-            <li><a href="#">About government</a></li>
-            <li><a href="#">Open government</a></li>
+            <li><a href="404.html">Contact us</a></li>
+          <li><a href="404.html">Departments and agencies</a></li>
+          <li><a href="404.html">Public service and military</a></li>
+          <li><a href="404.html">News</a></li>
+          <li><a href="404.html">Treaties, laws and regulations</a></li>
+          <li><a href="404.html">Government-wide reporting</a></li>
+          <li><a href="404.html">Prime Minister</a></li>
+          <li><a href="404.html">How government works</a></li>
+          <li><a href="404.html">Open government</a></li>
           </ul>
         </nav>
       </div>
@@ -377,11 +374,11 @@ a:visited {
             <nav class="col-md-10 ftr-urlt-lnk">
               <h2 class="wb-inv">About this site</h2>
               <ul>
-                <li><a href="#">Social media</a></li>
-                <li><a href="#">Mobile applications</a></li>
-                <li><a href="#">About Canada.ca</a></li>
-                <li><a href="#">Terms and conditions</a></li>
-                <li><a href="#">Privacy</a></li>
+                <li><a href="404.html">Social media</a></li>
+              <li><a href="404.html">Mobile applications</a></li>
+              <li><a href="404.html">About Canada.ca</a></li>
+              <li><a href="404.html">Terms and conditions</a></li>
+              <li><a href="404.html">Privacy</a></li>
               </ul>
             </nav>
             <div class="col-xs-6 visible-sm visible-xs tofpg"> <a href="#wb-cont">Top of page <span class="glyphicon glyphicon-chevron-up"></span></a> </div>
