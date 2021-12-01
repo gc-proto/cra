@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="no-js lt-ie9" lang="en" dir="ltr">
+   <![endif]-->
+<!--[if gt IE 8]>
+<!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+
+<head>
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>How to apply - Disability tax credit (DTC) – Canada.ca</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name=”robots” content=”noindex, follow”>
+    <!-- Meta data -->
+    <!-- Meta data-->
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+    <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        document.write(wet.builder.refTop({}));
+    </script>
+    <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
+    <link href="../css/pn.css" rel="stylesheet">
+    <link href="../css/h1-underline.css" rel="stylesheet">
+    <link href="../css/steps.css" rel="stylesheet">
+    <link href="../css/checkbox-radio-CRA.css" rel="stylesheet">
+
+    <link href="https://test.canada.ca/covid-19-guidance/proto/css/cews.css" rel="stylesheet">
+    <link href="https://wet-boew.github.io/GCWeb/m%C3%A9li-m%C3%A9lo/2021-05-conjunction/and-or.css" rel="stylesheet"><!-- new css file-->
+
+    <!--<link href="https://test.canada.ca/covid-19-guidance/proto/css/conjunction.css" rel="stylesheet"> *old css file* -->
+    <style type="text/css">
+        div.hidden-action {
+            transform: scaleX(0);
+            overflow: hidden;
+            display: none;
+        }
+
+        div.visible-action {
+            transform: scaleX(1);
+            display: visible;
+        }
+
+        /*Checkbox/Fieldflow radio input sizing,positioning*/
+        .checkbox-zebra>li:nth-child(2n+1) {
+            background-color: #f5f5f5;
+            margin-left: -50px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            padding-left: 50px;
+        }
+
+        .checkbox-zebra [role="checkbox"]::before {
+            background-color: #fff;
+        }
+
+        .std-blt {
+            font-size: 20px;
+            line-height: 1.65em;
+        }
+
+        .std-blt {
+            list-style-type: disc;
+        }
+
+        .std-blt li label {
+            display: block;
+            padding-left: 0px;
+        }
+
+        /********
+        ********
+        ** New checklist example
+        ** May 15, 2020
+        ** Replacing checkkboxes with clickable divs that convey a sense of success to the user
+        ********
+        ********/
+        /* One input per line */
+        .provisional [role="checkbox"] {
+            /* (0,2,0) */
+            cursor: pointer;
+            display: inline-block;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .provisional [role="checkbox"]::before,
+        .provisional [role="checkbox"]::after {
+            /* (0,2,1) */
+            content: "";
+            left: 0;
+            position: absolute;
+            top: 0;
+            transform: translate(-100%, 0%);
+        }
+
+        .provisional .wb-checklist.wb-checklist-sm {
+            /* (0,3,0) */
+            font-size: 17px;
+        }
+
+        /* the basic, unchecked style */
+        .provisional [role="checkbox"]::before {
+            /* (0,2,1) */
+            border: 4px solid #fff;
+            box-shadow: 0 0 0 2px #000;
+            display: inline-block;
+            height: 36px;
+            width: 36px;
+        }
+
+        .provisional .wb-checklist-sm [role="checkbox"]::before {
+            /* (0,3,1) */
+            border-width: 3px;
+            height: 24px;
+            transform: translate(-100%, 20%);
+            width: 24px;
+        }
+
+        /* hover styling */
+        .provisional [role="checkbox"][aria-checked="false"]:hover::before {
+            /* (0,3,1) */
+            background-image: linear-gradient(to bottom, hsl(10, 0%, 90%), hsl(10, 0%, 100%) 50%);
+        }
+
+        /* focus styling */
+        .provisional [role="checkbox"]:focus {
+            /* (0,3,0) */
+            outline: none;
+        }
+
+        .provisional [role="checkbox"]:focus::before {
+            /* (0,3,2) */
+            box-shadow: 0 0 0 2px #000, 0 0 8px 4px rgb(59, 153, 252);
+        }
+
+        /* the checked style using the [aria-checked='true'] pseudo class and aria-checked=true attribute */
+        .provisional [role="checkbox"][aria-checked="true"]::before {
+            /* (0,3,1) */
+            background-color: #318000;
+            border: none;
+        }
+
+        .provisional [role="checkbox"][aria-checked="true"]::after {
+            /* (0,3,1) */
+            border-color: white;
+            border-style: solid;
+            border-width: 0 5px 5px 0;
+            display: inline-block;
+            height: 26px;
+            width: 13px;
+            transform: translate(-185%, 10%) rotate(45deg);
+        }
+
+        .provisional .wb-checklist-sm [role="checkbox"][aria-checked="true"]::after {
+            /* (0,3,1) */
+            border-width: 0 4px 4px 0;
+            height: 16px;
+            width: 9px;
+            transform: translate(-185%, 40%) rotate(45deg);
+        }
+
+        .checkbox-lg label {
+            font-size: 1em;
+        }
+    </style>
+
+
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage">
+    <div id="def-top"> </div>
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        var defTop = document.getElementById("def-top");
+        defTop.outerHTML = wet.builder.top({
+            lngLinks: [{
+                lang: "fr",
+                href: "#",
+                text: "Français"
+            }],
+            breadcrumbs: [{
+                title: "Canada.ca",
+                href: "https://test.canada.ca/cra/dtc/404.html"
+            }, {
+                title: "Taxes",
+                href: "https://test.canada.ca/cra/dtc/validation/taxes.html"
+            }, {
+                title: "Benefits and credits for individuals",
+                href: "https://test.canada.ca/cra/dtc/validation/tax-benefits-credits.html"
+            }, {
+                title: "Disability tax credit",
+                href: "https://test.canada.ca/cra/dtc/validation/index-404.html"
+            }],
+            search: true,
+            siteMenu: true,
+            showPreContent: true
+        });
+    </script>
+    <main role="main" property="mainContentOfPage" class="container">
+        <div class="gcnav">
+            <section class="gcnav-menu">
+                <h1 property="name" id="wb-cont-parent">Disability tax credit (DTC)</h1>
+                <nav aria-label="Section menu">
+                    <h2 id="gcnav-menu-header">Sections</h2>
+                    <ul class="gcnav-steps">
+                        <li><a href="about-dtc.html">What is the DTC</a></li>
+                        <li><a href="eligible.html">Who is eligible</a></li>
+                        <li class="active"><a aria-current="page">How to apply</a></li>
+                        <li><a href="review.html">Our review and decision</a></li>
+                        <li><a href="claiming.html">Claiming the credit</a></li>
+                        <li><a href="contact.html">Contact the CRA</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <!--<aside class="hidden-xs hidden-sm gcnav-side" data-ajax-replace="index.html #gcnav-side>"> </aside>-->
+            <section class="gcnav-section">
+                <h1 property="name" id="wb-cont">How to apply</h1>
+
+                <!--<p class="pull-left small"><strong>You may be looking for:</strong></p>
+                <ul class="pull-left mrgn-lft-md list-unstyled small">
+                    <li><a href="eligible.html">Who is eligible</a></li>
+                </ul>
+                <div class="clearfix">&nbsp;</div>-->
+
+
+         <h2 class="h3">On this page</h2>
+                <ul>
+                    <li><a href="#h-1">Get ready to apply</a></li>
+                    <li><a href="#h-2">Complete the application</a></li>
+                    <li><a href="#h-3">Submit the application</a></li>
+                </ul>
+
+ <h2 id="h-1">Get ready to apply</h2>
+    <p>Applying for the DTC involves the individual who has the impairment and a medical practitioner who can certify the effects of the impairment.</p>
+
+
+    <h3>Find a medical practitioner who can certify your impairment</h3>
+	    <p>The following medical practitioners can certify impairments: </p> 
+	   
+<div class="row mrgn-lft-md container-fluid">
+	    <div class="row brdr-bttm">
+  <div class="col-sm-6">
+    <p class="text-muted"><strong>Medical doctor</strong></p>
+  </div>
+  <div class="col-sm-6">
+	  <p>All impairments</p>
+	</div>
+</div>
+
+<div class="row mrgn-tp-0 brdr-bttm">
+  <div class="col-sm-6">
+    <p class="text-muted"><strong>Nurse practitioner</strong></p>
+  </div>
+  <div class="col-sm-6">
+	  <p>All impairments</p>
+	</div>
+</div>
+
+<div class="row mrgn-tp-0 brdr-bttm">
+  <div class="col-sm-6">
+    <p class="text-muted"><strong>Optometrist</strong></p>
+  </div>
+  <div class="col-sm-6">
+	  <p>Vision</p>
+	</div>
+</div>
+
+<div class="row mrgn-tp-0 brdr-bttm">
+  <div class="col-sm-6">
+    <p class="text-muted"><strong>Audiologist</strong></p>
+  </div>
+  <div class="col-sm-6">
+	  <p>Hearing</p>
+	</div>
+</div>
+
+<div class="row mrgn-tp-0 brdr-bttm">
+  <div class="col-sm-6">
+    <p class="text-muted"><strong>Occupational therapist</strong></p>
+  </div>
+  <div class="col-sm-6">
+	  <p>Walking, feeding, dressing</p>
+	</div>
+</div>
+
+<div class="row mrgn-tp-0 brdr-bttm">
+  <div class="col-sm-6">
+    <p class="text-muted"><strong>Physiotherapist</strong></p>
+  </div>
+  <div class="col-sm-6">
+	  <p>Walking</p>
+	</div>
+</div>
+
+<div class="row mrgn-tp-0 brdr-bttm">
+  <div class="col-sm-6">
+    <p class="text-muted"><strong>Psychologist</strong></p>
+  </div>
+  <div class="col-sm-6">
+	  <p>Mental functions </p>
+	</div>
+</div>
+
+<div class="row mrgn-tp-0 brdr-bttm">
+  <div class="col-sm-6">
+    <p class="text-muted"><strong>Speech-language pathologist</strong></p>
+  </div>
+  <div class="col-sm-6">
+	  <p>Speaking</p>
+	</div>
+</div></div><br>
+	    
+    <!--<p>A medical practitioner can certify the effects of their impairment.</p>
+    <details>
+      <summary>Which medical practitioners can certify each impairment</summary>
+      <table class="table table-bordered ">
+        
+        <thead>
+          <tr>
+            <th scope="col">Medical practitioner</th>
+            <th scope="col">Can certify</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Medical doctor</td>
+            <td>all impairments</td>
+          </tr>
+          <tr>
+            <td>Nurse practitioner</td>
+            <td>all impairments</td>
+          </tr>
+          <tr>
+            <td>Optometrist</td>
+            <td>vision</td>
+          </tr>
+          <tr>
+            <td>Audiologist</td>
+            <td>hearing</td>
+          </tr>
+          <tr>
+            <td>Occupational therapist</td>
+            <td>walking, feeding, dressing</td>
+          </tr>
+          <tr>
+            <td>Physiotherapist</td>
+            <td>walking</td>
+          </tr>
+          <tr>
+            <td>Psychologist</td>
+            <td>mental functions necessary for everyday life</td>
+          </tr>
+          <tr>
+            <td>Speech-language pathologist</td>
+            <td>speaking</td>
+          </tr>
+        </tbody>
+      </table>
+    </details>-->
+	    
+   <details>
+      <summary>Possible medical practitioner fees </summary>
+    <p>If your medical practitioner charges a fee for completing the DTC application, you are responsible to pay it. However, you may be able to <a href="404.html">claim it as a medical expense</a> on your tax return.</p>
+		    </details>
+		    <h3> Determine who may claim the credit</h3>
+		    <p>If your application is approved, you may claim the credit on your tax return. If there is any remaining amount, you may transfer it to a supporting family member.</p>
+		   
+		  <details>
+			    <summary>Who qualifies as a supporting family member</summary>
+			    <p>A supporting family member is someone who the individual with the impairment depends on for at least 1 of the necessities of life (food, shelter, and clothing). </p>
+			    <p>The family member must be one of the following:</p>
+			    <ul>
+				    <li>a spouse or common law partner</li>
+				    <li>a child or grandchild</li>
+				    <li>a spouse or common-law partner's child or grandchild</li>
+				    <li>a parent, grandparent, brother, sister, uncle, aunt, niece, or nephew <!--who resides in Canada at any time in the year--></li>
+				    <li>a spouse or common-law partner's parent, grandparent, brother, sister, uncle, aunt, niece, or nephew <!--who resides in in Canada at any time in the year--></li>
+			</ul>
+
+		    </details>
+		    
+		    <p>The supporting family member will need to provide some information about themselves, including their SIN and details of the type of support they provide, on the application form (Part A - 2). <!--This will help make it easy to transfer the credit at tax time.--> </p>
+		    <p>For details: <a href="https://test.canada.ca/cra/dtc/validation/claiming.html#h-1-1">Transferring the credit</a></p> 
+
+      <h3>Consider when to apply</h3>
+    <p>You may apply for the DTC at any time during the year.</p>
+    <p>However, if you submit your application at the same time that you file your tax return, there may be a delay in your tax assessment. We will review your DTC application before we assess your tax return.</p>
+    <p>To avoid a possible delay, submit your DTC application before you file your tax return.</p>
+ 
+  
+    <h2 id="h-2">Complete the application</h2>
+		    <p>There are <strong>2 options</strong> to complete the DTC application:</p>
+    <ul>
+      <li><a href="#h-2-1">Apply with the digital form</a></li>
+      <li><a href="#h-2-2">Apply with the paper form</a></li>
+    </ul>
+    
+	<!-- Digital form -->
+
+<div class="row">
+  <div class="col-sm-3">
+    <h3 id="h-2-1" class="mrgn-tp-md">Digital form</h3>
+  </div>
+  <div class="col-sm-9">
+    <ol class="lst-stps stps-strpd">
+      <li><strong>Medical practitioner fills out the "Medical practitioner's section" (Part B)</strong>
+        <!--<p>In Part B, the medical practitioner fills out the impairment section(s) that appy to their patient.</p>-->
+        <p>The medical practitioner opens the <a href="404.html">DTC Digital application for medical practitioners</a> and completes Part B by answering questions about the effects of the impairment.</p>
+          <details class="small">
+            <summary>Types of questions</summary>
+            <ul>
+              <li>Basic information about the medical practitioner</li>
+              <li>Patient information</li>
+              <li>Information about the impairment(s)</li>
+              <li>Additional eligibility questions at the end if the patient may be eligible under the "Cumulative effect of significant limitations" category</li>
+            </ul>
+          </details>
+          <details class="small">
+            <summary>How medical practitioners assess patients</summary>
+            <p>Medical practitioners use their best professional judgement when filling out Part B.</p>
+            <p>They may base their assessment on:</p>
+            <ol>
+              <li>the symptoms reported by the patient</li>
+              <li>their knowledge of the patient's medical history</li>
+              <li>their knowledge of the effects of the impairment(s) as they relate to the patient's medical condition</li>
+            </ol>
+            <p class="mrgn-tp-md">The CRA bases its decision about eligibility on the information that medical practitioners provide in Part B.</p>
+          </details>
+	                
+          </p>
+	<p>After filling in Part B, the medical practitioner must:</p>
+	<ul>
+	<!--<li>download and save the PDF of the form</li>-->
+	<li>print and sign the form to certify it</li>
+	<li>give the printed certified form to their patient to fill out Part A</li>
+	      </ul>
+            <div class="mrgn-tp-sm text-small small text-secondary"><!--<span class="fas fa-info-circle fa-sm mrgn-rght-sm"></span>--><strong>Tip:</strong> To keep a copy for your records, save or print the PDF.</div>
+          </p>
+	
+	   <!-- <p>After filling in Part B, the medical practitioner <strong>saves a PDF</strong> of the form and <strong>prints it</strong> out. 
+	 <p>Then the medical practitioner:</p>
+	  <ul>
+          <li>completes and signs the "Certification" section</li>
+          <li>gives the printed certified form to the applicant so they may fill out Part A</li>
+        </ul>
+      </li>-->
+	
+      <li><strong>Applicant completes the "Individual's section" (Part A)</strong>
+        <p>The individual with the impairment or their <a href="404.html">legal representative</a> fills out Part A of the printed form.</p>
+	      <div class="mrgn-tp-sm text-small text-text-secondary small"><!--<span class="fas fa-info-circle fa-sm mrgn-rght-sm"></span>--><strong>Tip:</strong> If you want the CRA to adjust your tax returns, indicate this in <span class="no-wrap">Part A - 3.</span></div>
+      </li>
+      <li><strong>Send it to us</strong>
+        <p>Either the applicant or the medical practitioner may <a href="#h-3">submit the form</a> to the CRA.</p>
+      </li>
+    </ol>
+  </div>
+</div>
+<!-- digital application ends -->
+
+<hr class="brdr-bttm">
+
+<!-- Paper form -->
+<div class="row">
+  <div class="col-sm-3">
+    <h3 id="h-2-2" class="mrgn-tp-md">Paper form</h3>
+  </div>
+  <div class="col-sm-9">
+    <ol class="lst-stps stps-strpd">
+      <li><strong>Applicant fills out the "Individual's section" (Part A)</strong>
+        <p>The individual with the impairment or their <a href="404.html">legal representative</a> fills out Part A of the application, <a href="404.html">Form T2201, Certificate for the Disability Tax Credit</a>.
+        
+        <div class="mrgn-tp-sm text-small text-secondary small"><!--<span class="fas fa-info-circle fa-sm mrgn-rght-sm"></span>--><strong>Tip:</strong> If you want the CRA to adjust your tax returns, indicate this in <span class="no-wrap">Part A - 3.</span></div>
+        </p>
+        <p>After filling out Part A, the applicant gives the printed form to their medical practitioner to complete and sign Part B.</p>
+      <li><strong>Medical practitioner completes the "Medical practitioner's" section (Part B)</strong>
+        <p>The medical practitioner answers a few questions and fills out the impairment section(s) that apply to their patient.</p>
+        <details class="small">
+          <summary>Types of questions</summary>
+          <ul>
+            <li>Basic information about the medical practitioner</li>
+            <li>Patient information</li>
+            <li>Information about the impairment(s)</li>
+            <li>If the section called "Cumulative effect of significant limitations" applies, the medical practitioner must also fill in the specific sections for the impairments that contribute to the cumulative effect</li>
+          </ul>
+        </details>
+        <details class="small">
+          <summary>How medical practitioners assess patients</summary>
+          <p>Medical practitioners use their best professional judgement when filling out Part B.</p>
+          <p>They may base their assessment on:</p>
+          <ul>
+            <li>the symptoms reported by the patient</li>
+            <li>their knowledge of the patient's medical history</li>
+            <li>their knowledge of the effects of the impairment(s) as they relate to the patient's medical condition</li>
+          </ul>
+          <p class="mrgn-tp-md">The CRA bases its decision about eligibility on the information that medical practitioners provide in Part B.</p>
+        </details>
+        <p>After filling in Part B, the medical practitioner must complete and sign the "Certification" section on the last page.</p>
+      </li>
+      <li><strong>Send it to us</strong>
+        <p>Either the medical practitioner or the applicant may <a href="#h-3">submit the form</a> to the CRA.</p>
+      </li>
+    </ol>
+  </div>
+</div>
+<!-- paper form ends --> 	    
+		    
+	
+  
+    <h2 id="h-3">Submit the application</h2>
+    <p>There are 2 ways you can submit your completed Form T2201, Disability Tax Credit Certificate and any related documents to the CRA.</p>
+    <dl class="dl-horizontal brdr-0 mrgn-bttm-sm">
+      <dt>Online</dt>
+      <dd>
+        <p>Sign into CRA My Account and select "Submit&nbsp;documents" in the top right corner.</p>
+        <div class="mrgn-tp-md"> <a class="btn btn-call-to-action" href="404.html">Sign in to My Account</a> <a href="404.html" class="mrgn-lft-md">Register</a> </div>
+      </dd>
+      <dt>By mail</dt>
+      <dd>
+        <dl class="dl-horizontal brdr-0">
+          <p>Send your application to one of the tax centres below. We recommend you keep a copy for your records.</p>
+          <!-- Jonquière -->
+          <details>
+            <summary>Jonquière Tax Centre</summary>
+            <p>Jonquière Tax Centre<br>
+              2251 René-Lévesque Blvd<br>
+              Jonquière QC G7S 5J2</p>
+            <p class="wb-inv" id="addressJonq">Jonquière Tax Centre - 2251 René-Lévesque Blvd - Jonquière QC G7S 5J2</p>
+            <!-- The button used to copy the text --> 
+            <!--<a class="btn btn-default" id="addressJonq" onclick="copyToClipboard(document.getElementById('addressJonq').innerHTML)">Copy address</a>--> 
+          </details>
+          <!-- Subdury -->
+          <details>
+            <summary>Sudbury Tax Centre</summary>
+            <p>Sudbury Tax Centre<br>
+              Post Office Box 20000, Station A<br>
+              Sudbury ON P3A 5C1</p>
+            <p class="wb-inv" id="addressSud">Sudbury Tax Centre - Post Office Box 20000, Station A - Sudbury ON P3A 5C1</p>
+            <!-- The button used to copy the text --> 
+            <!--<a class="btn btn-default" id="addressSud" onclick="copyToClipboard(document.getElementById('addressSud').innerHTML)">Copy address</a>--> 
+            
+          </details>
+          
+          <!-- Winnipeg -->
+          <details>
+            <summary>Winnipeg Tax Centre</summary>
+            <p>Winnipeg Tax Centre<br>
+              Post Office Box 14000, Station Main<br>
+              Winnipeg MB R3C 3M2</p>
+            <p class="wb-inv" id="addressWinni">Winnipeg Tax Centre - Post Office Box 14000, Station Main - Winnipeg MB R3C 3M2</p>
+            <!-- The button used to copy the text --> 
+            <!--<a class="btn btn-default" id="addressWinni" onclick="copyToClipboard(document.getElementById('addressWinni').innerHTML)">Copy address</a>--> 
+          </details>
+        </dl>
+      </dd>
+    </dl>
+    <p>The CRA aims to review your application and send you a notice of determination within 8 weeks of receiving it. It may take longer if information is missing.</p>
+    <p><a href="404.html">Check CRA processing times</a></p>
+
+
+
+
+                <!-- pagination -->
+                <nav role="navigation" class="mrgn-bttm-lg mrgn-tp-lg">
+                    <h3 class="wb-inv">Section navigation</h3>
+                    <ul class="pager">
+                        <li class="next"><a href="review.html" rel="next"><span class="wb-inv">Next: </span>Our review and decision</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <!--<aside class="hidden-md hidden-lg" data-ajax-replace="index.html #gcnav-side>"> </aside>-->
+
+        </div>
+        <div id="def-preFooter"> </div>
+        <!-- Write closure template -->
+        <script type="text/javascript">
+            var defPreFooter = document.getElementById("def-preFooter");
+            defPreFooter.outerHTML = wet.builder.preFooter({
+                dateModified: "2020-03-13",
+                showPostContent: true,
+                showFeedback: true,
+                showShare: true
+            });
+        </script>
+
+    </main>
+    <div id="def-footer"> </div>
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        var defFooter = document.getElementById("def-footer");
+        defFooter.outerHTML = wet.builder.footer({
+            showFooter: true,
+            showFeatures: true
+        });
+    </script>
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        document.write(wet.builder.refFooter({}));
+    </script>
+    <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
+    <!--script below adds the skip to section navigation at top of page when .gcnav class exists //-->
+    <script src="../js/topmenu.js"></script>
+
+
+    <script>
+        $(".action-checkbox").change(function() {
+            if ($('.action-checkbox:checked').length == $('.action-checkbox').length) {
+                $("#action-msg1").removeClass("hidden").addClass("visible");
+                $("#action-no-msg").addClass("hidden").removeClass("visible");
+                $("#ready-to-apply").removeClass("hidden").addClass("visible");
+            }
+            if ($('.action-checkbox:checked').length !== $('.action-checkbox').length) {
+                $("#action-msg1").addClass("hidden").removeClass("visible");
+                $("#action-no-msg").removeClass("hidden").addClass("visible");
+                $("#ready-to-apply").addClass("hidden").removeClass("visible");
+
+            }
+        })
+    </script>
+</body></html>
