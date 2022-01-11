@@ -23,6 +23,7 @@
     <!-- Write closure template -->
     <script type="text/javascript">
         document.write(wet.builder.refTop({}));
+
     </script>
     <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
     <link href="../../css/pn.css" rel="stylesheet">
@@ -165,11 +166,13 @@
             width: 9px;
             transform: translate(-185%, 40%) rotate(45deg);
         }
+
     </style>
     <style>
         .checkbox-lg label {
             font-size: 1em;
         }
+
     </style>
 </head>
 
@@ -204,6 +207,7 @@
             siteMenu: true,
             showPreContent: true
         });
+
     </script>
     <main role="main" property="mainContentOfPage" class="container">
         <div class="gcnav">
@@ -217,7 +221,7 @@
                             <a href="eligible.html">Who is eligible</a>
                             <ul class="gcnav-steps noline">
                                 <li class="active"><a aria-current="page">Hearing eligibility</a></li>
-				    <li><a href="cumulative.html">Cumulative effect eligibility</a></li>
+                                <li><a href="cumulative.html">Cumulative effect eligibility</a></li>
                             </ul>
                         </li>
                         <li><a href="how-apply.html">How to apply</a></li>
@@ -239,7 +243,6 @@
                 <div class="row">
                     <div class="col-md-7 col-sm-6">
                         <p>For some people, hearing can be a challenge even with the help of appropriate therapy, medication, and devices. If you have severe or profound hearing loss, the DTC may offset some of the costs caused by care, treatment, and related activities by reducing the amount of income tax you may have to pay.</p>
-
                         <p>Eligibility for the DTC is based on the effects of an impairment, not a diagnosis or the presence of a condition.
                         </p>
                     </div>
@@ -303,43 +306,54 @@
 
                 </div>
 
+               
+
                 <details>
                     <summary>Example of people who may be eligible</summary>
                     <h3 class="panel-title mrgn-bttm-md">Kevin lost his hearing</h3>
                     <div class="mrgn-lft-sm mrgn-rght-md">
-                            <img src="images/kevin.jpeg" class="pull-left mrgn-tp-sm mrgn-rght-md">
-                            <p>Kevin is an accountant.</p>
-                            <p>When he was a child, Kevin lost his hearing due to a head injury. Although Kevin has hearing aids, he continues to have difficulty hearing.</p>
-                            <p>Kevin applied for the DTC. As a result of the information provided by the medical practitioner on the application form, he is now eligible for the tax credit because he is deaf.</p>
-                            
-                        </div>
+                        <img src="images/kevin.jpeg" class="pull-left mrgn-tp-sm mrgn-rght-md">
+                        <p>Kevin is an accountant.</p>
+                        <p>When he was a child, Kevin lost his hearing due to a head injury. Although Kevin has hearing aids, he continues to have difficulty hearing.</p>
+                        <p>Kevin applied for the DTC. As a result of the information provided by the medical practitioner on the application form, he is now eligible for the tax credit because he is deaf.</p>
+                        <!--<p>Being eligible for the DTC also means he may be eligible for other government programs for persons with disabilities, such as the Registered disability savings plan.</p>-->
+
+                    </div>
                 </details>
 
+
+                <!--<div class="alert alert-info">
+                    <h3>If you have multiple medical conditions</h3>
+                    <p>If you do not have severe and prolonged effects in this one category, you can <strong>combine this category with with any other of the impacted health categories</strong> to show the full impact on your health. </p>
+                    <p>Refer to: <a href="cumulative.html">Cumulative (combination of two or more)</a></p>
+                </div>-->
+
+
                 <h2 id="h_2">Eligibility criteria checklist</h2>
-<p>If you meet <strong>all</strong> the criteria below, you may have a marked restriction in hearing and be eligible for the DTC:</p>
-          
+                <p>You <strong>must meet all 3 criteria</strong> below. Check the boxes that apply.</p>
+
                 <section>
                     <ul class="checkbox-lg checkbox-zebra">
                         <li class="checkbox">
-                            <input type="checkbox" id="eg1" class="action-checkbox cb-dmm">
-                            <label for="eg1">You are unable to hear so as to understand spoken conversation with a familiar person in a quiet setting, or it takes you 3 times longer than someone of similar age who does not have the impairment, even with the use of therapy, medication, and devices</label>
+                            <input type="checkbox" id="eg1" class="action-checkbox cb-dmm" aria-label="checkbox 1 of 3">
+                            <label for="eg1">You are unable to hear so as to understand spoken conversation with a familiar person in a quiet setting, or it takes you 3 times longer than someone of similar age who does not have the impairment <span class="small">(even if you use appropriate therapy, medication, and devices)</span></label>
                         </li>
                         <li class="checkbox">
-                            <input type="checkbox" id="eg2" class="action-checkbox cb-dmm">
-                            <label for="eg2">Your impairment is present all or almost all of the time (generally at least 90%)</label>
+                            <input type="checkbox" id="eg2" class="action-checkbox cb-dmm" aria-label="checkbox 2 of 3">
+                            <label for="eg2">Your impairment is present all or almost all of the time <span class="small">(generally at least 90%)</span></label>
 
                         </li>
                         <li class="checkbox">
-                            <input type="checkbox" id="eg3" class="action-checkbox cb-dmm">
+                            <input type="checkbox" id="eg3" class="action-checkbox cb-dmm" aria-label="checkbox 3 of 3">
                             <label for="eg3">Your impairment has lasted or is expected to last for a continuous period of 12 months</label>
                         </li>
+                    
                     </ul>
 
                     <!-- checkbox responses -->
                     <div class="alert alert-warning" id="action-no-msg">
-                        <p>You need all of the above to be eligible for the DTC.</p>
-                        <h3>If you’re not sure you qualify</h3>
-                            <p>You may still apply even if you're not sure. We base your eligibility on your medical practitioner's assessment.</p>
+                        <h3>You need all of the above to be eligible</h3>
+                        <p>If you’re not sure you qualify, you may still apply. We base your eligibility on your medical practitioner's assessment.</p>
                     </div>
                     <div class="alert alert-success hidden provisional" id="action-msg1">
                         <h3>You may be eligible for the DTC</h3>
@@ -348,9 +362,9 @@
                         <details>
                             <summary>Which medical practitioners can certify this</summary>
                             <ul class="fa-ul">
-                                <li><span class="fas fa-check text-success fa-li"></span>Medical doctor</li>
-                                <li><span class="fas fa-check text-success fa-li"></span>Nurse practitioner</li>
-                                <li><span class="fas fa-check text-success fa-li"></span>Audiologist</li>
+                                <li><span class="fas fa-check text-success fa-li" aria-hidden="true"></span>Medical doctor</li>
+                                <li><span class="fas fa-check text-success fa-li" aria-hidden="true"></span>Nurse practitioner</li>
+                                <li><span class="fas fa-check text-success fa-li" aria-hidden="true"></span>Audiologist</li>
                             </ul>
                         </details>
 
@@ -358,11 +372,11 @@
                     </div>
                 </section>
 
-		    <h3>If you do not meet the criteria</h3>
-               <p>If your impairment does not meet the eligibility criteria for a marked restriction, you may be eligible under the cumulative effect of significant limitations, which combines <strong>2 less severe impairments</strong>.</p>
+                <h3>If you do not meet the criteria</h3>
+                <p>If your impairment does not meet the eligibility criteria for a marked restriction, you may be eligible under the cumulative effect of significant limitations, which combines <strong>2 less severe impairments</strong>.</p>
 
-<p>For details:  <a href="cumulative.html">Cumulative effect</a></p>
-		    
+                <p>For details: <a href="cumulative.html">Cumulative effect</a></p>
+
                 <!-- pagination -->
                 <nav role="navigation" class="mrgn-bttm-lg mrgn-tp-lg">
                     <h3 class="wb-inv">Section navigation</h3>
@@ -384,6 +398,7 @@
                 showFeedback: true,
                 showShare: true
             });
+
         </script>
     </main>
     <div id="def-footer"> </div>
@@ -394,10 +409,12 @@
             showFooter: true,
             showFeatures: true
         });
+
     </script>
     <!-- Write closure template -->
     <script type="text/javascript">
         document.write(wet.builder.refFooter({}));
+
     </script>
     <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
     <!--script below adds the skip to section navigation at top of page when .gcnav class exists //-->
@@ -412,7 +429,10 @@
                 $("#action-no-msg").removeClass("hidden").addClass("visible");
             }
         })
+
     </script>
 
     <script src="../js/topmenu.js"></script>
-</body></html>
+</body>
+
+</html>
