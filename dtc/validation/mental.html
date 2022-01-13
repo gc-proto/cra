@@ -165,8 +165,14 @@
             width: 9px;
             transform: translate(-185%, 40%) rotate(45deg);
         }
-    </style>
-    <style>
+ 
+        a[tabindex="0"]:focus {
+            background-color: #F0F0F0;
+            border-radius: 4px;
+            padding: 2px;
+            margin-left: -2px;
+        }
+        
         .checkbox-lg label {
             font-size: 1em;
         }
@@ -216,7 +222,7 @@
                         <li>
                             <a href="eligible.html">Who is eligible</a>
                             <ul class="gcnav-steps noline">
-                                <li class="active"><a aria-current="page">Mental functions eligibility</a></li>
+                                <li class="active"><a aria-current="page" tabindex="0">Mental functions eligibility</a></li>
                                 <li><a href="cumulative.html">Cumulative effect eligibility</a></li>
                             </ul>
                         </li>

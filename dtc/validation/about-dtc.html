@@ -165,6 +165,13 @@
         .checkbox-lg label {
             font-size: 1em;
         }
+        
+        a[tabindex="0"]:focus {
+            background-color: #F0F0F0;
+            border-radius: 4px;
+            padding: 2px;
+            margin-left: -2px;
+        }
 
     </style>
 
@@ -208,7 +215,7 @@
                 <nav aria-label="Section menu">
                     <h2 id="gcnav-menu-header">Sections</h2>
                     <ul class="gcnav-steps">
-                        <li class="active"><a aria-current="page">What is the DTC</a></li>
+                        <li class="active"><a aria-current="page" tabindex="0">What is the DTC</a></li>
                         <li><a href="eligible.html">Who is eligible</a></li>
                         <li><a href="how-apply.html">How to apply</a></li>
                         <li><a href="review.html">Our review and decision</a></li>

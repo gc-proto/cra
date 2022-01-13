@@ -167,6 +167,13 @@
         .checkbox-lg label {
             font-size: 1em;
         }
+        
+        a[tabindex="0"]:focus {
+            background-color: #F0F0F0;
+            border-radius: 4px;
+            padding: 2px;
+            margin-left: -2px;
+        }
     </style>
 
 
@@ -210,7 +217,7 @@
                     <ul class="gcnav-steps">
                         <li><a href="about-dtc.html">What is the DTC</a></li>
                         <li><a href="eligible.html">Who is eligible</a></li>
-                        <li class="active"><a aria-current="page">How to apply</a></li>
+                        <li class="active"><a aria-current="page" tabindex="0">How to apply</a></li>
                         <li><a href="review.html">Our review and decision</a></li>
                         <li><a href="claiming.html">Claiming the credit</a></li>
                         <li><a href="contact.html">Contact the CRA</a></li>
