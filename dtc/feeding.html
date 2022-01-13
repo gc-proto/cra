@@ -165,6 +165,13 @@
             width: 9px;
             transform: translate(-185%, 40%) rotate(45deg);
         }
+
+        a[tabindex="0"]:focus {
+            background-color: #F0F0F0;
+            border-radius: 4px;
+            padding: 2px;
+            margin-left: -2px;
+        }
     </style>
     <style>
         .checkbox-lg label {
@@ -216,9 +223,9 @@
                         <li>
                             <a href="eligible.html">Who is eligible</a>
                             <ul class="gcnav-steps noline">
-                                <li class="active"><a aria-current="page">Feeding eligibility</a></li>
+                               <li class="active"><a aria-current="page" tabindex="0">Feeding eligibility</a></li>
                                <li><a href="cumulative.html">Cumulative effect eligibility</a></li>
-                            </ul>
+                           </ul>
                         </li>
                         <li><a href="how-apply.html">How to apply</a></li>
                         <li><a href="review.html">Our review and decision</a></li>
@@ -323,13 +330,13 @@
 
                     <h3 class="panel-title mrgn-bttm-md">Olga lost a limb and needs help to eat</h3>
                     <div class="mrgn-lft-sm mrgn-rght-md">
-                            <img src="images/olga.jpeg" class="pull-left mrgn-tp-sm mrgn-rght-md">
-                            <p>Olga lives by herself.</p>
-                            <p>Last year, she had an upper limb amputation. Olga now has a caregiver to feed her and to help her with her personal tasks.</p>
-                            <p>Olga applied for the DTC. As a result of the information provided by the medical practitioner on the application form, she is now eligible for the tax credit because she is not able to feed herself.</p>
-                            <!--<p>Being eligible for the DTC also means Olga may be eligible for other government programs for persons with disabilities.</p>-->
-                            
-                        </div>
+                        <img src="images/olga.jpeg" class="pull-left mrgn-tp-sm mrgn-rght-md">
+                        <p>Olga lives by herself.</p>
+                        <p>Last year, she had an upper limb amputation. Olga now has a caregiver to feed her and to help her with her personal tasks.</p>
+                        <p>Olga applied for the DTC. As a result of the information provided by the medical practitioner on the application form, she is now eligible for the tax credit because she is not able to feed herself.</p>
+                        <!--<p>Being eligible for the DTC also means Olga may be eligible for other government programs for persons with disabilities.</p>-->
+
+                    </div>
                 </details>
 
 
@@ -341,8 +348,8 @@
 
 
                 <h2 id="h_2">Eligibility criteria checklist</h2>
-               <p>You <strong>must meet all 3 criteria</strong> below. Check the boxes that apply.</p>
-             
+                <p>You <strong>must meet all 3 criteria</strong> below. Check the boxes that apply.</p>
+
 
                 <section>
                     <ul class="checkbox-lg checkbox-zebra">
@@ -360,7 +367,7 @@
                         </li>
                     </ul>
 
-                    
+
                     <!-- checkbox responses -->
                     <div class="alert alert-info" id="action-no-msg">
                         <h3>If you’re not sure you qualify</h3>
@@ -384,11 +391,11 @@
 
                     </div>
                 </section>
-               
-               <h3>If you do not meet the criteria</h3>
-               <p>If your impairment does not meet the eligibility criteria for a marked restriction, you may be eligible under the cumulative effect of significant limitations, which combines <strong>2 less severe impairments</strong>.</p>
 
-<p>For details:  <a href="cumulative.html">Cumulative effect</a></p>
+                <h3>If you do not meet the criteria</h3>
+                <p>If your impairment does not meet the eligibility criteria for a marked restriction, you may be eligible under the cumulative effect of significant limitations, which combines <strong>2 less severe impairments</strong>.</p>
+
+                <p>For details: <a href="cumulative.html">Cumulative effect</a></p>
 
                 <!-- pagination -->
                 <nav role="navigation" class="mrgn-bttm-lg mrgn-tp-lg">
@@ -435,14 +442,14 @@
                 $("#action-no-msg").addClass("hidden").removeClass("visible");
                 $("#action-msg2").addClass("hidden").removeClass("visible");
             }
-                
+
             if ($('.action-checkbox:checked').length !== $('.action-checkbox').length) {
                 $("#action-msg1").addClass("hidden").removeClass("visible");
                 $("#action-no-msg").addClass("hidden").removeClass("visible");
                 $("#action-msg2").removeClass("hidden").addClass("visible");
             }
-            
-             if ($('.action-checkbox:checked').length == 0 ) {
+
+            if ($('.action-checkbox:checked').length == 0) {
                 $("#action-msg1").addClass("hidden").removeClass("visible");
                 $("#action-no-msg").removeClass("hidden").addClass("visible");
                 $("#action-msg2").addClass("hidden").removeClass("visible");
