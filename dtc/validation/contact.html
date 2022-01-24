@@ -235,23 +235,25 @@
                 <!-- <h2>General assistance</h2>-->
 
                 <dl class="dl-horizontal brdr-0">
-                    <dt>
-                        <h2 class="h3 mrgn-tp-0">Online</h2>
-                    </dt>
+			<dt><h2 class="h3 mrgn-tp-0">Online</h2></dt>
                     <dd>
                         <p>Use your CRA My Account to:</p>
                         <ul>
                             <li>get tax credit information</li>
-                            <li>send new documentation using "Submit&nbsp;documents" in the top right corner</li>
+                            <li>send new documentation using "Submit&nbsp;documents"</li>
                         </ul>
 
                         <div class="mrgn-tp-md"> <a class="btn btn-call-to-action" href="404.html">Sign in to My Account</a> <a href="404.html" class="mrgn-lft-md">Register</a> </div>
                     </dd>
-                    <dt>
-                        <h2 class="h3 mrgn-tp-0">By phone</h2>
-                    </dt>
+			<dt><h2 class="h3 mrgn-tp-0">By phone</h2></dt>
                     <dd>
-                       
+                        <!--
+        <div class="alert alert-info">
+          <h2 class="h4">Wait times</h2>
+          <p>You may experience longer than usual wait times to speak to an agent due to high call volumes. Thank you for your patience and understanding during this time.</p>
+        </div>
+			-->
+
                         <p>Call the CRA by phone or TTY if you have:</p>
                         <ul>
                             <li>enquiries about the DTC</li>
@@ -269,22 +271,19 @@
                                     <li>complete address</li>
                                     <li>assessed tax return, notice of assessment or reassessment, other tax document, or be signed in to CRA My Account</li>
                                 </ul>
-                                <p>If you’re calling on behalf of someone else, we will need to get their authorization and confirm their identity when you call.</p>
-                                <p>For details: <a href="404.html">Authorize a representative</a></p>
+				    <p>If you’re calling on behalf of someone else, they must be present on the call to give their consent, or you must be authorized to call on their behalf.</p>
+				    <p>For details: <a href="404.html">Authorize a representative</a></p>
                             </dd>
                             <!-- Telephone number -->
                             <dt><strong>Telephone number</strong></dt>
                             <dd><a href="tel:18009598281" class="hidden-md hidden-lg nowrap"><span class="fas fa-phone fa-flip-horizontal" aria-hidden="true"></span> 1-800-959-8281<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><span class="fas fa-phone fa-flip-horizontal" aria-hidden="true"></span>1-800-959-8281</strong></dd>
-
+                            
                             <!-- TTY Number -->
-                            <dt><strong>TTY number</strong></dt>
-                            <dd>
-                                <p>If you use a teletypewriter:<br>
-                                    <a href="tel:18006650354" class="hidden-md hidden-lg nowrap"><span class="fas fa-tty fa-flip-horizontal" aria-hidden="true"></span>1-800-665-0354<span class="wb-inv"> (opens up tty application)</span></a><strong class="hidden-xs hidden-sm nowrap"><span class="fas fa-tty fa-flip-horizontal" aria-hidden="true"></span> 1-800-665-0354</strong>
-                                </p>
+                              <dt><strong>TTY number</strong></dt>
+                            <dd><p>If you use a teletypewriter:<br>
+                                 <a href="tel:18006650354" class="hidden-md hidden-lg nowrap"><span class="fas fa-tty fa-flip-horizontal" aria-hidden="true"></span>1-800-665-0354<span class="wb-inv"> (opens up tty application)</span></a><strong class="hidden-xs hidden-sm nowrap"><span class="fas fa-tty fa-flip-horizontal" aria-hidden="true"></span> 1-800-665-0354</strong></p>
                                 <p>If you use an operator-assisted relay service, call:<br>
-                                    <a href="tel:18009598281" class="hidden-md hidden-lg nowrap"><span class="fas fa-phone fa-flip-horizontal" aria-hidden="true"></span> 1-800-959-8281<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><span class="fas fa-phone fa-flip-horizontal" aria-hidden="true"></span>1-800-959-8281</strong>
-                                </p>
+				    <a href="tel:18009598281" class="hidden-md hidden-lg nowrap"><span class="fas fa-phone fa-flip-horizontal" aria-hidden="true"></span> 1-800-959-8281<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><span class="fas fa-phone fa-flip-horizontal" aria-hidden="true"></span>1-800-959-8281</strong></p>
                             </dd>
                             <dt>Hours</dt>
                             <dd>
@@ -312,21 +311,19 @@
                                             <td>Closed</td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2">Closed on <a href="404.html">public holidays</a></td>
+                                            <td colspan="2">Closed on <a href="/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            </dd> 
+                            </dd> <!-- telephone numnber ends -->
                         </dl>
                     </dd>
-                    <dt>
-                        <h2 class="h3 mrgn-tp-0" id="by-mail">By mail</h2>
-                    </dt>
+			<dt><h2 class="h3 mrgn-tp-0" id="by-mail">By mail</h2></dt>
                     <dd>
                         <dl class="dl-horizontal brdr-0">
 
                             <p>Send documentation to one of the tax centres below:</p>
-                            <!-- Jonquière -->
+                                  <!-- Jonquière -->
                             <details>
                                 <summary>Jonquière Tax Centre</summary>
 
@@ -337,7 +334,7 @@
                                 <!-- The button used to copy the text -->
                                 <!--<a class="btn btn-default" id="addressJonq" onclick="copyToClipboard(document.getElementById('addressJonq').innerHTML)">Copy address</a>-->
                             </details>
-                            <!-- Subdury -->
+				<!-- Subdury -->
                             <details>
                                 <summary>Sudbury Tax Centre</summary>
 
@@ -349,8 +346,8 @@
                                 <!--<a class="btn btn-default" id="addressSud" onclick="copyToClipboard(document.getElementById('addressSud').innerHTML)">Copy address</a>-->
 
                             </details>
-
-                            <!-- Winnipeg -->
+				
+				<!-- Winnipeg -->
                             <details>
                                 <summary>Winnipeg Tax Centre</summary>
                                 <p>Winnipeg Tax Centre<br>
@@ -363,7 +360,7 @@
                         </dl>
                     </dd>
                 </dl>
-            </section>
+                </section>
             <!--<aside class="hidden-md hidden-lg" data-ajax-replace="index.html #gcnav-side>"> </aside>-->
 
         </div>
