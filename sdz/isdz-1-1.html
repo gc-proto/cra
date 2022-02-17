@@ -83,16 +83,7 @@
       </div>
     </div>
   </div>
-  <nav role="navigation" id="wb-bc" property="breadcrumb">
-    <h2>You are here:</h2>
-    <div class="container">
-      <div class="row mrgn-tp-md">
-        <ol class="breadcrumb">
-          <a href="isdz-1ac.html">My Drop Zones</a>
-        </ol>
-      </div>
-    </div>
-  </nav>
+
   <span data-trgt="mb-pnl" class="wb-menu hide"></span></header>
 
 <!-- SEARCH CONTENT BEGINS / CONTENU RECHERCHE COMMENCE -->
@@ -101,17 +92,17 @@
 <h2>Welcome, abc123, to the Secure Drop Zone Manager</h2>
 <div class="row mrgn-tp-lg">
 <div class="col-md-6"><a href="#asdz1" aria-controls="centred-popup" class="wb-lbx" role="button">About Secure Drop Zone</a></div>
-<div class="col-md-6 text-right"><a href="isdz-2.html" class="btn btn-primary" style="background-color: #26374a;">Create Secure Drop Zone</a></div>
+<div class="col-md-6 text-right"><a href="isdz-2.html" class="btn btn-primary" style="background-color: #26374a;">Create secure drop zone</a></div>
 </div>
 
 <section id="asdz1" class="mfp-hide modal-dialog modal-content overlay-def">
   <header class="modal-header">
-    <h2 class="modal-title">About Secure Drop Zoneh</h2>
+    <h2 class="modal-title">About secure drop zone</h2>
   </header>
   <div class="modal-body">
-    <p>The Drop Zone Management is an application for CRA users to manage one time, adhoc communications with external entities to either receive, or deliver documents.</p>
-    <p>Creating a Drop Zone will enable you to receive/deliver documents from/to an external user.</p>
-    <p>My Drop Zones will enable you to view all the Drop Zones that you have created.</p>
+    <p>Secure drop zone allows CRA employees to create a temporary drop zone to request or exchange documents with clients in a secure environment.</p>
+    <p>The "Active drop zones" tab contains drop zones created by you which are still open to your clients.</p>
+    <p>The "Inactive drop zones"h tab contains inactive drop zones created by you which have been closed, have expired, or have been completed. </p>
   </div>
 </section>
 
@@ -120,11 +111,21 @@
     background-color: #295376; 
     padding: 10px; 
     color: white;
+    border-bottom: 1px solid;
+    border-color: #295376;
   }
   .mdz-na {
     background-color: #e4eef2; 
     padding: 10px; 
     color: black;
+    border-bottom: 1px solid;
+    border-color: #295376;
+  }
+  .mdz {
+    padding: 10px; 
+    color: black;
+    border-bottom: 1px solid;
+    border-color: #295376;
   }
   .mdz-na a:link {
     text-decoration: none;
@@ -141,7 +142,7 @@
 <div class="list-inline mrgn-tp-lg">
   <div class="col-md-2 mdz-na text-center"><a href="isdz-1.html"><strong>My Drop Zones</strong></a></div>
   <div class="col-md-2 mdz-a text-center"><strong>Historic Drop Zone</strong></div>
-  <div class="col-md-8 mdz-na">&nbsp;</div>
+  <div class="col-md-8 mdz">&nbsp;</div>
 </div>
 
 <div class="clearfix"></div>
@@ -152,15 +153,15 @@
   }
 </style>
 
-<div class="mrgn-bttm-lg">
-<h3>Historic Drop Zones</h3>
+<div class="mrgn-bttm-lg mrgn-tp-lg">
+
 <details>
-  <summary>Filter active Drop Zones</summary>
+  <summary>Filter active drop zones</summary>
   <form role="form" class="form-inline mrgn-tp-md">
       <div class="form-group">
       <label for="searchbydd"><span class="field-name">Search by</span></label>
       <select class="form-control" id="searchbydd" name="searchbydd">
-        <option label="Select filter type"></option>
+        <option label="Select category"></option>
         <option value="value1">Dropzone number</option>
         <option value="value1">Reference number</option>
         <option value="value1">Contact name</option>
@@ -172,38 +173,23 @@
       </div>
       <div class="form-group">
       <label for="searchby"><span class="wb-inv">Search by search term</span> &nbsp; </label>
-      <input class="form-control" id="searchby" name="searchby" type="text" />
-    </div>
-  </form>
-    <form role="form" class="form-inline mrgn-tp-md">
-      <div class="form-group">
-      <label for="searchbydd"><span class="field-name">Filter by</span></label>
-      <select class="form-control" id="searchbydd" name="searchbydd">
-        <option label="Select filter type"></option>
-        <option value="value1">Dropzone number</option>
-        <option value="value1">Reference number</option>
-        <option value="value1">Contact name</option>
-        <option value="value1">Contact email</option>
-        <option value="value1">Contact phone</option>
-        <option value="value1">Client identifier</option>
-        <option value="value1">Detail</option>
-      </select>
-      </div>
-      <div class="form-group">
-      <label for="searchby"><span class="wb-inv">Search by filter term</span> &nbsp; </label>
-      <input class="form-control" id="searchby" name="searchby" type="text" />
+      <input class="form-control" id="searchby" name="searchby" type="text" pattern="934981340985048549" />
     </div>
   </form>
     <form role="form" class="form-inline mrgn-tp-md">
       <div class="form-group">
         <label for="startdate">Start date<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
-        <input class="form-control" type="date" id="startdate" name="startdate" min="2013-03-27" max="2013-05-07" />
+        <input class="form-control" type="date" id="startdate" name="startdate" min="2013-03-27" max="2029-12-07" />
       </div>
       <div class="form-group">
         <label for="enddate">End date<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
-        <input class="form-control" type="date" id="enddate" name="enddate" min="2013-03-27" max="2016-05-07" />
+        <input class="form-control" type="date" id="enddate" name="enddate" min="2013-03-27" max="2066-05-07" />
       </div>
   </form>
+
+<a href="#" class="btn btn-primary mrgn-tp-md" style="background-color: #26374a;">Apply filters</a>
+<a href="#" class="btn btn-default mrgn-tp-md">Clear filters</a>
+
 </details>
 
 </div>  
@@ -213,10 +199,10 @@
     <h2 class="modal-title">Status</h2>
   </header>
   <div class="modal-body">
-    <p>There are three statuses for Historic Drop Zones:</p>
-    <p><strong>Closed:</strong> Secure Drop Zones that have been closed by a manager or supervisor.</p>
-    <p><strong><span class="text-danger">Expired:</span></strong> Secure Drop Zones that expired without the client taking any action.</p>
-    <p><strong><span class="text-success">Completed:</span></strong> Secure Drop Zones that have been successfully completed.</p>
+    <p>Inactive drop zones have three possible statuses:</p>
+    <p><strong>Closed:</strong> drop zones that were closed by a manager or supervisor.</p>
+    <p><strong><span class="text-danger">Expired:</span></strong> drop zones that expired without the client taking action.</p>
+    <p><strong><span class="text-success">Completed:</span></strong> drop zones where the document transfers were successfully completed.</p>
   </div>
 </section>
 
