@@ -122,9 +122,7 @@
     padding: 40px 16px;    
     }    
 
-.popup-modal-dismiss {
-    display: none;
-}    
+
 
 input[type=checkbox] {
     transform: scale(2);
@@ -209,7 +207,7 @@ input[type=checkbox] {
 
 <h3>Client information</h3>
 
-<hr class="col-md-8">
+<hr class="mrgn-tp-0 col-md-8">
 
 <div class="row">
 
@@ -220,7 +218,7 @@ input[type=checkbox] {
 <form action="#" method="get" id="sendrequest">
 
 <div class="form-group">
-  <label for="clientname"><span class="field-name">Client name (First and last name):</span></label>
+  <label for="clientname"><span class="field-name">Client name (first and last name):</span></label>
   <input class="form-control" id="clientname" name="clientname" type="text" autocomplete="given-name" data-rule-minlength="2" />
 </div>
 
@@ -234,8 +232,20 @@ input[type=checkbox] {
   <input class="form-control" id="clientphone" name="clientphone" type="tel" autocomplete="tel" required="required" data-rule-phoneUS="true" />
 </div>
 
+<section id="references" class="mfp-hide modal-dialog modal-content overlay-def">
+  <header class="modal-header">
+      <h2 class="modal-title">Reference number</h2>
+  </header>  
+  <div class="modal-body">
+    <p>Use the reference number appropriate for your program area. Your client will not be able to see this information.</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary popup-modal-dismiss" type="button">Close</button>
+  </div>  
+</section>
+
 <div class="form-group">
-  <label for="refnumber"><span class="field-name">Reference number:</span></label>
+  <label for="refnumber"><span class="field-name">Reference number:</span> <a href="#references" aria-controls="centred-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign" style="color: black"><span class="wb-inv">Question icon - click to show what a reference is</span></span></a></label>
   <input class="form-control" id="refnumber" name="refnumber" type="text" data-rule-minlength="2" />
 </div>
 
@@ -277,12 +287,14 @@ function showfield(name){
 </div>
 
 <div class="form-group">
-<label for="note"><span class="field-name">Note to client (your client will see this):</span></label>
-<textarea class="form-control" rows="2" style="min-width: 100%" placeholder="Here you can list the documents your client needs to upload or download and other instructions you deem necessary"></textarea>
+<label for="note"><span class="field-name">Instructions for your client (they will be able to see this inside the Secure Drop Zone)</span></label>
+<textarea class="form-control" rows="3" style="min-width: 100%" placeholder="- Download the available files for your records
+- Upload all business receipts for the year 2020
+- Verify and submit your files"></textarea>
 </div>
 
 <div class="form-group">
-<label for="uploaded"><span class="field-name">Files</span></label>
+<label for="uploaded"><span class="field-name h3">Files</span></label>
 <hr class="mrgn-tp-0">
 
 <p>Acceptable file types <a href="#filetypes" aria-controls="centred-popup" class="wb-lbx" role="button"><span class="glyphicon glyphicon-question-sign" style="color: black"><span class="wb-inv">Question icon - click to show what status' are</span></span></a></p>
@@ -342,18 +354,28 @@ function showfield(name){
 
 </form>
 
-  <form class="form-inline mrgn-tp-md" role="form">
-  <div class="form-group">
+<style>
+  input, label {
+    display:block;
+}
+</style>
+
+  <form class="mrgn-tp-md" role="form">
+  <div class="form-group" style="float:left;margin-right:20px;">
     <label for="doclass"><span class="field-name">Document class</span></label>
-    <select id="efax" name="efax">
+    <select id="efax" name="efax" style="padding: 4px 5px">
       <option value="efax">eFax and Drop Zone</option>
     </select>
   </div>    
-  <div class="form-group">
+  <div class="form-group" style="float:left;margin-right:20px;">
     <label for="docid"><span class="field-name">Document ID</span></label>
     <input id="docid" name="efax" type="text" pattern="012345678912345678" />
   </div>
-  <button type="button" class="btn btn-default btn-sm" id="search" disabled="disabled">Search</button>
+  <div class="form-group" style="float:left;margin-right:20px;">
+  <label for="search"><span class="field-name wb-inv" style>Search</span> &nbsp;</label>
+    <a href="#" type="button" class="btn btn-default" id="search" disabled="disabled">Search</a>
+  </div>  
+<br style="clear:both;" />
 
 <section id="filesadded" class="hidden"> 
   <table class="table">
@@ -380,6 +402,7 @@ function showfield(name){
 </form>  
 </div>
 <div class="modal-footer">
+<button class="hidden btn btn-primary popup-modal-dismiss" type="button">Close</button>
 <button class="btn btn-default" type="button">Cancel</button><a href="isdz-2-1.html" id="addfile" class="btn btn-primary" type="button" disabled>Add file</a>
 </div>
 </section>
