@@ -254,27 +254,31 @@
         <p class="mrgn-bttm-0"><a href="#video-player1" data-wb-doaction='[{"action": "removeClass", "source": "#video-player1", "class": "hidden" }, {"action": "ajax", "url": "video-paystub.html#paystub-video", "container": "#vp1", "trigger": true}]' class="btn btn-primary btn-lg stretched-link"><span class="far fa-play-circle fa-lg"></span> Launch video<span class="wb-inv">: Cumulative effect</span></a></p>
       </figcaption>
     </figure>
-    <details class="mrgn-lft-0 mrgn-tp-0 small">
-      <summary>What marked restriction means</summary>
-      <ul>
-        <li>You are unable to do the activity or it takes 3 times longer, even with the use of appropriate therapy, medication, and devices</li>
-        <li>This restriction exists all or almost all of the time (generally at least 90%)</li>
-        <li>The restriction has lasted or is expected to last for 12 consecutive months</li>
-      </ul>
-    </details>
-    <details class="mrgn-lft-0 small">
-      <summary>What significant limitation means</summary>
-      <ul>
-        <li>The 2 or more limitations exist together all or almost all of the time (generally at least 90%)</li>
-        <li>If the limitations were combined, their cumulative effect (combined impact) would be <strong>both</strong> of the following:
+
+      <details class="hidden-xs hidden-sm mrgn-lft-0 mrgn-tp-0 small">
+          <section id="ex-hide-1">
+              <summary>What marked restriction means</summary>
+              <ul>
+                  <li>You are unable to do the activity or it takes 3 times longer, even with the use of appropriate therapy, medication, and devices</li>
+                  <li>This restriction exists all or almost all of the time (generally at least 90%)</li>
+                  <li>The restriction has lasted or is expected to last for 12 consecutive months</li>
+              </ul>
+          </section>
+      </details>
+
+      <details id="ex-hide-2" class="hidden-xs hidden-sm mrgn-lft-0 small">
+          <summary>What significant limitation means</summary>
           <ul>
-            <li>equivalent to being unable, or taking 3 times longer, to do the activity of 1 of the categories</li>
-            <li>present all or almost all of the time (generally at least 90%), even with the use of appropriate therapy, medication, and devices</li>
+              <li>The 2 or more limitations exist together all or almost all of the time (generally at least 90%)</li>
+              <li>If the limitations were combined, their cumulative effect (combined impact) would be <strong>both</strong> of the following:
+                  <ul>
+                      <li>equivalent to being unable, or taking 3 times longer, to do the activity of 1 of the categories</li>
+                      <li>present all or almost all of the time (generally at least 90%), even with the use of appropriate therapy, medication, and devices</li>
+                  </ul>
+              </li>
           </ul>
-        </li>
-      </ul>
-    </details>
-  </div>
+      </details>
+    </div>
 </div>
 <div aria-live="polite">
   <figure class="wb-mltmd hidden" id="video-player1">
@@ -313,6 +317,13 @@
     </figcaption>
   </figure>
 </div>
+                
+<!-- expand hides AJAX -->
+
+    <details class="hidden-md hidden-lg hidden-xl" data-ajax-replace="cumulative.html #ex-hide-1"> </details>
+    <details class="hidden-md hidden-lg hidden-xl" data-ajax-replace="cumulative.html #ex-hide-2"> </details>
+        
+                
 <p>Review the criteria for marked restrictions in the categories below. If you have limitations in 2 or more of these categories, you may <strong>combine their effects to be equivalent</strong> to 1 marked restriction:</p>
 <ul class="fa-ul colcount-sm-2">
   <li class="small"> <span aria-hidden="true" class="fas fa-check text-success fa-li"></span> <a href="walking.html">Walking</a> </li>
