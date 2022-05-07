@@ -255,8 +255,8 @@
       </figcaption>
     </figure>
 
-      <!-- Expand hide 1 - hidden xs, sm  -->
-      <details id="ex-hide-1" class="hidden-xs mrgn-lft-0 mrgn-tp-0 small">
+      <!-- Expand hide 1 -->
+      <details id="ex-hide-1" class="mrgn-lft-0 mrgn-tp-0 small">
               <summary>What marked restriction means</summary>
               <ul>
                   <li>You are unable to do the activity or it takes 3 times longer, even with the use of appropriate therapy, medication, and devices</li>
@@ -265,8 +265,9 @@
               </ul>
       </details>
       
-     <!-- Expand hide 2 - hidden xs, sm  -->
-      <details id="ex-hide-2" class="hidden-xs mrgn-lft-0 small">
+     <!-- Expand hide 2 -->
+     <section class="hidden-xs hidden-sm">
+      <details id="ex-hide-2" class="mrgn-lft-0 small">
           <summary>What significant limitation means</summary>
           <ul>
               <li>The 2 or more limitations exist together all or almost all of the time (generally at least 90%)</li>
@@ -278,7 +279,7 @@
               </li>
           </ul>
       </details>
-      
+      </section>
     </div>
 </div>
 <div aria-live="polite">
@@ -319,29 +320,12 @@
   </figure>
 </div>
                 
-<!-- Expand hide 1 - hidden-md hidden-lg hidden-xl  -->
-      <details id="ex-hide-1" class="hidden-sm hidden-md hidden-lg hidden-xl mrgn-lft-0 mrgn-tp-0 small">
-              <summary>What marked restriction means</summary>
-              <ul>
-                  <li>You are unable to do the activity or it takes 3 times longer, even with the use of appropriate therapy, medication, and devices</li>
-                  <li>This restriction exists all or almost all of the time (generally at least 90%)</li>
-                  <li>The restriction has lasted or is expected to last for 12 consecutive months</li>
-              </ul>
-      </details>
-      
-     <!-- Expand hide 2 - hidden-md hidden-lg hidden-xl  -->
-      <details id="ex-hide-2" class="hidden-sm hidden-md hidden-lg hidden-xl mrgn-lft-0 small">
-          <summary>What significant limitation means</summary>
-          <ul>
-              <li>The 2 or more limitations exist together all or almost all of the time (generally at least 90%)</li>
-              <li>If the limitations were combined, their cumulative effect (combined impact) would be <strong>both</strong> of the following:
-                  <ul>
-                      <li>equivalent to being unable, or taking 3 times longer, to do the activity of 1 of the categories</li>
-                      <li>present all or almost all of the time (generally at least 90%), even with the use of appropriate therapy, medication, and devices</li>
-                  </ul>
-              </li>
-          </ul>
-      </details>
+<!-- expand hides AJAX -->
+
+    <section class="" data-ajax-replace="http://test.canada.ca/cra/dtc/cumulative.html #ex-hide-1"> </section>
+            
+        
+    <section class="visible-sm visible-xs" data-ajax-after="http://test.canada.ca/cra/dtc/cumulative.html #ex-hide-2"> </section>
         
                 
 <p>Review the criteria for marked restrictions in the categories below. If you have limitations in 2 or more of these categories, you may <strong>combine their effects to be equivalent</strong> to 1 marked restriction:</p>
