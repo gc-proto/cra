@@ -14,6 +14,8 @@
 <span id="business-11-hdr">PartXIII – non-resident withholding tax (Business)</span>
 <span id="business-12-hdr">Nova Scotia Worker's Compensation Board (NSWCB)</span>
 
+<p id="salary">The term salary or wages is defined in the ITA and means income from an office or employment. Salary or wages generally includes any expenditure made in respect of a <a href="/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/glossary.html#tbnfts">taxable benefit</a> as well as vacation pay, statutory holiday pay, sick leave pay, pay in lieu of termination notice, bonuses, tips and gratuities, honorariums, director's fees, management fees and commissions.</p>
+
 
 
 
