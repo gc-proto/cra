@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
-   <head>
+
+<head>
     <meta charset="utf-8">
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
     <title>Contact the CRA – SR&amp;ED Tax Incentive Program - Canada.ca</title>
@@ -17,9 +18,153 @@
     <!-- Write closure template -->
     <script type="text/javascript">
         document.write(wet.builder.refTop({}));
+
     </script>
     <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
     <link href="../css/custom.css" rel="stylesheet">
+    <style type="text/css">
+        div.hidden-action {
+            transform: scaleX(0);
+            overflow: hidden;
+            display: none;
+        }
+
+        div.visible-action {
+            transform: scaleX(1);
+            display: visible;
+        }
+
+        /*Checkbox/Fieldflow radio input sizing,positioning*/
+        .checkbox-zebra>li:nth-child(2n+1) {
+            background-color: #f5f5f5;
+            margin-left: -50px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            padding-left: 50px;
+        }
+
+        .checkbox-zebra [role="checkbox"]::before {
+            background-color: #fff;
+        }
+
+        .std-blt {
+            font-size: 20px;
+            line-height: 1.65em;
+        }
+
+        .std-blt {
+            list-style-type: disc;
+        }
+
+        .std-blt li label {
+            display: block;
+            padding-left: 0px;
+        }
+
+        /********
+        ********
+        ** New checklist example
+        ** May 15, 2020
+        ** Replacing checkkboxes with clickable divs that convey a sense of success to the user
+        ********
+        ********/
+        /* One input per line */
+        .provisional [role="checkbox"] {
+            /* (0,2,0) */
+            cursor: pointer;
+            display: inline-block;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .provisional [role="checkbox"]::before,
+        .provisional [role="checkbox"]::after {
+            /* (0,2,1) */
+            content: "";
+            left: 0;
+            position: absolute;
+            top: 0;
+            transform: translate(-100%, 0%);
+        }
+
+        .provisional .wb-checklist.wb-checklist-sm {
+            /* (0,3,0) */
+            font-size: 17px;
+        }
+
+        /* the basic, unchecked style */
+        .provisional [role="checkbox"]::before {
+            /* (0,2,1) */
+            border: 4px solid #fff;
+            box-shadow: 0 0 0 2px #000;
+            display: inline-block;
+            height: 36px;
+            width: 36px;
+        }
+
+        .provisional .wb-checklist-sm [role="checkbox"]::before {
+            /* (0,3,1) */
+            border-width: 3px;
+            height: 24px;
+            transform: translate(-100%, 20%);
+            width: 24px;
+        }
+
+        /* hover styling */
+        .provisional [role="checkbox"][aria-checked="false"]:hover::before {
+            /* (0,3,1) */
+            background-image: linear-gradient(to bottom, hsl(10, 0%, 90%), hsl(10, 0%, 100%) 50%);
+        }
+
+        /* focus styling */
+        .provisional [role="checkbox"]:focus {
+            /* (0,3,0) */
+            outline: none;
+        }
+
+        .provisional [role="checkbox"]:focus::before {
+            /* (0,3,2) */
+            box-shadow: 0 0 0 2px #000, 0 0 8px 4px rgb(59, 153, 252);
+        }
+
+        /* the checked style using the [aria-checked='true'] pseudo class and aria-checked=true attribute */
+        .provisional [role="checkbox"][aria-checked="true"]::before {
+            /* (0,3,1) */
+            background-color: #318000;
+            border: none;
+        }
+
+        .provisional [role="checkbox"][aria-checked="true"]::after {
+            /* (0,3,1) */
+            border-color: white;
+            border-style: solid;
+            border-width: 0 5px 5px 0;
+            display: inline-block;
+            height: 26px;
+            width: 13px;
+            transform: translate(-185%, 10%) rotate(45deg);
+        }
+
+        .provisional .wb-checklist-sm [role="checkbox"][aria-checked="true"]::after {
+            /* (0,3,1) */
+            border-width: 0 4px 4px 0;
+            height: 16px;
+            width: 9px;
+            transform: translate(-185%, 40%) rotate(45deg);
+        }
+
+        .checkbox-lg label {
+            font-size: 1em;
+        }
+
+        a[tabindex="0"]:focus {
+            background-color: #F0F0F0;
+            border-radius: 4px;
+            padding: 2px;
+            margin-left: -2px;
+        }
+
+    </style>
 </head>
 
 <body vocab="http://schema.org/" typeof="WebPage" class="cnt-wdth-lmtd">
@@ -49,6 +194,7 @@
             siteMenu: true,
             showPreContent: true
         });
+
     </script>
     <main role="main" property="mainContentOfPage" class="container experimental">
 
@@ -67,16 +213,125 @@
                         <li><a href="#">Add text</a></li>
                     </ul>
                 </section>-->
-                <p>Intro text</p>
 
-                <section class="mrgn-bttm-lg">
-                    <h2 id="">TBA</h2>
-                    <p>text here</p>
+                <section class="gcnav-section">
+                    <dl class="dl-horizontal brdr-0">
+                        <dt>
+                            <h2 class="h3 mrgn-tp-0">Online</h2>
+                        </dt>
+                        <dd>
+                            <p>Use your CRA My Account to:</p>
+                            <ul>
+                                <li>get tax credit information</li>
+                                <li>send new documentation using "Submit&nbsp;documents"</li>
+                            </ul>
+                            <div class="mrgn-tp-md"> <a class="btn btn-call-to-action" href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html">Sign in to My Account</a> <a href="https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/account-individuals.html" class="mrgn-lft-md">Register</a> </div>
+                        </dd>
+                        <dt>
+                            <h2 class="h3 mrgn-tp-0">By phone</h2>
+                        </dt>
+                        <dd>
+                            <p>Call the CRA by phone or TTY if you have:</p>
+                            <ul>
+                                <li>enquiries about the DTC</li>
+                                <li>questions about your CRA Account</li>
+                            </ul>
+                            <dl class="dl-horizontal">
+                                <dt>Before you call</dt>
+                                <dd>
+                                    <p>To confirm your identity, you'll need your:</p>
+                                    <ul>
+                                        <li>social insurance number (SIN)</li>
+                                        <li>full name and date of birth</li>
+                                        <li>complete address</li>
+                                        <li>assessed tax return, notice of assessment or reassessment, other tax document, or be signed in to CRA My Account</li>
+                                    </ul>
+                                    <p>If you’re calling on behalf of someone else, they must be present on the call to give their consent, or you must be authorized to call on their behalf.</p>
+                                    <p>For details: <a href="https://www.canada.ca/en/revenue-agency/services/tax/representative-authorization/overview.html">Authorize a representative</a></p>
+                                </dd>
+                                <!-- Telephone number -->
+                                <dt><strong>Telephone number</strong></dt>
+                                <dd><a href="tel:18009598281" class="hidden-md hidden-lg nowrap"><span class="fas fa-phone fa-flip-horizontal" aria-hidden="true"></span> 1-800-959-8281<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><span class="fas fa-phone fa-flip-horizontal" aria-hidden="true"></span>1-800-959-8281</strong></dd>
 
-                    <h2 id="">TBA</h2>
+                                <!-- TTY Number -->
+                                <dt><strong>TTY number</strong></dt>
+                                <dd>
+                                    <p>If you use a teletypewriter:<br>
+                                        <a href="tel:18006650354" class="hidden-md hidden-lg nowrap"><span class="fas fa-tty fa-flip-horizontal" aria-hidden="true"></span>1-800-665-0354<span class="wb-inv"> (opens up tty application)</span></a><strong class="hidden-xs hidden-sm nowrap"><span class="fas fa-tty fa-flip-horizontal" aria-hidden="true"></span> 1-800-665-0354</strong>
+                                    </p>
+                                    <p>If you use an operator-assisted relay service, call:<br>
+                                        <a href="tel:18009598281" class="hidden-md hidden-lg nowrap"><span class="fas fa-phone fa-flip-horizontal" aria-hidden="true"></span> 1-800-959-8281<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><span class="fas fa-phone fa-flip-horizontal" aria-hidden="true"></span>1-800-959-8281</strong>
+                                    </p>
+                                </dd>
+                                <dt>Hours</dt>
+                                <dd>
+                                    <table class="table">
+                                        <caption class="wb-inv">
+                                            CRA’s Business Enquiries line hours
+                                        </caption>
+                                        <thead>
+                                            <tr>
+                                                <th class="wb-inv" scope="col">Day</th>
+                                                <th class="wb-inv" scope="col">Hours</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Monday to Friday</td>
+                                                <td><strong>8&nbsp;am to 8&nbsp;pm</strong> (local time)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Saturday</td>
+                                                <td><strong>9&nbsp;am to 5&nbsp;pm</strong> (local time)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sunday</td>
+                                                <td>Closed</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Closed on <a href="/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </dd>
+                                <!-- telephone numnber ends -->
 
-                    <p>text here</p>
+                            </dl>
+                        </dd>
+                        <dt>
+                            <h2 class="h3 mrgn-tp-0" id="by-mail">By mail</h2>
+                        </dt>
+                        <dd>
+                            <dl class="dl-horizontal brdr-0">
+                                <p>Send documentation to one of the tax centres below:</p>
+                                <!-- Jonquière -->
+                                <details>
+                                    <summary>Jonquière Tax Centre</summary>
+                                    <p>Jonquière Tax Centre<br>
+                                        2251 René-Lévesque Blvd<br>
+                                        Jonquière QC G7S 5J2</p>
+                                    <p class="wb-inv" id="addressJonq">Jonquière Tax Centre - 2251 René-Lévesque Blvd - Jonquière QC G7S 5J2</p>
+                                </details>
+                                <!-- Subdury -->
+                                <details>
+                                    <summary>Sudbury Tax Centre</summary>
+                                    <p>Sudbury Tax Centre<br>
+                                        Post Office Box 20000, Station A<br>
+                                        Sudbury ON P3A 5C1</p>
+                                    <p class="wb-inv" id="addressSud">Sudbury Tax Centre - Post Office Box 20000, Station A - Sudbury ON P3A 5C1</p>
+                                </details>
 
+                                <!-- Winnipeg -->
+                                <details>
+                                    <summary>Winnipeg Tax Centre</summary>
+                                    <p>Winnipeg Tax Centre<br>
+                                        Post Office Box 14000, Station Main<br>
+                                        Winnipeg MB R3C 3M2</p>
+                                    <p class="wb-inv" id="addressWinni">Winnipeg Tax Centre - Post Office Box 14000, Station Main - Winnipeg MB R3C 3M2</p>
+                                </details>
+                            </dl>
+                        </dd>
+                    </dl>
                 </section>
             </div>
 
@@ -110,6 +365,7 @@
                 showFeedback: true,
                 showShare: true
             });
+
         </script>
     </main>
     <div id="def-footer">
@@ -121,10 +377,14 @@
             showFooter: true,
             showFeatures: true
         });
+
     </script>
     <!-- Write closure template -->
     <script type="text/javascript">
         document.write(wet.builder.refFooter({}));
+
     </script>
     <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
-</body></html>
+</body>
+
+</html>
