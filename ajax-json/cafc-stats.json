@@ -1,0 +1,30 @@
+{
+    "eng":{
+        "asOfDateFraud": "As of July 31, 2022",
+        "reportsOfFraudCurrent": "52,735",
+        "reportsOfFraudPrevious": "107,031",
+        "victimsOfFraudCurrent": "33,302",
+        "victimsOfFraudPrevious": "67,970",
+        "lostToFraudCurrent": "284.7",
+        "lostToFraudPrevious": "381",
+
+        "asOfDateFunds": "As of August 1, 2022",
+        "fundsRecoveredCurrent": "1,000,186",
+        "fundsRecoveredPrevious": "3.35"
+    },
+    "fra": {
+        "asOfDateFraud": "En date du 31 juillet 2022",
+        "reportsOfFraudCurrent": "52&nbsp;735",
+        "reportsOfFraudPrevious": "107&nbsp;031",
+        "victimsOfFraudCurrent": "33&nbsp;302",
+        "victimsOfFraudPrevious": "67&nbsp;970",
+        "lostToFraudCurrent": "284,7",
+        "lostToFraudPrevious": "381",
+
+        "asOfDateFunds": "Au 1er août 2022",
+        "fundsRecoveredCurrent": "1&nbsp;000&nbsp;186",
+        "fundsRecoveredPrevious": "3,35"
+    },
+"currentYear":"2022",
+"previousYear":"2021"
+}
