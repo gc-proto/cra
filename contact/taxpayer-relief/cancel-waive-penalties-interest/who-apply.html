@@ -366,57 +366,6 @@
                   </details>
                 </div>
               </section>
-              <aside class="hidden-md hidden-lg" data-ajax-replace="index.html #gcnav-side>"> </aside>
-            </div>
-            <div id="def-preFooter"> </div>
-            <!-- Write closure template -->
-            <script type="text/javascript">
-               var defPreFooter = document.getElementById("def-preFooter");
-               defPreFooter.outerHTML = wet.builder.preFooter({
-               dateModified: "2020-03-13",
-               showPostContent: true,
-               showFeedback: true,
-               showShare: true
-               });
-            </script>
-         </main>
-         <div id="def-footer"> </div>
-         <!-- Write closure template -->
-         <script type="text/javascript">
-            var defFooter = document.getElementById("def-footer");
-            defFooter.outerHTML = wet.builder.footer({
-            showFooter: true,
-            showFeatures: true
-            });
-         </script>
-         <!-- Write closure template -->
-         <script type="text/javascript">
-            document.write(wet.builder.refFooter({
-            }));
-         </script>
-         <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
-         <!--script below adds the skip to section navigation at top of page when .gcnav class exists //-->
-         <script src="../js/topmenu.js"></script>
-
-
-                 <script>
-                    $(".action-checkbox").change(function(){
-                    if ($('.action-checkbox:checked').length == $('.action-checkbox').length) {
-                    $("#action-msg1").removeClass("hidden").addClass("visible");
-                    $("#action-no-msg").addClass("hidden").removeClass("visible");
-                    $("#ready-to-apply").removeClass("hidden").addClass("visible");
-                    }
-                    if ($('.action-checkbox:checked').length !== $('.action-checkbox').length) {
-                    $("#action-msg1").addClass("hidden").removeClass("visible");
-                    $("#action-no-msg").removeClass("hidden").addClass("visible");
-                    $("#ready-to-apply").addClass("hidden").removeClass("visible");
-
-                    }
-                    })
-
-                 </script>
-      </body>
-   </html>
               <h2 id="h-3">Options for similar situations</h2>
 
               <div class="wb-eqht row wb-init wb-eqht-inited" id="wb-auto-4">
