@@ -239,36 +239,47 @@
    <h2 id="h-2">Invalid situations</h2>
    <p>Content.</p>
   
-    <div class="row"><div class="col-md-8"><h2 id="h-3">Eligibility criteria checklist</h2>
-<p id="start-question" class="wb-inv">Start of question</p>
-<div class="wb-frmvld"><form>
-<div class="wb-fieldflow" data-wb-fieldflow="{&quot;renderas&quot;: &quot;checkbox&quot;, &quot;noForm&quot;: true, &quot;gcChckbxrdio&quot;:true, &quot;isoptional&quot;: true, &quot;reset&quot;: [{&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;#alert-B, #alert-C&quot;, &quot;class&quot;: &quot;hidden&quot;}, {&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#alert-A&quot;, &quot;class&quot;: &quot;hidden&quot;}, {&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#results&quot;, &quot;class&quot;: &quot;opt-1 opt-2 opt-3&quot;}]}"><div class="wb-fieldflow-header"><p class="wb-fieldflow-label">You <strong>must meet all 3 criteria</strong> below. Check the boxes that apply.</p>
-</div>
-<ul>
-<li data-wb-fieldflow="[{&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;#results&quot;, &quot;class&quot;: &quot;opt-1&quot;, &quot;live&quot;: true}, {&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#results:is(.opt-1, .opt-2, .opt-3) #alert-B, #results.opt-1.opt-2.opt-3 #alert-C&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}, {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;#results:not(.opt-1.opt-2.opt-3) #alert-C, #results:is(.opt-1, .opt-2, .opt-3) #alert-A, #results.opt-1.opt-2.opt-3 #alert-B&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}]">You are unable to walk on your own, or it takes you 3 times longer than someone of similar age who does not have the impairment (even if you use appropriate therapy, medication, and devices)</li>
-<li data-wb-fieldflow="[{&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;#results&quot;, &quot;class&quot;: &quot;opt-2&quot;, &quot;live&quot;: true}, {&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#results:is(.opt-1, .opt-2, .opt-3) #alert-B, #results.opt-1.opt-2.opt-3 #alert-C&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}, {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;#results:not(.opt-1.opt-2.opt-3) #alert-C, #results:is(.opt-1, .opt-2, .opt-3) #alert-A, #results.opt-1.opt-2.opt-3 #alert-B&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}]">Your impairment is present all or almost all of the time (generally at least 90%)</li>
-<li data-wb-fieldflow="[{&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;#results&quot;, &quot;class&quot;: &quot;opt-3&quot;, &quot;live&quot;: true}, {&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#results:is(.opt-1, .opt-2, .opt-3) #alert-B, #results.opt-1.opt-2.opt-3 #alert-C&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}, {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;#results:not(.opt-1.opt-2.opt-3) #alert-C, #results:is(.opt-1, .opt-2, .opt-3) #alert-A, #results.opt-1.opt-2.opt-3 #alert-B&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}]">Your impairment has lasted or is expected to last for a continuous period of 12 months</li>
-</ul>
-</div>
-</form>
-<div id="results" class="mrgn-lft-md mrgn-tp-lg" aria-live="polite"><ul class="list-unstyled mrgn-bttm-lg" role="presentation">
-<li id="alert-A" class="alert alert-info"><p class="h3 mrgn-tp-0">If you’re not sure you qualify</p>
-<p>You may still apply even if you're not sure. We base your eligibility on the information given by your medical practitioner.</p>
-</li>
-<li id="alert-B" class="alert alert-warning hidden"><p class="h3 mrgn-tp-0 ">You need all of the above to be eligible</p>
-<p>If you’re not sure you qualify, you may still apply. We base your eligibility on the information given by your medical practitioner.</p>
-</li>
-<li id="alert-C" class="alert alert-success hidden"><p class="h3 mrgn-tp-0 ">You may be eligible for the DTC</p>
-<p>This does not guarantee eligibility. When you apply, the CRA will base its decision on the information given by your medical practitioner.</p>
-<details><summary>Which medical practitioners can certify this</summary><ul class="fa-ul">
-<li><span class="fas fa-check text-success fa-li" aria-hidden="true"></span>Medical doctor</li>
-<li><span class="fas fa-check text-success fa-li" aria-hidden="true"></span>Nurse practitioner</li>
-<li><span class="fas fa-check text-success fa-li" aria-hidden="true"></span>Occupational therapist</li>
-<li><span class="fas fa-check text-success fa-li" aria-hidden="true"></span>Physiotherapist</li>
-</ul>
-</details></li>
-</ul>
-</div>
+    <h2 id="h-3">Eligibility criteria checklist</h2>
+<p>You <strong>must meet all 3 criteria</strong> below. Check the boxes that apply. </p>
+<section>
+  <ul class="checkbox-lg checkbox-zebra">
+    <li class="checkbox">
+      <input type="checkbox" id="eg1" class="action-checkbox cb-dmm">
+      <label for="eg1"><span class="wb-inv">checkbox 1 of 3</span>You are unable to walk on your own, or it takes you 3 times longer than someone of similar age who does not have the impairment <span class="small">(even if you use appropriate therapy, medication, and devices)</span></label>
+    </li>
+    <li class="checkbox">
+      <input type="checkbox" id="eg2" class="action-checkbox cb-dmm">
+      <label for="eg2"><span class="wb-inv">checkbox 2 of 3</span>Your impairment is present all or almost all of the time <span class="small">(generally at least 90%)</span></label>
+    </li>
+    <li class="checkbox">
+      <input type="checkbox" id="eg3" class="action-checkbox cb-dmm">
+      <label for="eg3"><span class="wb-inv">checkbox 3 of 3</span>Your impairment has lasted or is expected to last for a continuous period of 12 months</label>
+    </li>
+  </ul>
+  
+  <!-- checkbox responses -->
+  <div class="alert alert-info" id="action-no-msg">
+    <h3>If you’re not sure you qualify</h3>
+    <p>You may still apply even if you're not sure. We base your eligibility on the information given by your medical practitioner.</p>
+  </div>
+  <div class="alert alert-warning hidden" id="action-msg2">
+    <h3>You need all of the above to be eligible</h3>
+    <p>If you’re not sure you qualify, you may still apply. We base your eligibility on the information given by your medical practitioner.</p>
+  </div>
+  <div class="alert alert-success hidden provisional" id="action-msg1">
+    <h3>You may be eligible for the DTC</h3>
+    <p>This does not guarantee eligibility. When you apply, the CRA will base its decision on the information given by your medical practitioner.</p>
+    <details>
+      <summary>Which medical practitioners can certify this</summary>
+      <ul class="fa-ul">
+        <li><span class="fas fa-check text-success fa-li" aria-hidden="true"></span>Medical doctor</li>
+        <li><span class="fas fa-check text-success fa-li" aria-hidden="true"></span>Nurse practitioner</li>
+        <li><span class="fas fa-check text-success fa-li" aria-hidden="true"></span>Occupational therapist</li>
+        <li><span class="fas fa-check text-success fa-li" aria-hidden="true"></span>Physiotherapist</li>
+      </ul>
+    </details>
+  </div>
+</section>
 </div>
 
 
