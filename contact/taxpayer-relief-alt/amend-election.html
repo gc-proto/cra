@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+      <title>Amend an election – Canada.ca</title>
+      <meta content="width=device-width,initial-scale=1" name="viewport">
+      <meta name=”robots” content=”noindex”>
+      <!-- Meta data -->
+      <!-- Meta data-->
+      <!-- Load closure template scripts -->
+      <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
+      <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+      <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
+      
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+      <link href="../css/steps.css" rel="stylesheet">
+
+      <!-- Write closure template -->
+      <script type="text/javascript">
+         document.write(wet.builder.refTop({
+         }));
+      </script>
+	  <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
+	  <!-- <link href="../../css/custom.css" rel="stylesheet"> -->
+    <link href="../../css/steps.css" rel="stylesheet">
+    <link href="../../css/custom.css" rel="stylesheet">
+    <style>
+
+
+      /* style this like call-to-action button */
+      .btn-default {
+        font-size: 1.1em;
+        margin-bottom: 25px;
+        margin-top: 15px;
+        padding: .58em 1em;
+      }
+      /* Create the indicator (the dot/circle - hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      /* shared components */
+      
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 40px;
+        width: 40px;
+        background-color: #eee;
+        border: 2px solid #333;
+      }
+      /* custom checkboxes */
+      
+      /* for checks, container */
+      .container-checks {
+        display: block;
+        position: relative;
+        padding-left: 55px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        font-size: 19px;
+        font-weight: normal;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      /* hide default checkbox */
+      .container-checks input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      /* mouse-over, grey */
+      .container-checks:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+      .container-checks input:checked ~ .checkmark {
+        background-color: #318000;
+      }
+      /* create the checkmark/indicator (hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      /* show the checkmark when checked */
+      .container-checks input:checked ~ .checkmark:after {
+        display: block;
+      }
+      /* style the checkmark/indicator */
+      .container-checks .checkmark:after {
+        left: 14px;
+        top: 5px;
+        width: 10px;
+        height: 22px;
+        border: solid white;
+        border-width: 0 4px 4px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      
+      /* extend zebra strips to whole container */
+      
+      .edge-color {
+        background-color: #f0f0f0;
+        display: inline-block;
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 15px;
+      }
+      
+      /* extend zebra strips to whole container in a data table */
+      
+      .dataTables_wrapper {
+        margin-left: -22px;
+        margin-right: -22px;
+      }
+      
+      .dataTables_filter {
+        margin-left: 8px;
+      }
+      </style>
+   </head>
+   <body vocab="http://schema.org/" typeof="WebPage"  class="cnt-wdth-lmtd">
+      <div id="def-top">
+      </div>
+      <!-- Write closure template -->
+        <script type="text/javascript">
+          var defTop = document.getElementById("def-top");
+          defTop.outerHTML = wet.builder.top({
+            lngLinks: [{
+              lang: "fr",
+              href: "#",
+              text: "Français"
+            }],
+            breadcrumbs: [{
+              title: "Canada.ca",
+              href: "https://www.canada.ca/en.html"
+            }, {
+              title: "Canada Revenue Agency",
+              href: "https://www.canada.ca/en/revenue-agency.html"
+            }, {
+              title: "Service feedback",
+              href: "../service-feedback-button.html"
+            }
+            ],
+            search: true,
+            siteMenu: true,
+            showPreContent: true
+          });
+        </script>
+        <main role="main" property="mainContentOfPage" class="container experimental">
+        <h1 property="name" id="wb-cont"><span class="stacked" role="text"><span>Late, amended, or revoked elections</span>: <span>Taxpayer relief provisions</span></span></h1>
+        <div class="gc-stp-stp">
+          <div class="row">
+            <ul class="toc lst-spcd col-md-12">
+                <li class="col-md-4 col-sm-6"><a href="cancel-waive-penalties-interest.html" class="list-group-item">Cancel/waive penalties and interest</a></li>
+              <li class="col-md-4 col-sm-6"><a href="refund-beyond-3-years.html" class="list-group-item">Get a refund/adjust a return beyond 3 years</a></li>
+              <li class="col-md-4 col-sm-6"><a class="list-group-item active" href="">Late, amended, or revoked elections</a></li>
+            </ul>
+          </div>
+        </div>
+		<h2 class="h3 mrgn-tp-sm">What is an election?</h2>
+		<p>In some instances, the Income Tax Act allows taxpayers to choose when and how they want to be taxed. These provisions are called “elections”.</p>
+<p>In certain circumstances, a taxpayer can choose between:
+<ul><li>using a default set of tax rules</li> 
+	<li>electing (choosing) an alternative set of rules</li></p></ul>
+<p>This "election" gives taxpayers options and flexibility in handling their financial matters.</p>
+<p> This page provides information on the elections available, how to amend or revoke them, and the consequences of filing late.</p>
+        <h2>On this page</h2>
+        <ul>
+          <li><a href="#h-1">Amending, revoking, or filing a late election</a></li>
+	  <li><a href="#h-2">List of prescribed elections</a></li>
+	  <li><a href="#h-3">List of designations and allocations that are considered prescribed elections</a></li>
+          <li><a href="#h-4">Circumstances where the CRA may accept your request</a></li>
+          <li><a href="#h-5">Instances when your request will be denied</a></li>
+	  <li><a href="#h-6">Before you make a request</a></li>
+          <li><a href="#h-7">How to apply</a></li>
+	  <li><a href="#h-8">Penalty for accepting a late, amended, or revoked election</a></li>          
+	  <li><a href="#h-9">After the CRA receives your request</a></li>
+        </ul>
+	   </section>
+        <section>
+            <h2 id="h-1">Amending, revoking, or filing a late election</h2>
+      	<p>A request to have a late or amended election accepted, or to revoke an election, is limited to the provisions of the Income Tax Act. </p>
+     <p>Most election provisions do not:
+	   <ul><li>permit you to file an election once the due date for making the election is missed </li>
+		   <li>give you the ability to modify or cancel an original election that was filed on time</li></ul>
+<p>The Canada Revenue Agency (CRA) may, however, allow you to modify or cancel elections that have already been filed, or file an election even if you missed the deadline.</p>
+		<ul><li><strong>Amending your election</strong>: amending your election is best done before the date the election is due. You may apply to have your election amended after the due date, but the CRA may not accept your request.</li>
+			<li><strong>Revoking your election</strong>: revoking your election is best done before the date the election is due. You may apply to have your election revoked after the due date, but the CRA may not accept your request.</li></ul>
+		<p><strong>Note</strong>: you may be liable to a penalty if you file your election late or apply to amend or revoke your election after the due date. For more information, see <a href="#h-8"><span>Penalty for accepting a late, amended, or revoked election</span></a>.</p>
+
+		<h2 id="h-2">List of prescribed elections</h2>
+		<p> For the complete list and details of the eligible elections, go to <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic07-1/taxpayer-relief-provisions-1r1.html#aa"><span>List of prescribed elections</span><a/>.</p>
+	<h2 id="h-3">List of designations and allocations that are considered prescribed elections</h2>
+		<p> For the list of designations and allocations that are considered prescribed elections, go to <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/ic07-1/taxpayer-relief-provisions-1r1.html#s55"><span>Deemed Prescribed Elections</span></a>.</p>            
+        
+		<h2 id="h-4">Circumstances where the CRA may accept your request</h2>
+	<p>The Canada Revenue Agency (CRA) <strong>may</strong> accept your request in the following situations:</p><ul>
+	<ul class="fa-ul">
+	                <li><span class="fas fa-check text-success fa-li"></span>the late, amended, or revoked election must be correct in law based on the relevant legislation in place for the applicable tax year to which the election applies</li>
+	                <li><span class="fas fa-check text-success fa-li"></span>have been tax consequences that you did not intend and there is evidence you took reasonable steps to comply with the law</li>
+			<li><span class="fas fa-check text-success fa-li"></span>a late request due to circumstances beyond your control, for example:</li></ul>
+				<ul><ul>
+					<li>natural or man-made disasters (such as a flood or fire)</li>
+					<li>civil disturbances or disruptions in services (such as a postal strike)</li>
+					<li>a serious illness or accident</li>
+					<li>serious emotional or mental distress (such as a death in the immediate family)</li></ul>
+		</ul></li>
+		<ul class="fa-ul">
+			<li><span class="fas fa-check text-success fa-li"></span>it is evident you acted on incorrect information given by the CRA, such as an incorrect written reply to your question or an error in a CRA publication</li>
+			<li><span class="fas fa-check text-success fa-li"></span>the request results from what is a mechanical error, for example, using the net book value amount when it was clear you intended to use the undepreciated capital cost</li>
+			<li><span class="fas fa-check text-success fa-li"></span>the later accounting of the transactions by all parties is as if the election had been made</li>
+			<li><span class="fas fa-check text-success fa-li"></span>you can show that you were not aware of the election provisions, even though you took a reasonable amount of care to comply with the law, and took action to correct the situation as quickly as possible</li>
+		</ul>
+	          
+   
+		<h2 id="h-5">Instances when your request will be denied</h2>
+		<p>The CRA will not accept a request in the following instances:</p>
+		<ul>
+			<li>it is reasonable to conclude you made the request for retroactive tax planning purposes, for example, taking advantage of changes to the law enacted after the due date of the election</li>
+			<li>adequate records do not exist</li>
+	                <li>it is reasonable to conclude you had to make the request because you were negligent or careless in complying with the law</li></ul>
+<p>
+                <p>In addition to the above, there are certain requests that cannot be considered for relief under the Taxpayer Relief Provisions. For more information, go to <a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/invalid-requests.html"><span>Invalid requests</span>.</a> 
+        <section>
+            <h2 id="h-6">Before you make a request</h2>
+            <p>Before you make a request, make sure you have:</p>
+            <div class="mrgn-tp-lg beforeCall">
+                <label for="input1" class="container-checks">
+                <input id="input1" class="btnCheck" type="checkbox">
+                Filed your tax return and received your notice of assessment, reassessment or determination <span class="checkmark"></span> </label>
+                <label for="input2" class="container-checks">
+                <input id="input2" class="btnCheck" type="checkbox">
+                Any information requested by audits has been sent to the CRA <span class="checkmark"></span> </label>
+                <label for="input3" class="container-checks">
+                <input id="input3" class="btnCheck" type="checkbox">
+                Prepared records proving your qualifying situation (extraordinary circumstances, hardship, CRA actions)<span class="checkmark"></span> </label>
+                <label for="input4" class="container-checks">
+                <input id="input4" class="btnCheck" type="checkbox">
+                The election is in a tax return in the last 10 years (from the end of the calendar year in which the tax year or fiscal period at issue ended)<span class="checkmark"></span> </label>
+                <span id="check-message">
+                <label for="input5" class="label label-danger">You need all of the above to be considered for taxpayer relief
+                    <input id="input5" class="wb-inv" type="text">
+                </label>
+                </span></p>
+                <div id="find-relief-rescue">
+                <p>Unless you meet all the criteria above, your request for taxpayer relief is unlikely to be considered.</p>
+                  </div>
+            </div>
+
+
+		<h2 id="h-7">How to apply</h2>
+		<p>Prepare the following documents and send your request, in writing, to the tax centre where you file your return. Go to <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information/tax-services-offices-tax-centres.html"><span>Find a CRA address</span></a href> to find your tax centre.</p>
+<ul class="fa-ul">
+	                <li><span class="fas fa-check text-success fa-li"></span>your name, address, and telephone number</li>
+	<li><span class="fas fa-check text-success fa-li"></span>your social insurance number, partnership number, trust account number, business number, or any other identification number the Canada Revenue Agency (CRA) assigned to you</li>
+	<li><span class="fas fa-check text-success fa-li"></span>the tax year(s) or fiscal period(s) involved</li>
+	<li><span class="fas fa-check text-success fa-li"></span>the dates and details of the transactions</li>
+	<li><span class="fas fa-check text-success fa-li"></span>the details of the late election, and an explanation of why it is late</li>
+	<li><span class="fas fa-check text-success fa-li"></span>the dates and details of the original election, including an explanation of why you are asking to have an election amended or revoked</li>
+	<li><span class="fas fa-check text-success fa-li"></span>for requests to accept a late or amended election, the election must be filed in the prescribed form or prescribed manner</li>
+	<li><span class="fas fa-check text-success fa-li"></span>briefly describe the income tax implications of the acceptance or denial of the request for all parties involved</li>
+	<li><span class="fas fa-check text-success fa-li"></span>appropriate revised schedules, if accepting the request involves changes to continuing tax account balances, for example, capital cost allowance schedules, reserve account schedules, Canadian exploration or development expense account schedules</li>
+	<li><span class="fas fa-check text-success fa-li"></span>for requests that involve you and other taxpayers, an agreement to the requested change signed by all parties</li>
+		</ul>
+		<p>
+			<p><strong>Note:</strong>
+<p>Indicate with your request if this is the first or <a href="#h-11">second review</a>. A second review request is when you ask the CRA to reconsider its original decision.</p>
+
+            <h2 id="h-8">Penalty for accepting a late, amended, or revoked election</h2>
+            <p>If the CRA accepts your late, amended, or revoked election request, you are liable to a penalty.</p>  
+            <p>The penalty is the lesser of the following amounts:</p>  
+            <ol class="alpha dblSpList"> 
+                <li>$8,000</li> 
+                <li>$100 for each complete month from the election's original due date to the date your request was made in a form satisfactory to the CRA</li> 
+            </ol>  
+<h3>Payment of the penalty amount</h3>
+		<p>Penalty payments can be sent to the CRA with your request.</p>
+<p>It is CRA policy not to accept late, amended, or revoked elections, or to process or adjust the income tax return, unless the penalty amount noted above is paid.</p>
+<p>After the CRA receives your payment, if there is an amount outstanding, the CRA will determine and assess the unpaid balance, which you must pay immediately.</p>
+             
+            <h4>Relief from the penalty</h4>
+            <p>In certain circumstances, the CRA may cancel or waive the penalty amount. For more information, go to <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/cancel-waive-penalties-interest.html">Cancel or waive penalties or interest</a>.</p>
+	<p>A request to waive the penalty amount may be submitted with the request to file a late, amended, or revoked election. You do not have to file a separate penalty relief request.</p> 
+       
+        <section>
+            <h2 id="h-9">After the CRA receives your request</h2>
+          <p>Once the CRA has started reviewing your request, we may contact you if we need help understanding what you provided, or to get any missing information.</p>
+            <p>In all cases, once the review of your request is complete, we will notify you of our decision, including the reason for the decision if it is only partially approved or denied.</p>
+			
+            <h3 id="h-10">Approval or denial of your request</h3>
+          <p>When accepted by the CRA, a late or amended election will be considered to have been made at the time it was required to be made. For amended or revoked elections, the original election will be cancelled. To give effect to the acceptance of a late, amended, or revoked election, the CRA will reassess the affected returns for the tax years in question, even if the years are beyond the normal reassessment period.</p>
+<p>Any assessments or reassessments resulting from the CRA's acceptance of the request is subject to the general provisions concerning arrears interest charged on the balance owing.</p>
+<p>If your late, amended, or revoked election is accepted, you can file an objection to dispute the resulting assessment or reassessment. However, the objection is limited to issues related to that election. For more information, go to <a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/file-objection-cppei-appeal-minister.html">File an objection</a>.</p>
+		
+			<h3 id="h-11">Second administrative review</h3>
+		<p>If you believe that the CRA made an error in its review, you can ask for a second review. You may request a second review by writing to the address provided in the first decision letter you received in reply to your first request for relief. You can also send a letter to the <a href="#h-13">Intake Centre</a> responsible for your province or territory of residence.</p>
+		<p>A second review request requires the following:</p>
+		<ul>
+<li>the reasons why you disagree with the CRA's decision, for example, not all information was considered, certain facts or details were missing, misinterpreted, or not considered in their proper context</li>
+			<li>any relevant new documents, facts, or correspondence</li>
+		</ul><p>
+<p>In order for the CRA to remain impartial and transparent, the official who completed the first review will not conduct the second review.</p>
+<p>The CRA may still uphold its previous decision following a second review of your request for relief.</p>
+			<p>
+<h3 id="h-12">Judicial review</h3>
+<p>If, after the second review, you still feel that we were not fair and reasonable, you can apply to the Federal Court for a <a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/judicial-review.html">judicial review</a> of our decision. You must do this within 30 calendar days of the date you received the decision from the second administrative review.</p>
+		
+		   <h3 id="h-13">Intake centre for your province or territory of residence</h3>
+                        <ul class="list-unstyled">
+                          <!-- <li>
+                            <details>
+                              <summary>British Columbia and Yukon</summary>
+                              <div class="well">
+                                Vancouver Tax Services Office<br>
+                                9755 King George Boulevard<br>
+                                Surrey BC  V3T 5E1
+                              </div>
+                            </details>
+                          </li> -->
+                          <li>
+                            <details>
+                              <summary>Alberta, British Columbia, Saskatchewan, Manitoba, Northwest Territories, Nunavut and Yukon</summary>
+                              <p>Mailing address</p>
+                              <div class="well">
+                                Winnipeg Tax Services Office<br>
+                                Taxpayer Relief<br>
+                                800-360 Main Street<br>
+                                PO Box 1022 Stn Main<br>
+                                Winnipeg MB  R3C 2W2
+                              </div>
+                              <p>Shipping address for couriers (non-Canada Post shipments only):</p>
+                              <div class="well">
+                                Canada Revenue Agency<br>
+                                Winnipeg Tax Services Office<br>
+                                500-360 Main Street<br>
+                                Winnipeg MB R3C 3Z3
+                              </div>
+                            </details>
+                          </li>
+                          <li>
+                            <details>
+                              <summary>Ontario, Quebec, New Brunswick, Nova Scotia, Prince Edward Island, and Newfoundland and Labrador</summary>
+                              <div class="well">
+                                Prince Edward Island Tax Centre<br>
+                                275 Pope Road<br>
+                                Summerside PE  C1N 5Z7
+                              </div>
+                            </details>
+                          </li>
+                          <!-- <li>
+                            <details>
+                              <summary>Quebec</summary>
+                              <div class="well">
+                                Shawinigan National Verification and Collections Centre<br>
+                                4695 Shawinigan-Sud Boulevard<br>
+                                Shawinigan QC G9P 5H9
+                              </div>
+                            </details>
+                          </li> -->
+                          <li>
+                            <details>
+                              <summary>Non-resident or international taxpayers</summary>
+                              <p>Send your request to one of the designated offices listed above.
+                            </details>
+                          </li>
+                        </ul>
+                      </dd>
+                  <!-- </li>
+                </ol> -->
+              </section>
+
+<!--         
+        <div class="owner">
+               <p>From:</p>
+               <ul class="list-inline">
+                  <li><a href="https://www.canada.ca/en/revenue-agency.html">Canada Revenue Agency</a></li>
+               </ul>
+            </div> -->
+         <!-- <div class="profile">
+            <section class="followus">
+               <h2>Follow:</h2>
+               <ul>
+                  <li><a href="https://www.facebook.com/canrevagency/" class="facebook" rel="external"><span class="wb-inv">Facebook</span></a></li>
+                  <li><a href="https://twitter.com/CanRevAgency" class="twitter" rel="external"><span class="wb-inv">Twitter</span></a></li>
+                  <li><a href="https://www.youtube.com/user/CanRevAgency" class="youtube" rel="external"><span class="wb-inv">YouTube</span></a></li>
+               </ul>
+            </section>
+            <div class="clearfix"></div>
+         </div> -->
+         <div id="def-preFooter"></div>
+         <!-- Write closure template -->
+         <script type="text/javascript">
+            var defPreFooter = document.getElementById("def-preFooter");
+            defPreFooter.outerHTML = wet.builder.preFooter({
+            dateModified: "2020-05-05",
+            showPostContent: true,
+            showFeedback: true,
+            showShare: true
+            });
+         </script>
+      </main>
+      <div id="def-footer">
+      </div>
+      <!-- Write closure template -->
+      <script type="text/javascript">
+         var defFooter = document.getElementById("def-footer");
+         defFooter.outerHTML = wet.builder.footer({
+         showFooter: true,
+         showFeatures: true
+         });
+      </script>
+      <!-- Write closure template -->
+      <script type="text/javascript">
+         document.write(wet.builder.refFooter({
+         }));
+      </script>
+      <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
+      <script>
+        $(".btnCheck").click(function(event) {
+            if ($('.beforeCall input[type="checkbox"]').not(':checked').length == 0) {
+                document.getElementById("check-message").innerHTML = '<label class="label label-success">You are ready to make a request</label>';
+                $("#find-relief-rescue").addClass("hidden");
+            } else {
+                document.getElementById("check-message").innerHTML = '<label class="label label-danger">You need all of the above to be considered for taxpayer relief</label>';
+                $("#find-relief-rescue").removeClass("hidden");
+        
+            }
+        });
+    </script>
+   </body>
+</html>

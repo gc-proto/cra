@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="no-js lt-ie9" lang="en" dir="ltr">
+   <![endif]-->
+   <!--[if gt IE 8]><!-->
+   <html class="no-js" lang="en" dir="ltr">
+      <!--<![endif]-->
+      <head>
+         <meta charset="utf-8">
+         <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+         <title>Who can apply - Cancel or waive penalties and interest – Canada.ca</title>
+         <meta content="width=device-width,initial-scale=1" name="viewport">
+         <meta name=”robots” content=”noindex, follow”>
+         <!-- Meta data -->
+         <!-- Meta data-->
+         <!-- Load closure template scripts -->
+         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
+         <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+         <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+         <!-- Write closure template -->
+         <script type="text/javascript">
+            document.write(wet.builder.refTop({
+            }));
+         </script>
+         <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
+         <link href="../../../css/pn.css" rel="stylesheet">
+         <link href="../../../css/h1-underline.css" rel="stylesheet">
+         <link href="../../../css/steps.css" rel="stylesheet">
+         <link href="../../../css/checkbox-radio-CRA.css" rel="stylesheet">
+         <style type="text/css">
+            div.hidden-action {
+            transform: scaleX(0);
+            overflow: hidden;
+            display: none;
+            }
+            div.visible-action {
+            transform: scaleX(1);
+            display: visible;
+            }
+            /*Checkbox/Fieldflow radio input sizing,positioning*/
+            .checkbox-zebra > li:nth-child(2n+1) {
+            background-color: #f5f5f5;
+            margin-left: -50px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            padding-left: 50px;
+            }
+            .checkbox-zebra [role="checkbox"]::before {
+            background-color: #fff;
+            }
+            .std-blt {
+            font-size: 20px;
+            line-height: 1.65em;
+            }
+            .std-blt {
+            list-style-type: disc;
+            }
+            .std-blt li label {
+            display: block;
+            padding-left: 0px;
+            }
+            /********
+            ********
+            ** New checklist example
+            ** May 15, 2020
+            ** Replacing checkkboxes with clickable divs that convey a sense of success to the user
+            ********
+            ********/
+            /* One input per line */
+            .provisional [role="checkbox"] { /* (0,2,0) */
+            cursor: pointer;
+            display: inline-block;
+            padding-left: 15px;
+            position: relative;
+            }
+            .provisional [role="checkbox"]::before,
+            .provisional [role="checkbox"]::after { /* (0,2,1) */
+            content: "";
+            left: 0;
+            position: absolute;
+            top: 0;
+            transform: translate(-100%, 0%);
+            }
+            .provisional .wb-checklist.wb-checklist-sm { /* (0,3,0) */
+            font-size: 17px;
+            }
+            /* the basic, unchecked style */
+            .provisional [role="checkbox"]::before { /* (0,2,1) */
+            border: 4px solid #fff;
+            box-shadow: 0 0 0 2px #000;
+            display: inline-block;
+            height: 36px;
+            width: 36px;
+            }
+            .provisional .wb-checklist-sm [role="checkbox"]::before { /* (0,3,1) */
+            border-width: 3px;
+            height: 24px;
+            transform: translate(-100%, 20%);
+            width: 24px;
+            }
+            /* hover styling */
+            .provisional [role="checkbox"][aria-checked="false"]:hover::before { /* (0,3,1) */
+            background-image: linear-gradient(to bottom, hsl(10, 0%, 90%), hsl(10, 0%, 100%) 50%);
+            }
+            /* focus styling */
+            .provisional [role="checkbox"]:focus { /* (0,3,0) */
+            outline: none;
+            }
+            .provisional [role="checkbox"]:focus::before { /* (0,3,2) */
+            box-shadow: 0 0 0 2px #000, 0 0 8px 4px rgb(59, 153, 252);
+            }
+            /* the checked style using the [aria-checked='true'] pseudo class and aria-checked=true attribute */
+            .provisional [role="checkbox"][aria-checked="true"]::before { /* (0,3,1) */
+            background-color: #318000;
+            border: none;
+            }
+            .provisional [role="checkbox"][aria-checked="true"]::after { /* (0,3,1) */
+            border-color: white;
+            border-style: solid;
+            border-width: 0 5px 5px 0;
+            display: inline-block;
+            height: 26px;
+            width: 13px;
+            transform: translate(-185%, 10%) rotate(45deg);
+            }
+            .provisional .wb-checklist-sm [role="checkbox"][aria-checked="true"]::after { /* (0,3,1) */
+            border-width: 0 4px 4px 0;
+            height: 16px;
+            width: 9px;
+            transform: translate(-185%, 40%) rotate(45deg);
+            }
+            .checkbox-lg label {
+            font-size: 1em;
+            }
+         </style>
+      </head>
+      <body vocab="http://schema.org/" typeof="WebPage">
+         <div id="def-top"> </div>
+         <!-- Write closure template -->
+         <script type="text/javascript">
+            var defTop = document.getElementById("def-top");
+            defTop.outerHTML = wet.builder.top({
+            	lngLinks: [{
+            		lang: "fr",
+            		href: "#",
+            		text: "Français"
+            	}],
+            	breadcrumbs: [{
+             title: "Canada.ca",
+             href: "https://www.canada.ca/en.html"
+              }, {
+                title: "Canada Revenue Agency",
+                href: "https://www.canada.ca/en/revenue-agency.html"
+              }, {
+                title: "Contact the CRA",
+                href: "../contact-cra.html"
+              }, {
+                title: "Service complaints and objections",
+                href: "../service-feedback-button.html"
+              }, {
+                title: "Cancel or waive penalties and interest",
+                href: "../cancel-waive-penalties-interest.html"
+              }
+              ],
+            	search: true,
+            	siteMenu: true,
+            	showPreContent: true
+            });
+         </script>
+         <main role="main" property="mainContentOfPage" class="container">
+            <div class="gcnav">
+               <section class="gcnav-menu">
+                  <h1 property="name" id="wb-cont-parent">Cancel or waive penalties and interest</h1>
+                  <nav aria-label="Section menu">
+                     <h2 id="gcnav-menu-header">Sections</h2>
+                     <ul class="gcnav-steps">
+                        <li class="active"><a aria-current="page">Who can apply</a></li>
+                        <li><a href="how-apply-d.html">How to apply</a></li>
+                        <li><a href="after-apply.html">Our review and decision</a></li>
+                     </ul>
+                  </nav>
+               </section>
+               <aside class="hidden-xs hidden-sm gcnav-side" data-ajax-replace="index.html #gcnav-side>"> </aside>
+               <section class="gcnav-section">
+               <h1 property="name" id="wb-cont">Who can apply</h1>
+               <p> When events beyond your control prevent you from meeting your tax obligations, cancelling or waiving penalties and interest may be possible.</p>
+               <p>Anyone may request relief of penalties and interest. The Canada Revenue Agency (CRA) will consider all requests. While this page lists certain criteria that must be met, meeting them does not guarantee that relief will be granted.</p>
+               <h2 class="h3">On this page</h2>
+               <ul>
+                  <li><a href="#h-1">Situations that don't qualify</a></li>
+                  <li><a href="#h-2">Situations that may qualify</a></li>
+                  <li><a href="#h-3">Other options that may better fit your situation</a></li>
+               </ul>
+               <h2 id="h-1">Situations that don't qualify</h2>
+			   <p>The following situations <strong>do not qualify</strong> under the Taxpayer Relief Provisions for the cancellation or waiver or penalties and interest:</p>
+               <ul class="list-unstyled" >
+                  <li>
+                      
+                     <details>
+                        <summary>When the penalties and interest is outside the past 10 years</summary>
+                        <p>You are requesting relief for penalties and interest that you have accumulated within the past 10 years.</p>
+                        <p>Refer to: <a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/limitation-period-on-exercising-discretion-deadline-requesting
+                           -relief.html">Limitation period on exercising discretion and the deadline for requesting relief</a></p>
+                     </details>
+                  </li>
+                  <li>
+                    
+                     <details>
+                        <summary>Errors or delays made by a third party acting on your behalf</summary>
+                        <p>A third party who receives a fee and gives incorrect advice, or makes calculating or accounting errors, is usually responsible to their client for any penalty and interest charged.</p>
+						<p><strong>Exception:</strong> The CRA may, however, provide relief if third-party errors or delays prevented you from meeting your tax obligations, for example:</p>
+                        <ul>
+                           <li>an extraordinary circumstance beyond the control of your representative</li>
+                           <li>actions by the CRA</li>
+                        </ul>
+                  
+                  </details></li>
+				  <li>
+                     
+                     <details>
+                        <summary>Cancel or waive tax</summary>
+						<p>The Taxpayer Relief Provisions do not permit the Canada Revenue Agency (CRA) to cancel or waive properly assessed tax</p>
+						</details></li>
+						<li>
+                    
+                     <details>
+                        <summary>Dispute an assessment or reassessment</summary>
+						<p>To find out how to file a formal objection to the applicable Notice of Assessment or Notice of Reassessment, refer to: <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes.html">Complaints and disputes</a> </p>
+						</details></li>
+						<li>
+                    
+                     <details>
+                        <summary>Cancel administrative charges such as bank charge back fees</summary>
+						<p>Call the <a href="/en/revenue-agency/corporate/contact-information.html">CRA general enquiries</a> number or the telephone number provided on the correspondence received for more information.</p>
+						</details></li>
+						<li>
+                 
+                     <details>
+                        <summary>Cancel the GST/HST gross negligence penalty</summary>
+						<p><li>We cannot consider a request to cancel the goods and services tax/harmonized sales tax (GST/HST) gross negligence penalty charged under section 285 of the ETA. </p><p>to To find out about filing a formal objection, refer to: <a href="/en/revenue-agency/services/forms-publications/forms/e413.html">Notice of Objection (Excise Tax Act)</a> .</p>
+						</details></li>
+               </ul>
+               <h2 id="h-2">Situations that may qualify for relief of penalties and interest</h2>
+               <p>To apply to have penalties and interest cancelled or waived, you need to explain why you are asking for this relief. The following are common situations:</p>
+				<ul class="list-unstyled">
+				<li>
+               <details>
+                  <summary>Extraordinary circumstances</summary>
+                  <p>Extraordinary circumstances may include, but are not limited to, the following examples:</p>
+                  <ul>
+                     <li>natural or human-made disasters, such as a flood or fire</li>
+                     <li>civil disturbances or disruptions in services, such as a postal strike</li>
+                     <li>serious illness or accident</li>
+                     <li>serious emotional or mental distress, such as death in the immediate family</li>
+                  </ul>
+               </details>
+			   </li>
+			   <li>
+               <details>
+                  <summary>Financial hardship</summary>
+                  <p>When we have confirmed that you are <a href="https://www.canada.ca/en/revenue-agency/services/payments-cra.html"><span>not able to pay what you owe</span></a>, we may waive or cancel <strong>interest</strong> in whole or in part to allow you to pay your account. For example, this may occur when:</p>
+                  <ul>
+                     <li>loss of work causes you financial hardship and you cannot pay</li>
+                     <li>interest charges make up a major amount of what's due and you are unable to make a payment arrangement</li>
+                     <li>for individuals, paying the interest would make it difficult to provide basic necessities, such as food, medical help, transportation, or shelter</li>
+                     <li>for businesses, paying the interest would jeopardize the continuity of business operations, employees' jobs, and the welfare of the community as a whole</li>
+                  </ul>
+               
+                  <p>Generally, cancelling a <strong>penalty</strong> based on an inability to pay or financial hardship <strong>may</strong> occur if extraordinary circumstance prevent compliance. 
+                  <p></p>
+                  <p>For these types of requests, we require full financial disclosure from you. This includes a statement of income, expenses, assets, and liabilities. To help you with this step, go to <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/cancel-waive-penalties-interest/statement-income-expenses-assets-liabilities-individuals.html"> <span>Statement of Income and Expenses and Assets and Liabilities for Individuals</span></a>. For information about what supporting documents businesses should send with a request for relief, go to <a href="/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/cancel-waive-penalties-interest/determining-a-business-financial-situation.html"> <span>Determining a business’ financial situation</span></a>.</p>
+               </details>
+			   </li>
+			   <li>
+               <details>
+                  <summary>Actions by the CRA</summary>
+                  <p>The CRA may cancel or waive penalties and interest when they result from CRA actions, including:</p>
+                  <ul>
+                     <li>processing delays that result in you not being informed within a reasonable time, that an amount was owing</li>
+                     <li>errors in CRA materials which led you to file a return or make a payment based on incorrect information</li>
+                     <li>incorrect information provided to you by the CRA</li>
+                     <li>errors in processing</li>
+                     <li>delays in providing information, resulting in you not being able to meet your tax obligations on time</li>
+                     <li>undue delays in resolving an objection or an appeal, or in completing an audit</li>
+                  </ul>
+               </details>
+			   </li>
+			   <li>
+               <details>
+                  <summary>Other circumstances</summary>
+                  <p>The CRA may also grant relief if your circumstances do not fall within the situations described above. Send us an application to have your penalties and interest cancelled or waived. Once we review your application, we will be able to determine if your circumstances can be considered for relief.</p>
+                  <ul>
+               </details>
+			   </li>
+			   </ul>
+               <p class="mrgn-tp-md"><strong>Reminder:</strong> Meeting the above criteria does not guarantee that your application will be approved. Make sure to send any information and documents that you feel support your application. Everything received will be looked at and will ensure a timely review of your request. Otherwise, we may need to request addiitonal information, which will delay the review process.</p>
+               <h2 id="h-3">Other options that may better fit your situation</h2>
+			   <h3>Options to correct errors or omissions</h3>
+			   <ul>
+			   <li><p><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/change-your-return.html">Change your personal income tax return</a> <br>Correct any errors you need to change, or adjust your return.</p></li>
+			   <li> <p><a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/after-you-file-your-corporation-income-tax-return/reassessments-adjustments-your-t2-return.html">Change your corporate tax return</a> <br>Correct any errors you need to change, or adjust your return.</p></li>
+			   <li><p><a href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/voluntary-disclosures-program-overview.html">Voluntary Disclosure Program</a> <br>Fix errors or omissions on a previously filed return, or file a return you should have.</p></li>
+			   </ul>
+			   <h3>(Other?)</h3>
+			   <ul>
+			   <li><p><a href="https://www.canada.ca/en/revenue-agency/services/payments-cra.html">Payments to the CRA</a></br>Make a payment or arrange to pay your debt over time.</p></li>
+			   <li><p><a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/refund-reduce-amount-payable-beyond-normal-three-year-period.html">Adjust an amount owing beyond the 3-year deadline</a><br>File an income tax return to adjust an amount owing beyond the normal three-year deadline.</p></li>
+			   <li> <p><a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/complaints-disputes/late-amended-revoked-elections.html">Changing your tax situation (elections)</a></br>Change when and how you want to be taxed, request to file your election late, or cancel your election.</p></li>
+			   
+			   </ul>
+             <nav aria-label="Section navigation" class="mrgn-bttm-lg mrgn-tp-lg"><h3 class="wb-inv">Section navigation</h3>
+<ul class="pager">
+<li class="next"><a href="how-apply-d.html" rel="next"><span class="wb-inv">Next: </span>How to apply</a></li>
+</ul>
+</nav>
+               <aside class="hidden-md hidden-lg" data-ajax-replace="index.html #gcnav-side>"> </aside>
+            </div>
+            <div id="def-preFooter"> </div>
+            <!-- Write closure template -->
+            <script type="text/javascript">
+               var defPreFooter = document.getElementById("def-preFooter");
+               defPreFooter.outerHTML = wet.builder.preFooter({
+               dateModified: "2020-03-13",
+               showPostContent: true,
+               showFeedback: true,
+               showShare: true
+               });
+            </script>
+         </main>
+         <div id="def-footer"> </div>
+         <!-- Write closure template -->
+         <script type="text/javascript">
+            var defFooter = document.getElementById("def-footer");
+            defFooter.outerHTML = wet.builder.footer({
+            showFooter: true,
+            showFeatures: true
+            });
+         </script>
+         <!-- Write closure template -->
+         <script type="text/javascript">
+            document.write(wet.builder.refFooter({
+            }));
+         </script>
+         <script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>
+         <!--script below adds the skip to section navigation at top of page when .gcnav class exists //-->
+         <script src="../js/topmenu.js"></script>
+        
+      </body>
+   </html>
