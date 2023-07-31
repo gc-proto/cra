@@ -21,8 +21,8 @@
 
 <!-- Load closure template scripts -->
 
-<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
-<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"></script>
 
 <!-- Write closure template -->
 
@@ -109,12 +109,19 @@ td.vertical-table-inline:empty {
 }
 .table-vertical-header td::before {
 	display: block;
-	font-weight: 200;
-	content: attr(data-header);
-	color: #6f6f6f;
-	font-size: 20px;
+	font-weight: 600;
+	color: #333;
+	font-size: 22px;
 	font-family: "Noto Sans", sans-serif
 }
+.table-vertical-header.header-muted td::before {
+	font-weight: 200;
+	color: #6f6f6f;
+	font-size: 20px;
+}
+.table-vertical-header.no-script td::before {
+	content: attr(data-header);
+	}	
 .table-vertical-header.strong td::before
 {
 font-weight: bold;
@@ -125,8 +132,8 @@ color: #333;
 @media (min-width:992px) {
 .table-vertical-header td::before {
 	display: inline-block;
-	margin-left: -165px;
-	width: 160px;
+	margin-left: -205px;
+	width: 200px;
 	float: left;
 	padding-right: 15px;
 	text-align: right;
@@ -279,7 +286,7 @@ color: #333;
 	<p>Not suggested as takes more work to code, fallback due to scripts turned off is minimal. Uses <code>.table-vertical-header</code> to activate, and <code>data-header</code> attribute with the name of the header added to each <code>&lt;td&gt;</code> cell.</p>
   
 
-	<table class="table table-vertical-header" id="table2">
+	<table class="table table-vertical-header no-script" id="table2">
     <caption>
     Caption here
     </caption>
@@ -521,9 +528,10 @@ $td.attr('data-header', function () {
     return $th.eq($(this).index()).text();
 });
 	}
-
+if (!$(this).hasClass(".no-script")) {
   	table.each(heading);
 	table.on('wb-updated.wb-tables', heading);
+};
 	});
 
 </script>
